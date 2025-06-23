@@ -1,0 +1,632 @@
+[
+    {
+        "S.NO": "1",
+        "Contents": "Total number of outpatients treated",
+        "I Qtr-2024": "13882",
+        "II Qtr-2024": "12939",
+        "III Qtr- 2024": "16430",
+        "IV Qtr-2024": "15120",
+        "Annual 2024": "58371"
+    },
+    {
+        "S.NO": "1.a",
+        "Contents": "Skin diseases",
+        "I Qtr-2024": "3494",
+        "II Qtr-2024": "3692",
+        "III Qtr- 2024": "4341",
+        "IV Qtr-2024": "4098",
+        "Annual 2024": "15625"
+    },
+    {
+        "S.NO": "1.b",
+        "Contents": "Respiratory symtomatics",
+        "I Qtr-2024": "1391",
+        "II Qtr-2024": "825",
+        "III Qtr- 2024": "1180",
+        "IV Qtr-2024": "1100",
+        "Annual 2024": "4496"
+    },
+    {
+        "S.NO": "1.c",
+        "Contents": "Others",
+        "I Qtr-2024": "8997",
+        "II Qtr-2024": "8422",
+        "III Qtr- 2024": "10909",
+        "IV Qtr-2024": "9922",
+        "Annual 2024": "38250"
+    },
+    {
+        "S.NO": "2",
+        "Contents": "Adult-PB",
+        "I Qtr-2024": "20",
+        "II Qtr-2024": "25",
+        "III Qtr- 2024": "24",
+        "IV Qtr-2024": "18",
+        "Annual 2024": "87"
+    },
+    {
+        "S.NO": "2.a",
+        "Contents": "Adult-MB",
+        "I Qtr-2024": "89",
+        "II Qtr-2024": "110",
+        "III Qtr- 2024": "63",
+        "IV Qtr-2024": "58",
+        "Annual 2024": "320"
+    },
+    {
+        "S.NO": "2.b",
+        "Contents": "Adult-Total",
+        "I Qtr-2024": "109",
+        "II Qtr-2024": "135",
+        "III Qtr- 2024": "87",
+        "IV Qtr-2024": "76",
+        "Annual 2024": "407"
+    },
+    {
+        "S.NO": "2.c",
+        "Contents": "Children-PB",
+        "I Qtr-2024": "3",
+        "II Qtr-2024": "4",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "3",
+        "Annual 2024": "14"
+    },
+    {
+        "S.NO": "2.d",
+        "Contents": "Children-MB",
+        "I Qtr-2024": "3",
+        "II Qtr-2024": "7",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "1",
+        "Annual 2024": "14"
+    },
+    {
+        "S.NO": "2.e",
+        "Contents": "Children-Total",
+        "I Qtr-2024": "6",
+        "II Qtr-2024": "11",
+        "III Qtr- 2024": "7",
+        "IV Qtr-2024": "4",
+        "Annual 2024": "28"
+    },
+    {
+        "S.NO": "2.f",
+        "Contents": "Total No. of new leprosy cases detected",
+        "I Qtr-2024": "115",
+        "II Qtr-2024": "146",
+        "III Qtr- 2024": "94",
+        "IV Qtr-2024": "80",
+        "Annual 2024": "435"
+    },
+    {
+        "S.NO": "2.g",
+        "Contents": "Relapse Cases",
+        "I Qtr-2024": "1",
+        "II Qtr-2024": "1",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "3"
+    },
+    {
+        "S.NO": "2.h",
+        "Contents": "Female-PB",
+        "I Qtr-2024": "19",
+        "II Qtr-2024": "14",
+        "III Qtr- 2024": "13",
+        "IV Qtr-2024": "14",
+        "Annual 2024": "60"
+    },
+    {
+        "S.NO": "2.i",
+        "Contents": "Female-MB",
+        "I Qtr-2024": "25",
+        "II Qtr-2024": "45",
+        "III Qtr- 2024": "20",
+        "IV Qtr-2024": "12",
+        "Annual 2024": "102"
+    },
+    {
+        "S.NO": "2.j",
+        "Contents": "Female-Total",
+        "I Qtr-2024": "44",
+        "II Qtr-2024": "59",
+        "III Qtr- 2024": "33",
+        "IV Qtr-2024": "26",
+        "Annual 2024": "162"
+    },
+    {
+        "S.NO": "2.k",
+        "Contents": "Adult disability G-I-PB",
+        "I Qtr-2024": "1",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "1"
+    },
+    {
+        "S.NO": "2.l",
+        "Contents": "Adult disability G-I-MB",
+        "I Qtr-2024": "17",
+        "II Qtr-2024": "19",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "8",
+        "Annual 2024": "48"
+    },
+    {
+        "S.NO": "2.m",
+        "Contents": "Total Adult disability G-I",
+        "I Qtr-2024": "18",
+        "II Qtr-2024": "19",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "8",
+        "Annual 2024": "49"
+    },
+    {
+        "S.NO": "2.n",
+        "Contents": "Adult disability G- II-PB",
+        "I Qtr-2024": "1",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "1"
+    },
+    {
+        "S.NO": "2.o",
+        "Contents": "Adult disability G-II-MB",
+        "I Qtr-2024": "15",
+        "II Qtr-2024": "29",
+        "III Qtr- 2024": "13",
+        "IV Qtr-2024": "8",
+        "Annual 2024": "65"
+    },
+    {
+        "S.NO": "2.p",
+        "Contents": "Total Adult disability G-II",
+        "I Qtr-2024": "16",
+        "II Qtr-2024": "29",
+        "III Qtr- 2024": "13",
+        "IV Qtr-2024": "8",
+        "Annual 2024": "66"
+    },
+    {
+        "S.NO": "2.q",
+        "Contents": "Children disability G-I-PB",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "2.r",
+        "Contents": "Children disability G-I-MB",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "2.s",
+        "Contents": "Total Children disability G-I",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "2.t",
+        "Contents": "Children disability G-II-PB",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "2.u",
+        "Contents": "Children disability G-II-MB",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "3",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "4"
+    },
+    {
+        "S.NO": "2.v",
+        "Contents": "Total Children disability G-II",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "3",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "4"
+    },
+    {
+        "S.NO": "3",
+        "Contents": "lepra ReactionType-1 Male",
+        "I Qtr-2024": "24",
+        "II Qtr-2024": "38",
+        "III Qtr- 2024": "19",
+        "IV Qtr-2024": "14",
+        "Annual 2024": "95"
+    },
+    {
+        "S.NO": "3.a",
+        "Contents": "lepra ReactionType-1 Female",
+        "I Qtr-2024": "11",
+        "II Qtr-2024": "12",
+        "III Qtr- 2024": "7",
+        "IV Qtr-2024": "4",
+        "Annual 2024": "34"
+    },
+    {
+        "S.NO": "3.b",
+        "Contents": "Total Type-1 lepra reactions",
+        "I Qtr-2024": "35",
+        "II Qtr-2024": "50",
+        "III Qtr- 2024": "26",
+        "IV Qtr-2024": "18",
+        "Annual 2024": "129"
+    },
+    {
+        "S.NO": "3.c",
+        "Contents": "lepra ReactionType-2 Male",
+        "I Qtr-2024": "10",
+        "II Qtr-2024": "11",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "10",
+        "Annual 2024": "35"
+    },
+    {
+        "S.NO": "3.d",
+        "Contents": "lepra ReactionType-2 Female",
+        "I Qtr-2024": "5",
+        "II Qtr-2024": "3",
+        "III Qtr- 2024": "6",
+        "IV Qtr-2024": "2",
+        "Annual 2024": "16"
+    },
+    {
+        "S.NO": "3.e",
+        "Contents": "Total Type 2 lepra reactions",
+        "I Qtr-2024": "15",
+        "II Qtr-2024": "14",
+        "III Qtr- 2024": "10",
+        "IV Qtr-2024": "12",
+        "Annual 2024": "51"
+    },
+    {
+        "S.NO": "4",
+        "Contents": "Total number of persons provided with MCR footwear",
+        "I Qtr-2024": "192",
+        "II Qtr-2024": "229",
+        "III Qtr- 2024": "232",
+        "IV Qtr-2024": "208",
+        "Annual 2024": "861"
+    },
+    {
+        "S.NO": "5",
+        "Contents": "RCS Male",
+        "I Qtr-2024": "25",
+        "II Qtr-2024": "23",
+        "III Qtr- 2024": "18",
+        "IV Qtr-2024": "20",
+        "Annual 2024": "86"
+    },
+    {
+        "S.NO": "5.a",
+        "Contents": "RCS Female",
+        "I Qtr-2024": "6",
+        "II Qtr-2024": "7",
+        "III Qtr- 2024": "6",
+        "IV Qtr-2024": "16",
+        "Annual 2024": "35"
+    },
+    {
+        "S.NO": "5.b",
+        "Contents": "TOTAL RCS DONE ",
+        "I Qtr-2024": "31",
+        "II Qtr-2024": "30",
+        "III Qtr- 2024": "24",
+        "IV Qtr-2024": "36",
+        "Annual 2024": "121"
+    },
+    {
+        "S.NO": "5.c",
+        "Contents": "Eye Male RCS Done",
+        "I Qtr-2024": "3",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "4"
+    },
+    {
+        "S.NO": "5.d",
+        "Contents": "Eye Female RCS Done",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "5.e",
+        "Contents": "Total Eye RCS Done",
+        "I Qtr-2024": "3",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "4"
+    },
+    {
+        "S.NO": "5.f",
+        "Contents": "Hand Male RCS Done",
+        "I Qtr-2024": "21",
+        "II Qtr-2024": "18",
+        "III Qtr- 2024": "14",
+        "IV Qtr-2024": "15",
+        "Annual 2024": "68"
+    },
+    {
+        "S.NO": "5.g",
+        "Contents": "Hand Female RCS Done",
+        "I Qtr-2024": "6",
+        "II Qtr-2024": "7",
+        "III Qtr- 2024": "6",
+        "IV Qtr-2024": "16",
+        "Annual 2024": "35"
+    },
+    {
+        "S.NO": "5.h",
+        "Contents": "Total Hand RCS Done",
+        "I Qtr-2024": "27",
+        "II Qtr-2024": "25",
+        "III Qtr- 2024": "20",
+        "IV Qtr-2024": "31",
+        "Annual 2024": "103"
+    },
+    {
+        "S.NO": "5.i",
+        "Contents": "Foot Male RCS Done",
+        "I Qtr-2024": "1",
+        "II Qtr-2024": "5",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "5",
+        "Annual 2024": "14"
+    },
+    {
+        "S.NO": "5.j",
+        "Contents": "Foot Female RCS Done",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "5.k",
+        "Contents": "Total Foot RCS Done",
+        "I Qtr-2024": "1",
+        "II Qtr-2024": "5",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "5",
+        "Annual 2024": "14"
+    },
+    {
+        "S.NO": "6",
+        "Contents": "Male Septic Surgeries /Nerve Decompression",
+        "I Qtr-2024": "9",
+        "II Qtr-2024": "7",
+        "III Qtr- 2024": "8",
+        "IV Qtr-2024": "6",
+        "Annual 2024": "30"
+    },
+    {
+        "S.NO": "6.a",
+        "Contents": "Female Septic Surgeries /Nerve Decompression",
+        "I Qtr-2024": "4",
+        "II Qtr-2024": "2",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "3",
+        "Annual 2024": "12"
+    },
+    {
+        "S.NO": "6.b",
+        "Contents": "Total Septic Surgeries /Nerve Decompression",
+        "I Qtr-2024": "13",
+        "II Qtr-2024": "9",
+        "III Qtr- 2024": "11",
+        "IV Qtr-2024": "9",
+        "Annual 2024": "42"
+    },
+    {
+        "S.NO": "7",
+        "Contents": "Male House Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "1"
+    },
+    {
+        "S.NO": "7.a",
+        "Contents": "Female House Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "7.b",
+        "Contents": "Total House Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "1",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "1"
+    },
+    {
+        "S.NO": "7.c",
+        "Contents": "Male Self-Employment Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "1",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "1",
+        "Annual 2024": "2"
+    },
+    {
+        "S.NO": "7.d",
+        "Contents": "Female Self-Employment Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "4"
+    },
+    {
+        "S.NO": "7.e",
+        "Contents": "Total Self-Employment Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "1",
+        "III Qtr- 2024": "4",
+        "IV Qtr-2024": "1",
+        "Annual 2024": "6"
+    },
+    {
+        "S.NO": "7.f",
+        "Contents": "Male Education Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "7.g",
+        "Contents": "Female EducationSupport",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "3"
+    },
+    {
+        "S.NO": "7.h",
+        "Contents": "Total Education Support",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "3",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "3"
+    },
+    {
+        "S.NO": "8",
+        "Contents": "Total Leprosy Beds Available",
+        "I Qtr-2024": "149",
+        "II Qtr-2024": "149",
+        "III Qtr- 2024": "149",
+        "IV Qtr-2024": "149",
+        "Annual 2024": "149"
+    },
+    {
+        "S.NO": "8.a",
+        "Contents": "Total Leprosy Patients Admitted",
+        "I Qtr-2024": "237",
+        "II Qtr-2024": "237",
+        "III Qtr- 2024": "206",
+        "IV Qtr-2024": "218",
+        "Annual 2024": "898"
+    },
+    {
+        "S.NO": "8.b",
+        "Contents": "Reactions Patients Admitted",
+        "I Qtr-2024": "17",
+        "II Qtr-2024": "25",
+        "III Qtr- 2024": "13",
+        "IV Qtr-2024": "6",
+        "Annual 2024": "61"
+    },
+    {
+        "S.NO": "8.c",
+        "Contents": "RCS Patients Admitted",
+        "I Qtr-2024": "54",
+        "II Qtr-2024": "57",
+        "III Qtr- 2024": "37",
+        "IV Qtr-2024": "52",
+        "Annual 2024": "200"
+    },
+    {
+        "S.NO": "8.d",
+        "Contents": "Planter ulcers and Others Patients Admitted",
+        "I Qtr-2024": "166",
+        "II Qtr-2024": "155",
+        "III Qtr- 2024": "156",
+        "IV Qtr-2024": "160",
+        "Annual 2024": "637"
+    },
+    {
+        "S.NO": "8.e",
+        "Contents": "Total no of Beds Occupied Leprosy Patients",
+        "I Qtr-2024": "5012",
+        "II Qtr-2024": "4907",
+        "III Qtr- 2024": "5864",
+        "IV Qtr-2024": "5898",
+        "Annual 2024": "21681"
+    },
+    {
+        "S.NO": "8.f",
+        "Contents": "Bed Occupancy Rate for Leprosy",
+        "I Qtr-2024": "37.4",
+        "II Qtr-2024": "36.6",
+        "III Qtr- 2024": "43.7",
+        "IV Qtr-2024": "44.0",
+        "Annual 2024": "40.4"
+    },
+    {
+        "S.NO": "9",
+        "Contents": "Total TB/DRTB Beds Available",
+        "I Qtr-2024": "15",
+        "II Qtr-2024": "15",
+        "III Qtr- 2024": "15",
+        "IV Qtr-2024": "15",
+        "Annual 2024": "15"
+    },
+    {
+        "S.NO": "9.a",
+        "Contents": "Total  DSTB Patients Admitted",
+        "I Qtr-2024": "12",
+        "II Qtr-2024": "8",
+        "III Qtr- 2024": "6",
+        "IV Qtr-2024": "7",
+        "Annual 2024": "33"
+    },
+    {
+        "S.NO": "9.b",
+        "Contents": "Total  DRTB Patients Admitted",
+        "I Qtr-2024": "0",
+        "II Qtr-2024": "0",
+        "III Qtr- 2024": "0",
+        "IV Qtr-2024": "0",
+        "Annual 2024": "0"
+    },
+    {
+        "S.NO": "9.c",
+        "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+        "I Qtr-2024": "46",
+        "II Qtr-2024": "31",
+        "III Qtr- 2024": "18",
+        "IV Qtr-2024": "23",
+        "Annual 2024": "118"
+    },
+    {
+        "S.NO": "9.d",
+        "Contents": "Bed Occupancy Rate for TB",
+        "I Qtr-2024": "3.4",
+        "II Qtr-2024": "2.3",
+        "III Qtr- 2024": "1.3",
+        "IV Qtr-2024": "1.7",
+        "Annual 2024": "2.2"
+    }
+]

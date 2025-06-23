@@ -1,0 +1,375 @@
+/* Reset basic styles */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background-color: #f7f9fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #FFF8E7;
+  border-right: 1px solid #ddd;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #eaeaea;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #FFF8E7;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #040e6a;
+}
+
+#content-area h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+h2{
+  text-align: center;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.filters select {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+
+/* Table container to enable vertical scroll if needed */
+
+.table-container {
+  max-height: 400px; /* or your preferred height */
+  overflow-y: auto;
+  margin-top: 10px;
+  /* Remove or comment out the border line */
+  /* border: 1px solid #ccc; */
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Freeze/sticky header row */
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #F39C12;
+  color: #333;
+  text-align: left;
+  z-index: 1;
+}
+
+/* Header cells and body cells */
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.sidebar a.active-link {
+  color: white;
+  background-color: #007bff; /* Blue background */
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: block;
+}
+.section-title.active-link {
+  color: white;
+  background-color: #007bff; /* Blue background */
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: block;
+}
+.subsection-title.active-link {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block; /* changed from inline-block */
+  width: 100%;     /* ensures full width */
+}
+
+/* Feature for subsections */
+nav ul {
+  list-style: none;
+  padding-left: 10px;
+  margin: 5px 0;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.subsection {
+  margin-top: 10px;
+}subs
+
+.subsection-title {
+  font-weight: bold;
+  /* display: block; */
+  cursor: pointer;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.collapsible {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.collapsible-content {
+  display: none;
+  padding-left: 15px;
+}
+
+.collapsible.active + .collapsible-content {
+  display: block;
+}
+
+.subsection-content {
+  display: none;
+  padding-left: 10px;
+}
+
+.subsection-title {
+  cursor: pointer;
+  margin: 10px 0;
+  display: block;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95em;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.styled-table thead tr {
+  background-color: #f6ffcc;
+  color: #333;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* GRAPHS AND CHART */
+.table-with-gap {
+  margin-bottom: 40px;
+}
+
+#opd-content table,
+#tb-cases-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+#opd-content table th,
+#opd-content table td,
+#tb-cases-content table th,
+#tb-cases-content table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background: #fff;
+}
+canvas {
+  background: #a8ad44;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%; /* responsive */
+  height: 400px; /* increase from default */
+  max-height: 500px;
+}
+
+
+
+/* Make hamburger always visible and fixed */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  color: #333;
+}
+/* Hamburger button styling */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* Sidebar default */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 30px 20px;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100vh;
+    z-index: 1500;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  .sidebar.active ~ .main-content {
+    margin-left: 250px;
+  }
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "2020": "6",
+    "2021": "6",
+    "2022": "5",
+    "2023": "5",
+    "2024": "5",
+    "S.NO": "1",
+    "DRTB contents": "No. of districts covered"
+  },
+  {
+    "2020": "76",
+    "2021": "193",
+    "2022": "48",
+    "2023": "131",
+    "2024": "86",
+    "S.NO": "2",
+    "DRTB contents": "No. of DRTB initial defaulters visited."
+  },
+  {
+    "2020": "73",
+    "2021": "154",
+    "2022": "34",
+    "2023": "202",
+    "2024": "99",
+    "S.NO": "2.a",
+    "DRTB contents": "No of DRTB initial defaulters patients treatment started."
+  },
+  {
+    "2020": "249",
+    "2021": "265",
+    "2022": "163",
+    "2023": "271",
+    "2024": "169",
+    "S.NO": "3",
+    "DRTB contents": "No. of DR TB patients  visited."
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "56",
+    "2023": "10285",
+    "2024": "8869",
+    "S.NO": "4",
+    "DRTB contents": "No. of DRTB Contacts screened."
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "52",
+    "2023": "146",
+    "2024": "109",
+    "S.NO": "4.a",
+    "DRTB contents": "No. Of Presumptive DR TB cases identified among Contacts"
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "1",
+    "2023": "133",
+    "2024": "105",
+    "S.NO": "4.b",
+    "DRTB contents": "No. Of Presumptive DRTB cases sputum transported for screening. (NAAT)"
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "6",
+    "2023": "2",
+    "2024": "5",
+    "S.NO": "4.c",
+    "DRTB contents": "No of DRTB patients diagnosed.  (Rif resistance)"
+  },
+  {
+    "2020": "92",
+    "2021": "14",
+    "2022": "22",
+    "2023": "20",
+    "2024": "44",
+    "S.NO": "5",
+    "DRTB contents": "No. of DRTB irregular patients visited. "
+  },
+  {
+    "2020": "0",
+    "2021": "12",
+    "2022": "21",
+    "2023": "10",
+    "2024": "19",
+    "S.NO": "5.a",
+    "DRTB contents": "No. of DRTB irregular  patients retrieved."
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "14",
+    "2023": "9",
+    "2024": "8",
+    "S.NO": "6",
+    "DRTB contents": "No. of DRTB defaulters patients visited."
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "77",
+    "2023": "7",
+    "2024": "7",
+    "S.NO": "6.a",
+    "DRTB contents": "No. of DRTB defaulters patients retrieved."
+  },
+  {
+    "2020": "0",
+    "2021": "0",
+    "2022": "77",
+    "2023": "436",
+    "2024": "458",
+    "S.NO": "7",
+    "DRTB contents": "No. of DR TB cases due Follow up sputum samples transported."
+  },
+  {
+    "2020": "85",
+    "2021": "34",
+    "2022": "53",
+    "2023": "87",
+    "2024": "75",
+    "S.NO": "8",
+    "DRTB contents": "No. of DR TB cases provided Nutritional support."
+  },
+  {
+    "2020": "13",
+    "2021": "27",
+    "2022": "12",
+    "2023": "10",
+    "2024": "14",
+    "S.NO": "9",
+    "DRTB contents": "No. of DRTB patients LEP supported"
+  }
+]

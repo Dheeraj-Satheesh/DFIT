@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2019": "99",
+        "II Qtr 2019": "120",
+        "III Qtr 2019": "102",
+        "IV Qtr 2019": "128",
+        "Total 2019": "449"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2019": "57",
+        "II Qtr 2019": "57",
+        "III Qtr 2019": "45",
+        "IV Qtr 2019": "94",
+        "Total 2019": "253"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2019": "39",
+        "II Qtr 2019": "26",
+        "III Qtr 2019": "34",
+        "IV Qtr 2019": "30",
+        "Total 2019": "129"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "1",
+        "Total 2019": "1"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2019": "195",
+        "II Qtr 2019": "203",
+        "III Qtr 2019": "181",
+        "IV Qtr 2019": "253",
+        "Total 2019": "832"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2019": "8",
+        "II Qtr 2019": "13",
+        "III Qtr 2019": "11",
+        "IV Qtr 2019": "17",
+        "Total 2019": "49"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2019": "2",
+        "II Qtr 2019": "1",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "3"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2019": "2",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "1",
+        "Total 2019": "3"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2019": "18",
+        "II Qtr 2019": "7",
+        "III Qtr 2019": "19",
+        "IV Qtr 2019": "31",
+        "Total 2019": "75"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2019": "30",
+        "II Qtr 2019": "21",
+        "III Qtr 2019": "30",
+        "IV Qtr 2019": "49",
+        "Total 2019": "130"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2019": "225",
+        "II Qtr 2019": "224",
+        "III Qtr 2019": "211",
+        "IV Qtr 2019": "302",
+        "Total 2019": "962"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2019": "64",
+        "II Qtr 2019": "99",
+        "III Qtr 2019": "120",
+        "IV Qtr 2019": "102",
+        "Total 2019": "385"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2019": "61",
+        "II Qtr 2019": "82",
+        "III Qtr 2019": "104",
+        "IV Qtr 2019": "82",
+        "Total 2019": "329"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2019": "2",
+        "II Qtr 2019": "4",
+        "III Qtr 2019": "1",
+        "IV Qtr 2019": "1",
+        "Total 2019": "8"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2019": "1",
+        "II Qtr 2019": "13",
+        "III Qtr 2019": "15",
+        "IV Qtr 2019": "19",
+        "Total 2019": "48"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2019": "95.3125",
+        "II Qtr 2019": "82.82828282828282",
+        "III Qtr 2019": "86.7666667",
+        "IV Qtr 2019": "80.3921568627451",
+        "Total 2019": "85.45454545454545"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2019": "15",
+        "II Qtr 2019": "12",
+        "III Qtr 2019": "14",
+        "IV Qtr 2019": "11",
+        "Total 2019": "52"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2019": "13",
+        "II Qtr 2019": "9",
+        "III Qtr 2019": "9",
+        "IV Qtr 2019": "10",
+        "Total 2019": "41"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2019": "1",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "1",
+        "IV Qtr 2019": "0",
+        "Total 2019": "2"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2019": "1",
+        "II Qtr 2019": "3",
+        "III Qtr 2019": "4",
+        "IV Qtr 2019": "1",
+        "Total 2019": "9"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2019": "86.7666667",
+        "II Qtr 2019": "75",
+        "III Qtr 2019": "64.28571428571429",
+        "IV Qtr 2019": "90.9090909090909",
+        "Total 2019": "78.84615384615384"
+    }
+]

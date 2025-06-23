@@ -1,0 +1,322 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        
+        "I Qtr 2023": "310",
+        "II Qtr 2023": "387",
+        "III Qtr 2023": "288",
+        "IV Qtr 2023": "267",
+        "Total 2023": "1252",
+        "%": "87.32394366197182"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "2",
+        "IV Qtr 2023": "10",
+        "Total 2023": "13",
+        "%": "0.28169014084507044"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        
+        "I Qtr 2023": "9",
+        "II Qtr 2023": "17",
+        "III Qtr 2023": "16",
+        "IV Qtr 2023": "15",
+        "Total 2023": "57",
+        "%": "2.535211267605634"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        
+        "I Qtr 2023": "5",
+        "II Qtr 2023": "4",
+        "III Qtr 2023": "1",
+        "IV Qtr 2023": "1",
+        "Total 2023": "11",
+        "%": "1.408450704225352"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        
+        "I Qtr 2023": "11",
+        "II Qtr 2023": "9",
+        "III Qtr 2023": "5",
+        "IV Qtr 2023": "5",
+        "Total 2023": "30",
+        "%": "3.0985915492957745"
+    },
+    {
+        "Type of cases ": "NSP Transferred out",
+        
+        "I Qtr 2023": "2",
+        "II Qtr 2023": "2",
+        "III Qtr 2023": "6",
+        "IV Qtr 2023": "1",
+        "Total 2023": "11",
+        "%": "0.5633802816901409"
+    },
+    {
+        "Type of cases ": "NSP Switched to IV",
+        
+        "I Qtr 2023": "17",
+        "II Qtr 2023": "16",
+        "III Qtr 2023": "9",
+        "IV Qtr 2023": "14",
+        "Total 2023": "56",
+        "%": "4.788732394366197"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2023": "355",
+        "II Qtr 2023": "435",
+        "III Qtr 2023": "327",
+        "IV Qtr 2023": "313",
+        "Total 2023": "1430",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        
+        "I Qtr 2023": "467",
+        "II Qtr 2023": "551",
+        "III Qtr 2023": "460",
+        "IV Qtr 2023": "421",
+        "Total 2023": "1899",
+        "%": "95.69672131147541"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        
+        "I Qtr 2023": "12",
+        "II Qtr 2023": "13",
+        "III Qtr 2023": "12",
+        "IV Qtr 2023": "22",
+        "Total 2023": "59",
+        "%": "2.459016393442623"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        
+        "I Qtr 2023": "5",
+        "II Qtr 2023": "7",
+        "III Qtr 2023": "11",
+        "IV Qtr 2023": "4",
+        "Total 2023": "27",
+        "%": "1.0245901639344261"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred out ",
+        
+        "I Qtr 2023": "3",
+        "II Qtr 2023": "1",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "4",
+        "%": "0.6147540983606558"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to IV",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "2",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "1",
+        "Total 2023": "4",
+        "%": "0.20491803278688525"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2023": "488",
+        "II Qtr 2023": "574",
+        "III Qtr 2023": "483",
+        "IV Qtr 2023": "448",
+        "Total 2023": "1993",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        
+        "I Qtr 2023": "86",
+        "II Qtr 2023": "60",
+        "III Qtr 2023": "59",
+        "IV Qtr 2023": "64",
+        "Total 2023": "269",
+        "%": "82.6923076923077"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "3",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "3",
+        "Total 2023": "6",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        
+        "I Qtr 2023": "4",
+        "II Qtr 2023": "2",
+        "III Qtr 2023": "4",
+        "IV Qtr 2023": "3",
+        "Total 2023": "13",
+        "%": "3.8461538461538463"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "3",
+        "IV Qtr 2023": "2",
+        "Total 2023": "6",
+        "%": "0.9615384615384616"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        
+        "I Qtr 2023": "4",
+        "II Qtr 2023": "3",
+        "III Qtr 2023": "1",
+        "IV Qtr 2023": "5",
+        "Total 2023": "13",
+        "%": "3.8461538461538463"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred out ",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "1",
+        "IV Qtr 2023": "1",
+        "Total 2023": "3",
+        "%": "0.9615384615384616"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to IV",
+        
+        "I Qtr 2023": "8",
+        "II Qtr 2023": "10",
+        "III Qtr 2023": "2",
+        "IV Qtr 2023": "8",
+        "Total 2023": "28",
+        "%": "7.6923076923076925"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2023": "104",
+        "II Qtr 2023": "78",
+        "III Qtr 2023": "70",
+        "IV Qtr 2023": "86",
+        "Total 2023": "338",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        
+        "I Qtr 2023": "67",
+        "II Qtr 2023": "66",
+        "III Qtr 2023": "67",
+        "IV Qtr 2023": "98",
+        "Total 2023": "298",
+        "%": "97.10144927536231"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "3",
+        "III Qtr 2023": "3",
+        "IV Qtr 2023": "1",
+        "Total 2023": "7",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "1",
+        "%": "1.4492753623188406"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "1",
+        "III Qtr 2023": "1",
+        "IV Qtr 2023": "0",
+        "Total 2023": "2",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred out",
+        
+        "I Qtr 2023": "0",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "0",
+        "Total 2023": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to IV",
+        
+        "I Qtr 2023": "1",
+        "II Qtr 2023": "0",
+        "III Qtr 2023": "0",
+        "IV Qtr 2023": "1",
+        "Total 2023": "2",
+        "%": "1.4492753623188406"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2023": "69",
+        "II Qtr 2023": "70",
+        "III Qtr 2023": "71",
+        "IV Qtr 2023": "100",
+        "Total 2023": "310",
+        "%": ""
+    }
+]

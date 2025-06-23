@@ -1,0 +1,290 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        "I Qtr 2024": "186",
+        "II Qtr 2024": "247",
+        "III Qtr 2024": "195",
+        "IV Qtr 2024": "145",
+        "Total 2024": "773",
+        "%": "88"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "1",
+        "Total 2024": "1",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        "I Qtr 2024": "3",
+        "II Qtr 2024": "5",
+        "III Qtr 2024": "2",
+        "IV Qtr 2024": "8",
+        "Total 2024": "18",
+        "%": "2"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        "I Qtr 2024": "2",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "2",
+        "Total 2024": "5",
+        "%": "1"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        "I Qtr 2024": "7",
+        "II Qtr 2024": "11",
+        "III Qtr 2024": "11",
+        "IV Qtr 2024": "7",
+        "Total 2024": "36",
+        "%": "4"
+    },
+    {
+        "Type of cases ": "NSP Transferred o",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "1",
+        "Total 2024": "1",
+        "%": "0.11"
+    },
+    {
+        "Type of cases ": "NSP Switched to ",
+        "I Qtr 2024": "11",
+        "II Qtr 2024": "11",
+        "III Qtr 2024": "11",
+        "IV Qtr 2024": "7",
+        "Total 2024": "40",
+        "%": "4.58"
+    },
+    {
+        "Type of cases ": "Tot",
+        "I Qtr 2024": "209",
+        "II Qtr 2024": "274",
+        "III Qtr 2024": "220",
+        "IV Qtr 2024": "171",
+        "Total 2024": "874",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        "I Qtr 2024": "481",
+        "II Qtr 2024": "589",
+        "III Qtr 2024": "535",
+        "IV Qtr 2024": "402",
+        "Total 2024": "2007",
+        "%": "94"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        "I Qtr 2024": "10",
+        "II Qtr 2024": "13",
+        "III Qtr 2024": "11",
+        "IV Qtr 2024": "8",
+        "Total 2024": "42",
+        "%": "2"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "0",
+        "Total 2024": "1",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        "I Qtr 2024": "15",
+        "II Qtr 2024": "16",
+        "III Qtr 2024": "20",
+        "IV Qtr 2024": "14",
+        "Total 2024": "65",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred ou",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "5",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "1",
+        "Total 2024": "7",
+        "%": "0.33"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to ",
+        "I Qtr 2024": "5",
+        "II Qtr 2024": "10",
+        "III Qtr 2024": "7",
+        "IV Qtr 2024": "2",
+        "Total 2024": "24",
+        "%": "1.12"
+    },
+    {
+        "Type of cases ": "Tot",
+        "I Qtr 2024": "511",
+        "II Qtr 2024": "633",
+        "III Qtr 2024": "575",
+        "IV Qtr 2024": "427",
+        "Total 2024": "2146",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        "I Qtr 2024": "62",
+        "II Qtr 2024": "50",
+        "III Qtr 2024": "75",
+        "IV Qtr 2024": "29",
+        "Total 2024": "216",
+        "%": "86"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        "I Qtr 2024": "4",
+        "II Qtr 2024": "1",
+        "III Qtr 2024": "3",
+        "IV Qtr 2024": "5",
+        "Total 2024": "13",
+        "%": "5"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        "I Qtr 2024": "3",
+        "II Qtr 2024": "2",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "5",
+        "%": "2"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        "I Qtr 2024": "1",
+        "II Qtr 2024": "2",
+        "III Qtr 2024": "3",
+        "IV Qtr 2024": "1",
+        "Total 2024": "7",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred ou",
+        "I Qtr 2024": "1",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "1",
+        "%": "0.40"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to ",
+        "I Qtr 2024": "4",
+        "II Qtr 2024": "4",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "8",
+        "%": "3.20"
+    },
+    {
+        "Type of cases ": "Tot",
+        "I Qtr 2024": "75",
+        "II Qtr 2024": "59",
+        "III Qtr 2024": "81",
+        "IV Qtr 2024": "35",
+        "Total 2024": "250",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        "I Qtr 2024": "72",
+        "II Qtr 2024": "58",
+        "III Qtr 2024": "68",
+        "IV Qtr 2024": "69",
+        "Total 2024": "267",
+        "%": "94"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        "I Qtr 2024": "1",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "1",
+        "Total 2024": "3",
+        "%": "1"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        "I Qtr 2024": "6",
+        "II Qtr 2024": "2",
+        "III Qtr 2024": "2",
+        "IV Qtr 2024": "1",
+        "Total 2024": "11",
+        "%": "4"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred o",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "1",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "1",
+        "%": "0.35"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to ",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "2",
+        "IV Qtr 2024": "0",
+        "Total 2024": "2",
+        "%": "0.70"
+    },
+    {
+        "Type of cases ": "Tot",
+        "I Qtr 2024": "79",
+        "II Qtr 2024": "61",
+        "III Qtr 2024": "73",
+        "IV Qtr 2024": "71",
+        "Total 2024": "284",
+        "%": ""
+    }
+]

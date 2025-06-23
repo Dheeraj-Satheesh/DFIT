@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2022": "81",
+        "II Qtr 2022": "101",
+        "III Qtr 2022": "116",
+        "IV Qtr 2022": "89",
+        "Total 2022": "387"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2022": "88",
+        "II Qtr 2022": "70",
+        "III Qtr 2022": "71",
+        "IV Qtr 2022": "82",
+        "Total 2022": "311"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2022": "27",
+        "II Qtr 2022": "33",
+        "III Qtr 2022": "29",
+        "IV Qtr 2022": "46",
+        "Total 2022": "135"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2022": "1",
+        "II Qtr 2022": "1",
+        "III Qtr 2022": "1",
+        "IV Qtr 2022": "0",
+        "Total 2022": "3"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2022": "197",
+        "II Qtr 2022": "205",
+        "III Qtr 2022": "217",
+        "IV Qtr 2022": "217",
+        "Total 2022": "836"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2022": "8",
+        "II Qtr 2022": "16",
+        "III Qtr 2022": "24",
+        "IV Qtr 2022": "25",
+        "Total 2022": "73"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2022": "0",
+        "II Qtr 2022": "1",
+        "III Qtr 2022": "0",
+        "IV Qtr 2022": "0",
+        "Total 2022": "1"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2022": "1",
+        "II Qtr 2022": "1",
+        "III Qtr 2022": "1",
+        "IV Qtr 2022": "0",
+        "Total 2022": "3"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2022": "32",
+        "II Qtr 2022": "19",
+        "III Qtr 2022": "19",
+        "IV Qtr 2022": "29",
+        "Total 2022": "99"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2022": "41",
+        "II Qtr 2022": "37",
+        "III Qtr 2022": "44",
+        "IV Qtr 2022": "54",
+        "Total 2022": "176"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2022": "238",
+        "II Qtr 2022": "242",
+        "III Qtr 2022": "261",
+        "IV Qtr 2022": "271",
+        "Total 2022": "1012"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2022": "72",
+        "II Qtr 2022": "81",
+        "III Qtr 2022": "101",
+        "IV Qtr 2022": "116",
+        "Total 2022": "370"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2022": "59",
+        "II Qtr 2022": "73",
+        "III Qtr 2022": "97",
+        "IV Qtr 2022": "109",
+        "Total 2022": "338"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2022": "1",
+        "II Qtr 2022": "3",
+        "III Qtr 2022": "1",
+        "IV Qtr 2022": "0",
+        "Total 2022": "5"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2022": "12",
+        "II Qtr 2022": "5",
+        "III Qtr 2022": "3",
+        "IV Qtr 2022": "7",
+        "Total 2022": "27"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2022": "81.94444444444444",
+        "II Qtr 2022": "90.12345679012346",
+        "III Qtr 2022": "96.03960396039604",
+        "IV Qtr 2022": "93.96551724137932",
+        "Total 2022": "91.35135135135135"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2022": "12",
+        "II Qtr 2022": "9",
+        "III Qtr 2022": "18",
+        "IV Qtr 2022": "25",
+        "Total 2022": "64"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2022": "9",
+        "II Qtr 2022": "9",
+        "III Qtr 2022": "16",
+        "IV Qtr 2022": "24",
+        "Total 2022": "58"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2022": "0",
+        "II Qtr 2022": "0",
+        "III Qtr 2022": "0",
+        "IV Qtr 2022": "0",
+        "Total 2022": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2022": "3",
+        "II Qtr 2022": "0",
+        "III Qtr 2022": "2",
+        "IV Qtr 2022": "1",
+        "Total 2022": "6"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2022": "75",
+        "II Qtr 2022": "100",
+        "III Qtr 2022": "88.88888888888889",
+        "IV Qtr 2022": "96",
+        "Total 2022": "90.625"
+    }
+]

@@ -1,0 +1,322 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        
+        "I Qtr 2021": "116",
+        "II Qtr 2021": "90",
+        "III Qtr 2021": "64",
+        "IV Qtr 2021": "59",
+        "Total 2021": "329",
+        "%": "92.06349206349206"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        
+        "I Qtr 2021": "5",
+        "II Qtr 2021": "4",
+        "III Qtr 2021": "3",
+        "IV Qtr 2021": "1",
+        "Total 2021": "13",
+        "%": "3.9682539682539684"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        
+        "I Qtr 2021": "3",
+        "II Qtr 2021": "2",
+        "III Qtr 2021": "4",
+        "IV Qtr 2021": "2",
+        "Total 2021": "11",
+        "%": "2.380952380952381"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Transferred out",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Switched to IV",
+        
+        "I Qtr 2021": "2",
+        "II Qtr 2021": "3",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "5",
+        "Total 2021": "10",
+        "%": "1.5873015873015872"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2021": "126",
+        "II Qtr 2021": "99",
+        "III Qtr 2021": "71",
+        "IV Qtr 2021": "67",
+        "Total 2021": "363",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        
+        "I Qtr 2021": "107",
+        "II Qtr 2021": "83",
+        "III Qtr 2021": "68",
+        "IV Qtr 2021": "71",
+        "Total 2021": "329",
+        "%": "95.53571428571429"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        
+        "I Qtr 2021": "5",
+        "II Qtr 2021": "4",
+        "III Qtr 2021": "3",
+        "IV Qtr 2021": "4",
+        "Total 2021": "16",
+        "%": "4.464285714285714"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "1",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "1",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred out ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to IV",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "1",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "1",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2021": "112",
+        "II Qtr 2021": "89",
+        "III Qtr 2021": "71",
+        "IV Qtr 2021": "75",
+        "Total 2021": "347",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        
+        "I Qtr 2021": "14",
+        "II Qtr 2021": "9",
+        "III Qtr 2021": "12",
+        "IV Qtr 2021": "8",
+        "Total 2021": "43",
+        "%": "87.5"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        
+        "I Qtr 2021": "1",
+        "II Qtr 2021": "4",
+        "III Qtr 2021": "2",
+        "IV Qtr 2021": "0",
+        "Total 2021": "7",
+        "%": "6.25"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "1",
+        "III Qtr 2021": "1",
+        "IV Qtr 2021": "0",
+        "Total 2021": "2",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred out ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to IV",
+        
+        "I Qtr 2021": "1",
+        "II Qtr 2021": "1",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "2",
+        "Total 2021": "4",
+        "%": "6.25"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2021": "16",
+        "II Qtr 2021": "15",
+        "III Qtr 2021": "15",
+        "IV Qtr 2021": "10",
+        "Total 2021": "56",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        
+        "I Qtr 2021": "13",
+        "II Qtr 2021": "19",
+        "III Qtr 2021": "11",
+        "IV Qtr 2021": "27",
+        "Total 2021": "70",
+        "%": "100"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "3",
+        "Total 2021": "3",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred out",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to IV",
+        
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "Total",
+        
+        "I Qtr 2021": "13",
+        "II Qtr 2021": "19",
+        "III Qtr 2021": "11",
+        "IV Qtr 2021": "30",
+        "Total 2021": "73",
+        "%": "0"
+    }
+]

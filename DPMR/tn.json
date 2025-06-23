@@ -1,0 +1,182 @@
+[
+  {
+    "2020": "14",
+    "2021": "14",
+    "2022": "13",
+    "2023": "15",
+    "2024": "12",
+    "S.NO": "1",
+    "DPMR Contents": "Number of Districts covered"
+  },
+  {
+    "2020": "5497",
+    "2021": "5382",
+    "2022": "6291",
+    "2023": "6163",
+    "2024": "5955",
+    "S.NO": "2",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the beginning of the year"
+  },
+  {
+    "2020": "136",
+    "2021": "176",
+    "2022": "136",
+    "2023": "217",
+    "2024": "66",
+    "S.NO": "3",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities deleted from the list "
+  },
+  {
+    "2020": "21",
+    "2021": "16",
+    "2022": "8",
+    "2023": "9",
+    "2024": "39",
+    "S.NO": "4",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities added to the list "
+  },
+  {
+    "2020": "5382",
+    "2021": "5206",
+    "2022": "6163",
+    "2023": "5955",
+    "2024": "5928",
+    "S.NO": "5",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the end of the year"
+  },
+  {
+    "2020": "1245",
+    "2021": "1254",
+    "2022": "1194",
+    "2023": "1093",
+    "2024": "900",
+    "S.NO": "6",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities visited during the year"
+  },
+  {
+    "2020": "705",
+    "2021": "708",
+    "2022": "505",
+    "2023": "492",
+    "2024": "497",
+    "S.NO": "7",
+    "DPMR Contents": "Number of patients practising self care regularly"
+  },
+  {
+    "2020": "884",
+    "2021": "944",
+    "2022": "973",
+    "2023": "896",
+    "2024": "746",
+    "S.NO": "8",
+    "DPMR Contents": "Number of patients required foot wear"
+  },
+  {
+    "2020": "732",
+    "2021": "841",
+    "2022": "817",
+    "2023": "821",
+    "2024": "690",
+    "S.NO": "9",
+    "DPMR Contents": "Number of patients wearing appropriate foot wear regularly"
+  },
+  {
+    "2020": "58",
+    "2021": "130",
+    "2022": "146",
+    "2023": "45",
+    "2024": "23",
+    "S.NO": "10",
+    "DPMR Contents": "Number of patients having Disability Certificate."
+  },
+  {
+    "2020": "919",
+    "2021": "743",
+    "2022": "872",
+    "2023": "843",
+    "2024": "695",
+    "S.NO": "11",
+    "DPMR Contents": "Number of patients receiving Pension."
+  },
+  {
+    "2020": "67",
+    "2021": "135",
+    "2022": "110",
+    "2023": "67",
+    "2024": "97",
+    "S.NO": "12",
+    "DPMR Contents": "Number of patients identified for RCS."
+  },
+  {
+    "2020": "10",
+    "2021": "36",
+    "2022": "34",
+    "2023": "21",
+    "2024": "43",
+    "S.NO": "13",
+    "DPMR Contents": "Number of patients RCS done"
+  },
+  {
+    "2020": "40",
+    "2021": "39",
+    "2022": "31",
+    "2023": "44",
+    "2024": "43",
+    "S.NO": "14",
+    "DPMR Contents": "Number of persons identified for LEP support during the year"
+  },
+  {
+    "2020": "19",
+    "2021": "24",
+    "2022": "17",
+    "2023": "11",
+    "2024": "15",
+    "S.NO": "15",
+    "DPMR Contents": "Number of persons received LEP support during the year"
+  },
+  {
+    "2020": "66",
+    "2021": "37",
+    "2022": "12",
+    "2023": "12",
+    "2024": "9",
+    "S.NO": "16",
+    "DPMR Contents": "Number of new leprosy cases confirmed during during field visit"
+  },
+  {
+    "2020": "259",
+    "2021": "273",
+    "2022": "351",
+    "2023": "307",
+    "2024": "225",
+    "S.NO": "17",
+    "DPMR Contents": "Number of Under treatment patients visited"
+  },
+  {
+    "2020": "257",
+    "2021": "262",
+    "2022": "343",
+    "2023": "298",
+    "2024": "222",
+    "S.NO": "18",
+    "DPMR Contents": "Number of under treatment patients taking regular treatment"
+  },
+  {
+    "2020": "266",
+    "2021": "208",
+    "2022": "144",
+    "2023": "129",
+    "2024": "101",
+    "S.NO": "19",
+    "DPMR Contents": "Number of lepra reaction patients visited"
+  },
+  {
+    "2020": "260",
+    "2021": "198",
+    "2022": "141",
+    "2023": "113",
+    "2024": "100",
+    "S.NO": "20",
+    "DPMR Contents": "Number of lepra reaction patients taking regular treatment"
+  }
+]

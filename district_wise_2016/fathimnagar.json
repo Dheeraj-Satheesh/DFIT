@@ -1,0 +1,632 @@
+[
+  {
+    "S.NO": "1",
+    "Contents": "Total number of outpatients treated",
+    "I Qtr-2016": "1114",
+    "II Qtr-2016": "1058",
+    "III Qtr- 2016": "1204",
+    "IV Qtr-2016": "1118",
+    "Annual 2016": "4494"
+  },
+  {
+    "S.NO": "1.a",
+    "Contents": "Skin diseases",
+    "I Qtr-2016": "792",
+    "II Qtr-2016": "796",
+    "III Qtr- 2016": "790",
+    "IV Qtr-2016": "811",
+    "Annual 2016": "3189"
+  },
+  {
+    "S.NO": "1.b",
+    "Contents": "Respiratory symtomatics",
+    "I Qtr-2016": "308",
+    "II Qtr-2016": "230",
+    "III Qtr- 2016": "282",
+    "IV Qtr-2016": "265",
+    "Annual 2016": "1085"
+  },
+  {
+    "S.NO": "1.c",
+    "Contents": "Others",
+    "I Qtr-2016": "14",
+    "II Qtr-2016": "32",
+    "III Qtr- 2016": "132",
+    "IV Qtr-2016": "42",
+    "Annual 2016": "220"
+  },
+  {
+    "S.NO": "2",
+    "Contents": "Adult-PB",
+    "I Qtr-2016": "1",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "3",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "4"
+  },
+  {
+    "S.NO": "2.a",
+    "Contents": "Adult-MB",
+    "I Qtr-2016": "7",
+    "II Qtr-2016": "4",
+    "III Qtr- 2016": "7",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "20"
+  },
+  {
+    "S.NO": "2.b",
+    "Contents": "Adult-Total",
+    "I Qtr-2016": "8",
+    "II Qtr-2016": "4",
+    "III Qtr- 2016": "10",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "24"
+  },
+  {
+    "S.NO": "2.c",
+    "Contents": "Children-PB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "1"
+  },
+  {
+    "S.NO": "2.d",
+    "Contents": "Children-MB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.e",
+    "Contents": "Children-Total",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "1"
+  },
+  {
+    "S.NO": "2.f",
+    "Contents": "Total No. of new leprosy cases detected",
+    "I Qtr-2016": "8",
+    "II Qtr-2016": "5",
+    "III Qtr- 2016": "10",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "25"
+  },
+  {
+    "S.NO": "2.g",
+    "Contents": "Relapse Cases",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.h",
+    "Contents": "Female-PB",
+    "I Qtr-2016": "1",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "3"
+  },
+  {
+    "S.NO": "2.i",
+    "Contents": "Female-MB",
+    "I Qtr-2016": "2",
+    "II Qtr-2016": "2",
+    "III Qtr- 2016": "1",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "6"
+  },
+  {
+    "S.NO": "2.j",
+    "Contents": "Female-Total",
+    "I Qtr-2016": "3",
+    "II Qtr-2016": "2",
+    "III Qtr- 2016": "3",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "9"
+  },
+  {
+    "S.NO": "2.k",
+    "Contents": "Adult disability G-I-PB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.l",
+    "Contents": "Adult disability G-I-MB",
+    "I Qtr-2016": "2",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "4",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "8"
+  },
+  {
+    "S.NO": "2.m",
+    "Contents": "Total Adult disability G-I",
+    "I Qtr-2016": "2",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "4",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "8"
+  },
+  {
+    "S.NO": "2.n",
+    "Contents": "Adult disability G- II-PB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.o",
+    "Contents": "Adult disability G-II-MB",
+    "I Qtr-2016": "3",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "1",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "5"
+  },
+  {
+    "S.NO": "2.p",
+    "Contents": "Total Adult disability G-II",
+    "I Qtr-2016": "3",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "1",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "5"
+  },
+  {
+    "S.NO": "2.q",
+    "Contents": "Children disability G-I-PB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.r",
+    "Contents": "Children disability G-I-MB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.s",
+    "Contents": "Total Children disability G-I",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.t",
+    "Contents": "Children disability G-II-PB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.u",
+    "Contents": "Children disability G-II-MB",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "2.v",
+    "Contents": "Total Children disability G-II",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "3",
+    "Contents": "lepra ReactionType-1 Male",
+    "I Qtr-2016": "9",
+    "II Qtr-2016": "8",
+    "III Qtr- 2016": "15",
+    "IV Qtr-2016": "8",
+    "Annual 2016": "40"
+  },
+  {
+    "S.NO": "3.a",
+    "Contents": "lepra ReactionType-1 Female",
+    "I Qtr-2016": "5",
+    "II Qtr-2016": "4",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "3",
+    "Annual 2016": "14"
+  },
+  {
+    "S.NO": "3.b",
+    "Contents": "Total Type-1 lepra reactions",
+    "I Qtr-2016": "14",
+    "II Qtr-2016": "12",
+    "III Qtr- 2016": "17",
+    "IV Qtr-2016": "11",
+    "Annual 2016": "54"
+  },
+  {
+    "S.NO": "3.c",
+    "Contents": "lepra ReactionType-2 Male",
+    "I Qtr-2016": "12",
+    "II Qtr-2016": "3",
+    "III Qtr- 2016": "4",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "21"
+  },
+  {
+    "S.NO": "3.d",
+    "Contents": "lepra ReactionType-2 Female",
+    "I Qtr-2016": "3",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "6"
+  },
+  {
+    "S.NO": "3.e",
+    "Contents": "Total Type 2 lepra reactions",
+    "I Qtr-2016": "15",
+    "II Qtr-2016": "3",
+    "III Qtr- 2016": "6",
+    "IV Qtr-2016": "3",
+    "Annual 2016": "27"
+  },
+  {
+    "S.NO": "4",
+    "Contents": "Total number of persons provided with MCR footwear",
+    "I Qtr-2016": "107",
+    "II Qtr-2016": "114",
+    "III Qtr- 2016": "77",
+    "IV Qtr-2016": "80",
+    "Annual 2016": "378"
+  },
+  {
+    "S.NO": "5",
+    "Contents": "RCS Male",
+    "I Qtr-2016": "18",
+    "II Qtr-2016": "11",
+    "III Qtr- 2016": "8",
+    "IV Qtr-2016": "8",
+    "Annual 2016": "45"
+  },
+  {
+    "S.NO": "5.a",
+    "Contents": "RCS Female",
+    "I Qtr-2016": "4",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "8"
+  },
+  {
+    "S.NO": "5.b",
+    "Contents": "TOTAL RCS DONE ",
+    "I Qtr-2016": "22",
+    "II Qtr-2016": "11",
+    "III Qtr- 2016": "10",
+    "IV Qtr-2016": "10",
+    "Annual 2016": "53"
+  },
+  {
+    "S.NO": "5.c",
+    "Contents": "Eye Male RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "1",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "2"
+  },
+  {
+    "S.NO": "5.d",
+    "Contents": "Eye Female RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "1"
+  },
+  {
+    "S.NO": "5.e",
+    "Contents": "Total Eye RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "1",
+    "IV Qtr-2016": "2",
+    "Annual 2016": "3"
+  },
+  {
+    "S.NO": "5.f",
+    "Contents": "Hand Male RCS Done",
+    "I Qtr-2016": "8",
+    "II Qtr-2016": "10",
+    "III Qtr- 2016": "5",
+    "IV Qtr-2016": "7",
+    "Annual 2016": "30"
+  },
+  {
+    "S.NO": "5.g",
+    "Contents": "Hand Female RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "3"
+  },
+  {
+    "S.NO": "5.h",
+    "Contents": "Total Hand RCS Done",
+    "I Qtr-2016": "8",
+    "II Qtr-2016": "10",
+    "III Qtr- 2016": "7",
+    "IV Qtr-2016": "8",
+    "Annual 2016": "33"
+  },
+  {
+    "S.NO": "5.i",
+    "Contents": "Foot Male RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "3"
+  },
+  {
+    "S.NO": "5.j",
+    "Contents": "Foot Female RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "5.k",
+    "Contents": "Total Foot RCS Done",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "3"
+  },
+  {
+    "S.NO": "6",
+    "Contents": "Male Septic Surgeries /Nerve Decompression",
+    "I Qtr-2016": "10",
+    "II Qtr-2016": "13",
+    "III Qtr- 2016": "8",
+    "IV Qtr-2016": "11",
+    "Annual 2016": "42"
+  },
+  {
+    "S.NO": "6.a",
+    "Contents": "Female Septic Surgeries /Nerve Decompression",
+    "I Qtr-2016": "4",
+    "II Qtr-2016": "6",
+    "III Qtr- 2016": "2",
+    "IV Qtr-2016": "4",
+    "Annual 2016": "16"
+  },
+  {
+    "S.NO": "6.b",
+    "Contents": "Total Septic Surgeries /Nerve Decompression",
+    "I Qtr-2016": "14",
+    "II Qtr-2016": "19",
+    "III Qtr- 2016": "10",
+    "IV Qtr-2016": "15",
+    "Annual 2016": "58"
+  },
+  {
+    "S.NO": "7",
+    "Contents": "Male House Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.a",
+    "Contents": "Female House Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.b",
+    "Contents": "Total House Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.c",
+    "Contents": "Male Self-Employment Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.d",
+    "Contents": "Female Self-Employment Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.e",
+    "Contents": "Total Self-Employment Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.f",
+    "Contents": "Male Education Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.g",
+    "Contents": "Female EducationSupport",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "7.h",
+    "Contents": "Total Education Support",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "8",
+    "Contents": "Total Leprosy Beds Available",
+    "I Qtr-2016": "80",
+    "II Qtr-2016": "80",
+    "III Qtr- 2016": "80",
+    "IV Qtr-2016": "80",
+    "Annual 2016": "80"
+  },
+  {
+    "S.NO": "8.a",
+    "Contents": "Total Leprosy Patients Admitted",
+    "I Qtr-2016": "114",
+    "II Qtr-2016": "113",
+    "III Qtr- 2016": "117",
+    "IV Qtr-2016": "111",
+    "Annual 2016": "455"
+  },
+  {
+    "S.NO": "8.b",
+    "Contents": "Reactions Patients Admitted",
+    "I Qtr-2016": "7",
+    "II Qtr-2016": "8",
+    "III Qtr- 2016": "9",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "25"
+  },
+  {
+    "S.NO": "8.c",
+    "Contents": "RCS Patients Admitted",
+    "I Qtr-2016": "9",
+    "II Qtr-2016": "13",
+    "III Qtr- 2016": "13",
+    "IV Qtr-2016": "19",
+    "Annual 2016": "54"
+  },
+  {
+    "S.NO": "8.d",
+    "Contents": "Planter ulcers and Others Patients Admitted",
+    "I Qtr-2016": "98",
+    "II Qtr-2016": "92",
+    "III Qtr- 2016": "95",
+    "IV Qtr-2016": "90",
+    "Annual 2016": "375"
+  },
+  {
+    "S.NO": "8.e",
+    "Contents": "Total no of Beds Occupied Leprosy Patients",
+    "I Qtr-2016": "5258",
+    "II Qtr-2016": "4528",
+    "III Qtr- 2016": "4207",
+    "IV Qtr-2016": "4523",
+    "Annual 2016": "18516"
+  },
+  {
+    "S.NO": "8.f",
+    "Contents": "Bed Occupancy Rate for Leprosy",
+    "I Qtr-2016": "73.0",
+    "II Qtr-2016": "62.9",
+    "III Qtr- 2016": "58.4",
+    "IV Qtr-2016": "62.8",
+    "Annual 2016": "64"
+  },
+  {
+    "S.NO": "9",
+    "Contents": "Total TB/DRTB Beds Available",
+    "I Qtr-2016": "5",
+    "II Qtr-2016": "5",
+    "III Qtr- 2016": "5",
+    "IV Qtr-2016": "5",
+    "Annual 2016": "5"
+  },
+  {
+    "S.NO": "9.a",
+    "Contents": "Total  DSTB Patients Admitted",
+    "I Qtr-2016": "6",
+    "II Qtr-2016": "1",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "1",
+    "Annual 2016": "8"
+  },
+  {
+    "S.NO": "9.b",
+    "Contents": "Total  DRTB Patients Admitted",
+    "I Qtr-2016": "0",
+    "II Qtr-2016": "0",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "0",
+    "Annual 2016": "0"
+  },
+  {
+    "S.NO": "9.c",
+    "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+    "I Qtr-2016": "111",
+    "II Qtr-2016": "6",
+    "III Qtr- 2016": "0",
+    "IV Qtr-2016": "8",
+    "Annual 2016": "125"
+  },
+  {
+    "S.NO": "9.d",
+    "Contents": "Bed Occupancy Rate for TB",
+    "I Qtr-2016": "24.7",
+    "II Qtr-2016": "1.3",
+    "III Qtr- 2016": "0.0",
+    "IV Qtr-2016": "1.8",
+    "Annual 2016": "7"
+  }
+]

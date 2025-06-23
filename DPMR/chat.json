@@ -1,0 +1,182 @@
+[
+  {
+    "2020": "4",
+    "2021": "4",
+    "2022": "4",
+    "2023": "12",
+    "2024": "12",
+    "S.NO": "1",
+    "DPMR Contents": "Number of Districts covered"
+  },
+  {
+    "2020": "862",
+    "2021": "1408",
+    "2022": "2015",
+    "2023": "3571",
+    "2024": "3759",
+    "S.NO": "2",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the beginning of the year"
+  },
+  {
+    "2020": "138",
+    "2021": "106",
+    "2022": "162",
+    "2023": "526",
+    "2024": "147",
+    "S.NO": "3",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities deleted from the list "
+  },
+  {
+    "2020": "764",
+    "2021": "1462",
+    "2022": "430",
+    "2023": "589",
+    "2024": "391",
+    "S.NO": "4",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities added to the list "
+  },
+  {
+    "2020": "1352",
+    "2021": "2764",
+    "2022": "2283",
+    "2023": "3634",
+    "2024": "4003",
+    "S.NO": "5",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the end of the year"
+  },
+  {
+    "2020": "2650",
+    "2021": "4437",
+    "2022": "4871",
+    "2023": "3764",
+    "2024": "3401",
+    "S.NO": "6",
+    "DPMR Contents": "Number of Persons affected by leprosy with disabilities visited during the year"
+  },
+  {
+    "2020": "1157",
+    "2021": "2592",
+    "2022": "4394",
+    "2023": "2555",
+    "2024": "2424",
+    "S.NO": "7",
+    "DPMR Contents": "Number of patients practising self care regularly"
+  },
+  {
+    "2020": "1147",
+    "2021": "2141",
+    "2022": "2588",
+    "2023": "2032",
+    "2024": "1433",
+    "S.NO": "8",
+    "DPMR Contents": "Number of patients required foot wear"
+  },
+  {
+    "2020": "894",
+    "2021": "1695",
+    "2022": "2194",
+    "2023": "1550",
+    "2024": "1231",
+    "S.NO": "9",
+    "DPMR Contents": "Number of patients wearing appropriate foot wear regularly"
+  },
+  {
+    "2020": "76",
+    "2021": "262",
+    "2022": "298",
+    "2023": "305",
+    "2024": "291",
+    "S.NO": "10",
+    "DPMR Contents": "Number of patients having Disability Certificate."
+  },
+  {
+    "2020": "62",
+    "2021": "176",
+    "2022": "251",
+    "2023": "238",
+    "2024": "234",
+    "S.NO": "11",
+    "DPMR Contents": "Number of patients receiving Pension."
+  },
+  {
+    "2020": "96",
+    "2021": "119",
+    "2022": "145",
+    "2023": "64",
+    "2024": "65",
+    "S.NO": "12",
+    "DPMR Contents": "Number of patients identified for RCS."
+  },
+  {
+    "2020": "19",
+    "2021": "36",
+    "2022": "42",
+    "2023": "23",
+    "2024": "24",
+    "S.NO": "13",
+    "DPMR Contents": "Number of patients RCS done"
+  },
+  {
+    "2020": "53",
+    "2021": "87",
+    "2022": "79",
+    "2023": "54",
+    "2024": "45",
+    "S.NO": "14",
+    "DPMR Contents": "Number of persons identified for LEP support during the year"
+  },
+  {
+    "2020": "10",
+    "2021": "21",
+    "2022": "21",
+    "2023": "19",
+    "2024": "12",
+    "S.NO": "15",
+    "DPMR Contents": "Number of persons received LEP support during the year"
+  },
+  {
+    "2020": "149",
+    "2021": "451",
+    "2022": "414",
+    "2023": "350",
+    "2024": "303",
+    "S.NO": "16",
+    "DPMR Contents": "Number of new leprosy cases confirmed during during field visit"
+  },
+  {
+    "2020": "633",
+    "2021": "1067",
+    "2022": "1811",
+    "2023": "1815",
+    "2024": "2125",
+    "S.NO": "17",
+    "DPMR Contents": "Number of Under treatment patients visited"
+  },
+  {
+    "2020": "603",
+    "2021": "1045",
+    "2022": "1773",
+    "2023": "1783",
+    "2024": "2093",
+    "S.NO": "18",
+    "DPMR Contents": "Number of under treatment patients taking regular treatment"
+  },
+  {
+    "2020": "248",
+    "2021": "431",
+    "2022": "742",
+    "2023": "554",
+    "2024": "735",
+    "S.NO": "19",
+    "DPMR Contents": "Number of lepra reaction patients visited"
+  },
+  {
+    "2020": "229",
+    "2021": "412",
+    "2022": "711",
+    "2023": "536",
+    "2024": "707",
+    "S.NO": "20",
+    "DPMR Contents": "Number of lepra reaction patients taking regular treatment"
+  }
+]

@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2024": "36",
+        "II Qtr 2024": "36",
+        "III Qtr 2024": "33",
+        "IV Qtr 2024": "57",
+        "Total 2024": "162"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2024": "29",
+        "II Qtr 2024": "29",
+        "III Qtr 2024": "23",
+        "IV Qtr 2024": "21",
+        "Total 2024": "102"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2024": "16",
+        "II Qtr 2024": "19",
+        "III Qtr 2024": "21",
+        "IV Qtr 2024": "21",
+        "Total 2024": "77"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2024": "81",
+        "II Qtr 2024": "84",
+        "III Qtr 2024": "77",
+        "IV Qtr 2024": "99",
+        "Total 2024": "341"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2024": "8",
+        "II Qtr 2024": "10",
+        "III Qtr 2024": "4",
+        "IV Qtr 2024": "11",
+        "Total 2024": "33"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2024": "1",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "0",
+        "Total 2024": "2"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "0",
+        "Total 2024": "1"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2024": "19",
+        "II Qtr 2024": "7",
+        "III Qtr 2024": "16",
+        "IV Qtr 2024": "13",
+        "Total 2024": "55"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2024": "28",
+        "II Qtr 2024": "17",
+        "III Qtr 2024": "22",
+        "IV Qtr 2024": "24",
+        "Total 2024": "91"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2024": "109",
+        "II Qtr 2024": "101",
+        "III Qtr 2024": "99",
+        "IV Qtr 2024": "123",
+        "Total 2024": "432"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2024": "18",
+        "II Qtr 2024": "36",
+        "III Qtr 2024": "36",
+        "IV Qtr 2024": "33",
+        "Total 2024": "123"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2024": "18",
+        "II Qtr 2024": "34",
+        "III Qtr 2024": "33",
+        "IV Qtr 2024": "30",
+        "Total 2024": "115"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "2",
+        "III Qtr 2024": "3",
+        "IV Qtr 2024": "3",
+        "Total 2024": "8"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2024": "100",
+        "II Qtr 2024": "94",
+        "III Qtr 2024": "92",
+        "IV Qtr 2024": "91",
+        "Total 2024": "93"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2024": "3",
+        "II Qtr 2024": "9",
+        "III Qtr 2024": "10",
+        "IV Qtr 2024": "6",
+        "Total 2024": "28"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2024": "3",
+        "II Qtr 2024": "8",
+        "III Qtr 2024": "10",
+        "IV Qtr 2024": "5",
+        "Total 2024": "26"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "1",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "1",
+        "Total 2024": "2"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2024": "100",
+        "II Qtr 2024": "89",
+        "III Qtr 2024": "100",
+        "IV Qtr 2024": "83",
+        "Total 2024": "93"
+    }
+]

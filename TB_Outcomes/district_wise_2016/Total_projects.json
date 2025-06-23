@@ -1,0 +1,290 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        "I Qtr 2016": "319",
+        "II Qtr 2016": "394",
+        "III Qtr 2016": "278",
+        "IV Qtr 2016": "293",
+        "Total 2016": "1284",
+        "%": "86"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        "I Qtr 2016": "2",
+        "II Qtr 2016": "10",
+        "III Qtr 2016": "6",
+        "IV Qtr 2016": "5",
+        "Total 2016": "23",
+        "%": "0.5"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        "I Qtr 2016": "23",
+        "II Qtr 2016": "20",
+        "III Qtr 2016": "14",
+        "IV Qtr 2016": "16",
+        "Total 2016": "73",
+        "%": "6.2"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        "I Qtr 2016": "7",
+        "II Qtr 2016": "3",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "9",
+        "Total 2016": "22",
+        "%": "1.9"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        "I Qtr 2016": "11",
+        "II Qtr 2016": "17",
+        "III Qtr 2016": "16",
+        "IV Qtr 2016": "18",
+        "Total 2016": "62",
+        "%": "3.0"
+    },
+    {
+        "Type of cases ": "NSP Transferred out",
+        "I Qtr 2016": "0",
+        "II Qtr 2016": "2",
+        "III Qtr 2016": "2",
+        "IV Qtr 2016": "2",
+        "Total 2016": "6",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Switched to IV",
+        "I Qtr 2016": "9",
+        "II Qtr 2016": "9",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "3",
+        "Total 2016": "21",
+        "%": "2.4"
+    },
+    {
+        "Type of cases ": "Total",
+        "I Qtr 2016": "371",
+        "II Qtr 2016": "455",
+        "III Qtr 2016": "319",
+        "IV Qtr 2016": "346",
+        "Total 2016": "1491",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        "I Qtr 2016": "0",
+        "II Qtr 2016": "0",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "0",
+        "Total 2016": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        "I Qtr 2016": "385",
+        "II Qtr 2016": "479",
+        "III Qtr 2016": "319",
+        "IV Qtr 2016": "319",
+        "Total 2016": "1502",
+        "%": "96"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        "I Qtr 2016": "8",
+        "II Qtr 2016": "10",
+        "III Qtr 2016": "8",
+        "IV Qtr 2016": "9",
+        "Total 2016": "35",
+        "%": "2.0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        "I Qtr 2016": "1",
+        "II Qtr 2016": "4",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "2",
+        "Total 2016": "7",
+        "%": "0.2"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        "I Qtr 2016": "4",
+        "II Qtr 2016": "17",
+        "III Qtr 2016": "14",
+        "IV Qtr 2016": "6",
+        "Total 2016": "41",
+        "%": "1.0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred out ",
+        "I Qtr 2016": "3",
+        "II Qtr 2016": "1",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "0",
+        "Total 2016": "7",
+        "%": "0.7"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to IV",
+        "I Qtr 2016": "0",
+        "II Qtr 2016": "0",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "0",
+        "Total 2016": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "Total",
+        "I Qtr 2016": "401",
+        "II Qtr 2016": "511",
+        "III Qtr 2016": "344",
+        "IV Qtr 2016": "336",
+        "Total 2016": "1592",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        "I Qtr 2016": "99",
+        "II Qtr 2016": "88",
+        "III Qtr 2016": "76",
+        "IV Qtr 2016": "90",
+        "Total 2016": "353",
+        "%": "73.3"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        "I Qtr 2016": "2",
+        "II Qtr 2016": "2",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "3",
+        "Total 2016": "10",
+        "%": "1.5"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        "I Qtr 2016": "8",
+        "II Qtr 2016": "12",
+        "III Qtr 2016": "11",
+        "IV Qtr 2016": "11",
+        "Total 2016": "42",
+        "%": "5.9"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        "I Qtr 2016": "4",
+        "II Qtr 2016": "1",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "5",
+        "Total 2016": "13",
+        "%": "3.0"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        "I Qtr 2016": "13",
+        "II Qtr 2016": "7",
+        "III Qtr 2016": "11",
+        "IV Qtr 2016": "19",
+        "Total 2016": "50",
+        "%": "9.6"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred out ",
+        "I Qtr 2016": "1",
+        "II Qtr 2016": "0",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "2",
+        "Total 2016": "3",
+        "%": "0.7"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to IV",
+        "I Qtr 2016": "8",
+        "II Qtr 2016": "7",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "4",
+        "Total 2016": "22",
+        "%": "5.9"
+    },
+    {
+        "Type of cases ": "Total",
+        "I Qtr 2016": "135",
+        "II Qtr 2016": "117",
+        "III Qtr 2016": "107",
+        "IV Qtr 2016": "134",
+        "Total 2016": "493",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        "I Qtr 2016": "0",
+        "II Qtr 2016": "0",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "0",
+        "Total 2016": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        "I Qtr 2016": "56",
+        "II Qtr 2016": "85",
+        "III Qtr 2016": "51",
+        "IV Qtr 2016": "49",
+        "Total 2016": "241",
+        "%": "72.7"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        "I Qtr 2016": "5",
+        "II Qtr 2016": "5",
+        "III Qtr 2016": "3",
+        "IV Qtr 2016": "4",
+        "Total 2016": "17",
+        "%": "6.5"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        "I Qtr 2016": "2",
+        "II Qtr 2016": "0",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "0",
+        "Total 2016": "2",
+        "%": "2.6"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        "I Qtr 2016": "5",
+        "II Qtr 2016": "4",
+        "III Qtr 2016": "1",
+        "IV Qtr 2016": "1",
+        "Total 2016": "11",
+        "%": "6.5"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred out",
+        "I Qtr 2016": "2",
+        "II Qtr 2016": "1",
+        "III Qtr 2016": "1",
+        "IV Qtr 2016": "0",
+        "Total 2016": "4",
+        "%": "2.6"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to IV",
+        "I Qtr 2016": "7",
+        "II Qtr 2016": "2",
+        "III Qtr 2016": "0",
+        "IV Qtr 2016": "1",
+        "Total 2016": "10",
+        "%": "9.1"
+    },
+    {
+        "Type of cases ": "Total",
+        "I Qtr 2016": "77",
+        "II Qtr 2016": "97",
+        "III Qtr 2016": "56",
+        "IV Qtr 2016": "55",
+        "Total 2016": "285",
+        "%": ""
+    }
+]

@@ -1,0 +1,290 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        "I qtr 2019": "197",
+        "II qtr 2019": "225",
+        "III qtr 2019": "145",
+        "IV qtr 2019": "150",
+        "Total 2019": "717",
+        "%": "91.2"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "2",
+        "Total 2019": "2",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        "I qtr 2019": "8",
+        "II qtr 2019": "7",
+        "III qtr 2019": "2",
+        "IV qtr 2019": "8",
+        "Total 2019": "25",
+        "%": "3.7"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        "I qtr 2019": "3",
+        "II qtr 2019": "4",
+        "III qtr 2019": "1",
+        "IV qtr 2019": "2",
+        "Total 2019": "10",
+        "%": "1.4"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        "I qtr 2019": "4",
+        "II qtr 2019": "4",
+        "III qtr 2019": "8",
+        "IV qtr 2019": "4",
+        "Total 2019": "20",
+        "%": "1.9"
+    },
+    {
+        "Type of cases ": "NSP Transferred out",
+        "I qtr 2019": "0",
+        "II qtr 2019": "3",
+        "III qtr 2019": "3",
+        "IV qtr 2019": "1",
+        "Total 2019": "7",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "NSP Switched to IV",
+        "I qtr 2019": "4",
+        "II qtr 2019": "11",
+        "III qtr 2019": "7",
+        "IV qtr 2019": "7",
+        "Total 2019": "29",
+        "%": "1.9"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr 2019": "216",
+        "II qtr 2019": "254",
+        "III qtr 2019": "166",
+        "IV qtr 2019": "174",
+        "Total 2019": "810",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "0",
+        "Total 2019": "0",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        "I qtr 2019": "316",
+        "II qtr 2019": "370",
+        "III qtr 2019": "303",
+        "IV qtr 2019": "249",
+        "Total 2019": "1238",
+        "%": "92.7"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        "I qtr 2019": "12",
+        "II qtr 2019": "3",
+        "III qtr 2019": "7",
+        "IV qtr 2019": "5",
+        "Total 2019": "27",
+        "%": "3.5"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        "I qtr 2019": "3",
+        "II qtr 2019": "1",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "0",
+        "Total 2019": "4",
+        "%": "0.9"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        "I qtr 2019": "5",
+        "II qtr 2019": "7",
+        "III qtr 2019": "2",
+        "IV qtr 2019": "2",
+        "Total 2019": "16",
+        "%": "1.5"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred out ",
+        "I qtr 2019": "1",
+        "II qtr 2019": "1",
+        "III qtr 2019": "1",
+        "IV qtr 2019": "1",
+        "Total 2019": "4",
+        "%": "0.3"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to IV",
+        "I qtr 2019": "4",
+        "II qtr 2019": "3",
+        "III qtr 2019": "3",
+        "IV qtr 2019": "0",
+        "Total 2019": "10",
+        "%": "1.2"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr 2019": "341",
+        "II qtr 2019": "385",
+        "III qtr 2019": "316",
+        "IV qtr 2019": "257",
+        "Total 2019": "1299",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        "I qtr 2019": "79",
+        "II qtr 2019": "53",
+        "III qtr 2019": "54",
+        "IV qtr 2019": "44",
+        "Total 2019": "230",
+        "%": "83.2"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "0",
+        "Total 2019": "0",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        "I qtr 2019": "4",
+        "II qtr 2019": "4",
+        "III qtr 2019": "2",
+        "IV qtr 2019": "2",
+        "Total 2019": "12",
+        "%": "4.2"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        "I qtr 2019": "4",
+        "II qtr 2019": "2",
+        "III qtr 2019": "2",
+        "IV qtr 2019": "4",
+        "Total 2019": "12",
+        "%": "4.2"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        "I qtr 2019": "4",
+        "II qtr 2019": "3",
+        "III qtr 2019": "5",
+        "IV qtr 2019": "2",
+        "Total 2019": "14",
+        "%": "4.2"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred out ",
+        "I qtr 2019": "0",
+        "II qtr 2019": "1",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "1",
+        "Total 2019": "2",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to IV",
+        "I qtr 2019": "4",
+        "II qtr 2019": "3",
+        "III qtr 2019": "3",
+        "IV qtr 2019": "0",
+        "Total 2019": "10",
+        "%": "4.2"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr 2019": "95",
+        "II qtr 2019": "66",
+        "III qtr 2019": "66",
+        "IV qtr 2019": "53",
+        "Total 2019": "280",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "0",
+        "Total 2019": "0",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        "I qtr 2019": "44",
+        "II qtr 2019": "71",
+        "III qtr 2019": "49",
+        "IV qtr 2019": "38",
+        "Total 2019": "202",
+        "%": "95.7"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        "I qtr 2019": "2",
+        "II qtr 2019": "3",
+        "III qtr 2019": "3",
+        "IV qtr 2019": "3",
+        "Total 2019": "11",
+        "%": "4.3"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "1",
+        "Total 2019": "1",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "3",
+        "IV qtr 2019": "2",
+        "Total 2019": "5",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred out",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "0",
+        "IV qtr 2019": "0",
+        "Total 2019": "0",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to IV",
+        "I qtr 2019": "0",
+        "II qtr 2019": "0",
+        "III qtr 2019": "1",
+        "IV qtr 2019": "0",
+        "Total 2019": "1",
+        "%": "0.0"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr 2019": "46",
+        "II qtr 2019": "74",
+        "III qtr 2019": "56",
+        "IV qtr 2019": "44",
+        "Total 2019": "220",
+        "%": ""
+    }
+]

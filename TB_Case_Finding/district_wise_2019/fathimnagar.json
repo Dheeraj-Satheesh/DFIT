@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2019": "2",
+        "II Qtr 2019": "8",
+        "III Qtr 2019": "3",
+        "IV Qtr 2019": "2",
+        "Total 2019": "15"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2019": "1",
+        "II Qtr 2019": "1",
+        "III Qtr 2019": "1",
+        "IV Qtr 2019": "1",
+        "Total 2019": "4"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "2",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "1",
+        "Total 2019": "3"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "11",
+        "III Qtr 2019": "4",
+        "IV Qtr 2019": "4",
+        "Total 2019": "22"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "11",
+        "III Qtr 2019": "4",
+        "IV Qtr 2019": "4",
+        "Total 2019": "22"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "2",
+        "III Qtr 2019": "8",
+        "IV Qtr 2019": "3",
+        "Total 2019": "16"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "2",
+        "III Qtr 2019": "8",
+        "IV Qtr 2019": "3",
+        "Total 2019": "16"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2019": "100",
+        "II Qtr 2019": "100",
+        "III Qtr 2019": "100",
+        "IV Qtr 2019": "100",
+        "Total 2019": "100"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "3"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2019": "3",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "3"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2019": "0",
+        "II Qtr 2019": "0",
+        "III Qtr 2019": "0",
+        "IV Qtr 2019": "0",
+        "Total 2019": "0"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2019": "100",
+        "II Qtr 2019": "",
+        "III Qtr 2019": "",
+        "IV Qtr 2019": "",
+        "Total 2019": "100"
+    }
+]

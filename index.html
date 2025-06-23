@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DFIT Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+
+<body>
+  <button id="hamburger" class="hamburger">&#9776;</button>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="Damien Foundation Logo" />
+      </div>
+      <nav>
+        <!-- LEPROSY DIRECT SERVICES SECTION -->
+        <div class="section">
+          <button class="collapsible">🗂️ LEPROSY DIRECT SERVICES</button>
+          <div class="collapsible-content">
+            <!-- HOSPITAL subsection -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="hospital-content">🏨 HOSPITAL</span>
+              <div class="subsection-content" id="hospital-content">
+                <ul>
+                  <li><a href="#" id="link-total-projects">Total all Projects Overview</a></li>
+                  <li><a href="#" id="link-dfit-projects">DFIT Projects Overview</a></li>
+                  <li><a href="#" id="link-sup-projects">Supported Projects Overview</a></li>
+                  <li><a href="#" id="link-nellore">Nellore Overview</a></li>
+                  <li><a href="#" id="link-delhi">Delhi Overview</a></li>
+                  <li><a href="#" id="link-dos">DOS Overview</a></li>
+                  <li><a href="#" id="link-polambakam">Polambakkam Overview</a></li>
+                  <li><a href="#" id="link-dhanbad">Dhanbad Overview</a></li>
+                  <li><a href="#" id="link-amda">Amda Overview</a></li>
+                  <li><a href="#" id="link-arasipalyam">Arasipalyam Overview</a></li>
+                  <li><a href="#" id="link-fathimnagar">Fathimanagar Overview</a></li>
+                  <li><a href="#" id="link-nagepalli">Nagepalli Overview</a></li>
+                  <li><a href="#" id="link-pavagada">Pavagada Overview</a></li>
+                  <li><a href="#" id="link-belatanr">Belatanr Overview</a></li>
+                  <li><a href="#" id="link-popejohngarden">Pope John Garden Overview</a></li>
+                  <li><a href="#" id="link-chilakalapalli">Chilakala Palli Overview</a></li>
+                  <li><a href="#" id="link-trivendrum">Trivendrum Overview</a></li>
+                  <li><a href="#" id="link-andipatti">Aundipatti Overview</a></li>
+                  <li><a href="#" id="link-ambamoola">Ambamoola Overview</a></li>
+                </ul>
+              </div>
+
+              <!-- LEP subsection -->
+              <div class="subsection">
+                <span class="subsection-title" data-target="lep-content" id="link-lep">🧵Livelihood Enhancement
+                  Program(LEP)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TB DIRECT SERVICES SECTION -->
+        <div class="section">
+          <button class="collapsible">🫁 TB DIRECT SERVICES</button>
+          <div class="collapsible-content">
+
+            <!-- TB ANNEXURE -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="tb-annexure-content">🩺 TB ANNEXURE</span>
+              <div class="subsection-content" id="tb-annexure-content">
+                <ul>
+                  <li><a href="#" id="link-total-projects-AN">Total all Projects Overview</a></li>
+                  <li><a href="#" id="link-dfit-projects-AN">DFIT Projects Overview</a></li>
+                  <li><a href="#" id="link-sup-projects-AN">Supported Projects Overview</a></li>
+                  <li><a href="#" id="link-nellore-AN">Nellore Overview</a></li>
+                  <li><a href="#" id="link-delhi-AN">Delhi Overview</a></li>
+                  <li><a href="#" id="link-arasipalyam-AN">Arasipalyam Overview</a></li>
+                  <li><a href="#" id="link-pavagada-AN">Pavagada Overview</a></li>
+                  <li><a href="#" id="link-fathimnagar-AN">Fathimanagar Overview</a></li>
+                  <li><a href="#" id="link-nagepalli-AN">Nagepalli Overview</a></li>
+                  <li><a href="#" id="link-belatanr-AN">Belatanr Overview</a></li>
+                  <li><a href="#" id="link-andipatti-AN">Aundipatti Overview</a></li>
+                  <li><a href="#" id="link-ambamoola-AN">Ambamoola Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- TB CASE FINDING (Fixed!) -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="tb-case-content">🔍 TB CASE FINDING</span>
+              <div class="subsection-content" id="tb-case-content">
+                <ul>
+                  <li><a href="#" id="link-total-projects-CF">Total all Projects Overview</a></li>
+                  <li><a href="#" id="link-dfit-projects-CF">DFIT Projects Overview</a></li>
+                  <li><a href="#" id="link-sup-projects-CF">Supported Projects Overview</a></li>
+                  <li><a href="#" id="link-nellore-CF">Nellore Overview</a></li>
+                  <li><a href="#" id="link-delhi-CF">Delhi Overview</a></li>
+                  <li><a href="#" id="link-arasipalyam-CF">Arasipalyam Overview</a></li>
+                  <li><a href="#" id="link-fathimnagar-CF">Fathimanagar Overview</a></li>
+                  <li><a href="#" id="link-nagepalli-CF">Nagepalli Overview</a></li>
+                  <li><a href="#" id="link-pavagada-CF">Pavagada Overview</a></li>
+                  <li><a href="#" id="link-belatanr-CF">Belatanr Overview</a></li>
+                  <li><a href="#" id="link-andipatti-CF">Aundipatti Overview</a></li>
+                  <li><a href="#" id="link-ambamoola-CF">Ambamoola Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- TB OUTCOMES  -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="tb-outcomes-content">📊 TB OUTCOMES</span>
+              <div class="subsection-content" id="tb-outcomes-content">
+                <ul>
+                  <li><a href="#" id="link-total-projects-OC">Total all Projects Overview</a></li>
+                  <li><a href="#" id="link-dfit-projects-OC">DFIT Projects Overview</a></li>
+                  <li><a href="#" id="link-sup-projects-OC">Supported Projects Overview</a></li>
+                  <li><a href="#" id="link-nellore-OC">Nellore Overview</a></li>
+                  <li><a href="#" id="link-delhi-OC">Delhi Overview</a></li>
+                  <li><a href="#" id="link-arasipalyam-OC">Arasipalyam Overview</a></li>
+                  <li><a href="#" id="link-fathimnagar-OC">Fathimanagar Overview</a></li>
+                  <li><a href="#" id="link-nagepalli-OC">Nagepalli Overview</a></li>
+                  <li><a href="#" id="link-pavagada-OC">Pavagada Overview</a></li>
+                  <li><a href="#" id="link-belatnr-OC">Belatanr Overview</a></li>
+                  <li><a href="#" id="link-andipatti-OC">Aundipatti Overview</a></li>
+                  <li><a href="#" id="link-ambamoola-OC">Ambamoola Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- IRL LABS -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="irl-content" id="irl-lep">🧪 IRL LAB SERVICES</span>
+              <div class="subsection-content" id="irl-content">
+                <ul>
+                  <li><a href="#" id="link-total-labs">TOTAL IRL Overview</a></li>
+                  <li><a href="#" id="link-nlr-lab">NELLORE IRL Overview</a></li>
+                  <li><a href="#" id="link-dar-lab">DARBHANGA IRL Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- DRTB subsection -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="drtb-content" id="link-drtb">🏥DELHI DRTB SERVICES</span>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <button class="collapsible">🧭 DPMR SERVICES</button>
+          <div class="collapsible-content">
+            <ul>
+              <li><a href="#" id="link-tot">TOTAL DPMR Overview</a></li>
+              <li><a href="#" id="link-bihar">Bihar DPMR Overview</a></li>
+              <li><a href="#" id="link-jharkhand">Jharkhand DPMR Overview</a></li>
+              <li><a href="#" id="link-chhattisgarh">Chhattisgarh DPMR Overview</a></li>
+              <li><a href="#" id="link-karnataka">Karnataka DPMR Overview</a></li>
+              <li><a href="#" id="link-tn">Tamil Nadu DPMR Overview</a></li>
+              <li><a href="#" id="link-ap">Andhra Pradesh DPMR Overview</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <button class="collapsible">🧬 DRTB SERVICES</button>
+          <div class="collapsible-content">
+            <ul>
+              <li><a href="#" id="link-bihar-drtb">Bihar DRTB Overview</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GRAPHS -->
+        <div class="section">
+          <button class="collapsible">📈 GRAPHICAL ANALYSIS</button>
+          <div class="collapsible-content">
+            <div class="subsection">
+              <span class="subsection-title" id="opd">Out Patients Statistics</span>
+              <span class="subsection-title" id="new-lep">New Leprosy Cases </span>
+              <span class="subsection-title" id="gii">Disability Leprosy Cases</span>
+              <span class="subsection-title" id="lepra">Lepra Reaction Cases</span>
+              <span class="subsection-title" id="rcs">RCS DONE CASES</span>
+              <span class="subsection-title" id="lep-adm">Leprosy Admissions</span>
+              <span class="subsection-title" id="lep-bed">Leprosy Bed Days</span>
+              <span class="subsection-title" id="pre-tb">Presumptive TB cases </span>
+              <span class="subsection-title" id="tot-tb">Total TB cases </span>
+              <span class="subsection-title" id="nsp-tb">NSP CURED TB Cases % TB </span>
+              <span class="subsection-title" id="rt-tb">RT CURED TB Cases %</span>
+              <!-- <span class="subsection-title" id="tb-adm">TB Admissions</span> -->
+              <span class="subsection-title" id="tb-bed">TB Bed Days</span>
+
+            </div>
+          </div>
+
+
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Welcome to DFIT Dashboard</h1>
+        <div class="filters">
+          <label for="yearFilter">Filter by Year:</label>
+          <select id="yearFilter">
+            <option value="All">All</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+      </header>
+      <!-- Button -->
+      <button id="downloadTableBtn" style="
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+">
+        Download Table as PNG
+      </button>
+
+      <!-- Optional Hover Effect -->
+      <style>
+        #downloadTableBtn:hover {
+          background-color: #45a049;
+        }
+      </style>
+
+      <section id="content-area">
+        <p>Select a section from the sidebar to view data.</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.getElementById("hamburger");
+      const sidebar = document.getElementById("sidebar");
+
+      // ✅ Toggle sidebar on hamburger click (works on all screen sizes)
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+
+      // ✅ Auto-close sidebar on link click (on all screen sizes)
+      const sidebarLinks = sidebar.querySelectorAll("a");
+      sidebarLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+      });
+    });
+  </script>
+
+
+
+
+  <!-- Main dashboard logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>

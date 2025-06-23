@@ -1,0 +1,632 @@
+[
+  {
+    "S.NO": "1",
+    "Contents": "Total number of outpatients treated",
+    "I Qtr-2019": "8290",
+    "II Qtr-2019": "7600",
+    "III Qtr- 2019": "7871",
+    "IV Qtr-2019": "7147",
+    "Annual 2019": "30908"
+  },
+  {
+    "S.NO": "1.a",
+    "Contents": "Skin diseases",
+    "I Qtr-2019": "2218",
+    "II Qtr-2019": "1850",
+    "III Qtr- 2019": "2336",
+    "IV Qtr-2019": "1939",
+    "Annual 2019": "8343"
+  },
+  {
+    "S.NO": "1.b",
+    "Contents": "Respiratory symtomatics",
+    "I Qtr-2019": "3240",
+    "II Qtr-2019": "2656",
+    "III Qtr- 2019": "2451",
+    "IV Qtr-2019": "2381",
+    "Annual 2019": "10728"
+  },
+  {
+    "S.NO": "1.c",
+    "Contents": "Others",
+    "I Qtr-2019": "2832",
+    "II Qtr-2019": "3094",
+    "III Qtr- 2019": "3084",
+    "IV Qtr-2019": "2827",
+    "Annual 2019": "11837"
+  },
+  {
+    "S.NO": "2",
+    "Contents": "Adult-PB",
+    "I Qtr-2019": "7",
+    "II Qtr-2019": "12",
+    "III Qtr- 2019": "12",
+    "IV Qtr-2019": "11",
+    "Annual 2019": "42"
+  },
+  {
+    "S.NO": "2.a",
+    "Contents": "Adult-MB",
+    "I Qtr-2019": "24",
+    "II Qtr-2019": "31",
+    "III Qtr- 2019": "24",
+    "IV Qtr-2019": "20",
+    "Annual 2019": "99"
+  },
+  {
+    "S.NO": "2.b",
+    "Contents": "Adult-Total",
+    "I Qtr-2019": "31",
+    "II Qtr-2019": "43",
+    "III Qtr- 2019": "36",
+    "IV Qtr-2019": "31",
+    "Annual 2019": "141"
+  },
+  {
+    "S.NO": "2.c",
+    "Contents": "Children-PB",
+    "I Qtr-2019": "1",
+    "II Qtr-2019": "1",
+    "III Qtr- 2019": "4",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "8"
+  },
+  {
+    "S.NO": "2.d",
+    "Contents": "Children-MB",
+    "I Qtr-2019": "1",
+    "II Qtr-2019": "4",
+    "III Qtr- 2019": "4",
+    "IV Qtr-2019": "1",
+    "Annual 2019": "10"
+  },
+  {
+    "S.NO": "2.e",
+    "Contents": "Children-Total",
+    "I Qtr-2019": "2",
+    "II Qtr-2019": "5",
+    "III Qtr- 2019": "8",
+    "IV Qtr-2019": "3",
+    "Annual 2019": "18"
+  },
+  {
+    "S.NO": "2.f",
+    "Contents": "Total No. of new leprosy cases detected",
+    "I Qtr-2019": "33",
+    "II Qtr-2019": "48",
+    "III Qtr- 2019": "44",
+    "IV Qtr-2019": "34",
+    "Annual 2019": "159"
+  },
+  {
+    "S.NO": "2.g",
+    "Contents": "Relapse Cases",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "2.h",
+    "Contents": "Female-PB",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "3",
+    "III Qtr- 2019": "5",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "12"
+  },
+  {
+    "S.NO": "2.i",
+    "Contents": "Female-MB",
+    "I Qtr-2019": "9",
+    "II Qtr-2019": "10",
+    "III Qtr- 2019": "8",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "29"
+  },
+  {
+    "S.NO": "2.j",
+    "Contents": "Female-Total",
+    "I Qtr-2019": "13",
+    "II Qtr-2019": "13",
+    "III Qtr- 2019": "13",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "41"
+  },
+  {
+    "S.NO": "2.k",
+    "Contents": "Adult disability G-I-PB",
+    "I Qtr-2019": "1",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "2"
+  },
+  {
+    "S.NO": "2.l",
+    "Contents": "Adult disability G-I-MB",
+    "I Qtr-2019": "7",
+    "II Qtr-2019": "6",
+    "III Qtr- 2019": "2",
+    "IV Qtr-2019": "1",
+    "Annual 2019": "16"
+  },
+  {
+    "S.NO": "2.m",
+    "Contents": "Total Adult disability G-I",
+    "I Qtr-2019": "8",
+    "II Qtr-2019": "6",
+    "III Qtr- 2019": "3",
+    "IV Qtr-2019": "1",
+    "Annual 2019": "18"
+  },
+  {
+    "S.NO": "2.n",
+    "Contents": "Adult disability G- II-PB",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "4",
+    "III Qtr- 2019": "4",
+    "IV Qtr-2019": "3",
+    "Annual 2019": "11"
+  },
+  {
+    "S.NO": "2.o",
+    "Contents": "Adult disability G-II-MB",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "9",
+    "III Qtr- 2019": "9",
+    "IV Qtr-2019": "7",
+    "Annual 2019": "29"
+  },
+  {
+    "S.NO": "2.p",
+    "Contents": "Total Adult disability G-II",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "13",
+    "III Qtr- 2019": "13",
+    "IV Qtr-2019": "10",
+    "Annual 2019": "40"
+  },
+  {
+    "S.NO": "2.q",
+    "Contents": "Children disability G-I-PB",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "2.r",
+    "Contents": "Children disability G-I-MB",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "1",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "2.s",
+    "Contents": "Total Children disability G-I",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "1",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "2.t",
+    "Contents": "Children disability G-II-PB",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "2.u",
+    "Contents": "Children disability G-II-MB",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "2",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "2"
+  },
+  {
+    "S.NO": "2.v",
+    "Contents": "Total Children disability G-II",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "2",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "2"
+  },
+  {
+    "S.NO": "3",
+    "Contents": "lepra ReactionType-1 Male",
+    "I Qtr-2019": "11",
+    "II Qtr-2019": "18",
+    "III Qtr- 2019": "16",
+    "IV Qtr-2019": "14",
+    "Annual 2019": "59"
+  },
+  {
+    "S.NO": "3.a",
+    "Contents": "lepra ReactionType-1 Female",
+    "I Qtr-2019": "11",
+    "II Qtr-2019": "8",
+    "III Qtr- 2019": "6",
+    "IV Qtr-2019": "3",
+    "Annual 2019": "28"
+  },
+  {
+    "S.NO": "3.b",
+    "Contents": "Total Type-1 lepra reactions",
+    "I Qtr-2019": "22",
+    "II Qtr-2019": "26",
+    "III Qtr- 2019": "22",
+    "IV Qtr-2019": "17",
+    "Annual 2019": "87"
+  },
+  {
+    "S.NO": "3.c",
+    "Contents": "lepra ReactionType-2 Male",
+    "I Qtr-2019": "10",
+    "II Qtr-2019": "4",
+    "III Qtr- 2019": "16",
+    "IV Qtr-2019": "9",
+    "Annual 2019": "39"
+  },
+  {
+    "S.NO": "3.d",
+    "Contents": "lepra ReactionType-2 Female",
+    "I Qtr-2019": "5",
+    "II Qtr-2019": "2",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "10"
+  },
+  {
+    "S.NO": "3.e",
+    "Contents": "Total Type 2 lepra reactions",
+    "I Qtr-2019": "15",
+    "II Qtr-2019": "6",
+    "III Qtr- 2019": "17",
+    "IV Qtr-2019": "11",
+    "Annual 2019": "49"
+  },
+  {
+    "S.NO": "4",
+    "Contents": "Total number of persons provided with MCR footwear",
+    "I Qtr-2019": "49",
+    "II Qtr-2019": "31",
+    "III Qtr- 2019": "28",
+    "IV Qtr-2019": "57",
+    "Annual 2019": "165"
+  },
+  {
+    "S.NO": "5",
+    "Contents": "RCS Male",
+    "I Qtr-2019": "27",
+    "II Qtr-2019": "41",
+    "III Qtr- 2019": "61",
+    "IV Qtr-2019": "52",
+    "Annual 2019": "181"
+  },
+  {
+    "S.NO": "5.a",
+    "Contents": "RCS Female",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "11",
+    "III Qtr- 2019": "30",
+    "IV Qtr-2019": "25",
+    "Annual 2019": "70"
+  },
+  {
+    "S.NO": "5.b",
+    "Contents": "TOTAL RCS DONE ",
+    "I Qtr-2019": "31",
+    "II Qtr-2019": "52",
+    "III Qtr- 2019": "91",
+    "IV Qtr-2019": "77",
+    "Annual 2019": "251"
+  },
+  {
+    "S.NO": "5.c",
+    "Contents": "Eye Male RCS Done",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "2",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "9"
+  },
+  {
+    "S.NO": "5.d",
+    "Contents": "Eye Female RCS Done",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "5.e",
+    "Contents": "Total Eye RCS Done",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "2",
+    "III Qtr- 2019": "2",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "10"
+  },
+  {
+    "S.NO": "5.f",
+    "Contents": "Hand Male RCS Done",
+    "I Qtr-2019": "18",
+    "II Qtr-2019": "32",
+    "III Qtr- 2019": "50",
+    "IV Qtr-2019": "43",
+    "Annual 2019": "143"
+  },
+  {
+    "S.NO": "5.g",
+    "Contents": "Hand Female RCS Done",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "11",
+    "III Qtr- 2019": "28",
+    "IV Qtr-2019": "25",
+    "Annual 2019": "68"
+  },
+  {
+    "S.NO": "5.h",
+    "Contents": "Total Hand RCS Done",
+    "I Qtr-2019": "22",
+    "II Qtr-2019": "43",
+    "III Qtr- 2019": "78",
+    "IV Qtr-2019": "68",
+    "Annual 2019": "211"
+  },
+  {
+    "S.NO": "5.i",
+    "Contents": "Foot Male RCS Done",
+    "I Qtr-2019": "5",
+    "II Qtr-2019": "7",
+    "III Qtr- 2019": "10",
+    "IV Qtr-2019": "7",
+    "Annual 2019": "29"
+  },
+  {
+    "S.NO": "5.j",
+    "Contents": "Foot Female RCS Done",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "5.k",
+    "Contents": "Total Foot RCS Done",
+    "I Qtr-2019": "5",
+    "II Qtr-2019": "7",
+    "III Qtr- 2019": "11",
+    "IV Qtr-2019": "7",
+    "Annual 2019": "30"
+  },
+  {
+    "S.NO": "6",
+    "Contents": "Male Septic Surgeries /Nerve Decompression",
+    "I Qtr-2019": "6",
+    "II Qtr-2019": "5",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "4",
+    "Annual 2019": "16"
+  },
+  {
+    "S.NO": "6.a",
+    "Contents": "Female Septic Surgeries /Nerve Decompression",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "4",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "2",
+    "Annual 2019": "11"
+  },
+  {
+    "S.NO": "6.b",
+    "Contents": "Total Septic Surgeries /Nerve Decompression",
+    "I Qtr-2019": "10",
+    "II Qtr-2019": "9",
+    "III Qtr- 2019": "2",
+    "IV Qtr-2019": "6",
+    "Annual 2019": "27"
+  },
+  {
+    "S.NO": "7",
+    "Contents": "Male House Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "7.a",
+    "Contents": "Female House Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "7.b",
+    "Contents": "Total House Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "7.c",
+    "Contents": "Male Self-Employment Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "3",
+    "Annual 2019": "4"
+  },
+  {
+    "S.NO": "7.d",
+    "Contents": "Female Self-Employment Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "7.e",
+    "Contents": "Total Self-Employment Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "1",
+    "IV Qtr-2019": "3",
+    "Annual 2019": "4"
+  },
+  {
+    "S.NO": "7.f",
+    "Contents": "Male Education Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "1",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "7.g",
+    "Contents": "Female EducationSupport",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "0"
+  },
+  {
+    "S.NO": "7.h",
+    "Contents": "Total Education Support",
+    "I Qtr-2019": "0",
+    "II Qtr-2019": "1",
+    "III Qtr- 2019": "0",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "1"
+  },
+  {
+    "S.NO": "8",
+    "Contents": "Total Leprosy Beds Available",
+    "I Qtr-2019": "91",
+    "II Qtr-2019": "91",
+    "III Qtr- 2019": "91",
+    "IV Qtr-2019": "91",
+    "Annual 2019": "91"
+  },
+  {
+    "S.NO": "8.a",
+    "Contents": "Total Leprosy Patients Admitted",
+    "I Qtr-2019": "138",
+    "II Qtr-2019": "220",
+    "III Qtr- 2019": "184",
+    "IV Qtr-2019": "141",
+    "Annual 2019": "683"
+  },
+  {
+    "S.NO": "8.b",
+    "Contents": "Reactions Patients Admitted",
+    "I Qtr-2019": "12",
+    "II Qtr-2019": "18",
+    "III Qtr- 2019": "20",
+    "IV Qtr-2019": "11",
+    "Annual 2019": "61"
+  },
+  {
+    "S.NO": "8.c",
+    "Contents": "RCS Patients Admitted",
+    "I Qtr-2019": "40",
+    "II Qtr-2019": "72",
+    "III Qtr- 2019": "64",
+    "IV Qtr-2019": "49",
+    "Annual 2019": "225"
+  },
+  {
+    "S.NO": "8.d",
+    "Contents": "Planter ulcers and Others Patients Admitted",
+    "I Qtr-2019": "86",
+    "II Qtr-2019": "130",
+    "III Qtr- 2019": "100",
+    "IV Qtr-2019": "81",
+    "Annual 2019": "397"
+  },
+  {
+    "S.NO": "8.e",
+    "Contents": "Total no of Beds Occupied Leprosy Patients",
+    "I Qtr-2019": "4408",
+    "II Qtr-2019": "4788",
+    "III Qtr- 2019": "5457",
+    "IV Qtr-2019": "4224",
+    "Annual 2019": "18877"
+  },
+  {
+    "S.NO": "8.f",
+    "Contents": "Bed Occupancy Rate for Leprosy",
+    "I Qtr-2019": "53.8",
+    "II Qtr-2019": "58.5",
+    "III Qtr- 2019": "66.6",
+    "IV Qtr-2019": "51.6",
+    "Annual 2019": "57.6"
+  },
+  {
+    "S.NO": "9",
+    "Contents": "Total TB/DRTB Beds Available",
+    "I Qtr-2019": "10",
+    "II Qtr-2019": "10",
+    "III Qtr- 2019": "10",
+    "IV Qtr-2019": "10",
+    "Annual 2019": "10"
+  },
+  {
+    "S.NO": "9.a",
+    "Contents": "Total  DSTB Patients Admitted",
+    "I Qtr-2019": "4",
+    "II Qtr-2019": "0",
+    "III Qtr- 2019": "4",
+    "IV Qtr-2019": "0",
+    "Annual 2019": "8"
+  },
+  {
+    "S.NO": "9.b",
+    "Contents": "Total  DRTB Patients Admitted",
+    "I Qtr-2019": "91",
+    "II Qtr-2019": "86",
+    "III Qtr- 2019": "57",
+    "IV Qtr-2019": "58",
+    "Annual 2019": "292"
+  },
+  {
+    "S.NO": "9.c",
+    "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+    "I Qtr-2019": "99",
+    "II Qtr-2019": "97",
+    "III Qtr- 2019": "86",
+    "IV Qtr-2019": "67",
+    "Annual 2019": "349"
+  },
+  {
+    "S.NO": "9.d",
+    "Contents": "Bed Occupancy Rate for TB",
+    "I Qtr-2019": "11.0",
+    "II Qtr-2019": "10.8",
+    "III Qtr- 2019": "9.6",
+    "IV Qtr-2019": "7.4",
+    "Annual 2019": "9.7"
+  }
+]

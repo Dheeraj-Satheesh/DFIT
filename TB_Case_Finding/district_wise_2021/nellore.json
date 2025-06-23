@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2021": "12",
+        "II Qtr 2021": "6",
+        "III Qtr 2021": "6",
+        "IV Qtr 2021": "9",
+        "Total 2021": "33"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2021": "9",
+        "II Qtr 2021": "7",
+        "III Qtr 2021": "2",
+        "IV Qtr 2021": "5",
+        "Total 2021": "23"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2021": "4",
+        "II Qtr 2021": "2",
+        "III Qtr 2021": "1",
+        "IV Qtr 2021": "3",
+        "Total 2021": "10"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2021": "25",
+        "II Qtr 2021": "15",
+        "III Qtr 2021": "9",
+        "IV Qtr 2021": "17",
+        "Total 2021": "66"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2021": "25",
+        "II Qtr 2021": "15",
+        "III Qtr 2021": "9",
+        "IV Qtr 2021": "17",
+        "Total 2021": "66"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2021": "10",
+        "II Qtr 2021": "12",
+        "III Qtr 2021": "6",
+        "IV Qtr 2021": "6",
+        "Total 2021": "34"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2021": "10",
+        "II Qtr 2021": "12",
+        "III Qtr 2021": "6",
+        "IV Qtr 2021": "6",
+        "Total 2021": "34"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2021": "100",
+        "II Qtr 2021": "100",
+        "III Qtr 2021": "100",
+        "IV Qtr 2021": "100",
+        "Total 2021": "100"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2021": "1",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "1"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2021": "1",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "1"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2021": "100",
+        "II Qtr 2021": "",
+        "III Qtr 2021": "",
+        "IV Qtr 2021": "",
+        "Total 2021": "100"
+    }
+]

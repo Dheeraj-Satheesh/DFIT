@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2021": "75",
+        "II Qtr 2021": "51",
+        "III Qtr 2021": "93",
+        "IV Qtr 2021": "101",
+        "Total 2021": "320"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2021": "84",
+        "II Qtr 2021": "36",
+        "III Qtr 2021": "68",
+        "IV Qtr 2021": "141",
+        "Total 2021": "329"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2021": "33",
+        "II Qtr 2021": "32",
+        "III Qtr 2021": "26",
+        "IV Qtr 2021": "53",
+        "Total 2021": "144"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2021": "192",
+        "II Qtr 2021": "119",
+        "III Qtr 2021": "187",
+        "IV Qtr 2021": "295",
+        "Total 2021": "793"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2021": "15",
+        "II Qtr 2021": "9",
+        "III Qtr 2021": "23",
+        "IV Qtr 2021": "13",
+        "Total 2021": "60"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "1",
+        "IV Qtr 2021": "0",
+        "Total 2021": "1"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2021": "2",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "1",
+        "IV Qtr 2021": "0",
+        "Total 2021": "3"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2021": "27",
+        "II Qtr 2021": "7",
+        "III Qtr 2021": "21",
+        "IV Qtr 2021": "45",
+        "Total 2021": "100"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2021": "44",
+        "II Qtr 2021": "16",
+        "III Qtr 2021": "46",
+        "IV Qtr 2021": "58",
+        "Total 2021": "164"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2021": "236",
+        "II Qtr 2021": "135",
+        "III Qtr 2021": "233",
+        "IV Qtr 2021": "353",
+        "Total 2021": "957"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2021": "67",
+        "II Qtr 2021": "75",
+        "III Qtr 2021": "51",
+        "IV Qtr 2021": "93",
+        "Total 2021": "286"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2021": "60",
+        "II Qtr 2021": "68",
+        "III Qtr 2021": "37",
+        "IV Qtr 2021": "85",
+        "Total 2021": "250"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2021": "1",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "3",
+        "IV Qtr 2021": "0",
+        "Total 2021": "4"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2021": "6",
+        "II Qtr 2021": "7",
+        "III Qtr 2021": "11",
+        "IV Qtr 2021": "8",
+        "Total 2021": "32"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2021": "89.55223880597015",
+        "II Qtr 2021": "90.7666667",
+        "III Qtr 2021": "72.54901960784314",
+        "IV Qtr 2021": "91.39784946236558",
+        "Total 2021": "87.41258741258741"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2021": "11",
+        "II Qtr 2021": "17",
+        "III Qtr 2021": "9",
+        "IV Qtr 2021": "25",
+        "Total 2021": "62"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2021": "11",
+        "II Qtr 2021": "15",
+        "III Qtr 2021": "9",
+        "IV Qtr 2021": "25",
+        "Total 2021": "60"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "0",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2021": "0",
+        "II Qtr 2021": "2",
+        "III Qtr 2021": "0",
+        "IV Qtr 2021": "0",
+        "Total 2021": "2"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2021": "100",
+        "II Qtr 2021": "88.23529411764706",
+        "III Qtr 2021": "100",
+        "IV Qtr 2021": "100",
+        "Total 2021": "96.7741935483871"
+    }
+]

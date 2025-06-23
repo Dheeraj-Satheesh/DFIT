@@ -1,0 +1,170 @@
+[
+  {
+    "Type of Cases": "NSP",
+    "I Qtr 2018": "306",
+    "II Qtr 2018": "350",
+    "III Qtr 2018": "257",
+    "IV Qtr 2018": "270",
+    "Total 2018": "1183"
+  },
+  {
+    "Type of Cases": "NSN",
+    "I Qtr 2018": "130",
+    "II Qtr 2018": "125",
+    "III Qtr 2018": "111",
+    "IV Qtr 2018": "108",
+    "Total 2018": "474"
+  },
+  {
+    "Type of Cases": "New EP",
+    "I Qtr 2018": "250",
+    "II Qtr 2018": "311",
+    "III Qtr 2018": "252",
+    "IV Qtr 2018": "202",
+    "Total 2018": "1015"
+  },
+  {
+    "Type of Cases": "Others",
+    "I Qtr 2018": "0",
+    "II Qtr 2018": "0",
+    "III Qtr 2018": "0",
+    "IV Qtr 2018": "0",
+    "Total 2018": "0"
+  },
+  {
+    "Type of Cases": "Total",
+    "I Qtr 2018": "686",
+    "II Qtr 2018": "786",
+    "III Qtr 2018": "620",
+    "IV Qtr 2018": "580",
+    "Total 2018": "2672"
+  },
+  {
+    "Type of Cases": "Relapse",
+    "I Qtr 2018": "59",
+    "II Qtr 2018": "53",
+    "III Qtr 2018": "53",
+    "IV Qtr 2018": "46",
+    "Total 2018": "211"
+  },
+  {
+    "Type of Cases": "Failures ",
+    "I Qtr 2018": "7",
+    "II Qtr 2018": "4",
+    "III Qtr 2018": "6",
+    "IV Qtr 2018": "6",
+    "Total 2018": "23"
+  },
+  {
+    "Type of Cases": "TAD",
+    "I Qtr 2018": "53",
+    "II Qtr 2018": "32",
+    "III Qtr 2018": "37",
+    "IV Qtr 2018": "22",
+    "Total 2018": "144"
+  },
+  {
+    "Type of Cases": "Others ",
+    "I Qtr 2018": "53",
+    "II Qtr 2018": "77",
+    "III Qtr 2018": "63",
+    "IV Qtr 2018": "55",
+    "Total 2018": "248"
+  },
+  {
+    "Type of Cases": "Total",
+    "I Qtr 2018": "172",
+    "II Qtr 2018": "166",
+    "III Qtr 2018": "159",
+    "IV Qtr 2018": "129",
+    "Total 2018": "626"
+  },
+  {
+    "Type of Cases": "Grand Total",
+    "I Qtr 2018": "858",
+    "II Qtr 2018": "952",
+    "III Qtr 2018": "779",
+    "IV Qtr 2018": "709",
+    "Total 2018": "3298"
+  },
+  {
+    "Type of Cases": "Total NSP conversion Cases",
+    "I Qtr 2018": "279",
+    "II Qtr 2018": "313",
+    "III Qtr 2018": "350",
+    "IV Qtr 2018": "257",
+    "Total 2018": "1199"
+  },
+  {
+    "Type of Cases": "NSP Negative",
+    "I Qtr 2018": "246",
+    "II Qtr 2018": "263",
+    "III Qtr 2018": "286",
+    "IV Qtr 2018": "210",
+    "Total 2018": "1005"
+  },
+  {
+    "Type of Cases": "NSP Positive",
+    "I Qtr 2018": "15",
+    "II Qtr 2018": "34",
+    "III Qtr 2018": "33",
+    "IV Qtr 2018": "30",
+    "Total 2018": "112"
+  },
+  {
+    "Type of Cases": "NSP Not done",
+    "I Qtr 2018": "18",
+    "II Qtr 2018": "16",
+    "III Qtr 2018": "31",
+    "IV Qtr 2018": "17",
+    "Total 2018": "82"
+  },
+  {
+    "Type of Cases": "NSP Conversion rate",
+    "I Qtr 2018": "88",
+    "II Qtr 2018": "84",
+    "III Qtr 2018": "82",
+    "IV Qtr 2018": "82",
+    "Total 2018": "84"
+  },
+  {
+    "Type of Cases": "Total RT conversion Cases",
+    "I Qtr 2018": "75",
+    "II Qtr 2018": "123",
+    "III Qtr 2018": "90",
+    "IV Qtr 2018": "96",
+    "Total 2018": "384"
+  },
+  {
+    "Type of Cases": "RT Negative",
+    "I Qtr 2018": "59",
+    "II Qtr 2018": "98",
+    "III Qtr 2018": "69",
+    "IV Qtr 2018": "77",
+    "Total 2018": "303"
+  },
+  {
+    "Type of Cases": "RT Positive",
+    "I Qtr 2018": "3",
+    "II Qtr 2018": "9",
+    "III Qtr 2018": "8",
+    "IV Qtr 2018": "4",
+    "Total 2018": "24"
+  },
+  {
+    "Type of Cases": "RT not done",
+    "I Qtr 2018": "13",
+    "II Qtr 2018": "16",
+    "III Qtr 2018": "13",
+    "IV Qtr 2018": "15",
+    "Total 2018": "57"
+  },
+  {
+    "Type of Cases": "RT Conversion rate",
+    "I Qtr 2018": "79",
+    "II Qtr 2018": "80",
+    "III Qtr 2018": "77",
+    "IV Qtr 2018": "80",
+    "Total 2018": "79"
+  }
+]

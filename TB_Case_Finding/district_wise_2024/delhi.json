@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I Qtr 2024": "226",
+        "II Qtr 2024": "260",
+        "III Qtr 2024": "186",
+        "IV Qtr 2024": "173",
+        "Total 2024": "845"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I Qtr 2024": "184",
+        "II Qtr 2024": "220",
+        "III Qtr 2024": "169",
+        "IV Qtr 2024": "154",
+        "Total 2024": "727"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I Qtr 2024": "420",
+        "II Qtr 2024": "506",
+        "III Qtr 2024": "428",
+        "IV Qtr 2024": "369",
+        "Total 2024": "1723"
+    },
+    {
+        "Type of Cases": "Others",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "0",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2024": "830",
+        "II Qtr 2024": "986",
+        "III Qtr 2024": "783",
+        "IV Qtr 2024": "696",
+        "Total 2024": "3295"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I Qtr 2024": "51",
+        "II Qtr 2024": "40",
+        "III Qtr 2024": "51",
+        "IV Qtr 2024": "41",
+        "Total 2024": "183"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I Qtr 2024": "0",
+        "II Qtr 2024": "2",
+        "III Qtr 2024": "0",
+        "IV Qtr 2024": "0",
+        "Total 2024": "2"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I Qtr 2024": "9",
+        "II Qtr 2024": "1",
+        "III Qtr 2024": "2",
+        "IV Qtr 2024": "8",
+        "Total 2024": "20"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I Qtr 2024": "68",
+        "II Qtr 2024": "64",
+        "III Qtr 2024": "62",
+        "IV Qtr 2024": "68",
+        "Total 2024": "262"
+    },
+    {
+        "Type of Cases": "Total",
+        "I Qtr 2024": "128",
+        "II Qtr 2024": "107",
+        "III Qtr 2024": "115",
+        "IV Qtr 2024": "117",
+        "Total 2024": "467"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I Qtr 2024": "958",
+        "II Qtr 2024": "1093",
+        "III Qtr 2024": "898",
+        "IV Qtr 2024": "813",
+        "Total 2024": "3762"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I Qtr 2024": "171",
+        "II Qtr 2024": "226",
+        "III Qtr 2024": "260",
+        "IV Qtr 2024": "186",
+        "Total 2024": "843"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I Qtr 2024": "146",
+        "II Qtr 2024": "176",
+        "III Qtr 2024": "213",
+        "IV Qtr 2024": "150",
+        "Total 2024": "685"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I Qtr 2024": "6",
+        "II Qtr 2024": "19",
+        "III Qtr 2024": "18",
+        "IV Qtr 2024": "14",
+        "Total 2024": "57"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I Qtr 2024": "19",
+        "II Qtr 2024": "31",
+        "III Qtr 2024": "29",
+        "IV Qtr 2024": "22",
+        "Total 2024": "101"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I Qtr 2024": "85",
+        "II Qtr 2024": "78",
+        "III Qtr 2024": "82",
+        "IV Qtr 2024": "81",
+        "Total 2024": "81"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I Qtr 2024": "35",
+        "II Qtr 2024": "60",
+        "III Qtr 2024": "43",
+        "IV Qtr 2024": "53",
+        "Total 2024": "191"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I Qtr 2024": "27",
+        "II Qtr 2024": "52",
+        "III Qtr 2024": "40",
+        "IV Qtr 2024": "43",
+        "Total 2024": "162"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I Qtr 2024": "3",
+        "II Qtr 2024": "4",
+        "III Qtr 2024": "2",
+        "IV Qtr 2024": "4",
+        "Total 2024": "13"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I Qtr 2024": "5",
+        "II Qtr 2024": "4",
+        "III Qtr 2024": "1",
+        "IV Qtr 2024": "6",
+        "Total 2024": "16"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I Qtr 2024": "77",
+        "II Qtr 2024": "87",
+        "III Qtr 2024": "93",
+        "IV Qtr 2024": "81",
+        "Total 2024": "85"
+    }
+]

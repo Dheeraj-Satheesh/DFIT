@@ -1,0 +1,632 @@
+[
+  {
+    "S.NO": "1",
+    "Contents": "Total number of outpatients treated",
+    "I Qtr-2018": "27036",
+    "II Qtr-2018": "24695",
+    "III Qtr- 2018": "25703",
+    "IV Qtr-2018": "29105",
+    "Annual 2018": "106539"
+  },
+  {
+    "S.NO": "1.a",
+    "Contents": "Skin diseases",
+    "I Qtr-2018": "8637",
+    "II Qtr-2018": "8982",
+    "III Qtr- 2018": "9976",
+    "IV Qtr-2018": "9218",
+    "Annual 2018": "36813"
+  },
+  {
+    "S.NO": "1.b",
+    "Contents": "Respiratory symtomatics",
+    "I Qtr-2018": "6131",
+    "II Qtr-2018": "5047",
+    "III Qtr- 2018": "4112",
+    "IV Qtr-2018": "5030",
+    "Annual 2018": "20320"
+  },
+  {
+    "S.NO": "1.c",
+    "Contents": "Others",
+    "I Qtr-2018": "12268",
+    "II Qtr-2018": "10666",
+    "III Qtr- 2018": "11615",
+    "IV Qtr-2018": "14857",
+    "Annual 2018": "49406"
+  },
+  {
+    "S.NO": "2",
+    "Contents": "Adult-PB",
+    "I Qtr-2018": "24",
+    "II Qtr-2018": "32",
+    "III Qtr- 2018": "23",
+    "IV Qtr-2018": "26",
+    "Annual 2018": "105"
+  },
+  {
+    "S.NO": "2.a",
+    "Contents": "Adult-MB",
+    "I Qtr-2018": "56",
+    "II Qtr-2018": "66",
+    "III Qtr- 2018": "48",
+    "IV Qtr-2018": "63",
+    "Annual 2018": "233"
+  },
+  {
+    "S.NO": "2.b",
+    "Contents": "Adult-Total",
+    "I Qtr-2018": "80",
+    "II Qtr-2018": "98",
+    "III Qtr- 2018": "71",
+    "IV Qtr-2018": "89",
+    "Annual 2018": "338"
+  },
+  {
+    "S.NO": "2.c",
+    "Contents": "Children-PB",
+    "I Qtr-2018": "7",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "5",
+    "IV Qtr-2018": "5",
+    "Annual 2018": "18"
+  },
+  {
+    "S.NO": "2.d",
+    "Contents": "Children-MB",
+    "I Qtr-2018": "7",
+    "II Qtr-2018": "4",
+    "III Qtr- 2018": "2",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "14"
+  },
+  {
+    "S.NO": "2.e",
+    "Contents": "Children-Total",
+    "I Qtr-2018": "14",
+    "II Qtr-2018": "5",
+    "III Qtr- 2018": "7",
+    "IV Qtr-2018": "6",
+    "Annual 2018": "32"
+  },
+  {
+    "S.NO": "2.f",
+    "Contents": "Total No. of new leprosy cases detected",
+    "I Qtr-2018": "94",
+    "II Qtr-2018": "103",
+    "III Qtr- 2018": "78",
+    "IV Qtr-2018": "95",
+    "Annual 2018": "370"
+  },
+  {
+    "S.NO": "2.g",
+    "Contents": "Relapse Cases",
+    "I Qtr-2018": "2",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "2.h",
+    "Contents": "Female-PB",
+    "I Qtr-2018": "8",
+    "II Qtr-2018": "11",
+    "III Qtr- 2018": "6",
+    "IV Qtr-2018": "17",
+    "Annual 2018": "42"
+  },
+  {
+    "S.NO": "2.i",
+    "Contents": "Female-MB",
+    "I Qtr-2018": "17",
+    "II Qtr-2018": "25",
+    "III Qtr- 2018": "17",
+    "IV Qtr-2018": "18",
+    "Annual 2018": "77"
+  },
+  {
+    "S.NO": "2.j",
+    "Contents": "Female-Total",
+    "I Qtr-2018": "25",
+    "II Qtr-2018": "36",
+    "III Qtr- 2018": "23",
+    "IV Qtr-2018": "35",
+    "Annual 2018": "119"
+  },
+  {
+    "S.NO": "2.k",
+    "Contents": "Adult disability G-I-PB",
+    "I Qtr-2018": "1",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "1",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "3"
+  },
+  {
+    "S.NO": "2.l",
+    "Contents": "Adult disability G-I-MB",
+    "I Qtr-2018": "16",
+    "II Qtr-2018": "14",
+    "III Qtr- 2018": "19",
+    "IV Qtr-2018": "14",
+    "Annual 2018": "63"
+  },
+  {
+    "S.NO": "2.m",
+    "Contents": "Total Adult disability G-I",
+    "I Qtr-2018": "17",
+    "II Qtr-2018": "15",
+    "III Qtr- 2018": "20",
+    "IV Qtr-2018": "14",
+    "Annual 2018": "66"
+  },
+  {
+    "S.NO": "2.n",
+    "Contents": "Adult disability G- II-PB",
+    "I Qtr-2018": "3",
+    "II Qtr-2018": "3",
+    "III Qtr- 2018": "1",
+    "IV Qtr-2018": "2",
+    "Annual 2018": "9"
+  },
+  {
+    "S.NO": "2.o",
+    "Contents": "Adult disability G-II-MB",
+    "I Qtr-2018": "20",
+    "II Qtr-2018": "17",
+    "III Qtr- 2018": "13",
+    "IV Qtr-2018": "17",
+    "Annual 2018": "67"
+  },
+  {
+    "S.NO": "2.p",
+    "Contents": "Total Adult disability G-II",
+    "I Qtr-2018": "23",
+    "II Qtr-2018": "20",
+    "III Qtr- 2018": "14",
+    "IV Qtr-2018": "19",
+    "Annual 2018": "76"
+  },
+  {
+    "S.NO": "2.q",
+    "Contents": "Children disability G-I-PB",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "0"
+  },
+  {
+    "S.NO": "2.r",
+    "Contents": "Children disability G-I-MB",
+    "I Qtr-2018": "2",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "2.s",
+    "Contents": "Total Children disability G-I",
+    "I Qtr-2018": "2",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "2.t",
+    "Contents": "Children disability G-II-PB",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "0"
+  },
+  {
+    "S.NO": "2.u",
+    "Contents": "Children disability G-II-MB",
+    "I Qtr-2018": "1",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "2.v",
+    "Contents": "Total Children disability G-II",
+    "I Qtr-2018": "1",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "3",
+    "Contents": "lepra ReactionType-1 Male",
+    "I Qtr-2018": "32",
+    "II Qtr-2018": "39",
+    "III Qtr- 2018": "16",
+    "IV Qtr-2018": "34",
+    "Annual 2018": "121"
+  },
+  {
+    "S.NO": "3.a",
+    "Contents": "lepra ReactionType-1 Female",
+    "I Qtr-2018": "9",
+    "II Qtr-2018": "19",
+    "III Qtr- 2018": "12",
+    "IV Qtr-2018": "18",
+    "Annual 2018": "58"
+  },
+  {
+    "S.NO": "3.b",
+    "Contents": "Total Type-1 lepra reactions",
+    "I Qtr-2018": "41",
+    "II Qtr-2018": "58",
+    "III Qtr- 2018": "28",
+    "IV Qtr-2018": "52",
+    "Annual 2018": "179"
+  },
+  {
+    "S.NO": "3.c",
+    "Contents": "lepra ReactionType-2 Male",
+    "I Qtr-2018": "14",
+    "II Qtr-2018": "13",
+    "III Qtr- 2018": "13",
+    "IV Qtr-2018": "17",
+    "Annual 2018": "57"
+  },
+  {
+    "S.NO": "3.d",
+    "Contents": "lepra ReactionType-2 Female",
+    "I Qtr-2018": "6",
+    "II Qtr-2018": "6",
+    "III Qtr- 2018": "4",
+    "IV Qtr-2018": "6",
+    "Annual 2018": "22"
+  },
+  {
+    "S.NO": "3.e",
+    "Contents": "Total Type 2 lepra reactions",
+    "I Qtr-2018": "20",
+    "II Qtr-2018": "19",
+    "III Qtr- 2018": "17",
+    "IV Qtr-2018": "23",
+    "Annual 2018": "79"
+  },
+  {
+    "S.NO": "4",
+    "Contents": "Total number of persons provided with MCR footwear",
+    "I Qtr-2018": "583",
+    "II Qtr-2018": "498",
+    "III Qtr- 2018": "403",
+    "IV Qtr-2018": "428",
+    "Annual 2018": "1912"
+  },
+  {
+    "S.NO": "5",
+    "Contents": "RCS Male",
+    "I Qtr-2018": "64",
+    "II Qtr-2018": "82",
+    "III Qtr- 2018": "82",
+    "IV Qtr-2018": "64",
+    "Annual 2018": "292"
+  },
+  {
+    "S.NO": "5.a",
+    "Contents": "RCS Female",
+    "I Qtr-2018": "18",
+    "II Qtr-2018": "23",
+    "III Qtr- 2018": "37",
+    "IV Qtr-2018": "29",
+    "Annual 2018": "107"
+  },
+  {
+    "S.NO": "5.b",
+    "Contents": "TOTAL RCS DONE ",
+    "I Qtr-2018": "82",
+    "II Qtr-2018": "105",
+    "III Qtr- 2018": "119",
+    "IV Qtr-2018": "93",
+    "Annual 2018": "399"
+  },
+  {
+    "S.NO": "5.c",
+    "Contents": "Eye Male RCS Done",
+    "I Qtr-2018": "2",
+    "II Qtr-2018": "7",
+    "III Qtr- 2018": "9",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "19"
+  },
+  {
+    "S.NO": "5.d",
+    "Contents": "Eye Female RCS Done",
+    "I Qtr-2018": "1",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "2",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "5"
+  },
+  {
+    "S.NO": "5.e",
+    "Contents": "Total Eye RCS Done",
+    "I Qtr-2018": "3",
+    "II Qtr-2018": "8",
+    "III Qtr- 2018": "11",
+    "IV Qtr-2018": "2",
+    "Annual 2018": "24"
+  },
+  {
+    "S.NO": "5.f",
+    "Contents": "Hand Male RCS Done",
+    "I Qtr-2018": "50",
+    "II Qtr-2018": "63",
+    "III Qtr- 2018": "61",
+    "IV Qtr-2018": "59",
+    "Annual 2018": "233"
+  },
+  {
+    "S.NO": "5.g",
+    "Contents": "Hand Female RCS Done",
+    "I Qtr-2018": "17",
+    "II Qtr-2018": "21",
+    "III Qtr- 2018": "32",
+    "IV Qtr-2018": "25",
+    "Annual 2018": "95"
+  },
+  {
+    "S.NO": "5.h",
+    "Contents": "Total Hand RCS Done",
+    "I Qtr-2018": "67",
+    "II Qtr-2018": "84",
+    "III Qtr- 2018": "93",
+    "IV Qtr-2018": "84",
+    "Annual 2018": "328"
+  },
+  {
+    "S.NO": "5.i",
+    "Contents": "Foot Male RCS Done",
+    "I Qtr-2018": "12",
+    "II Qtr-2018": "12",
+    "III Qtr- 2018": "12",
+    "IV Qtr-2018": "4",
+    "Annual 2018": "40"
+  },
+  {
+    "S.NO": "5.j",
+    "Contents": "Foot Female RCS Done",
+    "I Qtr-2018": "1",
+    "II Qtr-2018": "1",
+    "III Qtr- 2018": "3",
+    "IV Qtr-2018": "3",
+    "Annual 2018": "8"
+  },
+  {
+    "S.NO": "5.k",
+    "Contents": "Total Foot RCS Done",
+    "I Qtr-2018": "13",
+    "II Qtr-2018": "13",
+    "III Qtr- 2018": "15",
+    "IV Qtr-2018": "7",
+    "Annual 2018": "48"
+  },
+  {
+    "S.NO": "6",
+    "Contents": "Male Septic Surgeries /Nerve Decompression",
+    "I Qtr-2018": "16",
+    "II Qtr-2018": "24",
+    "III Qtr- 2018": "20",
+    "IV Qtr-2018": "21",
+    "Annual 2018": "81"
+  },
+  {
+    "S.NO": "6.a",
+    "Contents": "Female Septic Surgeries /Nerve Decompression",
+    "I Qtr-2018": "6",
+    "II Qtr-2018": "4",
+    "III Qtr- 2018": "8",
+    "IV Qtr-2018": "9",
+    "Annual 2018": "27"
+  },
+  {
+    "S.NO": "6.b",
+    "Contents": "Total Septic Surgeries /Nerve Decompression",
+    "I Qtr-2018": "22",
+    "II Qtr-2018": "28",
+    "III Qtr- 2018": "28",
+    "IV Qtr-2018": "30",
+    "Annual 2018": "108"
+  },
+  {
+    "S.NO": "7",
+    "Contents": "Male House Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "1"
+  },
+  {
+    "S.NO": "7.a",
+    "Contents": "Female House Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "5",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "5"
+  },
+  {
+    "S.NO": "7.b",
+    "Contents": "Total House Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "5",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "6"
+  },
+  {
+    "S.NO": "7.c",
+    "Contents": "Male Self-Employment Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "2",
+    "III Qtr- 2018": "1",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "4"
+  },
+  {
+    "S.NO": "7.d",
+    "Contents": "Female Self-Employment Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "2",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "0",
+    "Annual 2018": "2"
+  },
+  {
+    "S.NO": "7.e",
+    "Contents": "Total Self-Employment Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "4",
+    "III Qtr- 2018": "1",
+    "IV Qtr-2018": "1",
+    "Annual 2018": "6"
+  },
+  {
+    "S.NO": "7.f",
+    "Contents": "Male Education Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "3",
+    "Annual 2018": "3"
+  },
+  {
+    "S.NO": "7.g",
+    "Contents": "Female EducationSupport",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "3",
+    "Annual 2018": "3"
+  },
+  {
+    "S.NO": "7.h",
+    "Contents": "Total Education Support",
+    "I Qtr-2018": "0",
+    "II Qtr-2018": "0",
+    "III Qtr- 2018": "0",
+    "IV Qtr-2018": "6",
+    "Annual 2018": "6"
+  },
+  {
+    "S.NO": "8",
+    "Contents": "Total Leprosy Beds Available",
+    "I Qtr-2018": "305",
+    "II Qtr-2018": "305",
+    "III Qtr- 2018": "305",
+    "IV Qtr-2018": "305",
+    "Annual 2018": "305"
+  },
+  {
+    "S.NO": "8.a",
+    "Contents": "Total Leprosy Patients Admitted",
+    "I Qtr-2018": "490",
+    "II Qtr-2018": "472",
+    "III Qtr- 2018": "493",
+    "IV Qtr-2018": "379",
+    "Annual 2018": "1834"
+  },
+  {
+    "S.NO": "8.b",
+    "Contents": "Reactions Patients Admitted",
+    "I Qtr-2018": "34",
+    "II Qtr-2018": "32",
+    "III Qtr- 2018": "19",
+    "IV Qtr-2018": "25",
+    "Annual 2018": "110"
+  },
+  {
+    "S.NO": "8.c",
+    "Contents": "RCS Patients Admitted",
+    "I Qtr-2018": "133",
+    "II Qtr-2018": "122",
+    "III Qtr- 2018": "154",
+    "IV Qtr-2018": "102",
+    "Annual 2018": "511"
+  },
+  {
+    "S.NO": "8.d",
+    "Contents": "Planter ulcers and Others Patients Admitted",
+    "I Qtr-2018": "323",
+    "II Qtr-2018": "318",
+    "III Qtr- 2018": "320",
+    "IV Qtr-2018": "252",
+    "Annual 2018": "1213"
+  },
+  {
+    "S.NO": "8.e",
+    "Contents": "Total no of Beds Occupied Leprosy Patients",
+    "I Qtr-2018": "13815",
+    "II Qtr-2018": "14489",
+    "III Qtr- 2018": "13645",
+    "IV Qtr-2018": "12030",
+    "Annual 2018": "53979"
+  },
+  {
+    "S.NO": "8.f",
+    "Contents": "Bed Occupancy Rate for Leprosy",
+    "I Qtr-2018": "50.3",
+    "II Qtr-2018": "52.8",
+    "III Qtr- 2018": "49.7",
+    "IV Qtr-2018": "43.8",
+    "Annual 2018": "49.2"
+  },
+  {
+    "S.NO": "9",
+    "Contents": "Total TB/DRTB Beds Available",
+    "I Qtr-2018": "33",
+    "II Qtr-2018": "33",
+    "III Qtr- 2018": "33",
+    "IV Qtr-2018": "33",
+    "Annual 2018": "33"
+  },
+  {
+    "S.NO": "9.a",
+    "Contents": "Total  DSTB Patients Admitted",
+    "I Qtr-2018": "37",
+    "II Qtr-2018": "73",
+    "III Qtr- 2018": "36",
+    "IV Qtr-2018": "28",
+    "Annual 2018": "174"
+  },
+  {
+    "S.NO": "9.b",
+    "Contents": "Total  DRTB Patients Admitted",
+    "I Qtr-2018": "54",
+    "II Qtr-2018": "94",
+    "III Qtr- 2018": "109",
+    "IV Qtr-2018": "93",
+    "Annual 2018": "350"
+  },
+  {
+    "S.NO": "9.c",
+    "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+    "I Qtr-2018": "527",
+    "II Qtr-2018": "670",
+    "III Qtr- 2018": "393",
+    "IV Qtr-2018": "332",
+    "Annual 2018": "1922"
+  },
+  {
+    "S.NO": "9.d",
+    "Contents": "Bed Occupancy Rate for TB",
+    "I Qtr-2018": "17.7",
+    "II Qtr-2018": "22.6",
+    "III Qtr- 2018": "13.2",
+    "IV Qtr-2018": "11.2",
+    "Annual 2018": "16.2"
+  }
+]

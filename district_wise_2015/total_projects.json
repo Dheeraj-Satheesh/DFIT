@@ -1,0 +1,632 @@
+[
+  {
+    "S.NO": "1",
+    "Contents": "Total number of outpatients treated",
+    "I Qtr-2015": "24884",
+    "II Qtr-2015": "26213",
+    "III Qtr- 2015": "29976",
+    "IV Qtr-2015": "27359",
+    "Annual 2015": "108432"
+  },
+  {
+    "S.NO": "1.a",
+    "Contents": "Skin diseases",
+    "I Qtr-2015": "3399",
+    "II Qtr-2015": "5383",
+    "III Qtr- 2015": "5710",
+    "IV Qtr-2015": "5358",
+    "Annual 2015": "19850"
+  },
+  {
+    "S.NO": "1.b",
+    "Contents": "Respiratory symtomatics",
+    "I Qtr-2015": "8071",
+    "II Qtr-2015": "5114",
+    "III Qtr- 2015": "5107",
+    "IV Qtr-2015": "5410",
+    "Annual 2015": "23702"
+  },
+  {
+    "S.NO": "1.c",
+    "Contents": "Others",
+    "I Qtr-2015": "13414",
+    "II Qtr-2015": "15716",
+    "III Qtr- 2015": "19159",
+    "IV Qtr-2015": "16591",
+    "Annual 2015": "64880"
+  },
+  {
+    "S.NO": "2",
+    "Contents": "Adult-PB",
+    "I Qtr-2015": "30",
+    "II Qtr-2015": "44",
+    "III Qtr- 2015": "43",
+    "IV Qtr-2015": "29",
+    "Annual 2015": "146"
+  },
+  {
+    "S.NO": "2.a",
+    "Contents": "Adult-MB",
+    "I Qtr-2015": "56",
+    "II Qtr-2015": "78",
+    "III Qtr- 2015": "74",
+    "IV Qtr-2015": "39",
+    "Annual 2015": "247"
+  },
+  {
+    "S.NO": "2.b",
+    "Contents": "Adult-Total",
+    "I Qtr-2015": "86",
+    "II Qtr-2015": "122",
+    "III Qtr- 2015": "117",
+    "IV Qtr-2015": "68",
+    "Annual 2015": "393"
+  },
+  {
+    "S.NO": "2.c",
+    "Contents": "Children-PB",
+    "I Qtr-2015": "3",
+    "II Qtr-2015": "4",
+    "III Qtr- 2015": "12",
+    "IV Qtr-2015": "5",
+    "Annual 2015": "24"
+  },
+  {
+    "S.NO": "2.d",
+    "Contents": "Children-MB",
+    "I Qtr-2015": "1",
+    "II Qtr-2015": "7",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "2",
+    "Annual 2015": "11"
+  },
+  {
+    "S.NO": "2.e",
+    "Contents": "Children-Total",
+    "I Qtr-2015": "4",
+    "II Qtr-2015": "11",
+    "III Qtr- 2015": "13",
+    "IV Qtr-2015": "7",
+    "Annual 2015": "35"
+  },
+  {
+    "S.NO": "2.f",
+    "Contents": "Total No. of new leprosy cases detected",
+    "I Qtr-2015": "90",
+    "II Qtr-2015": "133",
+    "III Qtr- 2015": "130",
+    "IV Qtr-2015": "75",
+    "Annual 2015": "428"
+  },
+  {
+    "S.NO": "2.g",
+    "Contents": "Relapse Cases",
+    "I Qtr-2015": "1",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "4",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "8"
+  },
+  {
+    "S.NO": "2.h",
+    "Contents": "Female-PB",
+    "I Qtr-2015": "13",
+    "II Qtr-2015": "20",
+    "III Qtr- 2015": "30",
+    "IV Qtr-2015": "12",
+    "Annual 2015": "75"
+  },
+  {
+    "S.NO": "2.i",
+    "Contents": "Female-MB",
+    "I Qtr-2015": "15",
+    "II Qtr-2015": "24",
+    "III Qtr- 2015": "33",
+    "IV Qtr-2015": "15",
+    "Annual 2015": "87"
+  },
+  {
+    "S.NO": "2.j",
+    "Contents": "Female-Total",
+    "I Qtr-2015": "28",
+    "II Qtr-2015": "42",
+    "III Qtr- 2015": "63",
+    "IV Qtr-2015": "27",
+    "Annual 2015": "160"
+  },
+  {
+    "S.NO": "2.k",
+    "Contents": "Adult disability G-I-PB",
+    "I Qtr-2015": "2",
+    "II Qtr-2015": "2",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "6",
+    "Annual 2015": "13"
+  },
+  {
+    "S.NO": "2.l",
+    "Contents": "Adult disability G-I-MB",
+    "I Qtr-2015": "12",
+    "II Qtr-2015": "15",
+    "III Qtr- 2015": "16",
+    "IV Qtr-2015": "10",
+    "Annual 2015": "53"
+  },
+  {
+    "S.NO": "2.m",
+    "Contents": "Total Adult disability G-I",
+    "I Qtr-2015": "14",
+    "II Qtr-2015": "17",
+    "III Qtr- 2015": "19",
+    "IV Qtr-2015": "16",
+    "Annual 2015": "66"
+  },
+  {
+    "S.NO": "2.n",
+    "Contents": "Adult disability G- II-PB",
+    "I Qtr-2015": "2",
+    "II Qtr-2015": "4",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "2",
+    "Annual 2015": "11"
+  },
+  {
+    "S.NO": "2.o",
+    "Contents": "Adult disability G-II-MB",
+    "I Qtr-2015": "16",
+    "II Qtr-2015": "23",
+    "III Qtr- 2015": "21",
+    "IV Qtr-2015": "14",
+    "Annual 2015": "74"
+  },
+  {
+    "S.NO": "2.p",
+    "Contents": "Total Adult disability G-II",
+    "I Qtr-2015": "18",
+    "II Qtr-2015": "27",
+    "III Qtr- 2015": "24",
+    "IV Qtr-2015": "16",
+    "Annual 2015": "85"
+  },
+  {
+    "S.NO": "2.q",
+    "Contents": "Children disability G-I-PB",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "0",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "0"
+  },
+  {
+    "S.NO": "2.r",
+    "Contents": "Children disability G-I-MB",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "0",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "0"
+  },
+  {
+    "S.NO": "2.s",
+    "Contents": "Total Children disability G-I",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "0",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "0"
+  },
+  {
+    "S.NO": "2.t",
+    "Contents": "Children disability G-II-PB",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "1",
+    "III Qtr- 2015": "0",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "1"
+  },
+  {
+    "S.NO": "2.u",
+    "Contents": "Children disability G-II-MB",
+    "I Qtr-2015": "1",
+    "II Qtr-2015": "1",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "1",
+    "Annual 2015": "4"
+  },
+  {
+    "S.NO": "2.v",
+    "Contents": "Total Children disability G-II",
+    "I Qtr-2015": "1",
+    "II Qtr-2015": "2",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "1",
+    "Annual 2015": "5"
+  },
+  {
+    "S.NO": "3",
+    "Contents": "lepra ReactionType-1 Male",
+    "I Qtr-2015": "50",
+    "II Qtr-2015": "69",
+    "III Qtr- 2015": "51",
+    "IV Qtr-2015": "39",
+    "Annual 2015": "209"
+  },
+  {
+    "S.NO": "3.a",
+    "Contents": "lepra ReactionType-1 Female",
+    "I Qtr-2015": "19",
+    "II Qtr-2015": "24",
+    "III Qtr- 2015": "25",
+    "IV Qtr-2015": "18",
+    "Annual 2015": "86"
+  },
+  {
+    "S.NO": "3.b",
+    "Contents": "Total Type-1 lepra reactions",
+    "I Qtr-2015": "69",
+    "II Qtr-2015": "93",
+    "III Qtr- 2015": "76",
+    "IV Qtr-2015": "57",
+    "Annual 2015": "295"
+  },
+  {
+    "S.NO": "3.c",
+    "Contents": "lepra ReactionType-2 Male",
+    "I Qtr-2015": "23",
+    "II Qtr-2015": "20",
+    "III Qtr- 2015": "17",
+    "IV Qtr-2015": "14",
+    "Annual 2015": "74"
+  },
+  {
+    "S.NO": "3.d",
+    "Contents": "lepra ReactionType-2 Female",
+    "I Qtr-2015": "7",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "2",
+    "Annual 2015": "15"
+  },
+  {
+    "S.NO": "3.e",
+    "Contents": "Total Type 2 lepra reactions",
+    "I Qtr-2015": "30",
+    "II Qtr-2015": "23",
+    "III Qtr- 2015": "20",
+    "IV Qtr-2015": "16",
+    "Annual 2015": "89"
+  },
+  {
+    "S.NO": "4",
+    "Contents": "Total number of persons provided with MCR footwear",
+    "I Qtr-2015": "536",
+    "II Qtr-2015": "473",
+    "III Qtr- 2015": "494",
+    "IV Qtr-2015": "345",
+    "Annual 2015": "1848"
+  },
+  {
+    "S.NO": "5",
+    "Contents": "RCS Male",
+    "I Qtr-2015": "69",
+    "II Qtr-2015": "87",
+    "III Qtr- 2015": "123",
+    "IV Qtr-2015": "84",
+    "Annual 2015": "363"
+  },
+  {
+    "S.NO": "5.a",
+    "Contents": "RCS Female",
+    "I Qtr-2015": "25",
+    "II Qtr-2015": "42",
+    "III Qtr- 2015": "28",
+    "IV Qtr-2015": "20",
+    "Annual 2015": "115"
+  },
+  {
+    "S.NO": "5.b",
+    "Contents": "TOTAL RCS DONE ",
+    "I Qtr-2015": "94",
+    "II Qtr-2015": "129",
+    "III Qtr- 2015": "151",
+    "IV Qtr-2015": "104",
+    "Annual 2015": "478"
+  },
+  {
+    "S.NO": "5.c",
+    "Contents": "Eye Male RCS Done",
+    "I Qtr-2015": "4",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "12",
+    "IV Qtr-2015": "9",
+    "Annual 2015": "28"
+  },
+  {
+    "S.NO": "5.d",
+    "Contents": "Eye Female RCS Done",
+    "I Qtr-2015": "1",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "0",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "1"
+  },
+  {
+    "S.NO": "5.e",
+    "Contents": "Total Eye RCS Done",
+    "I Qtr-2015": "5",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "12",
+    "IV Qtr-2015": "9",
+    "Annual 2015": "29"
+  },
+  {
+    "S.NO": "5.f",
+    "Contents": "Hand Male RCS Done",
+    "I Qtr-2015": "34",
+    "II Qtr-2015": "50",
+    "III Qtr- 2015": "59",
+    "IV Qtr-2015": "46",
+    "Annual 2015": "189"
+  },
+  {
+    "S.NO": "5.g",
+    "Contents": "Hand Female RCS Done",
+    "I Qtr-2015": "16",
+    "II Qtr-2015": "19",
+    "III Qtr- 2015": "16",
+    "IV Qtr-2015": "10",
+    "Annual 2015": "61"
+  },
+  {
+    "S.NO": "5.h",
+    "Contents": "Total Hand RCS Done",
+    "I Qtr-2015": "50",
+    "II Qtr-2015": "69",
+    "III Qtr- 2015": "75",
+    "IV Qtr-2015": "56",
+    "Annual 2015": "250"
+  },
+  {
+    "S.NO": "5.i",
+    "Contents": "Foot Male RCS Done",
+    "I Qtr-2015": "11",
+    "II Qtr-2015": "15",
+    "III Qtr- 2015": "9",
+    "IV Qtr-2015": "19",
+    "Annual 2015": "54"
+  },
+  {
+    "S.NO": "5.j",
+    "Contents": "Foot Female RCS Done",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "5",
+    "Annual 2015": "9"
+  },
+  {
+    "S.NO": "5.k",
+    "Contents": "Total Foot RCS Done",
+    "I Qtr-2015": "11",
+    "II Qtr-2015": "18",
+    "III Qtr- 2015": "10",
+    "IV Qtr-2015": "24",
+    "Annual 2015": "63"
+  },
+  {
+    "S.NO": "6",
+    "Contents": "Male Septic Surgeries /Nerve Decompression",
+    "I Qtr-2015": "23",
+    "II Qtr-2015": "25",
+    "III Qtr- 2015": "32",
+    "IV Qtr-2015": "34",
+    "Annual 2015": "114"
+  },
+  {
+    "S.NO": "6.a",
+    "Contents": "Female Septic Surgeries /Nerve Decompression",
+    "I Qtr-2015": "7",
+    "II Qtr-2015": "5",
+    "III Qtr- 2015": "14",
+    "IV Qtr-2015": "8",
+    "Annual 2015": "34"
+  },
+  {
+    "S.NO": "6.b",
+    "Contents": "Total Septic Surgeries /Nerve Decompression",
+    "I Qtr-2015": "30",
+    "II Qtr-2015": "30",
+    "III Qtr- 2015": "46",
+    "IV Qtr-2015": "42",
+    "Annual 2015": "148"
+  },
+  {
+    "S.NO": "7",
+    "Contents": "Male House Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "4",
+    "Annual 2015": "5"
+  },
+  {
+    "S.NO": "7.a",
+    "Contents": "Female House Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "2",
+    "IV Qtr-2015": "1",
+    "Annual 2015": "3"
+  },
+  {
+    "S.NO": "7.b",
+    "Contents": "Total House Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "5",
+    "Annual 2015": "8"
+  },
+  {
+    "S.NO": "7.c",
+    "Contents": "Male Self-Employment Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "2",
+    "IV Qtr-2015": "2",
+    "Annual 2015": "7"
+  },
+  {
+    "S.NO": "7.d",
+    "Contents": "Female Self-Employment Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "1"
+  },
+  {
+    "S.NO": "7.e",
+    "Contents": "Total Self-Employment Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "3",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "2",
+    "Annual 2015": "8"
+  },
+  {
+    "S.NO": "7.f",
+    "Contents": "Male Education Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "1",
+    "III Qtr- 2015": "1",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "2"
+  },
+  {
+    "S.NO": "7.g",
+    "Contents": "Female EducationSupport",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "0",
+    "III Qtr- 2015": "3",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "3"
+  },
+  {
+    "S.NO": "7.h",
+    "Contents": "Total Education Support",
+    "I Qtr-2015": "0",
+    "II Qtr-2015": "1",
+    "III Qtr- 2015": "4",
+    "IV Qtr-2015": "0",
+    "Annual 2015": "5"
+  },
+  {
+    "S.NO": "8",
+    "Contents": "Total Leprosy Beds Available",
+    "I Qtr-2015": "301",
+    "II Qtr-2015": "301",
+    "III Qtr- 2015": "301",
+    "IV Qtr-2015": "301",
+    "Annual 2015": "301"
+  },
+  {
+    "S.NO": "8.a",
+    "Contents": "Total Leprosy Patients Admitted",
+    "I Qtr-2015": "482",
+    "II Qtr-2015": "482",
+    "III Qtr- 2015": "565",
+    "IV Qtr-2015": "413",
+    "Annual 2015": "1942"
+  },
+  {
+    "S.NO": "8.b",
+    "Contents": "Reactions Patients Admitted",
+    "I Qtr-2015": "43",
+    "II Qtr-2015": "23",
+    "III Qtr- 2015": "20",
+    "IV Qtr-2015": "16",
+    "Annual 2015": "102"
+  },
+  {
+    "S.NO": "8.c",
+    "Contents": "RCS Patients Admitted",
+    "I Qtr-2015": "158",
+    "II Qtr-2015": "175",
+    "III Qtr- 2015": "204",
+    "IV Qtr-2015": "144",
+    "Annual 2015": "681"
+  },
+  {
+    "S.NO": "8.d",
+    "Contents": "Planter ulcers and Others Patients Admitted",
+    "I Qtr-2015": "281",
+    "II Qtr-2015": "284",
+    "III Qtr- 2015": "341",
+    "IV Qtr-2015": "253",
+    "Annual 2015": "1159"
+  },
+  {
+    "S.NO": "8.e",
+    "Contents": "Total no of Beds Occupied Leprosy Patients",
+    "I Qtr-2015": "12845",
+    "II Qtr-2015": "14011",
+    "III Qtr- 2015": "14462",
+    "IV Qtr-2015": "13928",
+    "Annual 2015": "55246"
+  },
+  {
+    "S.NO": "8.f",
+    "Contents": "Bed Occupancy Rate for Leprosy",
+    "I Qtr-2015": "47.4",
+    "II Qtr-2015": "51.7",
+    "III Qtr- 2015": "53.4",
+    "IV Qtr-2015": "51.4",
+    "Annual 2015": "51.0"
+  },
+  {
+    "S.NO": "9",
+    "Contents": "Total TB/DRTB Beds Available",
+    "I Qtr-2015": "46",
+    "II Qtr-2015": "46",
+    "III Qtr- 2015": "46",
+    "IV Qtr-2015": "46",
+    "Annual 2015": "46"
+  },
+  {
+    "S.NO": "9.a",
+    "Contents": "Total  DSTB Patients Admitted",
+    "I Qtr-2015": "33",
+    "II Qtr-2015": "33",
+    "III Qtr- 2015": "55",
+    "IV Qtr-2015": "24",
+    "Annual 2015": "145"
+  },
+  {
+    "S.NO": "9.b",
+    "Contents": "Total  DRTB Patients Admitted",
+    "I Qtr-2015": "29",
+    "II Qtr-2015": "48",
+    "III Qtr- 2015": "77",
+    "IV Qtr-2015": "53",
+    "Annual 2015": "207"
+  },
+  {
+    "S.NO": "9.c",
+    "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+    "I Qtr-2015": "477",
+    "II Qtr-2015": "586",
+    "III Qtr- 2015": "774",
+    "IV Qtr-2015": "530",
+    "Annual 2015": "2367"
+  },
+  {
+    "S.NO": "9.d",
+    "Contents": "Bed Occupancy Rate for TB",
+    "I Qtr-2015": "11.5",
+    "II Qtr-2015": "14.2",
+    "III Qtr- 2015": "18.7",
+    "IV Qtr-2015": "12.8",
+    "Annual 2015": "14.3"
+  }
+]
