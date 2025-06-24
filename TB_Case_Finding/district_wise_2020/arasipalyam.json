@@ -125,7 +125,7 @@
         "II Qtr 2020": "100",
         "III Qtr 2020": "80",
         "IV Qtr 2020": "100",
-        "Total 2020": "96.55172413793103"
+        "Total 2020": "97"
     },
     {
         "Type of Cases": "Total RT conversion Cases",
@@ -162,9 +162,9 @@
     {
         "Type of Cases": "RT Conversion rate",
         "I Qtr 2020": "100",
-        "II Qtr 2020": "",
-        "III Qtr 2020": "",
-        "IV Qtr 2020": "66.7666666",
+        "II Qtr 2020": "0",
+        "III Qtr 2020": "0",
+        "IV Qtr 2020": "67",
         "Total 2020": "80"
     }
 ]

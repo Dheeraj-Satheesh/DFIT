@@ -1,170 +1,170 @@
 [
   {
     "Type of Cases": "NSP",
-    "I Qtr 2023": "209",
-    "II Qtr 2023": "269",
-    "III Qtr 2023": "220",
-    "IV Qtr 2023": "171",
-    "Total 2023": "869"
+    "I Qtr 2017": "209",
+    "II Qtr 2017": "269",
+    "III Qtr 2017": "220",
+    "IV Qtr 2017": "171",
+    "Total 2017": "869"
   },
   {
     "Type of Cases": "NSN",
-    "I Qtr 2023": "171",
-    "II Qtr 2023": "183",
-    "III Qtr 2023": "150",
-    "IV Qtr 2023": "130",
-    "Total 2023": "634"
+    "I Qtr 2017": "171",
+    "II Qtr 2017": "183",
+    "III Qtr 2017": "150",
+    "IV Qtr 2017": "130",
+    "Total 2017": "634"
   },
   {
     "Type of Cases": "New EP",
-    "I Qtr 2023": "340",
-    "II Qtr 2023": "450",
-    "III Qtr 2023": "425",
-    "IV Qtr 2023": "297",
-    "Total 2023": "1512"
+    "I Qtr 2017": "340",
+    "II Qtr 2017": "450",
+    "III Qtr 2017": "425",
+    "IV Qtr 2017": "297",
+    "Total 2017": "1512"
   },
   {
     "Type of Cases": "Others",
-    "I Qtr 2023": "0",
-    "II Qtr 2023": "0",
-    "III Qtr 2023": "0",
-    "IV Qtr 2023": "0",
-    "Total 2023": "0"
+    "I Qtr 2017": "0",
+    "II Qtr 2017": "0",
+    "III Qtr 2017": "0",
+    "IV Qtr 2017": "0",
+    "Total 2017": "0"
   },
   {
     "Type of Cases": "Total",
-    "I Qtr 2023": "720",
-    "II Qtr 2023": "902",
-    "III Qtr 2023": "795",
-    "IV Qtr 2023": "598",
-    "Total 2023": "3015"
+    "I Qtr 2017": "720",
+    "II Qtr 2017": "902",
+    "III Qtr 2017": "795",
+    "IV Qtr 2017": "598",
+    "Total 2017": "3015"
   },
   {
     "Type of Cases": "Relapse",
-    "I Qtr 2023": "63",
-    "II Qtr 2023": "43",
-    "III Qtr 2023": "59",
-    "IV Qtr 2023": "25",
-    "Total 2023": "190"
+    "I Qtr 2017": "63",
+    "II Qtr 2017": "43",
+    "III Qtr 2017": "59",
+    "IV Qtr 2017": "25",
+    "Total 2017": "190"
   },
   {
     "Type of Cases": "Failures ",
-    "I Qtr 2023": "3",
-    "II Qtr 2023": "3",
-    "III Qtr 2023": "2",
-    "IV Qtr 2023": "0",
-    "Total 2023": "8"
+    "I Qtr 2017": "3",
+    "II Qtr 2017": "3",
+    "III Qtr 2017": "2",
+    "IV Qtr 2017": "0",
+    "Total 2017": "8"
   },
   {
     "Type of Cases": "TAD",
-    "I Qtr 2023": "9",
-    "II Qtr 2023": "13",
-    "III Qtr 2023": "20",
-    "IV Qtr 2023": "10",
-    "Total 2023": "52"
+    "I Qtr 2017": "9",
+    "II Qtr 2017": "13",
+    "III Qtr 2017": "20",
+    "IV Qtr 2017": "10",
+    "Total 2017": "52"
   },
   {
     "Type of Cases": "Others ",
-    "I Qtr 2023": "79",
-    "II Qtr 2023": "61",
-    "III Qtr 2023": "73",
-    "IV Qtr 2023": "71",
-    "Total 2023": "284"
+    "I Qtr 2017": "79",
+    "II Qtr 2017": "61",
+    "III Qtr 2017": "73",
+    "IV Qtr 2017": "71",
+    "Total 2017": "284"
   },
   {
     "Type of Cases": "Total",
-    "I Qtr 2023": "154",
-    "II Qtr 2023": "120",
-    "III Qtr 2023": "154",
-    "IV Qtr 2023": "106",
-    "Total 2023": "534"
+    "I Qtr 2017": "154",
+    "II Qtr 2017": "120",
+    "III Qtr 2017": "154",
+    "IV Qtr 2017": "106",
+    "Total 2017": "534"
   },
   {
     "Type of Cases": "Grand Total",
-    "I Qtr 2023": "874",
-    "II Qtr 2023": "1022",
-    "III Qtr 2023": "949",
-    "IV Qtr 2023": "704",
-    "Total 2023": "3549"
+    "I Qtr 2017": "874",
+    "II Qtr 2017": "1022",
+    "III Qtr 2017": "949",
+    "IV Qtr 2017": "704",
+    "Total 2017": "3549"
   },
   {
     "Type of Cases": "Total NSP conversion Cases",
-    "I Qtr 2023": "171",
-    "II Qtr 2023": "209",
-    "III Qtr 2023": "269",
-    "IV Qtr 2023": "220",
-    "Total 2023": "869"
+    "I Qtr 2017": "171",
+    "II Qtr 2017": "209",
+    "III Qtr 2017": "269",
+    "IV Qtr 2017": "220",
+    "Total 2017": "869"
   },
   {
     "Type of Cases": "NSP Negative",
-    "I Qtr 2023": "142",
-    "II Qtr 2023": "171",
-    "III Qtr 2023": "232",
-    "IV Qtr 2023": "186",
-    "Total 2023": "731"
+    "I Qtr 2017": "142",
+    "II Qtr 2017": "171",
+    "III Qtr 2017": "232",
+    "IV Qtr 2017": "186",
+    "Total 2017": "731"
   },
   {
     "Type of Cases": "NSP Positive",
-    "I Qtr 2023": "8",
-    "II Qtr 2023": "15",
-    "III Qtr 2023": "20",
-    "IV Qtr 2023": "16",
-    "Total 2023": "59"
+    "I Qtr 2017": "8",
+    "II Qtr 2017": "15",
+    "III Qtr 2017": "20",
+    "IV Qtr 2017": "16",
+    "Total 2017": "59"
   },
   {
     "Type of Cases": "NSP Not done",
-    "I Qtr 2023": "21",
-    "II Qtr 2023": "23",
-    "III Qtr 2023": "17",
-    "IV Qtr 2023": "18",
-    "Total 2023": "79"
+    "I Qtr 2017": "21",
+    "II Qtr 2017": "23",
+    "III Qtr 2017": "17",
+    "IV Qtr 2017": "18",
+    "Total 2017": "79"
   },
   {
     "Type of Cases": "NSP Conversion rate",
-    "I Qtr 2023": "83",
-    "II Qtr 2023": "82",
-    "III Qtr 2023": "86",
-    "IV Qtr 2023": "85",
-    "Total 2023": "84"
+    "I Qtr 2017": "83",
+    "II Qtr 2017": "82",
+    "III Qtr 2017": "86",
+    "IV Qtr 2017": "85",
+    "Total 2017": "84"
   },
   {
     "Type of Cases": "Total RT conversion Cases",
-    "I Qtr 2023": "64",
-    "II Qtr 2023": "75",
-    "III Qtr 2023": "59",
-    "IV Qtr 2023": "81",
-    "Total 2023": "279"
+    "I Qtr 2017": "64",
+    "II Qtr 2017": "75",
+    "III Qtr 2017": "59",
+    "IV Qtr 2017": "81",
+    "Total 2017": "279"
   },
   {
     "Type of Cases": "RT Negative",
-    "I Qtr 2023": "52",
-    "II Qtr 2023": "57",
-    "III Qtr 2023": "45",
-    "IV Qtr 2023": "68",
-    "Total 2023": "222"
+    "I Qtr 2017": "52",
+    "II Qtr 2017": "57",
+    "III Qtr 2017": "45",
+    "IV Qtr 2017": "68",
+    "Total 2017": "222"
   },
   {
     "Type of Cases": "RT Positive",
-    "I Qtr 2023": "4",
-    "II Qtr 2023": "11",
-    "III Qtr 2023": "7",
-    "IV Qtr 2023": "4",
-    "Total 2023": "26"
+    "I Qtr 2017": "4",
+    "II Qtr 2017": "11",
+    "III Qtr 2017": "7",
+    "IV Qtr 2017": "4",
+    "Total 2017": "26"
   },
   {
     "Type of Cases": "RT not done",
-    "I Qtr 2023": "8",
-    "II Qtr 2023": "7",
-    "III Qtr 2023": "7",
-    "IV Qtr 2023": "9",
-    "Total 2023": "31"
+    "I Qtr 2017": "8",
+    "II Qtr 2017": "7",
+    "III Qtr 2017": "7",
+    "IV Qtr 2017": "9",
+    "Total 2017": "31"
   },
   {
     "Type of Cases": "RT Conversion rate",
-    "I Qtr 2023": "81",
-    "II Qtr 2023": "76",
-    "III Qtr 2023": "76",
-    "IV Qtr 2023": "84",
-    "Total 2023": "80"
+    "I Qtr 2017": "81",
+    "II Qtr 2017": "76",
+    "III Qtr 2017": "76",
+    "IV Qtr 2017": "84",
+    "Total 2017": "80"
   }
 ]

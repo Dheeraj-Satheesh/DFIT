@@ -1,82 +1,82 @@
 [
-  {
-    "Annexure M Contents": "TB Suspect examined Diagnosis ",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "TB suspect found Positive",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "TB suspect Repeat Sputum Examination",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "Follow up  Examination ",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": " Follow up positive ",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "Total No.of slides",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "Total No. of Positive Slides",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "Total No. of Neg slides",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  },
-  {
-    "Annexure M Contents": "New adult OPD",
-    "I Qtr-2023": "",
-    "II Qtr -2023": "",
-    "III Qtr-2023": "",
-    "IV Qtr- 2023": "",
-    "Total 2023": ""
-  }
+    {
+        "Annexure M Contents": "TB Suspect examined Diagnosis ",
+        "I qtr-2016": "231",
+        "II qtr -2016": "193",
+        "III qtr-2016": "240",
+        "IV qtr- 2016": "286",
+        "Total 2016": "950"
+    },
+    {
+        "Annexure M Contents": "TB suspect found Positive",
+        "I qtr-2016": "23",
+        "II qtr -2016": "19",
+        "III qtr-2016": "14",
+        "IV qtr- 2016": "19",
+        "Total 2016": "75"
+    },
+    {
+        "Annexure M Contents": "TB suspect Repeat Sputum Examination",
+        "I qtr-2016": "0",
+        "II qtr -2016": "0",
+        "III qtr-2016": "0",
+        "IV qtr- 2016": "0",
+        "Total 2016": "0"
+    },
+    {
+        "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
+        "I qtr-2016": "0",
+        "II qtr -2016": "0",
+        "III qtr-2016": "0",
+        "IV qtr- 2016": "0",
+        "Total 2016": "0"
+    },
+    {
+        "Annexure M Contents": "Follow up  Examination ",
+        "I qtr-2016": "39",
+        "II qtr -2016": "22",
+        "III qtr-2016": "20",
+        "IV qtr- 2016": "24",
+        "Total 2016": "105"
+    },
+    {
+        "Annexure M Contents": " Follow up positive ",
+        "I qtr-2016": "12",
+        "II qtr -2016": "4",
+        "III qtr-2016": "2",
+        "IV qtr- 2016": "2",
+        "Total 2016": "20"
+    },
+    {
+        "Annexure M Contents": "Total No.of slides",
+        "I qtr-2016": "540",
+        "II qtr -2016": "430",
+        "III qtr-2016": "520",
+        "IV qtr- 2016": "620",
+        "Total 2016": "2110"
+    },
+    {
+        "Annexure M Contents": "Total No. of Positive Slides",
+        "I qtr-2016": "70",
+        "II qtr -2016": "46",
+        "III qtr-2016": "31",
+        "IV qtr- 2016": "42",
+        "Total 2016": "189"
+    },
+    {
+        "Annexure M Contents": "Total No. of Neg slides",
+        "I qtr-2016": "470",
+        "II qtr -2016": "384",
+        "III qtr-2016": "489",
+        "IV qtr- 2016": "578",
+        "Total 2016": "1921"
+    },
+    {
+        "Annexure M Contents": "New adult OPD",
+        "I qtr-2016": "2683",
+        "II qtr -2016": "2656",
+        "III qtr-2016": "3112",
+        "IV qtr- 2016": "3098",
+        "Total 2016": "11549"
+    }
 ]

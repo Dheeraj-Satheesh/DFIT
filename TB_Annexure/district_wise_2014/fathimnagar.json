@@ -1,82 +1,82 @@
 [
-  {
-    "Annexure M Contents": "TB Suspect examined Diagnosis ",
-    "I Qtr-2023": "119",
-    "II Qtr -2023": "106",
-    "III Qtr-2023": "96",
-    "IV Qtr- 2023": "95",
-    "Total 2023": "416"
-  },
-  {
-    "Annexure M Contents": "TB suspect found Positive",
-    "I Qtr-2023": "3",
-    "II Qtr -2023": "1",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "4"
-  },
-  {
-    "Annexure M Contents": "TB suspect Repeat Sputum Examination",
-    "I Qtr-2023": "0",
-    "II Qtr -2023": "0",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "0"
-  },
-  {
-    "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
-    "I Qtr-2023": "0",
-    "II Qtr -2023": "0",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "0"
-  },
-  {
-    "Annexure M Contents": "Follow up  Examination ",
-    "I Qtr-2023": "6",
-    "II Qtr -2023": "4",
-    "III Qtr-2023": "4",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "14"
-  },
-  {
-    "Annexure M Contents": " Follow up positive ",
-    "I Qtr-2023": "0",
-    "II Qtr -2023": "0",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "0"
-  },
-  {
-    "Annexure M Contents": "Total No.of slides",
-    "I Qtr-2023": "250",
-    "II Qtr -2023": "220",
-    "III Qtr-2023": "200",
-    "IV Qtr- 2023": "190",
-    "Total 2023": "860"
-  },
-  {
-    "Annexure M Contents": "Total No. of Positive Slides",
-    "I Qtr-2023": "6",
-    "II Qtr -2023": "2",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "8"
-  },
-  {
-    "Annexure M Contents": "Total No. of Neg slides",
-    "I Qtr-2023": "244",
-    "II Qtr -2023": "218",
-    "III Qtr-2023": "200",
-    "IV Qtr- 2023": "190",
-    "Total 2023": "852"
-  },
-  {
-    "Annexure M Contents": "New adult OPD",
-    "I Qtr-2023": "980",
-    "II Qtr -2023": "1031",
-    "III Qtr-2023": "1118",
-    "IV Qtr- 2023": "1058",
-    "Total 2023": "4187"
-  }
+    {
+        "Annexure M Contents": "TB Suspect examined Diagnosis ",
+        "I qtr-2014": "214",
+        "II qtr -2014": "124",
+        "III qtr-2014": "175",
+        "IV qtr- 2014": "176",
+        "Total 2014": "689"
+    },
+    {
+        "Annexure M Contents": "TB suspect found Positive",
+        "I qtr-2014": "13",
+        "II qtr -2014": "8",
+        "III qtr-2014": "7",
+        "IV qtr- 2014": "5",
+        "Total 2014": "33"
+    },
+    {
+        "Annexure M Contents": "TB suspect Repeat Sputum Examination",
+        "I qtr-2014": "0",
+        "II qtr -2014": "0",
+        "III qtr-2014": "0",
+        "IV qtr- 2014": "0",
+        "Total 2014": "0"
+    },
+    {
+        "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
+        "I qtr-2014": "0",
+        "II qtr -2014": "0",
+        "III qtr-2014": "0",
+        "IV qtr- 2014": "0",
+        "Total 2014": "0"
+    },
+    {
+        "Annexure M Contents": "Follow up  Examination ",
+        "I qtr-2014": "25",
+        "II qtr -2014": "35",
+        "III qtr-2014": "32",
+        "IV qtr- 2014": "34",
+        "Total 2014": "126"
+    },
+    {
+        "Annexure M Contents": " Follow up positive ",
+        "I qtr-2014": "2",
+        "II qtr -2014": "2",
+        "III qtr-2014": "2",
+        "IV qtr- 2014": "0",
+        "Total 2014": "6"
+    },
+    {
+        "Annexure M Contents": "Total No.of slides",
+        "I qtr-2014": "478",
+        "II qtr -2014": "318",
+        "III qtr-2014": "414",
+        "IV qtr- 2014": "420",
+        "Total 2014": "1630"
+    },
+    {
+        "Annexure M Contents": "Total No. of Positive Slides",
+        "I qtr-2014": "30",
+        "II qtr -2014": "20",
+        "III qtr-2014": "18",
+        "IV qtr- 2014": "10",
+        "Total 2014": "78"
+    },
+    {
+        "Annexure M Contents": "Total No. of Neg slides",
+        "I qtr-2014": "448",
+        "II qtr -2014": "298",
+        "III qtr-2014": "396",
+        "IV qtr- 2014": "410",
+        "Total 2014": "1552"
+    },
+    {
+        "Annexure M Contents": "New adult OPD",
+        "I qtr-2014": "804",
+        "II qtr -2014": "845",
+        "III qtr-2014": "918",
+        "IV qtr- 2014": "815",
+        "Total 2014": "3382"
+    }
 ]

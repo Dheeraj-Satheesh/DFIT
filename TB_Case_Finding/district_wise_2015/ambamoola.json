@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I qtr-2015": "2",
+        "II qtr -2015": "1",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "1",
+        "Total 2015": "5"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "Others",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I qtr-2015": "3",
+        "II qtr -2015": "1",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "1",
+        "Total 2015": "6"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "Total",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I qtr-2015": "4",
+        "II qtr -2015": "1",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "1",
+        "Total 2015": "7"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I qtr-2015": "3",
+        "II qtr -2015": "2",
+        "III qtr-2015": "2",
+        "IV qtr- 2015": "1",
+        "Total 2015": "8"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I qtr-2015": "3",
+        "II qtr -2015": "1",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "1",
+        "Total 2015": "6"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I qtr-2015": "0",
+        "II qtr -2015": "1",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I qtr-2015": "100",
+        "II qtr -2015": "50",
+        "III qtr-2015": "50",
+        "IV qtr- 2015": "100",
+        "Total 2015": "75"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I qtr-2015": "0",
+        "II qtr -2015": "",
+        "III qtr-2015": "",
+        "IV qtr- 2015": "",
+        "Total 2015": "0"
+    }
+]

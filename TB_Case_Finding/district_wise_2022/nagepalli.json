@@ -121,11 +121,11 @@
     },
     {
         "Type of Cases": "NSP Conversion rate",
-        "I Qtr 2022": "81.94444444444444",
-        "II Qtr 2022": "90.12345679012346",
-        "III Qtr 2022": "96.03960396039604",
-        "IV Qtr 2022": "93.96551724137932",
-        "Total 2022": "91.35135135135135"
+        "I Qtr 2022": "82",
+        "II Qtr 2022": "90",
+        "III Qtr 2022": "96",
+        "IV Qtr 2022": "94",
+        "Total 2022": "91"
     },
     {
         "Type of Cases": "Total RT conversion Cases",
@@ -163,8 +163,8 @@
         "Type of Cases": "RT Conversion rate",
         "I Qtr 2022": "75",
         "II Qtr 2022": "100",
-        "III Qtr 2022": "88.88888888888889",
+        "III Qtr 2022": "89",
         "IV Qtr 2022": "96",
-        "Total 2022": "90.625"
+        "Total 2022": "91"
     }
 ]

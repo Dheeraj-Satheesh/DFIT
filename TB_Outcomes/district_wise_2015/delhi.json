@@ -1,0 +1,290 @@
+[
+    {
+        "Type of cases ": "NSP Cured",
+        "I qtr-2015": "189",
+        "II qtr -2015": "191",
+        "III qtr-2015": "173",
+        "IV qtr- 2015": "127",
+        "Total 2015": "680",
+        "%": "90"
+    },
+    {
+        "Type of cases ": "NSP Treatment completed",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSP Died ",
+        "I qtr-2015": "4",
+        "II qtr -2015": "5",
+        "III qtr-2015": "7",
+        "IV qtr- 2015": "5",
+        "Total 2015": "21",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "NSP Failure ",
+        "I qtr-2015": "5",
+        "II qtr -2015": "2",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "5",
+        "Total 2015": "13",
+        "%": "2"
+    },
+    {
+        "Type of cases ": "NSP Defaulted ",
+        "I qtr-2015": "8",
+        "II qtr -2015": "7",
+        "III qtr-2015": "4",
+        "IV qtr- 2015": "2",
+        "Total 2015": "21",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "NSP Transferred out",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "2",
+        "IV qtr- 2015": "1",
+        "Total 2015": "4",
+        "%": "0.53"
+    },
+    {
+        "Type of cases ": "NSP Switched to IV",
+        "I qtr-2015": "3",
+        "II qtr -2015": "4",
+        "III qtr-2015": "6",
+        "IV qtr- 2015": "1",
+        "Total 2015": "14",
+        "%": "1.86"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr-2015": "210",
+        "II qtr -2015": "209",
+        "III qtr-2015": "193",
+        "IV qtr- 2015": "141",
+        "Total 2015": "753",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Cured",
+        "I qtr-2015": "",
+        "II qtr -2015": "",
+        "III qtr-2015": "",
+        "IV qtr- 2015": "",
+        "Total 2015": "",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
+        "I qtr-2015": "281",
+        "II qtr -2015": "388",
+        "III qtr-2015": "292",
+        "IV qtr- 2015": "208",
+        "Total 2015": "1169",
+        "%": "96"
+    },
+    {
+        "Type of cases ": "NSN/NEP Died ",
+        "I qtr-2015": "6",
+        "II qtr -2015": "6",
+        "III qtr-2015": "8",
+        "IV qtr- 2015": "3",
+        "Total 2015": "23",
+        "%": "2"
+    },
+    {
+        "Type of cases ": "NSN/NEP Failure ",
+        "I qtr-2015": "0",
+        "II qtr -2015": "1",
+        "III qtr-2015": "2",
+        "IV qtr- 2015": "1",
+        "Total 2015": "4",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "NSN/NEP Defaulted ",
+        "I qtr-2015": "7",
+        "II qtr -2015": "7",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "2",
+        "Total 2015": "17",
+        "%": "1"
+    },
+    {
+        "Type of cases ": "NSN/NEP Transferred out ",
+        "I qtr-2015": "2",
+        "II qtr -2015": "1",
+        "III qtr-2015": "3",
+        "IV qtr- 2015": "1",
+        "Total 2015": "7",
+        "%": "0.57"
+    },
+    {
+        "Type of cases ": "NSN/NEP Switched to IV",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "2",
+        "Total 2015": "2",
+        "%": "0.16"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr-2015": "296",
+        "II qtr -2015": "403",
+        "III qtr-2015": "306",
+        "IV qtr- 2015": "217",
+        "Total 2015": "1222",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT +ve Cured",
+        "I qtr-2015": "58",
+        "II qtr -2015": "68",
+        "III qtr-2015": "56",
+        "IV qtr- 2015": "57",
+        "Total 2015": "239",
+        "%": "81"
+    },
+    {
+        "Type of cases ": "RT+ve  Treatment completed",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT +Ve Died ",
+        "I qtr-2015": "5",
+        "II qtr -2015": "0",
+        "III qtr-2015": "7",
+        "IV qtr- 2015": "4",
+        "Total 2015": "16",
+        "%": "5"
+    },
+    {
+        "Type of cases ": "RT +ve Failure ",
+        "I qtr-2015": "2",
+        "II qtr -2015": "1",
+        "III qtr-2015": "3",
+        "IV qtr- 2015": "4",
+        "Total 2015": "10",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "RT +ve Defaulted ",
+        "I qtr-2015": "1",
+        "II qtr -2015": "5",
+        "III qtr-2015": "3",
+        "IV qtr- 2015": "4",
+        "Total 2015": "13",
+        "%": "4"
+    },
+    {
+        "Type of cases ": "RT +ve Transferred out ",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "1",
+        "IV qtr- 2015": "1",
+        "Total 2015": "2",
+        "%": "0.68"
+    },
+    {
+        "Type of cases ": "RT +ve Switched to IV",
+        "I qtr-2015": "1",
+        "II qtr -2015": "7",
+        "III qtr-2015": "4",
+        "IV qtr- 2015": "3",
+        "Total 2015": "15",
+        "%": "5.08"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr-2015": "67",
+        "II qtr -2015": "81",
+        "III qtr-2015": "74",
+        "IV qtr- 2015": "73",
+        "Total 2015": "295",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Cured",
+        "I qtr-2015": "",
+        "II qtr -2015": "",
+        "III qtr-2015": "",
+        "IV qtr- 2015": "",
+        "Total 2015": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Treatment completed",
+        "I qtr-2015": "47",
+        "II qtr -2015": "63",
+        "III qtr-2015": "61",
+        "IV qtr- 2015": "41",
+        "Total 2015": "212",
+        "%": "92"
+    },
+    {
+        "Type of cases ": "RT Neg Died ",
+        "I qtr-2015": "3",
+        "II qtr -2015": "1",
+        "III qtr-2015": "4",
+        "IV qtr- 2015": "1",
+        "Total 2015": "9",
+        "%": "4"
+    },
+    {
+        "Type of cases ": "RT Neg Failure ",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0",
+        "%": "0"
+    },
+    {
+        "Type of cases ": "RT Neg Defaulted ",
+        "I qtr-2015": "2",
+        "II qtr -2015": "1",
+        "III qtr-2015": "2",
+        "IV qtr- 2015": "1",
+        "Total 2015": "6",
+        "%": "3"
+    },
+    {
+        "Type of cases ": "RT Neg Transferred out",
+        "I qtr-2015": "1",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "1",
+        "%": "0.43"
+    },
+    {
+        "Type of cases ": "RT Neg Switched to IV",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "3",
+        "IV qtr- 2015": "0",
+        "Total 2015": "3",
+        "%": "1.30"
+    },
+    {
+        "Type of cases ": "Total",
+        "I qtr-2015": "53",
+        "II qtr -2015": "65",
+        "III qtr-2015": "70",
+        "IV qtr- 2015": "43",
+        "Total 2015": "231",
+        "%": ""
+    }
+]

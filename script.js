@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastClickedType = "tb";
 
     if (selectedYear === "All") {
-      const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+      const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
       const allData = {};
       let rowOrder = [];
 
@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastClickedType = "tb_case";
 
     if (selectedYear === "All") {
-      const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+      const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
       const cumulativeData = {};
       const order = [];
 
@@ -719,7 +719,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contentArea = document.getElementById("content-area");
   const yearFilter = document.getElementById("yearFilter");
 
-  let selectedYear = "All"; // Track selected year globally
+  let selectedYear = yearFilter.value; // Track selected year globally
 
   if (yearFilter) {
     yearFilter.addEventListener("change", () => {
@@ -1085,7 +1085,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const contentArea = document.getElementById("content-area");
   const yearFilter = document.getElementById("yearFilter");
 
-  let selectedYear = "All"; // Track selected year globally
+  let selectedYear = yearFilter.value; // Track selected year globally
+  let lastClickedType = null;
 
   if (yearFilter) {
     yearFilter.addEventListener("change", () => {
@@ -1303,23 +1304,26 @@ function renderQuarterlySection(jsonPath, sectionTitle, containerId) {
 
       // TABLE
       let tableHTML = `<h2>${sectionTitle} – ${selectedYear}</h2>
-        <div style="margin-bottom: 20px;">
-        <table class="styled-table">
-          <thead><tr><th>Year</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th></tr></thead>
-          <tbody>`;
+  <div style="margin-bottom: 20px;">
+  <table class="styled-table">
+    <thead><tr><th>Year</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Total</th></tr></thead>
+    <tbody>`;
       filtered.forEach(d => {
+        const total = [d.Q1, d.Q2, d.Q3, d.Q4].reduce((sum, val) => sum + (parseFloat(val) || 0), 0);
         tableHTML += `<tr>
-          <td>${d.year}</td>
-          <td>${d.Q1 ?? "-"}</td>
-          <td>${d.Q2 ?? "-"}</td>
-          <td>${d.Q3 ?? "-"}</td>
-          <td>${d.Q4 ?? "-"}</td>
-        </tr>`;
+    <td>${d.year}</td>
+    <td>${d.Q1 ?? "-"}</td>
+    <td>${d.Q2 ?? "-"}</td>
+    <td>${d.Q3 ?? "-"}</td>
+    <td>${d.Q4 ?? "-"}</td>
+    <td>${total}</td>
+  </tr>`;
       });
       tableHTML += `</tbody></table></div>
-        <div style="margin-top: 30px;"><canvas id="chart-${containerId}" style="max-height: 400px;"></canvas></div>`;
+  <div style="margin-top: 30px;"><canvas id="chart-${containerId}" style="max-height: 400px;"></canvas></div>`;
 
       contentArea.innerHTML = tableHTML;
+
 
       // CHART
       const labels = [];
@@ -1337,6 +1341,10 @@ function renderQuarterlySection(jsonPath, sectionTitle, containerId) {
       const ctx = document.getElementById(`chart-${containerId}`).getContext("2d");
       if (chartInstance) chartInstance.destroy();
 
+
+      // 🎨 Random color each time
+      const colorPalette = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
+      const randomColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
       chartInstance = new Chart(ctx, {
         type: "line",
         data: {
@@ -1344,9 +1352,9 @@ function renderQuarterlySection(jsonPath, sectionTitle, containerId) {
           datasets: [{
             label: sectionTitle,
             data: values,
-            borderColor: "#fff",
-            backgroundColor: "rgba(255, 255, 255, 0.2)",
-            pointBackgroundColor: "#fff",
+            borderColor: randomColor,
+            backgroundColor: randomColor + 33,
+            pointBackgroundColor: randomColor,
             borderWidth: 2,
             fill: true,
             tension: 0.4
@@ -1357,12 +1365,31 @@ function renderQuarterlySection(jsonPath, sectionTitle, containerId) {
             datalabels: {
               align: "top",
               anchor: "end",
-              color: "#fff"
+              color: "#000",
+              // font: {
+              //   weight: "bold"
+              // }
+            },
+            tooltip: {
+              titleFont: {
+                weight: "bold"
+              },
+              bodyFont: {
+                weight: "bold"
+              }
             }
           },
           scales: {
-            y: { beginAtZero: true, ticks: { color: "#fff" } },
-            x: { ticks: { color: "#fff" } }
+            y: {
+              beginAtZero: true, ticks: { color: "#000" }, font: {
+                weight: "bold"
+              }
+            },
+            x: {
+              ticks: { color: "#000" }, font: {
+                weight: "bold"
+              }
+            }
           },
           responsive: true,
           maintainAspectRatio: false

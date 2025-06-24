@@ -121,11 +121,11 @@
     },
     {
         "Type of Cases": "NSP Conversion rate",
-        "I Qtr 2019": "90.9090909090909",
+        "I Qtr 2019": "91",
         "II Qtr 2019": "90",
-        "III Qtr 2019": "88.88888888888889",
-        "IV Qtr 2019": "84.61538461538461",
-        "Total 2019": "88.37209302325581"
+        "III Qtr 2019": "89",
+        "IV Qtr 2019": "85",
+        "Total 2019": "88"
     },
     {
         "Type of Cases": "Total RT conversion Cases",
@@ -164,7 +164,7 @@
         "I Qtr 2019": "100",
         "II Qtr 2019": "100",
         "III Qtr 2019": "100",
-        "IV Qtr 2019": "66.7666666",
-        "Total 2019": "87.5"
+        "IV Qtr 2019": "66",
+        "Total 2019": "88"
     }
 ]

@@ -1,0 +1,170 @@
+[
+    {
+        "Type of Cases": "NSP",
+        "I qtr-2015": "413",
+        "II qtr -2015": "441",
+        "III qtr-2015": "380",
+        "IV qtr- 2015": "345",
+        "Total 2015": "1579"
+    },
+    {
+        "Type of Cases": "NSN",
+        "I qtr-2015": "160",
+        "II qtr -2015": "172",
+        "III qtr-2015": "156",
+        "IV qtr- 2015": "129",
+        "Total 2015": "617"
+    },
+    {
+        "Type of Cases": "New EP",
+        "I qtr-2015": "298",
+        "II qtr -2015": "343",
+        "III qtr-2015": "307",
+        "IV qtr- 2015": "211",
+        "Total 2015": "1159"
+    },
+    {
+        "Type of Cases": "Others",
+        "I qtr-2015": "0",
+        "II qtr -2015": "0",
+        "III qtr-2015": "0",
+        "IV qtr- 2015": "0",
+        "Total 2015": "0"
+    },
+    {
+        "Type of Cases": "Total",
+        "I qtr-2015": "871",
+        "II qtr -2015": "956",
+        "III qtr-2015": "843",
+        "IV qtr- 2015": "685",
+        "Total 2015": "3355"
+    },
+    {
+        "Type of Cases": "Relapse",
+        "I qtr-2015": "89",
+        "II qtr -2015": "62",
+        "III qtr-2015": "58",
+        "IV qtr- 2015": "68",
+        "Total 2015": "277"
+    },
+    {
+        "Type of Cases": "Failures ",
+        "I qtr-2015": "12",
+        "II qtr -2015": "9",
+        "III qtr-2015": "17",
+        "IV qtr- 2015": "18",
+        "Total 2015": "56"
+    },
+    {
+        "Type of Cases": "TAD",
+        "I qtr-2015": "50",
+        "II qtr -2015": "48",
+        "III qtr-2015": "64",
+        "IV qtr- 2015": "47",
+        "Total 2015": "209"
+    },
+    {
+        "Type of Cases": "Others ",
+        "I qtr-2015": "74",
+        "II qtr -2015": "98",
+        "III qtr-2015": "91",
+        "IV qtr- 2015": "55",
+        "Total 2015": "318"
+    },
+    {
+        "Type of Cases": "Total",
+        "I qtr-2015": "225",
+        "II qtr -2015": "217",
+        "III qtr-2015": "230",
+        "IV qtr- 2015": "188",
+        "Total 2015": "860"
+    },
+    {
+        "Type of Cases": "Grand Total",
+        "I qtr-2015": "1096",
+        "II qtr -2015": "1173",
+        "III qtr-2015": "1073",
+        "IV qtr- 2015": "873",
+        "Total 2015": "4215"
+    },
+    {
+        "Type of Cases": "Total NSP conversion Cases",
+        "I qtr-2015": "347",
+        "II qtr -2015": "413",
+        "III qtr-2015": "442",
+        "IV qtr- 2015": "389",
+        "Total 2015": "1591"
+    },
+    {
+        "Type of Cases": "NSP Negative",
+        "I qtr-2015": "315",
+        "II qtr -2015": "365",
+        "III qtr-2015": "395",
+        "IV qtr- 2015": "351",
+        "Total 2015": "1426"
+    },
+    {
+        "Type of Cases": "NSP Positive",
+        "I qtr-2015": "9",
+        "II qtr -2015": "15",
+        "III qtr-2015": "18",
+        "IV qtr- 2015": "9",
+        "Total 2015": "51"
+    },
+    {
+        "Type of Cases": "NSP Not done",
+        "I qtr-2015": "23",
+        "II qtr -2015": "33",
+        "III qtr-2015": "29",
+        "IV qtr- 2015": "29",
+        "Total 2015": "114"
+    },
+    {
+        "Type of Cases": "NSP Conversion rate",
+        "I qtr-2015": "91",
+        "II qtr -2015": "88",
+        "III qtr-2015": "89",
+        "IV qtr- 2015": "90",
+        "Total 2015": "90"
+    },
+    {
+        "Type of Cases": "Total RT conversion Cases",
+        "I qtr-2015": "136",
+        "II qtr -2015": "152",
+        "III qtr-2015": "119",
+        "IV qtr- 2015": "135",
+        "Total 2015": "542"
+    },
+    {
+        "Type of Cases": "RT Negative",
+        "I qtr-2015": "100",
+        "II qtr -2015": "106",
+        "III qtr-2015": "81",
+        "IV qtr- 2015": "98",
+        "Total 2015": "385"
+    },
+    {
+        "Type of Cases": "RT Positive",
+        "I qtr-2015": "15",
+        "II qtr -2015": "13",
+        "III qtr-2015": "22",
+        "IV qtr- 2015": "17",
+        "Total 2015": "67"
+    },
+    {
+        "Type of Cases": "RT not done",
+        "I qtr-2015": "21",
+        "II qtr -2015": "33",
+        "III qtr-2015": "16",
+        "IV qtr- 2015": "20",
+        "Total 2015": "90"
+    },
+    {
+        "Type of Cases": "RT Conversion rate",
+        "I qtr-2015": "74",
+        "II qtr -2015": "70",
+        "III qtr-2015": "68",
+        "IV qtr- 2015": "73",
+        "Total 2015": "71"
+    }
+]

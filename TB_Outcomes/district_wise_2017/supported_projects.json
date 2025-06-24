@@ -6,7 +6,7 @@
         "III Qtr 2017": "51",
         "IV Qtr 2017": "61",
         "Total 2017": "242",
-        "%": "86.1"
+        "%": "85.5"
     },
     {
         "Type of cases ": "NSP Treatment completed",
@@ -24,7 +24,7 @@
         "III Qtr 2017": "3",
         "IV Qtr 2017": "7",
         "Total 2017": "18",
-        "%": "5.6"
+        "%": "6.4"
     },
     {
         "Type of cases ": "NSP Failure ",
@@ -33,7 +33,7 @@
         "III Qtr 2017": "2",
         "IV Qtr 2017": "2",
         "Total 2017": "7",
-        "%": "1.4"
+        "%": "2.5"
     },
     {
         "Type of cases ": "NSP Defaulted ",
@@ -42,7 +42,7 @@
         "III Qtr 2017": "2",
         "IV Qtr 2017": "3",
         "Total 2017": "9",
-        "%": "2.8"
+        "%": "3.2"
     },
     {
         "Type of cases ": "NSP Transferred out",
@@ -51,7 +51,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "0",
         "Total 2017": "2",
-        "%": "2.8"
+        "%": "0.7"
     },
     {
         "Type of cases ": "NSP Switched to IV",
@@ -87,7 +87,7 @@
         "III Qtr 2017": "33",
         "IV Qtr 2017": "37",
         "Total 2017": "151",
-        "%": "95.9"
+        "%": "91.0"
     },
     {
         "Type of cases ": "NSN/NEP Died ",
@@ -96,7 +96,7 @@
         "III Qtr 2017": "3",
         "IV Qtr 2017": "3",
         "Total 2017": "12",
-        "%": "4.1"
+        "%": "7.2"
     },
     {
         "Type of cases ": "NSN/NEP Failure ",
@@ -114,7 +114,7 @@
         "III Qtr 2017": "1",
         "IV Qtr 2017": "1",
         "Total 2017": "3",
-        "%": "0"
+        "%": "1.8"
     },
     {
         "Type of cases ": "NSN/NEP Transferred out ",
@@ -135,7 +135,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total ",
         "I Qtr 2017": "49",
         "II Qtr 2017": "39",
         "III Qtr 2017": "37",
@@ -150,7 +150,7 @@
         "III Qtr 2017": "13",
         "IV Qtr 2017": "10",
         "Total 2017": "52",
-        "%": "72.7"
+        "%": "71.2"
     },
     {
         "Type of cases ": "RT+ve  Treatment completed",
@@ -159,7 +159,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "0",
         "Total 2017": "4",
-        "%": "13.6"
+        "%": "5.5"
     },
     {
         "Type of cases ": "RT +Ve Died ",
@@ -168,7 +168,7 @@
         "III Qtr 2017": "2",
         "IV Qtr 2017": "2",
         "Total 2017": "5",
-        "%": "0"
+        "%": "6.8"
     },
     {
         "Type of cases ": "RT +ve Failure ",
@@ -177,7 +177,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "2",
         "Total 2017": "4",
-        "%": "9.1"
+        "%": "5.5"
     },
     {
         "Type of cases ": "RT +ve Defaulted ",
@@ -186,7 +186,7 @@
         "III Qtr 2017": "4",
         "IV Qtr 2017": "0",
         "Total 2017": "6",
-        "%": "0"
+        "%": "8.2"
     },
     {
         "Type of cases ": "RT +ve Transferred out ",
@@ -195,7 +195,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "0",
         "Total 2017": "1",
-        "%": "0"
+        "%": "1.4"
     },
     {
         "Type of cases ": "RT +ve Switched to IV",
@@ -204,10 +204,10 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "0",
         "Total 2017": "1",
-        "%": "4.5"
+        "%": "1.4"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total  ",
         "I Qtr 2017": "22",
         "II Qtr 2017": "18",
         "III Qtr 2017": "19",
@@ -231,7 +231,7 @@
         "III Qtr 2017": "7",
         "IV Qtr 2017": "7",
         "Total 2017": "26",
-        "%": "80"
+        "%": "83.9"
     },
     {
         "Type of cases ": "RT Neg Died ",
@@ -240,7 +240,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "2",
         "Total 2017": "3",
-        "%": "10"
+        "%": "9.7"
     },
     {
         "Type of cases ": "RT Neg Failure ",
@@ -258,7 +258,7 @@
         "III Qtr 2017": "0",
         "IV Qtr 2017": "1",
         "Total 2017": "2",
-        "%": "10"
+        "%": "6.5"
     },
     {
         "Type of cases ": "RT Neg Transferred out",
@@ -279,7 +279,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total   ",
         "I Qtr 2017": "10",
         "II Qtr 2017": "4",
         "III Qtr 2017": "7",

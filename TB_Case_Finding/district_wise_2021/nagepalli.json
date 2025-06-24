@@ -121,11 +121,11 @@
     },
     {
         "Type of Cases": "NSP Conversion rate",
-        "I Qtr 2021": "88.33333333333333",
-        "II Qtr 2021": "89.39393939393939",
-        "III Qtr 2021": "70.2127659574468",
-        "IV Qtr 2021": "92.10526315789474",
-        "Total 2021": "86.34538152610442"
+        "I Qtr 2021": "88",
+        "II Qtr 2021": "89",
+        "III Qtr 2021": "70",
+        "IV Qtr 2021": "92",
+        "Total 2021": "86"
     },
     {
         "Type of Cases": "Total RT conversion Cases",
@@ -162,9 +162,9 @@
     {
         "Type of Cases": "RT Conversion rate",
         "I Qtr 2021": "100",
-        "II Qtr 2021": "86.7666667",
+        "II Qtr 2021": "87",
         "III Qtr 2021": "100",
         "IV Qtr 2021": "100",
-        "Total 2021": "96.22641509433963"
+        "Total 2021": "96"
     }
 ]

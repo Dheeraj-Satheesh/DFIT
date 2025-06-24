@@ -305,13 +305,14 @@ nav ul {
   background: #fff;
 }
 canvas {
-  background: #a8ad44;
+  /* background: #4a90d9; */
   border-radius: 8px;
   padding: 10px;
   width: 100%; /* responsive */
-  height: 400px; /* increase from default */
+  height: 400px; /* increased from default */
   max-height: 500px;
 }
+
 
 
 

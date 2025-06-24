@@ -1,82 +1,82 @@
 [
-  {
-    "Annexure M Contents": "TB Suspect examined Diagnosis ",
-    "I Qtr-2023": "656",
-    "II Qtr -2023": "1449",
-    "III Qtr-2023": "1867",
-    "IV Qtr- 2023": "1053",
-    "Total 2023": "5025"
-  },
-  {
-    "Annexure M Contents": "TB suspect found Positive",
-    "I Qtr-2023": "19",
-    "II Qtr -2023": "28",
-    "III Qtr-2023": "13",
-    "IV Qtr- 2023": "14",
-    "Total 2023": "74"
-  },
-  {
-    "Annexure M Contents": "TB suspect Repeat Sputum Examination",
-    "I Qtr-2023": "0",
-    "II Qtr -2023": "0",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "0"
-  },
-  {
-    "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
-    "I Qtr-2023": "0",
-    "II Qtr -2023": "0",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "0"
-  },
-  {
-    "Annexure M Contents": "Follow up  Examination ",
-    "I Qtr-2023": "31",
-    "II Qtr -2023": "47",
-    "III Qtr-2023": "53",
-    "IV Qtr- 2023": "55",
-    "Total 2023": "186"
-  },
-  {
-    "Annexure M Contents": " Follow up positive ",
-    "I Qtr-2023": "2",
-    "II Qtr -2023": "1",
-    "III Qtr-2023": "0",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "3"
-  },
-  {
-    "Annexure M Contents": "Total No.of slides",
-    "I Qtr-2023": "62",
-    "II Qtr -2023": "2488",
-    "III Qtr-2023": "2424",
-    "IV Qtr- 2023": "1412",
-    "Total 2023": "6386"
-  },
-  {
-    "Annexure M Contents": "Total No. of Positive Slides",
-    "I Qtr-2023": "4",
-    "II Qtr -2023": "2",
-    "III Qtr-2023": "24",
-    "IV Qtr- 2023": "0",
-    "Total 2023": "30"
-  },
-  {
-    "Annexure M Contents": "Total No. of Neg slides",
-    "I Qtr-2023": "58",
-    "II Qtr -2023": "2486",
-    "III Qtr-2023": "2400",
-    "IV Qtr- 2023": "1412",
-    "Total 2023": "6356"
-  },
-  {
-    "Annexure M Contents": "New adult OPD",
-    "I Qtr-2023": "401",
-    "II Qtr -2023": "404",
-    "III Qtr-2023": "453",
-    "IV Qtr- 2023": "426",
-    "Total 2023": "1684"
-  }
+    {
+        "Annexure M Contents": "TB Suspect examined Diagnosis ",
+        "I qtr-2017": "193",
+        "II qtr -2017": "110",
+        "III qtr-2017": "140",
+        "IV qtr- 2017": "153",
+        "Total 2017": "596"
+    },
+    {
+        "Annexure M Contents": "TB suspect found Positive",
+        "I qtr-2017": "33",
+        "II qtr -2017": "35",
+        "III qtr-2017": "27",
+        "IV qtr- 2017": "26",
+        "Total 2017": "121"
+    },
+    {
+        "Annexure M Contents": "TB suspect Repeat Sputum Examination",
+        "I qtr-2017": "5",
+        "II qtr -2017": "2",
+        "III qtr-2017": "6",
+        "IV qtr- 2017": "0",
+        "Total 2017": "13"
+    },
+    {
+        "Annexure M Contents": "TB suspect Found Positive & Repeat Examination ",
+        "I qtr-2017": "1",
+        "II qtr -2017": "0",
+        "III qtr-2017": "0",
+        "IV qtr- 2017": "0",
+        "Total 2017": "1"
+    },
+    {
+        "Annexure M Contents": "Follow up  Examination ",
+        "I qtr-2017": "42",
+        "II qtr -2017": "53",
+        "III qtr-2017": "59",
+        "IV qtr- 2017": "51",
+        "Total 2017": "205"
+    },
+    {
+        "Annexure M Contents": " Follow up positive ",
+        "I qtr-2017": "6",
+        "II qtr -2017": "3",
+        "III qtr-2017": "5",
+        "IV qtr- 2017": "3",
+        "Total 2017": "17"
+    },
+    {
+        "Annexure M Contents": "Total No.of slides",
+        "I qtr-2017": "480",
+        "II qtr -2017": "330",
+        "III qtr-2017": "410",
+        "IV qtr- 2017": "408",
+        "Total 2017": "1628"
+    },
+    {
+        "Annexure M Contents": "Total No. of Positive Slides",
+        "I qtr-2017": "79",
+        "II qtr -2017": "74",
+        "III qtr-2017": "60",
+        "IV qtr- 2017": "58",
+        "Total 2017": "271"
+    },
+    {
+        "Annexure M Contents": "Total No. of Neg slides",
+        "I qtr-2017": "401",
+        "II qtr -2017": "256",
+        "III qtr-2017": "350",
+        "IV qtr- 2017": "358",
+        "Total 2017": "1365"
+    },
+    {
+        "Annexure M Contents": "New adult OPD",
+        "I qtr-2017": "410",
+        "II qtr -2017": "326",
+        "III qtr-2017": "332",
+        "IV qtr- 2017": "331",
+        "Total 2017": "1399"
+    }
 ]

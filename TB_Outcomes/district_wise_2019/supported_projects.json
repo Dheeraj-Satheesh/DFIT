@@ -6,7 +6,7 @@
         "III Qtr 2019": "69",
         "IV Qtr 2019": "71",
         "Total 2019": "284",
-        "%": "91.1"
+        "%": "90.2"
     },
     {
         "Type of cases ": "NSP Treatment completed",
@@ -15,7 +15,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "2",
         "Total 2019": "5",
-        "%": "1.3"
+        "%": "1.6"
     },
     {
         "Type of cases ": "NSP Died ",
@@ -24,7 +24,7 @@
         "III Qtr 2019": "5",
         "IV Qtr 2019": "2",
         "Total 2019": "13",
-        "%": "5.1"
+        "%": "4.1"
     },
     {
         "Type of cases ": "NSP Failure ",
@@ -33,7 +33,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "1",
         "Total 2019": "3",
-        "%": "0"
+        "%": "1.0"
     },
     {
         "Type of cases ": "NSP Defaulted ",
@@ -42,7 +42,7 @@
         "III Qtr 2019": "3",
         "IV Qtr 2019": "1",
         "Total 2019": "7",
-        "%": "2.5"
+        "%": "2.2"
     },
     {
         "Type of cases ": "NSP Transferred out",
@@ -51,7 +51,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "0",
         "Total 2019": "1",
-        "%": "0"
+        "%": "0.3"
     },
     {
         "Type of cases ": "NSP Switched to IV",
@@ -60,7 +60,7 @@
         "III Qtr 2019": "0",
         "IV Qtr 2019": "1",
         "Total 2019": "2",
-        "%": "0"
+        "%": "0.6"
     },
     {
         "Type of cases ": "Total",
@@ -87,7 +87,7 @@
         "III Qtr 2019": "36",
         "IV Qtr 2019": "47",
         "Total 2019": "174",
-        "%": "94.5"
+        "%": "93.5"
     },
     {
         "Type of cases ": "NSN/NEP Died ",
@@ -96,7 +96,7 @@
         "III Qtr 2019": "4",
         "IV Qtr 2019": "2",
         "Total 2019": "11",
-        "%": "5.5"
+        "%": "5.9"
     },
     {
         "Type of cases ": "NSN/NEP Failure ",
@@ -114,7 +114,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "0",
         "Total 2019": "1",
-        "%": "0"
+        "%": "0.5"
     },
     {
         "Type of cases ": "NSN/NEP Transferred out ",
@@ -135,7 +135,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total ",
         "I Qtr 2019": "55",
         "II Qtr 2019": "41",
         "III Qtr 2019": "41",
@@ -150,7 +150,7 @@
         "III Qtr 2019": "21",
         "IV Qtr 2019": "17",
         "Total 2019": "65",
-        "%": "81"
+        "%": "82.3"
     },
     {
         "Type of cases ": "RT+ve  Treatment completed",
@@ -168,7 +168,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "0",
         "Total 2019": "7",
-        "%": "9.5"
+        "%": "8.9"
     },
     {
         "Type of cases ": "RT +ve Failure ",
@@ -186,7 +186,7 @@
         "III Qtr 2019": "1",
         "IV Qtr 2019": "2",
         "Total 2019": "7",
-        "%": "9.523809523809524"
+        "%": "8.9"
     },
     {
         "Type of cases ": "RT +ve Transferred out ",
@@ -207,7 +207,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total  ",
         "I Qtr 2019": "21",
         "II Qtr 2019": "16",
         "III Qtr 2019": "23",
@@ -231,7 +231,7 @@
         "III Qtr 2019": "6",
         "IV Qtr 2019": "10",
         "Total 2019": "21",
-        "%": "83.3"
+        "%": "80.8"
     },
     {
         "Type of cases ": "RT Neg Died ",
@@ -240,7 +240,7 @@
         "III Qtr 2019": "0",
         "IV Qtr 2019": "0",
         "Total 2019": "3",
-        "%": "0"
+        "%": "11.5"
     },
     {
         "Type of cases ": "RT Neg Failure ",
@@ -249,7 +249,7 @@
         "III Qtr 2019": "0",
         "IV Qtr 2019": "0",
         "Total 2019": "0",
-        "%": "0"
+        "%": "0.0"
     },
     {
         "Type of cases ": "RT Neg Defaulted ",
@@ -258,7 +258,7 @@
         "III Qtr 2019": "0",
         "IV Qtr 2019": "1",
         "Total 2019": "2",
-        "%": "16.7"
+        "%": "7.7"
     },
     {
         "Type of cases ": "RT Neg Transferred out",
@@ -279,7 +279,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "Total   ",
         "I Qtr 2019": "6",
         "II Qtr 2019": "3",
         "III Qtr 2019": "6",
