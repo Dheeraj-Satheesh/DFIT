@@ -6,7 +6,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "99",
-        "%": "83.89830508474576"
+        "%": "84"
     },
     {
         "Type of cases ": "NSP Treatment completed",
@@ -15,7 +15,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "3",
-        "%": "2.542372881355932"
+        "%": "3"
     },
     {
         "Type of cases ": "NSP Died ",
@@ -24,7 +24,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "7",
-        "%": "5.932203389830509"
+        "%": "6"
     },
     {
         "Type of cases ": "NSP Failure ",
@@ -33,7 +33,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "1.694915254237288"
+        "%": "2"
     },
     {
         "Type of cases ": "NSP Defaulted ",
@@ -42,7 +42,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "5",
-        "%": "4.237288135593221"
+        "%": "4"
     },
     {
         "Type of cases ": "NSP Transferred out",
@@ -51,7 +51,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "1.694915254237288"
+        "%": "2"
     },
     {
         "Type of cases ": "NSP Switched to IV",
@@ -87,7 +87,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "54",
-        "%": "88.52459016393442"
+        "%": "89"
     },
     {
         "Type of cases ": "NSN/NEP Died ",
@@ -96,7 +96,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "4",
-        "%": "6.557377049180328"
+        "%": "7"
     },
     {
         "Type of cases ": "NSN/NEP Failure ",
@@ -114,7 +114,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "3.278688524590164"
+        "%": "3"
     },
     {
         "Type of cases ": "NSN/NEP Transferred out ",
@@ -123,7 +123,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "1",
-        "%": "1.639344262295082"
+        "%": "2"
     },
     {
         "Type of cases ": "NSN/NEP Switched to IV",
@@ -150,7 +150,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "16",
-        "%": "57.142857142857146"
+        "%": "57"
     },
     {
         "Type of cases ": "RT+ve  Treatment completed",
@@ -159,7 +159,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "3",
-        "%": "10.714285714285714"
+        "%": "11"
     },
     {
         "Type of cases ": "RT +Ve Died ",
@@ -168,7 +168,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "7.142857142857143"
+        "%": "7"
     },
     {
         "Type of cases ": "RT +ve Failure ",
@@ -177,7 +177,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "7.142857142857143"
+        "%": "7"
     },
     {
         "Type of cases ": "RT +ve Defaulted ",
@@ -186,7 +186,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "5",
-        "%": "17.857142857142858"
+        "%": "18"
     },
     {
         "Type of cases ": "RT +ve Transferred out ",

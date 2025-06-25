@@ -2,20 +2,20 @@
   {
     "S.NO": "1",
     "Contents": "Total number of outpatients treated",
-    "I Qtr-2022": "39868",
-    "II Qtr-2022": "30847",
-    "III Qtr- 2022": "31523",
-    "IV Qtr-2022": "26003",
-    "Annual 2022": "128241"
+    "I Qtr-2022": "40284",
+    "II Qtr-2022": "31233",
+    "III Qtr- 2022": "32008",
+    "IV Qtr-2022": "26485",
+    "Annual 2022": "130010"
   },
   {
     "S.NO": "1.a",
     "Contents": "Skin diseases",
-    "I Qtr-2022": "5811",
-    "II Qtr-2022": "6457",
-    "III Qtr- 2022": "8419",
-    "IV Qtr-2022": "6104",
-    "Annual 2022": "26791"
+    "I Qtr-2022": "6207",
+    "II Qtr-2022": "6811",
+    "III Qtr- 2022": "8896",
+    "IV Qtr-2022": "6576",
+    "Annual 2022": "28490"
   },
   {
     "S.NO": "1.b",
@@ -29,74 +29,74 @@
   {
     "S.NO": "1.c",
     "Contents": "Others",
-    "I Qtr-2022": "30374",
-    "II Qtr-2022": "20908",
-    "III Qtr- 2022": "19718",
-    "IV Qtr-2022": "16038",
-    "Annual 2022": "87038"
+    "I Qtr-2022": "30394",
+    "II Qtr-2022": "20940",
+    "III Qtr- 2022": "19726",
+    "IV Qtr-2022": "16048",
+    "Annual 2022": "87108"
   },
   {
     "S.NO": "2",
     "Contents": "Adult-PB",
     "I Qtr-2022": "59",
-    "II Qtr-2022": "59",
+    "II Qtr-2022": "66",
     "III Qtr- 2022": "92",
-    "IV Qtr-2022": "63",
-    "Annual 2022": "273"
+    "IV Qtr-2022": "64",
+    "Annual 2022": "281"
   },
   {
     "S.NO": "2.a",
     "Contents": "Adult-MB",
-    "I Qtr-2022": "118",
-    "II Qtr-2022": "137",
-    "III Qtr- 2022": "131",
-    "IV Qtr-2022": "110",
-    "Annual 2022": "496"
+    "I Qtr-2022": "126",
+    "II Qtr-2022": "145",
+    "III Qtr- 2022": "141",
+    "IV Qtr-2022": "124",
+    "Annual 2022": "536"
   },
   {
     "S.NO": "2.b",
     "Contents": "Adult-Total",
-    "I Qtr-2022": "177",
-    "II Qtr-2022": "196",
-    "III Qtr- 2022": "223",
-    "IV Qtr-2022": "173",
-    "Annual 2022": "769"
+    "I Qtr-2022": "185",
+    "II Qtr-2022": "211",
+    "III Qtr- 2022": "233",
+    "IV Qtr-2022": "188",
+    "Annual 2022": "817"
   },
   {
     "S.NO": "2.c",
     "Contents": "Children-PB",
-    "I Qtr-2022": "5",
+    "I Qtr-2022": "6",
     "II Qtr-2022": "6",
     "III Qtr- 2022": "13",
-    "IV Qtr-2022": "10",
-    "Annual 2022": "34"
+    "IV Qtr-2022": "12",
+    "Annual 2022": "37"
   },
   {
     "S.NO": "2.d",
     "Contents": "Children-MB",
     "I Qtr-2022": "11",
-    "II Qtr-2022": "14",
-    "III Qtr- 2022": "7",
-    "IV Qtr-2022": "7",
-    "Annual 2022": "39"
+    "II Qtr-2022": "16",
+    "III Qtr- 2022": "8",
+    "IV Qtr-2022": "8",
+    "Annual 2022": "43"
   },
   {
     "S.NO": "2.e",
     "Contents": "Children-Total",
-    "I Qtr-2022": "16",
-    "II Qtr-2022": "20",
-    "III Qtr- 2022": "20",
-    "IV Qtr-2022": "17",
-    "Annual 2022": "73"
+    "I Qtr-2022": "17",
+    "II Qtr-2022": "22",
+    "III Qtr- 2022": "21",
+    "IV Qtr-2022": "20",
+    "Annual 2022": "80"
   },
   {
     "S.NO": "2.f",
     "Contents": "Total No. of new leprosy cases detected",
-    "I Qtr-2022": "193",
-    "II Qtr-2022": "216",
-    "III Qtr- 2022": "243",
-    "IV Qtr-2022": "190",
-    "Annual 2022": "842"
+    "I Qtr-2022": "202",
+    "II Qtr-2022": "233",
+    "III Qtr- 2022": "254",
+    "IV Qtr-2022": "208",
+    "Annual 2022": "897"
   },
   {
     "S.NO": "2.g",
@@ -111,28 +111,28 @@
     "S.NO": "2.h",
     "Contents": "Female-PB",
     "I Qtr-2022": "34",
-    "II Qtr-2022": "30",
+    "II Qtr-2022": "32",
     "III Qtr- 2022": "60",
-    "IV Qtr-2022": "48",
-    "Annual 2022": "172"
+    "IV Qtr-2022": "49",
+    "Annual 2022": "175"
   },
   {
     "S.NO": "2.i",
     "Contents": "Female-MB",
-    "I Qtr-2022": "37",
-    "II Qtr-2022": "46",
-    "III Qtr- 2022": "50",
-    "IV Qtr-2022": "38",
-    "Annual 2022": "171"
+    "I Qtr-2022": "39",
+    "II Qtr-2022": "48",
+    "III Qtr- 2022": "55",
+    "IV Qtr-2022": "40",
+    "Annual 2022": "182"
   },
   {
     "S.NO": "2.j",
     "Contents": "Female-Total",
-    "I Qtr-2022": "71",
-    "II Qtr-2022": "76",
-    "III Qtr- 2022": "110",
-    "IV Qtr-2022": "86",
-    "Annual 2022": "343"
+    "I Qtr-2022": "73",
+    "II Qtr-2022": "80",
+    "III Qtr- 2022": "115",
+    "IV Qtr-2022": "89",
+    "Annual 2022": "357"
   },
   {
     "S.NO": "2.k",
@@ -146,20 +146,20 @@
   {
     "S.NO": "2.l",
     "Contents": "Adult disability G-I-MB",
-    "I Qtr-2022": "21",
-    "II Qtr-2022": "17",
+    "I Qtr-2022": "23",
+    "II Qtr-2022": "18",
     "III Qtr- 2022": "14",
     "IV Qtr-2022": "21",
-    "Annual 2022": "73"
+    "Annual 2022": "76"
   },
   {
     "S.NO": "2.m",
     "Contents": "Total Adult disability G-I",
-    "I Qtr-2022": "22",
-    "II Qtr-2022": "17",
+    "I Qtr-2022": "24",
+    "II Qtr-2022": "18",
     "III Qtr- 2022": "19",
     "IV Qtr-2022": "21",
-    "Annual 2022": "79"
+    "Annual 2022": "82"
   },
   {
     "S.NO": "2.n",
@@ -173,20 +173,20 @@
   {
     "S.NO": "2.o",
     "Contents": "Adult disability G-II-MB",
-    "I Qtr-2022": "31",
-    "II Qtr-2022": "26",
-    "III Qtr- 2022": "25",
-    "IV Qtr-2022": "12",
-    "Annual 2022": "94"
+    "I Qtr-2022": "33",
+    "II Qtr-2022": "27",
+    "III Qtr- 2022": "29",
+    "IV Qtr-2022": "17",
+    "Annual 2022": "106"
   },
   {
     "S.NO": "2.p",
     "Contents": "Total Adult disability G-II",
-    "I Qtr-2022": "35",
-    "II Qtr-2022": "29",
-    "III Qtr- 2022": "27",
-    "IV Qtr-2022": "12",
-    "Annual 2022": "103"
+    "I Qtr-2022": "37",
+    "II Qtr-2022": "30",
+    "III Qtr- 2022": "31",
+    "IV Qtr-2022": "17",
+    "Annual 2022": "115"
   },
   {
     "S.NO": "2.q",
@@ -229,216 +229,216 @@
     "Contents": "Children disability G-II-MB",
     "I Qtr-2022": "1",
     "II Qtr-2022": "4",
-    "III Qtr- 2022": "1",
+    "III Qtr- 2022": "2",
     "IV Qtr-2022": "1",
-    "Annual 2022": "7"
+    "Annual 2022": "8"
   },
   {
     "S.NO": "2.v",
     "Contents": "Total Children disability G-II",
     "I Qtr-2022": "1",
     "II Qtr-2022": "5",
-    "III Qtr- 2022": "1",
+    "III Qtr- 2022": "2",
     "IV Qtr-2022": "1",
-    "Annual 2022": "8"
+    "Annual 2022": "9"
   },
   {
     "S.NO": "3",
     "Contents": "lepra ReactionType-1 Male",
-    "I Qtr-2022": "56",
-    "II Qtr-2022": "33",
-    "III Qtr- 2022": "39",
-    "IV Qtr-2022": "29",
-    "Annual 2022": "157"
+    "I Qtr-2022": "58",
+    "II Qtr-2022": "38",
+    "III Qtr- 2022": "44",
+    "IV Qtr-2022": "35",
+    "Annual 2022": "175"
   },
   {
     "S.NO": "3.a",
     "Contents": "lepra ReactionType-1 Female",
-    "I Qtr-2022": "14",
+    "I Qtr-2022": "16",
     "II Qtr-2022": "21",
-    "III Qtr- 2022": "17",
+    "III Qtr- 2022": "19",
     "IV Qtr-2022": "16",
-    "Annual 2022": "68"
+    "Annual 2022": "72"
   },
   {
     "S.NO": "3.b",
     "Contents": "Total Type-1 lepra reactions",
-    "I Qtr-2022": "70",
-    "II Qtr-2022": "54",
-    "III Qtr- 2022": "56",
-    "IV Qtr-2022": "45",
-    "Annual 2022": "225"
+    "I Qtr-2022": "74",
+    "II Qtr-2022": "59",
+    "III Qtr- 2022": "63",
+    "IV Qtr-2022": "51",
+    "Annual 2022": "247"
   },
   {
     "S.NO": "3.c",
     "Contents": "lepra ReactionType-2 Male",
-    "I Qtr-2022": "13",
-    "II Qtr-2022": "22",
-    "III Qtr- 2022": "16",
-    "IV Qtr-2022": "20",
-    "Annual 2022": "71"
+    "I Qtr-2022": "15",
+    "II Qtr-2022": "23",
+    "III Qtr- 2022": "18",
+    "IV Qtr-2022": "24",
+    "Annual 2022": "80"
   },
   {
     "S.NO": "3.d",
     "Contents": "lepra ReactionType-2 Female",
     "I Qtr-2022": "9",
-    "II Qtr-2022": "11",
-    "III Qtr- 2022": "3",
-    "IV Qtr-2022": "9",
-    "Annual 2022": "32"
+    "II Qtr-2022": "12",
+    "III Qtr- 2022": "5",
+    "IV Qtr-2022": "12",
+    "Annual 2022": "38"
   },
   {
     "S.NO": "3.e",
     "Contents": "Total Type 2 lepra reactions",
-    "I Qtr-2022": "22",
-    "II Qtr-2022": "33",
-    "III Qtr- 2022": "19",
-    "IV Qtr-2022": "29",
-    "Annual 2022": "103"
+    "I Qtr-2022": "24",
+    "II Qtr-2022": "35",
+    "III Qtr- 2022": "23",
+    "IV Qtr-2022": "36",
+    "Annual 2022": "118"
   },
   {
     "S.NO": "4",
     "Contents": "Total number of persons provided with MCR footwear",
-    "I Qtr-2022": "365",
-    "II Qtr-2022": "376",
-    "III Qtr- 2022": "378",
-    "IV Qtr-2022": "266",
-    "Annual 2022": "1385"
+    "I Qtr-2022": "384",
+    "II Qtr-2022": "395",
+    "III Qtr- 2022": "397",
+    "IV Qtr-2022": "288",
+    "Annual 2022": "1464"
   },
   {
     "S.NO": "5",
     "Contents": "RCS Male",
-    "I Qtr-2022": "41",
-    "II Qtr-2022": "64",
-    "III Qtr- 2022": "68",
-    "IV Qtr-2022": "67",
-    "Annual 2022": "240"
+    "I Qtr-2022": "32",
+    "II Qtr-2022": "58",
+    "III Qtr- 2022": "60",
+    "IV Qtr-2022": "61",
+    "Annual 2022": "211"
   },
   {
     "S.NO": "5.a",
     "Contents": "RCS Female",
-    "I Qtr-2022": "14",
-    "II Qtr-2022": "27",
-    "III Qtr- 2022": "28",
-    "IV Qtr-2022": "20",
-    "Annual 2022": "89"
+    "I Qtr-2022": "16",
+    "II Qtr-2022": "20",
+    "III Qtr- 2022": "27",
+    "IV Qtr-2022": "18",
+    "Annual 2022": "81"
   },
   {
     "S.NO": "5.b",
     "Contents": "TOTAL RCS DONE ",
-    "I Qtr-2022": "55",
-    "II Qtr-2022": "91",
-    "III Qtr- 2022": "96",
-    "IV Qtr-2022": "87",
-    "Annual 2022": "329"
+    "I Qtr-2022": "48",
+    "II Qtr-2022": "78",
+    "III Qtr- 2022": "87",
+    "IV Qtr-2022": "79",
+    "Annual 2022": "292"
   },
   {
     "S.NO": "5.c",
     "Contents": "Eye Male RCS Done",
-    "I Qtr-2022": "4",
+    "I Qtr-2022": "3",
     "II Qtr-2022": "4",
-    "III Qtr- 2022": "6",
+    "III Qtr- 2022": "5",
     "IV Qtr-2022": "6",
-    "Annual 2022": "20"
+    "Annual 2022": "18"
   },
   {
     "S.NO": "5.d",
     "Contents": "Eye Female RCS Done",
     "I Qtr-2022": "0",
-    "II Qtr-2022": "1",
+    "II Qtr-2022": "2",
     "III Qtr- 2022": "2",
     "IV Qtr-2022": "1",
-    "Annual 2022": "4"
+    "Annual 2022": "5"
   },
   {
     "S.NO": "5.e",
     "Contents": "Total Eye RCS Done",
-    "I Qtr-2022": "4",
-    "II Qtr-2022": "5",
-    "III Qtr- 2022": "8",
+    "I Qtr-2022": "3",
+    "II Qtr-2022": "6",
+    "III Qtr- 2022": "7",
     "IV Qtr-2022": "7",
-    "Annual 2022": "24"
+    "Annual 2022": "23"
   },
   {
     "S.NO": "5.f",
     "Contents": "Hand Male RCS Done",
-    "I Qtr-2022": "32",
-    "II Qtr-2022": "47",
-    "III Qtr- 2022": "58",
-    "IV Qtr-2022": "45",
-    "Annual 2022": "182"
+    "I Qtr-2022": "25",
+    "II Qtr-2022": "40",
+    "III Qtr- 2022": "48",
+    "IV Qtr-2022": "39",
+    "Annual 2022": "152"
   },
   {
     "S.NO": "5.g",
     "Contents": "Hand Female RCS Done",
-    "I Qtr-2022": "13",
-    "II Qtr-2022": "24",
-    "III Qtr- 2022": "24",
-    "IV Qtr-2022": "19",
-    "Annual 2022": "80"
+    "I Qtr-2022": "14",
+    "II Qtr-2022": "17",
+    "III Qtr- 2022": "22",
+    "IV Qtr-2022": "17",
+    "Annual 2022": "70"
   },
   {
     "S.NO": "5.h",
     "Contents": "Total Hand RCS Done",
-    "I Qtr-2022": "45",
-    "II Qtr-2022": "71",
-    "III Qtr- 2022": "82",
-    "IV Qtr-2022": "64",
-    "Annual 2022": "262"
+    "I Qtr-2022": "39",
+    "II Qtr-2022": "57",
+    "III Qtr- 2022": "70",
+    "IV Qtr-2022": "56",
+    "Annual 2022": "222"
   },
   {
     "S.NO": "5.i",
     "Contents": "Foot Male RCS Done",
-    "I Qtr-2022": "5",
-    "II Qtr-2022": "13",
-    "III Qtr- 2022": "4",
+    "I Qtr-2022": "4",
+    "II Qtr-2022": "14",
+    "III Qtr- 2022": "7",
     "IV Qtr-2022": "16",
-    "Annual 2022": "38"
+    "Annual 2022": "41"
   },
   {
     "S.NO": "5.j",
     "Contents": "Foot Female RCS Done",
-    "I Qtr-2022": "1",
-    "II Qtr-2022": "2",
-    "III Qtr- 2022": "2",
+    "I Qtr-2022": "2",
+    "II Qtr-2022": "1",
+    "III Qtr- 2022": "3",
     "IV Qtr-2022": "0",
-    "Annual 2022": "5"
+    "Annual 2022": "6"
   },
   {
     "S.NO": "5.k",
     "Contents": "Total Foot RCS Done",
     "I Qtr-2022": "6",
     "II Qtr-2022": "15",
-    "III Qtr- 2022": "6",
+    "III Qtr- 2022": "10",
     "IV Qtr-2022": "16",
-    "Annual 2022": "43"
+    "Annual 2022": "47"
   },
   {
     "S.NO": "6",
     "Contents": "Male Septic Surgeries /Nerve Decompression",
-    "I Qtr-2022": "11",
+    "I Qtr-2022": "12",
     "II Qtr-2022": "10",
-    "III Qtr- 2022": "15",
+    "III Qtr- 2022": "16",
     "IV Qtr-2022": "32",
-    "Annual 2022": "68"
+    "Annual 2022": "70"
   },
   {
     "S.NO": "6.a",
     "Contents": "Female Septic Surgeries /Nerve Decompression",
-    "I Qtr-2022": "4",
+    "I Qtr-2022": "6",
     "II Qtr-2022": "2",
-    "III Qtr- 2022": "3",
-    "IV Qtr-2022": "8",
-    "Annual 2022": "17"
+    "III Qtr- 2022": "5",
+    "IV Qtr-2022": "7",
+    "Annual 2022": "20"
   },
   {
     "S.NO": "6.b",
     "Contents": "Total Septic Surgeries /Nerve Decompression",
-    "I Qtr-2022": "15",
+    "I Qtr-2022": "18",
     "II Qtr-2022": "12",
-    "III Qtr- 2022": "18",
-    "IV Qtr-2022": "40",
-    "Annual 2022": "85"
+    "III Qtr- 2022": "21",
+    "IV Qtr-2022": "39",
+    "Annual 2022": "90"
   },
   {
     "S.NO": "7",
@@ -524,20 +524,20 @@
   {
     "S.NO": "8",
     "Contents": "Total Leprosy Beds Available",
-    "I Qtr-2022": "308",
-    "II Qtr-2022": "308",
-    "III Qtr- 2022": "308",
-    "IV Qtr-2022": "308",
-    "Annual 2022": "308"
+    "I Qtr-2022": "330",
+    "II Qtr-2022": "330",
+    "III Qtr- 2022": "330",
+    "IV Qtr-2022": "330",
+    "Annual 2022": "330"
   },
   {
     "S.NO": "8.a",
     "Contents": "Total Leprosy Patients Admitted",
-    "I Qtr-2022": "457",
-    "II Qtr-2022": "520",
-    "III Qtr- 2022": "541",
-    "IV Qtr-2022": "503",
-    "Annual 2022": "1850"
+    "I Qtr-2022": "479",
+    "II Qtr-2022": "542",
+    "III Qtr- 2022": "574",
+    "IV Qtr-2022": "531",
+    "Annual 2022": "1955"
   },
   {
     "S.NO": "8.b",
@@ -551,38 +551,38 @@
   {
     "S.NO": "8.c",
     "Contents": "RCS Patients Admitted",
-    "I Qtr-2022": "80",
-    "II Qtr-2022": "111",
-    "III Qtr- 2022": "149",
-    "IV Qtr-2022": "150",
-    "Annual 2022": "490"
+    "I Qtr-2022": "89",
+    "II Qtr-2022": "121",
+    "III Qtr- 2022": "167",
+    "IV Qtr-2022": "159",
+    "Annual 2022": "536"
   },
   {
     "S.NO": "8.d",
-    "Contents": "Planter ulcers and Others Patients Admitted",
-    "I Qtr-2022": "353",
-    "II Qtr-2022": "378",
-    "III Qtr- 2022": "351",
-    "IV Qtr-2022": "329",
-    "Annual 2022": "1240"
+    "Contents": "Planter Ulcer sand Others Patients Admitted",
+    "I Qtr-2022": "366",
+    "II Qtr-2022": "390",
+    "III Qtr- 2022": "366",
+    "IV Qtr-2022": "348",
+    "Annual 2022": "1299"
   },
   {
     "S.NO": "8.e",
     "Contents": "Total no of Beds Occupied Leprosy Patients",
-    "I Qtr-2022": "14296",
-    "II Qtr-2022": "15963",
-    "III Qtr- 2022": "16901",
-    "IV Qtr-2022": "15941",
-    "Annual 2022": "63101"
+    "I Qtr-2022": "15433",
+    "II Qtr-2022": "16859",
+    "III Qtr- 2022": "18013",
+    "IV Qtr-2022": "16978",
+    "Annual 2022": "67283"
   },
   {
     "S.NO": "8.f",
     "Contents": "Bed Occupancy Rate for Leprosy",
-    "I Qtr-2022": "51.6",
-    "II Qtr-2022": "57.6",
-    "III Qtr- 2022": "61.0",
-    "IV Qtr-2022": "57.5",
-    "Annual 2022": "56.9"
+    "I Qtr-2022": "52.0",
+    "II Qtr-2022": "56.8",
+    "III Qtr- 2022": "60.6",
+    "IV Qtr-2022": "57.2",
+    "Annual 2022": "56.6"
   },
   {
     "S.NO": "9",

@@ -6,7 +6,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "64",
-        "%": "91.42857142857143"
+        "%": "91"
     },
     {
         "Type of cases ": "NSP Treatment completed",
@@ -24,7 +24,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "2.857142857142857"
+        "%": "3"
     },
     {
         "Type of cases ": "NSP Failure ",
@@ -33,7 +33,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "2.857142857142857"
+        "%": "3"
     },
     {
         "Type of cases ": "NSP Defaulted ",
@@ -60,7 +60,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "2",
-        "%": "2.857142857142857"
+        "%": "3"
     },
     {
         "Type of cases ": "Total",
@@ -87,7 +87,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "51",
-        "%": "94.44444444444444"
+        "%": "94"
     },
     {
         "Type of cases ": "NSN/NEP Died ",
@@ -96,7 +96,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "3",
-        "%": "5.555555555555555"
+        "%": "6"
     },
     {
         "Type of cases ": "NSN/NEP Failure ",
@@ -150,7 +150,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "11",
-        "%": "64.70588235294117"
+        "%": "65"
     },
     {
         "Type of cases ": "RT+ve  Treatment completed",
@@ -168,7 +168,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "3",
-        "%": "17.647058823529413"
+        "%": "18"
     },
     {
         "Type of cases ": "RT +ve Failure ",
@@ -186,7 +186,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "1",
-        "%": "5.882352941176471"
+        "%": "6"
     },
     {
         "Type of cases ": "RT +ve Transferred out ",
@@ -195,7 +195,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "1",
-        "%": "5.882352941176471"
+        "%": "6"
     },
     {
         "Type of cases ": "RT +ve Switched to IV",
@@ -204,7 +204,7 @@
         "III qtr-2014": "",
         "IV qtr- 2014": "",
         "Total 2014": "1",
-        "%": "5.882352941176471"
+        "%": "6"
     },
     {
         "Type of cases ": "Total  ",

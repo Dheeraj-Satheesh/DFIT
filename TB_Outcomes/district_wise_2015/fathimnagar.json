@@ -6,7 +6,7 @@
         "III qtr-2015": "4",
         "IV qtr- 2015": "3",
         "Total 2015": "11",
-        "%": "78.57142857142857"
+        "%": "79"
     },
     {
         "Type of cases ": "NSP Treatment completed",
@@ -24,7 +24,7 @@
         "III qtr-2015": "0",
         "IV qtr- 2015": "1",
         "Total 2015": "1",
-        "%": "7.142857142857142"
+        "%": "7"
     },
     {
         "Type of cases ": "NSP Failure ",
@@ -33,7 +33,7 @@
         "III qtr-2015": "1",
         "IV qtr- 2015": "0",
         "Total 2015": "1",
-        "%": "7.142857142857142"
+        "%": "7"
     },
     {
         "Type of cases ": "NSP Defaulted ",
@@ -42,7 +42,7 @@
         "III qtr-2015": "0",
         "IV qtr- 2015": "0",
         "Total 2015": "1",
-        "%": "7.142857142857142"
+        "%": "7"
     },
     {
         "Type of cases ": "NSP Transferred out",
