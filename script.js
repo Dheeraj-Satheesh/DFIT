@@ -15,21 +15,114 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Enable PNG Download of Table
+  // // Enable PNG Download of Table
+  // function enableDownload(name = "dfit_table") {
+  //   const btn = document.getElementById("downloadTableBtn");
+  //   const container = document.querySelector(".table-container");
+  //   if (!btn || !container) return;
+  //   btn.style.display = "inline-block";
+  //   btn.onclick = () => {
+  //     html2canvas(container).then(canvas => {
+  //       const link = document.createElement("a");
+  //       link.download = `${name}.png`;
+  //       link.href = canvas.toDataURL("image/png");
+  //       link.click();
+  //     });
+  //   };
+  // }
+
+  // function enableDownload(name = "dfit_table") {
+  //   const btn = document.getElementById("downloadTableBtn");
+  //   const container = document.querySelector(".table-container");
+
+  //   if (!btn || !container) return;
+
+  //   btn.style.display = "inline-block";
+
+  //   btn.onclick = () => {
+  //     // Clone the container
+  //     const clone = container.cloneNode(true);
+  //     clone.style.position = "absolute";
+  //     clone.style.left = "-9999px";
+  //     clone.style.top = "0";
+  //     clone.style.maxHeight = "none";
+  //     clone.style.overflow = "visible";
+  //     clone.style.width = container.scrollWidth + "px";
+  //     clone.style.height = container.scrollHeight + "px";
+  //     document.body.appendChild(clone);
+
+  //     // Capture the fully expanded clone
+  //     html2canvas(clone, {
+  //       scrollX: 0,
+  //       scrollY: 0,
+  //       useCORS: true,
+  //       allowTaint: true
+  //     }).then(canvas => {
+  //       document.body.removeChild(clone);
+
+  //       const link = document.createElement("a");
+  //       link.download = `${name}.png`;
+  //       link.href = canvas.toDataURL("image/png");
+  //       link.click();
+  //     });
+  //   };
+  // }
+
+  // // Run on DOM load
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   enableDownload("dfit_table_full");
+  // });
+
   function enableDownload(name = "dfit_table") {
     const btn = document.getElementById("downloadTableBtn");
     const container = document.querySelector(".table-container");
+
     if (!btn || !container) return;
+
     btn.style.display = "inline-block";
+
     btn.onclick = () => {
-      html2canvas(container).then(canvas => {
-        const link = document.createElement("a");
-        link.download = `${name}.png`;
-        link.href = canvas.toDataURL("image/png");
-        link.click();
-      });
+      // Clone table and prepare full rendering
+      const clone = container.cloneNode(true);
+      clone.style.position = "absolute";
+      clone.style.left = "-9999px";
+      clone.style.top = "0";
+      clone.style.maxHeight = "none";
+      clone.style.overflow = "visible";
+      clone.style.width = container.scrollWidth + "px";
+      clone.style.height = container.scrollHeight + "px";
+
+      // Ensure no clipping
+      document.body.appendChild(clone);
+
+      // Use html2canvas on the expanded clone
+      setTimeout(() => {
+        html2canvas(clone, {
+          scrollX: 0,
+          scrollY: 0,
+          width: clone.scrollWidth,
+          height: clone.scrollHeight,
+          windowWidth: clone.scrollWidth,
+          windowHeight: clone.scrollHeight,
+          useCORS: true,
+          allowTaint: true,
+        }).then(canvas => {
+          document.body.removeChild(clone);
+          const link = document.createElement("a");
+          link.download = `${name}.png`;
+          link.href = canvas.toDataURL("image/png");
+          link.click();
+        });
+      }, 200); // delay to ensure layout settles
     };
   }
+
+  // Enable when DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    enableDownload("full_table_download");
+  });
+
+
 
   // --- LEP Section ---
   document.getElementById("link-lep")?.addEventListener("click", e => {
@@ -47,6 +140,24 @@ document.addEventListener("DOMContentLoaded", () => {
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
         enableDownload(`LEP_Report_${selectedYear}`);
+      });
+  });
+  // --- NUT Section ---
+  document.getElementById("link-nut")?.addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink("link-nut");
+    fetch("LEP/nut.json")
+      .then(res => res.json())
+      .then(data => {
+        const columns = Object.keys(data[0]).filter(k => k !== "Category" && (selectedYear === "All" || k.includes(selectedYear)));
+        let html = `<div class="table-container"><h2>Nutritional Support Report - ${selectedYear}</h2>`;
+        html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
+        data.forEach(row => {
+          html += `<tr><td>${row["Category"]}</td>${columns.map(c => `<td>${row[c] ?? ""}</td>`).join("")}</tr>`;
+        });
+        html += "</tbody></table></div>";
+        contentArea.innerHTML = html;
+        enableDownload(`NUTRITIONAL_Report_${selectedYear}`);
       });
   });
 

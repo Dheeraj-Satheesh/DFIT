@@ -148,6 +148,11 @@ h2{
   box-shadow: none;
   background: transparent;
 }
+.table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
 
 
 /* Table styling */

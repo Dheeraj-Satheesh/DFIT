@@ -1,170 +1,170 @@
 [
   {
-    "Type of Cases": "NSP",
-    "I Qtr 2016": "93",
-    "II Qtr 2016": "109",
-    "III Qtr 2016": "113",
-    "IV Qtr 2016": "78",
-    "Total 2016": "393"
+    "Qtr/ Year": "NSP",
+    "I qtr 2016": "116",
+    "II qtr 2016": "127",
+    "III qtr 2016": "105",
+    "IV qtr 2016": "119",
+    "Total 2016": "467"
   },
   {
-    "Type of Cases": "NSN",
-    "I Qtr 2016": "95",
-    "II Qtr 2016": "90",
-    "III Qtr 2016": "109",
-    "IV Qtr 2016": "85",
-    "Total 2016": "379"
+    "Qtr/ Year": "NSN",
+    "I qtr 2016": "50",
+    "II qtr 2016": "44",
+    "III qtr 2016": "32",
+    "IV qtr 2016": "33",
+    "Total 2016": "159"
   },
   {
-    "Type of Cases": "New EP",
-    "I Qtr 2016": "48",
-    "II Qtr 2016": "31",
-    "III Qtr 2016": "49",
-    "IV Qtr 2016": "29",
-    "Total 2016": "157"
+    "Qtr/ Year": "New EP",
+    "I qtr 2016": "27",
+    "II qtr 2016": "26",
+    "III qtr 2016": "28",
+    "IV qtr 2016": "28",
+    "Total 2016": "109"
   },
   {
-    "Type of Cases": "Others",
-    "I Qtr 2016": "0",
-    "II Qtr 2016": "0",
-    "III Qtr 2016": "0",
-    "IV Qtr 2016": "0",
-    "Total 2016": "0"
-  },
-  {
-    "Type of Cases": "Total",
-    "I Qtr 2016": "236",
-    "II Qtr 2016": "230",
-    "III Qtr 2016": "271",
-    "IV Qtr 2016": "192",
-    "Total 2016": "929"
-  },
-  {
-    "Type of Cases": "Relapse",
-    "I Qtr 2016": "15",
-    "II Qtr 2016": "15",
-    "III Qtr 2016": "23",
-    "IV Qtr 2016": "20",
-    "Total 2016": "73"
-  },
-  {
-    "Type of Cases": "Failures ",
-    "I Qtr 2016": "0",
-    "II Qtr 2016": "3",
-    "III Qtr 2016": "3",
-    "IV Qtr 2016": "0",
-    "Total 2016": "6"
-  },
-  {
-    "Type of Cases": "TAD",
-    "I Qtr 2016": "1",
-    "II Qtr 2016": "1",
-    "III Qtr 2016": "2",
-    "IV Qtr 2016": "1",
+    "Qtr/ Year": "Others",
+    "I qtr 2016": "0",
+    "II qtr 2016": "2",
+    "III qtr 2016": "2",
+    "IV qtr 2016": "1",
     "Total 2016": "5"
   },
   {
-    "Type of Cases": "Others ",
-    "I Qtr 2016": "32",
-    "II Qtr 2016": "29",
-    "III Qtr 2016": "28",
-    "IV Qtr 2016": "28",
-    "Total 2016": "117"
+    "Qtr/ Year": "Total",
+    "I qtr 2016": "193",
+    "II qtr 2016": "199",
+    "III qtr 2016": "167",
+    "IV qtr 2016": "181",
+    "Total 2016": "740"
   },
   {
-    "Type of Cases": "Total",
-    "I Qtr 2016": "48",
-    "II Qtr 2016": "48",
-    "III Qtr 2016": "56",
-    "IV Qtr 2016": "49",
-    "Total 2016": "201"
+    "Qtr/ Year": "Relapse",
+    "I qtr 2016": "31",
+    "II qtr 2016": "25",
+    "III qtr 2016": "19",
+    "IV qtr 2016": "19",
+    "Total 2016": "94"
   },
   {
-    "Type of Cases": "Grand Total",
-    "I Qtr 2016": "284",
-    "II Qtr 2016": "278",
-    "III Qtr 2016": "327",
-    "IV Qtr 2016": "241",
-    "Total 2016": "1130"
+    "Qtr/ Year": "Failures ",
+    "I qtr 2016": "0",
+    "II qtr 2016": "3",
+    "III qtr 2016": "3",
+    "IV qtr 2016": "3",
+    "Total 2016": "9"
   },
   {
-    "Type of Cases": "Total NSP conversion Cases",
-    "I Qtr 2016": "108",
-    "II Qtr 2016": "93",
-    "III Qtr 2016": "109",
-    "IV Qtr 2016": "113",
-    "Total 2016": "423"
+    "Qtr/ Year": "TAD",
+    "I qtr 2016": "9",
+    "II qtr 2016": "9",
+    "III qtr 2016": "9",
+    "IV qtr 2016": "6",
+    "Total 2016": "33"
   },
   {
-    "Type of Cases": "NSP Negative",
-    "I Qtr 2016": "100",
-    "II Qtr 2016": "87",
-    "III Qtr 2016": "93",
-    "IV Qtr 2016": "105",
-    "Total 2016": "385"
+    "Qtr/ Year": "Others ",
+    "I qtr 2016": "15",
+    "II qtr 2016": "7",
+    "III qtr 2016": "14",
+    "IV qtr 2016": "13",
+    "Total 2016": "49"
   },
   {
-    "Type of Cases": "NSP Positive",
-    "I Qtr 2016": "1",
-    "II Qtr 2016": "1",
-    "III Qtr 2016": "2",
-    "IV Qtr 2016": "0",
-    "Total 2016": "4"
+    "Qtr/ Year": "Total",
+    "I qtr 2016": "55",
+    "II qtr 2016": "44",
+    "III qtr 2016": "45",
+    "IV qtr 2016": "41",
+    "Total 2016": "185"
   },
   {
-    "Type of Cases": "NSP Not done",
-    "I Qtr 2016": "7",
-    "II Qtr 2016": "5",
-    "III Qtr 2016": "14",
-    "IV Qtr 2016": "8",
-    "Total 2016": "34"
+    "Qtr/ Year": "Grand Total",
+    "I qtr 2016": "248",
+    "II qtr 2016": "243",
+    "III qtr 2016": "212",
+    "IV qtr 2016": "222",
+    "Total 2016": "925"
   },
   {
-    "Type of Cases": "NSP Conversion rate",
-    "I Qtr 2016": "93",
-    "II Qtr 2016": "94",
-    "III Qtr 2016": "85",
-    "IV Qtr 2016": "93",
-    "Total 2016": "91"
+    "Qtr/ Year": "Total NSP conversion Cases",
+    "I qtr 2016": "116",
+    "II qtr 2016": "117",
+    "III qtr 2016": "122",
+    "IV qtr 2016": "93",
+    "Total 2016": "448"
   },
   {
-    "Type of Cases": "Total RT conversion Cases",
-    "I Qtr 2016": "25",
-    "II Qtr 2016": "16",
-    "III Qtr 2016": "19",
-    "IV Qtr 2016": "28",
+    "Qtr/ Year": "NSP Negative",
+    "I qtr 2016": "100",
+    "II qtr 2016": "102",
+    "III qtr 2016": "105",
+    "IV qtr 2016": "82",
+    "Total 2016": "389"
+  },
+  {
+    "Qtr/ Year": "NSP Positive",
+    "I qtr 2016": "3",
+    "II qtr 2016": "7",
+    "III qtr 2016": "6",
+    "IV qtr 2016": "2",
+    "Total 2016": "18"
+  },
+  {
+    "Qtr/ Year": "NSP Not done",
+    "I qtr 2016": "13",
+    "II qtr 2016": "8",
+    "III qtr 2016": "11",
+    "IV qtr 2016": "9",
+    "Total 2016": "41"
+  },
+  {
+    "Qtr/ Year": "NSP Convesion rate",
+    "I qtr 2016": "86.20689655172414",
+    "II qtr 2016": "87.17948717948718",
+    "III qtr 2016": "86.06557377049181",
+    "IV qtr 2016": "88.17204301075269",
+    "Total 2016": "86.83035714285714"
+  },
+  {
+    "Qtr/ Year": "Total RT conversion Cases",
+    "I qtr 2016": "34",
+    "II qtr 2016": "32",
+    "III qtr 2016": "36",
+    "IV qtr 2016": "28",
+    "Total 2016": "130"
+  },
+  {
+    "Qtr/ Year": "RT Negative",
+    "I qtr 2016": "21",
+    "II qtr 2016": "21",
+    "III qtr 2016": "24",
+    "IV qtr 2016": "22",
     "Total 2016": "88"
   },
   {
-    "Type of Cases": "RT Negative",
-    "I Qtr 2016": "25",
-    "II Qtr 2016": "16",
-    "III Qtr 2016": "17",
-    "IV Qtr 2016": "27",
-    "Total 2016": "85"
+    "Qtr/ Year": "RT Positive",
+    "I qtr 2016": "5",
+    "II qtr 2016": "2",
+    "III qtr 2016": "6",
+    "IV qtr 2016": "1",
+    "Total 2016": "14"
   },
   {
-    "Type of Cases": "RT Positive",
-    "I Qtr 2016": "0",
-    "II Qtr 2016": "0",
-    "III Qtr 2016": "0",
-    "IV Qtr 2016": "0",
-    "Total 2016": "0"
+    "Qtr/ Year": "RT not done",
+    "I qtr 2016": "8",
+    "II qtr 2016": "9",
+    "III qtr 2016": "6",
+    "IV qtr 2016": "5",
+    "Total 2016": "28"
   },
   {
-    "Type of Cases": "RT not done",
-    "I Qtr 2016": "0",
-    "II Qtr 2016": "0",
-    "III Qtr 2016": "2",
-    "IV Qtr 2016": "1",
-    "Total 2016": "3"
-  },
-  {
-    "Type of Cases": "RT Conversion rate",
-    "I Qtr 2016": "100",
-    "II Qtr 2016": "100",
-    "III Qtr 2016": "89",
-    "IV Qtr 2016": "96",
-    "Total 2016": "97"
+    "Qtr/ Year": "RT Convesion rate",
+    "I qtr 2016": "61.76470588235294",
+    "II qtr 2016": "65.625",
+    "III qtr 2016": "66.66666666666667",
+    "IV qtr 2016": "78.57142857142857",
+    "Total 2016": "67.6923076923077"
   }
 ]

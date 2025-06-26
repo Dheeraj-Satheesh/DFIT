@@ -623,10 +623,10 @@
     {
         "S.NO": "9.d",
         "Contents": "Bed Occupancy Rate for TB",
-        "I Qtr-2019": "",
-        "II Qtr-2019": "",
-        "III Qtr- 2019": "",
-        "IV Qtr-2019": "",
-        "Annual 2019": ""
+        "I Qtr-2019": "0",
+        "II Qtr-2019": "0",
+        "III Qtr- 2019": "0",
+        "IV Qtr-2019": "0",
+        "Annual 2019": "0"
     }
 ]
