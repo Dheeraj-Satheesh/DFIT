@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearFilter = document.getElementById("yearFilter");
   let selectedYear = yearFilter.value;
 
+  function getSelectedYears() {
+    const years = Array.from(document.querySelectorAll('#yearCheckboxes input[type=checkbox]:checked'))
+      .map(cb => cb.value)
+      .filter(y => /^\d{4}$/.test(y));
+    return years.length > 0 ? years.map(Number) : [2025];
+  }
   // Universal Active Link Handler
   function setActiveLink(idOrElement) {
     document.querySelectorAll(".sidebar a").forEach(a => a.classList.remove("active-link"));
@@ -14,64 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
       idOrElement.classList.add("active-link");
     }
   }
-
-  // // Enable PNG Download of Table
-  // function enableDownload(name = "dfit_table") {
-  //   const btn = document.getElementById("downloadTableBtn");
-  //   const container = document.querySelector(".table-container");
-  //   if (!btn || !container) return;
-  //   btn.style.display = "inline-block";
-  //   btn.onclick = () => {
-  //     html2canvas(container).then(canvas => {
-  //       const link = document.createElement("a");
-  //       link.download = `${name}.png`;
-  //       link.href = canvas.toDataURL("image/png");
-  //       link.click();
-  //     });
-  //   };
-  // }
-
-  // function enableDownload(name = "dfit_table") {
-  //   const btn = document.getElementById("downloadTableBtn");
-  //   const container = document.querySelector(".table-container");
-
-  //   if (!btn || !container) return;
-
-  //   btn.style.display = "inline-block";
-
-  //   btn.onclick = () => {
-  //     // Clone the container
-  //     const clone = container.cloneNode(true);
-  //     clone.style.position = "absolute";
-  //     clone.style.left = "-9999px";
-  //     clone.style.top = "0";
-  //     clone.style.maxHeight = "none";
-  //     clone.style.overflow = "visible";
-  //     clone.style.width = container.scrollWidth + "px";
-  //     clone.style.height = container.scrollHeight + "px";
-  //     document.body.appendChild(clone);
-
-  //     // Capture the fully expanded clone
-  //     html2canvas(clone, {
-  //       scrollX: 0,
-  //       scrollY: 0,
-  //       useCORS: true,
-  //       allowTaint: true
-  //     }).then(canvas => {
-  //       document.body.removeChild(clone);
-
-  //       const link = document.createElement("a");
-  //       link.download = `${name}.png`;
-  //       link.href = canvas.toDataURL("image/png");
-  //       link.click();
-  //     });
-  //   };
-  // }
-
-  // // Run on DOM load
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   enableDownload("dfit_table_full");
-  // });
 
   function enableDownload(name = "dfit_table") {
     const btn = document.getElementById("downloadTableBtn");
@@ -122,82 +70,445 @@ document.addEventListener("DOMContentLoaded", () => {
     enableDownload("full_table_download");
   });
 
+  // Annual Table
+  function renderAnnualTable(dataMap, years) {
+    const hasSNO = Object.values(dataMap).some(r => r.SNO);
+    let html = `<table><thead><tr>`;
+    if (hasSNO) html += `<th>S.NO</th>`;
+    html += `<th>Contents</th>`;
+    years.forEach(y => html += `<th>Annual ${y}</th>`);
+    html += `</tr></thead><tbody>`;
+
+    Object.values(dataMap).forEach(row => {
+      html += `<tr>`;
+      if (hasSNO) html += `<td>${row.SNO ?? ""}</td>`;
+      html += `<td>${row.Contents ?? ""}</td>`;
+      years.forEach(y => {
+        const val = row[`Annual ${y}`];
+        html += `<td>${(val !== undefined && val !== null && val.toString().trim() !== "") ? val : "0"}</td>`;
+      });
+      html += `</tr>`;
+    });
+
+    html += `</tbody></table>`;
+    return html;
+  }
+
+
+  /// MUlti year Selction
+  function renderMultiYearSection(basePath, key, sectionName) {
+    const years = getSelectedYears();
+    const cumulativeData = {};
+    const order = [];
+
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = `<p>Loading ${sectionName} data...</p>`;
+
+    Promise.all(years.map(year =>
+      fetch(`${basePath}/district_wise_${year}/${key}.json`)
+        .then(res => res.ok ? res.json() : [])
+        .then(data => {
+          data.forEach(row => {
+            const sno = row["S.NO"] || row["SNO"] || "";
+            const label = row["Contents"] || row["Type of cases"] || row["Annexure M Contents"] || row["DPMR Contents"] || "Unknown";
+            const id = `${sno}||${label}`;
+
+            if (!cumulativeData[id]) {
+              cumulativeData[id] = { Contents: label };
+              if (sno) cumulativeData[id].SNO = sno;
+              order.push(id);
+            }
+
+            const annualKey = `Annual ${year}`;
+            const value = row[`Total ${year}`] ?? row[annualKey] ?? row["Total"];
+            cumulativeData[id][annualKey] = (value !== undefined && value !== null && value.toString().trim() !== "") ? value : "0";
+          });
+
+        })
+    ))
+      .then(() => {
+        const formattedData = order.reduce((acc, id) => {
+          acc[id] = cumulativeData[id];
+          return acc;
+        }, {});
+
+        const tableHTML = renderAnnualTable(formattedData, years);
+
+        contentArea.innerHTML = `<div class="table-container">
+        <h2>${sectionName} Overview – ${years.join(', ')}</h2>
+        ${tableHTML}
+      </div>`;
+
+        enableDownload(sectionName.replace(/\s+/g, '_'));
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p>Error loading data for ${sectionName}. Please try again later.</p>`;
+        console.error("Multi-year section error:", err);
+      });
+  }
+
+  // Quarter - wise data display
+
+  function renderQuarterWiseSection(path, key, sectionTitle) {
+    const selectedYear = document.getElementById("yearFilter").value;
+    const contentArea = document.getElementById("content-area");
+
+    contentArea.innerHTML = `<p>Loading ${sectionTitle} data for ${selectedYear}...</p>`;
+
+    fetch(`${path}/district_wise_${selectedYear}/${key}.json`)
+      .then(res => res.ok ? res.json() : [])
+      .then(data => {
+        if (!data || data.length === 0) {
+          contentArea.innerHTML = `<p>No data available for ${sectionTitle} – ${selectedYear}</p>`;
+          return;
+        }
+
+        const keys = Object.keys(data[0]);
+        let html = `<h2>${sectionTitle} – ${selectedYear} (Quarter-wise)</h2>`;
+        html += `<div class="table-container"><table><thead><tr>`;
+        html += keys.map(k => `<th>${k}</th>`).join('');
+        html += `</tr></thead><tbody>`;
+        data.forEach(row => {
+          html += `<tr>${keys.map(k => {
+            const val = row[k];
+            return `<td>${(val !== undefined && val !== null && val.toString().trim() !== "") ? val : "0"}</td>`;
+          }).join('')}</tr>`;
+
+        });
+        html += `</tbody></table></div>`;
+        contentArea.innerHTML = html;
+
+        enableDownload(sectionTitle.replace(/\s+/g, '_'));
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p>Error loading ${sectionTitle} data.</p>`;
+        console.error("Quarter-wise section error:", err);
+      });
+  }
+
+
+  // Auto re-render on checkbox change
+  document.querySelectorAll('#yearCheckboxes input[type=checkbox]').forEach(cb => {
+    cb.addEventListener('change', () => {
+      const active = document.querySelector(".active-link");
+      if (active) active.click();
+    });
+  });
+  // Annual-Wise Analysis
+
+  let genericChartInstance = null;
+
+  function renderAnnualGraphTableAndChart(folder, jsonFile, sectionTitle) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading data...</p>";
+
+    const selectedYears = getSelectedYears();
+    selectedYears.sort();
+
+    const jsonPath = `GRAPH/${folder}/${jsonFile}`;
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        // ✅ Labels and Values
+        const labels = selectedYears.map(String);
+        const values = selectedYears.map(y => {
+          const val = data[0][y];
+          return val && val.trim() !== "" ? parseInt(val) : 0;
+        });
+
+        // ✅ Build Table + Chart
+        let html = `
+        <div class="table-container" id="table-section">
+          <h2>${sectionTitle} – ${labels.join(", ")}</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Contents</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              ${data.map(row => `
+                <tr>
+                  <td>${row.Contents}</td>
+                  ${labels.map(y => `<td>${row[y] && row[y].trim() !== "" ? row[y] : "0"}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px;">
+          <canvas id="annualChart"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        // ✅ Setup chart
+        const ctx = document.getElementById("annualChart").getContext("2d");
+        if (genericChartInstance) genericChartInstance.destroy();
+
+        const colors = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        genericChartInstance = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels,
+            datasets: [{
+              label: sectionTitle,
+              data: values,
+              borderColor: color,
+              backgroundColor: color + "33",
+              pointBackgroundColor: color,
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4
+            }]
+          },
+          options: {
+            layout: { padding: { right: 30 } },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: "#000",
+                font: { weight: "bold", size: 12 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: '5%',                     // 👈 adds vertical breathing room
+                ticks: {
+                  padding: 10,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,                    // 👈 this is the key for horizontal gap!
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        // ✅ Combined Download
+        enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  }
+
+  const annualGraphLinks = {
+    "tp-opd": { folder: "OPD", file: "tp_opd.json", title: "OPD – Total Projects" },
+    "dfit-opd": { folder: "OPD", file: "dfit_opd.json", title: "OPD – DFIT Projects" },
+    "sup-opd": { folder: "OPD", file: "sup_opd.json", title: "OPD – Supported Projects" },
+
+    "tp-lep": { folder: "LEPROSY", file: "tp.json", title: "New Leprosy cases Diagnosed – Total Projects" },
+    "dfit-lep": { folder: "LEPROSY", file: "dfit.json", title: "New Leprosy cases Diagnosed – DFIT Projects" },
+    "sup-lep": { folder: "LEPROSY", file: "sup.json", title: "New Leprosy cases Diagnosed – Supported Projects" },
+
+    // Add entries for LEPBED, LEPRA, LEPROSY, NSP, OPD, PRETB, RCS, RT, TB
+    "tp-dis": { folder: "DISABILITY", file: "tp.json", title: "New Leprosy cases with Grade II Disability – Total Projects" },
+    "dfit-dis": { folder: "DISABILITY", file: "dfit.json", title: "New Leprosy cases with Grade II Disability – DFIT Projects" },
+    "sup-dis": { folder: "DISABILITY", file: "sup.json", title: "New Leprosy cases with Grade II Disability – Supported Projects" },
+
+    "tp-lepra": { folder: "LEPRA", file: "tp.json", title: "Lepra Reaction Treated – Total Projects" },
+    "dfit-lepra": { folder: "LEPRA", file: "dfit.json", title: "Lepra Reaction Treated – DFIT Projects" },
+    "sup-lepra": { folder: "LEPRA", file: "sup.json", title: "Lepra Reaction Treated – Supported Projects" },
+
+    "tp-rcs": { folder: "RCS", file: "tp.json", title: "Deformity correction surgeries(RCS) – Total Projects" },
+    "dfit-rcs": { folder: "RCS", file: "dfit.json", title: "Deformity correction surgeries(RCS) – DFIT Projects" },
+    "sup-rcs": { folder: "RCS", file: "sup.json", title: "Deformity correction surgeries(RCS) – Supported Projects" },
+
+    "tp-lepad": { folder: "LEPAD", file: "tp.json", title: "Hospital admission of leprosy patients with complications – Total Projects" },
+    "dfit-lepad": { folder: "LEPAD", file: "dfit.json", title: "Hospital admission of leprosy patients with complications – DFIT Projects" },
+    "sup-lepad": { folder: "LEPAD", file: "sup.json", title: "Hospital admission of leprosy patients with complications  – Supported Projects" },
+
+    "tp-lepbed": { folder: "LEPBED", file: "tp.json", title: "Leprosy Patients Bed occupancy – Total Projects" },
+    "dfit-lepbed": { folder: "LEPBED", file: "dfit.json", title: "Leprosy Patients Bed occupancy – DFIT Projects" },
+    "sup-lepbed": { folder: "LEPBED", file: "sup.json", title: "Leprosy Patients Bed occupancy – Supported Projects" },
+  };
+  Object.entries(annualGraphLinks).forEach(([id, config]) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("click", e => {
+        e.preventDefault();
+        setActiveLink(e.target);
+        renderAnnualGraphTableAndChart(config.folder, config.file, config.title);
+      });
+    }
+  });
 
 
   // --- LEP Section ---
   document.getElementById("link-lep")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-lep");
+
+    const selectedYear = document.getElementById("yearFilter").value;
+    const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
+
     fetch("LEP/lep.json")
       .then(res => res.json())
       .then(data => {
-        const columns = Object.keys(data[0]).filter(k => k !== "Category" && (selectedYear === "All" || k.includes(selectedYear)));
-        let html = `<div class="table-container"><h2>Livelihood Enhancement Program Report - ${selectedYear}</h2>`;
+        const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
+
+        let html = `<div class="table-container"><h2>Livelihood Enhancement Program Report - ${selectedYears.join(", ")}</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
+
         data.forEach(row => {
           html += `<tr><td>${row["Category"]}</td>${columns.map(c => `<td>${row[c] ?? ""}</td>`).join("")}</tr>`;
         });
+
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
-        enableDownload(`LEP_Report_${selectedYear}`);
+
+        enableDownload(`LEP_Report_${selectedYears.join("_")}`);
       });
   });
+
   // --- NUT Section ---
+  // --- Nutritional Support Section ---
   document.getElementById("link-nut")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-nut");
+
+    const selectedYear = document.getElementById("yearFilter").value;
+    const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
+
     fetch("LEP/nut.json")
       .then(res => res.json())
       .then(data => {
-        const columns = Object.keys(data[0]).filter(k => k !== "Category" && (selectedYear === "All" || k.includes(selectedYear)));
-        let html = `<div class="table-container"><h2>Nutritional Support Report - ${selectedYear}</h2>`;
+        const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
+
+        let html = `<div class="table-container"><h2>Nutritional Support Report - ${selectedYears.join(", ")}</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
+
         data.forEach(row => {
           html += `<tr><td>${row["Category"]}</td>${columns.map(c => `<td>${row[c] ?? ""}</td>`).join("")}</tr>`;
         });
+
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
-        enableDownload(`NUTRITIONAL_Report_${selectedYear}`);
+
+        enableDownload(`NUTRITIONAL_Report_${selectedYears.join("_")}`);
       });
   });
 
-  // --- DRTB Delhi ---
+  // --- DELHI DRTB Section ---
   document.getElementById("link-drtb")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-drtb");
-    fetch("delhi_drtb.json").then(res => res.json()).then(data => {
-      let html = `<h2>DELHI DRTB SERVICES (${selectedYear})</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
-      html += selectedYear === "All" ? Array.from({ length: 15 }, (_, i) => `<th>${2010 + i}</th>`).join("") : `<th>${selectedYear}</th>`;
-      html += "</tr></thead><tbody>";
-      data.forEach(row => {
-        html += `<tr><td>${row["S.NO"]}</td><td>${row["Particulars"]}</td>`;
-        html += selectedYear === "All"
-          ? Array.from({ length: 15 }, (_, i) => `<td>${row[2010 + i] ?? ""}</td>`).join("")
-          : `<td>${row[selectedYear] ?? ""}</td>`;
-        html += "</tr>";
+
+    const selectedYear = document.getElementById("yearFilter").value;
+    const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
+
+    fetch("delhi_drtb.json")
+      .then(res => res.json())
+      .then(data => {
+        let html = `<h2>DELHI DRTB SERVICES (${selectedYears.join(", ")})</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
+
+        html += selectedYears.map(yr => `<th>${yr}</th>`).join("");
+        html += "</tr></thead><tbody>";
+
+        data.forEach(row => {
+          html += `<tr><td>${row["S.NO"]}</td><td>${row["Particulars"]}</td>`;
+          html += selectedYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
+          html += "</tr>";
+        });
+
+        html += "</tbody></table></div>";
+        contentArea.innerHTML = html;
+
+        enableDownload(`DELHI DRTB_Report_${selectedYears.join("_")}`);
       });
-      html += "</tbody></table></div>";
-      contentArea.innerHTML = html;
-      enableDownload(`DRTB_Report_${selectedYear}`);
-    });
   });
 
+
   // --- DRTB Bihar ---
+
   document.getElementById("link-bihar-drtb")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-bihar-drtb");
-    fetch("/DRTB/bihar_drtb.json").then(res => res.json()).then(data => {
-      const years = Object.keys(data[0]).filter(k => /^\d{4}$/.test(k) && (selectedYear === "All" || k === selectedYear));
-      let html = `<h2>BIHAR DRTB Overview - ${selectedYear}</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>DRTB contents</th>${years.map(y => `<th>${y}</th>`).join("")}</tr></thead><tbody>`;
-      data.forEach(row => {
-        html += `<tr><td>${row["S.NO"]}</td><td>${row["DRTB contents"]}</td>${years.map(y => `<td>${row[y] ?? ""}</td>`).join("")}</tr>`;
-      });
-      html += "</tbody></table></div>";
-      contentArea.innerHTML = html;
-      enableDownload(`Bihar_DRTB_${selectedYear}`);
-    });
-  });
 
+    const selectedYear = document.getElementById("yearFilter").value;
+    const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
+
+    fetch("/DRTB/bihar_drtb.json")
+      .then(res => res.json())
+      .then(data => {
+        if (!Array.isArray(data) || data.length === 0) {
+          contentArea.innerHTML = `<p>No data found for Bihar DRTB.</p>`;
+          return;
+        }
+
+        // 🔍 Filter out years where all values are empty/null/undefined
+        const validYears = selectedYears.filter(year =>
+          data.some(row => {
+            const val = row[year];
+            return val !== null && val !== undefined && val !== "";
+          })
+        );
+
+        if (validYears.length === 0) {
+          contentArea.innerHTML = `<p>No valid data available for selected years in Bihar DRTB section.</p>`;
+          return;
+        }
+
+        let html = `<h2>BIHAR DRTB SERVICES (${validYears.join(", ")})</h2>`;
+        html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DRTB contents</th>`;
+        html += validYears.map(yr => `<th>${yr}</th>`).join("");
+        html += "</tr></thead><tbody>";
+
+        data.forEach(row => {
+          html += `<tr><td>${row["S.NO"]}</td><td>${row["DRTB contents"]}</td>`;
+          html += validYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
+          html += "</tr>";
+        });
+
+        html += "</tbody></table></div>";
+        contentArea.innerHTML = html;
+
+        enableDownload(`BIHAR_DRTB_Report_${validYears.join("_")}`);
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p>Error loading Bihar DRTB data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  });
   // --- IRL Labs ---
   const irlMap = {
     "link-total-labs": "total",
@@ -209,46 +520,117 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById(id)?.addEventListener("click", e => {
       e.preventDefault();
       setActiveLink(id);
-      fetch(`IRL/${lab}.json`).then(res => res.json()).then(data => {
-        const years = Object.keys(data[0]).filter(k => k !== "Contents" && (selectedYear === "All" || k === selectedYear));
-        let html = `<h2>${lab.toUpperCase()} IRL Overview - ${selectedYear}</h2><div class="table-container"><table><thead><tr><th>Contents</th>${years.map(y => `<th>${y}</th>`).join("")}</tr></thead><tbody>`;
-        data.forEach(row => {
-          html += `<tr><td>${row["Contents"]}</td>${years.map(y => `<td>${row[y] ?? ""}</td>`).join("")}</tr>`;
+
+      const selectedYear = document.getElementById("yearFilter").value;
+      const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
+
+      fetch(`IRL/${lab}.json`)
+        .then(res => res.json())
+        .then(data => {
+          if (!Array.isArray(data) || data.length === 0) {
+            contentArea.innerHTML = `<p>No data found for ${lab}</p>`;
+            return;
+          }
+
+          let html = `<h2>${lab.toUpperCase()} IRL Overview (${selectedYears.join(", ")})</h2>`;
+          html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
+          html += selectedYears.map(y => `<th>${y}</th>`).join("");
+          html += `</tr></thead><tbody>`;
+
+          data.forEach(row => {
+            html += `<tr><td>${row["Contents"]}</td>`;
+            html += selectedYears.map(y => `<td>${row[y] ?? ""}</td>`).join("");
+            html += `</tr>`;
+          });
+
+          html += `</tbody></table></div>`;
+          contentArea.innerHTML = html;
+
+          enableDownload(`${lab.toUpperCase()}_IRL_Report_${selectedYears.join("_")}`);
+        })
+        .catch(err => {
+          contentArea.innerHTML = `<p>Error loading data for ${lab}: ${err.message}</p>`;
+          console.error("Fetch error:", err);
         });
-        html += "</tbody></table></div>";
-        contentArea.innerHTML = html;
-        enableDownload(`${lab}_IRL_${selectedYear}`);
-      });
     });
   });
 
+
   // --- DPMR ---
   const dpmrMap = {
-    tot: "link-tot", bihar: "link-bihar", jhar: "link-jharkhand",
-    kar: "link-karnataka", tn: "link-tn", chat: "link-chhattisgarh", ap: "link-ap"
+    tot: "link-tot",
+    bihar: "link-bihar",
+    jhar: "link-jharkhand",
+    kar: "link-karnataka",
+    tn: "link-tn",
+    chat: "link-chhattisgarh",
+    ap: "link-ap"
   };
 
   Object.entries(dpmrMap).forEach(([key, id]) => {
     document.getElementById(id)?.addEventListener("click", e => {
       e.preventDefault();
       setActiveLink(id);
-      fetch(`DPMR/${key}.json`).then(res => res.json()).then(data => {
-        const headingMap = {
-          tot: "TOTAL", bihar: "Bihar", jhar: "Jharkhand", kar: "Karnataka",
-          tn: "Tamil Nadu", chat: "Chhattisgarh", ap: "Andhra Pradesh"
-        };
-        const heading = headingMap[key] || key;
-        const years = selectedYear === "All" ? ["2020", "2021", "2022", "2023", "2024"] : [selectedYear];
-        let html = `<h2>${heading} DPMR Overview (${selectedYear})</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>DPMR Contents</th>${years.map(y => `<th>${y}</th>`).join("")}</tr></thead><tbody>`;
-        data.forEach(row => {
-          html += `<tr><td>${row["S.NO"]}</td><td>${row["DPMR Contents"]}</td>${years.map(y => `<td>${row[y] ?? ""}</td>`).join("")}</tr>`;
+
+      const selectedYear = document.getElementById("yearFilter").value;
+      const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
+
+      fetch(`DPMR/${key}.json`)
+        .then(res => res.json())
+        .then(data => {
+          const headingMap = {
+            tot: "TOTAL",
+            bihar: "Bihar",
+            jhar: "Jharkhand",
+            kar: "Karnataka",
+            tn: "Tamil Nadu",
+            chat: "Chhattisgarh",
+            ap: "Andhra Pradesh"
+          };
+          const heading = headingMap[key] || key;
+
+          if (!Array.isArray(data) || data.length === 0) {
+            contentArea.innerHTML = `<p>No data found for ${heading} DPMR.</p>`;
+            return;
+          }
+
+          // 🔍 Filter out years where all values are empty/null
+          const validYears = selectedYears.filter(year =>
+            data.some(row => {
+              const val = row[year];
+              return val !== null && val !== undefined && val !== "";
+            })
+          );
+
+          if (validYears.length === 0) {
+            contentArea.innerHTML = `<p>No valid data available for selected years in ${heading} DPMR.</p>`;
+            return;
+          }
+
+          // ✅ Build Table
+          let html = `<h2>${heading} DPMR Overview (${validYears.join(", ")})</h2>`;
+          html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DPMR Contents</th>`;
+          html += validYears.map(y => `<th>${y}</th>`).join("");
+          html += `</tr></thead><tbody>`;
+
+          data.forEach(row => {
+            html += `<tr><td>${row["S.NO"]}</td><td>${row["DPMR Contents"]}</td>`;
+            html += validYears.map(y => `<td>${row[y] ?? ""}</td>`).join("");
+            html += `</tr>`;
+          });
+
+          html += `</tbody></table></div>`;
+          contentArea.innerHTML = html;
+
+          enableDownload(`${heading}_DPMR_Report_${validYears.join("_")}`);
+        })
+        .catch(err => {
+          contentArea.innerHTML = `<p>Error loading ${heading} DPMR data: ${err.message}</p>`;
+          console.error("Fetch error:", err);
         });
-        html += "</tbody></table></div>";
-        contentArea.innerHTML = html;
-        enableDownload(`${heading}_DPMR_${selectedYear}`);
-      });
     });
   });
+
   ///------------------ LEPROSY DIRECT SERVICES---------------////
   //---- HOSPITAL----///
   const hospitalLinks = {
@@ -261,109 +643,36 @@ document.addEventListener("DOMContentLoaded", () => {
       "chilakalapalli", "trivendrum", "andipatti", "ambamoola"
     ]
   };
-
-  function renderHospitalOverview(path, key) {
-    const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-
-    if (selectedYear === "All") {
-      const cumulativeData = {};
-      const order = [];
-
-      Promise.all(
-        years.map(year =>
-          fetch(`/HOSPITAL/district_wise_${year}/${key}.json`)
-            .then(res => {
-              if (!res.ok) throw new Error(`Missing: ${year}/${key}.json`);
-              return res.json();
-            })
-            .then(data => {
-              data.forEach(row => {
-                const sno = row["S.NO"] || row["SNO"] || row["Sno"] || "";
-                const contents = row["Contents"] || row["Type of cases"] || row["Type of cases "] || row["Type of Cases"] || "";
-                const label = `${sno}||${contents}`;
-
-                if (!cumulativeData[label]) {
-                  cumulativeData[label] = { SNO: sno, Contents: contents };
-                  order.push(label);
-                }
-
-                cumulativeData[label][`Annual ${year}`] =
-                  row[`Total ${year}`] ??
-                  row[`Annual ${year}`] ??
-                  row[`ANNUAL ${year}`] ??
-                  "";
-              });
-            })
-            .catch(err => console.warn(err.message))
-        )
-      ).then(() => {
-        let html = `<h2>${key.replace(/_/g, " ").toUpperCase()} Annual Overview – All Years</h2>`;
-        html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>Contents</th>`;
-        years.forEach(year => html += `<th>Annual ${year}</th>`);
-        html += `</tr></thead><tbody>`;
-
-        order.forEach(label => {
-          const row = cumulativeData[label];
-          html += `<tr><td>${row.SNO || ""}</td><td>${row.Contents || ""}</td>`;
-          years.forEach(year => {
-            html += `<td>${row[`Annual ${year}`] || ""}</td>`;
-          });
-          html += `</tr>`;
-        });
-
-        html += `</tbody></table></div>`;
-        contentArea.innerHTML = html;
-        enableDownload(`HOSPITAL-REPORT_${selectedYear}`);
-      });
-    }
-
-    else {
-      fetch(path)
-        .then(res => res.json())
-        .then(data => {
-          if (!Array.isArray(data) || !data.length) {
-            contentArea.innerHTML = "<p>No data available.</p>";
-            return;
-          }
-
-          const heading = `${key.replace(/_/g, ' ').toUpperCase()} Overview – ${selectedYear}`;
-          const keys = Object.keys(data[0]);
-
-          let html = `<div class="table-container"><h2>${heading}</h2><table><thead><tr>`;
-          keys.forEach(k => html += `<th>${k}</th>`);
-          html += `</tr></thead><tbody>`;
-
-          data.forEach(row => {
-            html += "<tr>";
-            keys.forEach(k => html += `<td>${row[k] ?? ""}</td>`);
-            html += "</tr>";
-          });
-
-          html += "</tbody></table></div>";
-          contentArea.innerHTML = html;
-          enableDownload(`HOSPITAL-REPORT_${selectedYear}`);
-        })
-        .catch(err => {
-          contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err}</p>`;
-        });
-    }
-  }
-
-
-  document.getElementById(hospitalLinks.total)?.addEventListener("click", e => {
+  document.getElementById("link-total-projects")?.addEventListener("click", e => {
     e.preventDefault();
-    setActiveLink(e.target);
-    renderHospitalOverview(`/HOSPITAL/district_wise_${selectedYear}/total_projects.json`, "total_projects");
+    setActiveLink("link-total-projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/HOSPITAL", "total_projects", "TOTAL PROJECTS");
+    } else {
+      renderMultiYearSection("/HOSPITAL", "total_projects", "TOTAL PROJECTS");
+    }
   });
+
   document.getElementById(hospitalLinks.dfit)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderHospitalOverview(`/HOSPITAL/district_wise_${selectedYear}/dfit_projects.json`, "dfit_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/HOSPITAL", "dfit_projects", "DFIT PROJECTS");
+    } else {
+      renderMultiYearSection("/HOSPITAL", "dfit_projects", "DFIT PROJECTS");
+    }
   });
   document.getElementById(hospitalLinks.supported)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderHospitalOverview(`/HOSPITAL/district_wise_${selectedYear}/supported_projects.json`, "supported_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/HOSPITAL", "supported_projects", "SUPPORTED PROJECTS");
+    } else {
+      renderMultiYearSection("/HOSPITAL", "supported_projects", "SUPPORTED PROJECTS");
+    }
   });
 
   hospitalLinks.districts.forEach(d => {
@@ -372,10 +681,30 @@ document.addEventListener("DOMContentLoaded", () => {
       el.addEventListener("click", e => {
         e.preventDefault();
         setActiveLink(e.target);
-        renderHospitalOverview(`/HOSPITAL/district_wise_${selectedYear}/${d.toLowerCase()}.json`, d.toLowerCase());
+
+        const selectedQuarterYear = document.getElementById("yearFilter").value;
+        const fileName = d.toLowerCase();
+        const basePath = "/HOSPITAL";
+
+        if (selectedQuarterYear !== "All") {
+          renderQuarterWiseSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+
+        } else {
+          // 👇 THIS IS THE FIXED LINE
+          renderMultiYearSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+        }
       });
     }
   });
+
 
   /// -------------------TB DIRECT SERVICES------//////////////////
   //---- TB ANNEXURE ---///
@@ -389,98 +718,35 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   };
 
-  function renderannexureOverview(path, key) {
-    const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-
-    if (selectedYear === "All") {
-      const cumulativeData = {};
-      const order = [];
-
-      Promise.all(
-        years.map(year =>
-          fetch(`/TB_Annexure/district_wise_${year}/${key}.json`)
-            .then(res => {
-              if (!res.ok) throw new Error(`Missing: ${year}/${key}.json`);
-              return res.json();
-            })
-            .then(data => {
-              data.forEach(row => {
-                const label = row["Annexure M Contents"] || row["Type of cases "] || row["Type of Cases"] || row["Type of cases"];
-                if (!cumulativeData[label]) {
-                  cumulativeData[label] = { Contents: label };
-                  order.push(label);
-                }
-                cumulativeData[label][`Total ${year}`] = row[`Total ${year}`] || row[`Annual ${year}`] || "";
-              });
-            })
-            .catch(err => {
-              console.warn(err.message);
-            })
-        )
-      ).then(() => {
-        let html = `<h2>${key.replace(/_/g, " ").toUpperCase()} Annual Overview – All Years</h2>`;
-        html += `<div class="table-container"><table><thead><tr><th>Annexure M Contents</th>`;
-        years.forEach(year => html += `<th>Total ${year}</th>`);
-        html += `</tr></thead><tbody>`;
-
-        order.forEach(label => {
-          const row = cumulativeData[label];
-          html += `<tr><td>${row.Contents}</td>`;
-          years.forEach(year => html += `<td>${row[`Total ${year}`] || ""}</td>`);
-          html += `</tr>`;
-        });
-
-        html += `</tbody></table></div>`;
-        contentArea.innerHTML = html;
-        enableDownload(`TB_ANNEXURE_${selectedYear}`);
-      });
-    } else {
-      fetch(path)
-        .then(res => res.json())
-        .then(data => {
-          if (!Array.isArray(data) || !data.length) {
-            contentArea.innerHTML = "<p>No data available.</p>";
-            return;
-          }
-
-          const heading = `${key.replace(/_/g, ' ').toUpperCase()} Overview – ${selectedYear}`;
-          const keys = Object.keys(data[0]);
-
-          let html = `<div class="table-container"><h2>${heading}</h2><table><thead><tr>`;
-          keys.forEach(k => html += `<th>${k}</th>`);
-          html += `</tr></thead><tbody>`;
-
-          data.forEach(row => {
-            html += "<tr>";
-            keys.forEach(k => html += `<td>${row[k] ?? ""}</td>`);
-            html += "</tr>";
-          });
-
-          html += "</tbody></table></div>";
-          contentArea.innerHTML = html;
-          enableDownload(`TB_ANNEXURE_${selectedYear}`);
-        })
-        .catch(err => {
-          contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err}</p>`;
-        });
-    }
-  }
-
-
   document.getElementById(tbannexureLinks.total)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderannexureOverview(`/TB_Annexure/district_wise_${selectedYear}/Total_projects.json`, "total_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+    }
   });
   document.getElementById(tbannexureLinks.dfit)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderannexureOverview(`/TB_Annexure/district_wise_${selectedYear}/dfit_projects.json`, "dfit_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Annexure", "dfit_projects", "DFIT PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Annexure", "dfit_projects", "DFIT PROJECTS");
+    }
   });
   document.getElementById(tbannexureLinks.supported)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderannexureOverview(`/TB_Annexure/district_wise_${selectedYear}/supported_projects.json`, "supported_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+    }
   });
 
   tbannexureLinks.districts.forEach(d => {
@@ -933,7 +1199,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionMap = {
     "opd": ["/data/opd.json", "Out Patients Statistics"],
     "new-lep": ["/data/new_lep_cases.json", "New Leprosy Cases"],
-    "gii": ["/data/gii_disability.json", "New Leprosy Cases With Disability"],
+    "gii": ["/data/gii_OPD.json", "New Leprosy Cases With OPD"],
     "lepra": ["/data/lepra_reaction.json", "Lepra Reactions Cases"],
     "rcs": ["/data/rcs_done_cases.json", "RCS Cases Done"],
     "lep-adm": ["/data/lep_admissions.json", "Leprosy Admissions"],

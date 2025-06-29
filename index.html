@@ -205,6 +205,92 @@
 
             </div>
           </div>
+        </div>
+        <!-- ANNUAL YEAR-WISE ANALYSIS -->
+        <div class="section">
+          <button class="collapsible">📊 Annual Year-Wise Analysis</button>
+          <div class="collapsible-content">
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-opd">Out Patients</span>
+              <div class="subsection-content" id="annual-opd">
+                <ul>
+                  <li><a href="#" id="tp-opd">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-opd">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-opd">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Add the rest of the 9 topics here, each following same format -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-leprosy">Leprosy Cases</span>
+              <div class="subsection-content" id="annual-leprosy">
+                <ul>
+                  <li><a href="#" id="tp-lep">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-lep">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-lep">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-disability">Disability Leprosy Cases</span>
+              <div class="subsection-content" id="annual-disability">
+                <ul>
+                  <li><a href="#" id="tp-dis">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-dis">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-dis">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Repeat similarly for LEPAD, LEPBED, LEPRA, LEPROSY, NSP, PRETB, RCS, RT, TB -->
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-lepra">Lepra Reaction Cases</span>
+              <div class="subsection-content" id="annual-lepra">
+                <ul>
+                  <li><a href="#" id="tp-lepra">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-lepra">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-lepra">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-rcs">RCS done cases</span>
+              <div class="subsection-content" id="annual-rcs">
+                <ul>
+                  <li><a href="#" id="tp-rcs">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-rcs">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-rcs">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-lepad">Leprosy Admissions</span>
+              <div class="subsection-content" id="annual-lepad">
+                <ul>
+                  <li><a href="#" id="tp-lepad">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-lepad">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-lepad">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="subsection">
+              <span class="subsection-title" data-target="annual-lepbed">Leprosy BedDays</span>
+              <div class="subsection-content" id="annual-lepbed">
+                <ul>
+                  <li><a href="#" id="tp-lepbed">❖ Total all Projects Overview</a></li>
+                  <li><a href="#" id="dfit-lepbed">❖ DFIT Projects Overview</a></li>
+                  <li><a href="#" id="sup-lepbed">❖ Supported Projects Overview</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
 
       </nav>
@@ -214,24 +300,48 @@
     <main class="main-content">
       <header>
         <h1>Welcome to DFIT Dashboard</h1>
-        <div class="filters">
-          <label for="yearFilter">Filter by Year:</label>
-          <select id="yearFilter">
-            <option value="All">All</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-          </select>
+        <div class="filters-row">
+          <div class="filters-left-group">
+            <label for="yearFilter">Filter by Year (Quarter-Wise):</label>
+            <select id="yearFilter">
+              <option value="All">All</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
+          </div>
+
+          <div class="filters-right-group">
+            <label for="yearMultiBtn">Multi-Year Filter:</label>
+            <div class="custom-multiselect">
+              <button id="yearMultiBtn">Select Years ▾</button>
+              <div id="yearCheckboxes" class="dropdown-content">
+                <label><input type="checkbox" value="2014" checked> 2014</label>
+                <label><input type="checkbox" value="2015" checked> 2015</label>
+                <label><input type="checkbox" value="2016" checked> 2016</label>
+                <label><input type="checkbox" value="2017" checked> 2017</label>
+                <label><input type="checkbox" value="2018" checked> 2018</label>
+                <label><input type="checkbox" value="2019" checked> 2019</label>
+                <label><input type="checkbox" value="2020" checked> 2020</label>
+                <label><input type="checkbox" value="2021" checked> 2021</label>
+                <label><input type="checkbox" value="2022" checked> 2022</label>
+                <label><input type="checkbox" value="2023" checked> 2023</label>
+                <label><input type="checkbox" value="2024" checked> 2024</label>
+                <label><input type="checkbox" value="2025" checked> 2025</label>
+              </div>
+            </div>
+          </div>
         </div>
+
       </header>
       <!-- Button -->
       <button id="downloadTableBtn" style="
@@ -281,7 +391,19 @@
       });
     });
   </script>
+  <script>
+    document.getElementById("yearMultiBtn").addEventListener("click", () => {
+      document.querySelector(".custom-multiselect").classList.toggle("show");
+    });
 
+    // // Optional: close when clicking outside
+    // window.addEventListener("click", function (e) {
+    //   if (!e.target.closest(".custom-multiselect")) {
+    //     document.querySelector(".custom-multiselect")?.classList.remove("show");
+    //   }
+    // });
+
+  </script>
 
 
 

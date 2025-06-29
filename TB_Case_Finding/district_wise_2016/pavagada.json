@@ -1,6 +1,6 @@
 [
   {
-    "Qtr/ Year": "NSP",
+    "Type of Cases": "NSP",
     "I qtr 2016": "44",
     "II qtr 2016": "45",
     "III qtr 2016": "36",
@@ -8,7 +8,7 @@
     "Total 2016": "171"
   },
   {
-    "Qtr/ Year": "NSN",
+    "Type of Cases": "NSN",
     "I qtr 2016": "21",
     "II qtr 2016": "19",
     "III qtr 2016": "8",
@@ -16,7 +16,7 @@
     "Total 2016": "58"
   },
   {
-    "Qtr/ Year": "New EP",
+    "Type of Cases": "New EP",
     "I qtr 2016": "10",
     "II qtr 2016": "12",
     "III qtr 2016": "12",
@@ -24,7 +24,7 @@
     "Total 2016": "43"
   },
   {
-    "Qtr/ Year": "Others",
+    "Type of Cases": "Others",
     "I qtr 2016": "0",
     "II qtr 2016": "0",
     "III qtr 2016": "2",
@@ -32,7 +32,7 @@
     "Total 2016": "3"
   },
   {
-    "Qtr/ Year": "Total",
+    "Type of Cases": "Total",
     "I qtr 2016": "75",
     "II qtr 2016": "76",
     "III qtr 2016": "58",
@@ -40,7 +40,7 @@
     "Total 2016": "275"
   },
   {
-    "Qtr/ Year": "Relapse",
+    "Type of Cases": "Relapse",
     "I qtr 2016": "15",
     "II qtr 2016": "10",
     "III qtr 2016": "8",
@@ -48,7 +48,7 @@
     "Total 2016": "44"
   },
   {
-    "Qtr/ Year": "Failures ",
+    "Type of Cases": "Failures ",
     "I qtr 2016": "0",
     "II qtr 2016": "2",
     "III qtr 2016": "2",
@@ -56,7 +56,7 @@
     "Total 2016": "4"
   },
   {
-    "Qtr/ Year": "TAD",
+    "Type of Cases": "TAD",
     "I qtr 2016": "3",
     "II qtr 2016": "7",
     "III qtr 2016": "2",
@@ -64,7 +64,7 @@
     "Total 2016": "15"
   },
   {
-    "Qtr/ Year": "Others ",
+    "Type of Cases": "Others ",
     "I qtr 2016": "5",
     "II qtr 2016": "4",
     "III qtr 2016": "6",
@@ -72,7 +72,7 @@
     "Total 2016": "19"
   },
   {
-    "Qtr/ Year": "Total",
+    "Type of Cases": "Total",
     "I qtr 2016": "23",
     "II qtr 2016": "23",
     "III qtr 2016": "18",
@@ -80,7 +80,7 @@
     "Total 2016": "82"
   },
   {
-    "Qtr/ Year": "Grand Total",
+    "Type of Cases": "Grand Total",
     "I qtr 2016": "98",
     "II qtr 2016": "99",
     "III qtr 2016": "76",
@@ -88,7 +88,7 @@
     "Total 2016": "357"
   },
   {
-    "Qtr/ Year": "Total NSP conversion Cases",
+    "Type of Cases": "Total NSP conversion Cases",
     "I qtr 2016": "41",
     "II qtr 2016": "44",
     "III qtr 2016": "45",
@@ -96,7 +96,7 @@
     "Total 2016": "166"
   },
   {
-    "Qtr/ Year": "NSP Negative",
+    "Type of Cases": "NSP Negative",
     "I qtr 2016": "34",
     "II qtr 2016": "36",
     "III qtr 2016": "38",
@@ -104,7 +104,7 @@
     "Total 2016": "139"
   },
   {
-    "Qtr/ Year": "NSP Positive",
+    "Type of Cases": "NSP Positive",
     "I qtr 2016": "2",
     "II qtr 2016": "5",
     "III qtr 2016": "3",
@@ -112,7 +112,7 @@
     "Total 2016": "12"
   },
   {
-    "Qtr/ Year": "NSP Not done",
+    "Type of Cases": "NSP Not done",
     "I qtr 2016": "5",
     "II qtr 2016": "3",
     "III qtr 2016": "4",
@@ -120,7 +120,7 @@
     "Total 2016": "15"
   },
   {
-    "Qtr/ Year": "NSP Convesion rate",
+    "Type of Cases": "NSP Convesion rate",
     "I qtr 2016": "82.92682926829268",
     "II qtr 2016": "81.81818181818183",
     "III qtr 2016": "84.44444444444444",
@@ -128,7 +128,7 @@
     "Total 2016": "83.73493975903614"
   },
   {
-    "Qtr/ Year": "Total RT conversion Cases",
+    "Type of Cases": "Total RT conversion Cases",
     "I qtr 2016": "17",
     "II qtr 2016": "18",
     "III qtr 2016": "19",
@@ -136,7 +136,7 @@
     "Total 2016": "66"
   },
   {
-    "Qtr/ Year": "RT Negative",
+    "Type of Cases": "RT Negative",
     "I qtr 2016": "10",
     "II qtr 2016": "11",
     "III qtr 2016": "9",
@@ -144,7 +144,7 @@
     "Total 2016": "38"
   },
   {
-    "Qtr/ Year": "RT Positive",
+    "Type of Cases": "RT Positive",
     "I qtr 2016": "3",
     "II qtr 2016": "2",
     "III qtr 2016": "6",
@@ -152,7 +152,7 @@
     "Total 2016": "12"
   },
   {
-    "Qtr/ Year": "RT not done",
+    "Type of Cases": "RT not done",
     "I qtr 2016": "4",
     "II qtr 2016": "5",
     "III qtr 2016": "4",
@@ -160,7 +160,7 @@
     "Total 2016": "16"
   },
   {
-    "Qtr/ Year": "RT Convesion rate",
+    "Type of Cases": "RT Convesion rate",
     "I qtr 2016": "58.82352941176471",
     "II qtr 2016": "61.111111111111114",
     "III qtr 2016": "47.368421052631575",

@@ -389,3 +389,96 @@ canvas {
     margin-left: 250px;
   }
 }
+
+              /* Multi Year Options */
+.filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters-left-group,
+.filters-right-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters-left-group select,
+.filters-right-group button {
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .filters-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters-left-group,
+  .filters-right-group {
+    width: 100%;
+  }
+}
+.filters-left-group {
+  flex-grow: 1;
+}
+.custom-multiselect .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.custom-multiselect.show .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  max-height: 250px;
+  overflow-y: auto;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  white-space: normal; /* ✅ allow wrapping */
+  cursor: pointer;
+}
+
+.dropdown-content label {
+  display: block;     /* ✅ stack vertically */
+  margin: 6px 0;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.custom-multiselect button {
+  /* background-color: #ffffff;
+  color: #333;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 160px; */
+  cursor: pointer; /* ✅ ADD THIS */
+}
+
