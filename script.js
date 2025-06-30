@@ -376,6 +376,24 @@ document.addEventListener("DOMContentLoaded", () => {
     "tp-lepbed": { folder: "LEPBED", file: "tp.json", title: "Leprosy Patients Bed occupancy – Total Projects" },
     "dfit-lepbed": { folder: "LEPBED", file: "dfit.json", title: "Leprosy Patients Bed occupancy – DFIT Projects" },
     "sup-lepbed": { folder: "LEPBED", file: "sup.json", title: "Leprosy Patients Bed occupancy – Supported Projects" },
+
+    "tp-pretb": { folder: "PRETB", file: "tp.json", title: "Presumptive TB cases sputum examination – Total Projects" },
+    "dfit-pretb": { folder: "PRETB", file: "dfit.json", title: "Presumptive TB cases sputum examination – DFIT Projects" },
+    "sup-pretb": { folder: "PRETB", file: "sup.json", title: "Presumptive TB cases sputum examination – Supported Projects" },
+
+    "tp-tb": { folder: "TB", file: "tp.json", title: "Total TB cases Diagnosed – Total Projects" },
+    "dfit-tb": { folder: "TB", file: "dfit.json", title: "Total TB cases Diagnosed – DFIT Projects" },
+    "sup-tb": { folder: "TB", file: "sup.json", title: "Total TB cases Diagnosed – Supported Projects" },
+
+    "tp-nsp": { folder: "NSP", file: "tp.json", title: "Outcomes of TB-NSP Cured Rate  – Total Projects" },
+    "dfit-nsp": { folder: "NSP", file: "dfit.json", title: "Outcomes of TB-NSP Cured Rate – DFIT Projects" },
+    "sup-nsp": { folder: "NSP", file: "sup.json", title: "Outcomes of TB-NSP Cured Rate – Supported Projects" },
+
+
+    "tp-rt": { folder: "RT", file: "tp.json", title: "Outcomes of TB-RT Cured Rate  – Total Projects" },
+    "dfit-rt": { folder: "RT", file: "dfit.json", title: "Outcomes of TB-RT Cured Rate – DFIT Projects" },
+    "sup-rt": { folder: "RT", file: "sup.json", title: "Outcomes of TB-RT Cured Rate – Supported Projects" },
+
   };
   Object.entries(annualGraphLinks).forEach(([id, config]) => {
     const el = document.getElementById(id);
