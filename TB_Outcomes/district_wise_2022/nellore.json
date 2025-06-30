@@ -1,6 +1,6 @@
 [
     {
-        "Type of cases": "NSP Cured",
+        "Type of cases ": "NSP Cured",
         "I Qtr 2022": "9",
         "II Qtr 2022": "3",
         "III Qtr 2022": "6",
@@ -9,7 +9,7 @@
         "%": "79"
     },
     {
-        "Type of cases": "NSP Treatment completed",
+        "Type of cases ": "NSP Treatment completed",
         "I Qtr 2022": "0",
         "II Qtr 2022": "2",
         "III Qtr 2022": "0",
@@ -18,7 +18,7 @@
         "%": "6"
     },
     {
-        "Type of cases": "NSP Died",
+        "Type of cases ": "NSP Died",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -27,7 +27,7 @@
         "%": "3"
     },
     {
-        "Type of cases": "NSP Failure",
+        "Type of cases ": "NSP Failure",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -36,7 +36,7 @@
         "%": "0"
     },
     {
-        "Type of cases": "NSP Defaulted",
+        "Type of cases ": "NSP Defaulted",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -45,7 +45,7 @@
         "%": "0"
     },
     {
-        "Type of cases": "NSP Transferred out",
+        "Type of cases ": "NSP Transferred out",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -54,7 +54,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases": "NSP Switched to IV",
+        "Type of cases ": "NSP Switched to IV",
         "I Qtr 2022": "3",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -63,15 +63,25 @@
         "%": "12.12"
     },
     {
-        "Type of cases": "Total",
+        "Type of cases ": "NSP Total",
         "I Qtr 2022": "12",
         "II Qtr 2022": "5",
         "III Qtr 2022": "6",
         "IV Qtr 2022": "10",
-        "Total 2022": "33"
+        "Total 2022": "33",
+        "%": ""
     },
     {
-        "Type of cases": "NSN/NEP Treatment completed",
+        "Type of cases ": "NSN/NEP Cured",
+        "I Qtr 2022": "",
+        "II Qtr 2022": "",
+        "III Qtr 2022": "",
+        "IV Qtr 2022": "",
+        "Total 2022": "",
+        "%": ""
+    },
+    {
+        "Type of cases ": "NSN/NEP Treatment completed",
         "I Qtr 2022": "13",
         "II Qtr 2022": "9",
         "III Qtr 2022": "3",
@@ -80,7 +90,7 @@
         "%": "100"
     },
     {
-        "Type of cases": "NSN/NEP Died",
+        "Type of cases ": "NSN/NEP Died",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -89,7 +99,7 @@
         "%": "0"
     },
     {
-        "Type of cases": "NSN/NEP Failure",
+        "Type of cases ": "NSN/NEP Failure",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -98,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases": "NSN/NEP Defaulted",
+        "Type of cases ": "NSN/NEP Defaulted",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -107,7 +117,7 @@
         "%": "0"
     },
     {
-        "Type of cases": "NSN/NEP Transferred out",
+        "Type of cases ": "NSN/NEP Transferred out",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -116,7 +126,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases": "NSN/NEP Switched to IV",
+        "Type of cases ": "NSN/NEP Switched to IV",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -125,15 +135,16 @@
         "%": "0.00"
     },
     {
-        "Type of cases": "Total",
+        "Type of cases ": "NSN/NEP Total",
         "I Qtr 2022": "13",
         "II Qtr 2022": "9",
         "III Qtr 2022": "3",
         "IV Qtr 2022": "8",
-        "Total 2022": "33"
+        "Total 2022": "33",
+        "%": ""
     },
     {
-        "Type of cases": "RT +ve Cured",
+        "Type of cases ": "RT +ve Cured",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -142,7 +153,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT+ve Treatment completed",
+        "Type of cases ": "RT+ve  Treatment completed",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -151,7 +162,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT +Ve Died",
+        "Type of cases ": "RT +Ve Died",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -160,7 +171,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT +ve Failure",
+        "Type of cases ": "RT +ve Failure",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -169,7 +180,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT +ve Defaulted",
+        "Type of cases ": "RT +ve Defaulted",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -178,7 +189,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT +ve Transferred out",
+        "Type of cases ": "RT +ve Transferred out",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -187,7 +198,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT +ve Switched to IV",
+        "Type of cases ": "RT +ve Switched to IV",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -196,15 +207,7 @@
         "%": ""
     },
     {
-        "Type of cases": "Total",
-        "I Qtr 2022": "0",
-        "II Qtr 2022": "0",
-        "III Qtr 2022": "0",
-        "IV Qtr 2022": "0",
-        "Total 2022": "0"
-    },
-    {
-        "Type of cases": "RT Neg Cured",
+        "Type of cases ": "RT +ve Total",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -213,7 +216,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Treatment completed",
+        "Type of cases ": "RT Neg Cured",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -222,7 +225,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Died",
+        "Type of cases ": "RT Neg Treatment completed",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -231,7 +234,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Failure",
+        "Type of cases ": "RT Neg Died",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -240,7 +243,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Defaulted",
+        "Type of cases ": "RT Neg Failure",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -249,7 +252,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Transferred out",
+        "Type of cases ": "RT Neg Defaulted",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -258,7 +261,7 @@
         "%": ""
     },
     {
-        "Type of cases": "RT Neg Switched to IV",
+        "Type of cases ": "RT Neg Transferred out",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -267,11 +270,21 @@
         "%": ""
     },
     {
-        "Type of cases": "Total",
+        "Type of cases ": "RT Neg Switched to IV",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
         "IV Qtr 2022": "0",
-        "Total 2022": "0"
+        "Total 2022": "0",
+        "%": ""
+    },
+    {
+        "Type of cases ": "RT Neg Total",
+        "I Qtr 2022": "0",
+        "II Qtr 2022": "0",
+        "III Qtr 2022": "0",
+        "IV Qtr 2022": "0",
+        "Total 2022": "0",
+        "%": ""
     }
 ]

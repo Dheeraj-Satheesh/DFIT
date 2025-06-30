@@ -46,7 +46,6 @@
     },
     {
         "Type of cases ": "NSP Transferred out",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -56,7 +55,6 @@
     },
     {
         "Type of cases ": "NSP Switched to IV",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -65,8 +63,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases ": "Total",
-        "": "",
+        "Type of cases ": "NSP Total",
         "I Qtr 2024": "3",
         "II Qtr 2024": "1",
         "III Qtr 2024": "0",
@@ -111,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted ",
+        "Type of cases ": "NSN/NEP Defaulted",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -120,8 +117,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out ",
-        "": "",
+        "Type of cases ": "NSN/NEP Transferred out",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -131,7 +127,6 @@
     },
     {
         "Type of cases ": "NSN/NEP Switched to IV",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -140,8 +135,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases ": "Total",
-        "": "",
+        "Type of cases ": "NSN/NEP Total",
         "I Qtr 2024": "1",
         "II Qtr 2024": "0",
         "III Qtr 2024": "0",
@@ -168,7 +162,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT +Ve Died ",
+        "Type of cases ": "RT +Ve Died",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -177,7 +171,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT +ve Failure ",
+        "Type of cases ": "RT +ve Failure",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -186,7 +180,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT +ve Defaulted ",
+        "Type of cases ": "RT +ve Defaulted",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -195,8 +189,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT +ve Transferred out ",
-        "": "",
+        "Type of cases ": "RT +ve Transferred out",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -206,7 +199,6 @@
     },
     {
         "Type of cases ": "RT +ve Switched to IV",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -215,8 +207,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "Total",
-        "": "",
+        "Type of cases ": "RT +ve Total",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "0",
@@ -243,7 +234,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT Neg Died ",
+        "Type of cases ": "RT Neg Died",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -252,7 +243,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT Neg Failure ",
+        "Type of cases ": "RT Neg Failure",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -261,7 +252,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT Neg Defaulted ",
+        "Type of cases ": "RT Neg Defaulted",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -271,7 +262,6 @@
     },
     {
         "Type of cases ": "RT Neg Transferred out",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -281,7 +271,6 @@
     },
     {
         "Type of cases ": "RT Neg Switched to IV",
-        "": "",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "",
@@ -290,8 +279,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "Total",
-        "": "",
+        "Type of cases ": "RT Neg Total",
         "I Qtr 2024": "0",
         "II Qtr 2024": "0",
         "III Qtr 2024": "0",

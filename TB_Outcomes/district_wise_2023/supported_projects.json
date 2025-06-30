@@ -18,7 +18,7 @@
     "%": "3.9"
   },
   {
-    "Type of cases ": "NSP Died ",
+    "Type of cases ": "NSP Died",
     "I Qtr 2023": "4",
     "II Qtr 2023": "7",
     "III Qtr 2023": "6",
@@ -27,7 +27,7 @@
     "%": "3.9"
   },
   {
-    "Type of cases ": "NSP Failure ",
+    "Type of cases ": "NSP Failure",
     "I Qtr 2023": "1",
     "II Qtr 2023": "0",
     "III Qtr 2023": "0",
@@ -63,7 +63,7 @@
     "%": "2.1"
   },
   {
-    "Type of cases ": "Total",
+    "Type of cases ": "NSP Total",
     "I Qtr 2023": "107",
     "II Qtr 2023": "128",
     "III Qtr 2023": "138",
@@ -135,7 +135,7 @@
     "%": "0.4"
   },
   {
-    "Type of cases ": "Total",
+    "Type of cases ": "NSN/NEP Total",
     "I Qtr 2023": "122",
     "II Qtr 2023": "123",
     "III Qtr 2023": "111",
@@ -153,7 +153,7 @@
     "%": "80.4"
   },
   {
-    "Type of cases ": "RT+ve Treatment completed",
+    "Type of cases ": "RT+ve  Treatment completed",
     "I Qtr 2023": "0",
     "II Qtr 2023": "2",
     "III Qtr 2023": "3",
@@ -207,7 +207,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "Total",
+    "Type of cases ": "RT +ve Total",
     "I Qtr 2023": "17",
     "II Qtr 2023": "21",
     "III Qtr 2023": "28",
@@ -279,7 +279,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "Total",
+    "Type of cases ": "RT Neg Total",
     "I Qtr 2023": "32",
     "II Qtr 2023": "20",
     "III Qtr 2023": "19",

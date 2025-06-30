@@ -482,3 +482,8 @@ canvas {
   cursor: pointer; /* ✅ ADD THIS */
 }
 
+/*  shade color */
+
+.highlight-row {
+  background-color:	#FFE599 !important; /* or any color you want */
+}

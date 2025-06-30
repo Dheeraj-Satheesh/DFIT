@@ -18,7 +18,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Died ",
+        "Type of cases ": "NSP Died",
         "I Qtr 2016": "1",
         "II Qtr 2016": "0",
         "III Qtr 2016": "1",
@@ -27,7 +27,7 @@
         "%": "4"
     },
     {
-        "Type of cases ": "NSP Failure ",
+        "Type of cases ": "NSP Failure",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -36,7 +36,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Defaulted ",
+        "Type of cases ": "NSP Defaulted",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -63,7 +63,7 @@
         "%": "2.17"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "NSP Total",
         "I Qtr 2016": "15",
         "II Qtr 2016": "9",
         "III Qtr 2016": "9",
@@ -90,7 +90,7 @@
         "%": "98"
     },
     {
-        "Type of cases ": "NSN/NEP Died ",
+        "Type of cases ": "NSN/NEP Died",
         "I Qtr 2016": "1",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -99,7 +99,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "NSN/NEP Failure ",
+        "Type of cases ": "NSN/NEP Failure",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -108,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted ",
+        "Type of cases ": "NSN/NEP Defaulted",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -117,7 +117,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out ",
+        "Type of cases ": "NSN/NEP Transferred out",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -135,7 +135,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "NSN/NEP Total",
         "I Qtr 2016": "22",
         "II Qtr 2016": "13",
         "III Qtr 2016": "8",
@@ -162,7 +162,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +Ve Died ",
+        "Type of cases ": "RT +Ve Died",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -171,7 +171,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +ve Failure ",
+        "Type of cases ": "RT +ve Failure",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -180,7 +180,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +ve Defaulted ",
+        "Type of cases ": "RT +ve Defaulted",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -189,7 +189,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +ve Transferred out ",
+        "Type of cases ": "RT +ve Transferred out",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -207,7 +207,7 @@
         "%": "6.25"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "RT +ve Total",
         "I Qtr 2016": "5",
         "II Qtr 2016": "3",
         "III Qtr 2016": "1",
@@ -234,7 +234,7 @@
         "%": "90"
     },
     {
-        "Type of cases ": "RT Neg Died ",
+        "Type of cases ": "RT Neg Died",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -243,7 +243,7 @@
         "%": "5"
     },
     {
-        "Type of cases ": "RT Neg Failure ",
+        "Type of cases ": "RT Neg Failure",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Defaulted ",
+        "Type of cases ": "RT Neg Defaulted",
         "I Qtr 2016": "0",
         "II Qtr 2016": "0",
         "III Qtr 2016": "0",
@@ -279,7 +279,7 @@
         "%": "5"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "RT Neg Total",
         "I Qtr 2016": "4",
         "II Qtr 2016": "8",
         "III Qtr 2016": "4",

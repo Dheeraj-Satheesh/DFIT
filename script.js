@@ -74,25 +74,41 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderAnnualTable(dataMap, years) {
     const hasSNO = Object.values(dataMap).some(r => r.SNO);
     let html = `<table><thead><tr>`;
+
     if (hasSNO) html += `<th>S.NO</th>`;
     html += `<th>Contents</th>`;
+
     years.forEach(y => html += `<th>Annual ${y}</th>`);
     html += `</tr></thead><tbody>`;
 
     Object.values(dataMap).forEach(row => {
-      html += `<tr>`;
+      // Check if this is the "Total" row (case-insensitive)
+      const contents = (row.Contents ?? "").trim().toLowerCase();
+      const isTotalRow = contents === "nsn/nep total"
+        || contents === "nsp total"
+        || contents === "rt +ve total"
+        || contents === "rt neg total"
+        || contents === "grand total";
+
+
+      // Add the class if it's the Total row
+      html += `<tr${isTotalRow ? ' class="highlight-row"' : ''}>`;
+
       if (hasSNO) html += `<td>${row.SNO ?? ""}</td>`;
       html += `<td>${row.Contents ?? ""}</td>`;
+
       years.forEach(y => {
         const val = row[`Annual ${y}`];
         html += `<td>${(val !== undefined && val !== null && val.toString().trim() !== "") ? val : "0"}</td>`;
       });
+
       html += `</tr>`;
     });
 
     html += `</tbody></table>`;
     return html;
   }
+
 
 
   /// MUlti year Selction
@@ -640,7 +656,7 @@ document.addEventListener("DOMContentLoaded", () => {
     districts: [
       "nellore", "delhi", "dos", "polambakam", "dhanbad", "amda", "arasipalyam",
       "fathimnagar", "nagepalli", "pavagada", "belatanr", "popejohngarden",
-      "chilakalapalli", "trivendrum", "andipatti", "ambamoola"
+      "chilakalapalli", "trivendrum", "andipatti", "ambalamoola"
     ]
   };
   document.getElementById("link-total-projects")?.addEventListener("click", e => {
@@ -715,7 +731,7 @@ document.addEventListener("DOMContentLoaded", () => {
     supported: "link-sup-projects-AN",
     districts: [
       "nellore", "delhi", "arasipalyam", "fathimnagar", "nagepalli",
-      "pavagada", "andipatti", "ambamoola", "belatanr"
+      "pavagada", "andipatti", "ambalamoola", "belatanr"
     ]
   };
 
@@ -786,7 +802,7 @@ document.addEventListener("DOMContentLoaded", () => {
     supported: "link-sup-projects-CF",
     districts: [
       "nellore", "delhi", "arasipalyam", "fathimnagar", "nagepalli",
-      "pavagada", "andipatti", "ambamoola", "belatanr"
+      "pavagada", "andipatti", "ambalamoola", "belatanr"
     ]
   };
 
@@ -857,7 +873,7 @@ document.addEventListener("DOMContentLoaded", () => {
     supported: "link-sup-projects-OC",
     districts: [
       "nellore", "delhi", "arasipalyam", "fathimnagar", "nagepalli",
-      "pavagada", "andipatti", "ambamoola", "belatnr"
+      "pavagada", "andipatti", "ambalamoola", "belatanr"
     ]
   };
   document.getElementById(tbOutcomesLinks.total)?.addEventListener("click", e => {
@@ -891,7 +907,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   tbOutcomesLinks.districts.forEach(d => {
-    const el = document.getElementById(`link-${d}-CF`);
+    const el = document.getElementById(`link-${d}-OC`);
     if (el) {
       el.addEventListener("click", e => {
         e.preventDefault();

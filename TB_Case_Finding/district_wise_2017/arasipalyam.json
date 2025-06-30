@@ -1,27 +1,27 @@
 [
   {
     "Type of Cases": "NSP",
-    "I Qtr 2017": "6",
-    "II Qtr 2017": "12",
-    "III Qtr 2017": "7",
-    "IV Qtr 2017": "4",
-    "Total 2017": "29"
+    "I Qtr 2017": "7",
+    "II Qtr 2017": "4",
+    "III Qtr 2017": "8",
+    "IV Qtr 2017": "7",
+    "Total 2017": "26"
   },
   {
     "Type of Cases": "NSN",
-    "I Qtr 2017": "1",
-    "II Qtr 2017": "1",
-    "III Qtr 2017": "0",
-    "IV Qtr 2017": "0",
-    "Total 2017": "2"
+    "I Qtr 2017": "2",
+    "II Qtr 2017": "5",
+    "III Qtr 2017": "1",
+    "IV Qtr 2017": "2",
+    "Total 2017": "10"
   },
   {
     "Type of Cases": "New EP",
-    "I Qtr 2017": "1",
-    "II Qtr 2017": "3",
-    "III Qtr 2017": "3",
-    "IV Qtr 2017": "2",
-    "Total 2017": "9"
+    "I Qtr 2017": "9",
+    "II Qtr 2017": "4",
+    "III Qtr 2017": "2",
+    "IV Qtr 2017": "4",
+    "Total 2017": "19"
   },
   {
     "Type of Cases": "Others",
@@ -33,19 +33,19 @@
   },
   {
     "Type of Cases": "Total",
-    "I Qtr 2017": "8",
-    "II Qtr 2017": "16",
-    "III Qtr 2017": "10",
-    "IV Qtr 2017": "6",
-    "Total 2017": "40"
+    "I Qtr 2017": "18",
+    "II Qtr 2017": "13",
+    "III Qtr 2017": "11",
+    "IV Qtr 2017": "13",
+    "Total 2017": "55"
   },
   {
     "Type of Cases": "Relapse",
-    "I Qtr 2017": "1",
-    "II Qtr 2017": "0",
-    "III Qtr 2017": "2",
+    "I Qtr 2017": "5",
+    "II Qtr 2017": "2",
+    "III Qtr 2017": "3",
     "IV Qtr 2017": "1",
-    "Total 2017": "4"
+    "Total 2017": "11"
   },
   {
     "Type of Cases": "Failures ",
@@ -58,13 +58,53 @@
   {
     "Type of Cases": "TAD",
     "I Qtr 2017": "1",
-    "II Qtr 2017": "0",
+    "II Qtr 2017": "1",
     "III Qtr 2017": "1",
     "IV Qtr 2017": "0",
-    "Total 2017": "2"
+    "Total 2017": "3"
   },
   {
     "Type of Cases": "Others ",
+    "I Qtr 2017": "1",
+    "II Qtr 2017": "0",
+    "III Qtr 2017": "0",
+    "IV Qtr 2017": "1",
+    "Total 2017": "2"
+  },
+  {
+    "Type of Cases": "Total",
+    "I Qtr 2017": "7",
+    "II Qtr 2017": "3",
+    "III Qtr 2017": "4",
+    "IV Qtr 2017": "2",
+    "Total 2017": "16"
+  },
+  {
+    "Type of Cases": "Grand Total",
+    "I Qtr 2017": "25",
+    "II Qtr 2017": "16",
+    "III Qtr 2017": "15",
+    "IV Qtr 2017": "15",
+    "Total 2017": "71"
+  },
+  {
+    "Type of Cases": "Total NSP conversion Cases",
+    "I Qtr 2017": "5",
+    "II Qtr 2017": "7",
+    "III Qtr 2017": "4",
+    "IV Qtr 2017": "8",
+    "Total 2017": "24"
+  },
+  {
+    "Type of Cases": "NSP Negative",
+    "I Qtr 2017": "5",
+    "II Qtr 2017": "7",
+    "III Qtr 2017": "4",
+    "IV Qtr 2017": "8",
+    "Total 2017": "24"
+  },
+  {
+    "Type of Cases": "NSP Positive",
     "I Qtr 2017": "0",
     "II Qtr 2017": "0",
     "III Qtr 2017": "0",
@@ -72,76 +112,36 @@
     "Total 2017": "0"
   },
   {
-    "Type of Cases": "Total",
-    "I Qtr 2017": "2",
-    "II Qtr 2017": "0",
-    "III Qtr 2017": "3",
-    "IV Qtr 2017": "1",
-    "Total 2017": "6"
-  },
-  {
-    "Type of Cases": "Grand Total",
-    "I Qtr 2017": "10",
-    "II Qtr 2017": "16",
-    "III Qtr 2017": "13",
-    "IV Qtr 2017": "7",
-    "Total 2017": "46"
-  },
-  {
-    "Type of Cases": "Total NSP conversion Cases",
-    "I Qtr 2017": "13",
-    "II Qtr 2017": "6",
-    "III Qtr 2017": "12",
-    "IV Qtr 2017": "7",
-    "Total 2017": "38"
-  },
-  {
-    "Type of Cases": "NSP Negative",
-    "I Qtr 2017": "13",
-    "II Qtr 2017": "6",
-    "III Qtr 2017": "10",
-    "IV Qtr 2017": "7",
-    "Total 2017": "36"
-  },
-  {
-    "Type of Cases": "NSP Positive",
-    "I Qtr 2017": "0",
-    "II Qtr 2017": "0",
-    "III Qtr 2017": "1",
-    "IV Qtr 2017": "0",
-    "Total 2017": "1"
-  },
-  {
     "Type of Cases": "NSP Not done",
     "I Qtr 2017": "0",
     "II Qtr 2017": "0",
-    "III Qtr 2017": "1",
+    "III Qtr 2017": "0",
     "IV Qtr 2017": "0",
-    "Total 2017": "1"
+    "Total 2017": "0"
   },
   {
     "Type of Cases": "NSP Conversion rate",
     "I Qtr 2017": "100",
     "II Qtr 2017": "100",
-    "III Qtr 2017": "83",
+    "III Qtr 2017": "100",
     "IV Qtr 2017": "100",
-    "Total 2017": "95"
+    "Total 2017": "100"
   },
   {
     "Type of Cases": "Total RT conversion Cases",
-    "I Qtr 2017": "0",
-    "II Qtr 2017": "2",
-    "III Qtr 2017": "0",
-    "IV Qtr 2017": "3",
-    "Total 2017": "5"
+    "I Qtr 2017": "2",
+    "II Qtr 2017": "6",
+    "III Qtr 2017": "3",
+    "IV Qtr 2017": "4",
+    "Total 2017": "15"
   },
   {
     "Type of Cases": "RT Negative",
-    "I Qtr 2017": "0",
-    "II Qtr 2017": "2",
-    "III Qtr 2017": "0",
+    "I Qtr 2017": "2",
+    "II Qtr 2017": "5",
+    "III Qtr 2017": "2",
     "IV Qtr 2017": "3",
-    "Total 2017": "5"
+    "Total 2017": "12"
   },
   {
     "Type of Cases": "RT Positive",
@@ -154,17 +154,17 @@
   {
     "Type of Cases": "RT not done",
     "I Qtr 2017": "0",
-    "II Qtr 2017": "0",
-    "III Qtr 2017": "0",
-    "IV Qtr 2017": "0",
-    "Total 2017": "0"
+    "II Qtr 2017": "1",
+    "III Qtr 2017": "1",
+    "IV Qtr 2017": "1",
+    "Total 2017": "3"
   },
   {
     "Type of Cases": "RT Conversion rate",
-    "I Qtr 2017": "#0",
-    "II Qtr 2017": "100",
-    "III Qtr 2017": "0",
-    "IV Qtr 2017": "100",
-    "Total 2017": "100"
+    "I Qtr 2017": "100",
+    "II Qtr 2017": "83",
+    "III Qtr 2017": "67",
+    "IV Qtr 2017": "75",
+    "Total 2017": "80"
   }
 ]

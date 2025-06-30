@@ -18,7 +18,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Died ",
+        "Type of cases ": "NSP Died",
         "I Qtr 2018": "5",
         "II Qtr 2018": "1",
         "III Qtr 2018": "8",
@@ -27,7 +27,7 @@
         "%": "2.3"
     },
     {
-        "Type of cases ": "NSP Failure ",
+        "Type of cases ": "NSP Failure",
         "I Qtr 2018": "3",
         "II Qtr 2018": "2",
         "III Qtr 2018": "4",
@@ -36,7 +36,7 @@
         "%": "1.4"
     },
     {
-        "Type of cases ": "NSP Defaulted ",
+        "Type of cases ": "NSP Defaulted",
         "I Qtr 2018": "12",
         "II Qtr 2018": "11",
         "III Qtr 2018": "8",
@@ -63,7 +63,7 @@
         "%": "2.8"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "NSP Total",
         "I Qtr 2018": "198",
         "II Qtr 2018": "212",
         "III Qtr 2018": "187",
@@ -90,7 +90,7 @@
         "%": "95.1"
     },
     {
-        "Type of cases ": "NSN/NEP Died ",
+        "Type of cases ": "NSN/NEP Died",
         "I Qtr 2018": "3",
         "II Qtr 2018": "4",
         "III Qtr 2018": "3",
@@ -99,7 +99,7 @@
         "%": "1.6"
     },
     {
-        "Type of cases ": "NSN/NEP Failure ",
+        "Type of cases ": "NSN/NEP Failure",
         "I Qtr 2018": "0",
         "II Qtr 2018": "1",
         "III Qtr 2018": "2",
@@ -108,7 +108,7 @@
         "%": "0.3"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted ",
+        "Type of cases ": "NSN/NEP Defaulted",
         "I Qtr 2018": "8",
         "II Qtr 2018": "9",
         "III Qtr 2018": "7",
@@ -117,7 +117,7 @@
         "%": "2.5"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out ",
+        "Type of cases ": "NSN/NEP Transferred out",
         "I Qtr 2018": "1",
         "II Qtr 2018": "2",
         "III Qtr 2018": "1",
@@ -135,7 +135,7 @@
         "%": "0.2"
     },
     {
-        "Type of cases ": "Total ",
+        "Type of cases ": "NSN/NEP Total",
         "I Qtr 2018": "246",
         "II Qtr 2018": "314",
         "III Qtr 2018": "283",
@@ -162,7 +162,7 @@
         "%": "0.3"
     },
     {
-        "Type of cases ": "RT +Ve Died ",
+        "Type of cases ": "RT +Ve Died",
         "I Qtr 2018": "3",
         "II Qtr 2018": "6",
         "III Qtr 2018": "2",
@@ -171,7 +171,7 @@
         "%": "4.8"
     },
     {
-        "Type of cases ": "RT +ve Failure ",
+        "Type of cases ": "RT +ve Failure",
         "I Qtr 2018": "0",
         "II Qtr 2018": "6",
         "III Qtr 2018": "0",
@@ -180,7 +180,7 @@
         "%": "2.7"
     },
     {
-        "Type of cases ": "RT +ve Defaulted ",
+        "Type of cases ": "RT +ve Defaulted",
         "I Qtr 2018": "5",
         "II Qtr 2018": "4",
         "III Qtr 2018": "7",
@@ -189,7 +189,7 @@
         "%": "6.8"
     },
     {
-        "Type of cases ": "RT +ve Transferred out ",
+        "Type of cases ": "RT +ve Transferred out",
         "I Qtr 2018": "3",
         "II Qtr 2018": "1",
         "III Qtr 2018": "0",
@@ -207,7 +207,7 @@
         "%": "4.1"
     },
     {
-        "Type of cases ": "Total  ",
+        "Type of cases ": "RT +ve Total",
         "I Qtr 2018": "80",
         "II Qtr 2018": "79",
         "III Qtr 2018": "77",
@@ -234,7 +234,7 @@
         "%": "90"
     },
     {
-        "Type of cases ": "RT Neg Died ",
+        "Type of cases ": "RT Neg Died",
         "I Qtr 2018": "1",
         "II Qtr 2018": "2",
         "III Qtr 2018": "4",
@@ -243,7 +243,7 @@
         "%": "5.3"
     },
     {
-        "Type of cases ": "RT Neg Failure ",
+        "Type of cases ": "RT Neg Failure",
         "I Qtr 2018": "0",
         "II Qtr 2018": "0",
         "III Qtr 2018": "0",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Defaulted ",
+        "Type of cases ": "RT Neg Defaulted",
         "I Qtr 2018": "2",
         "II Qtr 2018": "2",
         "III Qtr 2018": "2",
@@ -279,7 +279,7 @@
         "%": "1.1"
     },
     {
-        "Type of cases ": "Total   ",
+        "Type of cases ": "RT Neg Total",
         "I Qtr 2018": "49",
         "II Qtr 2018": "47",
         "III Qtr 2018": "50",

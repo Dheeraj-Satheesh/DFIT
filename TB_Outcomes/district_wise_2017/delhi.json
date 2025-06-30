@@ -18,7 +18,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Died ",
+        "Type of cases ": "NSP Died",
         "I Qtr 2017": "5",
         "II Qtr 2017": "15",
         "III Qtr 2017": "5",
@@ -27,7 +27,7 @@
         "%": "4"
     },
     {
-        "Type of cases ": "NSP Failure ",
+        "Type of cases ": "NSP Failure",
         "I Qtr 2017": "5",
         "II Qtr 2017": "0",
         "III Qtr 2017": "5",
@@ -36,7 +36,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "NSP Defaulted ",
+        "Type of cases ": "NSP Defaulted",
         "I Qtr 2017": "7",
         "II Qtr 2017": "5",
         "III Qtr 2017": "3",
@@ -63,7 +63,7 @@
         "%": "1.03"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "NSP Total",
         "I Qtr 2017": "216",
         "II Qtr 2017": "200",
         "III Qtr 2017": "195",
@@ -90,7 +90,7 @@
         "%": "96"
     },
     {
-        "Type of cases ": "NSN/NEP Died ",
+        "Type of cases ": "NSN/NEP Died",
         "I Qtr 2017": "9",
         "II Qtr 2017": "5",
         "III Qtr 2017": "4",
@@ -99,7 +99,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "NSN/NEP Failure ",
+        "Type of cases ": "NSN/NEP Failure",
         "I Qtr 2017": "0",
         "II Qtr 2017": "0",
         "III Qtr 2017": "0",
@@ -108,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted ",
+        "Type of cases ": "NSN/NEP Defaulted",
         "I Qtr 2017": "2",
         "II Qtr 2017": "7",
         "III Qtr 2017": "2",
@@ -117,7 +117,7 @@
         "%": "1"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out ",
+        "Type of cases ": "NSN/NEP Transferred out",
         "I Qtr 2017": "0",
         "II Qtr 2017": "2",
         "III Qtr 2017": "3",
@@ -135,7 +135,7 @@
         "%": "0.09"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "NSN/NEP Total",
         "I Qtr 2017": "283",
         "II Qtr 2017": "377",
         "III Qtr 2017": "284",
@@ -162,7 +162,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +Ve Died ",
+        "Type of cases ": "RT +Ve Died",
         "I Qtr 2017": "2",
         "II Qtr 2017": "4",
         "III Qtr 2017": "10",
@@ -171,7 +171,7 @@
         "%": "6"
     },
     {
-        "Type of cases ": "RT +ve Failure ",
+        "Type of cases ": "RT +ve Failure",
         "I Qtr 2017": "0",
         "II Qtr 2017": "3",
         "III Qtr 2017": "3",
@@ -180,7 +180,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "RT +ve Defaulted ",
+        "Type of cases ": "RT +ve Defaulted",
         "I Qtr 2017": "6",
         "II Qtr 2017": "7",
         "III Qtr 2017": "5",
@@ -189,7 +189,7 @@
         "%": "7"
     },
     {
-        "Type of cases ": "RT +ve Transferred out ",
+        "Type of cases ": "RT +ve Transferred out",
         "I Qtr 2017": "1",
         "II Qtr 2017": "1",
         "III Qtr 2017": "2",
@@ -207,7 +207,7 @@
         "%": "4.59"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "RT +ve Total",
         "I Qtr 2017": "83",
         "II Qtr 2017": "89",
         "III Qtr 2017": "77",
@@ -234,7 +234,7 @@
         "%": "88"
     },
     {
-        "Type of cases ": "RT Neg Died ",
+        "Type of cases ": "RT Neg Died",
         "I Qtr 2017": "2",
         "II Qtr 2017": "3",
         "III Qtr 2017": "2",
@@ -243,7 +243,7 @@
         "%": "5"
     },
     {
-        "Type of cases ": "RT Neg Failure ",
+        "Type of cases ": "RT Neg Failure",
         "I Qtr 2017": "0",
         "II Qtr 2017": "0",
         "III Qtr 2017": "0",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Defaulted ",
+        "Type of cases ": "RT Neg Defaulted",
         "I Qtr 2017": "2",
         "II Qtr 2017": "4",
         "III Qtr 2017": "5",
@@ -279,7 +279,7 @@
         "%": "0.96"
     },
     {
-        "Type of cases ": "Total",
+        "Type of cases ": "RT Neg Total",
         "I Qtr 2017": "59",
         "II Qtr 2017": "50",
         "III Qtr 2017": "50",
