@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
           data.forEach(row => {
             const sno = row["S.NO"] || row["SNO"] || "";
-            const label = row["Contents"] || row["Type of cases"] || row["Annexure M Contents"] || row["DPMR Contents"] || "Unknown";
+            const label = row["Contents"] || row["Type of cases"] || row["Annexure M Contents"] || row["Type of Cases"] || row["Type of cases "] || "Unknown";
             const id = `${sno}||${label}`;
 
             if (!cumulativeData[id]) {
@@ -707,6 +707,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /// -------------------TB DIRECT SERVICES------//////////////////
+
   //---- TB ANNEXURE ---///
   const tbannexureLinks = {
     total: "link-total-projects-AN",
@@ -743,22 +744,41 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+      renderQuarterWiseSection("/TB_Annexure", "supported_projects", "SUPPORTED PROJECTS");
     } else {
-      renderMultiYearSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+      renderMultiYearSection("/TB_Annexure", "supported_projects", "SUPPORTED PROJECTS");
     }
   });
-
   tbannexureLinks.districts.forEach(d => {
     const el = document.getElementById(`link-${d}-AN`);
     if (el) {
       el.addEventListener("click", e => {
         e.preventDefault();
         setActiveLink(e.target);
-        renderannexureOverview(`/TB_Annexure/district_wise_${selectedYear}/${d.toLowerCase()}.json`, d.toLowerCase());
+
+        const selectedQuarterYear = document.getElementById("yearFilter").value;
+        const fileName = d.toLowerCase();
+        const basePath = "/TB_Annexure";
+
+        if (selectedQuarterYear !== "All") {
+          renderQuarterWiseSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+
+        } else {
+          // 👇 THIS IS THE FIXED LINE
+          renderMultiYearSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+        }
       });
     }
   });
+
   //--- TB CASE FINDINGS ----////
   const tbcaseFindingLinks = {
     total: "link-total-projects-CF",
@@ -770,106 +790,62 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   };
 
-  function rendercaseFindingsOverview(path, key) {
-    const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-    if (selectedYear === "All") {
-      const cumulativeData = {};
-      const order = [];
-
-      Promise.all(
-        years.map(year =>
-          fetch(`/TB_Case_Finding/district_wise_${year}/${key}.json`)
-            .then(res => {
-              if (!res.ok) throw new Error(`Missing: ${year}/${key}.json`);
-              return res.json();
-            })
-            .then(data => {
-              data.forEach(row => {
-                const label = row["Type of Cases"] || row["Type of Cases "] || row["Type of cases "];
-                if (!cumulativeData[label]) {
-                  cumulativeData[label] = { Contents: label };
-                  order.push(label);
-                }
-                cumulativeData[label][`Total ${year}`] = row[`Total ${year}`] || row[`Annual ${year}`] || "";
-              });
-            })
-            .catch(err => {
-              console.warn(err.message);
-            })
-        )
-      ).then(() => {
-        let html = `<h2>${key.replace(/_/g, " ").toUpperCase()} Annual Overview – All Years</h2>`;
-        html += `<div class="table-container"><table><thead><tr><th>Type of Cases</th>`;
-        years.forEach(year => html += `<th>Total ${year}</th>`);
-        html += `</tr></thead><tbody>`;
-
-        order.forEach(label => {
-          const row = cumulativeData[label];
-          html += `<tr><td>${row.Contents}</td>`;
-          years.forEach(year => html += `<td>${row[`Total ${year}`] || ""}</td>`);
-          html += `</tr>`;
-        });
-
-        html += `</tbody></table></div>`;
-        contentArea.innerHTML = html;
-        enableDownload(`TB_CASE-FINDINGS_${selectedYear}`);
-      });
-    } else {
-      fetch(path)
-        .then(res => res.json())
-        .then(data => {
-          if (!Array.isArray(data) || !data.length) {
-            contentArea.innerHTML = "<p>No data available.</p>";
-            return;
-          }
-
-          const heading = `${key.replace(/_/g, ' ').toUpperCase()} Overview – ${selectedYear}`;
-          const keys = Object.keys(data[0]);
-
-          let html = `<div class="table-container"><h2>${heading}</h2><table><thead><tr>`;
-          keys.forEach(k => html += `<th>${k}</th>`);
-          html += `</tr></thead><tbody>`;
-
-          data.forEach(row => {
-            html += "<tr>";
-            keys.forEach(k => html += `<td>${row[k] ?? ""}</td>`);
-            html += "</tr>";
-          });
-
-          html += "</tbody></table></div>";
-          contentArea.innerHTML = html;
-          enableDownload(`TB_CASE-FINDINGS_${selectedYear}`);
-        })
-        .catch(err => {
-          contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err}</p>`;
-        });
-    }
-  }
-
-
   document.getElementById(tbcaseFindingLinks.total)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    rendercaseFindingsOverview(`/TB_Case_Finding/district_wise_${selectedYear}/total_projects.json`, "total_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Case_Finding", "Total_projects", "TOTAL PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Case_Finding", "Total_projects", "TOTAL PROJECTS");
+    }
   });
   document.getElementById(tbcaseFindingLinks.dfit)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    rendercaseFindingsOverview(`/TB_Case_Finding/district_wise_${selectedYear}/dfit_projects.json`, "dfit_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Case_Finding", "dfit_projects", "DFIT PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Case_Finding", "dfit_projects", "DFIT PROJECTS");
+    }
   });
   document.getElementById(tbcaseFindingLinks.supported)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    rendercaseFindingsOverview(`/TB_Case_Finding/district_wise_${selectedYear}/supported_projects.json`, "supported_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Case_Finding", "supported_projects", "SUPPORTED PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Case_Finding", "supported_projects", "SUPPORTED PROJECTS");
+    }
   });
-
   tbcaseFindingLinks.districts.forEach(d => {
     const el = document.getElementById(`link-${d}-CF`);
     if (el) {
       el.addEventListener("click", e => {
         e.preventDefault();
         setActiveLink(e.target);
-        rendercaseFindingsOverview(`/TB_Case_Finding/district_wise_${selectedYear}/${d.toLowerCase()}.json`, d.toLowerCase());
+
+        const selectedQuarterYear = document.getElementById("yearFilter").value;
+        const fileName = d.toLowerCase();
+        const basePath = "/TB_Case_Finding";
+
+        if (selectedQuarterYear !== "All") {
+          renderQuarterWiseSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+
+        } else {
+          // 👇 THIS IS THE FIXED LINE
+          renderMultiYearSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+        }
       });
     }
   });
@@ -884,112 +860,67 @@ document.addEventListener("DOMContentLoaded", () => {
       "pavagada", "andipatti", "ambamoola", "belatnr"
     ]
   };
-
-  function renderOutcomesOverview(path, key) {
-    const years = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-
-    if (selectedYear === "All") {
-      const cumulativeData = {};
-      const order = [];
-
-      Promise.all(
-        years.map(year =>
-          fetch(`/TB_Outcomes/district_wise_${year}/${key}.json`)
-            .then(res => {
-              if (!res.ok) throw new Error(`Missing: ${year}/${key}.json`);
-              return res.json();
-            })
-            .then(data => {
-              data.forEach(row => {
-                const label = row["Type of cases "] || row["Type of Cases"] || row["Type of cases"];
-                if (!cumulativeData[label]) {
-                  cumulativeData[label] = { Contents: label };
-                  order.push(label);
-                }
-                cumulativeData[label][`Total ${year}`] = row[`Total ${year}`] || row[`Annual ${year}`] || "";
-              });
-            })
-            .catch(err => {
-              console.warn(err.message);
-            })
-        )
-      ).then(() => {
-        let html = `<h2>${key.replace(/_/g, " ").toUpperCase()} Annual Overview – All Years</h2>`;
-        html += `<div class="table-container"><table><thead><tr><th>Type of Cases</th>`;
-        years.forEach(year => html += `<th>Total ${year}</th>`);
-        html += `</tr></thead><tbody>`;
-
-        order.forEach(label => {
-          const row = cumulativeData[label];
-          html += `<tr><td>${row.Contents}</td>`;
-          years.forEach(year => html += `<td>${row[`Total ${year}`] || ""}</td>`);
-          html += `</tr>`;
-        });
-
-        html += `</tbody></table></div>`;
-        contentArea.innerHTML = html;
-        enableDownload(`TB_OUTCOMES_${selectedYear}`);
-      });
-    } else {
-      fetch(path)
-        .then(res => res.json())
-        .then(data => {
-          if (!Array.isArray(data) || !data.length) {
-            contentArea.innerHTML = "<p>No data available.</p>";
-            return;
-          }
-
-          const heading = `${key.replace(/_/g, ' ').toUpperCase()} Overview – ${selectedYear}`;
-          const keys = Object.keys(data[0]);
-
-          let html = `<div class="table-container"><h2>${heading}</h2><table><thead><tr>`;
-          keys.forEach(k => html += `<th>${k}</th>`);
-          html += `</tr></thead><tbody>`;
-
-          data.forEach(row => {
-            html += "<tr>";
-            keys.forEach(k => html += `<td>${row[k] ?? ""}</td>`);
-            html += "</tr>";
-          });
-
-          html += "</tbody></table></div>";
-          contentArea.innerHTML = html;
-          enableDownload(`TB_OUTCOMES_${selectedYear}`);
-        })
-        .catch(err => {
-          contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err}</p>`;
-        });
-    }
-  }
-
-
   document.getElementById(tbOutcomesLinks.total)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderOutcomesOverview(`TB_Outcomes/district_wise_${selectedYear}/total_projects.json`, "total_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Outcomes", "Total_projects", "TOTAL PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Outcomes", "Total_projects", "TOTAL PROJECTS");
+    }
   });
   document.getElementById(tbOutcomesLinks.dfit)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderOutcomesOverview(`TB_Outcomes/district_wise_${selectedYear}/dfit_projects.json`, "dfit_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Outcomes", "dfit_projects", "DFIT PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Outcomes", "dfit_projects", "DFIT PROJECTS");
+    }
   });
   document.getElementById(tbOutcomesLinks.supported)?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderOutcomesOverview(`TB_Outcomes/district_wise_${selectedYear}/supported_projects.json`, "supported_projects");
+    const selectedQuarterYear = document.getElementById("yearFilter").value;
+    if (selectedQuarterYear !== "All") {
+      renderQuarterWiseSection("/TB_Outcomes", "supported_projects", "SUPPORTED PROJECTS");
+    } else {
+      renderMultiYearSection("/TB_Outcomes", "supported_projects", "SUPPORTED PROJECTS");
+    }
   });
-
   tbOutcomesLinks.districts.forEach(d => {
-    const el = document.getElementById(`link-${d}-OC`);
+    const el = document.getElementById(`link-${d}-CF`);
     if (el) {
       el.addEventListener("click", e => {
         e.preventDefault();
         setActiveLink(e.target);
-        renderOutcomesOverview(`TB_Outcomes/district_wise_${selectedYear}/${d.toLowerCase()}.json`, d.toLowerCase());
+
+        const selectedQuarterYear = document.getElementById("yearFilter").value;
+        const fileName = d.toLowerCase();
+        const basePath = "/TB_Outcomes";
+
+        if (selectedQuarterYear !== "All") {
+          renderQuarterWiseSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+
+        } else {
+          // 👇 THIS IS THE FIXED LINE
+          renderMultiYearSection(
+            basePath,
+            fileName,
+            d.toUpperCase() + " PROJECTS"
+          );
+        }
       });
     }
   });
 
+  // YEAR-WISE FILTER
   yearFilter.addEventListener("change", () => {
     selectedYear = yearFilter.value;
     const active = document.querySelector(".active-link");
