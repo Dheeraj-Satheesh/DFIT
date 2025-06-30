@@ -578,11 +578,11 @@
     {
         "S.NO": "8.f",
         "Contents": "Bed Occupancy Rate for Leprosy",
-        "I Qtr-2018": "51.82",
-        "II Qtr-2018": "50.56",
-        "III Qtr- 2018": "47.22",
-        "IV Qtr-2018": "43.42",
-        "Annual 2018": "48.26"
+        "I Qtr-2018": "51.8",
+        "II Qtr-2018": "50.6",
+        "III Qtr- 2018": "47.2",
+        "IV Qtr-2018": "43.4",
+        "Annual 2018": "48.3"
     },
     {
         "S.NO": "9",
@@ -623,10 +623,10 @@
     {
         "S.NO": "9.d",
         "Contents": "Bed Occupancy Rate for TB",
-        "I Qtr-2018": "15.96",
-        "II Qtr-2018": "29.41",
-        "III Qtr- 2018": "14.79",
-        "IV Qtr-2018": "13.04",
-        "Annual 2018": "18.30"
+        "I Qtr-2018": "16.0",
+        "II Qtr-2018": "29.4",
+        "III Qtr- 2018": "14.8",
+        "IV Qtr-2018": "13.0",
+        "Annual 2018": "18.3"
     }
 ]

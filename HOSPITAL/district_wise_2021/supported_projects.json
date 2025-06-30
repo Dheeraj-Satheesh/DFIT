@@ -578,11 +578,11 @@
     {
         "S.NO": "8.f",
         "Contents": "Bed Occupancy Rate for Leprosy",
-        "I Qtr-2021": "39.50",
-        "II Qtr-2021": "18.52",
-        "III Qtr- 2021": "52.17",
-        "IV Qtr-2021": "50.88",
-        "Annual 2021": "39.54"
+        "I Qtr-2021": "39.5",
+        "II Qtr-2021": "18.5",
+        "III Qtr- 2021": "52.2",
+        "IV Qtr-2021": "50.9",
+        "Annual 2021": "39.5"
     },
     {
         "S.NO": "9",
@@ -623,10 +623,10 @@
     {
         "S.NO": "9.d",
         "Contents": "Bed Occupancy Rate for TB",
-        "I Qtr-2021": "1.23",
-        "II Qtr-2021": "2.82",
-        "III Qtr- 2021": "1.01",
-        "IV Qtr-2021": "1.80",
-        "Annual 2021": "1.72"
+        "I Qtr-2021": "1.2",
+        "II Qtr-2021": "2.8",
+        "III Qtr- 2021": "1.0",
+        "IV Qtr-2021": "1.8",
+        "Annual 2021": "1.7"
     }
 ]
