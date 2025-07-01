@@ -33,6 +33,38 @@ html, body {
   margin-bottom: 30px;
   cursor: pointer;
 }
+.logo-wrapper img {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  display: block;
+  margin: 10px auto 20px auto; /* top & bottom spacing */
+  width: 240px;
+  height: auto;
+  cursor: pointer;
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.logo-wrapper img:hover {
+  transform: scale(1.03);        /* Slight zoom on hover */
+}
+@media screen and (max-width: 600px) {
+  .logo-wrapper img {
+    width: 140px;
+    height: auto;
+    padding: 6px 10px;
+  }
+}
 
 .sidebar .logo img {
   max-width: 100%;
@@ -355,6 +387,25 @@ canvas {
   cursor: pointer;
   z-index: 2000;
 }
+/* Hide hamburger on larger screens */
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+/* Optional: Show hamburger on smaller screens */
+@media (max-width: 767px) {
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    padding: 10px;
+  }
+}
+
 
 /* Sidebar default */
 .sidebar {
@@ -389,6 +440,10 @@ canvas {
     margin-left: 250px;
   }
 }
+.sidebar {
+  background-color: #f9f2e9; /* Muted beige */
+}
+
 
               /* Multi Year Options */
 .filters-row {
@@ -487,3 +542,78 @@ canvas {
 .highlight-row {
   background-color:	#FFE599 !important; /* or any color you want */
 }
+/* header */
+/* Contact Bar Styles */
+.contact-bar {
+  background-color: #e00034;
+  color: white;
+  padding: 15px 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.contact-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 600px) {
+  .contact-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-text {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+  }
+}
+
+.contact-center-text {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 600px) {
+  .contact-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-text,
+  .contact-center-text,
+  .social-icons {
+    margin: 5px 0;
+  }
+
+  .contact-center-text {
+    font-size: 18px;
+  }
+}
+
