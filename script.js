@@ -20,7 +20,27 @@ document.addEventListener("DOMContentLoaded", () => {
       idOrElement.classList.add("active-link");
     }
   }
+  // Hamburger
+  const hamburger = document.getElementById("hamburger");
+  const sidebar = document.getElementById("sidebar");
 
+  // ✅ Toggle sidebar on hamburger click (works on all screen sizes)
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
+
+  // ✅ Auto-close + active highlight on sidebar link click
+  const sidebarLinks = sidebar.querySelectorAll("a:not(.logo-wrapper");
+  sidebarLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // stop default navigation if needed
+      setActiveLink(link); // highlight active link
+      sidebar.classList.remove("active"); // auto-close sidebar on mobile
+
+      // Optionally trigger your logic to load section
+      // loadSection(link.id); <-- if applicable
+    });
+  });
   function enableDownload(name = "dfit_table") {
     const btn = document.getElementById("downloadTableBtn");
     const container = document.querySelector(".table-container");
