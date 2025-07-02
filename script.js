@@ -231,6 +231,175 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Bar Graph for LEP and DPMR
+  function renderBar(jsonFile, heading, sectionTitle) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading data...</p>";
+    let selectedYears = getSelectedYears();
+
+    if (jsonFile === "dpmr.json") {
+      // Only include years from 2020 to 2025
+      selectedYears = selectedYears.filter(y => y >= 2020 && y < 2025);
+    } else {
+      // Include all years from 2014 to 2025
+      selectedYears = selectedYears.filter(y => y >= 2014 && y < 2025);
+    }
+
+    selectedYears.sort();
+
+
+
+    const jsonPath = `GRAPH/DPMR/${jsonFile}`;
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        // ✅ Labels and Values
+        const labels = selectedYears.map(String);
+        const values = selectedYears.map(y => {
+          const val = data[0][y];
+          return val && val.trim() !== "" ? parseInt(val) : 0;
+        });
+
+        // ✅ Build Table + Chart
+        let html = `
+        <div class="table-container" id="table-section">
+          <h2>${sectionTitle} – ${labels.join(", ")}</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Contents</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              ${data.map(row => `
+                <tr>
+                  <td>${row.Contents}</td>
+                  ${labels.map(y => `<td>${row[y] && row[y].trim() !== "" ? row[y] : "0"}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px;">
+          <canvas id="annualChart"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        // ✅ Setup chart
+        const ctx = document.getElementById("annualChart").getContext("2d");
+        if (genericChartInstance) genericChartInstance.destroy();
+
+        const colors = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        genericChartInstance = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels,
+            datasets: [{
+              label: sectionTitle,
+              data: values,
+              borderColor: color,
+              backgroundColor: color + "33",
+              pointBackgroundColor: color,
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+              barThickness: 50,
+            }]
+          },
+          options: {
+            layout: { padding: { right: 30 } },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: "#000",
+                font: { weight: "bold", size: 12 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: '5%',
+                grid: {
+                  lineWidth: 0.5, // 👈 thinner axis lines
+                  color: '#ccc'
+                },
+                ticks: {
+                  padding: 10,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" },
+                  callback: value => value.toFixed(0) // 👈 round off displayed ticks
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,
+                grid: {
+                  lineWidth: 0.5,
+                  color: '#ccc'
+                },
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        // ✅ Combined Download
+        enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  }
+  document.getElementById("link-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("dpmr.json", "DPMR Services - Practicing self care regularly%", "DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("b-lep").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("lep.json", "Total LEP (Socio-economic support) supported", "Total LEP (Socio-economic support) supported");
+  });
+  document.getElementById("b-np").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("nsp.json", "Total Nutritional supplements supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+  });
+
   //IRL LABS GRPAHS
   function renderIRLMultiTrend(jsonFile, sectionTitle, chartId) {
     const contentArea = document.getElementById("content-area");
