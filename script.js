@@ -230,6 +230,180 @@ document.addEventListener("DOMContentLoaded", () => {
       if (active) active.click();
     });
   });
+
+  //IRL LABS GRPAHS
+  function renderIRLMultiTrend(jsonFile, sectionTitle, chartId) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading data...</p>";
+
+    // const selectedYears = getSelectedYears();
+    const selectedYears = getSelectedYears().filter(y => y !== 2025);
+
+    selectedYears.sort();
+
+    const jsonPath = `GRAPH/IRL/${jsonFile}`;
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        const labels = selectedYears.map(String);
+
+        const presumptive = data.find(d => d.Contents === "No. of Presumptive");
+        // const followUp = data.find(d => d.Contents === "No. of follow up");
+        const drtb = data.find(d => d.Contents === "DR TB cases screened");
+
+        const valuesPresumptive = labels.map(y => (presumptive[y] && presumptive[y].trim() !== "") ? parseInt(presumptive[y]) : 0);
+        // const valuesFollowUp = labels.map(y => (followUp[y] && followUp[y].trim() !== "") ? parseInt(followUp[y]) : 0);
+        const valuesDRTB = labels.map(y => (drtb[y] && drtb[y].trim() !== "") ? parseInt(drtb[y]) : 0);
+
+        let html = `
+        <div class="table-container" id="table-section">
+          <h2>${sectionTitle} (${labels.join(", ")})</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Contents</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>No. of Presumptive</td>${valuesPresumptive.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>DR TB cases screened</td>${valuesDRTB.map(val => `<td>${val}</td>`).join("")}</tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px;">
+          <canvas id="${chartId}"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        const ctx = document.getElementById(chartId).getContext("2d");
+        if (genericChartInstance) genericChartInstance.destroy();
+
+        genericChartInstance = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels,
+            datasets: [
+              {
+                label: "No. of Presumptive",
+                data: valuesPresumptive,
+                borderColor: "#1f77b4",
+                backgroundColor: "#1f77b4",
+                pointBackgroundColor: "#1f77b4",
+                borderWidth: 2,
+                tension: 0,
+                fill: false,
+                pointRadius: 4
+              },
+              // {
+              //   label: "No. of follow up",
+              //   data: valuesFollowUp,
+              //   borderColor: "#b22222",
+              //   backgroundColor: "#b22222",
+              //   pointBackgroundColor: "#b22222",
+              //   borderWidth: 2,
+              //   tension: 0,
+              //   fill: false,
+              //   pointRadius: 4
+              // },
+              {
+                label: "DR TB cases screened",
+                data: valuesDRTB,
+                borderColor: "#b22222",
+                backgroundColor: "#b22222",
+                pointBackgroundColor: "#b22222",
+                borderWidth: 2,
+                tension: 0,
+                fill: false,
+                pointRadius: 4
+              }
+            ]
+          },
+          options: {
+            layout: { padding: { right: 30 } },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: "#000",
+                font: { weight: "bold", size: 12 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: '5%',
+                ticks: {
+                  padding: 10,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", `#${chartId}`);
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  }
+  document.getElementById("d-irl").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderIRLMultiTrend("dharbanga_irl.json", "Reference Laboratories trend – Dharbanga IRL", "dharbangaChart");
+  });
+
+  document.getElementById("n-irl").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderIRLMultiTrend("nellore_irl.json", "Reference Laboratories trend – Nellore IRL", "nelloreChart");
+  });
+
+  document.getElementById("tp-irl").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderIRLMultiTrend("total_irl.json", "Reference Laboratories trend – Total IRL", "totalChart");
+  });
+
+
   // Annual-Wise Analysis
 
   let genericChartInstance = null;
