@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const tableHTML = renderAnnualTable(formattedData, years);
 
         contentArea.innerHTML = `<div class="table-container">
-        <h2>${sectionName} Overview – ${years.join(', ')}</h2>
+        <h2>${sectionName} Overview</h2>
         ${tableHTML}
       </div>`;
 
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    const jsonPath = `GRAPH/DPMR/${jsonFile}`;
+    const jsonPath = `GRAPH/BAR/${jsonFile}`;
     fetch(jsonPath)
       .then(res => res.json())
       .then(data => {
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // ✅ Build Table + Chart
         let html = `
         <div class="table-container" id="table-section">
-          <h2>${sectionTitle} – ${labels.join(", ")}</h2>
+          <h2>${sectionTitle}</h2>
           <table class="styled-table">
             <thead>
               <tr>
@@ -399,6 +399,167 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     renderBar("nsp.json", "Total Nutritional supplements supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
   });
+  document.getElementById("del-np").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("delhi.json", "Delhi project Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+  });
+  document.getElementById("bih-np").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("bihar.json", "Bihar state Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+  });
+  document.getElementById("ap-np").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("ap.json", "Andhra pradesh state Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+  });
+  // LEP 3 in one
+  function renderLepSupportTrend(jsonFile, sectionTitle, chartId) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading data...</p>";
+
+    const selectedYears = getSelectedYears().filter(y => y !== 2025);
+    selectedYears.sort();
+
+    const jsonPath = `GRAPH/LEP/${jsonFile}`;
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        const labels = selectedYears.map(String);
+
+        // Extract rows and datasets
+        let tableRows = "";
+        const datasets = [];
+
+        const colors = ["#007bff", "#dc3545", "#28a745", "#ff9900", "#6f42c1", "#17a2b8"];
+
+        data.forEach((entry, index) => {
+          const rowValues = labels.map(y =>
+            entry[y] && entry[y].trim() !== "" ? parseInt(entry[y]) : 0
+          );
+          tableRows += `<tr><td>${entry.Category}</td>${rowValues.map(val => `<td>${val}</td>`).join("")}</tr>`;
+
+          datasets.push({
+            label: entry.Category,
+            data: rowValues,
+            borderColor: colors[index % colors.length],
+            backgroundColor: colors[index % colors.length],
+            pointBackgroundColor: colors[index % colors.length],
+            borderWidth: 2,
+            tension: 0,
+            fill: false,
+            pointRadius: 3
+          });
+        });
+
+        // HTML table and chart canvas
+        const html = `
+        <div class="table-container" id="table-section">
+          <h2>${sectionTitle}</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>${tableRows}</tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px;">
+          <canvas id="${chartId}"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        // Chart rendering
+        const ctx = document.getElementById(chartId).getContext("2d");
+        if (genericChartInstance) genericChartInstance.destroy();
+
+        genericChartInstance = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels,
+            datasets
+          },
+          options: {
+            layout: { padding: { right: 30, left: 10 } },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: ctx => ctx.dataset.borderColor,
+                font: { weight: "bold", size: 11 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 13 },
+                bodyFont: { weight: "normal", size: 11 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 13, weight: "bold" },
+                  boxWidth: 20
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: "5%",
+                ticks: {
+                  padding: 8,
+                  color: "#000",
+                  font: { size: 11, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 13, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 11, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 13, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", `#${chartId}`);
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  }
+  document.getElementById("three-lep").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderLepSupportTrend("lep.json", "Support Categories for Leprosy Patients – Total Projects", "leprosySupportChart");
+  });
+  document.getElementById("three-np").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderLepSupportTrend("nut.json", "Nutrition Support Across  Regions", "nutritionSupportChart");
+  });
+
 
   //IRL LABS GRPAHS
   function renderIRLMultiTrend(jsonFile, sectionTitle, chartId) {
@@ -417,16 +578,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const labels = selectedYears.map(String);
 
         const presumptive = data.find(d => d.Contents === "No. of Presumptive");
-        // const followUp = data.find(d => d.Contents === "No. of follow up");
+        const followUp = data.find(d => d.Contents === "No. of follow up");
         const drtb = data.find(d => d.Contents === "DR TB cases screened");
 
         const valuesPresumptive = labels.map(y => (presumptive[y] && presumptive[y].trim() !== "") ? parseInt(presumptive[y]) : 0);
-        // const valuesFollowUp = labels.map(y => (followUp[y] && followUp[y].trim() !== "") ? parseInt(followUp[y]) : 0);
+        const valuesFollowUp = labels.map(y => (followUp[y] && followUp[y].trim() !== "") ? parseInt(followUp[y]) : 0);
         const valuesDRTB = labels.map(y => (drtb[y] && drtb[y].trim() !== "") ? parseInt(drtb[y]) : 0);
 
         let html = `
         <div class="table-container" id="table-section">
-          <h2>${sectionTitle} (${labels.join(", ")})</h2>
+          <h2>${sectionTitle}</h2>
           <table class="styled-table">
             <thead>
               <tr>
@@ -436,7 +597,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </thead>
             <tbody>
               <tr><td>No. of Presumptive</td>${valuesPresumptive.map(val => `<td>${val}</td>`).join("")}</tr>
-              <tr><td>DR TB cases screened</td>${valuesDRTB.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>No. of Follow up</td>${valuesFollowUp.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>No. of DR TB cases Confirmed</td>${valuesDRTB.map(val => `<td>${val}</td>`).join("")}</tr>
             </tbody>
           </table>
         </div>
@@ -465,20 +627,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 fill: false,
                 pointRadius: 4
               },
-              // {
-              //   label: "No. of follow up",
-              //   data: valuesFollowUp,
-              //   borderColor: "#b22222",
-              //   backgroundColor: "#b22222",
-              //   pointBackgroundColor: "#b22222",
-              //   borderWidth: 2,
-              //   tension: 0,
-              //   fill: false,
-              //   pointRadius: 4
-              // },
               {
-                label: "DR TB cases screened",
-                data: valuesDRTB,
+                label: "No. of follow up",
+                data: valuesFollowUp,
                 borderColor: "#b22222",
                 backgroundColor: "#b22222",
                 pointBackgroundColor: "#b22222",
@@ -486,44 +637,100 @@ document.addEventListener("DOMContentLoaded", () => {
                 tension: 0,
                 fill: false,
                 pointRadius: 4
+              },
+              {
+                label: "DR TB cases screened",
+                data: valuesDRTB,
+                borderColor: "#228B22",
+                backgroundColor: "#228B22",
+                pointBackgroundColor: "#228B22",
+                borderWidth: 2,
+                tension: 0,
+                fill: false,
+                pointRadius: 4
+              }
+            ]
+          },
+          data: {
+            labels,
+            datasets: [
+              {
+                label: "No. of Presumptive",
+                data: valuesPresumptive,
+                borderColor: "#007bff",  // Blue
+                backgroundColor: "#007bff",
+                pointBackgroundColor: "#007bff",
+                borderWidth: 2,
+                tension: 0,               // Straight lines
+                fill: false,
+                pointRadius: 3
+              },
+              {
+                label: "No. of follow up",
+                data: valuesFollowUp,
+                borderColor: "#dc3545",   // Red
+                backgroundColor: "#dc3545",
+                pointBackgroundColor: "#dc3545",
+                borderWidth: 2,
+                tension: 0,               // Straight lines
+                fill: false,
+                pointRadius: 3
+              },
+              {
+                label: "DR TB cases screened",
+                data: valuesDRTB,
+                borderColor: "#28a745",
+                backgroundColor: "#28a745",
+                pointBackgroundColor: "#28a745",
+                borderWidth: 2,
+                tension: 0,
+                fill: false,
+                pointRadius: 3,
+                datalabels: {
+                  align: "bottom",      // ⬅️ Moves labels below the line
+                  anchor: "end",
+                  color: "#000",
+                  font: { weight: "bold", size: 11 }
+                }
               }
             ]
           },
           options: {
-            layout: { padding: { right: 30 } },
+            layout: { padding: { right: 30, left: 10 } },
             plugins: {
               datalabels: {
                 align: "top",
                 anchor: "end",
-                color: "#000",
-                font: { weight: "bold", size: 12 },
+                color: ctx => ctx.dataset.borderColor,
+                font: { weight: "bold", size: 11 },
                 clamp: true
               },
               tooltip: {
-                titleFont: { weight: "bold", size: 14 },
-                bodyFont: { weight: "bold", size: 12 }
+                titleFont: { weight: "bold", size: 13 },
+                bodyFont: { weight: "normal", size: 11 }
               },
               legend: {
                 labels: {
                   color: "#000",
-                  font: { size: 14, weight: "bold" }
+                  font: { size: 13, weight: "bold" },
+                  boxWidth: 20
                 }
               }
             },
             scales: {
               y: {
                 beginAtZero: true,
-                grace: '5%',
+                grace: "5%",
                 ticks: {
-                  padding: 10,
+                  padding: 8,
                   color: "#000",
-                  font: { size: 12, weight: "bold" }
+                  font: { size: 11, weight: "bold" }
                 },
                 title: {
                   display: true,
                   text: "Values",
                   color: "#000",
-                  font: { size: 14, weight: "bold" }
+                  font: { size: 13, weight: "bold" }
                 }
               },
               x: {
@@ -531,13 +738,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 ticks: {
                   padding: 5,
                   color: "#000",
-                  font: { size: 12, weight: "bold" }
+                  font: { size: 11, weight: "bold" }
                 },
                 title: {
                   display: true,
                   text: "Year-wise",
                   color: "#000",
-                  font: { size: 14, weight: "bold" }
+                  font: { size: 13, weight: "bold" }
                 }
               }
             },
@@ -545,6 +752,7 @@ document.addEventListener("DOMContentLoaded", () => {
             maintainAspectRatio: false
           },
           plugins: [ChartDataLabels]
+
         });
 
         enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", `#${chartId}`);
@@ -598,7 +806,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // ✅ Build Table + Chart
         let html = `
         <div class="table-container" id="table-section">
-          <h2>${sectionTitle} – ${labels.join(", ")}</h2>
+          <h2>${sectionTitle} </h2>
           <table class="styled-table">
             <thead>
               <tr>
@@ -710,64 +918,86 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  const annualGraphLinks = {
-    "tp-opd": { folder: "OPD", file: "tp_opd.json", title: "OPD – Total Projects" },
-    "dfit-opd": { folder: "OPD", file: "dfit_opd.json", title: "OPD – DFIT Projects" },
-    "sup-opd": { folder: "OPD", file: "sup_opd.json", title: "OPD – Supported Projects" },
+  const projects = [
+    { code: "tp", title: "Total Projects" },
+    { code: "dfit", title: "DFIT Projects" },
+    { code: "sup", title: "Supported Projects" },
+    { code: "nel", title: "Nellore Project" },
+    { code: "del", title: "Delhi Project" },
+    { code: "dos", title: "DOS Project" },
+    { code: "pol", title: "Polambakkam Project" },
+    { code: "dan", title: "Dhanbad Project" },
+    { code: "amd", title: "Amda Project" },
+    { code: "ars", title: "Arasipalayam Project" },
+    { code: "fat", title: "Fathimanagar Project" },
+    { code: "nag", title: "Nagepalli Project" },
+    { code: "pav", title: "Pavagada Project" },
+    { code: "bel", title: "Belatanr Project" },
+    { code: "pop", title: "Pope John Garden Project" },
+    { code: "chi", title: "Chilakala Palli Project" },
+    { code: "tri", title: "Trivendrum Project" },
+    { code: "and", title: "Andipatti Project" },
+    { code: "amb", title: "Ambalamoola Project" },
+  ];
 
-    "tp-lep": { folder: "LEPROSY", file: "tp.json", title: "New Leprosy cases Diagnosed – Total Projects" },
-    "dfit-lep": { folder: "LEPROSY", file: "dfit.json", title: "New Leprosy cases Diagnosed – DFIT Projects" },
-    "sup-lep": { folder: "LEPROSY", file: "sup.json", title: "New Leprosy cases Diagnosed – Supported Projects" },
-
-    // Add entries for LEPBED, LEPRA, LEPROSY, NSP, OPD, PRETB, RCS, RT, TB
-    "tp-dis": { folder: "DISABILITY", file: "tp.json", title: "New Leprosy cases with Grade II Disability – Total Projects" },
-    "dfit-dis": { folder: "DISABILITY", file: "dfit.json", title: "New Leprosy cases with Grade II Disability – DFIT Projects" },
-    "sup-dis": { folder: "DISABILITY", file: "sup.json", title: "New Leprosy cases with Grade II Disability – Supported Projects" },
-
-    "tp-lepra": { folder: "LEPRA", file: "tp.json", title: "Lepra Reaction Treated – Total Projects" },
-    "dfit-lepra": { folder: "LEPRA", file: "dfit.json", title: "Lepra Reaction Treated – DFIT Projects" },
-    "sup-lepra": { folder: "LEPRA", file: "sup.json", title: "Lepra Reaction Treated – Supported Projects" },
-
-    "tp-rcs": { folder: "RCS", file: "tp.json", title: "Deformity correction surgeries(RCS) – Total Projects" },
-    "dfit-rcs": { folder: "RCS", file: "dfit.json", title: "Deformity correction surgeries(RCS) – DFIT Projects" },
-    "sup-rcs": { folder: "RCS", file: "sup.json", title: "Deformity correction surgeries(RCS) – Supported Projects" },
-
-    "tp-lepad": { folder: "LEPAD", file: "tp.json", title: "Hospital admission of leprosy patients with complications – Total Projects" },
-    "dfit-lepad": { folder: "LEPAD", file: "dfit.json", title: "Hospital admission of leprosy patients with complications – DFIT Projects" },
-    "sup-lepad": { folder: "LEPAD", file: "sup.json", title: "Hospital admission of leprosy patients with complications  – Supported Projects" },
-
-    "tp-lepbed": { folder: "LEPBED", file: "tp.json", title: "Leprosy Patients Bed occupancy – Total Projects" },
-    "dfit-lepbed": { folder: "LEPBED", file: "dfit.json", title: "Leprosy Patients Bed occupancy – DFIT Projects" },
-    "sup-lepbed": { folder: "LEPBED", file: "sup.json", title: "Leprosy Patients Bed occupancy – Supported Projects" },
-
-    "tp-pretb": { folder: "PRETB", file: "tp.json", title: "Presumptive TB cases sputum examination – Total Projects" },
-    "dfit-pretb": { folder: "PRETB", file: "dfit.json", title: "Presumptive TB cases sputum examination – DFIT Projects" },
-    "sup-pretb": { folder: "PRETB", file: "sup.json", title: "Presumptive TB cases sputum examination – Supported Projects" },
-
-    "tp-tb": { folder: "TB", file: "tp.json", title: "Total TB cases Diagnosed – Total Projects" },
-    "dfit-tb": { folder: "TB", file: "dfit.json", title: "Total TB cases Diagnosed – DFIT Projects" },
-    "sup-tb": { folder: "TB", file: "sup.json", title: "Total TB cases Diagnosed – Supported Projects" },
-
-    "tp-nsp": { folder: "NSP", file: "tp.json", title: "Outcomes of TB-NSP Cured Rate  – Total Projects" },
-    "dfit-nsp": { folder: "NSP", file: "dfit.json", title: "Outcomes of TB-NSP Cured Rate – DFIT Projects" },
-    "sup-nsp": { folder: "NSP", file: "sup.json", title: "Outcomes of TB-NSP Cured Rate – Supported Projects" },
-
-
-    "tp-rt": { folder: "RT", file: "tp.json", title: "Outcomes of TB-RT Cured Rate  – Total Projects" },
-    "dfit-rt": { folder: "RT", file: "dfit.json", title: "Outcomes of TB-RT Cured Rate – DFIT Projects" },
-    "sup-rt": { folder: "RT", file: "sup.json", title: "Outcomes of TB-RT Cured Rate – Supported Projects" },
-
+  // Maps for categories
+  const categories = {
+    OPD: "Out Patients Statistics – ",
+    LEPROSY: "New Leprosy cases Diagnosed – ",
+    DISABILITY: "New Leprosy cases with Grade II Disability – ",
+    LEPRA: "Lepra Reaction Treated – ",
+    RCS: "Deformity correction surgeries(RCS) – ",
+    LEPAD: "Hospital admission of leprosy patients with complications – ",
+    LEPBED: "Leprosy Patients Bed occupancy – ",
+    PRETB: "Presumptive TB cases sputum examination – ",
+    TB: "Total TB cases Diagnosed – ",
+    NSP: "Outcomes of TB-NSP Cured Rate – ",
+    RT: "Outcomes of TB-RT Cured Rate – ",
   };
+
+  // Suffix mapping for HTML IDs
+  const suffixMap = {
+    OPD: "opd",
+    LEPROSY: "lep",
+    DISABILITY: "dis",
+    LEPRA: "lepra",
+    RCS: "rcs",
+    LEPAD: "lepad",
+    LEPBED: "lepbed",
+    PRETB: "pretb",
+    TB: "tb",
+    NSP: "nsp",
+    RT: "rt",
+  };
+
+  // Build the annualGraphLinks object
+  const annualGraphLinks = {};
+
+  // Step 1: Main categories (all projects)
+  Object.entries(categories).forEach(([folder, prefix]) => {
+    const suffix = suffixMap[folder];
+    projects.forEach(({ code, title }) => {
+      annualGraphLinks[`${code}-${suffix}`] = {
+        folder,
+        file: `${code}.json`,
+        title: `${prefix}${title}`,
+      };
+    });
+  });
+
+  // Step 2: Add event listeners to each link
   Object.entries(annualGraphLinks).forEach(([id, config]) => {
     const el = document.getElementById(id);
     if (el) {
-      el.addEventListener("click", e => {
+      el.addEventListener("click", (e) => {
         e.preventDefault();
         setActiveLink(e.target);
         renderAnnualGraphTableAndChart(config.folder, config.file, config.title);
       });
     }
   });
+
+
 
 
   // --- LEP Section ---
@@ -783,7 +1013,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
 
-        let html = `<div class="table-container"><h2>Livelihood Enhancement Program Report - ${selectedYears.join(", ")}</h2>`;
+        let html = `<div class="table-container"><h2>Livelihood Enhancement Program Report(LEP)</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
@@ -811,7 +1041,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
 
-        let html = `<div class="table-container"><h2>Nutritional Support Report - ${selectedYears.join(", ")}</h2>`;
+        let html = `<div class="table-container"><h2>Nutritional Support Report</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
@@ -836,7 +1066,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("delhi_drtb.json")
       .then(res => res.json())
       .then(data => {
-        let html = `<h2>DELHI DRTB SERVICES (${selectedYears.join(", ")})</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
+        let html = `<h2>DELHI DRTB SERVICES</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
 
         html += selectedYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
@@ -885,7 +1115,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        let html = `<h2>BIHAR DRTB SERVICES (${validYears.join(", ")})</h2>`;
+        let html = `<h2>BIHAR DRTB SERVICES</h2>`;
         html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DRTB contents</th>`;
         html += validYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
@@ -929,7 +1159,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          let html = `<h2>${lab.toUpperCase()} IRL Overview (${selectedYears.join(", ")})</h2>`;
+          let html = `<h2>${lab.toUpperCase()} IRL Overview </h2>`;
           html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
           html += selectedYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
@@ -1005,7 +1235,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           // ✅ Build Table
-          let html = `<h2>${heading} DPMR Overview (${validYears.join(", ")})</h2>`;
+          let html = `<h2>${heading} DPMR Overview</h2>`;
           html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DPMR Contents</th>`;
           html += validYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
@@ -1527,7 +1757,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sectionMap = {
     "opd": ["/data/opd.json", "Out Patients Statistics"],
     "new-lep": ["/data/new_lep_cases.json", "New Leprosy Cases"],
-    "gii": ["/data/gii_OPD.json", "New Leprosy Cases With OPD"],
+    "gii": ["/data/gii.json", "New Leprosy Cases With OPD"],
     "lepra": ["/data/lepra_reaction.json", "Lepra Reactions Cases"],
     "rcs": ["/data/rcs_done_cases.json", "RCS Cases Done"],
     "lep-adm": ["/data/lep_admissions.json", "Leprosy Admissions"],

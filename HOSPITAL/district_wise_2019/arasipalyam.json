@@ -587,20 +587,20 @@
     {
         "S.NO": "9",
         "Contents": "Total TB/DRTB Beds Available",
-        "I Qtr-2019": "5",
-        "II Qtr-2019": "5",
-        "III Qtr- 2019": "5",
-        "IV Qtr-2019": "5",
-        "Annual 2019": "5"
+        "I Qtr-2019": "0",
+        "II Qtr-2019": "0",
+        "III Qtr- 2019": "0",
+        "IV Qtr-2019": "0",
+        "Annual 2019": "0"
     },
     {
         "S.NO": "9.a",
         "Contents": "Total  DSTB Patients Admitted",
-        "I Qtr-2019": "11",
-        "II Qtr-2019": "12",
-        "III Qtr- 2019": "18",
-        "IV Qtr-2019": "11",
-        "Annual 2019": "52"
+        "I Qtr-2019": "0",
+        "II Qtr-2019": "0",
+        "III Qtr- 2019": "0",
+        "IV Qtr-2019": "0",
+        "Annual 2019": "0"
     },
     {
         "S.NO": "9.b",
@@ -614,19 +614,19 @@
     {
         "S.NO": "9.c",
         "Contents": "Total no of Beds Occupied TB/DRTB Patients",
-        "I Qtr-2019": "40",
-        "II Qtr-2019": "36",
-        "III Qtr- 2019": "52",
-        "IV Qtr-2019": "50",
-        "Annual 2019": "178"
+        "I Qtr-2019": "0",
+        "II Qtr-2019": "0",
+        "III Qtr- 2019": "0",
+        "IV Qtr-2019": "0",
+        "Annual 2019": "0"
     },
     {
         "S.NO": "9.d",
         "Contents": "Bed Occupancy Rate for TB",
-        "I Qtr-2019": "8.",
-        "II Qtr-2019": "8",
-        "III Qtr- 2019": "11.6",
-        "IV Qtr-2019": "11.1",
-        "Annual 2019": "10"
+        "I Qtr-2019": "0",
+        "II Qtr-2019": "0",
+        "III Qtr- 2019": "0",
+        "IV Qtr-2019": "0",
+        "Annual 2019": "0"
     }
 ]
