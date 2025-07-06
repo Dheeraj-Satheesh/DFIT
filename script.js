@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentArea.innerHTML = "<p>Loading data...</p>";
     let selectedYears = getSelectedYears();
 
-    if (jsonFile === "dpmr.json") {
+    if (jsonFile === "total_dpmr.json" || "bihar_dpmr.json" || "ap_dpmr.json" || "chat_dpmr.json" || "jhar_dpmr.json" || "kar_dpmr.json" || "tn_dpmr.json") {
       // Only include years from 2020 to 2025
       selectedYears = selectedYears.filter(y => y >= 2020 && y < 2025);
     } else {
@@ -384,10 +384,40 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Fetch error:", err);
       });
   }
-  document.getElementById("link-dpmr").addEventListener("click", e => {
+  document.getElementById("tot-dpmr").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderBar("dpmr.json", "DPMR Services - Practicing self care regularly%", "DPMR Services - Practicing self care regularly %");
+    renderBar("total_dpmr.json", "TOTAL DPMR Services - Practicing self care regularly%", "TOTAL DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("ap-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("ap_dpmr.json", "Andhra Pradesh DPMR Services - Practicing self care regularly%", "Andhra Pradesh DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("bih-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("bihar_dpmr.json", "Bihar DPMR Services - Practicing self care regularly%", "Bihar DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("chat-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("chat_dpmr.json", "Chattisgarh DPMR Services - Practicing self care regularly%", "Chhattisgarh DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("jhar-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("jhar_dpmr.json", "Jharkhand DPMR Services - Practicing self care regularly%", "Jharkhand DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("kar-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("kar_dpmr.json", "Karnataka DPMR Services - Practicing self care regularly%", "Karnataka DPMR Services - Practicing self care regularly %");
+  });
+  document.getElementById("tn-dpmr").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(e.target);
+    renderBar("tn_dpmr.json", "Tamil Nadu DPMR Services - Practicing self care regularly%", "Tamil Nadu DPMR Services - Practicing self care regularly %");
   });
   document.getElementById("b-lep").addEventListener("click", e => {
     e.preventDefault();
@@ -789,7 +819,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
-    const selectedYears = getSelectedYears();
+    const selectedYears = getSelectedYears().filter(y => y !== 2025);
     selectedYears.sort();
 
     const jsonPath = `GRAPH/${folder}/${jsonFile}`;
