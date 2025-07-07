@@ -188,33 +188,44 @@ h2{
 
 
 /* Table container to enable vertical scroll if needed */
-
-.table-container {
-  max-height: 400px; /* or your preferred height */
-  overflow-y: auto;
-  margin-top: 10px;
-  /* Remove or comment out the border line */
-  /* border: 1px solid #ccc; */
-  border: none;
-  box-shadow: none;
-  background: transparent;
-}
+/* Table Container */
 .table-container {
   max-height: 400px;
-  overflow: auto;
+  overflow-y: hidden; /* Hide scroll here, delegate to table */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
+/* Heading inside table container */
+.table-container h2,
+.table-container .table-heading {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fffbea;
+  border-bottom: none !important;
+  outline: none;
+  box-shadow: none;
+  flex-shrink: 0;
+}
 
-
-/* Table styling */
-table {
+/* Table Styling */
+.table-container table {
+  display: block;
+  overflow-y: auto;
+  max-height: 360px; /* Adjust based on heading height */
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-/* Freeze/sticky header row */
+/* Sticky Header */
 thead th {
   position: sticky;
   top: 0;
@@ -224,24 +235,30 @@ thead th {
   z-index: 1;
 }
 
-/* Header cells and body cells */
+/* Cells */
 th, td {
   padding: 12px 15px;
   border: 1px solid #ddd;
 }
 
-/* Zebra striping */
+/* Zebra Striping */
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
 
-/* Hover effect */
+/* Row Hover */
 tbody tr:hover {
   background-color: #f1f1f1;
+}
+
+/* Extra space below table for visual separation from scrollbar */
+.table-container table::after {
+  content: "";
+  display: block;
+  height: 20px;
 }
 
 

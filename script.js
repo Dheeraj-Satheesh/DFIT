@@ -108,7 +108,15 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "nsp total"
         || contents === "rt +ve total"
         || contents === "rt neg total"
-        || contents === "grand total";
+        || contents === "grand total"
+        || contents === "total no. of new leprosy cases detected"
+        || contents === "total adult disability g-ii"
+        || contents === "total children disability g-ii"
+        || contents === "total type-1 lepra reactions"
+        || contents === "total type 2 lepra reactions"
+        || contents === "total rcs done"
+        || contents === "total no of beds occupied leprosy patients"
+        || contents === "total leprosy patients admitted";
 
 
       // Add the class if it's the Total row
@@ -795,19 +803,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("d-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("dharbanga_irl.json", "Reference Laboratories trend – Dharbanga IRL", "dharbangaChart");
+    renderIRLMultiTrend("dharbanga_irl.json", "DR-TB Laboratories trend – Darbhanga ", "dharbangaChart");
   });
 
   document.getElementById("n-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("nellore_irl.json", "Reference Laboratories trend – Nellore IRL", "nelloreChart");
+    renderIRLMultiTrend("nellore_irl.json", "DR-TB Laboratories trend – Nellore ", "nelloreChart");
   });
 
   document.getElementById("tp-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("total_irl.json", "Reference Laboratories trend – Total IRL", "totalChart");
+    renderIRLMultiTrend("total_irl.json", "DR-TB Laboratories trend – Total ", "totalChart");
   });
 
 
@@ -1189,7 +1197,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          let html = `<h2>${lab.toUpperCase()} IRL Overview </h2>`;
+          let html = `<h2>${lab.toUpperCase()} DR-TB LAB Overview </h2>`;
           html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
           html += selectedYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
