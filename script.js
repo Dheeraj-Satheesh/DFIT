@@ -989,8 +989,8 @@ document.addEventListener("DOMContentLoaded", () => {
     LEPBED: "Leprosy Patients Bed occupancy – ",
     PRETB: "Presumptive TB cases sputum examination – ",
     TB: "Total TB cases Diagnosed – ",
-    NSP: "Outcomes of TB-NSP Cured Rate – ",
-    RT: "Outcomes of TB-RT Cured Rate – ",
+    NSP: "Outcomes of TB-NSP Cure Rate – ",
+    RT: "Outcomes of TB-RT Cure Rate – ",
   };
 
   // Suffix mapping for HTML IDs
@@ -1802,8 +1802,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "lep-bed": ["/data/lep_bed_days.json", "Leprosy Bed Days"],
     "pre-tb": ["/data/pre_tb.json", "Presumptive TB cases"],
     "tot-tb": ["/data/tb_cases.json", "Total TB cases"],
-    "nsp-tb": ["/data/nsp.json", "NSP CURED TB Cases %"],
-    "rt-tb": ["/data/rt.json", "RT CURED TB Cases %"],
+    "nsp-tb": ["/data/nsp.json", "NSP CURE TB Cases %"],
+    "rt-tb": ["/data/rt.json", "RT CURE TB Cases %"],
     "tb-bed": ["/data/tb_bed_days.json", "TUBERCULOSIS Bed Days"]
   };
 
