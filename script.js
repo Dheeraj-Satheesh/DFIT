@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const keys = Object.keys(data[0]);
-        let html = `<h2>${sectionTitle} – ${selectedYear} (Quarter-wise)</h2>`;
+        let html = `<h2>${sectionTitle} ${selectedYear}</h2>`;
         html += `<div class="table-container"><table><thead><tr>`;
         html += keys.map(k => `<th>${k}</th>`).join('');
         html += `</tr></thead><tbody>`;
@@ -238,6 +238,235 @@ document.addEventListener("DOMContentLoaded", () => {
       if (active) active.click();
     });
   });
+
+  // Constants for project codes and names
+  const projects1 = [
+    { code: "tp", title: "All Projects" },
+    { code: "dfit", title: "DFIT Projects" },
+    { code: "sup", title: "Supported Projects" },
+    { code: "nel", title: "Nellore Hospital" },
+    { code: "del", title: "Delhi Hospital" },
+    { code: "dos", title: "DOS Hospital" },
+    { code: "pol", title: "Polambakkam Rehabilitation Centre" },
+    { code: "dan", title: "Dhanbad Hospital" },
+    { code: "amd", title: "Amda Hospital" },
+    { code: "ars", title: "Arasipalayam Hospital" },
+    { code: "fat", title: "Fathimanagar Hospital" },
+    { code: "nag", title: "Nagepalli Hospital" },
+    { code: "pav", title: "Pavagada Hospital" },
+    { code: "bel", title: "Belatanr Hospital" },
+    { code: "pop", title: "Pope John Garden Hospital" },
+    { code: "chi", title: "Chilakala Palli Hospital" },
+    { code: "tri", title: "Trivendrum Hospital" },
+    { code: "and", title: "Andipatti Hospital" },
+    { code: "amb", title: "Ambalamoola Hospital" },
+  ];
+
+  // Mapping quarter-wise categories
+  const qCategories = {
+    OPD: "Out Patients Treated – Quarterly Statistics",
+    LEPROSY: "New Leprosy cases Diagnosed – Quarterly Statistics",
+    DISABILITY: "New G-II Leprosy cases – Quarterly Statistics",
+    LEPRA: "Lepra Reaction Treated – Quarterly Statistics",
+    RCS: "RCS Done Cases – Quarterly Statistics",
+    LEPAD: "Leprosy Inpatients – Quarterly Statistics",
+    LEPBED: "Leprosy Bed Days – Quarterly Statistics",
+    PRETB: "Presumptive TB Cases – Quarterly Statistics",
+    TB: "Total TB Cases – Quarterly Statistics",
+    NSP: "NSP Cure Rate – Quarterly Statistics",
+    RT: "RT Cure Rate – Quarterly Statistics",
+  };
+
+  // Suffix mapping for HTML IDs (quarter-wise)
+  const qSuffixMap = {
+    OPD: "qopd",
+    LEPROSY: "qlep",
+    DISABILITY: "qdis",
+    LEPRA: "qlepra",
+    RCS: "qrcs",
+    LEPAD: "qlepad",
+    LEPBED: "qlepbed",
+    PRETB: "qpretb",
+    TB: "qtb",
+    NSP: "qnsp",
+    RT: "qrt",
+  };
+
+  // Building the quarterGraphLinks object
+  const quarterGraphLinks = {};
+  Object.entries(qCategories).forEach(([folder, prefix]) => {
+    const suffix = qSuffixMap[folder];
+    projects1.forEach(({ code, title }) => {
+      quarterGraphLinks[`${code}-${suffix}`] = {
+        folder,
+        file: `${code}.json`,
+        title: `${title} ${prefix}`,
+      };
+    });
+  });
+
+  // Attach event listeners
+  Object.entries(quarterGraphLinks).forEach(([id, config]) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("click", (e) => {
+        e.preventDefault();
+        setActiveLink(e.target);
+        const years = getSelectedYears();
+        renderQuarterTableAndChart(config.folder, config.file, config.title, years);
+      });
+    }
+  });
+  function renderQuarterTableAndChart(folder, fileName, title) {
+    const selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
+    const container = document.getElementById("content-area");
+    container.innerHTML = "<p>Loading...</p>";
+
+    // Destroy old chart if exists
+    if (window.quarterChartInstance) {
+      window.quarterChartInstance.destroy();
+      window.quarterChartInstance = null;
+    }
+
+    fetch(`/data/${folder}/${fileName}`)
+      .then((res) => res.json())
+      .then((fullData) => {
+        const quarters = ["Q1", "Q2", "Q3", "Q4"];
+        const labels = [];
+        const values = [];
+
+        const filteredData = {};
+        selectedYears.forEach((year) => {
+          if (fullData[year]) {
+            filteredData[year] = fullData[year];
+          }
+        });
+
+        let html = `<h3 style="text-align:center; margin: 10px 0;">${title}</h3>`;
+        html += `<button id="downloadTableBtn" style="display:none; margin-bottom:10px;">Download Table & Chart</button>`;
+        html += `<div class="table-container" id="table-section"><table class="quarter-table">`;
+        html += `<thead><tr style="background-color: #f7931e; color: white;"><th>Year</th>`;
+        quarters.forEach(q => html += `<th>${q}</th>`);
+        html += `<th>Annual</th></tr></thead><tbody>`;
+
+        selectedYears.forEach((year) => {
+          html += `<tr><td>${year}</td>`;
+          let total = 0;
+          quarters.forEach((q) => {
+            const val = filteredData[year]?.[q];
+            if (val !== undefined) {
+              html += `<td>${val}</td>`;
+              total += +val;
+              labels.push(`${q} ${year}`);
+              values.push(+val);
+            } else {
+              html += `<td>-</td>`;
+              labels.push(`${q} ${year}`);
+              values.push(null);
+            }
+          });
+          html += `<td>${total || "-"}</td></tr>`;
+        });
+
+        html += `</tbody></table></div>`;
+        html += `<div style="height: 400px;"><canvas id="quarterChart"></canvas></div>`;
+        container.innerHTML = html;
+
+        const ctx = document.getElementById("quarterChart").getContext("2d");
+        const colors = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        // New Chart config with datalabels
+        window.quarterChartInstance = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels,
+            datasets: [{
+              label: title,
+              data: values,
+              borderColor: color,
+              backgroundColor: color + "33",
+              pointBackgroundColor: color,
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4
+            }]
+          },
+          options: {
+            layout: {
+              padding: {
+                right: 30
+              }
+            },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: "#000",
+                font: {
+                  weight: "bold",
+                  size: 12
+                },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: {
+                    size: 14,
+                    weight: "bold"
+                  }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: {
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                ticks: {
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Quarter-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        enableDownloadBoth(`${title.replace(/\s+/g, "_")}_Report`, "#table-section", "#quarterChart");
+      })
+      .catch((err) => {
+        container.innerHTML = `<p style="color:red;">Error loading data.</p>`;
+        console.error(err);
+      });
+  }
+
+
+
+
 
   // Bar Graph for LEP and DPMR
   function renderBar(jsonFile, heading, sectionTitle) {
@@ -803,19 +1032,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("d-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("dharbanga_irl.json", "DR-TB Laboratories trend – Darbhanga ", "dharbangaChart");
+    renderIRLMultiTrend("dharbanga_irl.json", "DR TB Laboratories trend – Darbhanga ", "dharbangaChart");
   });
 
   document.getElementById("n-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("nellore_irl.json", "DR-TB Laboratories trend – Nellore ", "nelloreChart");
+    renderIRLMultiTrend("nellore_irl.json", "DR TB Laboratories trend – Nellore ", "nelloreChart");
   });
 
   document.getElementById("tp-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("total_irl.json", "DR-TB Laboratories trend – Total ", "totalChart");
+    renderIRLMultiTrend("total_irl.json", "DR TB Laboratories trend – Total ", "totalChart");
   });
 
 
@@ -957,40 +1186,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const projects = [
-    { code: "tp", title: "Total Projects" },
+    { code: "tp", title: "All Projects" },
     { code: "dfit", title: "DFIT Projects" },
     { code: "sup", title: "Supported Projects" },
-    { code: "nel", title: "Nellore Project" },
-    { code: "del", title: "Delhi Project" },
-    { code: "dos", title: "DOS Project" },
-    { code: "pol", title: "Polambakkam Project" },
-    { code: "dan", title: "Dhanbad Project" },
-    { code: "amd", title: "Amda Project" },
-    { code: "ars", title: "Arasipalayam Project" },
-    { code: "fat", title: "Fathimanagar Project" },
-    { code: "nag", title: "Nagepalli Project" },
-    { code: "pav", title: "Pavagada Project" },
-    { code: "bel", title: "Belatanr Project" },
-    { code: "pop", title: "Pope John Garden Project" },
-    { code: "chi", title: "Chilakala Palli Project" },
-    { code: "tri", title: "Trivendrum Project" },
-    { code: "and", title: "Andipatti Project" },
-    { code: "amb", title: "Ambalamoola Project" },
+    { code: "nel", title: "Nellore Hospital" },
+    { code: "del", title: "Delhi Hospital" },
+    { code: "dos", title: "DOS Hospital" },
+    { code: "pol", title: "Polambakkam Rehabilitation Centre" },
+    { code: "dan", title: "Dhanbad Hospital" },
+    { code: "amd", title: "Amda Hospital" },
+    { code: "ars", title: "Arasipalayam Hospital" },
+    { code: "fat", title: "Fathimanagar Hospital" },
+    { code: "nag", title: "Nagepalli Hospital" },
+    { code: "pav", title: "Pavagada Hospital" },
+    { code: "bel", title: "Belatanr Hospital" },
+    { code: "pop", title: "Pope John Garden Hospital" },
+    { code: "chi", title: "Chilakala Palli Hospital" },
+    { code: "tri", title: "Trivendrum Hospital" },
+    { code: "and", title: "Andipatti Hospital" },
+    { code: "amb", title: "Ambalamoola Hospital" },
   ];
 
   // Maps for categories
   const categories = {
-    OPD: "Out Patients Statistics – ",
-    LEPROSY: "New Leprosy cases Diagnosed – ",
-    DISABILITY: "New Leprosy cases with Grade II Disability – ",
-    LEPRA: "Lepra Reaction Treated – ",
-    RCS: "Deformity correction surgeries(RCS) – ",
-    LEPAD: "Hospital admission of leprosy patients with complications – ",
-    LEPBED: "Leprosy Patients Bed occupancy – ",
-    PRETB: "Presumptive TB cases sputum examination – ",
-    TB: "Total TB cases Diagnosed – ",
-    NSP: "Outcomes of TB-NSP Cure Rate – ",
-    RT: "Outcomes of TB-RT Cure Rate – ",
+    OPD: "Out Patients Treated – Annual Statistics ",
+    LEPROSY: "New Leprosy cases Diagnosed – Annual Statistics",
+    DISABILITY: "New Leprosy cases with Grade II Disability – Annual Statistics ",
+    LEPRA: "Lepra Reaction Treated – Annual Statistics ",
+    RCS: "Deformity correction surgeries(RCS) – Annual Statistics",
+    LEPAD: "Hospital admission of leprosy patients with complications – Annual Statistics",
+    LEPBED: "Leprosy Patients Bed occupancy – Annual Statistics",
+    PRETB: "Presumptive TB cases sputum examination – Annual Statistics",
+    TB: "Total TB cases Diagnosed – Annual Statistics",
+    NSP: "Outcomes of TB-NSP Cure Rate – Annual Statistics",
+    RT: "Outcomes of TB-RT Cure Rate – Annual Statistics",
   };
 
   // Suffix mapping for HTML IDs
@@ -1018,7 +1247,7 @@ document.addEventListener("DOMContentLoaded", () => {
       annualGraphLinks[`${code}-${suffix}`] = {
         folder,
         file: `${code}.json`,
-        title: `${prefix}${title}`,
+        title: `${title} ${prefix}`,
       };
     });
   });
@@ -1051,7 +1280,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
 
-        let html = `<div class="table-container"><h2>Livelihood Enhancement Program Report(LEP)</h2>`;
+        let html = `<div class="table-container"><h2>All Projects Livelihood Enhancement Program(LEP) Supported Report</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
@@ -1104,7 +1333,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("delhi_drtb.json")
       .then(res => res.json())
       .then(data => {
-        let html = `<h2>DELHI DRTB SERVICES</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
+        let html = `<h2>Delhi DR TB Services Annual Report</h2><div class="table-container"><table><thead><tr><th>S.NO</th><th>Particulars</th>`;
 
         html += selectedYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
@@ -1118,7 +1347,7 @@ document.addEventListener("DOMContentLoaded", () => {
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
 
-        enableDownload(`DELHI DRTB_Report_${selectedYears.join("_")}`);
+        enableDownload(`DELHI DR TB_Annual_Report_${selectedYears.join("_")}`);
       });
   });
 
@@ -1153,7 +1382,7 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        let html = `<h2>BIHAR DRTB SERVICES</h2>`;
+        let html = `<h2>Bihar State DR TB Services Annual Report</h2>`;
         html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DRTB contents</th>`;
         html += validYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
@@ -1167,18 +1396,25 @@ document.addEventListener("DOMContentLoaded", () => {
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
 
-        enableDownload(`BIHAR_DRTB_Report_${validYears.join("_")}`);
+        enableDownload(`Bihar State DR TB Services Annual Report_${validYears.join("_")}`);
       })
       .catch(err => {
         contentArea.innerHTML = `<p>Error loading Bihar DRTB data: ${err.message}</p>`;
         console.error("Fetch error:", err);
       });
   });
+
   // --- IRL Labs ---
   const irlMap = {
     "link-total-labs": "total",
     "link-nlr-lab": "nellore",
     "link-dar-lab": "darbhanga"
+  };
+
+  const labHeadings = {
+    total: "Nellore and Darbhanga DR TB LAB Services Annual Report",
+    nellore: "Nellore DR TB LAB Services Annual Report",
+    darbhanga: "Darbhanga DR TB LAB Services Annual Report"
   };
 
   Object.entries(irlMap).forEach(([id, lab]) => {
@@ -1197,7 +1433,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          let html = `<h2>${lab.toUpperCase()} DR-TB LAB Overview </h2>`;
+          let html = `<h2>${labHeadings[lab]}</h2>`;
           html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
           html += selectedYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
@@ -1211,7 +1447,8 @@ document.addEventListener("DOMContentLoaded", () => {
           html += `</tbody></table></div>`;
           contentArea.innerHTML = html;
 
-          enableDownload(`${lab.toUpperCase()}_IRL_Report_${selectedYears.join("_")}`);
+          enableDownload(`${labHeadings[lab].replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_]/g, "")}_${selectedYears.join("_")}`);
+
         })
         .catch(err => {
           contentArea.innerHTML = `<p>Error loading data for ${lab}: ${err.message}</p>`;
@@ -1219,7 +1456,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   });
-
 
   // --- DPMR ---
   const dpmrMap = {
@@ -1244,13 +1480,13 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.json())
         .then(data => {
           const headingMap = {
-            tot: "TOTAL",
-            bihar: "Bihar",
-            jhar: "Jharkhand",
-            kar: "Karnataka",
-            tn: "Tamil Nadu",
-            chat: "Chhattisgarh",
-            ap: "Andhra Pradesh"
+            tot: "All States",
+            bihar: "Bihar State",
+            jhar: "Jharkhand State",
+            kar: "Karnataka State",
+            tn: "Tamil Nadu State",
+            chat: "Chhattisgarh State",
+            ap: "Andhra Pradesh State"
           };
           const heading = headingMap[key] || key;
 
@@ -1273,7 +1509,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           // ✅ Build Table
-          let html = `<h2>${heading} DPMR Overview</h2>`;
+          let html = `<h2>${heading} DPMR Services Annual Report</h2>`;
           html += `<div class="table-container"><table><thead><tr><th>S.NO</th><th>DPMR Contents</th>`;
           html += validYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
@@ -1313,9 +1549,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink("link-total-projects");
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/HOSPITAL", "total_projects", "TOTAL PROJECTS");
+      renderQuarterWiseSection("/HOSPITAL", "total_projects", "All Projects Leprosy Referral Services Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/HOSPITAL", "total_projects", "TOTAL PROJECTS");
+      renderMultiYearSection("/HOSPITAL", "total_projects", "All Projects Leprosy Referral Services Annual Report");
     }
   });
 
@@ -1324,9 +1560,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/HOSPITAL", "dfit_projects", "DFIT PROJECTS");
+      renderQuarterWiseSection("/HOSPITAL", "dfit_projects", "DFIT Projects Leprosy Referral Services Quarter-Wise Report ");
     } else {
-      renderMultiYearSection("/HOSPITAL", "dfit_projects", "DFIT PROJECTS");
+      renderMultiYearSection("/HOSPITAL", "dfit_projects", "DFIT Projects Leprosy Referral Services Annual Report");
     }
   });
   document.getElementById(hospitalLinks.supported)?.addEventListener("click", e => {
@@ -1334,9 +1570,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/HOSPITAL", "supported_projects", "SUPPORTED PROJECTS");
+      renderQuarterWiseSection("/HOSPITAL", "supported_projects", "Supported Projects Leprosy Referral Services Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/HOSPITAL", "supported_projects", "SUPPORTED PROJECTS");
+      renderMultiYearSection("/HOSPITAL", "supported_projects", "Supported Projects Leprosy Referral Services Annual Report");
     }
   });
 
@@ -1351,24 +1587,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const fileName = d.toLowerCase();
         const basePath = "/HOSPITAL";
 
+        // Custom title for polambakam
+        const isPolambakam = d === "polambakam";
+        const titleBase = isPolambakam
+          ? "Polambaakam Rehabilitation Centre Leprosy Referral Services"
+          : `${d.toUpperCase()} Hospital Leprosy Referral Services`;
+
         if (selectedQuarterYear !== "All") {
           renderQuarterWiseSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            `${titleBase} Quarter-Wise Report`
           );
-
         } else {
-          // 👇 THIS IS THE FIXED LINE
           renderMultiYearSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            `${titleBase} Annual Report`
           );
         }
       });
     }
   });
+
 
 
   /// -------------------TB DIRECT SERVICES------//////////////////
@@ -1389,9 +1630,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+      renderQuarterWiseSection("/TB_Annexure", "total_projects", "All Projects DS TB Annexure-M Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Annexure", "total_projects", "TOTAL PROJECTS");
+      renderMultiYearSection("/TB_Annexure", "total_projects", "All Projects DS TB Annexure-M Annual Report");
     }
   });
   document.getElementById(tbannexureLinks.dfit)?.addEventListener("click", e => {
@@ -1399,9 +1640,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Annexure", "dfit_projects", "DFIT PROJECTS");
+      renderQuarterWiseSection("/TB_Annexure", "dfit_projects", "DFIT Projects DS TB Annexure-M Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Annexure", "dfit_projects", "DFIT PROJECTS");
+      renderMultiYearSection("/TB_Annexure", "dfit_projects", "DFIT Projects DS TB Annexure-M Annual Report");
     }
   });
   document.getElementById(tbannexureLinks.supported)?.addEventListener("click", e => {
@@ -1409,9 +1650,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Annexure", "supported_projects", "SUPPORTED PROJECTS");
+      renderQuarterWiseSection("/TB_Annexure", "supported_projects", "Supported Projects DS TB Annexure-M Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Annexure", "supported_projects", "SUPPORTED PROJECTS");
+      renderMultiYearSection("/TB_Annexure", "supported_projects", "Supported Projects DS TB Annexure-M Annual Report");
     }
   });
   tbannexureLinks.districts.forEach(d => {
@@ -1429,7 +1670,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderQuarterWiseSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Annexure-M Quarter-Wise Report"
           );
 
         } else {
@@ -1437,7 +1678,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMultiYearSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Annexure-M Annual Report"
           );
         }
       });
@@ -1460,9 +1701,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "Total_projects", "TOTAL PROJECTS");
+      renderQuarterWiseSection("/TB_Case_Finding", "Total_projects", "All Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "Total_projects", "TOTAL PROJECTS");
+      renderMultiYearSection("/TB_Case_Finding", "Total_projects", "All Projects DS TB Cases and Sputum Conversion Annual Report");
     }
   });
   document.getElementById(tbcaseFindingLinks.dfit)?.addEventListener("click", e => {
@@ -1470,9 +1711,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "dfit_projects", "DFIT PROJECTS");
+      renderQuarterWiseSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "dfit_projects", "DFIT PROJECTS");
+      renderMultiYearSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases and Sputum Conversion Annual Report");
     }
   });
   document.getElementById(tbcaseFindingLinks.supported)?.addEventListener("click", e => {
@@ -1480,9 +1721,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "supported_projects", "SUPPORTED PROJECTS");
+      renderQuarterWiseSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "supported_projects", "SUPPORTED PROJECTS");
+      renderMultiYearSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases and Sputum Conversion Annual Report");
     }
   });
   tbcaseFindingLinks.districts.forEach(d => {
@@ -1500,7 +1741,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderQuarterWiseSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Cases and Sputum Conversion Quarter-wise Report"
           );
 
         } else {
@@ -1508,7 +1749,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMultiYearSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Cases and Sputum Conversion Annual Report"
           );
         }
       });
@@ -1530,9 +1771,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Outcomes", "Total_projects", "TOTAL PROJECTS");
+      renderQuarterWiseSection("/TB_Outcomes", "Total_projects", "All Projects DS TB Outcomes Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Outcomes", "Total_projects", "TOTAL PROJECTS");
+      renderMultiYearSection("/TB_Outcomes", "Total_projects", "All Projects DS TB Outcomes Annual Report");
     }
   });
   document.getElementById(tbOutcomesLinks.dfit)?.addEventListener("click", e => {
@@ -1540,9 +1781,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Outcomes", "dfit_projects", "DFIT PROJECTS");
+      renderQuarterWiseSection("/TB_Outcomes", "dfit_projects", "DFIT Projects DS TB Outcomes Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Outcomes", "dfit_projects", "DFIT PROJECTS");
+      renderMultiYearSection("/TB_Outcomes", "dfit_projects", "DFIT Projects DS TB Outcomes Annual Report");
     }
   });
   document.getElementById(tbOutcomesLinks.supported)?.addEventListener("click", e => {
@@ -1550,9 +1791,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Outcomes", "supported_projects", "SUPPORTED PROJECTS");
+      renderQuarterWiseSection("/TB_Outcomes", "supported_projects", "Supported Projects DS TB Outcomes Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Outcomes", "supported_projects", "SUPPORTED PROJECTS");
+      renderMultiYearSection("/TB_Outcomes", "supported_projects", "Supported Projects DS TB Outcomes Annual Report");
     }
   });
   tbOutcomesLinks.districts.forEach(d => {
@@ -1570,7 +1811,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderQuarterWiseSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Outcomes Quarter-Wise Report"
           );
 
         } else {
@@ -1578,7 +1819,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMultiYearSection(
             basePath,
             fileName,
-            d.toUpperCase() + " PROJECTS"
+            d.toUpperCase() + " Hospital DS TB Outcomes Annual Report"
           );
         }
       });

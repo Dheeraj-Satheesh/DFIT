@@ -215,17 +215,34 @@ h2{
 }
 
 /* Table Styling */
-.table-container table {
-  display: block;
+/* Table container to enable vertical scroll if needed */
+
+.table-container {
+  max-height: 400px; /* or your preferred height */
   overflow-y: auto;
-  max-height: 360px; /* Adjust based on heading height */
+  margin-top: 10px;
+  /* Remove or comment out the border line */
+  /* border: 1px solid #ccc; */
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+.table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+
+
+/* Table styling */
+table {
   width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
 
-/* Sticky Header */
+/* Freeze/sticky header row */
 thead th {
   position: sticky;
   top: 0;
@@ -235,32 +252,28 @@ thead th {
   z-index: 1;
 }
 
-/* Cells */
+/* Header cells and body cells */
 th, td {
   padding: 12px 15px;
   border: 1px solid #ddd;
 }
+.hidden {
+  display: none !important;
+}
 
-/* Zebra Striping */
+/* Zebra striping */
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
 
-/* Row Hover */
+/* Hover effect */
 tbody tr:hover {
   background-color: #f1f1f1;
 }
-
-/* Extra space below table for visual separation from scrollbar */
-.table-container table::after {
-  content: "";
-  display: block;
-  height: 20px;
-}
-
 
 .sidebar a.active-link {
   color: white;
