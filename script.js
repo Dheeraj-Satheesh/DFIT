@@ -1590,7 +1590,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Custom title for polambakam
         const isPolambakam = d === "polambakam";
         const titleBase = isPolambakam
-          ? "Polambaakam Rehabilitation Centre Leprosy Referral Services"
+          ? "Polambakkam Rehabilitation Centre Leprosy Referral Services"
           : `${d.toUpperCase()} Hospital Leprosy Referral Services`;
 
         if (selectedQuarterYear !== "All") {
