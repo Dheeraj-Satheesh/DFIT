@@ -1,0 +1,290 @@
+[
+    {
+        "Type of cases": "NSP Cured",
+        "I Qtr 2025": "12",
+        "II Qtr 2025": "12",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Treatment completed",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Died",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Failure",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Defaulted",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Transferred out",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Switched to IV",
+        "I Qtr 2025": "1",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSP Total",
+        "I Qtr 2025": "13",
+        "II Qtr 2025": "12",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Cured",
+        "I Qtr 2025": "",
+        "II Qtr 2025": "",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Treatment completed",
+        "I Qtr 2025": "7",
+        "II Qtr 2025": "6",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Died",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Failure",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Defaulted",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Transferred out",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Switched to IV",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "NSN/NEP Total",
+        "I Qtr 2025": "7",
+        "II Qtr 2025": "6",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Cured",
+        "I Qtr 2025": "2",
+        "II Qtr 2025": "1",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT+ve Treatment completed",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +Ve Died",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Failure",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Defaulted",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Transferred out",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Switched to IV",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT +ve Total",
+        "I Qtr 2025": "2",
+        "II Qtr 2025": "1",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Cured",
+        "I Qtr 2025": "",
+        "II Qtr 2025": "",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Treatment completed",
+        "I Qtr 2025": "1",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Died",
+        "I Qtr 2025": "1",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Failure",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Defaulted",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Transferred out",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Switched to IV",
+        "I Qtr 2025": "0",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    },
+    {
+        "Type of cases": "RT Neg Total",
+        "I Qtr 2025": "2",
+        "II Qtr 2025": "0",
+        "III Qtr 2025": "",
+        "IV Qtr 2025": "",
+        "Total 2025": "",
+        "%": ""
+    }
+]
