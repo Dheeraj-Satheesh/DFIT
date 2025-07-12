@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "rt neg total"
         || contents === "grand total"
         || contents === "total no. of new leprosy cases detected"
+        || contents === "total number of outpatients treated"
         || contents === "total adult disability g-ii"
         || contents === "total children disability g-ii"
         || contents === "total type-1 lepra reactions"
@@ -212,13 +213,37 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `<div class="table-container"><table><thead><tr>`;
         html += keys.map(k => `<th>${k}</th>`).join('');
         html += `</tr></thead><tbody>`;
+
         data.forEach(row => {
-          html += `<tr>${keys.map(k => {
+          const contents = row["Contents"]?.toString().toLowerCase().trim();
+
+          const isTotalRow =
+            contents === "nsn/nep total" ||
+            contents === "nsp total" ||
+            contents === "rt +ve total" ||
+            contents === "rt neg total" ||
+            contents === "grand total" ||
+            contents === "total number of outpatients treated" ||
+            contents === "total no. of new leprosy cases detected" ||
+            contents === "total adult disability g-ii" ||
+            contents === "total children disability g-ii" ||
+            contents === "total type-1 lepra reactions" ||
+            contents === "total type 2 lepra reactions" ||
+            contents === "total rcs done" ||
+            contents === "total no of beds occupied leprosy patients" ||
+            contents === "total leprosy patients admitted" ||
+            contents === "tb suspect examined diagnosis" ||
+            contents === "nsp cured" ||
+            contents === "rt +ve cured";
+
+          html += `<tr${isTotalRow ? ' class="highlight-row"' : ''}>`;
+          html += keys.map(k => {
             const val = row[k];
             return `<td>${(val !== undefined && val !== null && val.toString().trim() !== "") ? val : "0"}</td>`;
-          }).join('')}</tr>`;
-
+          }).join('');
+          html += `</tr>`;
         });
+
         html += `</tbody></table></div>`;
         contentArea.innerHTML = html;
 
@@ -229,6 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Quarter-wise section error:", err);
       });
   }
+
 
 
   // Auto re-render on checkbox change
@@ -359,12 +385,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         selectedYears.forEach((year) => {
           html += `<tr><td>${year}</td>`;
-          let total = 0;
+          let sum = 0;
+          let count = 0;
+
           quarters.forEach((q) => {
             const val = filteredData[year]?.[q];
-            if (val !== undefined) {
+            if (val !== undefined && val !== null && val !== "") {
               html += `<td>${val}</td>`;
-              total += +val;
+              sum += +val;
+              count++;
               labels.push(`${q} ${year}`);
               values.push(+val);
             } else {
@@ -373,7 +402,14 @@ document.addEventListener("DOMContentLoaded", () => {
               values.push(null);
             }
           });
-          html += `<td>${total || "-"}</td></tr>`;
+
+          // For NSP and RT, calculate average instead of total
+          if (["NSP", "RT"].includes(folder)) {
+            const avg = count > 0 ? (sum / count).toFixed(1) : "-";
+            html += `<td>${avg}</td></tr>`;
+          } else {
+            html += `<td>${sum || "-"}</td></tr>`;
+          }
         });
 
         html += `
@@ -1060,7 +1096,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("tp-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("total_irl.json", "DR TB Laboratories trend – Total ", "totalChart");
+    renderIRLMultiTrend("total_irl.json", "DR TB Laboratories trend – Nellore & Darbhanga ", "totalChart");
   });
 
 
@@ -1428,7 +1464,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const labHeadings = {
-    total: "Nellore and Darbhanga DR TB LAB Services Annual Report",
+    total: "Nellore & Darbhanga DR TB LAB Services Annual Report",
     nellore: "Nellore DR TB LAB Services Annual Report",
     darbhanga: "Darbhanga DR TB LAB Services Annual Report"
   };
