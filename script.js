@@ -342,12 +342,20 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        let html = `<h3 style="text-align:center; margin: 10px 0;">${title}</h3>`;
-        html += `<button id="downloadTableBtn" style="display:none; margin-bottom:10px;">Download Table & Chart</button>`;
-        html += `<div class="table-container" id="table-section"><table class="quarter-table">`;
-        html += `<thead><tr style="background-color: #f7931e; color: white;"><th>Year</th>`;
-        quarters.forEach(q => html += `<th>${q}</th>`);
-        html += `<th>Annual</th></tr></thead><tbody>`;
+        let html = `
+  <div class="table-container" id="table-section">
+    <h3 style="text-align:center; margin: 10px 0;">${title}</h3>
+    <button id="downloadTableBtn" style="display:none; margin-bottom:10px;">Download Table & Chart</button>
+    <table class="quarter-table">
+      <thead>
+        <tr style="background-color: #f7931e; color: white;">
+          <th>Year</th>`;
+        quarters.forEach(q => {
+          html += `<th>${q}</th>`;
+        });
+        html += `<th>Annual</th></tr>
+      </thead>
+      <tbody>`;
 
         selectedYears.forEach((year) => {
           html += `<tr><td>${year}</td>`;
@@ -368,9 +376,17 @@ document.addEventListener("DOMContentLoaded", () => {
           html += `<td>${total || "-"}</td></tr>`;
         });
 
-        html += `</tbody></table></div>`;
-        html += `<div style="height: 400px;"><canvas id="quarterChart"></canvas></div>`;
+        html += `
+      </tbody>
+    </table>
+  </div>
+  <div style="height: 400px;">
+    <canvas id="quarterChart"></canvas>
+  </div>
+`;
+
         container.innerHTML = html;
+
 
         const ctx = document.getElementById("quarterChart").getContext("2d");
         const colors = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
@@ -395,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
           options: {
             layout: {
               padding: {
-                right: 30
+                right: 30,
               }
             },
             plugins: {
@@ -403,10 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 align: "top",
                 anchor: "end",
                 color: "#000",
-                font: {
-                  weight: "bold",
-                  size: 12
-                },
+                font: { weight: "bold", size: 12 },
                 clamp: true
               },
               tooltip: {
@@ -416,17 +429,17 @@ document.addEventListener("DOMContentLoaded", () => {
               legend: {
                 labels: {
                   color: "#000",
-                  font: {
-                    size: 14,
-                    weight: "bold"
-                  }
-                }
+                  font: { size: 14, weight: "bold" }
+                },
+                padding: 20
               }
             },
             scales: {
               y: {
                 beginAtZero: true,
+                grace: '5%',
                 ticks: {
+                  padding: 10,
                   color: "#000",
                   font: { size: 12, weight: "bold" }
                 },
@@ -438,7 +451,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
               },
               x: {
+                offset: true,
                 ticks: {
+                  padding: 5,
                   color: "#000",
                   font: { size: 12, weight: "bold" }
                 },
@@ -453,9 +468,10 @@ document.addEventListener("DOMContentLoaded", () => {
             responsive: true,
             maintainAspectRatio: false
           },
+
           plugins: [ChartDataLabels]
         });
-
+        // ✅ Combined Download
         enableDownloadBoth(`${title.replace(/\s+/g, "_")}_Report`, "#table-section", "#quarterChart");
       })
       .catch((err) => {
