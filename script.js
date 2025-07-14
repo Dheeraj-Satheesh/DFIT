@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { code: "bel", title: "Belatanr Hospital" },
     { code: "pop", title: "Pope John Garden Hospital" },
     { code: "chi", title: "Chilakala Palli Hospital" },
-    { code: "tri", title: "Trivendrum Hospital" },
+    { code: "tri", title: "Trivandrum Hospital" },
     { code: "and", title: "Andipatti Hospital" },
     { code: "amb", title: "Ambalamoola Hospital" },
   ];
@@ -1254,7 +1254,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { code: "bel", title: "Belatanr Hospital" },
     { code: "pop", title: "Pope John Garden Hospital" },
     { code: "chi", title: "Chilakala Palli Hospital" },
-    { code: "tri", title: "Trivendrum Hospital" },
+    { code: "tri", title: "Trivandrum Hospital" },
     { code: "and", title: "Andipatti Hospital" },
     { code: "amb", title: "Ambalamoola Hospital" },
   ];

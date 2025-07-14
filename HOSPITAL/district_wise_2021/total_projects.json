@@ -91,7 +91,7 @@
   },
   {
     "S.NO": "2.f",
-    "Contents": "Total No. of new leprosy cases detected",
+    "Contents": "Total no. of New Leprosy Cases detected",
     "I Qtr-2021": "123",
     "II Qtr-2021": "66",
     "III Qtr- 2021": "120",
@@ -244,7 +244,7 @@
   },
   {
     "S.NO": "3",
-    "Contents": "lepra ReactionType-1 Male",
+    "Contents": "lepra Reaction Type-1 Male",
     "I Qtr-2021": "34",
     "II Qtr-2021": "21",
     "III Qtr- 2021": "45",
@@ -253,7 +253,7 @@
   },
   {
     "S.NO": "3.a",
-    "Contents": "lepra ReactionType-1 Female",
+    "Contents": "lepra Reaction Type-1 Female",
     "I Qtr-2021": "23",
     "II Qtr-2021": "12",
     "III Qtr- 2021": "19",
@@ -271,7 +271,7 @@
   },
   {
     "S.NO": "3.c",
-    "Contents": "lepra ReactionType-2 Male",
+    "Contents": "lepra Reaction Type-2 Male",
     "I Qtr-2021": "35",
     "II Qtr-2021": "8",
     "III Qtr- 2021": "21",
@@ -280,7 +280,7 @@
   },
   {
     "S.NO": "3.d",
-    "Contents": "lepra ReactionType-2 Female",
+    "Contents": "lepra Reaction Type-2 Female",
     "I Qtr-2021": "8",
     "II Qtr-2021": "10",
     "III Qtr- 2021": "9",
