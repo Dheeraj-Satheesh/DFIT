@@ -1119,7 +1119,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const labels = selectedYears.map(String);
         const values = selectedYears.map(y => {
           const val = data[0][y];
-          return val && val.trim() !== "" ? parseInt(val) : 0;
+          return val && val.trim() !== "" ? parseFloat(val) : 0;
+
         });
 
         // ✅ Build Table + Chart
@@ -1268,6 +1269,7 @@ document.addEventListener("DOMContentLoaded", () => {
     RCS: "Deformity correction surgeries(RCS) – Annual Statistics",
     LEPAD: "Hospital admission of leprosy patients with complications – Annual Statistics",
     LEPBED: "Leprosy Patients Bed occupancy – Annual Statistics",
+    LEPBEDRATE: "Leprosy Patients Bed occupancy rate – Annual Statistics",
     PRETB: "Presumptive TB cases sputum examination – Annual Statistics",
     TB: "Total TB cases Diagnosed – Annual Statistics",
     NSP: "Outcomes of TB-NSP Cure Rate – Annual Statistics",
@@ -1283,6 +1285,7 @@ document.addEventListener("DOMContentLoaded", () => {
     RCS: "rcs",
     LEPAD: "lepad",
     LEPBED: "lepbed",
+    LEPBEDRATE: "lepbedr",
     PRETB: "pretb",
     TB: "tb",
     NSP: "nsp",
