@@ -40,7 +40,7 @@
         "Total 2024": "3361"
     },
     {
-        "Type of Cases": "Relapse",
+        "Type of Cases": "Recurrent TB",
         "I Qtr 2024": "53",
         "II Qtr 2024": "41",
         "III Qtr 2024": "54",
@@ -48,7 +48,7 @@
         "Total 2024": "194"
     },
     {
-        "Type of Cases": "Failures ",
+        "Type of Cases": "Treatment After Failure",
         "I Qtr 2024": "0",
         "II Qtr 2024": "2",
         "III Qtr 2024": "0",
@@ -56,7 +56,7 @@
         "Total 2024": "2"
     },
     {
-        "Type of Cases": "TAD",
+        "Type of Cases": "Treatment After Loss to Follow-up",
         "I Qtr 2024": "9",
         "II Qtr 2024": "1",
         "III Qtr 2024": "2",
@@ -64,7 +64,7 @@
         "Total 2024": "20"
     },
     {
-        "Type of Cases": "Others ",
+        "Type of Cases": "Other Previously Treated Patients",
         "I Qtr 2024": "70",
         "II Qtr 2024": "64",
         "III Qtr 2024": "63",

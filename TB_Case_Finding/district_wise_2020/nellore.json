@@ -40,7 +40,7 @@
         "Total 2020": "71"
     },
     {
-        "Type of Cases": "Relapse",
+        "Type of Cases": "Recurrent TB",
         "I Qtr 2020": "4",
         "II Qtr 2020": "2",
         "III Qtr 2020": "3",
@@ -48,7 +48,7 @@
         "Total 2020": "10"
     },
     {
-        "Type of Cases": "Failures ",
+        "Type of Cases": "Treatment After Failure",
         "I Qtr 2020": "0",
         "II Qtr 2020": "0",
         "III Qtr 2020": "0",
@@ -56,7 +56,7 @@
         "Total 2020": "0"
     },
     {
-        "Type of Cases": "TAD",
+        "Type of Cases": "Treatment After Loss to Follow-up",
         "I Qtr 2020": "0",
         "II Qtr 2020": "0",
         "III Qtr 2020": "0",
@@ -64,7 +64,7 @@
         "Total 2020": "0"
     },
     {
-        "Type of Cases": "Others ",
+        "Type of Cases": "Other Previously Treated Patients",
         "I Qtr 2020": "6",
         "II Qtr 2020": "4",
         "III Qtr 2020": "4",

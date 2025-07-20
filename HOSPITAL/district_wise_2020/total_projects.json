@@ -91,7 +91,7 @@
   },
   {
     "S.NO": "2.f",
-    "Contents": "Total No. of new leprosy cases detected",
+    "Contents": "Total no. of New Leprosy Cases detected",
     "I qtr-2020": "69",
     "II qtr-2020": "47",
     "III qtr- 2020": "64",
@@ -244,7 +244,7 @@
   },
   {
     "S.NO": "3",
-    "Contents": "lepra ReactionType-1 Male",
+    "Contents": "lepra Reaction Type-1 Male",
     "I qtr-2020": "30",
     "II qtr-2020": "27",
     "III qtr- 2020": "27",
@@ -253,7 +253,7 @@
   },
   {
     "S.NO": "3.a",
-    "Contents": "lepra ReactionType-1 Female",
+    "Contents": "lepra Reaction Type-1 Female",
     "I qtr-2020": "10",
     "II qtr-2020": "12",
     "III qtr- 2020": "21",
@@ -271,7 +271,7 @@
   },
   {
     "S.NO": "3.c",
-    "Contents": "lepra ReactionType-2 Male",
+    "Contents": "lepra Reaction Type-2 Male",
     "I qtr-2020": "19",
     "II qtr-2020": "5",
     "III qtr- 2020": "22",
@@ -280,7 +280,7 @@
   },
   {
     "S.NO": "3.d",
-    "Contents": "lepra ReactionType-2 Female",
+    "Contents": "lepra Reaction Type-2 Female",
     "I qtr-2020": "5",
     "II qtr-2020": "2",
     "III qtr- 2020": "4",
@@ -310,81 +310,81 @@
     "Contents": "RCS Male",
     "I qtr-2020": "51",
     "II qtr-2020": "2",
-    "III qtr- 2020": "6",
-    "IV qtr-2020": "23",
-    "Annual 2020": "82"
+    "III qtr- 2020": "30",
+    "IV qtr-2020": "43",
+    "Annual 2020": "126"
   },
   {
     "S.NO": "5.a",
     "Contents": "RCS Female",
     "I qtr-2020": "14",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
-    "IV qtr-2020": "9",
-    "Annual 2020": "23"
+    "III qtr- 2020": "8",
+    "IV qtr-2020": "20",
+    "Annual 2020": "42"
   },
   {
     "S.NO": "5.b",
     "Contents": "TOTAL RCS DONE ",
     "I qtr-2020": "65",
     "II qtr-2020": "2",
-    "III qtr- 2020": "6",
-    "IV qtr-2020": "32",
-    "Annual 2020": "105"
+    "III qtr- 2020": "38",
+    "IV qtr-2020": "63",
+    "Annual 2020": "168"
   },
   {
     "S.NO": "5.c",
     "Contents": "Eye Male RCS Done",
     "I qtr-2020": "5",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
-    "IV qtr-2020": "0",
-    "Annual 2020": "5"
+    "III qtr- 2020": "2",
+    "IV qtr-2020": "2",
+    "Annual 2020": "9"
   },
   {
     "S.NO": "5.d",
     "Contents": "Eye Female RCS Done",
     "I qtr-2020": "1",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
+    "III qtr- 2020": "1",
     "IV qtr-2020": "0",
-    "Annual 2020": "1"
+    "Annual 2020": "2"
   },
   {
     "S.NO": "5.e",
     "Contents": "Total Eye RCS Done",
     "I qtr-2020": "6",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
-    "IV qtr-2020": "0",
-    "Annual 2020": "6"
+    "III qtr- 2020": "3",
+    "IV qtr-2020": "2",
+    "Annual 2020": "11"
   },
   {
     "S.NO": "5.f",
     "Contents": "Hand Male RCS Done",
     "I qtr-2020": "40",
     "II qtr-2020": "1",
-    "III qtr- 2020": "5",
-    "IV qtr-2020": "21",
-    "Annual 2020": "67"
+    "III qtr- 2020": "27",
+    "IV qtr-2020": "38",
+    "Annual 2020": "106"
   },
   {
     "S.NO": "5.g",
     "Contents": "Hand Female RCS Done",
     "I qtr-2020": "9",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
-    "IV qtr-2020": "9",
-    "Annual 2020": "18"
+    "III qtr- 2020": "6",
+    "IV qtr-2020": "20",
+    "Annual 2020": "35"
   },
   {
     "S.NO": "5.h",
     "Contents": "Total Hand RCS Done",
     "I qtr-2020": "49",
     "II qtr-2020": "1",
-    "III qtr- 2020": "5",
-    "IV qtr-2020": "30",
-    "Annual 2020": "85"
+    "III qtr- 2020": "33",
+    "IV qtr-2020": "58",
+    "Annual 2020": "141"
   },
   {
     "S.NO": "5.i",
@@ -392,26 +392,26 @@
     "I qtr-2020": "6",
     "II qtr-2020": "1",
     "III qtr- 2020": "1",
-    "IV qtr-2020": "2",
-    "Annual 2020": "10"
+    "IV qtr-2020": "3",
+    "Annual 2020": "11"
   },
   {
     "S.NO": "5.j",
     "Contents": "Foot Female RCS Done",
     "I qtr-2020": "4",
     "II qtr-2020": "0",
-    "III qtr- 2020": "0",
+    "III qtr- 2020": "1",
     "IV qtr-2020": "0",
-    "Annual 2020": "4"
+    "Annual 2020": "5"
   },
   {
     "S.NO": "5.k",
     "Contents": "Total Foot RCS Done",
     "I qtr-2020": "10",
     "II qtr-2020": "1",
-    "III qtr- 2020": "1",
-    "IV qtr-2020": "2",
-    "Annual 2020": "14"
+    "III qtr- 2020": "2",
+    "IV qtr-2020": "3",
+    "Annual 2020": "16"
   },
   {
     "S.NO": "6",
@@ -505,7 +505,7 @@
   },
   {
     "S.NO": "7.g",
-    "Contents": "Female EducationSupport",
+    "Contents": "Female Education Support",
     "I qtr-2020": "1",
     "II qtr-2020": "0",
     "III qtr- 2020": "0",
@@ -537,7 +537,7 @@
     "II qtr-2020": "184",
     "III qtr- 2020": "168",
     "IV qtr-2020": "217",
-    "Annual 2020": "926"
+    "Annual 2020": "980"
   },
   {
     "S.NO": "8.b",
@@ -559,7 +559,7 @@
   },
   {
     "S.NO": "8.d",
-    "Contents": "Planter Ulcer sand Others Patients Admitted",
+    "Contents": "Planter ulcers and Others Patients Admitted",
     "I qtr-2020": "269",
     "II qtr-2020": "141",
     "III qtr- 2020": "144",

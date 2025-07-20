@@ -40,7 +40,7 @@
     "Total 2016": ""
   },
   {
-    "Type of Cases": "Relapse",
+    "Type of Cases": "Recurrent TB",
     "I Qtr 2016": "",
     "II Qtr 2016": "",
     "III Qtr 2016": "",
@@ -48,7 +48,7 @@
     "Total 2016": ""
   },
   {
-    "Type of Cases": "Failures ",
+    "Type of Cases": "Treatment After Failure",
     "I Qtr 2016": "",
     "II Qtr 2016": "",
     "III Qtr 2016": "",
@@ -56,7 +56,7 @@
     "Total 2016": ""
   },
   {
-    "Type of Cases": "TAD",
+    "Type of Cases": "Treatment After Loss to Follow-up",
     "I Qtr 2016": "",
     "II Qtr 2016": "",
     "III Qtr 2016": "",
@@ -64,7 +64,7 @@
     "Total 2016": ""
   },
   {
-    "Type of Cases": "Others ",
+    "Type of Cases": "Other Previously Treated Patients",
     "I Qtr 2016": "",
     "II Qtr 2016": "",
     "III Qtr 2016": "",

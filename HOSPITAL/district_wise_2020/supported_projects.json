@@ -91,7 +91,7 @@
     },
     {
         "S.NO": "2.f",
-        "Contents": "Total No. of new leprosy cases detected",
+        "Contents": "Total no. of New Leprosy Cases detected",
         "I qtr-2020": "27",
         "II qtr-2020": "17",
         "III qtr- 2020": "37",
@@ -244,7 +244,7 @@
     },
     {
         "S.NO": "3",
-        "Contents": "lepra ReactionType-1 Male",
+        "Contents": "lepra Reaction Type-1 Male",
         "I qtr-2020": "14",
         "II qtr-2020": "8",
         "III qtr- 2020": "11",
@@ -253,7 +253,7 @@
     },
     {
         "S.NO": "3.a",
-        "Contents": "lepra ReactionType-1 Female",
+        "Contents": "lepra Reaction Type-1 Female",
         "I qtr-2020": "4",
         "II qtr-2020": "8",
         "III qtr- 2020": "11",
@@ -271,7 +271,7 @@
     },
     {
         "S.NO": "3.c",
-        "Contents": "lepra ReactionType-2 Male",
+        "Contents": "lepra Reaction Type-2 Male",
         "I qtr-2020": "9",
         "II qtr-2020": "3",
         "III qtr- 2020": "15",
@@ -280,7 +280,7 @@
     },
     {
         "S.NO": "3.d",
-        "Contents": "lepra ReactionType-2 Female",
+        "Contents": "lepra Reaction Type-2 Female",
         "I qtr-2020": "3",
         "II qtr-2020": "2",
         "III qtr- 2020": "3",
@@ -505,7 +505,7 @@
     },
     {
         "S.NO": "7.g",
-        "Contents": "Female EducationSupport",
+        "Contents": "Female Education Support",
         "I qtr-2020": "0",
         "II qtr-2020": "0",
         "III qtr- 2020": "0",
@@ -559,7 +559,7 @@
     },
     {
         "S.NO": "8.d",
-        "Contents": "Planter Ulcer sand Others Patients Admitted",
+        "Contents": "Planter ulcers and Others Patients Admitted",
         "I qtr-2020": "175",
         "II qtr-2020": "98",
         "III qtr- 2020": "92",

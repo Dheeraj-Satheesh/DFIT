@@ -40,7 +40,7 @@
         "Total 2015": "1131"
     },
     {
-        "Type of Cases": "Relapse",
+        "Type of Cases": "Recurrent TB",
         "I Qtr-2015": "44",
         "II Qtr -2015": "25",
         "III Qtr-2015": "30",
@@ -48,7 +48,7 @@
         "Total 2015": "126"
     },
     {
-        "Type of Cases": "Failures ",
+        "Type of Cases": "Treatment After Failure",
         "I Qtr-2015": "9",
         "II Qtr -2015": "5",
         "III Qtr-2015": "10",
@@ -56,7 +56,7 @@
         "Total 2015": "35"
     },
     {
-        "Type of Cases": "TAD",
+        "Type of Cases": "Treatment After Loss to Follow-up",
         "I Qtr-2015": "12",
         "II Qtr -2015": "12",
         "III Qtr-2015": "7",
@@ -64,7 +64,7 @@
         "Total 2015": "47"
     },
     {
-        "Type of Cases": "Others ",
+        "Type of Cases": "Other Previously Treated Patients",
         "I Qtr-2015": "22",
         "II Qtr -2015": "14",
         "III Qtr-2015": "17",

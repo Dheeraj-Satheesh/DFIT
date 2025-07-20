@@ -40,7 +40,7 @@
         "Total 2022": "50"
     },
     {
-        "Type of Cases": "Relapse",
+        "Type of Cases": "Recurrent TB",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "2",
@@ -48,7 +48,7 @@
         "Total 2022": "2"
     },
     {
-        "Type of Cases": "Failures ",
+        "Type of Cases": "Treatment After Failure",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -56,7 +56,7 @@
         "Total 2022": "0"
     },
     {
-        "Type of Cases": "TAD",
+        "Type of Cases": "Treatment After Loss to Follow-up",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "0",
@@ -64,7 +64,7 @@
         "Total 2022": "0"
     },
     {
-        "Type of Cases": "Others ",
+        "Type of Cases": "Other Previously Treated Patients",
         "I Qtr 2022": "0",
         "II Qtr 2022": "0",
         "III Qtr 2022": "3",

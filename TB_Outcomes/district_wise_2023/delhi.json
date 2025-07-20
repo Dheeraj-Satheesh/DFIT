@@ -36,7 +36,7 @@
         "%": "1"
     },
     {
-        "Type of cases ": "NSP Defaulted",
+        "Type of cases ": "NSP Lost to Follow-up",
         "I qtr 2023": "8",
         "II qtr 2023": "7",
         "III qtr 2023": "7",
@@ -45,7 +45,7 @@
         "%": "3"
     },
     {
-        "Type of cases ": "NSP Transferred out",
+        "Type of cases ": "NSP Not Evaluated",
         "I qtr 2023": "0",
         "II qtr 2023": "0",
         "III qtr 2023": "1",
@@ -54,7 +54,7 @@
         "%": "0.11"
     },
     {
-        "Type of cases ": "NSP Switched to IV",
+        "Type of cases ": "NSP Treatment Regimen Changed",
         "I qtr 2023": "22",
         "II qtr 2023": "20",
         "III qtr 2023": "12",
@@ -108,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted",
+        "Type of cases ": "NSN/NEP Lost to Follow-up",
         "I qtr 2023": "8",
         "II qtr 2023": "4",
         "III qtr 2023": "6",
@@ -117,7 +117,7 @@
         "%": "1"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out",
+        "Type of cases ": "NSN/NEP Not Evaluated",
         "I qtr 2023": "2",
         "II qtr 2023": "1",
         "III qtr 2023": "0",
@@ -126,7 +126,7 @@
         "%": "0.14"
     },
     {
-        "Type of cases ": "NSN/NEP Switched to IV",
+        "Type of cases ": "NSN/NEP Treatment Regimen Changed",
         "I qtr 2023": "2",
         "II qtr 2023": "0",
         "III qtr 2023": "1",
@@ -180,7 +180,7 @@
         "%": "3"
     },
     {
-        "Type of cases ": "RT +ve Defaulted",
+        "Type of cases ": "RT +ve Lost to Follow-up",
         "I qtr 2023": "3",
         "II qtr 2023": "1",
         "III qtr 2023": "1",
@@ -189,7 +189,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "RT +ve Transferred out",
+        "Type of cases ": "RT +ve Not Evaluated",
         "I qtr 2023": "0",
         "II qtr 2023": "0",
         "III qtr 2023": "0",
@@ -198,7 +198,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases ": "RT +ve Switched to IV",
+        "Type of cases ": "RT +ve Treatment Regimen Changed",
         "I qtr 2023": "12",
         "II qtr 2023": "3",
         "III qtr 2023": "4",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Defaulted",
+        "Type of cases ": "RT Neg Lost to Follow-up",
         "I qtr 2023": "1",
         "II qtr 2023": "1",
         "III qtr 2023": "1",
@@ -261,7 +261,7 @@
         "%": "1"
     },
     {
-        "Type of cases ": "RT Neg Transferred out",
+        "Type of cases ": "RT Neg Not Evaluated",
         "I qtr 2023": "0",
         "II qtr 2023": "0",
         "III qtr 2023": "0",
@@ -270,7 +270,7 @@
         "%": "0.00"
     },
     {
-        "Type of cases ": "RT Neg Switched to IV",
+        "Type of cases ": "RT Neg Treatment Regimen Changed",
         "I qtr 2023": "1",
         "II qtr 2023": "0",
         "III qtr 2023": "0",

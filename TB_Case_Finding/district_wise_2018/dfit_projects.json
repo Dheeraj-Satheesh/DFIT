@@ -40,7 +40,7 @@
     "Total 2018": "2097"
   },
   {
-    "Type of Cases": "Relapse",
+    "Type of Cases": "Recurrent TB",
     "I Qtr 2018": "47",
     "II Qtr 2018": "40",
     "III Qtr 2018": "35",
@@ -48,7 +48,7 @@
     "Total 2018": "154"
   },
   {
-    "Type of Cases": "Failures ",
+    "Type of Cases": "Treatment After Failure",
     "I Qtr 2018": "7",
     "II Qtr 2018": "3",
     "III Qtr 2018": "3",
@@ -56,7 +56,7 @@
     "Total 2018": "18"
   },
   {
-    "Type of Cases": "TAD",
+    "Type of Cases": "Treatment After Loss to Follow-up",
     "I Qtr 2018": "41",
     "II Qtr 2018": "23",
     "III Qtr 2018": "28",
@@ -64,7 +64,7 @@
     "Total 2018": "109"
   },
   {
-    "Type of Cases": "Others ",
+    "Type of Cases": "Other Previously Treated Patients",
     "I Qtr 2018": "46",
     "II Qtr 2018": "74",
     "III Qtr 2018": "56",

@@ -40,7 +40,7 @@
     "Total 2023": "929"
   },
   {
-    "Type of Cases": "Relapse",
+    "Type of Cases": "Recurrent TB",
     "I Qtr 2023": "15",
     "II Qtr 2023": "15",
     "III Qtr 2023": "23",
@@ -48,7 +48,7 @@
     "Total 2023": "73"
   },
   {
-    "Type of Cases": "Failures ",
+    "Type of Cases": "Treatment After Failure",
     "I Qtr 2023": "0",
     "II Qtr 2023": "3",
     "III Qtr 2023": "3",
@@ -56,7 +56,7 @@
     "Total 2023": "6"
   },
   {
-    "Type of Cases": "TAD",
+    "Type of Cases": "Treatment After Loss to Follow-up",
     "I Qtr 2023": "1",
     "II Qtr 2023": "1",
     "III Qtr 2023": "2",
@@ -64,7 +64,7 @@
     "Total 2023": "5"
   },
   {
-    "Type of Cases": "Others ",
+    "Type of Cases": "Other Previously Treated Patients",
     "I Qtr 2023": "32",
     "II Qtr 2023": "29",
     "III Qtr 2023": "28",

@@ -36,7 +36,7 @@
         "%": "2.3"
     },
     {
-        "Type of cases ": "NSP Defaulted",
+        "Type of cases ": "NSP Lost to Follow-up",
         "I Qtr-2015": "8",
         "II Qtr -2015": "17",
         "III Qtr-2015": "11",
@@ -45,7 +45,7 @@
         "%": "5.9"
     },
     {
-        "Type of cases ": "NSP Transferred out",
+        "Type of cases ": "NSP Not Evaluated",
         "I Qtr-2015": "1",
         "II Qtr -2015": "0",
         "III Qtr-2015": "0",
@@ -54,7 +54,7 @@
         "%": "0.1"
     },
     {
-        "Type of cases ": "NSP Switched to IV",
+        "Type of cases ": "NSP Treatment Regimen Changed",
         "I Qtr-2015": "0",
         "II Qtr -2015": "1",
         "III Qtr-2015": "2",
@@ -108,7 +108,7 @@
         "%": "0.2"
     },
     {
-        "Type of cases ": "NSN/NEP Defaulted",
+        "Type of cases ": "NSN/NEP Lost to Follow-up",
         "I Qtr-2015": "5",
         "II Qtr -2015": "7",
         "III Qtr-2015": "8",
@@ -117,7 +117,7 @@
         "%": "6.2"
     },
     {
-        "Type of cases ": "NSN/NEP Transferred out",
+        "Type of cases ": "NSN/NEP Not Evaluated",
         "I Qtr-2015": "0",
         "II Qtr -2015": "0",
         "III Qtr-2015": "0",
@@ -126,7 +126,7 @@
         "%": "0.2"
     },
     {
-        "Type of cases ": "NSN/NEP Switched to IV",
+        "Type of cases ": "NSN/NEP Treatment Regimen Changed",
         "I Qtr-2015": "0",
         "II Qtr -2015": "0",
         "III Qtr-2015": "1",
@@ -180,7 +180,7 @@
         "%": "3.5"
     },
     {
-        "Type of cases ": "RT +ve Defaulted",
+        "Type of cases ": "RT +ve Lost to Follow-up",
         "I Qtr-2015": "11",
         "II Qtr -2015": "9",
         "III Qtr-2015": "6",
@@ -189,7 +189,7 @@
         "%": "21.7"
     },
     {
-        "Type of cases ": "RT +ve Transferred out",
+        "Type of cases ": "RT +ve Not Evaluated",
         "I Qtr-2015": "1",
         "II Qtr -2015": "0",
         "III Qtr-2015": "1",
@@ -198,7 +198,7 @@
         "%": "1.0"
     },
     {
-        "Type of cases ": "RT +ve Switched to IV",
+        "Type of cases ": "RT +ve Treatment Regimen Changed",
         "I Qtr-2015": "1",
         "II Qtr -2015": "0",
         "III Qtr-2015": "0",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Defaulted",
+        "Type of cases ": "RT Neg Lost to Follow-up",
         "I Qtr-2015": "6",
         "II Qtr -2015": "2",
         "III Qtr-2015": "4",
@@ -261,7 +261,7 @@
         "%": "15.4"
     },
     {
-        "Type of cases ": "RT Neg Transferred out",
+        "Type of cases ": "RT Neg Not Evaluated",
         "I Qtr-2015": "0",
         "II Qtr -2015": "0",
         "III Qtr-2015": "0",
@@ -270,7 +270,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Switched to IV",
+        "Type of cases ": "RT Neg Treatment Regimen Changed",
         "I Qtr-2015": "1",
         "II Qtr -2015": "0",
         "III Qtr-2015": "0",
