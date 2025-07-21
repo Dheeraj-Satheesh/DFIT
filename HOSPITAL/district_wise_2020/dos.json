@@ -4,7 +4,7 @@
         "Contents": "Total number of outpatients treated",
         "I Qtr-2020": "664",
         "II Qtr-2020": "463",
-        "III Qtr- 2020": "700",
+        "III Qtr-2020": "700",
         "IV Qtr-2020": "715",
         "Annual 2020": "2542"
     },
@@ -13,7 +13,7 @@
         "Contents": "Skin diseases",
         "I Qtr-2020": "617",
         "II Qtr-2020": "430",
-        "III Qtr- 2020": "638",
+        "III Qtr-2020": "638",
         "IV Qtr-2020": "660",
         "Annual 2020": "2345"
     },
@@ -22,7 +22,7 @@
         "Contents": "Respiratory symtomatics",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -31,7 +31,7 @@
         "Contents": "Others",
         "I Qtr-2020": "47",
         "II Qtr-2020": "33",
-        "III Qtr- 2020": "62",
+        "III Qtr-2020": "62",
         "IV Qtr-2020": "55",
         "Annual 2020": "197"
     },
@@ -40,7 +40,7 @@
         "Contents": "Adult-PB",
         "I Qtr-2020": "9",
         "II Qtr-2020": "10",
-        "III Qtr- 2020": "10",
+        "III Qtr-2020": "10",
         "IV Qtr-2020": "14",
         "Annual 2020": "43"
     },
@@ -49,7 +49,7 @@
         "Contents": "Adult-MB",
         "I Qtr-2020": "13",
         "II Qtr-2020": "9",
-        "III Qtr- 2020": "7",
+        "III Qtr-2020": "7",
         "IV Qtr-2020": "8",
         "Annual 2020": "37"
     },
@@ -58,7 +58,7 @@
         "Contents": "Adult-Total",
         "I Qtr-2020": "22",
         "II Qtr-2020": "19",
-        "III Qtr- 2020": "17",
+        "III Qtr-2020": "17",
         "IV Qtr-2020": "22",
         "Annual 2020": "80"
     },
@@ -67,7 +67,7 @@
         "Contents": "Children-PB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "2",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "1",
         "Annual 2020": "4"
     },
@@ -76,7 +76,7 @@
         "Contents": "Children-MB",
         "I Qtr-2020": "1",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "1",
         "Annual 2020": "3"
     },
@@ -85,7 +85,7 @@
         "Contents": "Children-Total",
         "I Qtr-2020": "1",
         "II Qtr-2020": "2",
-        "III Qtr- 2020": "2",
+        "III Qtr-2020": "2",
         "IV Qtr-2020": "2",
         "Annual 2020": "7"
     },
@@ -94,7 +94,7 @@
         "Contents": "Total no. of New Leprosy Cases detected",
         "I Qtr-2020": "23",
         "II Qtr-2020": "21",
-        "III Qtr- 2020": "19",
+        "III Qtr-2020": "19",
         "IV Qtr-2020": "24",
         "Annual 2020": "87"
     },
@@ -103,7 +103,7 @@
         "Contents": "Relapse Cases",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "1",
         "Annual 2020": "2"
     },
@@ -112,7 +112,7 @@
         "Contents": "Female-PB",
         "I Qtr-2020": "2",
         "II Qtr-2020": "5",
-        "III Qtr- 2020": "3",
+        "III Qtr-2020": "3",
         "IV Qtr-2020": "10",
         "Annual 2020": "20"
     },
@@ -121,7 +121,7 @@
         "Contents": "Female-MB",
         "I Qtr-2020": "3",
         "II Qtr-2020": "2",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "6",
         "Annual 2020": "12"
     },
@@ -130,7 +130,7 @@
         "Contents": "Female-Total",
         "I Qtr-2020": "5",
         "II Qtr-2020": "7",
-        "III Qtr- 2020": "4",
+        "III Qtr-2020": "4",
         "IV Qtr-2020": "16",
         "Annual 2020": "32"
     },
@@ -139,7 +139,7 @@
         "Contents": "Adult disability G-I-PB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "2",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "2"
     },
@@ -148,7 +148,7 @@
         "Contents": "Adult disability G-I-MB",
         "I Qtr-2020": "2",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "3"
     },
@@ -157,7 +157,7 @@
         "Contents": "Total Adult disability G-I",
         "I Qtr-2020": "2",
         "II Qtr-2020": "2",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "5"
     },
@@ -166,7 +166,7 @@
         "Contents": "Adult disability G- II-PB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -175,7 +175,7 @@
         "Contents": "Adult disability G-II-MB",
         "I Qtr-2020": "4",
         "II Qtr-2020": "4",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "2",
         "Annual 2020": "11"
     },
@@ -184,7 +184,7 @@
         "Contents": "Total Adult disability G-II",
         "I Qtr-2020": "4",
         "II Qtr-2020": "4",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "2",
         "Annual 2020": "11"
     },
@@ -193,7 +193,7 @@
         "Contents": "Children disability G-I-PB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -202,7 +202,7 @@
         "Contents": "Children disability G-I-MB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "1"
     },
@@ -211,7 +211,7 @@
         "Contents": "Total Children disability G-I",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "1"
     },
@@ -220,7 +220,7 @@
         "Contents": "Children disability G-II-PB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "1"
     },
@@ -229,7 +229,7 @@
         "Contents": "Children disability G-II-MB",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -238,7 +238,7 @@
         "Contents": "Total Children disability G-II",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "0",
         "Annual 2020": "1"
     },
@@ -247,7 +247,7 @@
         "Contents": "lepra Reaction Type-1 Male",
         "I Qtr-2020": "4",
         "II Qtr-2020": "11",
-        "III Qtr- 2020": "11",
+        "III Qtr-2020": "11",
         "IV Qtr-2020": "7",
         "Annual 2020": "33"
     },
@@ -256,7 +256,7 @@
         "Contents": "lepra Reaction Type-1 Female",
         "I Qtr-2020": "2",
         "II Qtr-2020": "1",
-        "III Qtr- 2020": "8",
+        "III Qtr-2020": "8",
         "IV Qtr-2020": "2",
         "Annual 2020": "13"
     },
@@ -265,7 +265,7 @@
         "Contents": "Total Type-1 lepra reactions",
         "I Qtr-2020": "6",
         "II Qtr-2020": "12",
-        "III Qtr- 2020": "19",
+        "III Qtr-2020": "19",
         "IV Qtr-2020": "9",
         "Annual 2020": "46"
     },
@@ -274,7 +274,7 @@
         "Contents": "lepra Reaction Type-2 Male",
         "I Qtr-2020": "3",
         "II Qtr-2020": "1",
-        "III Qtr- 2020": "6",
+        "III Qtr-2020": "6",
         "IV Qtr-2020": "0",
         "Annual 2020": "10"
     },
@@ -283,7 +283,7 @@
         "Contents": "lepra Reaction Type-2 Female",
         "I Qtr-2020": "2",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "1",
+        "III Qtr-2020": "1",
         "IV Qtr-2020": "1",
         "Annual 2020": "4"
     },
@@ -292,7 +292,7 @@
         "Contents": "Total Type 2 lepra reactions",
         "I Qtr-2020": "5",
         "II Qtr-2020": "1",
-        "III Qtr- 2020": "7",
+        "III Qtr-2020": "7",
         "IV Qtr-2020": "1",
         "Annual 2020": "14"
     },
@@ -301,7 +301,7 @@
         "Contents": "Total number of persons provided with MCR footwear",
         "I Qtr-2020": "5",
         "II Qtr-2020": "9",
-        "III Qtr- 2020": "7",
+        "III Qtr-2020": "7",
         "IV Qtr-2020": "1",
         "Annual 2020": "22"
     },
@@ -310,7 +310,7 @@
         "Contents": "RCS Male",
         "I Qtr-2020": "12",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "4",
+        "III Qtr-2020": "4",
         "IV Qtr-2020": "11",
         "Annual 2020": "27"
     },
@@ -319,7 +319,7 @@
         "Contents": "RCS Female",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "4",
         "Annual 2020": "4"
     },
@@ -328,7 +328,7 @@
         "Contents": "TOTAL RCS DONE ",
         "I Qtr-2020": "12",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "4",
+        "III Qtr-2020": "4",
         "IV Qtr-2020": "15",
         "Annual 2020": "31"
     },
@@ -337,7 +337,7 @@
         "Contents": "Eye Male RCS Done",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -346,7 +346,7 @@
         "Contents": "Eye Female RCS Done",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -355,7 +355,7 @@
         "Contents": "Total Eye RCS Done",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -364,7 +364,7 @@
         "Contents": "Hand Male RCS Done",
         "I Qtr-2020": "9",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "4",
+        "III Qtr-2020": "4",
         "IV Qtr-2020": "11",
         "Annual 2020": "24"
     },
@@ -373,7 +373,7 @@
         "Contents": "Hand Female RCS Done",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "4",
         "Annual 2020": "4"
     },
@@ -382,7 +382,7 @@
         "Contents": "Total Hand RCS Done",
         "I Qtr-2020": "9",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "4",
+        "III Qtr-2020": "4",
         "IV Qtr-2020": "15",
         "Annual 2020": "28"
     },
@@ -391,7 +391,7 @@
         "Contents": "Foot Male RCS Done",
         "I Qtr-2020": "3",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "3"
     },
@@ -400,7 +400,7 @@
         "Contents": "Foot Female RCS Done",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -409,7 +409,7 @@
         "Contents": "Total Foot RCS Done",
         "I Qtr-2020": "3",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "3"
     },
@@ -418,7 +418,7 @@
         "Contents": "Male Septic Surgeries /Nerve Decompression",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -427,7 +427,7 @@
         "Contents": "Female Septic Surgeries /Nerve Decompression",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -436,7 +436,7 @@
         "Contents": "Total Septic Surgeries /Nerve Decompression",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -445,7 +445,7 @@
         "Contents": "Male House Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -454,7 +454,7 @@
         "Contents": "Female House Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -463,7 +463,7 @@
         "Contents": "Total House Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -472,7 +472,7 @@
         "Contents": "Male Self-Employment Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -481,7 +481,7 @@
         "Contents": "Female Self-Employment Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -490,7 +490,7 @@
         "Contents": "Total Self-Employment Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -499,7 +499,7 @@
         "Contents": "Male Education Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -508,7 +508,7 @@
         "Contents": "Female Education Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -517,7 +517,7 @@
         "Contents": "Total Education Support",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -526,7 +526,7 @@
         "Contents": "Total Leprosy Beds Available",
         "I Qtr-2020": "30",
         "II Qtr-2020": "30",
-        "III Qtr- 2020": "30",
+        "III Qtr-2020": "30",
         "IV Qtr-2020": "30",
         "Annual 2020": "30"
     },
@@ -535,7 +535,7 @@
         "Contents": "Total Leprosy Patients Admitted",
         "I Qtr-2020": "42",
         "II Qtr-2020": "11",
-        "III Qtr- 2020": "17",
+        "III Qtr-2020": "17",
         "IV Qtr-2020": "30",
         "Annual 2020": "100"
     },
@@ -544,7 +544,7 @@
         "Contents": "Reactions Patients Admitted",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -553,7 +553,7 @@
         "Contents": "RCS Patients Admitted",
         "I Qtr-2020": "20",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "5",
+        "III Qtr-2020": "5",
         "IV Qtr-2020": "22",
         "Annual 2020": "47"
     },
@@ -562,7 +562,7 @@
         "Contents": "Planter ulcers and Others Patients Admitted",
         "I Qtr-2020": "22",
         "II Qtr-2020": "11",
-        "III Qtr- 2020": "12",
+        "III Qtr-2020": "12",
         "IV Qtr-2020": "8",
         "Annual 2020": "53"
     },
@@ -571,7 +571,7 @@
         "Contents": "Total no of Beds Occupied Leprosy Patients",
         "I Qtr-2020": "1187",
         "II Qtr-2020": "306",
-        "III Qtr- 2020": "529",
+        "III Qtr-2020": "529",
         "IV Qtr-2020": "781",
         "Annual 2020": "2803"
     },
@@ -580,7 +580,7 @@
         "Contents": "Bed Occupancy Rate for Leprosy",
         "I Qtr-2020": "44",
         "II Qtr-2020": "11.3",
-        "III Qtr- 2020": "19.6",
+        "III Qtr-2020": "19.6",
         "IV Qtr-2020": "28.9",
         "Annual 2020": "26"
     },
@@ -589,7 +589,7 @@
         "Contents": "Total TB/DRTB Beds Available",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -598,7 +598,7 @@
         "Contents": "Total  DSTB Patients Admitted",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -607,7 +607,7 @@
         "Contents": "Total  DRTB Patients Admitted",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -616,7 +616,7 @@
         "Contents": "Total no of Beds Occupied TB/DRTB Patients",
         "I Qtr-2020": "0",
         "II Qtr-2020": "0",
-        "III Qtr- 2020": "0",
+        "III Qtr-2020": "0",
         "IV Qtr-2020": "0",
         "Annual 2020": "0"
     },
@@ -625,7 +625,7 @@
         "Contents": "Bed Occupancy Rate for TB",
         "I Qtr-2020": "",
         "II Qtr-2020": "",
-        "III Qtr- 2020": "",
+        "III Qtr-2020": "",
         "IV Qtr-2020": "",
         "Annual 2020": "0"
     }

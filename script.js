@@ -297,6 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
     RCS: "RCS Done Cases – Quarterly Statistics",
     LEPAD: "Leprosy Inpatients – Quarterly Statistics",
     LEPBED: "Leprosy Bed Days – Quarterly Statistics",
+    LEPBEDRATE: "Leprosy Patients Bed occupancy rate – Quarterly Statistics",
     PRETB: "Presumptive TB Cases – Quarterly Statistics",
     TB: "Total TB Cases – Quarterly Statistics",
     NSP: "NSP Cure Rate – Quarterly Statistics",
@@ -312,6 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
     RCS: "qrcs",
     LEPAD: "qlepad",
     LEPBED: "qlepbed",
+    LEPBEDRATE: "qlepbedr",
     PRETB: "qpretb",
     TB: "qtb",
     NSP: "qnsp",
@@ -354,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.quarterChartInstance = null;
     }
 
-    fetch(`/data/${folder}/${fileName}`)
+    fetch(`/OUTPUT_QTR/${folder}/${fileName}`)
       .then((res) => res.json())
       .then((fullData) => {
         const quarters = ["Q1", "Q2", "Q3", "Q4"];
@@ -404,7 +406,7 @@ document.addEventListener("DOMContentLoaded", () => {
           });
 
           // For NSP and RT, calculate average instead of total
-          if (["NSP", "RT"].includes(folder)) {
+          if (["NSP", "RT", "LEPBEDRATE"].includes(folder)) {
             const avg = count > 0 ? (sum / count).toFixed(1) : "-";
             html += `<td>${avg}</td></tr>`;
           } else {
@@ -1111,7 +1113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedYears = getSelectedYears().filter(y => y !== 2025);
     selectedYears.sort();
 
-    const jsonPath = `GRAPH/${folder}/${jsonFile}`;
+    const jsonPath = `OUTPUT/${folder}/${jsonFile}`;
     fetch(jsonPath)
       .then(res => res.json())
       .then(data => {
@@ -1756,9 +1758,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "Total_projects", "All Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
+      renderQuarterWiseSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "Total_projects", "All Projects DS TB Cases and Sputum Conversion Annual Report");
+      renderMultiYearSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases and Sputum Conversion Annual Report");
     }
   });
   document.getElementById(tbcaseFindingLinks.dfit)?.addEventListener("click", e => {
@@ -1826,9 +1828,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Outcomes", "Total_projects", "All Projects DS TB Outcomes Quarter-Wise Report");
+      renderQuarterWiseSection("/TB_Outcomes", "total_projects", "All Projects DS TB Outcomes Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Outcomes", "Total_projects", "All Projects DS TB Outcomes Annual Report");
+      renderMultiYearSection("/TB_Outcomes", "total_projects", "All Projects DS TB Outcomes Annual Report");
     }
   });
   document.getElementById(tbOutcomesLinks.dfit)?.addEventListener("click", e => {

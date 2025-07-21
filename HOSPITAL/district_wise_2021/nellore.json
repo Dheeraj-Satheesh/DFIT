@@ -4,7 +4,7 @@
         "Contents": "Total number of outpatients treated",
         "I Qtr-2021": "949",
         "II Qtr-2021": "1655",
-        "III Qtr- 2021": "743",
+        "III Qtr-2021": "743",
         "IV Qtr-2021": "813",
         "Annual 2021": "4160"
     },
@@ -13,7 +13,7 @@
         "Contents": "Skin diseases",
         "I Qtr-2021": "391",
         "II Qtr-2021": "247",
-        "III Qtr- 2021": "306",
+        "III Qtr-2021": "306",
         "IV Qtr-2021": "218",
         "Annual 2021": "1162"
     },
@@ -22,7 +22,7 @@
         "Contents": "Respiratory symtomatics",
         "I Qtr-2021": "467",
         "II Qtr-2021": "1257",
-        "III Qtr- 2021": "391",
+        "III Qtr-2021": "391",
         "IV Qtr-2021": "468",
         "Annual 2021": "2583"
     },
@@ -31,7 +31,7 @@
         "Contents": "Others",
         "I Qtr-2021": "91",
         "II Qtr-2021": "151",
-        "III Qtr- 2021": "46",
+        "III Qtr-2021": "46",
         "IV Qtr-2021": "127",
         "Annual 2021": "415"
     },
@@ -40,7 +40,7 @@
         "Contents": "Adult-PB",
         "I Qtr-2021": "1",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "2"
     },
@@ -49,7 +49,7 @@
         "Contents": "Adult-MB",
         "I Qtr-2021": "9",
         "II Qtr-2021": "6",
-        "III Qtr- 2021": "10",
+        "III Qtr-2021": "10",
         "IV Qtr-2021": "7",
         "Annual 2021": "32"
     },
@@ -58,7 +58,7 @@
         "Contents": "Adult-Total",
         "I Qtr-2021": "10",
         "II Qtr-2021": "7",
-        "III Qtr- 2021": "10",
+        "III Qtr-2021": "10",
         "IV Qtr-2021": "7",
         "Annual 2021": "34"
     },
@@ -67,7 +67,7 @@
         "Contents": "Children-PB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -76,7 +76,7 @@
         "Contents": "Children-MB",
         "I Qtr-2021": "1",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "3",
+        "III Qtr-2021": "3",
         "IV Qtr-2021": "0",
         "Annual 2021": "5"
     },
@@ -85,7 +85,7 @@
         "Contents": "Children-Total",
         "I Qtr-2021": "1",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "3",
+        "III Qtr-2021": "3",
         "IV Qtr-2021": "0",
         "Annual 2021": "5"
     },
@@ -94,7 +94,7 @@
         "Contents": "Total no. of New Leprosy Cases detected",
         "I Qtr-2021": "11",
         "II Qtr-2021": "8",
-        "III Qtr- 2021": "13",
+        "III Qtr-2021": "13",
         "IV Qtr-2021": "7",
         "Annual 2021": "39"
     },
@@ -103,7 +103,7 @@
         "Contents": "Relapse Cases",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -112,7 +112,7 @@
         "Contents": "Female-PB",
         "I Qtr-2021": "1",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "2"
     },
@@ -121,7 +121,7 @@
         "Contents": "Female-MB",
         "I Qtr-2021": "4",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "5",
+        "III Qtr-2021": "5",
         "IV Qtr-2021": "1",
         "Annual 2021": "12"
     },
@@ -130,7 +130,7 @@
         "Contents": "Female-Total",
         "I Qtr-2021": "5",
         "II Qtr-2021": "3",
-        "III Qtr- 2021": "5",
+        "III Qtr-2021": "5",
         "IV Qtr-2021": "1",
         "Annual 2021": "14"
     },
@@ -139,7 +139,7 @@
         "Contents": "Adult disability G-I-PB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -148,7 +148,7 @@
         "Contents": "Adult disability G-I-MB",
         "I Qtr-2021": "1",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "0",
         "Annual 2021": "5"
     },
@@ -157,7 +157,7 @@
         "Contents": "Total Adult disability G-I",
         "I Qtr-2021": "1",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "0",
         "Annual 2021": "5"
     },
@@ -166,7 +166,7 @@
         "Contents": "Adult disability G- II-PB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -175,7 +175,7 @@
         "Contents": "Adult disability G-II-MB",
         "I Qtr-2021": "6",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "2",
         "Annual 2021": "10"
     },
@@ -184,7 +184,7 @@
         "Contents": "Total Adult disability G-II",
         "I Qtr-2021": "6",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "2",
         "Annual 2021": "10"
     },
@@ -193,7 +193,7 @@
         "Contents": "Children disability G-I-PB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -202,7 +202,7 @@
         "Contents": "Children disability G-I-MB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -211,7 +211,7 @@
         "Contents": "Total Children disability G-I",
         "I Qtr-2021": "0",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -220,7 +220,7 @@
         "Contents": "Children disability G-II-PB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -229,7 +229,7 @@
         "Contents": "Children disability G-II-MB",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -238,7 +238,7 @@
         "Contents": "Total Children disability G-II",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -247,7 +247,7 @@
         "Contents": "lepra Reaction Type-1 Male",
         "I Qtr-2021": "9",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "7",
+        "III Qtr-2021": "7",
         "IV Qtr-2021": "5",
         "Annual 2021": "23"
     },
@@ -256,7 +256,7 @@
         "Contents": "lepra Reaction Type-1 Female",
         "I Qtr-2021": "5",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "2",
         "Annual 2021": "10"
     },
@@ -265,7 +265,7 @@
         "Contents": "Total Type-1 lepra reactions",
         "I Qtr-2021": "14",
         "II Qtr-2021": "4",
-        "III Qtr- 2021": "8",
+        "III Qtr-2021": "8",
         "IV Qtr-2021": "7",
         "Annual 2021": "33"
     },
@@ -274,7 +274,7 @@
         "Contents": "lepra Reaction Type-2 Male",
         "I Qtr-2021": "6",
         "II Qtr-2021": "1",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "3",
         "Annual 2021": "11"
     },
@@ -283,7 +283,7 @@
         "Contents": "lepra Reaction Type-2 Female",
         "I Qtr-2021": "1",
         "II Qtr-2021": "3",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "4"
     },
@@ -292,7 +292,7 @@
         "Contents": "Total Type 2 lepra reactions",
         "I Qtr-2021": "7",
         "II Qtr-2021": "4",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "3",
         "Annual 2021": "15"
     },
@@ -301,7 +301,7 @@
         "Contents": "Total number of persons provided with MCR footwear",
         "I Qtr-2021": "30",
         "II Qtr-2021": "12",
-        "III Qtr- 2021": "16",
+        "III Qtr-2021": "16",
         "IV Qtr-2021": "11",
         "Annual 2021": "69"
     },
@@ -310,7 +310,7 @@
         "Contents": "RCS Male",
         "I Qtr-2021": "5",
         "II Qtr-2021": "13",
-        "III Qtr- 2021": "18",
+        "III Qtr-2021": "18",
         "IV Qtr-2021": "8",
         "Annual 2021": "44"
     },
@@ -319,7 +319,7 @@
         "Contents": "RCS Female",
         "I Qtr-2021": "4",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "3",
+        "III Qtr-2021": "3",
         "IV Qtr-2021": "1",
         "Annual 2021": "8"
     },
@@ -328,7 +328,7 @@
         "Contents": "TOTAL RCS DONE ",
         "I Qtr-2021": "9",
         "II Qtr-2021": "13",
-        "III Qtr- 2021": "21",
+        "III Qtr-2021": "21",
         "IV Qtr-2021": "9",
         "Annual 2021": "52"
     },
@@ -337,7 +337,7 @@
         "Contents": "Eye Male RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "0",
         "Annual 2021": "4"
     },
@@ -346,7 +346,7 @@
         "Contents": "Eye Female RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -355,7 +355,7 @@
         "Contents": "Total Eye RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "2",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "0",
         "Annual 2021": "4"
     },
@@ -364,7 +364,7 @@
         "Contents": "Hand Male RCS Done",
         "I Qtr-2021": "5",
         "II Qtr-2021": "11",
-        "III Qtr- 2021": "16",
+        "III Qtr-2021": "16",
         "IV Qtr-2021": "8",
         "Annual 2021": "40"
     },
@@ -373,7 +373,7 @@
         "Contents": "Hand Female RCS Done",
         "I Qtr-2021": "4",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "1",
         "Annual 2021": "7"
     },
@@ -382,7 +382,7 @@
         "Contents": "Total Hand RCS Done",
         "I Qtr-2021": "9",
         "II Qtr-2021": "11",
-        "III Qtr- 2021": "18",
+        "III Qtr-2021": "18",
         "IV Qtr-2021": "9",
         "Annual 2021": "47"
     },
@@ -391,7 +391,7 @@
         "Contents": "Foot Male RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -400,7 +400,7 @@
         "Contents": "Foot Female RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -409,7 +409,7 @@
         "Contents": "Total Foot RCS Done",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "1",
+        "III Qtr-2021": "1",
         "IV Qtr-2021": "0",
         "Annual 2021": "1"
     },
@@ -418,7 +418,7 @@
         "Contents": "Male Septic Surgeries /Nerve Decompression",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "2",
         "Annual 2021": "4"
     },
@@ -427,7 +427,7 @@
         "Contents": "Female Septic Surgeries /Nerve Decompression",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -436,7 +436,7 @@
         "Contents": "Total Septic Surgeries /Nerve Decompression",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "2",
         "Annual 2021": "4"
     },
@@ -445,7 +445,7 @@
         "Contents": "Male House Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -454,7 +454,7 @@
         "Contents": "Female House Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -463,7 +463,7 @@
         "Contents": "Total House Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -472,7 +472,7 @@
         "Contents": "Male Self-Employment Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -481,7 +481,7 @@
         "Contents": "Female Self-Employment Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -490,7 +490,7 @@
         "Contents": "Total Self-Employment Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -499,7 +499,7 @@
         "Contents": "Male Education Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -508,7 +508,7 @@
         "Contents": "Female Education Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -517,7 +517,7 @@
         "Contents": "Total Education Support",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
-        "III Qtr- 2021": "0",
+        "III Qtr-2021": "0",
         "IV Qtr-2021": "0",
         "Annual 2021": "0"
     },
@@ -526,7 +526,7 @@
         "Contents": "Total Leprosy Beds Available",
         "I Qtr-2021": "17",
         "II Qtr-2021": "17",
-        "III Qtr- 2021": "17",
+        "III Qtr-2021": "17",
         "IV Qtr-2021": "17",
         "Annual 2021": "17"
     },
@@ -535,7 +535,7 @@
         "Contents": "Total Leprosy Patients Admitted",
         "I Qtr-2021": "84",
         "II Qtr-2021": "51",
-        "III Qtr- 2021": "62",
+        "III Qtr-2021": "62",
         "IV Qtr-2021": "68",
         "Annual 2021": "265"
     },
@@ -544,7 +544,7 @@
         "Contents": "Reactions Patients Admitted",
         "I Qtr-2021": "15",
         "II Qtr-2021": "6",
-        "III Qtr- 2021": "6",
+        "III Qtr-2021": "6",
         "IV Qtr-2021": "4",
         "Annual 2021": "31"
     },
@@ -553,7 +553,7 @@
         "Contents": "RCS Patients Admitted",
         "I Qtr-2021": "41",
         "II Qtr-2021": "26",
-        "III Qtr- 2021": "35",
+        "III Qtr-2021": "35",
         "IV Qtr-2021": "43",
         "Annual 2021": "145"
     },
@@ -562,7 +562,7 @@
         "Contents": "Planter ulcers and Others Patients Admitted",
         "I Qtr-2021": "28",
         "II Qtr-2021": "19",
-        "III Qtr- 2021": "21",
+        "III Qtr-2021": "21",
         "IV Qtr-2021": "21",
         "Annual 2021": "89"
     },
@@ -571,7 +571,7 @@
         "Contents": "Total no of Beds Occupied Leprosy Patients",
         "I Qtr-2021": "1083",
         "II Qtr-2021": "464",
-        "III Qtr- 2021": "793",
+        "III Qtr-2021": "793",
         "IV Qtr-2021": "786",
         "Annual 2021": "3126"
     },
@@ -580,7 +580,7 @@
         "Contents": "Bed Occupancy Rate for Leprosy",
         "I Qtr-2021": "70.8",
         "II Qtr-2021": "30.3",
-        "III Qtr- 2021": "51.2",
+        "III Qtr-2021": "51.2",
         "IV Qtr-2021": "51.4",
         "Annual 2021": "51"
     },
@@ -589,7 +589,7 @@
         "Contents": "Total TB/DRTB Beds Available",
         "I Qtr-2021": "7",
         "II Qtr-2021": "7",
-        "III Qtr- 2021": "7",
+        "III Qtr-2021": "7",
         "IV Qtr-2021": "7",
         "Annual 2021": "7"
     },
@@ -598,7 +598,7 @@
         "Contents": "Total  DSTB Patients Admitted",
         "I Qtr-2021": "0",
         "II Qtr-2021": "4",
-        "III Qtr- 2021": "2",
+        "III Qtr-2021": "2",
         "IV Qtr-2021": "0",
         "Annual 2021": "6"
     },
@@ -607,7 +607,7 @@
         "Contents": "Total  DRTB Patients Admitted",
         "I Qtr-2021": "6",
         "II Qtr-2021": "9",
-        "III Qtr- 2021": "17",
+        "III Qtr-2021": "17",
         "IV Qtr-2021": "17",
         "Annual 2021": "49"
     },
@@ -616,7 +616,7 @@
         "Contents": "Total no of Beds Occupied TB/DRTB Patients",
         "I Qtr-2021": "7",
         "II Qtr-2021": "19",
-        "III Qtr- 2021": "20",
+        "III Qtr-2021": "20",
         "IV Qtr-2021": "29",
         "Annual 2021": "75"
     },
@@ -625,7 +625,7 @@
         "Contents": "Bed Occupancy Rate for TB",
         "I Qtr-2021": "1.1",
         "II Qtr-2021": "3",
-        "III Qtr- 2021": "3.1",
+        "III Qtr-2021": "3.1",
         "IV Qtr-2021": "4.7",
         "Annual 2021": "3"
     }
