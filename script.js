@@ -265,6 +265,206 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+  // DPMR SERVICES
+
+  function renderLineDPMR(folder, jsonFile, sectionTitle) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading data...</p>";
+
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    selectedYears.sort();
+
+    const jsonPath = `DPMR-GRAPH/${folder}/${jsonFile}`;
+    fetch(jsonPath)
+      .then(res => res.json())
+      .then(data => {
+        const labels = selectedYears.map(String);
+        const values = selectedYears.map(y => {
+          const val = data[0][y];
+          return val && val.trim() !== "" ? parseFloat(val) : 0;
+        });
+
+        let html = `
+        <div class="table-container" id="table-section">
+          <h2>${sectionTitle}</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Contents</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              ${data.map(row => `
+                <tr>
+                  <td>${row.Contents}</td>
+                  ${labels.map(y => `<td>${row[y] && row[y].trim() !== "" ? row[y] : "0"}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px;">
+          <canvas id="annualChart"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        const ctx = document.getElementById("annualChart").getContext("2d");
+        if (genericChartInstance) genericChartInstance.destroy();
+
+        const colors = ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40"];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        genericChartInstance = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels,
+            datasets: [{
+              label: sectionTitle,
+              data: values,
+              borderColor: color,
+              backgroundColor: color + "33",
+              pointBackgroundColor: color,
+              borderWidth: 2,
+              fill: true,
+              tension: 0.4,
+            }]
+          },
+          options: {
+            layout: { padding: { right: 30 } },
+            plugins: {
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: "#000",
+                font: { weight: "bold", size: 12 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: '5%',
+                grid: {
+                  lineWidth: 0.5,
+                  color: '#ccc'
+                },
+                ticks: {
+                  padding: 10,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" },
+                  callback: value => value.toFixed(0)
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,
+                grid: {
+                  lineWidth: 0.5,
+                  color: '#ccc'
+                },
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  }
+
+  const dpmrFolders = {
+    "ut": "UT",
+    "lepra": "LEP",
+    "self": "SC",
+    "mcr": "MCR"
+  };
+
+  const states = {
+    "tot": { file: "tot.json", name: "All States" },
+    "bih": { file: "bihar.json", name: "Bihar State" },
+    "jhar": { file: "jhar.json", name: "Jharkhand State" },
+    "chat": { file: "chat.json", name: "Chhattisgarh State" },
+    "kar": { file: "kar.json", name: "Karnataka State" },
+    "tn": { file: "tn.json", name: "Tamil Nadu State" },
+    "ap": { file: "ap.json", name: "Andhra Pradesh State" }
+  };
+
+  const setupDPMREvents = (prefix, folderKey) => {
+    Object.keys(states).forEach(stateKey => {
+      const id = `${stateKey}-dpmr-${prefix}`;
+      const file = states[stateKey].file;
+      const stateName = states[stateKey].name;
+      const folder = dpmrFolders[folderKey];
+
+      let suffix = "";
+      switch (folderKey) {
+        case "ut":
+          suffix = " - Under Treatment Patients taking regular treatment %";
+          break;
+        case "lepra":
+          suffix = " - Lepra Reactions Patients taking regular treatment %";
+          break;
+        case "self":
+          suffix = " - Practicing self care regularly %";
+          break;
+        case "mcr":
+          suffix = " - Patients wearing appropriate Footwear regularly %";
+          break;
+      }
+
+      const title = `${stateName} DPMR Services${suffix}`;
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("click", e => {
+          e.preventDefault();
+          setActiveLink(e.target);
+          renderLineDPMR(folder, file, title);
+        });
+      }
+    });
+  };
+
+  // Set up for each category
+  setupDPMREvents("ut", "ut");
+  setupDPMREvents("lepra", "lepra");
+  setupDPMREvents("self", "self");
+  setupDPMREvents("mcr", "mcr");
+
   // Constants for project codes and names
   const projects1 = [
     { code: "tp", title: "All Projects" },
@@ -528,14 +728,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentArea.innerHTML = "<p>Loading data...</p>";
     let selectedYears = getSelectedYears();
 
-    if (jsonFile === "total_dpmr.json" || "bihar_dpmr.json" || "ap_dpmr.json" || "chat_dpmr.json" || "jhar_dpmr.json" || "kar_dpmr.json" || "tn_dpmr.json") {
-      // Only include years from 2020 to 2025
-      selectedYears = selectedYears.filter(y => y >= 2020 && y < 2025);
-    } else {
-      // Include all years from 2014 to 2025
-      selectedYears = selectedYears.filter(y => y >= 2014 && y < 2025);
-    }
-
+    selectedYears = selectedYears.filter(y => y >= 2014 && y < 2025);
     selectedYears.sort();
 
 
@@ -675,41 +868,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Fetch error:", err);
       });
   }
-  document.getElementById("tot-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("total_dpmr.json", "TOTAL DPMR Services - Practicing self care regularly%", "TOTAL DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("ap-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("ap_dpmr.json", "Andhra Pradesh DPMR Services - Practicing self care regularly%", "Andhra Pradesh DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("bih-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("bihar_dpmr.json", "Bihar DPMR Services - Practicing self care regularly%", "Bihar DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("chat-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("chat_dpmr.json", "Chattisgarh DPMR Services - Practicing self care regularly%", "Chhattisgarh DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("jhar-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("jhar_dpmr.json", "Jharkhand DPMR Services - Practicing self care regularly%", "Jharkhand DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("kar-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("kar_dpmr.json", "Karnataka DPMR Services - Practicing self care regularly%", "Karnataka DPMR Services - Practicing self care regularly %");
-  });
-  document.getElementById("tn-dpmr").addEventListener("click", e => {
-    e.preventDefault();
-    setActiveLink(e.target);
-    renderBar("tn_dpmr.json", "Tamil Nadu DPMR Services - Practicing self care regularly%", "Tamil Nadu DPMR Services - Practicing self care regularly %");
-  });
   document.getElementById("b-lep").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
