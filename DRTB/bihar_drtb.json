@@ -13,7 +13,7 @@
     "2021": "193",
     "2022": "48",
     "2023": "131",
-    "2024": "86",
+    "2024": "99",
     "S.NO": "2",
     "DRTB contents": "No. of DRTB initial defaulters visited."
   },
@@ -22,9 +22,9 @@
     "2021": "154",
     "2022": "34",
     "2023": "202",
-    "2024": "99",
+    "2024": "86",
     "S.NO": "2.a",
-    "DRTB contents": "No of DRTB initial defaulters patients treatment started."
+    "DRTB contents": "No of DRTB  patients treatment started."
   },
   {
     "2020": "249",
@@ -72,27 +72,27 @@
     "DRTB contents": "No of DRTB patients diagnosed.  (Rif resistance)"
   },
   {
-    "2020": "92",
+    "2020": "109",
     "2021": "14",
     "2022": "22",
     "2023": "20",
-    "2024": "44",
+    "2024": "63",
     "S.NO": "5",
     "DRTB contents": "No. of DRTB irregular patients visited. "
   },
   {
-    "2020": "0",
+    "2020": "92",
     "2021": "12",
     "2022": "21",
-    "2023": "10",
-    "2024": "19",
+    "2023": "16",
+    "2024": "44",
     "S.NO": "5.a",
     "DRTB contents": "No. of DRTB irregular  patients retrieved."
   },
   {
     "2020": "0",
     "2021": "0",
-    "2022": "14",
+    "2022": "56",
     "2023": "9",
     "2024": "8",
     "S.NO": "6",
@@ -101,7 +101,7 @@
   {
     "2020": "0",
     "2021": "0",
-    "2022": "77",
+    "2022": "48",
     "2023": "7",
     "2024": "7",
     "S.NO": "6.a",

@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "nsp total"
         || contents === "rt +ve total"
         || contents === "rt neg total"
-        || contents === "grand total"
+        || contents === "total ds tb cases diagnosed"
         || contents === "total no. of new leprosy cases detected"
         || contents === "total number of outpatients treated"
         || contents === "total adult disability g-ii"
@@ -147,7 +147,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const order = [];
 
     const contentArea = document.getElementById("content-area");
-    contentArea.innerHTML = `<p>Loading ${sectionName} data...</p>`;
+
+    // Only one heading at the top
+    contentArea.innerHTML = `
+    <h2>${sectionName} Overview</h2>
+    <p>Loading data for years ${years.join(', ')}...</p>
+  `;
 
     Promise.all(years.map(year =>
       fetch(`${basePath}/district_wise_${year}/${key}.json`)
@@ -168,7 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const value = row[`Total ${year}`] ?? row[annualKey] ?? row["Total"];
             cumulativeData[id][annualKey] = (value !== undefined && value !== null && value.toString().trim() !== "") ? value : "0";
           });
-
         })
     ))
       .then(() => {
@@ -178,11 +182,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }, {});
 
         const tableHTML = renderAnnualTable(formattedData, years);
-
-        contentArea.innerHTML = `<div class="table-container">
-        <h2>${sectionName} Overview</h2>
-        ${tableHTML}
-      </div>`;
+        //  Top heading
+        contentArea.innerHTML = `
+        <h2>${sectionName} Overview</h2> 
+        <div class="table-container">
+          ${tableHTML}
+        </div>
+      `;
 
         enableDownload(sectionName.replace(/\s+/g, '_'));
       })
@@ -415,13 +421,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const states = {
-    "tot": { file: "tot.json", name: "All States" },
-    "bih": { file: "bihar.json", name: "Bihar State" },
-    "jhar": { file: "jhar.json", name: "Jharkhand State" },
-    "chat": { file: "chat.json", name: "Chhattisgarh State" },
-    "kar": { file: "kar.json", name: "Karnataka State" },
-    "tn": { file: "tn.json", name: "Tamil Nadu State" },
-    "ap": { file: "ap.json", name: "Andhra Pradesh State" }
+    "tot": { file: "tot.json", name: "Six States DFIT Supported Districts" },
+    "bih": { file: "bihar.json", name: "Bihar State DFIT Supported Districts" },
+    "jhar": { file: "jhar.json", name: "Jharkhand State DFIT Supported Districts" },
+    "chat": { file: "chat.json", name: "Chhattisgarh State DFIT Supported Districts" },
+    "kar": { file: "kar.json", name: "Karnataka State DFIT Supported Districts" },
+    "tn": { file: "tn.json", name: "Tamil Nadu State DFIT Supported Districts" },
+    "ap": { file: "ap.json", name: "Andhra Pradesh State DFIT Supported Districts" }
   };
 
   const setupDPMREvents = (prefix, folderKey) => {
@@ -1423,15 +1429,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Maps for categories
   const categories = {
     OPD: "Out Patients Treated – Annual Statistics ",
-    LEPROSY: "New Leprosy cases Diagnosed – Annual Statistics",
-    DISABILITY: "New Leprosy cases with Grade II Disability – Annual Statistics ",
+    LEPROSY: "New Leprosy Cases Diagnosed – Annual Statistics",
+    DISABILITY: "New Leprosy Cases with Grade II Disability – Annual Statistics ",
     LEPRA: "Lepra Reaction Treated – Annual Statistics ",
     RCS: "Deformity correction surgeries(RCS) – Annual Statistics",
     LEPAD: "Hospital admission of leprosy patients with complications – Annual Statistics",
     LEPBED: "Leprosy Patients Bed occupancy – Annual Statistics",
     LEPBEDRATE: "Leprosy Patients Bed occupancy rate – Annual Statistics",
-    PRETB: "Presumptive TB cases sputum examination – Annual Statistics",
-    TB: "Total TB cases Diagnosed – Annual Statistics",
+    PRETB: "Presumptive TB Cases sputum examination – Annual Statistics",
+    TB: "Total DS TB Cases Diagnosed – Annual Statistics",
     NSP: "Outcomes of TB-NSP Cure Rate – Annual Statistics",
     RT: "Outcomes of TB-RT Cure Rate – Annual Statistics",
   };
@@ -1916,9 +1922,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
+      renderQuarterWiseSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases Diagnosed and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases and Sputum Conversion Annual Report");
+      renderMultiYearSection("/TB_Case_Finding", "total_projects", "All Projects DS TB Cases Diagnosed and Sputum Conversion Annual Report");
     }
   });
   document.getElementById(tbcaseFindingLinks.dfit)?.addEventListener("click", e => {
@@ -1926,9 +1932,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
+      renderQuarterWiseSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases Diagnosed and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases and Sputum Conversion Annual Report");
+      renderMultiYearSection("/TB_Case_Finding", "dfit_projects", "DFIT Projects DS TB Cases Diagnosed and Sputum Conversion Annual Report");
     }
   });
   document.getElementById(tbcaseFindingLinks.supported)?.addEventListener("click", e => {
@@ -1936,9 +1942,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(e.target);
     const selectedQuarterYear = document.getElementById("yearFilter").value;
     if (selectedQuarterYear !== "All") {
-      renderQuarterWiseSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases and Sputum Conversion Quarter-Wise Report");
+      renderQuarterWiseSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases Diagnosed and Sputum Conversion Quarter-Wise Report");
     } else {
-      renderMultiYearSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases and Sputum Conversion Annual Report");
+      renderMultiYearSection("/TB_Case_Finding", "supported_projects", "Supported Projects DS TB Cases Diagnosed and Sputum Conversion Annual Report");
     }
   });
   tbcaseFindingLinks.districts.forEach(d => {
@@ -1956,7 +1962,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderQuarterWiseSection(
             basePath,
             fileName,
-            d.toUpperCase() + " Hospital DS TB Cases and Sputum Conversion Quarter-wise Report"
+            d.toUpperCase() + " Hospital DS TB Cases Diagnosed and Sputum Conversion Quarter-wise Report"
           );
 
         } else {
@@ -1964,7 +1970,7 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMultiYearSection(
             basePath,
             fileName,
-            d.toUpperCase() + " Hospital DS TB Cases and Sputum Conversion Annual Report"
+            d.toUpperCase() + " Hospital DS TB Cases Diagnosed and Sputum Conversion Annual Report"
           );
         }
       });
@@ -2068,6 +2074,35 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       const el = document.getElementById(targetId);
       if (el) el.style.display = el.style.display === "block" ? "none" : "block";
+    });
+  });
+  // 📊 Toggle main OVERALL YEAR-WISE ANALYSIS block
+  document.querySelectorAll(".analysis-collapsible").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      if (content && content.classList.contains("analysis-collapsible-content")) {
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      }
+    });
+  });
+
+  // ➢ Toggle Direct Services
+  document.querySelectorAll(".analysis-direct-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const content = toggle.nextElementSibling;
+      if (content && content.classList.contains("analysis-direct-content")) {
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      }
+    });
+  });
+
+  // 📋 Toggle Outpatients Treated
+  document.querySelectorAll(".analysis-contents-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const content = toggle.nextElementSibling;
+      if (content && content.classList.contains("analysis-contents-content")) {
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      }
     });
   });
 

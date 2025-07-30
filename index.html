@@ -207,443 +207,482 @@
         </div>
 
         <!-- ANNUAL YEAR-WISE ANALYSIS -->
-        <div class="section">
-          <button class="collapsible">📊 OVERALL YEAR-WISE ANALYSIS</button>
-          <div class="collapsible-content">
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-opd">
-                <i class="fas fa-user-md" style="color:#007bff; margin-right: 5px;"></i>
-                Out Patients Treated
-              </span>
-              <div class="subsection-content" id="annual-opd">
-                <ul>
-                  <li><a href="#" id="tp-opd">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-opd">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-opd">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-opd">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-opd">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-opd">❖ DOS Overview</a></li>
-                  <li><a href="#" id="pol-opd">❖ Polambakkam Overview</a></li>
-                  <li><a href="#" id="dan-opd">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-opd">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-opd">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-opd">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-opd">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-opd">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-opd">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-opd">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-opd">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-opd">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-opd">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-opd">❖ Ambalamoola Overview</a></li>
-                </ul>
+        <!-- 📊 OVERALL YEAR-WISE ANALYSIS (Isolated) -->
+        <div class="analysis-section">
+          <button class="analysis-collapsible">📊 OVERALL YEAR-WISE ANALYSIS</button>
+          <div class="analysis-collapsible-content">
+
+            <!-- ➢ Direct Services -->
+            <div class="analysis-subsection">
+              <div class="analysis-direct-toggle">➢ Direct Services</div>
+              <div class="analysis-direct-content">
+
+                <!-- 📋1.  Outpatients Treated -->
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-opd">
+                    <i class="fas fa-user-md" style="color:#007bff; margin-right: 5px;"></i>
+                    Out Patients Treated
+                  </span>
+                  <div class="analysis-contents-content" id="annual-opd">
+                    <ul>
+                      <li><a href="#" id="tp-opd">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-opd">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-opd">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-opd">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-opd">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-opd">❖ DOS Overview</a></li>
+                      <li><a href="#" id="pol-opd">❖ Polambakkam Overview</a></li>
+                      <li><a href="#" id="dan-opd">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-opd">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-opd">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-opd">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-opd">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-opd">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-opd">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-opd">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-opd">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-opd">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-opd">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-opd">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 📋2. New Leprosy Cases Confirmed  -->
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-leprosy">➢New Leprosy Cases
+                    Confirmed</span>
+                  <div class="analysis-contents-content" id="annual-leprosy">
+                    <ul>
+                      <li><a href="#" id="tp-lep">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-lep">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-lep">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-lep">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-lep">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-lep">❖ DOS Overview</a></li>
+                      <!-- <li><a href="#" id="pol-lep">❖ Polambakkam Overview</a></li> -->
+                      <li><a href="#" id="dan-lep">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-lep">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-lep">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-lep">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-lep">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-lep">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-lep">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-lep">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-lep">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-lep">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-lep">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-lep">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋3. New G-II Leprosy Cases Confirmed-->
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-disability">
+                    <i class="fas fa-person-walking-with-cane" style="color:#17a2b8; margin-right: 5px;"></i>
+                    New G-II Leprosy Cases Confirmed
+                  </span>
+                  <div class="analysis-contents-content" id="annual-disability">
+                    <ul>
+                      <li><a href="#" id="tp-dis">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-dis">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-dis">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-dis">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-dis">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-dis">❖ DOS Overview</a></li>
+                      <!-- <li><a href="#" id="pol-dis">❖ Polambakkam Overview</a></li> -->
+                      <li><a href="#" id="dan-dis">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-dis">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-dis">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-dis">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-dis">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-dis">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-dis">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-dis">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-dis">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-dis">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-dis">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-dis">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋4. Lepra Reaction Cases Confirmed-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-lepra">➢ Lepra Reaction Cases
+                    Confirmed</span>
+                  <div class="analysis-contents-content" id="annual-lepra">
+                    <ul>
+                      <li><a href="#" id="tp-lepra">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-lepra">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-lepra">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-lepra">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-lepra">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-lepra">❖ DOS Overview</a></li>
+                      <!-- <li><a href="#" id="pol-lepra">❖ Polambakkam Overview</a></li> -->
+                      <li><a href="#" id="dan-lepra">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-lepra">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-lepra">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-lepra">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-lepra">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-lepra">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-lepra">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-lepra">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-lepra">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-lepra">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-lepra">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-lepra">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋5. RCS done cases -->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-rcs">
+                    <i class="fas fa-procedures" style="color:#00ff1e; margin-right: 5px;"></i>
+                    RCS done Cases
+                  </span>
+
+                  <div class="analysis-contents-content" id="annual-rcs">
+                    <ul>
+                      <li><a href="#" id="tp-rcs">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-rcs">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-rcs">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-rcs">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-rcs">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-rcs">❖ DOS Overview</a></li>
+                      <!-- <li><a href="#" id="pol-rcs">❖ Polambakkam Overview</a></li> -->
+                      <li><a href="#" id="dan-rcs">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-rcs">❖ Amda Overview</a></li>
+                      <!-- <li><a href="#" id="ars-rcs">❖ Arasipalyam Overview</a></li> -->
+                      <li><a href="#" id="fat-rcs">❖ Fathimanagar Overview</a></li>
+                      <!-- <li><a href="#" id="nag-rcs">❖ Nagepalli Overview</a></li> -->
+                      <li><a href="#" id="pav-rcs">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-rcs">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-rcs">❖ Pope John Garden Overview</a></li>
+                      <!-- <li><a href="#" id="chi-rcs">❖ Chilakala Palli Overview</a></li> -->
+                      <li><a href="#" id="tri-rcs">❖ Trivendrum Overview</a></li>
+                      <!-- <li><a href="#" id="and-rcs">❖ Andipatti Overview</a></li> -->
+                      <!-- <li><a href="#" id="amb-rcs">❖ Ambalamoola Overview</a></li> -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋6.  Leprosy Inpatients-->
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-lepad">
+                    <i class="fas fa-hand-holding-medical" style="color:#007bff; margin-right: 5px;"></i>
+                    Leprosy Inpatients
+                  </span>
+
+                  <div class="analysis-contents-content" id="annual-lepad">
+                    <ul>
+                      <li><a href="#" id="tp-lepad">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-lepad">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-lepad">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-lepad">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-lepad">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-lepad">❖ DOS Overview</a></li>
+                      <li><a href="#" id="pol-lepad">❖ Polambakkam Overview</a></li>
+                      <li><a href="#" id="dan-lepad">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-lepad">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-lepad">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-lepad">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-lepad">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-lepad">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-lepad">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-lepad">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-lepad">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-lepad">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-lepad">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-lepad">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋7.  Leprosy Bed Days-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-lepbed">
+                    <i class="fas fa-bed" style="color:#20c997; margin-right: 5px;"></i>
+                    Leprosy Bed Days
+                  </span>
+                  <div class="analysis-contents-content" id="annual-lepbed">
+                    <ul>
+                      <li><a href="#" id="tp-lepbed">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-lepbed">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-lepbed">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-lepbed">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-lepbed">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-lepbed">❖ DOS Overview</a></li>
+                      <li><a href="#" id="pol-lepbed">❖ Polambakkam Overview</a></li>
+                      <li><a href="#" id="dan-lepbed">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-lepbed">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-lepbed">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-lepbed">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-lepbed">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-lepbed">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-lepbed">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-lepbed">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-lepbed">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-lepbed">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-lepbed">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-lepbed">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋8. Leprosy Bed Occupancy Rate-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-lepbedrate">
+                    <i class="fas fa-bed" style="color:#c92083; margin-right: 5px;"></i>
+                    Leprosy Bed Occupancy Rate
+                  </span>
+                  <div class="analysis-contents-content" id="annual-lepbedrate">
+                    <ul>
+                      <li><a href="#" id="tp-lepbedr">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-lepbedr">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-lepbedr">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-lepbedr">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-lepbedr">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="dos-lepbedr">❖ DOS Overview</a></li>
+                      <li><a href="#" id="pol-lepbedr">❖ Polambakkam Overview</a></li>
+                      <li><a href="#" id="dan-lepbedr">❖ Dhanbad Overview</a></li>
+                      <li><a href="#" id="amd-lepbedr">❖ Amda Overview</a></li>
+                      <li><a href="#" id="ars-lepbedr">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-lepbedr">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-lepbedr">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-lepbedr">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-lepbedr">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="pop-lepbedr">❖ Pope John Garden Overview</a></li>
+                      <li><a href="#" id="chi-lepbedr">❖ Chilakala Palli Overview</a></li>
+                      <li><a href="#" id="tri-lepbedr">❖ Trivendrum Overview</a></li>
+                      <li><a href="#" id="and-lepbedr">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-lepbedr">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋9. Livelihood Enhancement Program (LEP)-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-lep">
+                    <i class="fas fa-hands-helping" style="color:#007bff; margin-right: 5px;"></i>
+                    Livelihood Enhancement Program (LEP)
+                  </span>
+                  <div class="analysis-contents-content" id="annual-lep">
+                    <ul>
+                      <li><a href="#" id="b-lep">❖ Total Overview</a></li>
+                      <li><a href="#" id="three-lep">❖ Categories Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋10.  Presumptive TB cases-->
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-pretb">➢ Presumptive TB Cases</span>
+                  <div class="analysis-contents-content" id="annual-pretb">
+                    <ul>
+                      <li><a href="#" id="tp-pretb">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-pretb">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-pretb">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-pretb">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-pretb">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="ars-pretb">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-pretb">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-pretb">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-pretb">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-pretb">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="and-pretb">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-pretb">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋11. Total TB cases Confirmed  -->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-tb">➢ Total DS TB Cases Confirmed</span>
+                  <div class="analysis-contents-content" id="annual-tb">
+                    <ul>
+                      <li><a href="#" id="tp-tb">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-tb">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-tb">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-tb">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-tb">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="ars-tb">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-tb">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-tb">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-tb">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-tb">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="and-tb">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-tb">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋12. NSP Cases Cure Rate %-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-nsp">➢ NSP Cases Cure Rate %</span>
+                  <div class="analysis-contents-content" id="annual-nsp">
+                    <ul>
+                      <li><a href="#" id="tp-nsp">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-nsp">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-nsp">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-nsp">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-nsp">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="ars-nsp">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-nsp">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-nsp">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-nsp">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-nsp">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="and-nsp">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-nsp">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋13. RT cases Cure Rate %-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-rt">➢ RT Cases Cure Rate %</span>
+                  <div class="analysis-contents-content" id="annual-rt">
+                    <ul>
+                      <li><a href="#" id="tp-rt">❖ All Projects Overview</a></li>
+                      <li><a href="#" id="dfit-rt">❖ DFIT Projects Overview</a></li>
+                      <li><a href="#" id="sup-rt">❖ Supported Projects Overview</a></li>
+                      <li><a href="#" id="nel-rt">❖ Nellore Overview</a></li>
+                      <li><a href="#" id="del-rt">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="ars-rt">❖ Arasipalyam Overview</a></li>
+                      <li><a href="#" id="fat-rt">❖ Fathimanagar Overview</a></li>
+                      <li><a href="#" id="nag-rt">❖ Nagepalli Overview</a></li>
+                      <li><a href="#" id="pav-rt">❖ Pavagada Overview</a></li>
+                      <li><a href="#" id="bel-rt">❖ Belatanr Overview</a></li>
+                      <li><a href="#" id="and-rt">❖ Andipatti Overview</a></li>
+                      <li><a href="#" id="amb-rt">❖ Ambalamoola Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋14. DR TB LAB SERVICES-->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-irl">🧪 DR TB LAB SERVICES</span>
+                  <div class="analysis-contents-content" id="annual-irl">
+                    <ul>
+                      <li><a href="#" id="tp-irl">❖ TOTAL DR TB LAB Overview</a></li>
+                      <li><a href="#" id="d-irl">❖ Darbhanga DR TB LAB Overview</a></li>
+                      <li><a href="#" id="n-irl">❖ Nellore DR TB LAB Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 📋15. Nutritional Support -->
+
+                <div class="analysis-subsection">
+                  <span class="analysis-contents-toggle" data-target="annual-nut">
+                    <i class=" fas fa-apple-alt" style="color:#ff0000; margin-right: 5px;"></i>
+                    Nutritional Support
+                  </span>
+                  <div class="analysis-contents-content" id="annual-nut">
+                    <ul>
+                      <li><a href="#" id="b-np">❖ Total Overview</a></li>
+                      <li><a href="#" id="three-np">❖ States Overview</a></li>
+                      <li><a href="#" id="del-np">❖ Delhi Overview</a></li>
+                      <li><a href="#" id="bih-np">❖ Bihar Overview</a></li>
+                      <li><a href="#" id="ap-np">❖ Andhra Pradesh Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
             </div>
+            <!-- II. DPMR SERVICES -->
+            <div class="analysis-subsection">
+              <div class="analysis-direct-toggle">➢ DPMR Services</div>
+              <div class="analysis-direct-content">
 
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-leprosy">➢New Leprosy Cases Confirmed</span>
-              <div class="subsection-content" id="annual-leprosy">
-                <ul>
-                  <li><a href="#" id="tp-lep">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-lep">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-lep">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-lep">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-lep">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-lep">❖ DOS Overview</a></li>
-                  <!-- <li><a href="#" id="pol-lep">❖ Polambakkam Overview</a></li> -->
-                  <li><a href="#" id="dan-lep">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-lep">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-lep">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-lep">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-lep">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-lep">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-lep">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-lep">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-lep">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-lep">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-lep">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-lep">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
+                <!-- 1. UT -->
+                <div class="analysis-subsection">
+                  <span class="subsection-title" data-target="annual-dpmrut">
+                    <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
+                    DPMR-Under Treatment
+                  </span>
+                  <div class="subsection-content" id="annual-dpmrut">
+                    <ul>
+                      <li><a href="#" id="tot-dpmr-ut">✓ Six States Overview</a></li>
+                      <li><a href="#" id="bih-dpmr-ut">✓ Bihar Overview</a></li>
+                      <li><a href="#" id="jhar-dpmr-ut">✓ Jharkhand Overview</a></li>
+                      <li><a href="#" id="chat-dpmr-ut">✓ Chhattisgarh Overview</a></li>
+                      <li><a href="#" id="kar-dpmr-ut">✓ Karnataka Overview</a></li>
+                      <li><a href="#" id="tn-dpmr-ut">✓ Tamil Nadu Overview</a></li>
+                      <li><a href="#" id="ap-dpmr-ut">✓ Andhra Pradesh Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-disability">
-                <i class="fas fa-person-walking-with-cane" style="color:#17a2b8; margin-right: 5px;"></i>
-                New G-II Leprosy Cases Confirmed
-              </span>
-              <div class="subsection-content" id="annual-disability">
-                <ul>
-                  <li><a href="#" id="tp-dis">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-dis">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-dis">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-dis">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-dis">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-dis">❖ DOS Overview</a></li>
-                  <!-- <li><a href="#" id="pol-dis">❖ Polambakkam Overview</a></li> -->
-                  <li><a href="#" id="dan-dis">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-dis">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-dis">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-dis">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-dis">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-dis">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-dis">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-dis">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-dis">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-dis">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-dis">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-dis">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
+                <!-- 2. Lepra Reaction -->
+                <div class="subsection">
+                  <span class="subsection-title" data-target="annual-dpmrlepra">
+                    <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
+                    DPMR-Lepra Reaction
+                  </span>
+                  <div class="subsection-content" id="annual-dpmrlepra">
+                    <ul>
+                      <li><a href="#" id="tot-dpmr-lepra">✓ Six States Overview</a></li>
+                      <li><a href="#" id="bih-dpmr-lepra">✓ Bihar Overview</a></li>
+                      <li><a href="#" id="jhar-dpmr-lepra">✓ Jharkhand Overview</a></li>
+                      <li><a href="#" id="chat-dpmr-lepra">✓ Chhattisgarh Overview</a></li>
+                      <li><a href="#" id="kar-dpmr-lepra">✓ Karnataka Overview</a></li>
+                      <li><a href="#" id="tn-dpmr-lepra">✓ Tamil Nadu Overview</a></li>
+                      <li><a href="#" id="ap-dpmr-lepra">✓ Andhra Pradesh Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            <!-- Repeat similarly for LEPAD, LEPBED, LEPRA, LEPROSY, NSP, PRETB, RCS, RT, TB -->
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-lepra">➢ Lepra Reaction Cases Confirmed</span>
-              <div class="subsection-content" id="annual-lepra">
-                <ul>
-                  <li><a href="#" id="tp-lepra">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-lepra">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-lepra">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-lepra">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-lepra">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-lepra">❖ DOS Overview</a></li>
-                  <!-- <li><a href="#" id="pol-lepra">❖ Polambakkam Overview</a></li> -->
-                  <li><a href="#" id="dan-lepra">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-lepra">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-lepra">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-lepra">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-lepra">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-lepra">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-lepra">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-lepra">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-lepra">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-lepra">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-lepra">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-lepra">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
+                <!-- 3. Self Care (kept only this one) -->
+                <div class="subsection">
+                  <span class="subsection-title" data-target="annual-dpmrself">
+                    <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
+                    DPMR-Self Care
+                  </span>
+                  <div class="subsection-content" id="annual-dpmrself">
+                    <ul>
+                      <li><a href="#" id="tot-dpmr-self">✓ Six States Overview</a></li>
+                      <li><a href="#" id="bih-dpmr-self">✓ Bihar Overview</a></li>
+                      <li><a href="#" id="jhar-dpmr-self">✓ Jharkhand Overview</a></li>
+                      <li><a href="#" id="chat-dpmr-self">✓ Chhattisgarh Overview</a></li>
+                      <li><a href="#" id="kar-dpmr-self">✓ Karnataka Overview</a></li>
+                      <li><a href="#" id="tn-dpmr-self">✓ Tamil Nadu Overview</a></li>
+                      <li><a href="#" id="ap-dpmr-self">✓ Andhra Pradesh Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-rcs">
-                <i class="fas fa-procedures" style="color:#00ff1e; margin-right: 5px;"></i>
-                RCS done cases
-              </span>
-
-              <div class="subsection-content" id="annual-rcs">
-                <ul>
-                  <li><a href="#" id="tp-rcs">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-rcs">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-rcs">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-rcs">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-rcs">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-rcs">❖ DOS Overview</a></li>
-                  <!-- <li><a href="#" id="pol-rcs">❖ Polambakkam Overview</a></li> -->
-                  <li><a href="#" id="dan-rcs">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-rcs">❖ Amda Overview</a></li>
-                  <!-- <li><a href="#" id="ars-rcs">❖ Arasipalyam Overview</a></li> -->
-                  <li><a href="#" id="fat-rcs">❖ Fathimanagar Overview</a></li>
-                  <!-- <li><a href="#" id="nag-rcs">❖ Nagepalli Overview</a></li> -->
-                  <li><a href="#" id="pav-rcs">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-rcs">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-rcs">❖ Pope John Garden Overview</a></li>
-                  <!-- <li><a href="#" id="chi-rcs">❖ Chilakala Palli Overview</a></li> -->
-                  <li><a href="#" id="tri-rcs">❖ Trivendrum Overview</a></li>
-                  <!-- <li><a href="#" id="and-rcs">❖ Andipatti Overview</a></li> -->
-                  <!-- <li><a href="#" id="amb-rcs">❖ Ambalamoola Overview</a></li> -->
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-lepad">
-                <i class="fas fa-hand-holding-medical" style="color:#007bff; margin-right: 5px;"></i>
-                Leprosy Inpatients
-              </span>
-
-              <div class="subsection-content" id="annual-lepad">
-                <ul>
-                  <li><a href="#" id="tp-lepad">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-lepad">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-lepad">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-lepad">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-lepad">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-lepad">❖ DOS Overview</a></li>
-                  <li><a href="#" id="pol-lepad">❖ Polambakkam Overview</a></li>
-                  <li><a href="#" id="dan-lepad">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-lepad">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-lepad">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-lepad">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-lepad">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-lepad">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-lepad">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-lepad">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-lepad">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-lepad">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-lepad">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-lepad">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-lepbed">
-                <i class="fas fa-bed" style="color:#20c997; margin-right: 5px;"></i>
-                Leprosy Bed Days
-              </span>
-              <div class="subsection-content" id="annual-lepbed">
-                <ul>
-                  <li><a href="#" id="tp-lepbed">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-lepbed">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-lepbed">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-lepbed">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-lepbed">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-lepbed">❖ DOS Overview</a></li>
-                  <li><a href="#" id="pol-lepbed">❖ Polambakkam Overview</a></li>
-                  <li><a href="#" id="dan-lepbed">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-lepbed">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-lepbed">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-lepbed">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-lepbed">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-lepbed">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-lepbed">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-lepbed">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-lepbed">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-lepbed">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-lepbed">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-lepbed">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-lepbedrate">
-                <i class="fas fa-bed" style="color:#c92083; margin-right: 5px;"></i>
-                Leprosy Bed Occupancy Rate
-              </span>
-              <div class="subsection-content" id="annual-lepbedrate">
-                <ul>
-                  <li><a href="#" id="tp-lepbedr">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-lepbedr">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-lepbedr">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-lepbedr">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-lepbedr">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="dos-lepbedr">❖ DOS Overview</a></li>
-                  <li><a href="#" id="pol-lepbedr">❖ Polambakkam Overview</a></li>
-                  <li><a href="#" id="dan-lepbedr">❖ Dhanbad Overview</a></li>
-                  <li><a href="#" id="amd-lepbedr">❖ Amda Overview</a></li>
-                  <li><a href="#" id="ars-lepbedr">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-lepbedr">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-lepbedr">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-lepbedr">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-lepbedr">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="pop-lepbedr">❖ Pope John Garden Overview</a></li>
-                  <li><a href="#" id="chi-lepbedr">❖ Chilakala Palli Overview</a></li>
-                  <li><a href="#" id="tri-lepbedr">❖ Trivendrum Overview</a></li>
-                  <li><a href="#" id="and-lepbedr">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-lepbedr">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
+                <!-- 4. MCR -->
+                <div class="subsection">
+                  <span class="subsection-title" data-target="annual-dpmrmcr">
+                    <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
+                    DPMR-MCR
+                  </span>
+                  <div class="subsection-content" id="annual-dpmrmcr">
+                    <ul>
+                      <li><a href="#" id="tot-dpmr-mcr">✓ Six States Overview</a></li>
+                      <li><a href="#" id="bih-dpmr-mcr">✓ Bihar Overview</a></li>
+                      <li><a href="#" id="jhar-dpmr-mcr">✓ Jharkhand Overview</a></li>
+                      <li><a href="#" id="chat-dpmr-mcr">✓ Chhattisgarh Overview</a></li>
+                      <li><a href="#" id="kar-dpmr-mcr">✓ Karnataka Overview</a></li>
+                      <li><a href="#" id="tn-dpmr-mcr">✓ Tamil Nadu Overview</a></li>
+                      <li><a href="#" id="ap-dpmr-mcr">✓ Andhra Pradesh Overview</a></li>
+                    </ul>
+                  </div>
+                </div>
 
 
-
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-lep">
-                <i class="fas fa-hands-helping" style="color:#007bff; margin-right: 5px;"></i>
-                Livelihood Enhancement Program (LEP)
-              </span>
-              <div class="subsection-content" id="annual-lep">
-                <ul>
-                  <li><a href="#" id="b-lep">❖ Total Overview</a></li>
-                  <li><a href="#" id="three-lep">❖ Categories Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-pretb">➢ Presumptive TB cases</span>
-              <div class="subsection-content" id="annual-pretb">
-                <ul>
-                  <li><a href="#" id="tp-pretb">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-pretb">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-pretb">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-pretb">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-pretb">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="ars-pretb">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-pretb">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-pretb">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-pretb">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-pretb">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="and-pretb">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-pretb">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-tb">➢ Total TB cases</span>
-              <div class="subsection-content" id="annual-tb">
-                <ul>
-                  <li><a href="#" id="tp-tb">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-tb">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-tb">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-tb">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-tb">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="ars-tb">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-tb">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-tb">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-tb">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-tb">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="and-tb">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-tb">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-nsp">➢ NSP Cases Cure Rate %</span>
-              <div class="subsection-content" id="annual-nsp">
-                <ul>
-                  <li><a href="#" id="tp-nsp">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-nsp">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-nsp">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-nsp">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-nsp">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="ars-nsp">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-nsp">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-nsp">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-nsp">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-nsp">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="and-nsp">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-nsp">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-rt">➢ RT cases Cure Rate %</span>
-              <div class="subsection-content" id="annual-rt">
-                <ul>
-                  <li><a href="#" id="tp-rt">❖ All Projects Overview</a></li>
-                  <li><a href="#" id="dfit-rt">❖ DFIT Projects Overview</a></li>
-                  <li><a href="#" id="sup-rt">❖ Supported Projects Overview</a></li>
-                  <li><a href="#" id="nel-rt">❖ Nellore Overview</a></li>
-                  <li><a href="#" id="del-rt">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="ars-rt">❖ Arasipalyam Overview</a></li>
-                  <li><a href="#" id="fat-rt">❖ Fathimanagar Overview</a></li>
-                  <li><a href="#" id="nag-rt">❖ Nagepalli Overview</a></li>
-                  <li><a href="#" id="pav-rt">❖ Pavagada Overview</a></li>
-                  <li><a href="#" id="bel-rt">❖ Belatanr Overview</a></li>
-                  <li><a href="#" id="and-rt">❖ Andipatti Overview</a></li>
-                  <li><a href="#" id="amb-rt">❖ Ambalamoola Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-irl">🧪 DR TB LAB SERVICES</span>
-              <div class="subsection-content" id="annual-irl">
-                <ul>
-                  <li><a href="#" id="tp-irl">❖ TOTAL DR TB LAB Overview</a></li>
-                  <li><a href="#" id="d-irl">❖ Darbhanga DR TB LAB Overview</a></li>
-                  <li><a href="#" id="n-irl">❖ Nellore DR TB LAB Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-nut">
-                <i class=" fas fa-apple-alt" style="color:#ff0000; margin-right: 5px;"></i>
-                Nutritional Support
-              </span>
-              <div class="subsection-content" id="annual-nut">
-                <ul>
-                  <li><a href="#" id="b-np">❖ Total Overview</a></li>
-                  <li><a href="#" id="three-np">❖ States Overview</a></li>
-                  <li><a href="#" id="del-np">❖ Delhi Overview</a></li>
-                  <li><a href="#" id="bih-np">❖ Bihar Overview</a></li>
-                  <li><a href="#" id="ap-np">❖ Andhra Pradesh Overview</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- 1. UT -->
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-dpmrut">
-                <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
-                DPMR-Under Treatment
-              </span>
-              <div class="subsection-content" id="annual-dpmrut">
-                <ul>
-                  <li><a href="#" id="tot-dpmr-ut">✓ All States Overview</a></li>
-                  <li><a href="#" id="bih-dpmr-ut">✓ Bihar Overview</a></li>
-                  <li><a href="#" id="jhar-dpmr-ut">✓ Jharkhand Overview</a></li>
-                  <li><a href="#" id="chat-dpmr-ut">✓ Chhattisgarh Overview</a></li>
-                  <li><a href="#" id="kar-dpmr-ut">✓ Karnataka Overview</a></li>
-                  <li><a href="#" id="tn-dpmr-ut">✓ Tamil Nadu Overview</a></li>
-                  <li><a href="#" id="ap-dpmr-ut">✓ Andhra Pradesh Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 2. Lepra Reaction -->
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-dpmrlepra">
-                <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
-                DPMR-Lepra Reaction
-              </span>
-              <div class="subsection-content" id="annual-dpmrlepra">
-                <ul>
-                  <li><a href="#" id="tot-dpmr-lepra">✓ TOTAL Overview</a></li>
-                  <li><a href="#" id="bih-dpmr-lepra">✓ Bihar Overview</a></li>
-                  <li><a href="#" id="jhar-dpmr-lepra">✓ Jharkhand Overview</a></li>
-                  <li><a href="#" id="chat-dpmr-lepra">✓ Chhattisgarh Overview</a></li>
-                  <li><a href="#" id="kar-dpmr-lepra">✓ Karnataka Overview</a></li>
-                  <li><a href="#" id="tn-dpmr-lepra">✓ Tamil Nadu Overview</a></li>
-                  <li><a href="#" id="ap-dpmr-lepra">✓ Andhra Pradesh Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 3. Self Care (kept only this one) -->
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-dpmrself">
-                <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
-                DPMR-Self Care
-              </span>
-              <div class="subsection-content" id="annual-dpmrself">
-                <ul>
-                  <li><a href="#" id="tot-dpmr-self">✓ TOTAL Overview</a></li>
-                  <li><a href="#" id="bih-dpmr-self">✓ Bihar Overview</a></li>
-                  <li><a href="#" id="jhar-dpm-self">✓ Jharkhand Overview</a></li>
-                  <li><a href="#" id="chat-dpmr-self">✓ Chhattisgarh Overview</a></li>
-                  <li><a href="#" id="kar-dpmr-self">✓ Karnataka Overview</a></li>
-                  <li><a href="#" id="tn-dpmr-self">✓ Tamil Nadu Overview</a></li>
-                  <li><a href="#" id="ap-dpmr-self">✓ Andhra Pradesh Overview</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 4. MCR -->
-            <div class="subsection">
-              <span class="subsection-title" data-target="annual-dpmrmcr">
-                <i class="fas fa-notes-medical" style="color:#ff0000; margin-right: 5px;"></i>
-                DPMR-MCR
-              </span>
-              <div class="subsection-content" id="annual-dpmrmcr">
-                <ul>
-                  <li><a href="#" id="tot-dpmr-mcr">✓ TOTAL Overview</a></li>
-                  <li><a href="#" id="bih-dpmr-mcr">✓ Bihar Overview</a></li>
-                  <li><a href="#" id="jhar-dpmr-mcr">✓ Jharkhand Overview</a></li>
-                  <li><a href="#" id="chat-dpmr-mcr">✓ Chhattisgarh Overview</a></li>
-                  <li><a href="#" id="kar-dpmr-mcr">✓ Karnataka Overview</a></li>
-                  <li><a href="#" id="tn-dpmr-mcr">✓ Tamil Nadu Overview</a></li>
-                  <li><a href="#" id="ap-dpmr-mcr">✓ Andhra Pradesh Overview</a></li>
-                </ul>
               </div>
             </div>
 
@@ -773,7 +812,7 @@
             <div class="subsection">
               <span class="subsection-title" data-target="quarter-rcs">
                 <i class="fas fa-procedures" style="color:#00ff1e; margin-right: 5px;"></i>
-                RCS done cases
+                RCS done Cases
               </span>
 
               <div class="subsection-content" id="quarter-rcs">
@@ -897,7 +936,7 @@
 
 
             <div class="subsection">
-              <span class="subsection-title" data-target="quarter-pretb">➢ Presumptive TB cases</span>
+              <span class="subsection-title" data-target="quarter-pretb">➢ Presumptive TB Cases</span>
               <div class="subsection-content" id="quarter-pretb">
                 <ul>
                   <li><a href="#" id="tp-qpretb">❖ All Projects Overview</a></li>
@@ -917,7 +956,7 @@
             </div>
 
             <div class="subsection">
-              <span class="subsection-title" data-target="quarter-tb">➢ Total TB cases</span>
+              <span class="subsection-title" data-target="quarter-tb">➢ Total TB Cases</span>
               <div class="subsection-content" id="quarter-tb">
                 <ul>
                   <li><a href="#" id="tp-qtb">❖ All Projects Overview</a></li>
@@ -957,7 +996,7 @@
             </div>
 
             <div class="subsection">
-              <span class="subsection-title" data-target="quarter-rt">➢ RT cases Cure Rate %</span>
+              <span class="subsection-title" data-target="quarter-rt">➢ RT Cases Cure Rate %</span>
               <div class="subsection-content" id="quarter-rt">
                 <ul>
                   <li><a href="#" id="tp-qrt">❖ All Projects Overview</a></li>

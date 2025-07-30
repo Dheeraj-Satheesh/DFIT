@@ -666,3 +666,48 @@ canvas {
   }
 }
 
+/* 🌐 OVERALL YEAR-WISE ANALYSIS SECTION STYLES (Isolated) */
+.analysis-collapsible {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.analysis-collapsible-content {
+  display: none;
+  padding-left: 10px;
+}
+
+.analysis-direct-toggle,
+.analysis-contents-toggle {
+   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* space between icon and text */
+  padding: 6px 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+
+.analysis-direct-toggle:hover,
+.analysis-contents-toggle:hover {
+  background-color: #e92d2d;
+  text-decoration: underline;
+}
+
+.analysis-direct-content,
+.analysis-contents-content {
+  display: none;
+  padding-left: 15px;
+}
