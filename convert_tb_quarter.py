@@ -12,7 +12,7 @@ INPUTS = {
     },
     "TB": {
         "folder": "TB_Case_Finding",
-        "label": "grand total",
+        "label": "total ds tb cases diagnosed",
         "output_dir": "OUTPUT_QTR/TB"
     },
     "NSP": {

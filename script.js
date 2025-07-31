@@ -131,8 +131,12 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "total type-1 lepra reactions"
         || contents === "total type 2 lepra reactions"
         || contents === "total rcs done"
+        || contents === "presumptive ds tb found to be positive"
+        || contents === "rt conversion rate"
+        || contents === "nsp conversion rate"
         || contents === "total no of beds occupied leprosy patients"
         || contents === "total leprosy patients admitted";
+
 
 
       // Add the class if it's the Total row
@@ -236,14 +240,19 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `</tr></thead><tbody>`;
 
         data.forEach(row => {
-          const contents = row["Contents"]?.toString().toLowerCase().trim();
+          const contents = (
+            row["Contents"] ||
+            row["Type of cases "] ||
+            row["Type of Cases"] ||
+            row["Annexure M Contents"] ||
+            ""
+          ).toString().toLowerCase().trim();
 
           const isTotalRow =
             contents === "nsn/nep total" ||
             contents === "nsp total" ||
             contents === "rt +ve total" ||
             contents === "rt neg total" ||
-            contents === "grand total" ||
             contents === "total number of outpatients treated" ||
             contents === "total no. of new leprosy cases detected" ||
             contents === "total adult disability g-ii" ||
@@ -253,9 +262,10 @@ document.addEventListener("DOMContentLoaded", () => {
             contents === "total rcs done" ||
             contents === "total no of beds occupied leprosy patients" ||
             contents === "total leprosy patients admitted" ||
-            contents === "tb suspect examined diagnosis" ||
-            contents === "nsp cured" ||
-            contents === "rt +ve cured";
+            contents === "presumptive ds tb found to be positive" ||
+            contents === "rt conversion rate" ||
+            contents === "total ds tb cases diagnosed" ||  // <-- fixed
+            contents === "nsp conversion rate";            // <-- fixed
 
           html += `<tr${isTotalRow ? ' class="highlight-row"' : ''}>`;
           html += keys.map(k => {
@@ -264,6 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }).join('');
           html += `</tr>`;
         });
+
 
         html += `</tbody></table></div>`;
         contentArea.innerHTML = html;
@@ -1520,8 +1531,14 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
-          html += `<tr><td>${row["Category"]}</td>${columns.map(c => `<td>${row[c] ?? ""}</td>`).join("")}</tr>`;
+          const isHighlight = (row["Category"] ?? "").trim().toLowerCase() === "total lep (socio-economic support) supported";
+
+          html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+          html += `<td>${row["Category"]}</td>`;
+          html += columns.map(c => `<td>${row[c] ?? ""}</td>`).join("");
+          html += `</tr>`;
         });
+
 
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
@@ -1548,8 +1565,14 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
-          html += `<tr><td>${row["Category"]}</td>${columns.map(c => `<td>${row[c] ?? ""}</td>`).join("")}</tr>`;
+          const isHighlight = (row["Category"] ?? "").trim().toLowerCase() === "total nutritional supplements supported";
+
+          html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+          html += `<td>${row["Category"]}</td>`;
+          html += columns.map(c => `<td>${row[c] ?? ""}</td>`).join("");
+          html += `</tr>`;
         });
+
 
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
@@ -1575,10 +1598,14 @@ document.addEventListener("DOMContentLoaded", () => {
         html += "</tr></thead><tbody>";
 
         data.forEach(row => {
-          html += `<tr><td>${row["S.NO"]}</td><td>${row["Particulars"]}</td>`;
+          const isSuccessRateRow = (row["Particulars"] ?? "").trim().toLowerCase() === "treatment success rate";
+
+          html += `<tr${isSuccessRateRow ? ' class="highlight-row"' : ''}>`;
+          html += `<td>${row["S.NO"]}</td><td>${row["Particulars"]}</td>`;
           html += selectedYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
           html += "</tr>";
         });
+
 
         html += "</tbody></table></div>";
         contentArea.innerHTML = html;
@@ -1623,10 +1650,20 @@ document.addEventListener("DOMContentLoaded", () => {
         html += validYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
 
+        const highlightContents = [
+          "no. of drtb irregular  patients retrieved.",
+          "no. of dr tb cases provided nutritional support.",
+          "no. of drtb patients lep supported"
+        ];
+
         data.forEach(row => {
-          html += `<tr><td>${row["S.NO"]}</td><td>${row["DRTB contents"]}</td>`;
+          const content = (row["DRTB contents"] ?? "").trim().toLowerCase();
+          const isHighlight = highlightContents.includes(content);
+
+          html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+          html += `<td>${row["S.NO"]}</td><td>${row["DRTB contents"]}</td>`;
           html += validYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
-          html += "</tr>";
+          html += `</tr>`;
         });
 
         html += "</tbody></table></div>";
@@ -1675,7 +1712,11 @@ document.addEventListener("DOMContentLoaded", () => {
           html += `</tr></thead><tbody>`;
 
           data.forEach(row => {
-            html += `<tr><td>${row["Contents"]}</td>`;
+            const contents = (row["Contents"] ?? "").trim().toLowerCase();
+            const isHighlightRow = contents === "no. of dr tb cases diagnosed";
+
+            html += `<tr${isHighlightRow ? ' class="highlight-row"' : ''}>`;
+            html += `<td>${row["Contents"]}</td>`;
             html += selectedYears.map(y => `<td>${row[y] ?? ""}</td>`).join("");
             html += `</tr>`;
           });
@@ -1750,11 +1791,25 @@ document.addEventListener("DOMContentLoaded", () => {
           html += validYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
 
+          const highlightContents = [
+            "number of patients practising self care regularly",
+            "number of patients wearing appropriate foot wear regularly",
+            "number of patients rcs done",
+            "number of persons received lep support during the year",
+            "number of under treatment patients taking regular treatment",
+            "number of lepra reaction patients taking regular treatment"
+          ];
+
           data.forEach(row => {
-            html += `<tr><td>${row["S.NO"]}</td><td>${row["DPMR Contents"]}</td>`;
+            const content = (row["DPMR Contents"] ?? "").trim().toLowerCase();
+            const isHighlight = highlightContents.includes(content);
+
+            html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+            html += `<td>${row["S.NO"]}</td><td>${row["DPMR Contents"]}</td>`;
             html += validYears.map(y => `<td>${row[y] ?? ""}</td>`).join("");
             html += `</tr>`;
           });
+
 
           html += `</tbody></table></div>`;
           contentArea.innerHTML = html;
