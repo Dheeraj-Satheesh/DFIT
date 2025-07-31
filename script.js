@@ -50,38 +50,53 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.style.display = "inline-block";
 
     btn.onclick = () => {
-      // Clone table and prepare full rendering
+      // Create wrapper to include title and table
+      const wrapper = document.createElement("div");
+
+      // Clone the heading if present
+      const heading = container.previousElementSibling?.tagName === "H2"
+        ? container.previousElementSibling.cloneNode(true)
+        : null;
+
+      if (heading) wrapper.appendChild(heading.cloneNode(true));
+
+      // Clone table
       const clone = container.cloneNode(true);
-      clone.style.position = "absolute";
-      clone.style.left = "-9999px";
-      clone.style.top = "0";
+      clone.style.position = "relative";
       clone.style.maxHeight = "none";
       clone.style.overflow = "visible";
       clone.style.width = container.scrollWidth + "px";
       clone.style.height = container.scrollHeight + "px";
 
-      // Ensure no clipping
-      document.body.appendChild(clone);
+      wrapper.appendChild(clone);
 
-      // Use html2canvas on the expanded clone
+      // Style wrapper and push it off-screen
+      wrapper.style.position = "absolute";
+      wrapper.style.left = "-9999px";
+      wrapper.style.top = "0";
+      wrapper.style.padding = "20px";
+      wrapper.style.background = "white";
+
+      document.body.appendChild(wrapper);
+
       setTimeout(() => {
-        html2canvas(clone, {
+        html2canvas(wrapper, {
           scrollX: 0,
           scrollY: 0,
-          width: clone.scrollWidth,
-          height: clone.scrollHeight,
-          windowWidth: clone.scrollWidth,
-          windowHeight: clone.scrollHeight,
+          width: wrapper.scrollWidth,
+          height: wrapper.scrollHeight,
+          windowWidth: wrapper.scrollWidth,
+          windowHeight: wrapper.scrollHeight,
           useCORS: true,
           allowTaint: true,
         }).then(canvas => {
-          document.body.removeChild(clone);
+          document.body.removeChild(wrapper);
           const link = document.createElement("a");
           link.download = `${name}.png`;
           link.href = canvas.toDataURL("image/png");
           link.click();
         });
-      }, 200); // delay to ensure layout settles
+      }, 200); // wait for layout
     };
   }
 
