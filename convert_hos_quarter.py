@@ -62,7 +62,6 @@ def extract_quarter_data(filepath, year):
         for cat, config in CATEGORIES.items():
             if content in config["labels"]:
                 for i, Qtr in enumerate(["I", "II", "III", "IV"]):
-                    # Normalize key
                     key_variants = [
                         f"{Qtr} Qtr-{year}",
                         f"{Qtr} Qtr- {year}",
@@ -74,8 +73,9 @@ def extract_quarter_data(filepath, year):
                         if key in row:
                             val = row[key]
                             break
-                    val = (val if val is not None else "")
-                    if val == "":
+
+                    # Handle missing/invalid values
+                    if val == "" or val is None:
                         val = None if year == 2025 and i >= 2 else 0
                     else:
                         try:
@@ -83,8 +83,13 @@ def extract_quarter_data(filepath, year):
                             val = round(val, 1) if not val.is_integer() else int(val)
                         except:
                             val = 0
-                    result.setdefault(cat, {}).setdefault(year, {}).setdefault(QUARTERS[i], val)
+
+                    # Accumulate value if already exists (multi-label case)
+                    result.setdefault(cat, {}).setdefault(year, {}).setdefault(QUARTERS[i], 0)
+                    if val is not None:
+                        result[cat][year][QUARTERS[i]] += val
     return result
+
 
 def process_quarter_data():
     for cat in CATEGORIES:

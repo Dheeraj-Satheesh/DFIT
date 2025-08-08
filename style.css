@@ -711,3 +711,79 @@ canvas {
   display: none;
   padding-left: 15px;
 }
+/* INTRO image */
+/* Content area layout */
+#content-area {
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Wrapper for the image */
+.dashboard-hero-image {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  overflow-x: auto; /* Enables horizontal scroll if content overflows */
+}
+
+/* Image styling */
+.dashboard-hero-image img {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: Add swipe animation on hover */
+.dashboard-hero-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #content-area {
+    padding: 10px;
+  }
+
+  .dashboard-hero-image {
+    padding: 5px;
+    margin-top: 10px;
+    overflow-x: auto;
+  }
+
+  .dashboard-hero-image img {
+    width: 100%;
+    max-width: none; /* Allow image to exceed width if needed */
+    min-width: 320px;
+  }
+}
+
+
+/* Bounce Animation */
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce {
+  animation: bounce-in 1.2s ease-out;
+}

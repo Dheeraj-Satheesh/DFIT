@@ -1091,10 +1091,23 @@
       </style>
 
       <section id="content-area">
-        <p>Select a section from the sidebar to view data.</p>
+        <!-- <p>Select a section from the sidebar to view data.</p> -->
+        <div class="dashboard-hero-image animate-bounce">
+          <img src="/homepage.jpg" alt="DFIT Dashboard Overview" />
+        </div>
       </section>
+
     </main>
   </div>
+  <script>
+    window.addEventListener("load", () => {
+      const animated = document.querySelector(".animate-on-load");
+      if (animated) {
+        animated.classList.add("loaded");
+      }
+    });
+  </script>
+
   <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
       const hamburger = document.getElementById("hamburger");
