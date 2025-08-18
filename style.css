@@ -787,3 +787,80 @@ canvas {
 .animate-bounce {
   animation: bounce-in 1.2s ease-out;
 }
+/* toast style */
+.toast {
+  visibility: hidden;
+  max-width: 90%;
+  width: fit-content;
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  z-index: 10000;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+/* logout button */
+.filters-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logout-center-button {
+  display: flex;
+  align-items: center;
+}
+
+#logoutBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background-color: #c92b37;
+}
+/* Download button */
+#downloadTableBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #00c853; /* green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#downloadTableBtn:hover {
+  background-color: #009624; /* darker green */
+  text-decoration: underline;
+}
+.table-container {
+  max-height: 66vh;      /* take up to 70% of screen height */
+}
+/* Ensure footer never overlaps */
+#content-area {
+  padding-bottom: 60px;  /* extra breathing room at bottom */
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login - DFIT Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #84fab0, #8fd3f4);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(6px);
+            padding: 40px 30px 30px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 360px;
+            animation: slideIn 0.8s ease;
+            min-height: 430px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .login-container img.logo {
+            width: 100%;
+            max-width: 270px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            animation: fadeIn 1.2s ease;
+            color: #0a1af7;
+            font-size: 22px;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            animation: fadeIn 1.4s ease;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #00a86b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            animation: fadeIn 1.6s ease;
+        }
+
+        button:hover {
+            background-color: #008f5a;
+            transform: scale(1.03);
+        }
+
+        .note {
+            font-size: 17px;
+            color: #ff4d00;
+            margin-top: 12px;
+            animation: fadeIn 1.8s ease;
+        }
+
+        .footer {
+            margin-top: 24px;
+            font-size: 13px;
+            color: #ee0b0b;
+            animation: fadeIn 1.9s ease;
+        }
+
+        .toast {
+            visibility: hidden;
+            max-width: 90%;
+            width: fit-content;
+            background-color: #e63946;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            padding: 12px 20px;
+            position: fixed;
+            z-index: 10000;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .toast.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media (max-width: 400px) {
+            .login-container {
+                padding: 30px 20px 20px;
+                min-height: 400px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .note {
+                font-size: 15px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            padding: 10px 40px 10px 10px;
+            /* leave space for eye icon */
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .toggle-eye {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            color: #555;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="https://damienfoundation.in/wp-content/uploads/2023/03/logo.gif.gif" alt="Damien Foundation Logo"
+            class="logo" />
+        <h2>DFIT Dashboard Login</h2>
+        <div class="input-wrapper">
+            <input type="password" id="username" placeholder="Enter username" autocomplete="off" />
+            <span class="toggle-eye" onclick="toggleUsername()">👁️</span>
+        </div>
+
+        <button onclick="login()">Login</button>
+        <div class="note">Please contact the administrator to get your username.</div>
+        <div class="footer">© 2025 Damien Foundation India Trust.</div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        function showToast(message, backgroundColor = "#e63946") {
+            const toast = document.getElementById("toast");
+            toast.innerText = message;
+            toast.style.backgroundColor = backgroundColor;
+            toast.className = "toast show";
+            setTimeout(() => {
+                toast.className = toast.className.replace("show", "");
+            }, 3000);
+        }
+
+        function login() {
+            const userMap = {
+                "admin@dfit": "admin",
+
+                "nellore@xyz123tyujk": "nellore",
+                "delhi@admin2025": "delhi",
+                "polambakkam@123xyz": "polambakkam",
+                "dos@Df90rt": "dos",
+                "dhanbad@Dh88&mn": "dhanbad",
+                "amda@Am66#ty": "amda",
+                "arasipalayam@Ar55$op": "arasipalayam",
+                "fathimanagar@Ft44!jk": "fathimanagar",
+                "nagepalli@Ng99^pq": "nagepalli",
+                "pavagada@Pv22*lm": "pavagada",
+                "belatanr@Bl33#rs": "belatanr",
+                "popejohngarden@Pj11!qw": "popejohngarden",
+                "chilakalapalli@Ch77$bn": "chilakalapalli",
+                "trivandrum@Tr88@kl": "trivandrum",
+                "andipatti@An55%ty": "andipatti",
+                "ambalamoola@Am99$rt": "ambalamoola",
+
+                // DPMR state-level logins
+                "bihar@Bj77#": "bihar",
+                "jharkhand.dpmr@Jh88$": "jharkhand",
+                "chhattisgarh.dpmr@Cg99%": "chhattisgarh",
+                "karnataka.dpmr@Ka55&": "karnataka",
+                "tamilnadu.dpmr@Tn44*": "tamilnadu",
+                "andhrapradesh.dpmr@Ap66!": "andhrapradesh"
+            };
+
+            const entered = document.getElementById("username").value.trim();
+
+            if (userMap[entered]) {
+                sessionStorage.setItem("username", userMap[entered]);
+                window.location.href = "index.html";
+            } else {
+                showToast("❌ Unauthorized: You are not allowed to access the dashboard.");
+            }
+        }
+
+        window.onload = function () {
+            document.getElementById("username").addEventListener("keydown", function (e) {
+                if (e.key === "Enter") login();
+            });
+        };
+        function toggleUsername() {
+            const input = document.getElementById("username");
+            input.type = input.type === "password" ? "text" : "password";
+        }
+
+    </script>
+
+</body>
+
+</html>

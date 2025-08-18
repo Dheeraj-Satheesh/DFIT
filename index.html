@@ -1024,6 +1024,7 @@
     <main class="main-content">
       <header>
         <div class="filters-row">
+          <!-- Left Filter -->
           <div class="filters-left-group">
             <label for="yearFilter">Filter by Yearly / Quarterly:</label>
             <select id="yearFilter">
@@ -1043,6 +1044,15 @@
             </select>
           </div>
 
+          <!-- ✅ Logout button in the middle -->
+          <div class="logout-center-button">
+            <button id="logoutBtn">Logout</button>
+          </div>
+          <!-- Download Button -->
+          <button id="downloadTableBtn">
+            DOWNLOAD
+          </button>
+          <!-- Right Filter -->
           <div class="filters-right-group">
             <label for="yearMultiBtn">Multi-Years Filter:</label>
             <div class="custom-multiselect">
@@ -1064,36 +1074,12 @@
             </div>
           </div>
         </div>
-
       </header>
-      <!-- Button -->
-      <button id="downloadTableBtn" style="
-  margin: 10px;
-  background-color: #00ff08;
-  color: black;
-  padding: 10px 16px;
-  text-align: center;
-  font-size: 14px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-">
-        DOWNLOAD
-      </button>
-
-      <!-- Optional Hover Effect -->
-      <style>
-        #downloadTableBtn:hover {
-          background-color: #45a049;
-          text-decoration: underline;
-        }
-      </style>
-
+      <!-- Main page -->
       <section id="content-area">
         <!-- <p>Select a section from the sidebar to view data.</p> -->
         <div class="dashboard-hero-image animate-bounce">
-          <img src="/homepage.jpg" alt="DFIT Dashboard Overview" />
+          <img src="/homepage1.jpg" alt="DFIT Dashboard Overview" />
         </div>
       </section>
 
@@ -1107,42 +1093,11 @@
       }
     });
   </script>
-
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburger = document.getElementById("hamburger");
-      const sidebar = document.getElementById("sidebar");
-
-      // ✅ Toggle sidebar on hamburger click (works on all screen sizes)
-      hamburger.addEventListener("click", () => {
-        sidebar.classList.toggle("active");
-      });
-
-      // ✅ Auto-close sidebar on link click (on all screen sizes)
-      const sidebarLinks = sidebar.querySelectorAll("a");
-      sidebarLinks.forEach(link => {
-        link.addEventListener("click", () => {
-          sidebar.classList.remove("active");
-        });
-      });
-    });
-  </script> -->
   <script>
     document.getElementById("yearMultiBtn").addEventListener("click", () => {
       document.querySelector(".custom-multiselect").classList.toggle("show");
     });
-
-    // // Optional: close when clicking outside
-    // window.addEventListener("click", function (e) {
-    //   if (!e.target.closest(".custom-multiselect")) {
-    //     document.querySelector(".custom-multiselect")?.classList.remove("show");
-    //   }
-    // });
-
   </script>
-
-
-
   <!-- Main dashboard logic -->
   <script src="script.js"></script>
   <!-- Footer -->
@@ -1183,6 +1138,8 @@
         style="color: #fff; text-decoration: none; margin-left: 10px;">Privacy Policy</a>
     </div>
   </footer>
+  <!-- Toast Container -->
+  <div id="toast" class="toast"></div>
 
 </body>
 

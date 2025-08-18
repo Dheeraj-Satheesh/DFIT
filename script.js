@@ -1,3 +1,78 @@
+// ✅ Logout button logic
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      sessionStorage.clear();
+      window.location.href = "login.html";
+    });
+  }
+
+  // ⛔ Redirect to login if not logged in
+  const allowedPages = ["index.html"]; // You can extend this
+  const currentPage = window.location.pathname.split("/").pop();
+
+  if (allowedPages.includes(currentPage)) {
+    const user = sessionStorage.getItem("username");
+    if (!user) {
+      window.location.href = "login.html";
+    }
+  }
+});
+
+// Redirect to login if not logged in
+if (!sessionStorage.getItem("username")) {
+  window.location.href = "login.html";
+}
+function isAllowedToView(key) {
+  const user = sessionStorage.getItem("username");
+
+  if (!user || user === "admin") return true;
+
+  const commonAllowed = ["total_projects", "dfit_projects", "supported_projects"];
+
+  // map of username -> prefixes they can see
+  const projectAccess = {
+    nellore: ["nellore", "nel-"], // Nellore Hospital
+    delhi: ["delhi", "del-"],     // Delhi Hospital
+    dos: ["dos"],
+    bihar: ["bihar"],                 // DOS Hospital
+    polambakkam: ["pol"],         // Polambakkam Rehabilitation Centre
+    dhanbad: ["dan"],             // Dhanbad Hospital
+    amda: ["amd"],                // Amda Hospital
+    arasipalayam: ["ars"],        // Arasipalayam Hospital
+    fathimanagar: ["fat"],        // Fathimanagar Hospital
+    nagepalli: ["nag"],           // Nagepalli Hospital
+    pavagada: ["pav"],            // Pavagada Hospital
+    belatanr: ["bel"],            // Belatanr Hospital
+    popejohngarden: ["pop"],      // Pope John Garden Hospital
+    chilakalapalli: ["chi"],      // Chilakala Palli Hospital
+    trivandrum: ["tri"],          // Trivandrum Hospital
+    andipatti: ["and"],           // Andipatti Hospital
+    ambalamoola: ["amb"]          // Ambalamoola Hospital
+  };
+
+
+  const prefixes = projectAccess[user];
+  if (prefixes) {
+    return prefixes.some(p => key.toLowerCase().startsWith(p)) ||
+      commonAllowed.includes(key.toLowerCase());
+  }
+
+  return false;
+}
+
+function showToast(message, backgroundColor = "#e63946") {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.style.backgroundColor = backgroundColor;
+  toast.className = "toast show";
+
+  setTimeout(() => {
+    toast.className = toast.className.replace("show", "");
+  }, 3000);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const contentArea = document.getElementById("content-area");
   const yearFilter = document.getElementById("yearFilter");
@@ -164,6 +239,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /// MUlti year Selction
   function renderMultiYearSection(basePath, key, sectionName) {
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
     const years = getSelectedYears();
     const cumulativeData = {};
     const order = [];
@@ -223,6 +302,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Quarter - wise data display
 
   function renderQuarterWiseSection(path, key, sectionTitle) {
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
     const selectedYear = document.getElementById("yearFilter").value;
     const contentArea = document.getElementById("content-area");
 
@@ -570,19 +653,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Attach event listeners
   Object.entries(quarterGraphLinks).forEach(([id, config]) => {
     const el = document.getElementById(id);
     if (el) {
       el.addEventListener("click", (e) => {
         e.preventDefault();
         setActiveLink(e.target);
+
+        // 🔑 Derive projectKey from the ID
+        let projectKey = "";
+        if (id.startsWith("nel")) projectKey = "nellore";
+        else if (id.startsWith("del")) projectKey = "delhi";
+        else if (id.startsWith("tp")) projectKey = "total_projects";
+        else if (id.startsWith("dfit")) projectKey = "dfit_projects";
+        else if (id.startsWith("sup")) projectKey = "supported_projects";
+        else if (id.startsWith("dos")) projectKey = "dos";
+        else if (id.startsWith("pol")) projectKey = "polambakkam";
+        else if (id.startsWith("dan")) projectKey = "dhanbad";
+        else if (id.startsWith("amd")) projectKey = "amda";
+        else if (id.startsWith("ars")) projectKey = "arasipalayam";
+        else if (id.startsWith("fat")) projectKey = "fathimanagar";
+        else if (id.startsWith("nag")) projectKey = "nagepalli";
+        else if (id.startsWith("pav")) projectKey = "pavagada";
+        else if (id.startsWith("bel")) projectKey = "belatanr";
+        else if (id.startsWith("pop")) projectKey = "popejohngarden";
+        else if (id.startsWith("chi")) projectKey = "chilakalapalli";
+        else if (id.startsWith("tri")) projectKey = "trivendrum";
+        else if (id.startsWith("and")) projectKey = "andipatti";
+        else if (id.startsWith("amb")) projectKey = "ambalamoola";
+
         const years = getSelectedYears();
-        renderQuarterTableAndChart(config.folder, config.file, config.title, years);
+        renderQuarterTableAndChart(config.folder, config.file, config.title, projectKey);
       });
     }
   });
-  function renderQuarterTableAndChart(folder, fileName, title) {
+
+  function renderQuarterTableAndChart(folder, fileName, title, projectKey) {
+    if (!isAllowedToView(projectKey)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
     const selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
     const container = document.getElementById("content-area");
     container.innerHTML = "<p>Loading...</p>";
@@ -1300,8 +1410,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Annual-Wise Analysis
 
   let genericChartInstance = null;
-
-  function renderAnnualGraphTableAndChart(folder, jsonFile, sectionTitle) {
+  function renderAnnualGraphTableAndChart(folder, jsonFile, sectionTitle, projectKey) {
+    if (!isAllowedToView(projectKey)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
@@ -1503,7 +1616,6 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     });
   });
-
   // Step 2: Add event listeners to each link
   Object.entries(annualGraphLinks).forEach(([id, config]) => {
     const el = document.getElementById(id);
@@ -1511,12 +1623,33 @@ document.addEventListener("DOMContentLoaded", () => {
       el.addEventListener("click", (e) => {
         e.preventDefault();
         setActiveLink(e.target);
-        renderAnnualGraphTableAndChart(config.folder, config.file, config.title);
+
+        // 🔑 Derive projectKey from ID
+        let projectKey = "";
+        if (id.startsWith("nel")) projectKey = "nellore";
+        else if (id.startsWith("del")) projectKey = "delhi";
+        else if (id.startsWith("tp")) projectKey = "total_projects";
+        else if (id.startsWith("dfit")) projectKey = "dfit_projects";
+        else if (id.startsWith("sup")) projectKey = "supported_projects";
+        else if (id.startsWith("dos")) projectKey = "dos";
+        else if (id.startsWith("pol")) projectKey = "polambakkam";
+        else if (id.startsWith("dan")) projectKey = "dhanbad";
+        else if (id.startsWith("amd")) projectKey = "amda";
+        else if (id.startsWith("ars")) projectKey = "arasipalayam";
+        else if (id.startsWith("fat")) projectKey = "fathimanagar";
+        else if (id.startsWith("nag")) projectKey = "nagepalli";
+        else if (id.startsWith("pav")) projectKey = "pavagada";
+        else if (id.startsWith("bel")) projectKey = "belatanr";
+        else if (id.startsWith("pop")) projectKey = "popejohngarden";
+        else if (id.startsWith("chi")) projectKey = "chilakalapalli";
+        else if (id.startsWith("tri")) projectKey = "trivandrum";
+        else if (id.startsWith("and")) projectKey = "andipatti";
+        else if (id.startsWith("amb")) projectKey = "ambalamoola";
+
+        renderAnnualGraphTableAndChart(config.folder, config.file, config.title, projectKey);
       });
     }
   });
-
-
 
 
   // --- LEP Section ---
@@ -1590,6 +1723,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("link-drtb")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-drtb");
+    const key = "delhi";
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
 
     const selectedYear = document.getElementById("yearFilter").value;
     const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
@@ -1625,7 +1763,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("link-bihar-drtb")?.addEventListener("click", e => {
     e.preventDefault();
     setActiveLink("link-bihar-drtb");
-
+    const key = "bihar";
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
     const selectedYear = document.getElementById("yearFilter").value;
     const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
 
@@ -2180,9 +2322,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
   // 📥 Download Table + Graph as a single PNG
-  function enableDownloadBoth(name = "dfit_report", tableSelector, chartSelector) {
+  function enableDownloadBoth1(name = "dfit_report", tableSelector, chartSelector) {
     const btn = document.getElementById("downloadTableBtn");
     const table = document.querySelector(tableSelector);
     const chart = document.querySelector(chartSelector);
@@ -2216,4 +2357,29 @@ document.addEventListener("DOMContentLoaded", () => {
       link.click();
     };
   }
+  // 📥 Download only Title + Graph as PNG (ignore table)
+  function enableDownloadBoth(name = "dfit_report", tableSelector, chartSelector) {
+    const btn = document.getElementById("downloadTableBtn");
+    const chart = document.querySelector(chartSelector);
+    if (!btn || !chart) return;
+
+    btn.style.display = "inline-block";
+    btn.onclick = async () => {
+      try {
+        // Capture the chart container (including title above it, if in same div)
+        const chartContainer = chart.parentElement;
+        const canvas = await html2canvas(chartContainer);
+
+        // Download
+        const link = document.createElement("a");
+        link.download = `${name}.png`;
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      } catch (err) {
+        console.error("Download error:", err);
+        showToast("⚠️ Error capturing chart for download.");
+      }
+    };
+  }
+
 });
