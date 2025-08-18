@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Login - DFIT Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         * {
@@ -110,6 +111,7 @@
         .footer {
             margin-top: 24px;
             font-size: 13px;
+            font: bold;
             color: #ee0b0b;
             animation: fadeIn 1.9s ease;
         }
@@ -193,12 +195,29 @@
             class="logo" />
         <h2>DFIT Dashboard Login</h2>
         <div class="input-wrapper">
-            <input type="password" id="username" placeholder="Enter username" autocomplete="off" />
-            <span class="toggle-eye" onclick="toggleUsername()">👁️</span>
+            <input type="password" id="username" placeholder="Enter Password" autocomplete="off" />
+            <span class="toggle-eye" onclick="toggleUsername()">
+                <i id="eyeIcon" class="fa-solid fa-eye"></i>
+            </span>
         </div>
 
         <button onclick="login()">Login</button>
-        <div class="note">Please contact the administrator to get your username.</div>
+        <div class="note">Please contact the administrator to get your Password.</div>
+        <!-- Email Button -->
+        <div style="margin-top: 10px; text-align: center;">
+            <a href="mailto:programme@damienfoundarion.in" style="
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #6aff00;
+       color: rgb(15, 15, 15);
+       text-decoration: none;
+       border-radius: 5px;
+       font-size: 14px;
+       font-weight: bold;
+     ">
+                Email Administrator
+            </a>
+        </div>
         <div class="footer">© 2025 Damien Foundation India Trust.</div>
     </div>
 
@@ -218,7 +237,6 @@
         function login() {
             const userMap = {
                 "admin@dfit": "admin",
-
                 "nellore@xyz123tyujk": "nellore",
                 "delhi@admin2025": "delhi",
                 "polambakkam@123xyz": "polambakkam",
@@ -264,6 +282,21 @@
             const input = document.getElementById("username");
             input.type = input.type === "password" ? "text" : "password";
         }
+        function toggleUsername() {
+            const input = document.getElementById("username");
+            const icon = document.getElementById("eyeIcon");
+
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+
 
     </script>
 

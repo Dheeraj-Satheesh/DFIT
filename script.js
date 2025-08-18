@@ -84,6 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
       .filter(y => /^\d{4}$/.test(y));
     return years.length > 0 ? years.map(Number) : [2025];
   }
+  document.getElementById("selectAllYears").addEventListener("change", function () {
+    const allYearBoxes = document.querySelectorAll("#yearCheckboxes input[type='checkbox'][value]");
+    allYearBoxes.forEach(cb => cb.checked = this.checked);
+  });
+
   // Universal Active Link Handler
   function setActiveLink(idOrElement) {
     document.querySelectorAll(".sidebar a").forEach(a => a.classList.remove("active-link"));
@@ -201,11 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "total ds tb patients diagnosed"
         || contents === "total new leprosy cases detected"
         || contents === "total opd treated"
-        || contents === "total adult g-ii-d cases"
-        || contents === "total child g-ii-d cases"
-        || contents === "total type-1 lepra reaction cases"
-        || contents === "total type-2 lepra reaction cases"
-        || contents === "major rcs done"
+        || contents === "total adult g ii cases"
+        || contents === "total child g ii cases"
+        || contents === "total type-i lepra reaction cases"
+        || contents === "total type-ii lepra reaction cases"
+        || contents === "total major rcs done"
         || contents === "presumptive ds tb found to be positive"
         || contents === "sputum conversion rate for rt patients"
         || contents === "sputum conversion rate for nsp patients"
@@ -341,11 +346,11 @@ document.addEventListener("DOMContentLoaded", () => {
             contents === "total rt neg pts managed" ||
             contents === "total opd treated" ||
             contents === "total new leprosy cases detected" ||
-            contents === "total adult g-ii-d cases" ||
-            contents === "total child g-ii-d cases" ||
-            contents === "total type-1 lepra reaction cases" ||
-            contents === "total type-2 lepra reaction cases" ||
-            contents === "major rcs done" ||
+            contents === "total adult g ii cases" ||
+            contents === "total child g ii cases" ||
+            contents === "total type-i lepra reaction cases" ||
+            contents === "total type-ii lepra reaction cases" ||
+            contents === "total major rcs done" ||
             contents === "total beds available for leprosy" ||
             contents === "total leprosy cases admitted" ||
             contents === "presumptive ds tb found to be positive" ||
