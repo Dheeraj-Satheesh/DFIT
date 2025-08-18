@@ -1,6 +1,6 @@
 [
     {
-        "Type of Cases": "NSP",
+        "Type of Cases": "NSP Patients",
         "I Qtr-2015": "189",
         "II Qtr-2015": "186",
         "III Qtr-2015": "164",
@@ -8,7 +8,7 @@
         "Total 2015": "698"
     },
     {
-        "Type of Cases": "NSN",
+        "Type of Cases": "NSN Patients",
         "I Qtr-2015": "58",
         "II Qtr-2015": "48",
         "III Qtr-2015": "55",
@@ -16,7 +16,7 @@
         "Total 2015": "210"
     },
     {
-        "Type of Cases": "New EP",
+        "Type of Cases": "NEP Patients",
         "I Qtr-2015": "63",
         "II Qtr-2015": "51",
         "III Qtr-2015": "61",
@@ -24,7 +24,7 @@
         "Total 2015": "223"
     },
     {
-        "Type of Cases": "Others",
+        "Type of Cases": "Other Patients",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -32,7 +32,7 @@
         "Total 2015": "0"
     },
     {
-        "Type of Cases": "New Cases Total",
+        "Type of Cases": "Total New Patients Managed",
         "I Qtr-2015": "310",
         "II Qtr-2015": "285",
         "III Qtr-2015": "280",
@@ -40,7 +40,7 @@
         "Total 2015": "1131"
     },
     {
-        "Type of Cases": "Recurrent TB",
+        "Type of Cases": "Recurrent TB Patients",
         "I Qtr-2015": "44",
         "II Qtr-2015": "25",
         "III Qtr-2015": "30",
@@ -48,7 +48,7 @@
         "Total 2015": "126"
     },
     {
-        "Type of Cases": "Treatment After Failure",
+        "Type of Cases": "Treatment After Failure Patients Patients",
         "I Qtr-2015": "9",
         "II Qtr-2015": "5",
         "III Qtr-2015": "10",
@@ -56,7 +56,7 @@
         "Total 2015": "35"
     },
     {
-        "Type of Cases": "Treatment After Loss to Follow-up",
+        "Type of Cases": "Treatment After Loss to Follow-up Patients",
         "I Qtr-2015": "12",
         "II Qtr-2015": "12",
         "III Qtr-2015": "7",
@@ -64,7 +64,7 @@
         "Total 2015": "47"
     },
     {
-        "Type of Cases": "Other Previously Treated Patients",
+        "Type of Cases": "Previously Treated Others Neg Patients",
         "I Qtr-2015": "22",
         "II Qtr-2015": "14",
         "III Qtr-2015": "17",
@@ -72,7 +72,7 @@
         "Total 2015": "64"
     },
     {
-        "Type of Cases": "Retreatment cases Total",
+        "Type of Cases": "Total Retreatment Patients ",
         "I Qtr-2015": "87",
         "II Qtr-2015": "56",
         "III Qtr-2015": "64",
@@ -80,7 +80,7 @@
         "Total 2015": "272"
     },
     {
-        "Type of Cases": "Total DS TB cases Diagnosed",
+        "Type of Cases": "Total DS TB Patients Diagnosed",
         "I Qtr-2015": "397",
         "II Qtr-2015": "341",
         "III Qtr-2015": "344",
@@ -88,7 +88,7 @@
         "Total 2015": "1403"
     },
     {
-        "Type of Cases": "Total NSP conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for NSP Patients",
         "I Qtr-2015": "192",
         "II Qtr-2015": "189",
         "III Qtr-2015": "187",
@@ -96,7 +96,7 @@
         "Total 2015": "741"
     },
     {
-        "Type of Cases": "NSP Negative",
+        "Type of Cases": "Sputum Negative for NSP Patients",
         "I Qtr-2015": "171",
         "II Qtr-2015": "170",
         "III Qtr-2015": "162",
@@ -104,7 +104,7 @@
         "Total 2015": "656"
     },
     {
-        "Type of Cases": "NSP Positive",
+        "Type of Cases": "Sputum Positive for NSP Patients",
         "I Qtr-2015": "5",
         "II Qtr-2015": "3",
         "III Qtr-2015": "8",
@@ -112,7 +112,7 @@
         "Total 2015": "20"
     },
     {
-        "Type of Cases": "NSP Not done",
+        "Type of Cases": "Sputum not done for NSP Patients",
         "I Qtr-2015": "16",
         "II Qtr-2015": "16",
         "III Qtr-2015": "17",
@@ -120,7 +120,7 @@
         "Total 2015": "65"
     },
     {
-        "Type of Cases": "NSP Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for NSP Patients",
         "I Qtr-2015": "89",
         "II Qtr-2015": "90",
         "III Qtr-2015": "87",
@@ -128,7 +128,7 @@
         "Total 2015": "89"
     },
     {
-        "Type of Cases": "Total RT conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for RT Patients",
         "I Qtr-2015": "55",
         "II Qtr-2015": "66",
         "III Qtr-2015": "42",
@@ -136,7 +136,7 @@
         "Total 2015": "206"
     },
     {
-        "Type of Cases": "RT Negative",
+        "Type of Cases": "Sputum Negative for RT Patients",
         "I Qtr-2015": "33",
         "II Qtr-2015": "41",
         "III Qtr-2015": "23",
@@ -144,7 +144,7 @@
         "Total 2015": "129"
     },
     {
-        "Type of Cases": "RT Positive",
+        "Type of Cases": "Sputum Positive for RT Patients",
         "I Qtr-2015": "8",
         "II Qtr-2015": "5",
         "III Qtr-2015": "9",
@@ -152,7 +152,7 @@
         "Total 2015": "27"
     },
     {
-        "Type of Cases": "RT not done",
+        "Type of Cases": "Sputum not done for RT Patients",
         "I Qtr-2015": "14",
         "II Qtr-2015": "20",
         "III Qtr-2015": "10",
@@ -160,7 +160,7 @@
         "Total 2015": "50"
     },
     {
-        "Type of Cases": "RT Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for RT Patients",
         "I Qtr-2015": "60",
         "II Qtr-2015": "62",
         "III Qtr-2015": "55",

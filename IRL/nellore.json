@@ -11,7 +11,7 @@
     "2022": "10606",
     "2023": "10034",
     "2024": "6343",
-    "Contents": "No. of Presumptive DR TB cases"
+    "Contents": "Total Presumptive DR TB Patients Examined"
   },
   {
     "2014": "2292",
@@ -25,7 +25,7 @@
     "2022": "0",
     "2023": "0",
     "2024": "0",
-    "Contents": "No. of DR TB  follow up patients Examined  "
+    "Contents": "Total DR TB follow up Patients Examined"
   },
   {
     "2014": "175",
@@ -39,6 +39,6 @@
     "2022": "1342",
     "2023": "1153",
     "2024": "630",
-    "Contents": "No. of DR TB cases Diagnosed"
+    "Contents": "Total DR TB Patients Diagnosed"
   }
 ]

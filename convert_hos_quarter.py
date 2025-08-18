@@ -15,35 +15,35 @@ OUTPUT_FILE_NAMES = {
 
 CATEGORIES = {
     "OPD": {
-        "labels": ["total number of outpatients treated"],
+        "labels": ["total opd treated"],
         "output": "OUTPUT_QTR/OPD"
     },
     "LEPROSY": {
-        "labels": ["total no. of new leprosy cases detected"],
+        "labels": ["total new leprosy cases detected"],
         "output": "OUTPUT_QTR/LEPROSY"
     },
     "DISABILITY": {
-        "labels": ["total adult disability g-ii", "total children disability g-ii"],
+        "labels": ["total adult g-ii-d cases", "total child g-ii-d cases"],
         "output": "OUTPUT_QTR/DISABILITY"
     },
     "LEPRA": {
-        "labels": ["total type-1 lepra reactions", "total type 2 lepra reactions"],
+        "labels": ["total type-1 lepra reaction cases", "total type-2 lepra reaction cases"],
         "output": "OUTPUT_QTR/LEPRA"
     },
     "RCS": {
-        "labels": ["total rcs done"],
+        "labels": ["major rcs done"],
         "output": "OUTPUT_QTR/RCS"
     },
     "LEPAD": {
-        "labels": ["total leprosy patients admitted"],
+        "labels": ["total leprosy cases admitted"],
         "output": "OUTPUT_QTR/LEPAD"
     },
     "LEPBED": {
-        "labels": ["total no of beds occupied leprosy patients"],
+        "labels": ["total beddays for leprosy cases"],
         "output": "OUTPUT_QTR/LEPBED"
     },
     "LEPBEDRATE": {
-        "labels": ["bed occupancy rate for leprosy"],
+        "labels": ["bed occupancy rate for leprosy cases"],
         "output": "OUTPUT_QTR/LEPBEDRATE"
     }
 }

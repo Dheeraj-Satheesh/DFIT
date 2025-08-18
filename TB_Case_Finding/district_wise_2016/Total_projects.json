@@ -1,6 +1,6 @@
 [
   {
-    "Type of Cases": "NSP",
+    "Type of Cases": "NSP Patients",
     "I Qtr-2016": "344",
     "II Qtr-2016": "334",
     "III Qtr-2016": "309",
@@ -8,7 +8,7 @@
     "Total 2016": "1280"
   },
   {
-    "Type of Cases": "NSN",
+    "Type of Cases": "NSN Patients",
     "I Qtr-2016": "134",
     "II Qtr-2016": "129",
     "III Qtr-2016": "106",
@@ -16,7 +16,7 @@
     "Total 2016": "460"
   },
   {
-    "Type of Cases": "New EP",
+    "Type of Cases": "NEP Patients",
     "I Qtr-2016": "238",
     "II Qtr-2016": "322",
     "III Qtr-2016": "239",
@@ -24,7 +24,7 @@
     "Total 2016": "992"
   },
   {
-    "Type of Cases": "Others",
+    "Type of Cases": "Other Patients",
     "I Qtr-2016": "0",
     "II Qtr-2016": "2",
     "III Qtr-2016": "2",
@@ -32,7 +32,7 @@
     "Total 2016": "5"
   },
   {
-    "Type of Cases": "New Cases Total",
+    "Type of Cases": "Total New Patients Managed",
     "I Qtr-2016": "716",
     "II Qtr-2016": "787",
     "III Qtr-2016": "656",
@@ -40,7 +40,7 @@
     "Total 2016": "2737"
   },
   {
-    "Type of Cases": "Recurrent TB",
+    "Type of Cases": "Recurrent TB Patients",
     "I Qtr-2016": "84",
     "II Qtr-2016": "70",
     "III Qtr-2016": "58",
@@ -48,7 +48,7 @@
     "Total 2016": "274"
   },
   {
-    "Type of Cases": "Treatment After Failure",
+    "Type of Cases": "Treatment After Failure Patients Patients",
     "I Qtr-2016": "0",
     "II Qtr-2016": "4",
     "III Qtr-2016": "7",
@@ -56,7 +56,7 @@
     "Total 2016": "15"
   },
   {
-    "Type of Cases": "Treatment After Loss to Follow-up",
+    "Type of Cases": "Treatment After Loss to Follow-up Patients",
     "I Qtr-2016": "44",
     "II Qtr-2016": "54",
     "III Qtr-2016": "46",
@@ -64,7 +64,7 @@
     "Total 2016": "185"
   },
   {
-    "Type of Cases": "Other Previously Treated Patients",
+    "Type of Cases": "Previously Treated Others Neg Patients",
     "I Qtr-2016": "80",
     "II Qtr-2016": "58",
     "III Qtr-2016": "66",
@@ -72,7 +72,7 @@
     "Total 2016": "268"
   },
   {
-    "Type of Cases": "Retreatment cases Total",
+    "Type of Cases": "Total Retreatment Patients ",
     "I Qtr-2016": "208",
     "II Qtr-2016": "186",
     "III Qtr-2016": "177",
@@ -80,7 +80,7 @@
     "Total 2016": "742"
   },
   {
-    "Type of Cases": "Total DS TB cases Diagnosed",
+    "Type of Cases": "Total DS TB Patients Diagnosed",
     "I Qtr-2016": "924",
     "II Qtr-2016": "973",
     "III Qtr-2016": "833",
@@ -88,7 +88,7 @@
     "Total 2016": "3479"
   },
   {
-    "Type of Cases": "Total NSP conversion Cases",
+    "Type of Cases": "Total Sputum Conversion for NSP Patients",
     "I Qtr-2016": "302",
     "II Qtr-2016": "345",
     "III Qtr-2016": "329",
@@ -96,7 +96,7 @@
     "Total 2016": "1274"
   },
   {
-    "Type of Cases": "NSP Negative",
+    "Type of Cases": "Sputum Negative for NSP Patients",
     "I Qtr-2016": "274",
     "II Qtr-2016": "306",
     "III Qtr-2016": "284",
@@ -104,7 +104,7 @@
     "Total 2016": "1136"
   },
   {
-    "Type of Cases": "NSP Positive",
+    "Type of Cases": "Sputum Positive for NSP Patients",
     "I Qtr-2016": "7",
     "II Qtr-2016": "16",
     "III Qtr-2016": "16",
@@ -112,7 +112,7 @@
     "Total 2016": "48"
   },
   {
-    "Type of Cases": "NSP Not done",
+    "Type of Cases": "Sputum not done for NSP Patients",
     "I Qtr-2016": "21",
     "II Qtr-2016": "23",
     "III Qtr-2016": "29",
@@ -120,7 +120,7 @@
     "Total 2016": "90"
   },
   {
-    "Type of Cases": "NSP Conversion rate",
+    "Type of Cases": "Sputum Conversion rate for NSP Patients",
     "I Qtr-2016": "91",
     "II Qtr-2016": "89",
     "III Qtr-2016": "86",
@@ -128,7 +128,7 @@
     "Total 2016": "89"
   },
   {
-    "Type of Cases": "Total RT conversion Cases",
+    "Type of Cases": "Total Sputum Conversion for RT Patients",
     "I Qtr-2016": "113",
     "II Qtr-2016": "120",
     "III Qtr-2016": "127",
@@ -136,7 +136,7 @@
     "Total 2016": "468"
   },
   {
-    "Type of Cases": "RT Negative",
+    "Type of Cases": "Sputum Negative for RT Patients",
     "I Qtr-2016": "81",
     "II Qtr-2016": "91",
     "III Qtr-2016": "97",
@@ -144,7 +144,7 @@
     "Total 2016": "352"
   },
   {
-    "Type of Cases": "RT Positive",
+    "Type of Cases": "Sputum Positive for RT Patients",
     "I Qtr-2016": "15",
     "II Qtr-2016": "10",
     "III Qtr-2016": "15",
@@ -152,7 +152,7 @@
     "Total 2016": "52"
   },
   {
-    "Type of Cases": "RT not done",
+    "Type of Cases": "Sputum not done for RT Patients",
     "I Qtr-2016": "17",
     "II Qtr-2016": "19",
     "III Qtr-2016": "15",
@@ -160,7 +160,7 @@
     "Total 2016": "64"
   },
   {
-    "Type of Cases": "RT Conversion rate",
+    "Type of Cases": "Sputum Conversion rate for RT Patients",
     "I Qtr-2016": "72",
     "II Qtr-2016": "76",
     "III Qtr-2016": "76",

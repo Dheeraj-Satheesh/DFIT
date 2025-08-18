@@ -1,6 +1,6 @@
 [
     {
-        "Type of cases ": "NSP Cured",
+        "Type of cases ": "Cured NSP Patients",
         "I Qtr-2015": "48",
         "II Qtr-2015": "65",
         "III Qtr-2015": "46",
@@ -9,7 +9,7 @@
         "%": "83"
     },
     {
-        "Type of cases ": "NSP Treatment completed",
+        "Type of cases ": "Treatment completed NSP Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "1",
@@ -18,7 +18,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Died",
+        "Type of cases ": "Died NSP Patients",
         "I Qtr-2015": "2",
         "II Qtr-2015": "12",
         "III Qtr-2015": "3",
@@ -27,7 +27,7 @@
         "%": "9"
     },
     {
-        "Type of cases ": "NSP Failure",
+        "Type of cases ": "Failure NSP Pts",
         "I Qtr-2015": "4",
         "II Qtr-2015": "4",
         "III Qtr-2015": "1",
@@ -36,7 +36,7 @@
         "%": "4"
     },
     {
-        "Type of cases ": "NSP Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up NSP Pts",
         "I Qtr-2015": "2",
         "II Qtr-2015": "4",
         "III Qtr-2015": "3",
@@ -45,7 +45,7 @@
         "%": "3"
     },
     {
-        "Type of cases ": "NSP Not Evaluated",
+        "Type of cases ": "Not Evaluated NSP Pts",
         "I Qtr-2015": "1",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -54,7 +54,7 @@
         "%": "0.37"
     },
     {
-        "Type of cases ": "NSP Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed NSP Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -63,7 +63,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSP Total",
+        "Type of cases ": "Total NSP Patients Managed",
         "I Qtr-2015": "57",
         "II Qtr-2015": "85",
         "III Qtr-2015": "54",
@@ -72,7 +72,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "NSN/NEP Cured",
+        "Type of cases ": "Cured NSN/NEP Patients",
         "I Qtr-2015": "",
         "II Qtr-2015": "",
         "III Qtr-2015": "",
@@ -81,7 +81,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "NSN/NEP Treatment completed",
+        "Type of cases ": "Treatment completed NSN/NEP Patients",
         "I Qtr-2015": "21",
         "II Qtr-2015": "25",
         "III Qtr-2015": "25",
@@ -90,7 +90,7 @@
         "%": "87"
     },
     {
-        "Type of cases ": "NSN/NEP Died",
+        "Type of cases ": "Died NSN/NEP Patients",
         "I Qtr-2015": "0",
         "II Qtr-2015": "4",
         "III Qtr-2015": "2",
@@ -99,7 +99,7 @@
         "%": "6"
     },
     {
-        "Type of cases ": "NSN/NEP Failure",
+        "Type of cases ": "Failure NSN/NEP Patients",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -108,7 +108,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up NSN/NEP Patients",
         "I Qtr-2015": "4",
         "II Qtr-2015": "1",
         "III Qtr-2015": "2",
@@ -117,7 +117,7 @@
         "%": "7"
     },
     {
-        "Type of cases ": "NSN/NEP Not Evaluated",
+        "Type of cases ": "Not Evaluated NSN/NEP Patients",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -126,7 +126,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed NSN/NEP Patients",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -135,7 +135,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "NSN/NEP Total",
+        "Type of cases ": "Total NSN/NEP Patients Managed",
         "I Qtr-2015": "25",
         "II Qtr-2015": "30",
         "III Qtr-2015": "29",
@@ -144,7 +144,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT +ve Cured",
+        "Type of cases ": "Cured RT+ve Pts",
         "I Qtr-2015": "17",
         "II Qtr-2015": "12",
         "III Qtr-2015": "14",
@@ -153,7 +153,7 @@
         "%": "70"
     },
     {
-        "Type of cases ": "RT+ve Treatment completed",
+        "Type of cases ": "Treatment completed RT+ve Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "1",
@@ -162,7 +162,7 @@
         "%": "1"
     },
     {
-        "Type of cases ": "RT +Ve Died",
+        "Type of cases ": "Died RT+ve Patients",
         "I Qtr-2015": "1",
         "II Qtr-2015": "0",
         "III Qtr-2015": "3",
@@ -171,7 +171,7 @@
         "%": "6"
     },
     {
-        "Type of cases ": "RT +ve Failure",
+        "Type of cases ": "Failure RT+ve Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -180,7 +180,7 @@
         "%": "2"
     },
     {
-        "Type of cases ": "RT +ve Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up RT+ve Pts",
         "I Qtr-2015": "5",
         "II Qtr-2015": "2",
         "III Qtr-2015": "2",
@@ -189,7 +189,7 @@
         "%": "19"
     },
     {
-        "Type of cases ": "RT +ve Not Evaluated",
+        "Type of cases ": "Not Evaluated RT+ve Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -198,7 +198,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT +ve Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed RT+ve Pts",
         "I Qtr-2015": "1",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -207,7 +207,7 @@
         "%": "1.23"
     },
     {
-        "Type of cases ": "RT +ve Total",
+        "Type of cases ": "Total RT+ve Pts Managed",
         "I Qtr-2015": "24",
         "II Qtr-2015": "14",
         "III Qtr-2015": "20",
@@ -216,7 +216,7 @@
         "%": ""
     },
     {
-        "Type of cases ": "RT Neg Cured",
+        "Type of cases ": "Cured RT Neg Pts",
         "I Qtr-2015": "",
         "II Qtr-2015": "",
         "III Qtr-2015": "",
@@ -225,7 +225,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Treatment completed",
+        "Type of cases ": "Treatment completed RT Neg Pts",
         "I Qtr-2015": "1",
         "II Qtr-2015": "4",
         "III Qtr-2015": "3",
@@ -234,7 +234,7 @@
         "%": "48"
     },
     {
-        "Type of cases ": "RT Neg Died",
+        "Type of cases ": "Died RT Neg Pts",
         "I Qtr-2015": "2",
         "II Qtr-2015": "0",
         "III Qtr-2015": "1",
@@ -243,7 +243,7 @@
         "%": "13"
     },
     {
-        "Type of cases ": "RT Neg Failure",
+        "Type of cases ": "Failure RT Neg Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -252,7 +252,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up RT Neg Pts",
         "I Qtr-2015": "6",
         "II Qtr-2015": "0",
         "III Qtr-2015": "2",
@@ -261,7 +261,7 @@
         "%": "35"
     },
     {
-        "Type of cases ": "RT Neg Not Evaluated",
+        "Type of cases ": "Not Evaluated RT Neg Pts",
         "I Qtr-2015": "0",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -270,7 +270,7 @@
         "%": "0"
     },
     {
-        "Type of cases ": "RT Neg Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed RT Neg Pts",
         "I Qtr-2015": "1",
         "II Qtr-2015": "0",
         "III Qtr-2015": "0",
@@ -279,7 +279,7 @@
         "%": "4.35"
     },
     {
-        "Type of cases ": "RT Neg Total",
+        "Type of cases ": "Total RT Neg Pts Managed",
         "I Qtr-2015": "10",
         "II Qtr-2015": "4",
         "III Qtr-2015": "6",

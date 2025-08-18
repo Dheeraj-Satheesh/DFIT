@@ -1,6 +1,6 @@
 [
     {
-        "Type of Cases": "NSP",
+        "Type of Cases": "NSP Patients",
         "I Qtr-2019": "227",
         "II Qtr-2019": "260",
         "III Qtr-2019": "197",
@@ -8,7 +8,7 @@
         "Total 2019": "847"
     },
     {
-        "Type of Cases": "NSN",
+        "Type of Cases": "NSN Patients",
         "I Qtr-2019": "98",
         "II Qtr-2019": "105",
         "III Qtr-2019": "93",
@@ -16,7 +16,7 @@
         "Total 2019": "401"
     },
     {
-        "Type of Cases": "New EP",
+        "Type of Cases": "NEP Patients",
         "I Qtr-2019": "277",
         "II Qtr-2019": "368",
         "III Qtr-2019": "297",
@@ -24,7 +24,7 @@
         "Total 2019": "1141"
     },
     {
-        "Type of Cases": "Others",
+        "Type of Cases": "Other Patients",
         "I Qtr-2019": "0",
         "II Qtr-2019": "0",
         "III Qtr-2019": "0",
@@ -32,7 +32,7 @@
         "Total 2019": "0"
     },
     {
-        "Type of Cases": "New Cases Total",
+        "Type of Cases": "Total New Patients Managed",
         "I Qtr-2019": "602",
         "II Qtr-2019": "733",
         "III Qtr-2019": "587",
@@ -40,7 +40,7 @@
         "Total 2019": "2389"
     },
     {
-        "Type of Cases": "Recurrent TB",
+        "Type of Cases": "Recurrent TB Patients",
         "I Qtr-2019": "47",
         "II Qtr-2019": "35",
         "III Qtr-2019": "28",
@@ -48,7 +48,7 @@
         "Total 2019": "150"
     },
     {
-        "Type of Cases": "Treatment After Failure",
+        "Type of Cases": "Treatment After Failure Patients Patients",
         "I Qtr-2019": "7",
         "II Qtr-2019": "1",
         "III Qtr-2019": "2",
@@ -56,7 +56,7 @@
         "Total 2019": "10"
     },
     {
-        "Type of Cases": "Treatment After Loss to Follow-up",
+        "Type of Cases": "Treatment After Loss to Follow-up Patients",
         "I Qtr-2019": "26",
         "II Qtr-2019": "24",
         "III Qtr-2019": "23",
@@ -64,7 +64,7 @@
         "Total 2019": "95"
     },
     {
-        "Type of Cases": "Other Previously Treated Patients",
+        "Type of Cases": "Previously Treated Others Neg Patients",
         "I Qtr-2019": "51",
         "II Qtr-2019": "62",
         "III Qtr-2019": "48",
@@ -72,7 +72,7 @@
         "Total 2019": "223"
     },
     {
-        "Type of Cases": "Retreatment cases Total",
+        "Type of Cases": "Total Retreatment Patients ",
         "I Qtr-2019": "131",
         "II Qtr-2019": "122",
         "III Qtr-2019": "101",
@@ -80,7 +80,7 @@
         "Total 2019": "478"
     },
     {
-        "Type of Cases": "Total DS TB cases Diagnosed",
+        "Type of Cases": "Total DS TB Patients Diagnosed",
         "I Qtr-2019": "733",
         "II Qtr-2019": "855",
         "III Qtr-2019": "688",
@@ -88,7 +88,7 @@
         "Total 2019": "2867"
     },
     {
-        "Type of Cases": "Total NSP conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for NSP Patients",
         "I Qtr-2019": "168",
         "II Qtr-2019": "227",
         "III Qtr-2019": "260",
@@ -96,7 +96,7 @@
         "Total 2019": "852"
     },
     {
-        "Type of Cases": "NSP Negative",
+        "Type of Cases": "Sputum Negative for NSP Patients",
         "I Qtr-2019": "138",
         "II Qtr-2019": "183",
         "III Qtr-2019": "204",
@@ -104,7 +104,7 @@
         "Total 2019": "697"
     },
     {
-        "Type of Cases": "NSP Positive",
+        "Type of Cases": "Sputum Positive for NSP Patients",
         "I Qtr-2019": "13",
         "II Qtr-2019": "21",
         "III Qtr-2019": "26",
@@ -112,7 +112,7 @@
         "Total 2019": "76"
     },
     {
-        "Type of Cases": "NSP Not done",
+        "Type of Cases": "Sputum not done for NSP Patients",
         "I Qtr-2019": "17",
         "II Qtr-2019": "23",
         "III Qtr-2019": "30",
@@ -120,7 +120,7 @@
         "Total 2019": "79"
     },
     {
-        "Type of Cases": "NSP Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for NSP Patients",
         "I Qtr-2019": "82",
         "II Qtr-2019": "81",
         "III Qtr-2019": "78",
@@ -128,7 +128,7 @@
         "Total 2019": "82"
     },
     {
-        "Type of Cases": "Total RT conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for RT Patients",
         "I Qtr-2019": "50",
         "II Qtr-2019": "80",
         "III Qtr-2019": "60",
@@ -136,7 +136,7 @@
         "Total 2019": "243"
     },
     {
-        "Type of Cases": "RT Negative",
+        "Type of Cases": "Sputum Negative for RT Patients",
         "I Qtr-2019": "40",
         "II Qtr-2019": "62",
         "III Qtr-2019": "46",
@@ -144,7 +144,7 @@
         "Total 2019": "190"
     },
     {
-        "Type of Cases": "RT Positive",
+        "Type of Cases": "Sputum Positive for RT Patients",
         "I Qtr-2019": "5",
         "II Qtr-2019": "13",
         "III Qtr-2019": "7",
@@ -152,7 +152,7 @@
         "Total 2019": "30"
     },
     {
-        "Type of Cases": "RT not done",
+        "Type of Cases": "Sputum not done for RT Patients",
         "I Qtr-2019": "5",
         "II Qtr-2019": "5",
         "III Qtr-2019": "7",
@@ -160,7 +160,7 @@
         "Total 2019": "23"
     },
     {
-        "Type of Cases": "RT Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for RT Patients",
         "I Qtr-2019": "80",
         "II Qtr-2019": "78",
         "III Qtr-2019": "77",

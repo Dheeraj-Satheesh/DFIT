@@ -119,23 +119,23 @@ document.addEventListener("DOMContentLoaded", () => {
     Object.values(dataMap).forEach(row => {
       // Check if this is the "Total" row (case-insensitive)
       const contents = (row.Contents ?? "").trim().toLowerCase();
-      const isTotalRow = contents === "nsn/nep total"
-        || contents === "nsp total"
-        || contents === "rt +ve total"
-        || contents === "rt neg total"
-        || contents === "total ds tb cases diagnosed"
-        || contents === "total no. of new leprosy cases detected"
-        || contents === "total number of outpatients treated"
-        || contents === "total adult disability g-ii"
-        || contents === "total children disability g-ii"
-        || contents === "total type-1 lepra reactions"
-        || contents === "total type 2 lepra reactions"
-        || contents === "total rcs done"
+      const isTotalRow = contents === "total nsn/nep patients managed"
+        || contents === "total nsp patients managed"
+        || contents === "total rt+ve pts managed"
+        || contents === "total rt neg pts managed"
+        || contents === "total ds tb patients diagnosed"
+        || contents === "total new leprosy cases detected"
+        || contents === "total opd treated"
+        || contents === "total adult g-ii-d cases"
+        || contents === "total child g-ii-d cases"
+        || contents === "total type-1 lepra reaction cases"
+        || contents === "total type-2 lepra reaction cases"
+        || contents === "major rcs done"
         || contents === "presumptive ds tb found to be positive"
-        || contents === "rt conversion rate"
-        || contents === "nsp conversion rate"
-        || contents === "total no of beds occupied leprosy patients"
-        || contents === "total leprosy patients admitted";
+        || contents === "sputum conversion rate for rt patients"
+        || contents === "sputum conversion rate for nsp patients"
+        || contents === "total beds available for leprosy"
+        || contents === "total leprosy cases admitted";
 
 
 
@@ -249,23 +249,23 @@ document.addEventListener("DOMContentLoaded", () => {
           ).toString().toLowerCase().trim();
 
           const isTotalRow =
-            contents === "nsn/nep total" ||
-            contents === "nsp total" ||
-            contents === "rt +ve total" ||
-            contents === "rt neg total" ||
-            contents === "total number of outpatients treated" ||
-            contents === "total no. of new leprosy cases detected" ||
-            contents === "total adult disability g-ii" ||
-            contents === "total children disability g-ii" ||
-            contents === "total type-1 lepra reactions" ||
-            contents === "total type 2 lepra reactions" ||
-            contents === "total rcs done" ||
-            contents === "total no of beds occupied leprosy patients" ||
-            contents === "total leprosy patients admitted" ||
+            contents === "total nsn/nep patients managed" ||
+            contents === "total nsp patients managed" ||
+            contents === "total rt+ve pts managed" ||
+            contents === "total rt neg pts managed" ||
+            contents === "total opd treated" ||
+            contents === "total new leprosy cases detected" ||
+            contents === "total adult g-ii-d cases" ||
+            contents === "total child g-ii-d cases" ||
+            contents === "total type-1 lepra reaction cases" ||
+            contents === "total type-2 lepra reaction cases" ||
+            contents === "major rcs done" ||
+            contents === "total beds available for leprosy" ||
+            contents === "total leprosy cases admitted" ||
             contents === "presumptive ds tb found to be positive" ||
-            contents === "rt conversion rate" ||
-            contents === "total ds tb cases diagnosed" ||  // <-- fixed
-            contents === "nsp conversion rate";            // <-- fixed
+            contents === "sputum conversion rate for rt patients" ||
+            contents === "total ds tb patients diagnosed" ||  // <-- fixed
+            contents === "sputum conversion rate for nsp patients";            // <-- fixed
 
           html += `<tr${isTotalRow ? ' class="highlight-row"' : ''}>`;
           html += keys.map(k => {
@@ -1713,7 +1713,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           data.forEach(row => {
             const contents = (row["Contents"] ?? "").trim().toLowerCase();
-            const isHighlightRow = contents === "no. of dr tb cases diagnosed";
+            const isHighlightRow = contents === "total dr tb patients diagnosed";
 
             html += `<tr${isHighlightRow ? ' class="highlight-row"' : ''}>`;
             html += `<td>${row["Contents"]}</td>`;

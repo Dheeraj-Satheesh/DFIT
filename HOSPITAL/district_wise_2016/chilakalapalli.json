@@ -1,7 +1,7 @@
 [
   {
     "S.NO": "1",
-    "Contents": "Total number of outpatients treated",
+    "Contents": "Total OPD Treated",
     "I Qtr-2016": "365",
     "II Qtr-2016": "322",
     "III Qtr- 2016": "242",
@@ -10,7 +10,7 @@
   },
   {
     "S.NO": "1.a",
-    "Contents": "Skin diseases",
+    "Contents": "Skin OPD Treated",
     "I Qtr-2016": "37",
     "II Qtr-2016": "315",
     "III Qtr- 2016": "236",
@@ -19,7 +19,7 @@
   },
   {
     "S.NO": "1.b",
-    "Contents": "Respiratory symtomatics",
+    "Contents": "Respiratory OPD Treated",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -28,7 +28,7 @@
   },
   {
     "S.NO": "1.c",
-    "Contents": "Others",
+    "Contents": "Other OPD Treated",
     "I Qtr-2016": "328",
     "II Qtr-2016": "7",
     "III Qtr- 2016": "6",
@@ -37,7 +37,7 @@
   },
   {
     "S.NO": "2",
-    "Contents": "Adult-PB",
+    "Contents": "Adult New PB Cases",
     "I Qtr-2016": "5",
     "II Qtr-2016": "4",
     "III Qtr- 2016": "3",
@@ -46,7 +46,7 @@
   },
   {
     "S.NO": "2.a",
-    "Contents": "Adult-MB",
+    "Contents": "Adult New MB Cases",
     "I Qtr-2016": "4",
     "II Qtr-2016": "2",
     "III Qtr- 2016": "5",
@@ -55,7 +55,7 @@
   },
   {
     "S.NO": "2.b",
-    "Contents": "Adult-Total",
+    "Contents": "Total Adult Cases",
     "I Qtr-2016": "9",
     "II Qtr-2016": "6",
     "III Qtr- 2016": "8",
@@ -64,7 +64,7 @@
   },
   {
     "S.NO": "2.c",
-    "Contents": "Children-PB",
+    "Contents": "Child New PB Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "1",
     "III Qtr- 2016": "0",
@@ -73,7 +73,7 @@
   },
   {
     "S.NO": "2.d",
-    "Contents": "Children-MB",
+    "Contents": "Child New MB Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -82,7 +82,7 @@
   },
   {
     "S.NO": "2.e",
-    "Contents": "Children-Total",
+    "Contents": "Total Child Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "1",
     "III Qtr- 2016": "0",
@@ -91,7 +91,7 @@
   },
   {
     "S.NO": "2.f",
-    "Contents": "Total no. of New Leprosy Cases detected",
+    "Contents": "Total New Leprosy Cases detected",
     "I Qtr-2016": "10",
     "II Qtr-2016": "7",
     "III Qtr- 2016": "8",
@@ -100,7 +100,7 @@
   },
   {
     "S.NO": "2.g",
-    "Contents": "Relapse Cases",
+    "Contents": "Total Relapse Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -109,7 +109,7 @@
   },
   {
     "S.NO": "2.h",
-    "Contents": "Female-PB",
+    "Contents": "Female New PB Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "2",
     "III Qtr- 2016": "1",
@@ -118,7 +118,7 @@
   },
   {
     "S.NO": "2.i",
-    "Contents": "Female-MB",
+    "Contents": "Female New MB Cases",
     "I Qtr-2016": "2",
     "II Qtr-2016": "1",
     "III Qtr- 2016": "4",
@@ -127,7 +127,7 @@
   },
   {
     "S.NO": "2.j",
-    "Contents": "Female-Total",
+    "Contents": "Total Female Cases",
     "I Qtr-2016": "3",
     "II Qtr-2016": "3",
     "III Qtr- 2016": "5",
@@ -136,7 +136,7 @@
   },
   {
     "S.NO": "2.k",
-    "Contents": "Adult disability G-I-PB",
+    "Contents": "Adult New PB G-I-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -145,7 +145,7 @@
   },
   {
     "S.NO": "2.l",
-    "Contents": "Adult disability G-I-MB",
+    "Contents": "Adult New MB G-I-D Cases",
     "I Qtr-2016": "2",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "3",
@@ -154,7 +154,7 @@
   },
   {
     "S.NO": "2.m",
-    "Contents": "Total Adult disability G-I",
+    "Contents": "Total Adult G-I-D Cases",
     "I Qtr-2016": "2",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "3",
@@ -163,7 +163,7 @@
   },
   {
     "S.NO": "2.n",
-    "Contents": "Adult disability G- II-PB",
+    "Contents": "Adult New PB G-II-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -172,7 +172,7 @@
   },
   {
     "S.NO": "2.o",
-    "Contents": "Adult disability G-II-MB",
+    "Contents": "Adult New MB G-II-D Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -181,7 +181,7 @@
   },
   {
     "S.NO": "2.p",
-    "Contents": "Total Adult disability G-II",
+    "Contents": "Total Adult G-II-D Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -190,7 +190,7 @@
   },
   {
     "S.NO": "2.q",
-    "Contents": "Children disability G-I-PB",
+    "Contents": "Child New PB G-I-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -199,7 +199,7 @@
   },
   {
     "S.NO": "2.r",
-    "Contents": "Children disability G-I-MB",
+    "Contents": "Child New MB G-I-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -208,7 +208,7 @@
   },
   {
     "S.NO": "2.s",
-    "Contents": "Total Children disability G-I",
+    "Contents": "Total Child G-I-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -217,7 +217,7 @@
   },
   {
     "S.NO": "2.t",
-    "Contents": "Children disability G-II-PB",
+    "Contents": "Child New PB G-II-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -226,7 +226,7 @@
   },
   {
     "S.NO": "2.u",
-    "Contents": "Children disability G-II-MB",
+    "Contents": "Child New MB G-II-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -235,7 +235,7 @@
   },
   {
     "S.NO": "2.v",
-    "Contents": "Total Children disability G-II",
+    "Contents": "Total Child G-II-D Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -244,7 +244,7 @@
   },
   {
     "S.NO": "3",
-    "Contents": "lepra Reaction Type-1 Male",
+    "Contents": "Type-1 Lepra Reaction Male Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "3",
     "III Qtr- 2016": "1",
@@ -253,7 +253,7 @@
   },
   {
     "S.NO": "3.a",
-    "Contents": "lepra Reaction Type-1 Female",
+    "Contents": "Type-1 Lepra Reaction Female Cases",
     "I Qtr-2016": "2",
     "II Qtr-2016": "1",
     "III Qtr- 2016": "2",
@@ -262,7 +262,7 @@
   },
   {
     "S.NO": "3.b",
-    "Contents": "Total Type-1 lepra reactions",
+    "Contents": "Total Type-1 Lepra Reaction Cases",
     "I Qtr-2016": "3",
     "II Qtr-2016": "4",
     "III Qtr- 2016": "3",
@@ -271,7 +271,7 @@
   },
   {
     "S.NO": "3.c",
-    "Contents": "lepra Reaction Type-2 Male",
+    "Contents": "Type-2 Lepra Reaction Male Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -280,7 +280,7 @@
   },
   {
     "S.NO": "3.d",
-    "Contents": "lepra Reaction Type-2 Female",
+    "Contents": "Type-2 Lepra Reaction Female Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -289,7 +289,7 @@
   },
   {
     "S.NO": "3.e",
-    "Contents": "Total Type 2 lepra reactions",
+    "Contents": "Total Type-2 Lepra Reaction Cases",
     "I Qtr-2016": "1",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -298,7 +298,7 @@
   },
   {
     "S.NO": "4",
-    "Contents": "Total number of persons provided with MCR footwear",
+    "Contents": "Total MCR Footwear Provided",
     "I Qtr-2016": "9",
     "II Qtr-2016": "78",
     "III Qtr- 2016": "60",
@@ -307,7 +307,7 @@
   },
   {
     "S.NO": "5",
-    "Contents": "RCS Male",
+    "Contents": "Male Cases RCS Done",
     "I Qtr-2016": "6",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -316,7 +316,7 @@
   },
   {
     "S.NO": "5.a",
-    "Contents": "RCS Female",
+    "Contents": "Female Cases RCS Done",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -325,7 +325,7 @@
   },
   {
     "S.NO": "5.b",
-    "Contents": "TOTAL RCS DONE ",
+    "Contents": "Major RCS Done ",
     "I Qtr-2016": "6",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -415,7 +415,7 @@
   },
   {
     "S.NO": "6",
-    "Contents": "Male Septic Surgeries /Nerve Decompression",
+    "Contents": "Male Minor Surgeries Done",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -424,7 +424,7 @@
   },
   {
     "S.NO": "6.a",
-    "Contents": "Female Septic Surgeries /Nerve Decompression",
+    "Contents": "Female Minor Surgeries Done",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -433,7 +433,7 @@
   },
   {
     "S.NO": "6.b",
-    "Contents": "Total Septic Surgeries /Nerve Decompression",
+    "Contents": "Total Minor Surgeries Done",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -442,7 +442,7 @@
   },
   {
     "S.NO": "7",
-    "Contents": "Male House Support",
+    "Contents": "LEP-House Support for Male Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -451,7 +451,7 @@
   },
   {
     "S.NO": "7.a",
-    "Contents": "Female House Support",
+    "Contents": "LEP-House Support for Female Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -460,7 +460,7 @@
   },
   {
     "S.NO": "7.b",
-    "Contents": "Total House Support",
+    "Contents": "Total LEP-House Supported",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -469,7 +469,7 @@
   },
   {
     "S.NO": "7.c",
-    "Contents": "Male Self-Employment Support",
+    "Contents": "Socio-Economic Support for Male Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -478,7 +478,7 @@
   },
   {
     "S.NO": "7.d",
-    "Contents": "Female Self-Employment Support",
+    "Contents": "Socio-Economic Support for Female Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -487,7 +487,7 @@
   },
   {
     "S.NO": "7.e",
-    "Contents": "Total Self-Employment Support",
+    "Contents": "LEP, Socio-Economic Supported",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -496,7 +496,7 @@
   },
   {
     "S.NO": "7.f",
-    "Contents": "Male Education Support",
+    "Contents": "Education Support for Male cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -505,7 +505,7 @@
   },
   {
     "S.NO": "7.g",
-    "Contents": "Female Education Support",
+    "Contents": "Education Support for Female cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -514,7 +514,7 @@
   },
   {
     "S.NO": "7.h",
-    "Contents": "Total Education Support",
+    "Contents": "Total Education Supported",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -523,7 +523,7 @@
   },
   {
     "S.NO": "8",
-    "Contents": "Total Leprosy Beds Available",
+    "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2016": "21",
     "II Qtr-2016": "21",
     "III Qtr- 2016": "21",
@@ -532,7 +532,7 @@
   },
   {
     "S.NO": "8.a",
-    "Contents": "Total Leprosy Patients Admitted",
+    "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2016": "71",
     "II Qtr-2016": "74",
     "III Qtr- 2016": "67",
@@ -541,7 +541,7 @@
   },
   {
     "S.NO": "8.b",
-    "Contents": "Reactions Patients Admitted",
+    "Contents": "Lepra Reaction In-Patients Managed",
     "I Qtr-2016": "4",
     "II Qtr-2016": "2",
     "III Qtr- 2016": "1",
@@ -550,7 +550,7 @@
   },
   {
     "S.NO": "8.c",
-    "Contents": "RCS Patients Admitted",
+    "Contents": "RCS In-Patients Managed",
     "I Qtr-2016": "1",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -559,7 +559,7 @@
   },
   {
     "S.NO": "8.d",
-    "Contents": "Planter ulcers and Others Patients Admitted",
+    "Contents": "Planter Ulcers In-Patients Managed",
     "I Qtr-2016": "66",
     "II Qtr-2016": "72",
     "III Qtr- 2016": "66",
@@ -568,7 +568,7 @@
   },
   {
     "S.NO": "8.e",
-    "Contents": "Total no of Beds Occupied Leprosy Patients",
+    "Contents": "Total Beddays for Leprosy Cases",
     "I Qtr-2016": "907",
     "II Qtr-2016": "1103",
     "III Qtr- 2016": "1029",
@@ -577,7 +577,7 @@
   },
   {
     "S.NO": "8.f",
-    "Contents": "Bed Occupancy Rate for Leprosy",
+    "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2016": "48.0",
     "II Qtr-2016": "58.4",
     "III Qtr- 2016": "54.4",
@@ -586,7 +586,7 @@
   },
   {
     "S.NO": "9",
-    "Contents": "Total TB/DRTB Beds Available",
+    "Contents": "Total Beds Available for TB cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -595,7 +595,7 @@
   },
   {
     "S.NO": "9.a",
-    "Contents": "Total  DSTB Patients Admitted",
+    "Contents": "Total DS TB In- Patients Managed",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -604,7 +604,7 @@
   },
   {
     "S.NO": "9.b",
-    "Contents": "Total  DRTB Patients Admitted",
+    "Contents": "Total DR TB   In-Patients Managed",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -613,7 +613,7 @@
   },
   {
     "S.NO": "9.c",
-    "Contents": "Total no of Beds Occupied TB/DRTB Patients",
+    "Contents": "Total Beddays for TB Cases ",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",
@@ -622,7 +622,7 @@
   },
   {
     "S.NO": "9.d",
-    "Contents": "Bed Occupancy Rate for TB",
+    "Contents": "Bed Occupancy Rate for TB Cases",
     "I Qtr-2016": "0",
     "II Qtr-2016": "0",
     "III Qtr- 2016": "0",

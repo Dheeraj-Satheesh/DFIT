@@ -12,25 +12,26 @@ INPUTS = {
     },
     "TB": {
         "folder": "TB_Case_Finding",
-        "label": "total ds tb cases diagnosed",
+        "label": "total ds tb patients diagnosed",
         "output_dir": "OUTPUT_QTR/TB"
     },
     "NSP": {
         "folder": "TB_Outcomes",
-        "numerator": "nsp cured",
-        "denominator": "nsp total",
+        "numerator": "cured nsp patients",
+        "denominator": "total nsp patients managed",
         "output_dir": "OUTPUT_QTR/NSP"
     },
     "RT": {
         "folder": "TB_Outcomes",
-        "numerator": "rt +ve cured",
-        "denominator": "rt +ve total",
+        "numerator": "cured rt+ve pts",
+        "denominator": "total rt+ve pts managed",
         "output_dir": "OUTPUT_QTR/RT"
     }
 }
 
 OUTPUT_FILE_NAMES = {
     "total_projects": "tp",
+    "Total_projects": "tp",
     "dfit_projects": "dfit",
     "supported_projects": "sup",
     "nellore": "nel",

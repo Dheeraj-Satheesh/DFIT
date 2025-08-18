@@ -1,6 +1,6 @@
 [
     {
-        "Type of cases ": "NSP Cured",
+        "Type of cases ": "Cured NSP Patients",
         "I Qtr-2018": "76",
         "II Qtr-2018": "101",
         "III Qtr-2018": "80",
@@ -9,7 +9,7 @@
         "%": "92.4"
     },
     {
-        "Type of cases ": "NSP Treatment completed",
+        "Type of cases ": "Treatment completed NSP Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "1",
         "III Qtr-2018": "0",
@@ -18,7 +18,7 @@
         "%": "1.1"
     },
     {
-        "Type of cases ": "NSP Died",
+        "Type of cases ": "Died NSP Patients",
         "I Qtr-2018": "5",
         "II Qtr-2018": "2",
         "III Qtr-2018": "3",
@@ -27,7 +27,7 @@
         "%": "3.2"
     },
     {
-        "Type of cases ": "NSP Failure",
+        "Type of cases ": "Failure NSP Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "1",
         "III Qtr-2018": "0",
@@ -36,7 +36,7 @@
         "%": "1.4"
     },
     {
-        "Type of cases ": "NSP Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up NSP Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "2",
         "III Qtr-2018": "0",
@@ -45,7 +45,7 @@
         "%": "1.6"
     },
     {
-        "Type of cases ": "NSP Not Evaluated",
+        "Type of cases ": "Not Evaluated NSP Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -54,7 +54,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "NSP Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed NSP Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "1",
         "III Qtr-2018": "0",
@@ -63,7 +63,7 @@
         "%": "0.3"
     },
     {
-        "Type of cases ": "NSP Total",
+        "Type of cases ": "Total NSP Patients Managed",
         "I Qtr-2018": "84",
         "II Qtr-2018": "108",
         "III Qtr-2018": "83",
@@ -71,7 +71,7 @@
         "Total 2018": "370"
     },
     {
-        "Type of cases ": "NSN/NEP Cured",
+        "Type of cases ": "Cured NSN/NEP Patients",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -80,7 +80,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "NSN/NEP Treatment completed",
+        "Type of cases ": "Treatment completed NSN/NEP Patients",
         "I Qtr-2018": "41",
         "II Qtr-2018": "46",
         "III Qtr-2018": "24",
@@ -89,7 +89,7 @@
         "%": "92.3"
     },
     {
-        "Type of cases ": "NSN/NEP Died",
+        "Type of cases ": "Died NSN/NEP Patients",
         "I Qtr-2018": "1",
         "II Qtr-2018": "2",
         "III Qtr-2018": "0",
@@ -98,7 +98,7 @@
         "%": "4.5"
     },
     {
-        "Type of cases ": "NSN/NEP Failure",
+        "Type of cases ": "Failure NSN/NEP Patients",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -107,7 +107,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "NSN/NEP Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up NSN/NEP Patients",
         "I Qtr-2018": "2",
         "II Qtr-2018": "1",
         "III Qtr-2018": "0",
@@ -116,7 +116,7 @@
         "%": "2.6"
     },
     {
-        "Type of cases ": "NSN/NEP Not Evaluated",
+        "Type of cases ": "Not Evaluated NSN/NEP Patients",
         "I Qtr-2018": "1",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -125,7 +125,7 @@
         "%": "0.6"
     },
     {
-        "Type of cases ": "NSN/NEP Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed NSN/NEP Patients",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -134,7 +134,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "NSN/NEP Total",
+        "Type of cases ": "Total NSN/NEP Patients Managed",
         "I Qtr-2018": "45",
         "II Qtr-2018": "49",
         "III Qtr-2018": "24",
@@ -142,7 +142,7 @@
         "Total 2018": "155"
     },
     {
-        "Type of cases ": "RT +ve Cured",
+        "Type of cases ": "Cured RT+ve Pts",
         "I Qtr-2018": "27",
         "II Qtr-2018": "16",
         "III Qtr-2018": "16",
@@ -151,7 +151,7 @@
         "%": "83.3"
     },
     {
-        "Type of cases ": "RT+ve Treatment completed",
+        "Type of cases ": "Treatment completed RT+ve Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -160,7 +160,7 @@
         "%": "1.2"
     },
     {
-        "Type of cases ": "RT +Ve Died",
+        "Type of cases ": "Died RT+ve Patients",
         "I Qtr-2018": "0",
         "II Qtr-2018": "1",
         "III Qtr-2018": "2",
@@ -169,7 +169,7 @@
         "%": "7.1"
     },
     {
-        "Type of cases ": "RT +ve Failure",
+        "Type of cases ": "Failure RT+ve Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "2",
@@ -178,7 +178,7 @@
         "%": "3.6"
     },
     {
-        "Type of cases ": "RT +ve Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up RT+ve Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "2",
         "III Qtr-2018": "2",
@@ -187,7 +187,7 @@
         "%": "4.8"
     },
     {
-        "Type of cases ": "RT +ve Not Evaluated",
+        "Type of cases ": "Not Evaluated RT+ve Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -196,7 +196,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT +ve Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed RT+ve Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -205,7 +205,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT +ve Total",
+        "Type of cases ": "Total RT+ve Pts Managed",
         "I Qtr-2018": "28",
         "II Qtr-2018": "19",
         "III Qtr-2018": "22",
@@ -213,7 +213,7 @@
         "Total 2018": "84"
     },
     {
-        "Type of cases ": "RT Neg Cured",
+        "Type of cases ": "Cured RT Neg Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -222,7 +222,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT Neg Treatment completed",
+        "Type of cases ": "Treatment completed RT Neg Pts",
         "I Qtr-2018": "8",
         "II Qtr-2018": "5",
         "III Qtr-2018": "2",
@@ -231,7 +231,7 @@
         "%": "82.6"
     },
     {
-        "Type of cases ": "RT Neg Died",
+        "Type of cases ": "Died RT Neg Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "1",
         "III Qtr-2018": "0",
@@ -240,7 +240,7 @@
         "%": "13"
     },
     {
-        "Type of cases ": "RT Neg Failure",
+        "Type of cases ": "Failure RT Neg Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -249,7 +249,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT Neg Lost to Follow-up",
+        "Type of cases ": "Lost to Follow-up RT Neg Pts",
         "I Qtr-2018": "1",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -258,7 +258,7 @@
         "%": "4.3"
     },
     {
-        "Type of cases ": "RT Neg Not Evaluated",
+        "Type of cases ": "Not Evaluated RT Neg Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -267,7 +267,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT Neg Treatment Regimen Changed",
+        "Type of cases ": "Treatment Regimen Changed RT Neg Pts",
         "I Qtr-2018": "0",
         "II Qtr-2018": "0",
         "III Qtr-2018": "0",
@@ -276,7 +276,7 @@
         "%": "0.0"
     },
     {
-        "Type of cases ": "RT Neg Total",
+        "Type of cases ": "Total RT Neg Pts Managed",
         "I Qtr-2018": "10",
         "II Qtr-2018": "6",
         "III Qtr-2018": "2",

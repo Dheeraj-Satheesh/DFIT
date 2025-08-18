@@ -1,6 +1,6 @@
 [
     {
-        "Type of Cases": "NSP",
+        "Type of Cases": "NSP Patients",
         "I Qtr-2022": "81",
         "II Qtr-2022": "101",
         "III Qtr-2022": "116",
@@ -8,7 +8,7 @@
         "Total 2022": "387"
     },
     {
-        "Type of Cases": "NSN",
+        "Type of Cases": "NSN Patients",
         "I Qtr-2022": "88",
         "II Qtr-2022": "70",
         "III Qtr-2022": "71",
@@ -16,7 +16,7 @@
         "Total 2022": "311"
     },
     {
-        "Type of Cases": "New EP",
+        "Type of Cases": "NEP Patients",
         "I Qtr-2022": "27",
         "II Qtr-2022": "33",
         "III Qtr-2022": "29",
@@ -24,7 +24,7 @@
         "Total 2022": "135"
     },
     {
-        "Type of Cases": "Others",
+        "Type of Cases": "Other Patients",
         "I Qtr-2022": "1",
         "II Qtr-2022": "1",
         "III Qtr-2022": "1",
@@ -32,7 +32,7 @@
         "Total 2022": "3"
     },
     {
-        "Type of Cases": "New Cases Total",
+        "Type of Cases": "Total New Patients Managed",
         "I Qtr-2022": "197",
         "II Qtr-2022": "205",
         "III Qtr-2022": "217",
@@ -40,7 +40,7 @@
         "Total 2022": "836"
     },
     {
-        "Type of Cases": "Recurrent TB",
+        "Type of Cases": "Recurrent TB Patients",
         "I Qtr-2022": "8",
         "II Qtr-2022": "16",
         "III Qtr-2022": "24",
@@ -48,7 +48,7 @@
         "Total 2022": "73"
     },
     {
-        "Type of Cases": "Treatment After Failure",
+        "Type of Cases": "Treatment After Failure Patients Patients",
         "I Qtr-2022": "0",
         "II Qtr-2022": "1",
         "III Qtr-2022": "0",
@@ -56,7 +56,7 @@
         "Total 2022": "1"
     },
     {
-        "Type of Cases": "Treatment After Loss to Follow-up",
+        "Type of Cases": "Treatment After Loss to Follow-up Patients",
         "I Qtr-2022": "1",
         "II Qtr-2022": "1",
         "III Qtr-2022": "1",
@@ -64,7 +64,7 @@
         "Total 2022": "3"
     },
     {
-        "Type of Cases": "Other Previously Treated Patients",
+        "Type of Cases": "Previously Treated Others Neg Patients",
         "I Qtr-2022": "32",
         "II Qtr-2022": "19",
         "III Qtr-2022": "19",
@@ -72,7 +72,7 @@
         "Total 2022": "99"
     },
     {
-        "Type of Cases": "Retreatment cases Total",
+        "Type of Cases": "Total Retreatment Patients ",
         "I Qtr-2022": "41",
         "II Qtr-2022": "37",
         "III Qtr-2022": "44",
@@ -80,7 +80,7 @@
         "Total 2022": "176"
     },
     {
-        "Type of Cases": "Total DS TB cases Diagnosed",
+        "Type of Cases": "Total DS TB Patients Diagnosed",
         "I Qtr-2022": "238",
         "II Qtr-2022": "242",
         "III Qtr-2022": "261",
@@ -88,7 +88,7 @@
         "Total 2022": "1012"
     },
     {
-        "Type of Cases": "Total NSP conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for NSP Patients",
         "I Qtr-2022": "72",
         "II Qtr-2022": "81",
         "III Qtr-2022": "101",
@@ -96,7 +96,7 @@
         "Total 2022": "370"
     },
     {
-        "Type of Cases": "NSP Negative",
+        "Type of Cases": "Sputum Negative for NSP Patients",
         "I Qtr-2022": "59",
         "II Qtr-2022": "73",
         "III Qtr-2022": "97",
@@ -104,7 +104,7 @@
         "Total 2022": "338"
     },
     {
-        "Type of Cases": "NSP Positive",
+        "Type of Cases": "Sputum Positive for NSP Patients",
         "I Qtr-2022": "1",
         "II Qtr-2022": "3",
         "III Qtr-2022": "1",
@@ -112,7 +112,7 @@
         "Total 2022": "5"
     },
     {
-        "Type of Cases": "NSP Not done",
+        "Type of Cases": "Sputum not done for NSP Patients",
         "I Qtr-2022": "12",
         "II Qtr-2022": "5",
         "III Qtr-2022": "3",
@@ -120,7 +120,7 @@
         "Total 2022": "27"
     },
     {
-        "Type of Cases": "NSP Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for NSP Patients",
         "I Qtr-2022": "82",
         "II Qtr-2022": "90",
         "III Qtr-2022": "96",
@@ -128,7 +128,7 @@
         "Total 2022": "91"
     },
     {
-        "Type of Cases": "Total RT conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for RT Patients",
         "I Qtr-2022": "12",
         "II Qtr-2022": "9",
         "III Qtr-2022": "18",
@@ -136,7 +136,7 @@
         "Total 2022": "64"
     },
     {
-        "Type of Cases": "RT Negative",
+        "Type of Cases": "Sputum Negative for RT Patients",
         "I Qtr-2022": "9",
         "II Qtr-2022": "9",
         "III Qtr-2022": "16",
@@ -144,7 +144,7 @@
         "Total 2022": "58"
     },
     {
-        "Type of Cases": "RT Positive",
+        "Type of Cases": "Sputum Positive for RT Patients",
         "I Qtr-2022": "0",
         "II Qtr-2022": "0",
         "III Qtr-2022": "0",
@@ -152,7 +152,7 @@
         "Total 2022": "0"
     },
     {
-        "Type of Cases": "RT not done",
+        "Type of Cases": "Sputum not done for RT Patients",
         "I Qtr-2022": "3",
         "II Qtr-2022": "0",
         "III Qtr-2022": "2",
@@ -160,7 +160,7 @@
         "Total 2022": "6"
     },
     {
-        "Type of Cases": "RT Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for RT Patients",
         "I Qtr-2022": "75",
         "II Qtr-2022": "100",
         "III Qtr-2022": "89",

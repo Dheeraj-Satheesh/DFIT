@@ -1,6 +1,6 @@
 [
     {
-        "Type of Cases": "NSP",
+        "Type of Cases": "NSP Patients",
         "I Qtr-2021": "66",
         "II Qtr-2021": "47",
         "III Qtr-2021": "76",
@@ -8,7 +8,7 @@
         "Total 2021": "261"
     },
     {
-        "Type of Cases": "NSN",
+        "Type of Cases": "NSN Patients",
         "I Qtr-2021": "83",
         "II Qtr-2021": "36",
         "III Qtr-2021": "62",
@@ -16,7 +16,7 @@
         "Total 2021": "317"
     },
     {
-        "Type of Cases": "New EP",
+        "Type of Cases": "NEP Patients",
         "I Qtr-2021": "26",
         "II Qtr-2021": "28",
         "III Qtr-2021": "22",
@@ -24,7 +24,7 @@
         "Total 2021": "123"
     },
     {
-        "Type of Cases": "Others",
+        "Type of Cases": "Other Patients",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
         "III Qtr-2021": "0",
@@ -32,7 +32,7 @@
         "Total 2021": "0"
     },
     {
-        "Type of Cases": "New Cases Total",
+        "Type of Cases": "Total New Patients Managed",
         "I Qtr-2021": "175",
         "II Qtr-2021": "111",
         "III Qtr-2021": "160",
@@ -40,7 +40,7 @@
         "Total 2021": "701"
     },
     {
-        "Type of Cases": "Recurrent TB",
+        "Type of Cases": "Recurrent TB Patients",
         "I Qtr-2021": "15",
         "II Qtr-2021": "9",
         "III Qtr-2021": "19",
@@ -48,7 +48,7 @@
         "Total 2021": "55"
     },
     {
-        "Type of Cases": "Treatment After Failure",
+        "Type of Cases": "Treatment After Failure Patients Patients",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
         "III Qtr-2021": "1",
@@ -56,7 +56,7 @@
         "Total 2021": "1"
     },
     {
-        "Type of Cases": "Treatment After Loss to Follow-up",
+        "Type of Cases": "Treatment After Loss to Follow-up Patients",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
         "III Qtr-2021": "0",
@@ -64,7 +64,7 @@
         "Total 2021": "0"
     },
     {
-        "Type of Cases": "Other Previously Treated Patients",
+        "Type of Cases": "Previously Treated Others Neg Patients",
         "I Qtr-2021": "27",
         "II Qtr-2021": "7",
         "III Qtr-2021": "21",
@@ -72,7 +72,7 @@
         "Total 2021": "100"
     },
     {
-        "Type of Cases": "Retreatment cases Total",
+        "Type of Cases": "Total Retreatment Patients ",
         "I Qtr-2021": "42",
         "II Qtr-2021": "16",
         "III Qtr-2021": "41",
@@ -80,7 +80,7 @@
         "Total 2021": "156"
     },
     {
-        "Type of Cases": "Total DS TB cases Diagnosed",
+        "Type of Cases": "Total DS TB Patients Diagnosed",
         "I Qtr-2021": "217",
         "II Qtr-2021": "127",
         "III Qtr-2021": "201",
@@ -88,7 +88,7 @@
         "Total 2021": "857"
     },
     {
-        "Type of Cases": "Total NSP conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for NSP Patients",
         "I Qtr-2021": "60",
         "II Qtr-2021": "66",
         "III Qtr-2021": "47",
@@ -96,7 +96,7 @@
         "Total 2021": "249"
     },
     {
-        "Type of Cases": "NSP Negative",
+        "Type of Cases": "Sputum Negative for NSP Patients",
         "I Qtr-2021": "53",
         "II Qtr-2021": "59",
         "III Qtr-2021": "33",
@@ -104,7 +104,7 @@
         "Total 2021": "215"
     },
     {
-        "Type of Cases": "NSP Positive",
+        "Type of Cases": "Sputum Positive for NSP Patients",
         "I Qtr-2021": "1",
         "II Qtr-2021": "0",
         "III Qtr-2021": "3",
@@ -112,7 +112,7 @@
         "Total 2021": "4"
     },
     {
-        "Type of Cases": "NSP Not done",
+        "Type of Cases": "Sputum not done for NSP Patients",
         "I Qtr-2021": "6",
         "II Qtr-2021": "7",
         "III Qtr-2021": "11",
@@ -120,7 +120,7 @@
         "Total 2021": "30"
     },
     {
-        "Type of Cases": "NSP Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for NSP Patients",
         "I Qtr-2021": "88",
         "II Qtr-2021": "89",
         "III Qtr-2021": "70",
@@ -128,7 +128,7 @@
         "Total 2021": "86"
     },
     {
-        "Type of Cases": "Total RT conversion Cases",
+        "Type of Cases": "Total Sputum Conversion for RT Patients",
         "I Qtr-2021": "9",
         "II Qtr-2021": "15",
         "III Qtr-2021": "9",
@@ -136,7 +136,7 @@
         "Total 2021": "53"
     },
     {
-        "Type of Cases": "RT Negative",
+        "Type of Cases": "Sputum Negative for RT Patients",
         "I Qtr-2021": "9",
         "II Qtr-2021": "13",
         "III Qtr-2021": "9",
@@ -144,7 +144,7 @@
         "Total 2021": "51"
     },
     {
-        "Type of Cases": "RT Positive",
+        "Type of Cases": "Sputum Positive for RT Patients",
         "I Qtr-2021": "0",
         "II Qtr-2021": "0",
         "III Qtr-2021": "0",
@@ -152,7 +152,7 @@
         "Total 2021": "0"
     },
     {
-        "Type of Cases": "RT not done",
+        "Type of Cases": "Sputum not done for RT Patients",
         "I Qtr-2021": "0",
         "II Qtr-2021": "2",
         "III Qtr-2021": "0",
@@ -160,7 +160,7 @@
         "Total 2021": "2"
     },
     {
-        "Type of Cases": "RT Conversion rate",
+        "Type of Cases": "Sputum Conversion rate for RT Patients",
         "I Qtr-2021": "100",
         "II Qtr-2021": "87",
         "III Qtr-2021": "100",

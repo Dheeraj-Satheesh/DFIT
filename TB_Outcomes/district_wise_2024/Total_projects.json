@@ -1,6 +1,6 @@
 [
   {
-    "Type of cases ": "NSP Cured",
+    "Type of cases ": "Cured NSP Patients",
     "I Qtr-2024": "229",
     "II Qtr-2024": "303",
     "III Qtr-2024": "249",
@@ -9,7 +9,7 @@
     "%": "90.2"
   },
   {
-    "Type of cases ": "NSP Treatment completed",
+    "Type of cases ": "Treatment completed NSP Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "2",
     "III Qtr-2024": "1",
@@ -18,7 +18,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "NSP Died",
+    "Type of cases ": "Died NSP Patients",
     "I Qtr-2024": "5",
     "II Qtr-2024": "7",
     "III Qtr-2024": "2",
@@ -27,7 +27,7 @@
     "%": "2.0"
   },
   {
-    "Type of cases ": "NSP Failure",
+    "Type of cases ": "Failure NSP Pts",
     "I Qtr-2024": "2",
     "II Qtr-2024": "0",
     "III Qtr-2024": "1",
@@ -36,7 +36,7 @@
     "%": "0.8"
   },
   {
-    "Type of cases ": "NSP Lost to Follow-up",
+    "Type of cases ": "Lost to Follow-up NSP Pts",
     "I Qtr-2024": "7",
     "II Qtr-2024": "11",
     "III Qtr-2024": "11",
@@ -45,7 +45,7 @@
     "%": "2.8"
   },
   {
-    "Type of cases ": "NSP Not Evaluated",
+    "Type of cases ": "Not Evaluated NSP Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "0",
@@ -54,7 +54,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "NSP Treatment Regimen Changed",
+    "Type of cases ": "Treatment Regimen Changed NSP Pts",
     "I Qtr-2024": "11",
     "II Qtr-2024": "11",
     "III Qtr-2024": "12",
@@ -63,7 +63,7 @@
     "%": "4.3"
   },
   {
-    "Type of cases ": "NSP Total",
+    "Type of cases ": "Total NSP Patients Managed",
     "I Qtr-2024": "254",
     "II Qtr-2024": "334",
     "III Qtr-2024": "276",
@@ -72,7 +72,7 @@
     "%": ""
   },
   {
-    "Type of cases ": "NSN/NEP Cured",
+    "Type of cases ": "Cured NSN/NEP Patients",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "0",
@@ -81,7 +81,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "NSN/NEP Treatment completed",
+    "Type of cases ": "Treatment completed NSN/NEP Patients",
     "I Qtr-2024": "536",
     "II Qtr-2024": "630",
     "III Qtr-2024": "595",
@@ -90,7 +90,7 @@
     "%": "94.5"
   },
   {
-    "Type of cases ": "NSN/NEP Died",
+    "Type of cases ": "Died NSN/NEP Patients",
     "I Qtr-2024": "11",
     "II Qtr-2024": "14",
     "III Qtr-2024": "13",
@@ -99,7 +99,7 @@
     "%": "1.9"
   },
   {
-    "Type of cases ": "NSN/NEP Failure",
+    "Type of cases ": "Failure NSN/NEP Patients",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "1",
@@ -108,7 +108,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "NSN/NEP Lost to Follow-up",
+    "Type of cases ": "Lost to Follow-up NSN/NEP Patients",
     "I Qtr-2024": "15",
     "II Qtr-2024": "16",
     "III Qtr-2024": "20",
@@ -117,7 +117,7 @@
     "%": "2.6"
   },
   {
-    "Type of cases ": "NSN/NEP Not Evaluated",
+    "Type of cases ": "Not Evaluated NSN/NEP Patients",
     "I Qtr-2024": "0",
     "II Qtr-2024": "5",
     "III Qtr-2024": "1",
@@ -126,7 +126,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "NSN/NEP Treatment Regimen Changed",
+    "Type of cases ": "Treatment Regimen Changed NSN/NEP Patients",
     "I Qtr-2024": "5",
     "II Qtr-2024": "10",
     "III Qtr-2024": "7",
@@ -135,7 +135,7 @@
     "%": "0.9"
   },
   {
-    "Type of cases ": "NSN/NEP Total",
+    "Type of cases ": "Total NSN/NEP Patients Managed",
     "I Qtr-2024": "567",
     "II Qtr-2024": "675",
     "III Qtr-2024": "637",
@@ -144,7 +144,7 @@
     "%": ""
   },
   {
-    "Type of cases ": "RT +ve Cured",
+    "Type of cases ": "Cured RT+ve Pts",
     "I Qtr-2024": "68",
     "II Qtr-2024": "57",
     "III Qtr-2024": "85",
@@ -153,7 +153,7 @@
     "%": "81.9"
   },
   {
-    "Type of cases ": "RT+ve Treatment completed",
+    "Type of cases ": "Treatment completed RT+ve Pts",
     "I Qtr-2024": "1",
     "II Qtr-2024": "0",
     "III Qtr-2024": "3",
@@ -162,7 +162,7 @@
     "%": "1.2"
   },
   {
-    "Type of cases ": "RT +Ve Died",
+    "Type of cases ": "Died RT+ve Patients",
     "I Qtr-2024": "4",
     "II Qtr-2024": "1",
     "III Qtr-2024": "3",
@@ -171,7 +171,7 @@
     "%": "4.8"
   },
   {
-    "Type of cases ": "RT +ve Failure",
+    "Type of cases ": "Failure RT+ve Pts",
     "I Qtr-2024": "3",
     "II Qtr-2024": "2",
     "III Qtr-2024": "0",
@@ -180,7 +180,7 @@
     "%": "3.6"
   },
   {
-    "Type of cases ": "RT +ve Lost to Follow-up",
+    "Type of cases ": "Lost to Follow-up RT+ve Pts",
     "I Qtr-2024": "2",
     "II Qtr-2024": "2",
     "III Qtr-2024": "3",
@@ -189,7 +189,7 @@
     "%": "2.4"
   },
   {
-    "Type of cases ": "RT +ve Not Evaluated",
+    "Type of cases ": "Not Evaluated RT+ve Pts",
     "I Qtr-2024": "1",
     "II Qtr-2024": "0",
     "III Qtr-2024": "0",
@@ -198,7 +198,7 @@
     "%": "1.2"
   },
   {
-    "Type of cases ": "RT +ve Treatment Regimen Changed",
+    "Type of cases ": "Treatment Regimen Changed RT+ve Pts",
     "I Qtr-2024": "4",
     "II Qtr-2024": "4",
     "III Qtr-2024": "1",
@@ -207,7 +207,7 @@
     "%": "4.8"
   },
   {
-    "Type of cases ": "RT +ve Total",
+    "Type of cases ": "Total RT+ve Pts Managed",
     "I Qtr-2024": "83",
     "II Qtr-2024": "66",
     "III Qtr-2024": "95",
@@ -216,7 +216,7 @@
     "%": ""
   },
   {
-    "Type of cases ": "RT Neg Cured",
+    "Type of cases ": "Cured RT Neg Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "0",
@@ -225,7 +225,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "RT Neg Treatment completed",
+    "Type of cases ": "Treatment completed RT Neg Pts",
     "I Qtr-2024": "86",
     "II Qtr-2024": "71",
     "III Qtr-2024": "76",
@@ -234,7 +234,7 @@
     "%": "92.5"
   },
   {
-    "Type of cases ": "RT Neg Died",
+    "Type of cases ": "Died RT Neg Pts",
     "I Qtr-2024": "1",
     "II Qtr-2024": "0",
     "III Qtr-2024": "1",
@@ -243,7 +243,7 @@
     "%": "1.1"
   },
   {
-    "Type of cases ": "RT Neg Failure",
+    "Type of cases ": "Failure RT Neg Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "0",
@@ -252,7 +252,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "RT Neg Lost to Follow-up",
+    "Type of cases ": "Lost to Follow-up RT Neg Pts",
     "I Qtr-2024": "6",
     "II Qtr-2024": "2",
     "III Qtr-2024": "2",
@@ -261,7 +261,7 @@
     "%": "6.5"
   },
   {
-    "Type of cases ": "RT Neg Not Evaluated",
+    "Type of cases ": "Not Evaluated RT Neg Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "1",
     "III Qtr-2024": "0",
@@ -270,7 +270,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "RT Neg Treatment Regimen Changed",
+    "Type of cases ": "Treatment Regimen Changed RT Neg Pts",
     "I Qtr-2024": "0",
     "II Qtr-2024": "0",
     "III Qtr-2024": "2",
@@ -279,7 +279,7 @@
     "%": "0.0"
   },
   {
-    "Type of cases ": "RT Neg Total",
+    "Type of cases ": "Total RT Neg Pts Managed",
     "I Qtr-2024": "93",
     "II Qtr-2024": "74",
     "III Qtr-2024": "81",

@@ -1,6 +1,6 @@
 [
   {
-    "Type of Cases": "NSP",
+    "Type of Cases": "NSP Patients",
     "I Qtr-2023": "75",
     "II Qtr-2023": "81",
     "III Qtr-2023": "91",
@@ -8,7 +8,7 @@
     "Total 2023": "304"
   },
   {
-    "Type of Cases": "NSN",
+    "Type of Cases": "NSN Patients",
     "I Qtr-2023": "91",
     "II Qtr-2023": "84",
     "III Qtr-2023": "103",
@@ -16,7 +16,7 @@
     "Total 2023": "358"
   },
   {
-    "Type of Cases": "New EP",
+    "Type of Cases": "NEP Patients",
     "I Qtr-2023": "43",
     "II Qtr-2023": "26",
     "III Qtr-2023": "43",
@@ -24,7 +24,7 @@
     "Total 2023": "134"
   },
   {
-    "Type of Cases": "Others",
+    "Type of Cases": "Other Patients",
     "I Qtr-2023": "0",
     "II Qtr-2023": "0",
     "III Qtr-2023": "0",
@@ -32,7 +32,7 @@
     "Total 2023": "0"
   },
   {
-    "Type of Cases": "New Cases Total",
+    "Type of Cases": "Total New Patients Managed",
     "I Qtr-2023": "209",
     "II Qtr-2023": "191",
     "III Qtr-2023": "237",
@@ -40,7 +40,7 @@
     "Total 2023": "796"
   },
   {
-    "Type of Cases": "Recurrent TB",
+    "Type of Cases": "Recurrent TB Patients",
     "I Qtr-2023": "13",
     "II Qtr-2023": "11",
     "III Qtr-2023": "18",
@@ -48,7 +48,7 @@
     "Total 2023": "59"
   },
   {
-    "Type of Cases": "Treatment After Failure",
+    "Type of Cases": "Treatment After Failure Patients Patients",
     "I Qtr-2023": "0",
     "II Qtr-2023": "2",
     "III Qtr-2023": "3",
@@ -56,7 +56,7 @@
     "Total 2023": "5"
   },
   {
-    "Type of Cases": "Treatment After Loss to Follow-up",
+    "Type of Cases": "Treatment After Loss to Follow-up Patients",
     "I Qtr-2023": "0",
     "II Qtr-2023": "0",
     "III Qtr-2023": "0",
@@ -64,7 +64,7 @@
     "Total 2023": "0"
   },
   {
-    "Type of Cases": "Other Previously Treated Patients",
+    "Type of Cases": "Previously Treated Others Neg Patients",
     "I Qtr-2023": "31",
     "II Qtr-2023": "28",
     "III Qtr-2023": "24",
@@ -72,7 +72,7 @@
     "Total 2023": "108"
   },
   {
-    "Type of Cases": "Retreatment cases Total",
+    "Type of Cases": "Total Retreatment Patients ",
     "I Qtr-2023": "44",
     "II Qtr-2023": "41",
     "III Qtr-2023": "45",
@@ -80,7 +80,7 @@
     "Total 2023": "172"
   },
   {
-    "Type of Cases": "Total DS TB cases Diagnosed",
+    "Type of Cases": "Total DS TB Patients Diagnosed",
     "I Qtr-2023": "253",
     "II Qtr-2023": "232",
     "III Qtr-2023": "282",
@@ -88,7 +88,7 @@
     "Total 2023": "968"
   },
   {
-    "Type of Cases": "Total NSP conversion Cases",
+    "Type of Cases": "Total Sputum Conversion for NSP Patients",
     "I Qtr-2023": "89",
     "II Qtr-2023": "75",
     "III Qtr-2023": "81",
@@ -96,7 +96,7 @@
     "Total 2023": "336"
   },
   {
-    "Type of Cases": "NSP Negative",
+    "Type of Cases": "Sputum Negative for NSP Patients",
     "I Qtr-2023": "81",
     "II Qtr-2023": "71",
     "III Qtr-2023": "68",
@@ -104,7 +104,7 @@
     "Total 2023": "303"
   },
   {
-    "Type of Cases": "NSP Positive",
+    "Type of Cases": "Sputum Positive for NSP Patients",
     "I Qtr-2023": "1",
     "II Qtr-2023": "1",
     "III Qtr-2023": "1",
@@ -112,7 +112,7 @@
     "Total 2023": "3"
   },
   {
-    "Type of Cases": "NSP Not done",
+    "Type of Cases": "Sputum not done for NSP Patients",
     "I Qtr-2023": "7",
     "II Qtr-2023": "3",
     "III Qtr-2023": "12",
@@ -120,7 +120,7 @@
     "Total 2023": "30"
   },
   {
-    "Type of Cases": "NSP Conversion rate",
+    "Type of Cases": "Sputum Conversion rate for NSP Patients",
     "I Qtr-2023": "91",
     "II Qtr-2023": "95",
     "III Qtr-2023": "84",
@@ -128,7 +128,7 @@
     "Total 2023": "90"
   },
   {
-    "Type of Cases": "Total RT conversion Cases",
+    "Type of Cases": "Total Sputum Conversion for RT Patients",
     "I Qtr-2023": "25",
     "II Qtr-2023": "13",
     "III Qtr-2023": "13",
@@ -136,7 +136,7 @@
     "Total 2023": "72"
   },
   {
-    "Type of Cases": "RT Negative",
+    "Type of Cases": "Sputum Negative for RT Patients",
     "I Qtr-2023": "25",
     "II Qtr-2023": "13",
     "III Qtr-2023": "11",
@@ -144,7 +144,7 @@
     "Total 2023": "69"
   },
   {
-    "Type of Cases": "RT Positive",
+    "Type of Cases": "Sputum Positive for RT Patients",
     "I Qtr-2023": "0",
     "II Qtr-2023": "0",
     "III Qtr-2023": "0",
@@ -152,7 +152,7 @@
     "Total 2023": "0"
   },
   {
-    "Type of Cases": "RT not done",
+    "Type of Cases": "Sputum not done for RT Patients",
     "I Qtr-2023": "0",
     "II Qtr-2023": "0",
     "III Qtr-2023": "2",
@@ -160,7 +160,7 @@
     "Total 2023": "3"
   },
   {
-    "Type of Cases": "RT Conversion rate",
+    "Type of Cases": "Sputum Conversion rate for RT Patients",
     "I Qtr-2023": "100",
     "II Qtr-2023": "100",
     "III Qtr-2023": "85",
