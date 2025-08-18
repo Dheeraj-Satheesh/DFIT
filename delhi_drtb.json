@@ -16,7 +16,7 @@
     "2023": "184",
     "2024": "160",
     "S.NO": "1",
-    "Particulars": "DR TB Cases registered"
+    "Particulars": "Total DR TB Cases managed"
   },
   {
     "2010": "14",
@@ -92,7 +92,7 @@
     "2023": "16",
     "2024": "7",
     "S.NO": "6",
-    "Particulars": "Defaulter"
+    "Particulars": "Lost to follow-up"
   },
   {
     "2010": "3",
@@ -149,7 +149,7 @@
     "2023": "2",
     "2024": "0",
     "S.NO": "9",
-    "Particulars": "Failure /(Reg. Change)"
+    "Particulars": "Treatment Failed"
   },
   {
     "2010": "1",
@@ -168,7 +168,7 @@
     "2023": "2",
     "2024": "0",
     "S.NO": "10",
-    "Particulars": "Transfer Out"
+    "Particulars": "Not Evaluated"
   },
   {
     "2010": "0",

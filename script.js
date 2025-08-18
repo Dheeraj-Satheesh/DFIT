@@ -135,7 +135,10 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "sputum conversion rate for rt patients"
         || contents === "sputum conversion rate for nsp patients"
         || contents === "total beds available for leprosy"
+        || contents === "total new patients managed"
+        || contents === "total retreatment patients"
         || contents === "total leprosy cases admitted";
+
 
 
 
@@ -264,8 +267,10 @@ document.addEventListener("DOMContentLoaded", () => {
             contents === "total leprosy cases admitted" ||
             contents === "presumptive ds tb found to be positive" ||
             contents === "sputum conversion rate for rt patients" ||
+            contents === "total retreatment patients" ||
             contents === "total ds tb patients diagnosed" ||  // <-- fixed
-            contents === "sputum conversion rate for nsp patients";            // <-- fixed
+            contents === "sputum conversion rate for nsp patients" ||           // <-- fixed
+            contents === "total new patients managed";
 
           html += `<tr${isTotalRow ? ' class="highlight-row"' : ''}>`;
           html += keys.map(k => {
@@ -300,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // DPMR SERVICES
 
-  function renderLineDPMR(folder, jsonFile, sectionTitle) {
+  function renderLineDPMR(folder, jsonFile, sectionTitle, suffix) {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
@@ -354,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data: {
             labels,
             datasets: [{
-              label: sectionTitle,
+              label: suffix,
               data: values,
               borderColor: color,
               backgroundColor: color + "33",
@@ -447,13 +452,13 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const states = {
-    "tot": { file: "tot.json", name: "Six States DFIT Supported Districts" },
-    "bih": { file: "bihar.json", name: "Bihar State DFIT Supported Districts" },
-    "jhar": { file: "jhar.json", name: "Jharkhand State DFIT Supported Districts" },
-    "chat": { file: "chat.json", name: "Chhattisgarh State DFIT Supported Districts" },
-    "kar": { file: "kar.json", name: "Karnataka State DFIT Supported Districts" },
-    "tn": { file: "tn.json", name: "Tamil Nadu State DFIT Supported Districts" },
-    "ap": { file: "ap.json", name: "Andhra Pradesh State DFIT Supported Districts" }
+    "tot": { file: "tot.json", name: "DFIT Supported Six States" },
+    "bih": { file: "bihar.json", name: "Bihar State DFIT Supported" },
+    "jhar": { file: "jhar.json", name: "Jharkhand State DFIT Supported" },
+    "chat": { file: "chat.json", name: "Chhattisgarh State DFIT Supported" },
+    "kar": { file: "kar.json", name: "Karnataka State DFIT Supported" },
+    "tn": { file: "tn.json", name: "Tamil Nadu State DFIT Supported" },
+    "ap": { file: "ap.json", name: "Andhra Pradesh State DFIT Supported" }
   };
 
   const setupDPMREvents = (prefix, folderKey) => {
@@ -466,26 +471,26 @@ document.addEventListener("DOMContentLoaded", () => {
       let suffix = "";
       switch (folderKey) {
         case "ut":
-          suffix = " - Under Treatment Patients taking regular treatment %";
+          suffix = "Percentage of UT Patients taking regular treatment";
           break;
         case "lepra":
-          suffix = " - Lepra Reactions Patients taking regular treatment %";
+          suffix = "Percentage of Lepra Reactions Patients taking regular treatment";
           break;
         case "self":
-          suffix = " - Practicing self care regularly %";
+          suffix = "Percentage of Practicing self care regularly";
           break;
         case "mcr":
-          suffix = " - Patients wearing appropriate Footwear regularly %";
+          suffix = "Percentage of Patients wearing appropriate Footwear regularly";
           break;
       }
 
-      const title = `${stateName} DPMR Services${suffix}`;
+      const title = `${stateName} DPMR Services`;
       const el = document.getElementById(id);
       if (el) {
         el.addEventListener("click", e => {
           e.preventDefault();
           setActiveLink(e.target);
-          renderLineDPMR(folder, file, title);
+          renderLineDPMR(folder, file, title, suffix);
         });
       }
     });
@@ -499,41 +504,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Constants for project codes and names
   const projects1 = [
-    { code: "tp", title: "All Projects" },
-    { code: "dfit", title: "DFIT Projects" },
-    { code: "sup", title: "Supported Projects" },
-    { code: "nel", title: "Nellore Hospital" },
-    { code: "del", title: "Delhi Hospital" },
-    { code: "dos", title: "DOS Hospital" },
-    { code: "pol", title: "Polambakkam Rehabilitation Centre" },
-    { code: "dan", title: "Dhanbad Hospital" },
-    { code: "amd", title: "Amda Hospital" },
-    { code: "ars", title: "Arasipalayam Hospital" },
-    { code: "fat", title: "Fathimanagar Hospital" },
-    { code: "nag", title: "Nagepalli Hospital" },
-    { code: "pav", title: "Pavagada Hospital" },
-    { code: "bel", title: "Belatanr Hospital" },
-    { code: "pop", title: "Pope John Garden Hospital" },
-    { code: "chi", title: "Chilakala Palli Hospital" },
-    { code: "tri", title: "Trivandrum Hospital" },
-    { code: "and", title: "Andipatti Hospital" },
-    { code: "amb", title: "Ambalamoola Hospital" },
+    { code: "tp", title: "All Projects Quarter-wise" },
+    { code: "dfit", title: "DFIT Projects Quarter-wise" },
+    { code: "sup", title: "Supported Projects Quarter-wise" },
+    { code: "nel", title: "Nellore Hospital Quarter-wise" },
+    { code: "del", title: "Delhi Hospital Quarter-wise" },
+    { code: "dos", title: "DOS Hospital Quarter-wise" },
+    { code: "pol", title: "Polambakkam Rehabilitation Centre Quarter-wise" },
+    { code: "dan", title: "Dhanbad Hospital Quarter-wise" },
+    { code: "amd", title: "Amda Hospital Quarter-wise" },
+    { code: "ars", title: "Arasipalayam Hospital Quarter-wise" },
+    { code: "fat", title: "Fathimanagar Hospital Quarter-wise" },
+    { code: "nag", title: "Nagepalli Hospital Quarter-wise" },
+    { code: "pav", title: "Pavagada Hospital Quarter-wise" },
+    { code: "bel", title: "Belatanr Hospital Quarter-wise" },
+    { code: "pop", title: "Pope John Garden Hospital Quarter-wise" },
+    { code: "chi", title: "Chilakala Palli Hospital Quarter-wise" },
+    { code: "tri", title: "Trivandrum Hospital Quarter-wise" },
+    { code: "and", title: "Andipatti Hospital Quarter-wise" },
+    { code: "amb", title: "Ambalamoola Hospital Quarter-wise" },
   ];
 
   // Mapping quarter-wise categories
   const qCategories = {
-    OPD: "Out Patients Treated – Quarterly Statistics",
-    LEPROSY: "New Leprosy cases Diagnosed – Quarterly Statistics",
-    DISABILITY: "New G-II Leprosy cases – Quarterly Statistics",
-    LEPRA: "Lepra Reaction Treated – Quarterly Statistics",
-    RCS: "RCS Done Cases – Quarterly Statistics",
-    LEPAD: "Leprosy Inpatients – Quarterly Statistics",
-    LEPBED: "Leprosy Bed Days – Quarterly Statistics",
-    LEPBEDRATE: "Leprosy Patients Bed occupancy rate – Quarterly Statistics",
-    PRETB: "Presumptive TB Cases – Quarterly Statistics",
-    TB: "Total TB Cases – Quarterly Statistics",
-    NSP: "NSP Cure Rate – Quarterly Statistics",
-    RT: "RT Cure Rate – Quarterly Statistics",
+    OPD: "Out-Patients Treated",
+    LEPROSY: "New Leprosy Cases Diagnosed",
+    DISABILITY: "New G-II Leprosy Cases",
+    LEPRA: "Total Lepra Reaction Cases Treated",
+    RCS: "Reconstructive Surgeries Done",
+    LEPAD: "Leprosy In-patients Managed",
+    LEPBED: "Leprosy Bed Days",
+    LEPBEDRATE: "Leprosy Patients Bed occupancy rate",
+    PRETB: "Presumptive DS TB Cases Sputum Examined",
+    TB: "Total DS TB Cases Diagnosed",
+    NSP: "NSP Cure Rate",
+    RT: "RT Cure Rate",
   };
 
   // Suffix mapping for HTML IDs (quarter-wise)
@@ -903,7 +908,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("b-lep").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderBar("lep.json", "Total LEP (Socio-economic support) supported", "Total LEP (Socio-economic support) supported");
+    renderBar("lep.json", "Total Livelihood Enhancement Programme(LEP) Supported", "Total Livelihood Enhancement Programme(LEP) Supported");
   });
   document.getElementById("b-np").addEventListener("click", e => {
     e.preventDefault();
@@ -913,17 +918,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("del-np").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderBar("delhi.json", "Delhi project Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+    renderBar("delhi.json", "Delhi project Nutritional supported for TB Patients", "Delhi project Nutritional supplements supported for TB Patients");
   });
   document.getElementById("bih-np").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderBar("bihar.json", "Bihar state Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+    renderBar("bihar.json", "Bihar project Nutritional supported for TB Patients", "Bihar project Nutritional supplements supported for TB Patients");
   });
   document.getElementById("ap-np").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderBar("ap.json", "Andhra pradesh state Nutritional supported for TB Patients", "Total Nutritional supplements supported for TB Patients");
+    renderBar("ap.json", "Andhra pradesh project Nutritional supported for TB Patients", "Andhra pradesh project Nutritional supplements supported for TB Patients");
   });
   // LEP 3 in one
   function renderLepSupportTrend(jsonFile, sectionTitle, chartId) {
@@ -1063,12 +1068,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("three-lep").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderLepSupportTrend("lep.json", "Support Categories for Leprosy Patients – Total Projects", "leprosySupportChart");
+    renderLepSupportTrend("lep.json", "Total Projects types of LEP Supported", "leprosySupportChart");
   });
   document.getElementById("three-np").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderLepSupportTrend("nut.json", "Nutrition Support Across  Regions", "nutritionSupportChart");
+    renderLepSupportTrend("nut.json", "State-Wise Nutritional supplements supported for TB Patients", "nutritionSupportChart");
   });
 
 
@@ -1107,9 +1112,9 @@ document.addEventListener("DOMContentLoaded", () => {
               </tr>
             </thead>
             <tbody>
-              <tr><td>No. of Presumptive</td>${valuesPresumptive.map(val => `<td>${val}</td>`).join("")}</tr>
-              <tr><td>No. of Follow up</td>${valuesFollowUp.map(val => `<td>${val}</td>`).join("")}</tr>
-              <tr><td>No. of DR TB cases Confirmed</td>${valuesDRTB.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>No. of DR TB Presumptive Cases Examined </td>${valuesPresumptive.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>No. of DR TB Follow-up Examined</td>${valuesFollowUp.map(val => `<td>${val}</td>`).join("")}</tr>
+              <tr><td>No. of DR TB Cases Confirmed</td>${valuesDRTB.map(val => `<td>${val}</td>`).join("")}</tr>
             </tbody>
           </table>
         </div>
@@ -1128,7 +1133,7 @@ document.addEventListener("DOMContentLoaded", () => {
             labels,
             datasets: [
               {
-                label: "No. of Presumptive",
+                label: "No. of Presumptive DR TB Cases Exam",
                 data: valuesPresumptive,
                 borderColor: "#1f77b4",
                 backgroundColor: "#1f77b4",
@@ -1139,7 +1144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pointRadius: 4
               },
               {
-                label: "No. of follow up",
+                label: "No. of DR TB follow-up Cases Exam",
                 data: valuesFollowUp,
                 borderColor: "#b22222",
                 backgroundColor: "#b22222",
@@ -1150,7 +1155,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pointRadius: 4
               },
               {
-                label: "DR TB cases screened",
+                label: "No. of DR TB cases Confirmed",
                 data: valuesDRTB,
                 borderColor: "#228B22",
                 backgroundColor: "#228B22",
@@ -1166,7 +1171,7 @@ document.addEventListener("DOMContentLoaded", () => {
             labels,
             datasets: [
               {
-                label: "No. of Presumptive",
+                label: "No. of Presumptive DR TB Cases Exam",
                 data: valuesPresumptive,
                 borderColor: "#007bff",  // Blue
                 backgroundColor: "#007bff",
@@ -1177,7 +1182,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pointRadius: 3
               },
               {
-                label: "No. of follow up",
+                label: "No. of DR TB follow-up Cases Exam",
                 data: valuesFollowUp,
                 borderColor: "#dc3545",   // Red
                 backgroundColor: "#dc3545",
@@ -1188,7 +1193,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 pointRadius: 3
               },
               {
-                label: "DR TB cases screened",
+                label: "No. of DR TB cases Confirmed",
                 data: valuesDRTB,
                 borderColor: "#28a745",
                 backgroundColor: "#28a745",
@@ -1276,19 +1281,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("d-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("dharbanga_irl.json", "DR TB Laboratories trend – Darbhanga ", "dharbangaChart");
+    renderIRLMultiTrend("dharbanga_irl.json", "Darbhanga DR TB Lab - Annual Statistics", "dharbangaChart");
   });
 
   document.getElementById("n-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("nellore_irl.json", "DR TB Laboratories trend – Nellore ", "nelloreChart");
+    renderIRLMultiTrend("nellore_irl.json", "Nellore DR TB Lab - Annual Statistics", "nelloreChart");
   });
 
   document.getElementById("tp-irl").addEventListener("click", e => {
     e.preventDefault();
     setActiveLink(e.target);
-    renderIRLMultiTrend("total_irl.json", "DR TB Laboratories trend – Nellore & Darbhanga ", "totalChart");
+    renderIRLMultiTrend("total_irl.json", " Nellore & Darbhanga DR TB Laboratories- Annual Statistics", "totalChart");
   });
 
 
@@ -1454,18 +1459,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Maps for categories
   const categories = {
-    OPD: "Out Patients Treated – Annual Statistics ",
+    OPD: "Out-Patients Treated – Annual Statistics ",
     LEPROSY: "New Leprosy Cases Diagnosed – Annual Statistics",
-    DISABILITY: "New Leprosy Cases with Grade II Disability – Annual Statistics ",
-    LEPRA: "Lepra Reaction Treated – Annual Statistics ",
-    RCS: "Deformity correction surgeries(RCS) – Annual Statistics",
-    LEPAD: "Hospital admission of leprosy patients with complications – Annual Statistics",
+    DISABILITY: "New Leprosy Cases with Grade II Disabilities Detected – Annual Statistics ",
+    LEPRA: "Total Lepra Reaction Cases Treated – Annual Statistics ",
+    RCS: "Reconstructive Surgeries Done – Annual Statistics",
+    LEPAD: "In-patients Managed for leprosy patients with complications – Annual Statistics",
     LEPBED: "Leprosy Patients Bed occupancy – Annual Statistics",
     LEPBEDRATE: "Leprosy Patients Bed occupancy rate – Annual Statistics",
-    PRETB: "Presumptive TB Cases sputum examination – Annual Statistics",
+    PRETB: "Presumptive DS TB Cases sputum examination – Annual Statistics",
     TB: "Total DS TB Cases Diagnosed – Annual Statistics",
-    NSP: "Outcomes of TB-NSP Cure Rate – Annual Statistics",
-    RT: "Outcomes of TB-RT Cure Rate – Annual Statistics",
+    NSP: "Treatment Outcomes of DS TB - NSP Cure Rate – Annual Statistics",
+    RT: "Treatment Outcomes of DS TB - RT Cure Rate – Annual Statistics",
   };
 
   // Suffix mapping for HTML IDs
@@ -1561,7 +1566,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(data => {
         const columns = Object.keys(data[0]).filter(k => k !== "Category" && selectedYears.some(yr => k.includes(yr)));
 
-        let html = `<div class="table-container"><h2>Nutritional Support Report</h2>`;
+        let html = `<div class="table-container"><h2>State-Wise Nutritional Support Report</h2>`;
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
