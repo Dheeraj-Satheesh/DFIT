@@ -246,8 +246,8 @@ table {
 thead th {
   position: sticky;
   top: 0;
-  background-color: #F39C12;
-  color: #333;
+  background-color: #eda32d;
+  color: black;
   text-align: left;
   z-index: 1;
 }

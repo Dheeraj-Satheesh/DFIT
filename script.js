@@ -31,28 +31,28 @@ function isAllowedToView(key) {
 
   const commonAllowed = ["total_projects", "dfit_projects", "supported_projects"];
 
-  // map of username -> prefixes they can see
+  // Hospital accounts
   const projectAccess = {
-    nellore: ["nellore", "nel-"], // Nellore Hospital
-    delhi: ["delhi", "del-"],     // Delhi Hospital
+    nellore: ["nellore", "nel-"],
+    delhi: ["delhi", "del-"],
     dos: ["dos"],
-    bihar: ["bihar"],                 // DOS Hospital
-    polambakkam: ["pol"],         // Polambakkam Rehabilitation Centre
-    dhanbad: ["dan"],             // Dhanbad Hospital
-    amda: ["amd"],                // Amda Hospital
-    arasipalayam: ["ars"],        // Arasipalayam Hospital
-    fathimanagar: ["fat"],        // Fathimanagar Hospital
-    nagepalli: ["nag"],           // Nagepalli Hospital
-    pavagada: ["pav"],            // Pavagada Hospital
-    belatanr: ["bel"],            // Belatanr Hospital
-    popejohngarden: ["pop"],      // Pope John Garden Hospital
-    chilakalapalli: ["chi"],      // Chilakala Palli Hospital
-    trivandrum: ["tri"],          // Trivandrum Hospital
-    andipatti: ["and"],           // Andipatti Hospital
-    ambalamoola: ["amb"]          // Ambalamoola Hospital
+    polambakkam: ["pol"],
+    dhanbad: ["dan"],
+    amda: ["amd"],
+    arasipalayam: ["ars"],
+    fathimanagar: ["fat"],
+    nagepalli: ["nag"],
+    pavagada: ["pav"],
+    belatanr: ["bel"],
+    popejohngarden: ["pop"],
+    chilakalapalli: ["chi"],
+    trivandrum: ["tri"],
+    andipatti: ["and"],
+    ambalamoola: ["amb"]
   };
 
 
+  // ✅ Otherwise check hospital accounts
   const prefixes = projectAccess[user];
   if (prefixes) {
     return prefixes.some(p => key.toLowerCase().startsWith(p)) ||
@@ -61,6 +61,7 @@ function isAllowedToView(key) {
 
   return false;
 }
+
 
 function showToast(message, backgroundColor = "#e63946") {
   const toast = document.getElementById("toast");
@@ -211,6 +212,19 @@ document.addEventListener("DOMContentLoaded", () => {
         || contents === "total type-i lepra reaction cases"
         || contents === "total type-ii lepra reaction cases"
         || contents === "total major rcs done"
+        || contents === "total minor surgeries done"
+        || contents === "total female cases"
+        || contents === "cured nsp patients"
+        || contents === "treatment completed nsn/nep patients"
+        || contents === "cured rt+ve pts"
+        || contents === "total dr tb cases managed"
+        || contents === "cured"
+        || contents === "completed"
+        || contents === "treatment completed rt neg pts"
+        || contents === "total lep-house supported"
+        || contents === "total lep, socio-economic supported"
+        || contents === "total lep, education supported"
+        || contents === "total beds available for tb cases"
         || contents === "presumptive ds tb found to be positive"
         || contents === "sputum conversion rate for rt patients"
         || contents === "sputum conversion rate for nsp patients"
@@ -346,13 +360,26 @@ document.addEventListener("DOMContentLoaded", () => {
             contents === "total rt neg pts managed" ||
             contents === "total opd treated" ||
             contents === "total new leprosy cases detected" ||
-            contents === "total adult g ii cases" ||
-            contents === "total child g ii cases" ||
             contents === "total type-i lepra reaction cases" ||
             contents === "total type-ii lepra reaction cases" ||
+            contents === "total female cases" ||
             contents === "total major rcs done" ||
+            contents === "total minor surgeries done" ||
+            contents === "total adult g ii cases" ||
+            contents === "total child g ii cases" ||
             contents === "total beds available for leprosy" ||
+            contents === "total lep-house supported" ||
+            contents === "cured nsp patients" ||
+            contents === "treatment completed nsn/nep patients" ||
+            contents === "cured rt+ve pts" ||
+            contents === "treatment completed rt neg pts" ||
+            contents === "total dr tb cases managed" ||
+            contents === "cured" ||
+            contents === "completed" ||
+            contents === "total lep, socio-economic supported" ||
+            contents === "total lep, education supported" ||
             contents === "total leprosy cases admitted" ||
+            contents === "total beds available for tb cases" ||
             contents === "presumptive ds tb found to be positive" ||
             contents === "sputum conversion rate for rt patients" ||
             contents === "total retreatment patients" ||
@@ -461,7 +488,7 @@ document.addEventListener("DOMContentLoaded", () => {
             layout: { padding: { right: 30 } },
             plugins: {
               datalabels: {
-                align: "top",
+                align: "bottom",
                 anchor: "end",
                 color: "#000",
                 font: { weight: "bold", size: 12 },
@@ -503,7 +530,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 offset: true,
                 grid: {
                   lineWidth: 0.5,
-                  color: '#ccc'
+                  color: '#ccc',
                 },
                 ticks: {
                   padding: 5,
@@ -548,7 +575,16 @@ document.addEventListener("DOMContentLoaded", () => {
     "tn": { file: "tn.json", name: "Tamil Nadu State DFIT Supported" },
     "ap": { file: "ap.json", name: "Andhra Pradesh State DFIT Supported" }
   };
-
+  // ✅ Access map for DPMR accounts (for graphs also)
+  const dpmrGraphAccess = {
+    jharkhand: ["tot", "jhar"],
+    chhattisgarh: ["tot", "chat"],
+    karnataka: ["tot", "kar"],
+    tamilnadu: ["tot", "tn"],
+    andhrapradesh: ["tot", "ap"],
+    nellore: ["tot", "ap"],
+    bihar: ["tot", "bihar"]
+  };
   const setupDPMREvents = (prefix, folderKey) => {
     Object.keys(states).forEach(stateKey => {
       const id = `${stateKey}-dpmr-${prefix}`;
@@ -556,28 +592,42 @@ document.addEventListener("DOMContentLoaded", () => {
       const stateName = states[stateKey].name;
       const folder = dpmrFolders[folderKey];
 
-      let suffix = "";
+      let suffixt = "";
       switch (folderKey) {
         case "ut":
-          suffix = "Percentage of UT Patients taking regular treatment";
+          suffixt = "DPMR Services - Percentage of UT Patients taking regular treatment";
           break;
         case "lepra":
-          suffix = "Percentage of Lepra Reactions Patients taking regular treatment";
+          suffixt = "DPMR Services - Percentage of Lepra Reactions Patients taking regular treatment";
           break;
         case "self":
-          suffix = "Percentage of Practicing self care regularly";
+          suffixt = "DPMR Services - Percentage of Practicing self care regularly";
           break;
         case "mcr":
-          suffix = "Percentage of Patients wearing appropriate Footwear regularly";
+          suffixt = "DPMR Services - Percentage of Patients wearing appropriate Footwear regularly";
           break;
       }
-
+      const suffix = `${stateName} ${suffixt}`;
       const title = `${stateName} DPMR Services`;
       const el = document.getElementById(id);
       if (el) {
         el.addEventListener("click", e => {
           e.preventDefault();
           setActiveLink(e.target);
+          const user = sessionStorage.getItem("username");
+
+          // 🔒 Check permissions
+          if (user === "admin") {
+            // admin can open all
+          } else if (dpmrGraphAccess[user]) {
+            if (!dpmrGraphAccess[user].includes(stateKey)) {
+              showToast("🚫 Access Denied: You are not allowed to view this DPMR Graph.");
+              return;
+            }
+          } else {
+            showToast("🚫 Access Denied: DPMR Graphs are restricted.");
+            return;
+          }
           renderLineDPMR(folder, file, title, suffix);
         });
       }
@@ -1674,7 +1724,7 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `<table><thead><tr><th>Category</th>${columns.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>`;
 
         data.forEach(row => {
-          const isHighlight = (row["Category"] ?? "").trim().toLowerCase() === "total lep (socio-economic support) supported";
+          const isHighlight = (row["Category"] ?? "").trim().toLowerCase() === "total lep supported";
 
           html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
           html += `<td>${row["Category"]}</td>`;
@@ -1745,14 +1795,23 @@ document.addEventListener("DOMContentLoaded", () => {
         html += selectedYears.map(yr => `<th>${yr}</th>`).join("");
         html += "</tr></thead><tbody>";
 
+        const highlightRows = [
+          "treatment success rate",
+          "total dr tb cases managed",
+          "cured",
+          "completed"
+        ];
+
         data.forEach(row => {
-          const isSuccessRateRow = (row["Particulars"] ?? "").trim().toLowerCase() === "treatment success rate";
+          const particulars = (row["Particulars"] ?? "").trim().toLowerCase();
+          const isSuccessRateRow = highlightRows.includes(particulars);
 
           html += `<tr${isSuccessRateRow ? ' class="highlight-row"' : ''}>`;
           html += `<td>${row["S.NO"]}</td><td>${row["Particulars"]}</td>`;
           html += selectedYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
           html += "</tr>";
         });
+
 
 
         html += "</tbody></table></div>";
@@ -1805,7 +1864,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const highlightContents = [
           "no. of drtb irregular  patients retrieved.",
           "no. of dr tb cases provided nutritional support.",
-          "no. of drtb patients lep supported"
+          "no. of drtb patients lep supported",
+          "no. of districts covered",
+          "no of drtb  patients treatment started.",
+          "no. of drtb defaulters patients retrieved."
         ];
 
         data.forEach(row => {
@@ -1842,11 +1904,33 @@ document.addEventListener("DOMContentLoaded", () => {
     darbhanga: "Darbhanga DR TB LAB Services Annual Report"
   };
 
+  // ✅ Access map
+  const irlAccess = {
+    nellore: ["total", "nellore"],
+    darbhanga: ["total", "darbhanga"]
+  };
+
   Object.entries(irlMap).forEach(([id, lab]) => {
     document.getElementById(id)?.addEventListener("click", e => {
       e.preventDefault();
       setActiveLink(id);
 
+      const user = sessionStorage.getItem("username");
+
+      // 🔒 Access check
+      if (user === "admin") {
+        // admin full access
+      } else if (irlAccess[user]) {
+        if (!irlAccess[user].includes(lab)) {
+          showToast("🚫 Access Denied: You are not allowed to view this Lab section.");
+          return;
+        }
+      } else {
+        showToast("🚫 Access Denied: DR TB Lab data restricted.");
+        return;
+      }
+
+      // ✅ Continue if allowed
       const selectedYear = document.getElementById("yearFilter").value;
       const selectedYears = selectedYear === "All" ? getSelectedYears() : [selectedYear];
 
@@ -1877,7 +1961,6 @@ document.addEventListener("DOMContentLoaded", () => {
           contentArea.innerHTML = html;
 
           enableDownload(`${labHeadings[lab].replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_]/g, "")}_${selectedYears.join("_")}`);
-
         })
         .catch(err => {
           contentArea.innerHTML = `<p>Error loading data for ${lab}: ${err.message}</p>`;
@@ -1886,6 +1969,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // --- DPMR ---
   // --- DPMR ---
   const dpmrMap = {
     tot: "link-tot",
@@ -1897,11 +1981,39 @@ document.addEventListener("DOMContentLoaded", () => {
     ap: "link-ap"
   };
 
+  // ✅ Access map for DPMR accounts
+  const dpmrAccess = {
+    jharkhand: ["tot", "jhar"],
+    chhattisgarh: ["tot", "chat"],
+    karnataka: ["tot", "kar"],
+    tamilnadu: ["tot", "tn"],
+    andhrapradesh: ["tot", "ap"],
+    nellore: ["tot", "ap"],
+    bihar: ["tot", "bihar"]
+  };
+
   Object.entries(dpmrMap).forEach(([key, id]) => {
     document.getElementById(id)?.addEventListener("click", e => {
       e.preventDefault();
       setActiveLink(id);
 
+      const user = sessionStorage.getItem("username");
+
+      // 🔒 Check permissions
+      if (user === "admin") {
+        // admin sees everything
+      } else if (dpmrAccess[user]) {
+        if (!dpmrAccess[user].includes(key)) {
+          showToast("🚫 Access Denied: You are not allowed to view this DPMR section.");
+          return;
+        }
+      } else {
+        // non-DPMR users cannot open DPMR at all
+        showToast("🚫 Access Denied: DPMR data is restricted.");
+        return;
+      }
+
+      // ✅ If allowed → continue with your existing fetch/render logic
       const selectedYear = document.getElementById("yearFilter").value;
       const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
 
@@ -1949,7 +2061,9 @@ document.addEventListener("DOMContentLoaded", () => {
             "number of patients rcs done",
             "number of persons received lep support during the year",
             "number of under treatment patients taking regular treatment",
-            "number of lepra reaction patients taking regular treatment"
+            "number of lepra reaction patients taking regular treatment",
+            "number of districts covered",
+            "number of patients receiving pension."
           ];
 
           data.forEach(row => {
