@@ -736,8 +736,8 @@ canvas {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  padding: 0px;
-  overflow-x: auto; /* Enables horizontal scroll if content overflows */
+  /* padding: 0px; */
+  /* overflow-x: auto; Enables horizontal scroll if content overflows */
 }
 
 /* Image styling */
