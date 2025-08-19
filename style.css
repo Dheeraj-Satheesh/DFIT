@@ -103,7 +103,7 @@ html, body {
 .sidebar nav ul li.section-title {
   font-weight: bold;
   font-size: 14px;
-  color: #555;
+  color: #f10404;
   margin-top: 20px;
   text-transform: uppercase;
 }
@@ -317,6 +317,7 @@ nav ul {
   font-weight: bold;
   /* display: block; */
   cursor: pointer;
+  color: yellow;
   padding-left: 10px;
   margin-bottom: 5px;
 }
@@ -326,6 +327,7 @@ nav ul {
   border: none;
   font-weight: bold;
   font-size: 14px;
+  color: #e00034;
   cursor: pointer;
   padding: 8px 10px;
   text-align: left;
@@ -349,7 +351,9 @@ nav ul {
 .subsection-title {
   cursor: pointer;
   margin: 10px 0;
+  color: rgb(255, 196, 0); /*sidebar inside content*/
   display: block;
+  font: bold;
 }
 
 .table-container {
@@ -673,6 +677,7 @@ canvas {
   background-color: transparent;
   border: none;
   font-size: 14px;
+  color: #e00034;   /*SIDE BAR MAIN CONTNET*/
   padding: 8px 10px;
   margin-bottom: 5px;
   width: 100%;
