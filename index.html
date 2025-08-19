@@ -1024,7 +1024,7 @@
     <main class="main-content">
       <header>
         <div class="filters-row">
-          <!-- Left Filter -->
+          <!-- First row: filters side by side -->
           <div class="filters-left-group">
             <label for="yearFilter">Filter by Yearly / Quarterly:</label>
             <select id="yearFilter">
@@ -1042,42 +1042,40 @@
               <option value="2024">2024</option>
               <option value="2025">2025</option>
             </select>
-          </div>
 
-          <!-- ✅ Logout button in the middle -->
-          <div class="logout-center-button">
-            <button id="logoutBtn">Logout</button>
-          </div>
-          <!-- Download Button -->
-          <button id="downloadTableBtn">
-            DOWNLOAD
-          </button>
-          <!-- Right Filter -->
-          <div class="filters-right-group">
-            <label for="yearMultiBtn">Multi-Years Filter:</label>
-            <div class="custom-multiselect">
-              <button id="yearMultiBtn">Select Years ▾</button>
-              <div id="yearCheckboxes" class="dropdown-content">
-                <label>
-                  <input type="checkbox" id="selectAllYears"> All
-                </label>
-                <hr>
-                <label><input type="checkbox" value="2014" checked> 2014</label>
-                <label><input type="checkbox" value="2015" checked> 2015</label>
-                <label><input type="checkbox" value="2016" checked> 2016</label>
-                <label><input type="checkbox" value="2017" checked> 2017</label>
-                <label><input type="checkbox" value="2018" checked> 2018</label>
-                <label><input type="checkbox" value="2019" checked> 2019</label>
-                <label><input type="checkbox" value="2020" checked> 2020</label>
-                <label><input type="checkbox" value="2021" checked> 2021</label>
-                <label><input type="checkbox" value="2022" checked> 2022</label>
-                <label><input type="checkbox" value="2023" checked> 2023</label>
-                <label><input type="checkbox" value="2024" checked> 2024</label>
-                <label><input type="checkbox" value="2025" checked> 2025</label>
+            <div class="filters-right-group">
+              <label for="yearMultiBtn">Multi-Years Filter:</label>
+              <div class="custom-multiselect">
+                <button id="yearMultiBtn">Select Years ▾</button>
+                <div id="yearCheckboxes" class="dropdown-content">
+                  <label>
+                    <input type="checkbox" id="selectAllYears"> All
+                  </label>
+                  <hr>
+                  <label><input type="checkbox" value="2014" checked> 2014</label>
+                  <label><input type="checkbox" value="2015" checked> 2015</label>
+                  <label><input type="checkbox" value="2016" checked> 2016</label>
+                  <label><input type="checkbox" value="2017" checked> 2017</label>
+                  <label><input type="checkbox" value="2018" checked> 2018</label>
+                  <label><input type="checkbox" value="2019" checked> 2019</label>
+                  <label><input type="checkbox" value="2020" checked> 2020</label>
+                  <label><input type="checkbox" value="2021" checked> 2021</label>
+                  <label><input type="checkbox" value="2022" checked> 2022</label>
+                  <label><input type="checkbox" value="2023" checked> 2023</label>
+                  <label><input type="checkbox" value="2024" checked> 2024</label>
+                  <label><input type="checkbox" value="2025" checked> 2025</label>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Second row: download left, logout right -->
+          <div class="filters-buttons-row">
+            <button id="downloadTableBtn">DOWNLOAD</button>
+            <button id="logoutBtn">Logout</button>
+          </div>
         </div>
+
       </header>
       <!-- Main page -->
       <section id="content-area">

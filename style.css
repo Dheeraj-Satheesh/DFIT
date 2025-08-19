@@ -351,7 +351,7 @@ nav ul {
 .subsection-title {
   cursor: pointer;
   margin: 10px 0;
-  color: rgb(255, 196, 0); /*sidebar inside content*/
+  color: rgb(17, 0, 165); /*sidebar inside content*/
   display: block;
   font: bold;
 }
@@ -868,4 +868,40 @@ canvas {
 /* Ensure footer never overlaps */
 #content-area {
   padding-bottom: 60px;  /* extra breathing room at bottom */
+}
+
+/* Mobile layout for filters + buttons */
+@media (max-width: 768px) {
+  .filters-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* vertical spacing between rows */
+  }
+
+  /* First row: filters side by side */
+  .filters-left-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .filters-left-group label,
+  .filters-left-group select,
+  .filters-right-group {
+    flex: 1; /* auto-resize side by side */
+    min-width: 120px;
+  }
+
+  /* Second row: download left, logout right */
+  .filters-buttons-row {
+    display: flex;
+    justify-content: space-between; /* left-right extremes */
+    width: 100%;
+  }
+
+  #downloadTableBtn,
+  #logoutBtn {
+    flex: none; /* keep natural button size */
+  }
 }
