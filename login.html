@@ -248,11 +248,14 @@
 
             if (userMap[entered]) {
                 sessionStorage.setItem("username", userMap[entered]);
-                window.location.href = "index.html";
-            } else {
+                sessionStorage.setItem("place", userMap[entered]); // ✅ store actual place name
+                window.location.href = "welcome.html";
+            }
+            else {
                 showToast("❌ Unauthorized: You are not allowed to access the dashboard.");
             }
         }
+
 
 
         window.onload = function () {

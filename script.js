@@ -36,6 +36,7 @@ function isAllowedToView(key) {
     nellore: ["nellore", "nel-"],
     delhi: ["delhi", "del-"],
     dos: ["dos"],
+    bihar: ["bihar"],
     polambakkam: ["pol"],
     dhanbad: ["dan"],
     amda: ["amd"],
@@ -583,7 +584,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tamilnadu: ["tot", "tn"],
     andhrapradesh: ["tot", "ap"],
     nellore: ["tot", "ap"],
-    bihar: ["tot", "bihar"]
+    bihar: ["tot", "bih"]
   };
   const setupDPMREvents = (prefix, folderKey) => {
     Object.keys(states).forEach(stateKey => {
@@ -1890,6 +1891,71 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Fetch error:", err);
       });
   });
+  // DRTB TRAININGS
+
+  document.getElementById("link-bihar-drtb-train")?.addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink("link-bihar-drtb-train");
+    const key = "bihar";
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
+    const selectedYear = document.getElementById("yearFilter").value;
+    const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
+
+    fetch("/DRTB Trainings/bihar_drtb.json")
+      .then(res => res.json())
+      .then(data => {
+        if (!Array.isArray(data) || data.length === 0) {
+          contentArea.innerHTML = `<p>No data found for Bihar DRTB.</p>`;
+          return;
+        }
+
+        // 🔍 Filter out years where all values are empty/null/undefined
+        const validYears = selectedYears.filter(year =>
+          data.some(row => {
+            const val = row[year];
+            return val !== null && val !== undefined && val !== "";
+          })
+        );
+
+        if (validYears.length === 0) {
+          contentArea.innerHTML = `<p>No valid data available for selected years in Bihar DRTB section.</p>`;
+          return;
+        }
+
+        let html = `<h2>DFIT Supported Bihar state DR TB  Training Annual Statistics</h2>`;
+        html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
+        html += validYears.map(yr => `<th>${yr}</th>`).join("");
+        html += "</tr></thead><tbody>";
+
+        const highlightContents = [
+          "number of trainings conducted/ facilitated at hfs level",
+          "total staffs participated in training"
+        ];
+
+        data.forEach(row => {
+          const content = (row["Contents"] ?? "").trim().toLowerCase();
+          const isHighlight = highlightContents.includes(content);
+
+          html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+          html += `<td>${row["Contents"]}</td>`;
+          html += validYears.map(yr => `<td>${row[yr] ?? ""}</td>`).join("");
+          html += `</tr>`;
+        });
+
+
+        html += "</tbody></table></div>";
+        contentArea.innerHTML = html;
+
+        enableDownload(`Bihar State DR TB  Training Services Annual Report_${validYears.join("_")}`);
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p>Error loading Bihar DRTB data: ${err.message}</p>`;
+        console.error("Fetch error:", err);
+      });
+  });
 
   // --- IRL Labs ---
   const irlMap = {
@@ -1970,6 +2036,118 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- DPMR ---
+  const dpmrMapTraining = {
+    tot: "link-tot-train",
+    bihar: "link-bihar-train",
+    jhar: "link-jharkhand-train",
+    kar: "link-karnataka-train",
+    tn: "link-tn-train",
+    chat: "link-chhattisgarh-train",
+    ap: "link-ap-train"
+  };
+
+  // ✅ Access map for DPMR accounts
+  const dpmrAccessTraining = {
+    jharkhand: ["tot", "jhar"],
+    chhattisgarh: ["tot", "chat"],
+    karnataka: ["tot", "kar"],
+    tamilnadu: ["tot", "tn"],
+    andhrapradesh: ["tot", "ap"],
+    nellore: ["tot", "ap"],
+    bihar: ["tot", "bihar"]
+  };
+
+  Object.entries(dpmrMapTraining).forEach(([key, id]) => {
+    document.getElementById(id)?.addEventListener("click", e => {
+      e.preventDefault();
+      setActiveLink(id);
+
+      const user = sessionStorage.getItem("username");
+
+      // 🔒 Check permissions
+      if (user === "admin") {
+        // admin sees everything
+      } else if (dpmrAccessTraining[user]) {
+        if (!dpmrAccessTraining[user].includes(key)) {
+          showToast("🚫 Access Denied: You are not allowed to view this DPMR section.");
+          return;
+        }
+      } else {
+        // non-DPMR users cannot open DPMR at all
+        showToast("🚫 Access Denied: DPMR data is restricted.");
+        return;
+      }
+
+      // ✅ If allowed → continue with your existing fetch/render logic
+      const selectedYear = document.getElementById("yearFilter").value;
+      const selectedYears = selectedYear === "All" ? getSelectedYears().map(String) : [selectedYear];
+
+      fetch(`DPMR Trainings/${key}.json`)
+        .then(res => res.json())
+        .then(data => {
+          const headingMap = {
+            tot: "All States",
+            bihar: "Bihar State",
+            jhar: "Jharkhand State",
+            kar: "Karnataka State",
+            tn: "Tamil Nadu State",
+            chat: "Chhattisgarh State",
+            ap: "Andhra Pradesh State"
+          };
+          const heading = headingMap[key] || key;
+
+          if (!Array.isArray(data) || data.length === 0) {
+            contentArea.innerHTML = `<p>No data found for ${heading} DPMR.</p>`;
+            return;
+          }
+
+          // 🔍 Filter out years where all values are empty/null
+          const validYears = selectedYears.filter(year =>
+            data.some(row => {
+              const val = row[year];
+              return val !== null && val !== undefined && val !== "";
+            })
+          );
+
+          if (validYears.length === 0) {
+            contentArea.innerHTML = `<p>No valid data available for selected years in ${heading} DPMR.</p>`;
+            return;
+          }
+
+          // ✅ Build Table
+          let html = `<h2>${heading} DPMR Services Annual Report</h2>`;
+          html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
+          html += validYears.map(y => `<th>${y}</th>`).join("");
+          html += `</tr></thead><tbody>`;
+
+          const highlightContents = [
+            "number of trainings conducted/ facilitated at hfs level",
+            "total staffs participated in training"
+          ];
+
+          data.forEach(row => {
+            const content = (row["Contents"] ?? "").trim().toLowerCase();
+            const isHighlight = highlightContents.includes(content);
+
+            html += `<tr${isHighlight ? ' class="highlight-row"' : ''}>`;
+            html += `<td>${row["Contents"]}</td>`;
+            html += validYears.map(y => `<td>${row[y] ?? ""}</td>`).join("");
+            html += `</tr>`;
+          });
+
+          html += `</tbody></table></div>`;
+          contentArea.innerHTML = html;
+
+          enableDownload(`${heading}_DPMR_Report_${validYears.join("_")}`);
+        })
+        .catch(err => {
+          contentArea.innerHTML = `<p>Error loading ${heading} DPMR data: ${err.message}</p>`;
+          console.error("Fetch error:", err);
+        });
+    });
+  });
+
+
   // --- DPMR ---
   const dpmrMap = {
     tot: "link-tot",
