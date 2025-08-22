@@ -1172,6 +1172,12 @@ document.addEventListener("DOMContentLoaded", () => {
           options: {
             layout: { padding: { right: 30, left: 10 } },
             plugins: {
+              title: {
+                display: true,
+                text: `${sectionTitle}`,
+                color: "#000",
+                font: { size: 16, weight: "bold" }
+              },
               datalabels: {
                 align: "top",
                 anchor: "end",
@@ -1354,6 +1360,12 @@ document.addEventListener("DOMContentLoaded", () => {
           options: {
             layout: { padding: { right: 30, left: 10 } },
             plugins: {
+              title: {
+                display: true,
+                text: `${sectionTitle}`,
+                color: "#000",
+                font: { size: 16, weight: "bold" }
+              },
               datalabels: {
                 align: "top",
                 anchor: "end",
@@ -1947,6 +1959,186 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Fetch error:", err);
       });
   });
+  // DRTB Trainings Graphs
+  // 📌 DRTB Trainings Graphs (styled like LepSupportTrend)
+  function renderDRTBTrainingGraph(stateKey, stateName) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading DRTB training data...</p>";
+
+    const categories = [
+      { key: "MO", label: "Medical Officers" },
+      { key: "PM", label: "Paramedical Staff" },
+      { key: "ASHA", label: "ASHAs" },
+      { key: "TOTAL", label: "Total Staffs" }
+    ];
+
+
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    selectedYears.sort();
+
+    // Fetch all category JSONs from subfolders
+    const fetches = categories.map(c =>
+      fetch(`DRTB TRAINING-GRAPH/${c.key}/${stateKey}.json`).then(r => r.json())
+    );
+
+    Promise.all(fetches)
+      .then(results => {
+        const labels = selectedYears.map(String);
+
+        // 🎨 Color palette
+        const colors = ["#007bff", "#dc3545", "#28a745", "#ff9900"];
+
+        // Build datasets
+        const datasets = results.map((data, i) => ({
+          label: categories[i].label,
+          data: labels.map(y => {
+            const val = data[0][y];
+            return val && val.trim() !== "" ? parseInt(val) : 0;
+          }),
+          borderColor: colors[i % colors.length],
+          backgroundColor: colors[i % colors.length],
+          pointBackgroundColor: colors[i % colors.length],
+          borderWidth: 2,
+          tension: 0,
+          fill: false,
+          pointRadius: 3
+        }));
+
+        // Build Table Rows
+        let tableRows = categories.map((c, i) => {
+          const rowVals = labels.map(y => {
+            const val = results[i][0][y];
+            return val && val.trim() !== "" ? val : "0";
+          });
+          return `<tr><td>${c.label}</td>${rowVals.map(v => `<td>${v}</td>`).join("")}</tr>`;
+        }).join("");
+
+        // HTML table + graph
+        const html = `
+        <div class="table-container" id="table-section">
+          <h2>DFIT Supported ${stateName}– Annual Statistics</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>${tableRows}</tbody>
+          </table>
+        </div>
+        <div style="margin-top:30px; height:420px;">
+          <canvas id="trainingChart"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        // 📊 Chart rendering
+        const ctx = document.getElementById("trainingChart").getContext("2d");
+        if (window.trainingChartInstance) window.trainingChartInstance.destroy();
+
+        window.trainingChartInstance = new Chart(ctx, {
+          type: "line",
+          data: { labels, datasets },
+          options: {
+            layout: { padding: { right: 30, left: 10 } },
+            plugins: {
+              title: {
+                display: true,
+                text: `DFIT Supported ${stateName}– Annual Statistics`,
+                color: "#000",
+                font: { size: 16, weight: "bold" }
+              },
+              datalabels: {
+                align: "top",
+                anchor: "end",
+                color: ctx => ctx.dataset.borderColor,
+                font: { weight: "bold", size: 11 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 13 },
+                bodyFont: { weight: "normal", size: 11 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 13, weight: "bold" },
+                  boxWidth: 20
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: "5%",
+                ticks: {
+                  padding: 8,
+                  color: "#000",
+                  font: { size: 11, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // 👈 removes inner horizontal lines
+                  drawBorder: true
+                }
+              },
+              x: {
+                offset: true,
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 11, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // 👈 removes inner vertical lines
+                  drawBorder: true
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        // Enable export (table + chart)
+        enableDownloadBoth(
+          `${stateName.replace(/\s+/g, "_")}_DRTB_Training_Report`,
+          "#table-section",
+          "#trainingChart"
+        );
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading DRTB training data.</p>`;
+        console.error("DRTB Fetch error:", err);
+      });
+  }
+
+  // 🔗 Example: Bihar link
+  document.getElementById("bihar-train").addEventListener("click", e => {
+    e.preventDefault();
+    setActiveLink(document.getElementById("bihar-train"));
+    const key = "bihar";
+    if (!isAllowedToView(key)) {
+      showToast("🚫 Access Denied: You are not allowed to view this section.");
+      return;
+    }
+    renderDRTBTrainingGraph("bihar_drtb", "Bihar State DRTB Training");
+  });
+
+
 
   // --- IRL Labs ---
   const irlMap = {
@@ -2135,6 +2327,212 @@ document.addEventListener("DOMContentLoaded", () => {
           contentArea.innerHTML = `<p>Error loading ${heading} DPMR data: ${err.message}</p>`;
           console.error("Fetch error:", err);
         });
+    });
+  });
+  // DPMR TRAININGS GRAPHS
+  function renderTrainingGraph(stateKey, stateName) {
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "<p>Loading training data...</p>";
+
+    const categories = [
+      { key: "MO", label: "Medical Officers" },
+      { key: "PM", label: "Paramedical Staff" },
+      { key: "ASHA", label: "ASHAs" },
+      { key: "TOTAL", label: "Total Staffs" }
+    ];
+
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    selectedYears.sort();
+
+    const fetches = categories.map(c =>
+      fetch(`TRAINING-GRAPH/${c.key}/${stateKey}.json`).then(r => r.json())
+    );
+
+    Promise.all(fetches)
+      .then(results => {
+        const labels = selectedYears.map(String);
+
+        // Build datasets
+        const colorPalette = ["#ff6384", "#36a2eb", "#ffce56", "#14f31f"];
+        const datasets = results.map((data, i) => ({
+          label: categories[i].label,
+          data: selectedYears.map(y => {
+            const val = data[0][y];
+            return val && val.trim() !== "" ? parseFloat(val) : 0;
+          }),
+          borderColor: colorPalette[i],
+          backgroundColor: colorPalette[i] + "33",
+          pointBackgroundColor: colorPalette[i],
+          borderWidth: 2,
+          fill: true,
+          tension: 0.4
+        }));
+
+        // Table + Graph HTML
+        let html = `
+        <div class="table-container" id="table-section">
+          <h2>${stateName} – DPMR Training Annual Statistics</h2>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                ${labels.map(y => `<th>${y}</th>`).join("")}
+              </tr>
+            </thead>
+            <tbody>
+              ${categories.map((c, i) => `
+                <tr>
+                  <td>${c.label}</td>
+                  ${labels.map(y => `<td>${results[i][0][y] && results[i][0][y].trim() !== "" ? results[i][0][y] : "0"}</td>`).join("")}
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+        
+        <div style="margin-top:30px; height:400px;">
+          <canvas id="trainingChart"></canvas>
+        </div>
+      `;
+        contentArea.innerHTML = html;
+
+        // Render Chart
+        const ctx = document.getElementById("trainingChart").getContext("2d");
+        if (window.trainingChartInstance) window.trainingChartInstance.destroy();
+
+        window.trainingChartInstance = new Chart(ctx, {
+          type: "line",
+          data: { labels, datasets },
+          options: {
+            layout: { padding: { right: 30 } },
+            plugins: {
+              title: {
+                display: true,
+                text: `${stateName} – DPMR Training Annual Statistics`,
+                color: "#000",
+                font: { size: 16, weight: "bold" }
+              },
+              datalabels: {
+                align: "bottom",
+                anchor: "end",
+                color: "#000",
+                font: { weight: "bold", size: 12 },
+                clamp: true
+              },
+              tooltip: {
+                titleFont: { weight: "bold", size: 14 },
+                bodyFont: { weight: "bold", size: 12 }
+              },
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grace: '5%',
+                grid: {
+                  display: false,   // remove horizontal inner lines
+                  drawBorder: true  // keep axis line
+                },
+                ticks: {
+                  padding: 10,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" },
+                  callback: value => value.toFixed(0)
+                },
+                title: {
+                  display: true,
+                  text: "Values",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              },
+              x: {
+                offset: true,
+                grid: {
+                  display: false,   // remove vertical inner lines
+                  drawBorder: true  // keep axis line
+                },
+                ticks: {
+                  padding: 5,
+                  color: "#000",
+                  font: { size: 12, weight: "bold" }
+                },
+                title: {
+                  display: true,
+                  text: "Year-wise",
+                  color: "#000",
+                  font: { size: 14, weight: "bold" }
+                }
+              }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+          },
+          plugins: [ChartDataLabels]
+        });
+
+        enableDownloadBoth(
+          `${stateName.replace(/\s+/g, "_")}_Training_Report`,
+          "#table-section",
+          "#trainingChart"
+        );
+      })
+      .catch(err => {
+        contentArea.innerHTML = `<p style="color:red;">Error loading training data.</p>`;
+        console.error(err);
+      });
+  }
+  const trainingStates = {
+    "tot-dpmr-train": "DFIT Supported Six States",
+    "bihar-dpmr-train": "DFIT Supported Bihar State",
+    "jhar-dpmr-train": "DFIT Supported Jharkhand State",
+    "chat-dpmr-train": "DFIT SupportedChhattisgarh State",
+    "kar-dpmr-train": "DFIT Supported Karnataka State",
+    "tn-dpmr-train": "DFIT Supported Tamil Nadu State",
+    "ap-dpmr-train": "DFIT Supported Andhra Pradesh State"
+  };
+  const dpmrAccessTraining1 = {
+    jharkhand: ["tot", "jhar"],
+    chhattisgarh: ["tot", "chat"],
+    karnataka: ["tot", "kar"],
+    tamilnadu: ["tot", "tn"],
+    andhrapradesh: ["tot", "ap"],
+    nellore: ["tot", "ap"],
+    bihar: ["tot", "bihar"]
+  };
+  Object.entries(trainingStates).forEach(([id, stateName]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.addEventListener("click", e => {
+      e.preventDefault();
+      setActiveLink(el);
+
+      const user = sessionStorage.getItem("username");
+      const key = id.split("-")[0]; // short code, e.g., "bihar", "jhar"
+
+      // 🔒 Access control
+      if (user !== "admin") {
+        if (!dpmrAccessTraining1[user] || !dpmrAccessTraining1[user].includes(key)) {
+          showToast("🚫 Access Denied: You are not allowed to view this DPMR section.");
+          return;
+        }
+      }
+
+      // Determine which graphs to show (tot + state-specific)
+      let graphsToRender = ["tot"];
+      if (key !== "tot") graphsToRender.push(key);
+
+      // Call renderTrainingGraph for each
+      graphsToRender.forEach(shortCode => {
+        const name = (shortCode === "tot") ? "DFIT Supported Six States" : stateName;
+        renderTrainingGraph(shortCode, name);
+      });
     });
   });
 

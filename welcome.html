@@ -121,9 +121,16 @@
                 .replace(/\b\w/g, ch => ch.toUpperCase());
         }
 
-        const rawPlace = sessionStorage.getItem("place") || "Your Place";
-        const place = toTitleCase(rawPlace);
+        // Get user and place from sessionStorage
+        const user = sessionStorage.getItem("username") || ""; // assumes you store username
+        let rawPlace = sessionStorage.getItem("place") || "Your Place";
 
+        // If user is admin, force place to Chennai
+        if (user.toLowerCase() === "admin") {
+            rawPlace = "Chennai";
+        }
+
+        const place = toTitleCase(rawPlace);
         const fullText = `Welcome to DFIT Dashboard — ${place}`;
         const target = document.getElementById("typed");
 
@@ -142,6 +149,7 @@
             window.location.href = "index.html";
         }, 5000);
     </script>
+
 </body>
 
 </html>
