@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // DPMR SERVICES
+  // DPMR SERVICES GRAPH
 
   function renderLineDPMR(folder, jsonFile, sectionTitle, suffix) {
     const contentArea = document.getElementById("content-area");
@@ -511,8 +511,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 beginAtZero: true,
                 grace: '5%',
                 grid: {
-                  lineWidth: 0.5,
-                  color: '#ccc'
+                  display: false,   // 👈 removes inner horizontal lines
+                  drawBorder: true  // keeps axis line
                 },
                 ticks: {
                   padding: 10,
@@ -530,8 +530,8 @@ document.addEventListener("DOMContentLoaded", () => {
               x: {
                 offset: true,
                 grid: {
-                  lineWidth: 0.5,
-                  color: '#ccc',
+                  display: false,   // 👈 removes inner vertical lines
+                  drawBorder: true  // keeps axis line
                 },
                 ticks: {
                   padding: 5,
@@ -551,6 +551,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           plugins: [ChartDataLabels]
         });
+
 
         enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
       })
@@ -994,11 +995,7 @@ document.addEventListener("DOMContentLoaded", () => {
               label: sectionTitle,
               data: values,
               borderColor: color,
-              backgroundColor: color + "33",
-              pointBackgroundColor: color,
-              borderWidth: 2,
-              fill: true,
-              tension: 0.4,
+              backgroundColor: color + "cc", // 👈 stronger bar color (changed from "33")
               barThickness: 50,
             }]
           },
@@ -1028,14 +1025,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 beginAtZero: true,
                 grace: '5%',
                 grid: {
-                  lineWidth: 0.5, // 👈 thinner axis lines
-                  color: '#ccc'
+                  display: false,   // 👈 removes inner horizontal lines
+                  drawBorder: true  // 👈 keeps the axis border line
                 },
                 ticks: {
                   padding: 10,
                   color: "#000",
                   font: { size: 12, weight: "bold" },
-                  callback: value => value.toFixed(0) // 👈 round off displayed ticks
+                  callback: value => value.toFixed(0) // round-off ticks
                 },
                 title: {
                   display: true,
@@ -1047,8 +1044,8 @@ document.addEventListener("DOMContentLoaded", () => {
               x: {
                 offset: true,
                 grid: {
-                  lineWidth: 0.5,
-                  color: '#ccc'
+                  display: false,   // 👈 removes inner vertical lines
+                  drawBorder: true
                 },
                 ticks: {
                   padding: 5,
@@ -1068,6 +1065,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           plugins: [ChartDataLabels]
         });
+
 
         // ✅ Combined Download
         enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
@@ -1207,6 +1205,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Values",
                   color: "#000",
                   font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // 👈 removes inner horizontal lines
+                  drawBorder: true  // 👈 keeps the Y-axis line
                 }
               },
               x: {
@@ -1221,6 +1223,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Year-wise",
                   color: "#000",
                   font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // 👈 removes inner vertical lines
+                  drawBorder: true  // 👈 keeps the X-axis line
                 }
               }
             },
@@ -1307,67 +1313,29 @@ document.addEventListener("DOMContentLoaded", () => {
               {
                 label: "No. of Presumptive DR TB Cases Exam",
                 data: valuesPresumptive,
-                borderColor: "#1f77b4",
-                backgroundColor: "#1f77b4",
-                pointBackgroundColor: "#1f77b4",
-                borderWidth: 2,
-                tension: 0,
-                fill: false,
-                pointRadius: 4
-              },
-              {
-                label: "No. of DR TB follow-up Cases Exam",
-                data: valuesFollowUp,
-                borderColor: "#b22222",
-                backgroundColor: "#b22222",
-                pointBackgroundColor: "#b22222",
-                borderWidth: 2,
-                tension: 0,
-                fill: false,
-                pointRadius: 4
-              },
-              {
-                label: "No. of DR TB cases Confirmed",
-                data: valuesDRTB,
-                borderColor: "#228B22",
-                backgroundColor: "#228B22",
-                pointBackgroundColor: "#228B22",
-                borderWidth: 2,
-                tension: 0,
-                fill: false,
-                pointRadius: 4
-              }
-            ]
-          },
-          data: {
-            labels,
-            datasets: [
-              {
-                label: "No. of Presumptive DR TB Cases Exam",
-                data: valuesPresumptive,
                 borderColor: "#007bff",  // Blue
                 backgroundColor: "#007bff",
                 pointBackgroundColor: "#007bff",
                 borderWidth: 2,
-                tension: 0,               // Straight lines
+                tension: 0,  // Straight lines
                 fill: false,
                 pointRadius: 3
               },
               {
                 label: "No. of DR TB follow-up Cases Exam",
                 data: valuesFollowUp,
-                borderColor: "#dc3545",   // Red
+                borderColor: "#dc3545",  // Red
                 backgroundColor: "#dc3545",
                 pointBackgroundColor: "#dc3545",
                 borderWidth: 2,
-                tension: 0,               // Straight lines
+                tension: 0,
                 fill: false,
                 pointRadius: 3
               },
               {
                 label: "No. of DR TB cases Confirmed",
                 data: valuesDRTB,
-                borderColor: "#28a745",
+                borderColor: "#28a745",  // Green
                 backgroundColor: "#28a745",
                 pointBackgroundColor: "#28a745",
                 borderWidth: 2,
@@ -1375,7 +1343,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 fill: false,
                 pointRadius: 3,
                 datalabels: {
-                  align: "bottom",      // ⬅️ Moves labels below the line
+                  align: "bottom",   // labels below line for this dataset
                   anchor: "end",
                   color: "#000",
                   font: { weight: "bold", size: 11 }
@@ -1419,6 +1387,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Values",
                   color: "#000",
                   font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // remove horizontal inner lines
+                  drawBorder: true
                 }
               },
               x: {
@@ -1433,6 +1405,10 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Year-wise",
                   color: "#000",
                   font: { size: 13, weight: "bold" }
+                },
+                grid: {
+                  display: false,   // remove vertical inner lines
+                  drawBorder: true
                 }
               }
             },
@@ -1440,8 +1416,8 @@ document.addEventListener("DOMContentLoaded", () => {
             maintainAspectRatio: false
           },
           plugins: [ChartDataLabels]
-
         });
+
 
         enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", `#${chartId}`);
       })
