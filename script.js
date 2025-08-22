@@ -2035,7 +2035,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- DPMR ---
+  // --- DPMR TRAININGS---
   const dpmrMapTraining = {
     tot: "link-tot-train",
     bihar: "link-bihar-train",
@@ -2086,13 +2086,13 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.json())
         .then(data => {
           const headingMap = {
-            tot: "All States",
-            bihar: "Bihar State",
-            jhar: "Jharkhand State",
-            kar: "Karnataka State",
-            tn: "Tamil Nadu State",
-            chat: "Chhattisgarh State",
-            ap: "Andhra Pradesh State"
+            tot: "DFIT Supported Six States",
+            bihar: "DFIT Supported Bihar State",
+            jhar: "DFIT Supported Jharkhand State",
+            kar: "DFIT Supported Karnataka State",
+            tn: "DFIT Supported Tamil Nadu State",
+            chat: "DFIT Supported Chhattisgarh State",
+            ap: "DFIT Supported Andhra Pradesh State"
           };
           const heading = headingMap[key] || key;
 
@@ -2115,7 +2115,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           // ✅ Build Table
-          let html = `<h2>${heading} DPMR Services Annual Report</h2>`;
+          let html = `<h2>${heading} DPMR Training- Annual Statistics</h2>`;
           html += `<div class="table-container"><table><thead><tr><th>Contents</th>`;
           html += validYears.map(y => `<th>${y}</th>`).join("");
           html += `</tr></thead><tbody>`;
