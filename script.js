@@ -889,6 +889,9 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Values",
                   color: "#000",
                   font: { size: 14, weight: "bold" }
+                },
+                grid: {
+                  display: false // ✅ removes horizontal grid lines
                 }
               },
               x: {
@@ -903,6 +906,9 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Quarter-wise",
                   color: "#000",
                   font: { size: 14, weight: "bold" }
+                },
+                grid: {
+                  display: false // ✅ removes vertical grid lines
                 }
               }
             },
@@ -1561,7 +1567,7 @@ document.addEventListener("DOMContentLoaded", () => {
             scales: {
               y: {
                 beginAtZero: true,
-                grace: '5%',                     // 👈 adds vertical breathing room
+                grace: '5%',
                 ticks: {
                   padding: 10,
                   color: "#000",
@@ -1572,10 +1578,15 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Values",
                   color: "#000",
                   font: { size: 14, weight: "bold" }
+                },
+                grid: {
+                  drawTicks: false,
+                  drawBorder: false,
+                  display: false   // 👈 hides Y-axis grid lines
                 }
               },
               x: {
-                offset: true,                    // 👈 this is the key for horizontal gap!
+                offset: true,
                 ticks: {
                   padding: 5,
                   color: "#000",
@@ -1586,6 +1597,11 @@ document.addEventListener("DOMContentLoaded", () => {
                   text: "Year-wise",
                   color: "#000",
                   font: { size: 14, weight: "bold" }
+                },
+                grid: {
+                  drawTicks: false,
+                  drawBorder: false,
+                  display: false   // 👈 hides X-axis grid lines
                 }
               }
             },
@@ -1594,7 +1610,6 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           plugins: [ChartDataLabels]
         });
-
         // ✅ Combined Download
         enableDownloadBoth(`${sectionTitle.replace(/\s+/g, "_")}_Report`, "#table-section", "#annualChart");
       })
