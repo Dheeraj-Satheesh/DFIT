@@ -587,46 +587,46 @@
   {
     "S.NO": "9",
     "Contents": "Total Beds Available for TB cases",
-    "I Qtr-2016": "0",
-    "II Qtr-2016": "0",
-    "III Qtr- 2016": "0",
-    "IV Qtr-2016": "0",
-    "Annual 2016": "0"
+    "I Qtr-2016": "-",
+    "II Qtr-2016": "-",
+    "III Qtr- 2016": "-",
+    "IV Qtr-2016": "-",
+    "Annual 2016": "-"
   },
   {
     "S.NO": "9.a",
     "Contents": "Total DS TB In- Patients Managed",
-    "I Qtr-2016": "0",
-    "II Qtr-2016": "0",
-    "III Qtr- 2016": "0",
-    "IV Qtr-2016": "0",
-    "Annual 2016": "0"
+    "I Qtr-2016": "-",
+    "II Qtr-2016": "-",
+    "III Qtr- 2016": "-",
+    "IV Qtr-2016": "-",
+    "Annual 2016": "-"
   },
   {
     "S.NO": "9.b",
     "Contents": "Total DR TB   In-Patients Managed",
-    "I Qtr-2016": "0",
-    "II Qtr-2016": "0",
-    "III Qtr- 2016": "0",
-    "IV Qtr-2016": "0",
-    "Annual 2016": "0"
+    "I Qtr-2016": "-",
+    "II Qtr-2016": "-",
+    "III Qtr- 2016": "-",
+    "IV Qtr-2016": "-",
+    "Annual 2016": "-"
   },
   {
     "S.NO": "9.c",
     "Contents": "Total Bed days for TB Cases ",
-    "I Qtr-2016": "0",
-    "II Qtr-2016": "0",
-    "III Qtr- 2016": "0",
-    "IV Qtr-2016": "0",
-    "Annual 2016": "0"
+    "I Qtr-2016": "-",
+    "II Qtr-2016": "-",
+    "III Qtr- 2016": "-",
+    "IV Qtr-2016": "-",
+    "Annual 2016": "-"
   },
   {
     "S.NO": "9.d",
     "Contents": "Bed Occupancy Rate for TB Cases",
-    "I Qtr-2016": "0",
-    "II Qtr-2016": "0",
-    "III Qtr- 2016": "0",
-    "IV Qtr-2016": "0",
-    "Annual 2016": "0"
+    "I Qtr-2016": "-",
+    "II Qtr-2016": "-",
+    "III Qtr- 2016": "-",
+    "IV Qtr-2016": "-",
+    "Annual 2016": "-"
   }
 ]

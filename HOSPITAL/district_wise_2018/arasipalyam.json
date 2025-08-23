@@ -587,38 +587,38 @@
     {
         "S.NO": "9",
         "Contents": "Total Beds Available for TB cases",
-        "I Qtr-2018": "0",
-        "II Qtr-2018": "0",
-        "III Qtr- 2018": "0",
-        "IV Qtr-2018": "0",
-        "Annual 2018": "0"
+        "I Qtr-2018": "-",
+        "II Qtr-2018": "-",
+        "III Qtr- 2018": "-",
+        "IV Qtr-2018": "-",
+        "Annual 2018": "-"
     },
     {
         "S.NO": "9.a",
         "Contents": "Total DS TB In- Patients Managed",
-        "I Qtr-2018": "0",
-        "II Qtr-2018": "0",
-        "III Qtr- 2018": "0",
-        "IV Qtr-2018": "0",
-        "Annual 2018": "0"
+        "I Qtr-2018": "-",
+        "II Qtr-2018": "-",
+        "III Qtr- 2018": "-",
+        "IV Qtr-2018": "-",
+        "Annual 2018": "-"
     },
     {
         "S.NO": "9.b",
         "Contents": "Total DR TB   In-Patients Managed",
-        "I Qtr-2018": "0",
-        "II Qtr-2018": "0",
-        "III Qtr- 2018": "0",
-        "IV Qtr-2018": "0",
-        "Annual 2018": "0"
+        "I Qtr-2018": "-",
+        "II Qtr-2018": "-",
+        "III Qtr- 2018": "-",
+        "IV Qtr-2018": "-",
+        "Annual 2018": "-"
     },
     {
         "S.NO": "9.c",
         "Contents": "Total Bed days for TB Cases ",
-        "I Qtr-2018": "0",
-        "II Qtr-2018": "0",
-        "III Qtr- 2018": "0",
-        "IV Qtr-2018": "0",
-        "Annual 2018": "0"
+        "I Qtr-2018": "-",
+        "II Qtr-2018": "-",
+        "III Qtr- 2018": "-",
+        "IV Qtr-2018": "-",
+        "Annual 2018": "-"
     },
     {
         "S.NO": "9.d",
@@ -627,6 +627,6 @@
         "II Qtr-2018": "",
         "III Qtr- 2018": "",
         "IV Qtr-2018": "",
-        "Annual 2018": "0"
+        "Annual 2018": "-"
     }
 ]

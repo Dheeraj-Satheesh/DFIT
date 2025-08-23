@@ -61,15 +61,15 @@ CATEGORIES = {
         "output": "OUTPUT/LEPROSY"
     },
     "DISABILITY": {
-        "labels": ["total adult g-ii-d cases", "total child g-ii-d cases"],
+        "labels": ["total adult g ii cases", "total child g ii cases"],
         "output": "OUTPUT/DISABILITY"
     },
     "LEPRA": {
-        "labels": ["total type-1 lepra reaction cases", "total type-2 lepra reaction cases"],
+        "labels": ["total type-i lepra reaction cases", "total type-ii lepra reaction cases"],
         "output": "OUTPUT/LEPRA"
     },
     "RCS": {
-        "labels": ["major rcs done"],
+        "labels": ["total major rcs done"],
         "output": "OUTPUT/RCS"
     },
     "LEPAD": {
@@ -77,7 +77,7 @@ CATEGORIES = {
         "output": "OUTPUT/LEPAD"
     },
     "LEPBED": {
-        "labels": ["total beddays for leprosy cases"],
+        "labels": ["total bed days for leprosy cases"],
         "output": "OUTPUT/LEPBED"
     },
     "LEPBEDRATE": {

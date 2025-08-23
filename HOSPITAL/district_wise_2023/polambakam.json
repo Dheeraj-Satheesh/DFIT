@@ -587,46 +587,46 @@
     {
         "S.NO": "9",
         "Contents": "Total Beds Available for TB cases",
-        "I Qtr-2023": "",
-        "II Qtr-2023": "",
-        "III Qtr-2023": "",
-        "IV Qtr-2023": "",
-        "Annual 2023": "0"
+        "I Qtr-2023": "-",
+        "II Qtr-2023": "-",
+        "III Qtr-2023": "-",
+        "IV Qtr-2023": "-",
+        "Annual 2023": "-"
     },
     {
         "S.NO": "9.a",
         "Contents": "Total DS TB In- Patients Managed",
-        "I Qtr-2023": "",
-        "II Qtr-2023": "",
-        "III Qtr-2023": "",
-        "IV Qtr-2023": "",
-        "Annual 2023": "0"
+        "I Qtr-2023": "-",
+        "II Qtr-2023": "-",
+        "III Qtr-2023": "-",
+        "IV Qtr-2023": "-",
+        "Annual 2023": "-"
     },
     {
         "S.NO": "9.b",
         "Contents": "Total DR TB   In-Patients Managed",
-        "I Qtr-2023": "",
-        "II Qtr-2023": "",
-        "III Qtr-2023": "",
-        "IV Qtr-2023": "",
-        "Annual 2023": "0"
+        "I Qtr-2023": "-",
+        "II Qtr-2023": "-",
+        "III Qtr-2023": "-",
+        "IV Qtr-2023": "-",
+        "Annual 2023": "-"
     },
     {
         "S.NO": "9.c",
         "Contents": "Total Bed days for TB Cases ",
-        "I Qtr-2023": "",
-        "II Qtr-2023": "",
-        "III Qtr-2023": "",
-        "IV Qtr-2023": "",
-        "Annual 2023": "0"
+        "I Qtr-2023": "-",
+        "II Qtr-2023": "-",
+        "III Qtr-2023": "-",
+        "IV Qtr-2023": "-",
+        "Annual 2023": "-"
     },
     {
         "S.NO": "9.d",
         "Contents": "Bed Occupancy Rate for TB Cases",
-        "I Qtr-2023": "0",
-        "II Qtr-2023": "0",
-        "III Qtr-2023": "0",
-        "IV Qtr-2023": "0",
-        "Annual 2023": "0"
+        "I Qtr-2023": "-",
+        "II Qtr-2023": "-",
+        "III Qtr-2023": "-",
+        "IV Qtr-2023": "-",
+        "Annual 2023": "-"
     }
 ]
