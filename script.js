@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "login.html";
     });
   }
+  const homeLink = document.getElementById("link-home");
+  if (homeLink) {
+    homeLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "index.html"; // just reload dashboard
+    });
+  }
+
+
 
   // ⛔ Redirect to login if not logged in
   const allowedPages = ["index.html"]; // You can extend this

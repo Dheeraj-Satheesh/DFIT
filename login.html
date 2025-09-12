@@ -205,7 +205,7 @@
         <div class="note">Please contact the administrator to get your Password.</div>
         <!-- Email Button -->
         <div style="margin-top: 10px; text-align: center;">
-            <a href="mailto:programme@damienfoundation.in" style="
+            <a href="#" id="forgotPasswordBtn" style="
        display: inline-block;
        padding: 10px 20px;
        background-color: #6aff00;
@@ -218,6 +218,24 @@
                 Forgot Password
             </a>
         </div>
+
+        <script>
+            document.getElementById("forgotPasswordBtn").addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // detect mobile device
+                const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                if (isMobile) {
+                    // 📱 Mobile → open mail app
+                    window.location.href = "mailto:programme@damienfoundation.in";
+                } else {
+                    // 💻 Laptop/Desktop → show popup
+                    alert("📧 Please mail to programme@damienfoundation.in to get your password.");
+                }
+            });
+        </script>
+
         <div class="footer">© 2025 Damien Foundation India Trust.</div>
     </div>
 

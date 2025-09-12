@@ -909,3 +909,22 @@ canvas {
     flex: none; /* keep natural button size */
   }
 }
+.sidebar-home {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar-home a {
+  display: block;
+  background: #ff0000;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar-home a:hover {
+  background: #0056b3;
+}
