@@ -219,21 +219,112 @@
             </a>
         </div>
 
+        <!-- Modal -->
+        <div id="forgotModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Forgot Password</h3>
+                <p>
+                    📧 Please mail to
+                    <strong>programme@damienfoundation.in</strong>
+                    to get your password.
+                </p>
+            </div>
+        </div>
+
+        <style>
+            /* Modal background */
+            .modal {
+                display: none;
+                /* hidden by default */
+                position: fixed;
+                z-index: 999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                overflow: auto;
+            }
+
+            /* Modal box */
+            .modal-content {
+                background: #fff;
+                margin: 15% auto;
+                padding: 20px;
+                border-radius: 8px;
+                width: 90%;
+                max-width: 400px;
+                text-align: center;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                animation: fadeIn 0.3s ease;
+            }
+
+            .modal-content h3 {
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .modal-content p {
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            /* Close button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .close:hover {
+                color: #000;
+            }
+
+            /* Animation */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.9);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        </style>
+
         <script>
-            document.getElementById("forgotPasswordBtn").addEventListener("click", function (e) {
+            const forgotBtn = document.getElementById("forgotPasswordBtn");
+            const modal = document.getElementById("forgotModal");
+            const closeBtn = modal.querySelector(".close");
+
+            forgotBtn.addEventListener("click", function (e) {
                 e.preventDefault();
 
-                // detect mobile device
                 const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
                 if (isMobile) {
-                    // 📱 Mobile → open mail app
+                    // 📱 On phone → open mail app
                     window.location.href = "mailto:programme@damienfoundation.in";
                 } else {
-                    // 💻 Laptop/Desktop → show popup
-                    alert("📧 Please mail to programme@damienfoundation.in to get your password.");
+                    // 💻 On desktop → show modal
+                    modal.style.display = "block";
                 }
             });
+
+            // Close modal on X click
+            closeBtn.onclick = () => modal.style.display = "none";
+
+            // Close modal if clicked outside
+            window.onclick = (e) => {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
         </script>
 
         <div class="footer">© 2025 Damien Foundation India Trust.</div>
