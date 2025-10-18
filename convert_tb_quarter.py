@@ -60,10 +60,7 @@ def clear_folder(folder_path):
 
 def extract_quarter_data(data, label, year):
     label = label.strip().lower()
-    result = {}
-    for q, qtext in zip(QUARTERS, ["I", "II", "III", "IV"]):
-        key = f"{qtext} Qtr-{year}"
-        result[q] = None if (year == 2025 and q in ["Q3", "Q4"]) else 0
+    result = {q: 0 for q in QUARTERS}
 
     for row in data:
         contents = ""
@@ -75,10 +72,7 @@ def extract_quarter_data(data, label, year):
             for q, qtext in zip(QUARTERS, ["I", "II", "III", "IV"]):
                 col = f"{qtext} Qtr-{year}"
                 val = row.get(col)
-                if val is None or str(val).strip() == "":
-                    if year == 2025 and q in ["Q3", "Q4"]:
-                        result[q] = None
-                else:
+                if val not in [None, ""]:
                     try:
                         num = round(float(str(val).replace(",", "")), 1)
                         result[q] = int(num) if num == int(num) else num
@@ -88,12 +82,7 @@ def extract_quarter_data(data, label, year):
 
 def extract_numerator_denominator(data, label, year):
     label = label.strip().lower()
-    result = {}
-    for q in QUARTERS:
-        if year == 2025 and q in ["Q3", "Q4"]:
-            result[q] = None
-        else:
-            result[q] = {"num": 0, "den": 0}
+    result = {q: 0 for q in QUARTERS}
 
     for row in data:
         contents = ""
@@ -138,6 +127,7 @@ def process_tb_quarters():
 
                 if place not in output_data:
                     output_data[place] = {}
+
                 if cat in ["PRETB", "TB"]:
                     output_data[place][str(year)] = extract_quarter_data(data, cfg["label"], year)
                 elif cat in ["NSP", "RT"]:
@@ -145,16 +135,9 @@ def process_tb_quarters():
                     den_qtr = extract_numerator_denominator(data, cfg["denominator"], year)
                     result = {}
                     for q in QUARTERS:
-                        if year == 2025 and q in ["Q3", "Q4"]:
-                            result[q] = None
-                        else:
-                            num = num_qtr[q] if isinstance(num_qtr[q], (int, float)) else 0
-                            den = den_qtr[q] if isinstance(den_qtr[q], (int, float)) else 0
-                            if den == 0:
-                                result[q] = 0
-                            else:
-                                percent = round((num / den) * 100, 1)
-                                result[q] = int(percent) if percent == int(percent) else percent
+                        num = num_qtr[q] if isinstance(num_qtr[q], (int, float)) else 0
+                        den = den_qtr[q] if isinstance(den_qtr[q], (int, float)) else 0
+                        result[q] = 0 if den == 0 else round((num / den) * 100, 1)
                     output_data[place][str(year)] = result
 
         for place, yearly in output_data.items():
