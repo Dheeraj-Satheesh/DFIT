@@ -3,72 +3,72 @@
         "Type of cases": "Cured NSP Patients",
         "I Qtr-2025": "12",
         "II Qtr-2025": "12",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "9",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "33",
+        "%": "97.1"
     },
     {
         "Type of cases": "Treatment completed NSP Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Died NSP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Failure NSP Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Lost to Follow-up NSP Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Not Evaluated NSP Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment Regimen Changed NSP Pts",
         "I Qtr-2025": "1",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "1",
+        "%": "2.9"
     },
     {
         "Type of cases": "Total NSP Patients Managed",
         "I Qtr-2025": "13",
         "II Qtr-2025": "12",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "9",
         "IV Qtr-2025": "",
-        "Total 2025": "",
+        "Total 2025": "34",
         "%": ""
     },
     {
@@ -77,142 +77,142 @@
         "II Qtr-2025": "",
         "III Qtr-2025": "",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment completed NSN/NEP Patients",
         "I Qtr-2025": "7",
         "II Qtr-2025": "6",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "4",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "17",
+        "%": "94.4"
     },
     {
         "Type of cases": "Died NSN/NEP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "1",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "1",
+        "%": "5.6"
     },
     {
         "Type of cases": "Failure NSN/NEP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Lost to Follow-up NSN/NEP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Not Evaluated NSN/NEP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment Regimen Changed NSN/NEP Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Total NSN/NEP Patients Managed",
         "I Qtr-2025": "7",
         "II Qtr-2025": "6",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "5",
         "IV Qtr-2025": "",
-        "Total 2025": "",
+        "Total 2025": "18",
         "%": ""
     },
     {
         "Type of cases": "Cured RT+ve Pts",
         "I Qtr-2025": "2",
         "II Qtr-2025": "1",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "3",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "6",
+        "%": "100.0"
     },
     {
         "Type of cases": "Treatment completed RT+ve Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Died RT+ve Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Failure RT+ve Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Lost to Follow-up RT+ve Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Not Evaluated RT+ve Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment Regimen Changed RT+ve Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
-        "Type of cases ": "Total RT+ve Pts Managed",
+        "Type of cases": "Total RT+ve Pts Managed",
         "I Qtr-2025": "2",
         "II Qtr-2025": "1",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "3",
         "IV Qtr-2025": "",
-        "Total 2025": "",
+        "Total 2025": "6",
         "%": ""
     },
     {
@@ -221,70 +221,70 @@
         "II Qtr-2025": "",
         "III Qtr-2025": "",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment completed RT Neg Pts",
         "I Qtr-2025": "1",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "1",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "2",
+        "%": "66.7"
     },
     {
         "Type of cases": "Died RT Neg Pts",
         "I Qtr-2025": "1",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "1",
+        "%": "33.3"
     },
     {
         "Type of cases": "Failure RT Neg Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Lost to Follow-up RT Neg Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Not Evaluated RT Neg Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Treatment Regimen Changed RT Neg Pts",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
-        "Total 2025": "",
-        "%": ""
+        "Total 2025": "0",
+        "%": "0.0"
     },
     {
         "Type of cases": "Total RT Neg Pts Managed",
         "I Qtr-2025": "2",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "1",
         "IV Qtr-2025": "",
-        "Total 2025": "",
+        "Total 2025": "3",
         "%": ""
     }
 ]

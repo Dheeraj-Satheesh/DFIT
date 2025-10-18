@@ -3,7 +3,7 @@
         "Type of Cases": "NSP Patients",
         "I Qtr-2025": "224",
         "II Qtr-2025": "291",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "344",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -11,7 +11,7 @@
         "Type of Cases": "NSN Patients",
         "I Qtr-2025": "198",
         "II Qtr-2025": "209",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "78",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -19,7 +19,7 @@
         "Type of Cases": "NEP Patients",
         "I Qtr-2025": "464",
         "II Qtr-2025": "542",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "457",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -27,7 +27,7 @@
         "Type of Cases": "Other Patients",
         "I Qtr-2025": "0",
         "II Qtr-2025": "0",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -35,7 +35,7 @@
         "Type of Cases": "Total New Patients Managed",
         "I Qtr-2025": "886",
         "II Qtr-2025": "1042",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "879",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -43,7 +43,7 @@
         "Type of Cases": "Recurrent TB Patients",
         "I Qtr-2025": "54",
         "II Qtr-2025": "54",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "64",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -51,7 +51,7 @@
         "Type of Cases": "Treatment After Failure Patients",
         "I Qtr-2025": "1",
         "II Qtr-2025": "1",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "0",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -59,7 +59,7 @@
         "Type of Cases": "Treatment After Loss to Follow-up Patients",
         "I Qtr-2025": "18",
         "II Qtr-2025": "10",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "12",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -67,7 +67,7 @@
         "Type of Cases": "Previously Treated Others Neg Patients",
         "I Qtr-2025": "94",
         "II Qtr-2025": "103",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "40",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -75,7 +75,7 @@
         "Type of Cases": "Total Retreatment Patients ",
         "I Qtr-2025": "167",
         "II Qtr-2025": "168",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "116",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -83,7 +83,7 @@
         "Type of Cases": "Total DS TB Patients Diagnosed",
         "I Qtr-2025": "1053",
         "II Qtr-2025": "1210",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "995",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -91,7 +91,7 @@
         "Type of Cases": "Total Sputum Conversion for NSP Patients",
         "I Qtr-2025": "173",
         "II Qtr-2025": "224",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "291",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -99,7 +99,7 @@
         "Type of Cases": "Sputum Negative for NSP Patients",
         "I Qtr-2025": "135",
         "II Qtr-2025": "180",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "253",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -107,7 +107,7 @@
         "Type of Cases": "Sputum Positive for NSP Patients",
         "I Qtr-2025": "16",
         "II Qtr-2025": "17",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "14",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -115,7 +115,7 @@
         "Type of Cases": "Sputum not done for NSP Patients",
         "I Qtr-2025": "22",
         "II Qtr-2025": "27",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "24",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -123,7 +123,7 @@
         "Type of Cases": "Sputum Conversion rate for NSP Patients",
         "I Qtr-2025": "78",
         "II Qtr-2025": "80",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "87",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -131,7 +131,7 @@
         "Type of Cases": "Total Sputum Conversion for RT Patients",
         "I Qtr-2025": "49",
         "II Qtr-2025": "73",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "65",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -139,7 +139,7 @@
         "Type of Cases": "Sputum Negative for RT Patients",
         "I Qtr-2025": "38",
         "II Qtr-2025": "61",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "56",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -147,7 +147,7 @@
         "Type of Cases": "Sputum Positive for RT Patients",
         "I Qtr-2025": "5",
         "II Qtr-2025": "4",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "4",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -155,7 +155,7 @@
         "Type of Cases": "Sputum not done for RT Patients",
         "I Qtr-2025": "6",
         "II Qtr-2025": "8",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "5",
         "IV Qtr-2025": "",
         "Total 2025": ""
     },
@@ -163,7 +163,7 @@
         "Type of Cases": "Sputum Conversion rate for RT Patients",
         "I Qtr-2025": "78",
         "II Qtr-2025": "84",
-        "III Qtr-2025": "",
+        "III Qtr-2025": "86",
         "IV Qtr-2025": "",
         "Total 2025": ""
     }

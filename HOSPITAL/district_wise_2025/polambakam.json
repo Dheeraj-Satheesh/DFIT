@@ -4,7 +4,7 @@
     "Contents": "Total OPD Treated",
     "I Qtr-2025": "257",
     "II Qtr-2025": "265",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "243",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -31,7 +31,7 @@
     "Contents": "Other OPD Treated",
     "I Qtr-2025": "257",
     "II Qtr-2025": "265",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "243",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -526,7 +526,7 @@
     "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2025": "30",
     "II Qtr-2025": "30",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "25",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -535,7 +535,7 @@
     "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2025": "16",
     "II Qtr-2025": "17",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "20",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -562,7 +562,7 @@
     "Contents": "Planter Ulcers In-Patients Managed",
     "I Qtr-2025": "16",
     "II Qtr-2025": "17",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "20",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -571,7 +571,7 @@
     "Contents": "Total Bed days for Leprosy Cases",
     "I Qtr-2025": "1468",
     "II Qtr-2025": "1497",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "1453",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -580,7 +580,7 @@
     "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2025": "54.4",
     "II Qtr-2025": "55.4",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "64.6",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },

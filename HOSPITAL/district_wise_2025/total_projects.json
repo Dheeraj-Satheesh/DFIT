@@ -4,7 +4,7 @@
     "Contents": "Total OPD Treated",
     "I Qtr-2025": "19939",
     "II Qtr-2025": "20454",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "16073",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -13,7 +13,7 @@
     "Contents": "Skin OPD Treated",
     "I Qtr-2025": "5672",
     "II Qtr-2025": "6310",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "6803",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -22,7 +22,7 @@
     "Contents": "Respiratory OPD Treated",
     "I Qtr-2025": "5107",
     "II Qtr-2025": "3065",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "3481",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -31,7 +31,7 @@
     "Contents": "Other OPD Treated",
     "I Qtr-2025": "9160",
     "II Qtr-2025": "11079",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "5789",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -40,7 +40,7 @@
     "Contents": "Adult New PB Cases",
     "I Qtr-2025": "73",
     "II Qtr-2025": "22",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "12",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -49,7 +49,7 @@
     "Contents": "Adult New MB Cases",
     "I Qtr-2025": "139",
     "II Qtr-2025": "124",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "90",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -58,7 +58,7 @@
     "Contents": "Total Adult New Cases",
     "I Qtr-2025": "212",
     "II Qtr-2025": "146",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "101",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -67,7 +67,7 @@
     "Contents": "Child New PB Cases",
     "I Qtr-2025": "5",
     "II Qtr-2025": "0",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "2",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -85,7 +85,7 @@
     "Contents": "Total Child New Cases",
     "I Qtr-2025": "9",
     "II Qtr-2025": "3",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "2",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -94,7 +94,7 @@
     "Contents": "Total New Leprosy Cases detected",
     "I Qtr-2025": "221",
     "II Qtr-2025": "149",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "103",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -103,7 +103,7 @@
     "Contents": "Total Relapse Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -112,7 +112,7 @@
     "Contents": "Female New PB Cases",
     "I Qtr-2025": "25",
     "II Qtr-2025": "10",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "4",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -121,7 +121,7 @@
     "Contents": "Female New MB Cases",
     "I Qtr-2025": "47",
     "II Qtr-2025": "44",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "22",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -130,7 +130,7 @@
     "Contents": "Total Female Cases",
     "I Qtr-2025": "72",
     "II Qtr-2025": "54",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "26",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -139,7 +139,7 @@
     "Contents": "Adult New PB G I Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -148,7 +148,7 @@
     "Contents": "Adult New MB G I Cases",
     "I Qtr-2025": "21",
     "II Qtr-2025": "28",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "19",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -157,7 +157,7 @@
     "Contents": "Total Adult G I Cases",
     "I Qtr-2025": "21",
     "II Qtr-2025": "28",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "20",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -175,7 +175,7 @@
     "Contents": "Adult New MB G II Cases",
     "I Qtr-2025": "23",
     "II Qtr-2025": "25",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "23",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -184,7 +184,7 @@
     "Contents": "Total Adult G II Cases",
     "I Qtr-2025": "23",
     "II Qtr-2025": "25",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "23",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -247,7 +247,7 @@
     "Contents": "Type-I Lepra Reaction Male Cases",
     "I Qtr-2025": "26",
     "II Qtr-2025": "33",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "34",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -256,7 +256,7 @@
     "Contents": "Type-I Lepra Reaction Female Cases",
     "I Qtr-2025": "9",
     "II Qtr-2025": "22",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "14",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -265,7 +265,7 @@
     "Contents": "Total Type-I Lepra Reaction Cases",
     "I Qtr-2025": "35",
     "II Qtr-2025": "55",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "48",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -274,7 +274,7 @@
     "Contents": "Type-II Lepra Reaction Male Cases",
     "I Qtr-2025": "40",
     "II Qtr-2025": "22",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "22",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -283,7 +283,7 @@
     "Contents": "Type-II Lepra Reaction Female Cases",
     "I Qtr-2025": "14",
     "II Qtr-2025": "10",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "8",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -292,7 +292,7 @@
     "Contents": "Total Type-II Lepra Reaction Cases",
     "I Qtr-2025": "54",
     "II Qtr-2025": "32",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "30",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -301,7 +301,7 @@
     "Contents": "Total MCR Footwear Provided",
     "I Qtr-2025": "328",
     "II Qtr-2025": "282",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "321",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -310,7 +310,7 @@
     "Contents": "Male Cases RCS Done",
     "I Qtr-2025": "29",
     "II Qtr-2025": "33",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "58",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -319,7 +319,7 @@
     "Contents": "Female Cases RCS Done",
     "I Qtr-2025": "14",
     "II Qtr-2025": "15",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "15",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -328,7 +328,7 @@
     "Contents": "Total Major RCS Done ",
     "I Qtr-2025": "43",
     "II Qtr-2025": "42",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "73",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -337,7 +337,7 @@
     "Contents": "Eye Male RCS Done",
     "I Qtr-2025": "1",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -355,7 +355,7 @@
     "Contents": "Total Eye RCS Done",
     "I Qtr-2025": "1",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -364,7 +364,7 @@
     "Contents": "Hand Male RCS Done",
     "I Qtr-2025": "26",
     "II Qtr-2025": "28",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "49",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -373,7 +373,7 @@
     "Contents": "Hand Female RCS Done",
     "I Qtr-2025": "14",
     "II Qtr-2025": "14",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "13",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -382,7 +382,7 @@
     "Contents": "Total Hand RCS Done",
     "I Qtr-2025": "40",
     "II Qtr-2025": "42",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "62",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -391,7 +391,7 @@
     "Contents": "Foot Male RCS Done",
     "I Qtr-2025": "2",
     "II Qtr-2025": "4",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "8",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -400,7 +400,7 @@
     "Contents": "Foot Female RCS Done",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "2",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -409,7 +409,7 @@
     "Contents": "Total Foot RCS Done",
     "I Qtr-2025": "2",
     "II Qtr-2025": "5",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "10",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -418,7 +418,7 @@
     "Contents": "Male Minor Surgeries Done",
     "I Qtr-2025": "9",
     "II Qtr-2025": "9",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "13",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -427,7 +427,7 @@
     "Contents": "Female Minor Surgeries Done",
     "I Qtr-2025": "4",
     "II Qtr-2025": "8",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "3",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -436,13 +436,13 @@
     "Contents": "Total Minor Surgeries Done",
     "I Qtr-2025": "13",
     "II Qtr-2025": "17",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "16",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "7",
-    "Contents": "LEP-House Support for Male Cases",
+    "Contents": "LEP‑House Support for Male Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
     "III Qtr-2025": "0",
@@ -451,34 +451,34 @@
   },
   {
     "S.NO": "7.a",
-    "Contents": "LEP-House Support for Female Cases",
+    "Contents": "LEP‑House Support for Female Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "7.b",
-    "Contents": "Total LEP-House Supported",
+    "Contents": "Total LEP‑House Supported",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "7.c",
-    "Contents": "Socio-Economic Support for Male Cases",
+    "Contents": "Socio‑Economic Support for Male Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "7.d",
-    "Contents": "Socio-Economic Support for Female Cases",
+    "Contents": "Socio‑Economic Support for Female Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -487,10 +487,10 @@
   },
   {
     "S.NO": "7.e",
-    "Contents": "Total LEP, Socio-Economic Supported",
+    "Contents": "Total LEP, Socio‑Economic Supported",
     "I Qtr-2025": "0",
     "II Qtr-2025": "1",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -508,7 +508,7 @@
     "Contents": "Education Support for Female cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -517,7 +517,7 @@
     "Contents": "Total LEP, Education Supported",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -526,7 +526,7 @@
     "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2025": "236",
     "II Qtr-2025": "236",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "226",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -535,34 +535,34 @@
     "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2025": "297",
     "II Qtr-2025": "318",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "353",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "8.b",
-    "Contents": "Lepra Reaction In-Patients Managed",
+    "Contents": "Lepra Reaction In‑Patients Managed",
     "I Qtr-2025": "26",
     "II Qtr-2025": "21",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "33",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "8.c",
-    "Contents": "RCS In-Patients Managed",
+    "Contents": "RCS In‑Patients Managed",
     "I Qtr-2025": "74",
     "II Qtr-2025": "94",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "103",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "8.d",
-    "Contents": "Planter Ulcers In-Patients Managed",
+    "Contents": "Planter Ulcers In‑Patients Managed",
     "I Qtr-2025": "197",
     "II Qtr-2025": "203",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "217",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -571,7 +571,7 @@
     "Contents": "Total Bed days for Leprosy Cases",
     "I Qtr-2025": "8194",
     "II Qtr-2025": "8857",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "9469",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -580,7 +580,7 @@
     "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2025": "38.6",
     "II Qtr-2025": "41.7",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "46.6",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   },
@@ -589,22 +589,22 @@
     "Contents": "Total Beds Available for TB cases",
     "I Qtr-2025": "15",
     "II Qtr-2025": "15",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "10",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "9.a",
-    "Contents": "Total DS TB In- Patients Managed",
+    "Contents": "Total DS TB In‑Patients Managed",
     "I Qtr-2025": "22",
     "II Qtr-2025": "42",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "77",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
   {
     "S.NO": "9.b",
-    "Contents": "Total DR TB   In-Patients Managed",
+    "Contents": "Total DR TB In‑Patients Managed",
     "I Qtr-2025": "12",
     "II Qtr-2025": "14",
     "III Qtr-2025": "0",
@@ -613,10 +613,10 @@
   },
   {
     "S.NO": "9.c",
-    "Contents": "Total Bed days for TB Cases ",
+    "Contents": "Total Bed days for TB Cases",
     "I Qtr-2025": "52",
     "II Qtr-2025": "85",
-    "III Qtr-2025": "0",
+    "III Qtr-2025": "77",
     "IV Qtr-2025": "0",
     "Annual 2025": "0"
   },
@@ -625,7 +625,7 @@
     "Contents": "Bed Occupancy Rate for TB Cases",
     "I Qtr-2025": "3.9",
     "II Qtr-2025": "6.3",
-    "III Qtr-2025": "",
+    "III Qtr-2025": "8.6",
     "IV Qtr-2025": "",
     "Annual 2025": ""
   }
