@@ -5,8 +5,8 @@
     "I Qtr-2025": "6620",
     "II Qtr-2025": "6840",
     "III Qtr-2025": "6731",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "6166",
+    "Annual 2025": "26357"
   },
   {
     "S.NO": "1.a",
@@ -14,8 +14,8 @@
     "I Qtr-2025": "1804",
     "II Qtr-2025": "1856",
     "III Qtr-2025": "1742",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "1483",
+    "Annual 2025": "6885"
   },
   {
     "S.NO": "1.b",
@@ -23,8 +23,8 @@
     "I Qtr-2025": "2633",
     "II Qtr-2025": "2271",
     "III Qtr-2025": "2967",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2298",
+    "Annual 2025": "10169"
   },
   {
     "S.NO": "1.c",
@@ -32,8 +32,8 @@
     "I Qtr-2025": "2183",
     "II Qtr-2025": "2713",
     "III Qtr-2025": "2022",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2385",
+    "Annual 2025": "9303"
   },
   {
     "S.NO": "2",
@@ -41,8 +41,8 @@
     "I Qtr-2025": "6",
     "II Qtr-2025": "4",
     "III Qtr-2025": "4",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "7",
+    "Annual 2025": "21"
   },
   {
     "S.NO": "2.a",
@@ -50,17 +50,17 @@
     "I Qtr-2025": "42",
     "II Qtr-2025": "37",
     "III Qtr-2025": "24",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "25",
+    "Annual 2025": "128"
   },
   {
     "S.NO": "2.b",
-    "Contents": "Adult-Total New Cases",
+    "Contents": "Total Adult New Cases",
     "I Qtr-2025": "48",
     "II Qtr-2025": "41",
     "III Qtr-2025": "27",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "32",
+    "Annual 2025": "148"
   },
   {
     "S.NO": "2.c",
@@ -68,8 +68,8 @@
     "I Qtr-2025": "1",
     "II Qtr-2025": "0",
     "III Qtr-2025": "2",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "1",
+    "Annual 2025": "4"
   },
   {
     "S.NO": "2.d",
@@ -77,17 +77,17 @@
     "I Qtr-2025": "2",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2",
+    "Annual 2025": "4"
   },
   {
     "S.NO": "2.e",
-    "Contents": "Child-Total New Cases",
+    "Contents": "Total Child New Cases",
     "I Qtr-2025": "3",
     "II Qtr-2025": "0",
     "III Qtr-2025": "2",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "8"
   },
   {
     "S.NO": "2.f",
@@ -95,12 +95,12 @@
     "I Qtr-2025": "51",
     "II Qtr-2025": "41",
     "III Qtr-2025": "29",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "35",
+    "Annual 2025": "156"
   },
   {
     "S.NO": "2.g",
-    "Contents": "Relapse Cases",
+    "Contents": "Total Relapse Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -113,8 +113,8 @@
     "I Qtr-2025": "3",
     "II Qtr-2025": "1",
     "III Qtr-2025": "3",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "10"
   },
   {
     "S.NO": "2.i",
@@ -122,8 +122,8 @@
     "I Qtr-2025": "10",
     "II Qtr-2025": "11",
     "III Qtr-2025": "5",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "4",
+    "Annual 2025": "30"
   },
   {
     "S.NO": "2.j",
@@ -131,8 +131,8 @@
     "I Qtr-2025": "13",
     "II Qtr-2025": "12",
     "III Qtr-2025": "8",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "7",
+    "Annual 2025": "40"
   },
   {
     "S.NO": "2.k",
@@ -149,8 +149,8 @@
     "I Qtr-2025": "7",
     "II Qtr-2025": "5",
     "III Qtr-2025": "2",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "17"
   },
   {
     "S.NO": "2.m",
@@ -158,8 +158,8 @@
     "I Qtr-2025": "7",
     "II Qtr-2025": "5",
     "III Qtr-2025": "2",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "17"
   },
   {
     "S.NO": "2.n",
@@ -176,8 +176,8 @@
     "I Qtr-2025": "10",
     "II Qtr-2025": "11",
     "III Qtr-2025": "6",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "12",
+    "Annual 2025": "39"
   },
   {
     "S.NO": "2.p",
@@ -185,8 +185,8 @@
     "I Qtr-2025": "10",
     "II Qtr-2025": "11",
     "III Qtr-2025": "6",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "12",
+    "Annual 2025": "39"
   },
   {
     "S.NO": "2.q",
@@ -248,8 +248,8 @@
     "I Qtr-2025": "13",
     "II Qtr-2025": "15",
     "III Qtr-2025": "15",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "13",
+    "Annual 2025": "56"
   },
   {
     "S.NO": "3.a",
@@ -257,8 +257,8 @@
     "I Qtr-2025": "4",
     "II Qtr-2025": "7",
     "III Qtr-2025": "3",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "17"
   },
   {
     "S.NO": "3.b",
@@ -266,8 +266,8 @@
     "I Qtr-2025": "17",
     "II Qtr-2025": "22",
     "III Qtr-2025": "18",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "16",
+    "Annual 2025": "73"
   },
   {
     "S.NO": "3.c",
@@ -275,8 +275,8 @@
     "I Qtr-2025": "20",
     "II Qtr-2025": "7",
     "III Qtr-2025": "10",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "11",
+    "Annual 2025": "48"
   },
   {
     "S.NO": "3.d",
@@ -284,8 +284,8 @@
     "I Qtr-2025": "4",
     "II Qtr-2025": "4",
     "III Qtr-2025": "5",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2",
+    "Annual 2025": "15"
   },
   {
     "S.NO": "3.e",
@@ -293,8 +293,8 @@
     "I Qtr-2025": "24",
     "II Qtr-2025": "11",
     "III Qtr-2025": "15",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "13",
+    "Annual 2025": "63"
   },
   {
     "S.NO": "4",
@@ -302,8 +302,8 @@
     "I Qtr-2025": "86",
     "II Qtr-2025": "89",
     "III Qtr-2025": "108",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "46",
+    "Annual 2025": "329"
   },
   {
     "S.NO": "5",
@@ -311,8 +311,8 @@
     "I Qtr-2025": "17",
     "II Qtr-2025": "10",
     "III Qtr-2025": "22",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "23",
+    "Annual 2025": "72"
   },
   {
     "S.NO": "5.a",
@@ -320,17 +320,17 @@
     "I Qtr-2025": "12",
     "II Qtr-2025": "6",
     "III Qtr-2025": "4",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "7",
+    "Annual 2025": "29"
   },
   {
     "S.NO": "5.b",
-    "Contents": "Total Major RCS Done",
+    "Contents": "Total Major RCS Done ",
     "I Qtr-2025": "29",
     "II Qtr-2025": "16",
     "III Qtr-2025": "26",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "30",
+    "Annual 2025": "101"
   },
   {
     "S.NO": "5.c",
@@ -338,8 +338,8 @@
     "I Qtr-2025": "1",
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2",
+    "Annual 2025": "4"
   },
   {
     "S.NO": "5.d",
@@ -356,8 +356,8 @@
     "I Qtr-2025": "1",
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2",
+    "Annual 2025": "4"
   },
   {
     "S.NO": "5.f",
@@ -365,8 +365,8 @@
     "I Qtr-2025": "14",
     "II Qtr-2025": "10",
     "III Qtr-2025": "17",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "18",
+    "Annual 2025": "59"
   },
   {
     "S.NO": "5.g",
@@ -374,8 +374,8 @@
     "I Qtr-2025": "12",
     "II Qtr-2025": "5",
     "III Qtr-2025": "4",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "7",
+    "Annual 2025": "28"
   },
   {
     "S.NO": "5.h",
@@ -383,8 +383,8 @@
     "I Qtr-2025": "26",
     "II Qtr-2025": "15",
     "III Qtr-2025": "21",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "25",
+    "Annual 2025": "87"
   },
   {
     "S.NO": "5.i",
@@ -392,8 +392,8 @@
     "I Qtr-2025": "2",
     "II Qtr-2025": "0",
     "III Qtr-2025": "4",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "9"
   },
   {
     "S.NO": "5.j",
@@ -402,7 +402,7 @@
     "II Qtr-2025": "1",
     "III Qtr-2025": "0",
     "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "Annual 2025": "1"
   },
   {
     "S.NO": "5.k",
@@ -410,8 +410,8 @@
     "I Qtr-2025": "2",
     "II Qtr-2025": "1",
     "III Qtr-2025": "4",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "10"
   },
   {
     "S.NO": "6",
@@ -419,8 +419,8 @@
     "I Qtr-2025": "2",
     "II Qtr-2025": "4",
     "III Qtr-2025": "7",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "2",
+    "Annual 2025": "15"
   },
   {
     "S.NO": "6.a",
@@ -428,8 +428,8 @@
     "I Qtr-2025": "2",
     "II Qtr-2025": "1",
     "III Qtr-2025": "0",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "1",
+    "Annual 2025": "4"
   },
   {
     "S.NO": "6.b",
@@ -437,12 +437,12 @@
     "I Qtr-2025": "4",
     "II Qtr-2025": "5",
     "III Qtr-2025": "7",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "3",
+    "Annual 2025": "19"
   },
   {
     "S.NO": "7",
-    "Contents": "LEP‑House Support for Male Cases",
+    "Contents": "LEP-House Support for Male Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -451,7 +451,7 @@
   },
   {
     "S.NO": "7.a",
-    "Contents": "LEP‑House Support for Female Cases",
+    "Contents": "LEP-House Support for Female Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -460,7 +460,7 @@
   },
   {
     "S.NO": "7.b",
-    "Contents": "Total LEP‑House Supported",
+    "Contents": "Total LEP-House Supported",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -469,16 +469,16 @@
   },
   {
     "S.NO": "7.c",
-    "Contents": "Socio‑Economic Support for Male Cases",
+    "Contents": "Socio-Economic Support for Male Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "1",
+    "Annual 2025": "2"
   },
   {
     "S.NO": "7.d",
-    "Contents": "Socio‑Economic Support for Female Cases",
+    "Contents": "Socio-Economic Support for Female Cases",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "0",
@@ -487,12 +487,12 @@
   },
   {
     "S.NO": "7.e",
-    "Contents": "Total LEP, Socio‑Economic Supported",
+    "Contents": "Total LEP, Socio-Economic Supported",
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "1",
+    "Annual 2025": "2"
   },
   {
     "S.NO": "7.f",
@@ -510,7 +510,7 @@
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "Annual 2025": "1"
   },
   {
     "S.NO": "7.h",
@@ -519,7 +519,7 @@
     "II Qtr-2025": "0",
     "III Qtr-2025": "1",
     "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "Annual 2025": "1"
   },
   {
     "S.NO": "8",
@@ -527,8 +527,8 @@
     "I Qtr-2025": "91",
     "II Qtr-2025": "91",
     "III Qtr-2025": "86",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "86",
+    "Annual 2025": "86"
   },
   {
     "S.NO": "8.a",
@@ -536,8 +536,8 @@
     "I Qtr-2025": "130",
     "II Qtr-2025": "123",
     "III Qtr-2025": "166",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "123",
+    "Annual 2025": "489"
   },
   {
     "S.NO": "8.b",
@@ -545,8 +545,8 @@
     "I Qtr-2025": "13",
     "II Qtr-2025": "10",
     "III Qtr-2025": "20",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "10",
+    "Annual 2025": "53"
   },
   {
     "S.NO": "8.c",
@@ -554,8 +554,8 @@
     "I Qtr-2025": "49",
     "II Qtr-2025": "42",
     "III Qtr-2025": "60",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "46",
+    "Annual 2025": "197"
   },
   {
     "S.NO": "8.d",
@@ -563,8 +563,8 @@
     "I Qtr-2025": "68",
     "II Qtr-2025": "71",
     "III Qtr-2025": "86",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "67",
+    "Annual 2025": "239"
   },
   {
     "S.NO": "8.e",
@@ -572,8 +572,8 @@
     "I Qtr-2025": "3847",
     "II Qtr-2025": "4241",
     "III Qtr-2025": "4204",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "4187",
+    "Annual 2025": "16479"
   },
   {
     "S.NO": "8.f",
@@ -581,8 +581,8 @@
     "I Qtr-2025": "47.0",
     "II Qtr-2025": "51.8",
     "III Qtr-2025": "54.3",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "54.1",
+    "Annual 2025": "53.2"
   },
   {
     "S.NO": "9",
@@ -590,35 +590,35 @@
     "I Qtr-2025": "10",
     "II Qtr-2025": "10",
     "III Qtr-2025": "10",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "10",
+    "Annual 2025": "10"
   },
   {
     "S.NO": "9.a",
-    "Contents": "Total DS TB In-Patients Managed",
+    "Contents": "Total DS TB In- Patients Managed",
     "I Qtr-2025": "11",
     "II Qtr-2025": "31",
     "III Qtr-2025": "77",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "26",
+    "Annual 2025": "145"
   },
   {
     "S.NO": "9.b",
-    "Contents": "Total DR TB In-Patients Managed",
+    "Contents": "Total DR TB   In-Patients Managed",
     "I Qtr-2025": "12",
     "II Qtr-2025": "14",
     "III Qtr-2025": "0",
     "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "Annual 2025": "26"
   },
   {
     "S.NO": "9.c",
-    "Contents": "Total Bed days for TB Cases",
+    "Contents": "Total Bed days for TB Cases ",
     "I Qtr-2025": "23",
     "II Qtr-2025": "45",
     "III Qtr-2025": "77",
-    "IV Qtr-2025": "0",
-    "Annual 2025": "0"
+    "IV Qtr-2025": "26",
+    "Annual 2025": "171"
   },
   {
     "S.NO": "9.d",
@@ -626,7 +626,7 @@
     "I Qtr-2025": "2.6",
     "II Qtr-2025": "5.0",
     "III Qtr-2025": "8.6",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "2.9",
+    "Annual 2025": "4.8"
   }
 ]

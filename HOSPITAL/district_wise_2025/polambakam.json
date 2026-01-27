@@ -5,8 +5,8 @@
     "I Qtr-2025": "257",
     "II Qtr-2025": "265",
     "III Qtr-2025": "243",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "243",
+    "Annual 2025": "1008"
   },
   {
     "S.NO": "1.a",
@@ -20,6 +20,15 @@
   {
     "S.NO": "1.b",
     "Contents": "Respiratory OPD Treated",
+    "I Qtr-2025": "257",
+    "II Qtr-2025": "265",
+    "III Qtr-2025": "243",
+    "IV Qtr-2025": "243",
+    "Annual 2025": "1008"
+  },
+  {
+    "S.NO": "1.c",
+    "Contents": "Other OPD Treated",
     "I Qtr-2025": "",
     "II Qtr-2025": "",
     "III Qtr-2025": "",
@@ -27,19 +36,10 @@
     "Annual 2025": ""
   },
   {
-    "S.NO": "1.c",
-    "Contents": "Other OPD Treated",
-    "I Qtr-2025": "257",
-    "II Qtr-2025": "265",
-    "III Qtr-2025": "243",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
-  },
-  {
     "S.NO": "2",
     "Contents": "Adult New PB Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -65,8 +65,8 @@
   {
     "S.NO": "2.c",
     "Contents": "Child New PB Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -101,8 +101,8 @@
   {
     "S.NO": "2.g",
     "Contents": "Total Relapse Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -110,8 +110,8 @@
   {
     "S.NO": "2.h",
     "Contents": "Female New PB Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -119,8 +119,8 @@
   {
     "S.NO": "2.i",
     "Contents": "Female New MB Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -137,8 +137,8 @@
   {
     "S.NO": "2.k",
     "Contents": "Adult New PB G I Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -146,8 +146,8 @@
   {
     "S.NO": "2.l",
     "Contents": "Adult New MB G I Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -164,8 +164,8 @@
   {
     "S.NO": "2.n",
     "Contents": "Adult New PB G II Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -173,8 +173,8 @@
   {
     "S.NO": "2.o",
     "Contents": "Adult New MB G II Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -191,8 +191,8 @@
   {
     "S.NO": "2.q",
     "Contents": "Child New PB G I Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -200,8 +200,8 @@
   {
     "S.NO": "2.r",
     "Contents": "Child New MB G I Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -218,8 +218,8 @@
   {
     "S.NO": "2.t",
     "Contents": "Child New PB G II Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -227,8 +227,8 @@
   {
     "S.NO": "2.u",
     "Contents": "Child New MB G II Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -245,8 +245,8 @@
   {
     "S.NO": "3",
     "Contents": "Type-I Lepra Reaction Male Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -254,8 +254,8 @@
   {
     "S.NO": "3.a",
     "Contents": "Type-I Lepra Reaction Female Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -272,8 +272,8 @@
   {
     "S.NO": "3.c",
     "Contents": "Type-II Lepra Reaction Male Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -281,8 +281,8 @@
   {
     "S.NO": "3.d",
     "Contents": "Type-II Lepra Reaction Female Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -299,8 +299,8 @@
   {
     "S.NO": "4",
     "Contents": "Total MCR Footwear Provided",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -308,8 +308,8 @@
   {
     "S.NO": "5",
     "Contents": "Male Cases RCS Done",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -317,8 +317,8 @@
   {
     "S.NO": "5.a",
     "Contents": "Female Cases RCS Done",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -353,8 +353,8 @@
   {
     "S.NO": "5.e",
     "Contents": "Total Eye RCS Done",
-    "I Qtr-2025": "0",
-    "II Qtr-2025": "0",
+    "I Qtr-2025": "",
+    "II Qtr-2025": "",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -380,8 +380,8 @@
   {
     "S.NO": "5.h",
     "Contents": "Total Hand RCS Done",
-    "I Qtr-2025": "0",
-    "II Qtr-2025": "0",
+    "I Qtr-2025": "",
+    "II Qtr-2025": "",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -407,8 +407,8 @@
   {
     "S.NO": "5.k",
     "Contents": "Total Foot RCS Done",
-    "I Qtr-2025": "0",
-    "II Qtr-2025": "0",
+    "I Qtr-2025": "",
+    "II Qtr-2025": "",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -434,8 +434,8 @@
   {
     "S.NO": "6.b",
     "Contents": "Total Minor Surgeries Done",
-    "I Qtr-2025": "0",
-    "II Qtr-2025": "0",
+    "I Qtr-2025": "",
+    "II Qtr-2025": "",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -443,8 +443,8 @@
   {
     "S.NO": "7",
     "Contents": "LEP-House Support for Male Cases",
-    "I Qtr-2025": "",
-    "II Qtr-2025": "",
+    "I Qtr-2025": "0",
+    "II Qtr-2025": "0",
     "III Qtr-2025": "",
     "IV Qtr-2025": "",
     "Annual 2025": ""
@@ -527,8 +527,8 @@
     "I Qtr-2025": "30",
     "II Qtr-2025": "30",
     "III Qtr-2025": "25",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "25",
+    "Annual 2025": "25"
   },
   {
     "S.NO": "8.a",
@@ -536,8 +536,8 @@
     "I Qtr-2025": "16",
     "II Qtr-2025": "17",
     "III Qtr-2025": "20",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "21",
+    "Annual 2025": "21"
   },
   {
     "S.NO": "8.b",
@@ -545,8 +545,8 @@
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "0",
+    "Annual 2025": "0"
   },
   {
     "S.NO": "8.c",
@@ -554,8 +554,8 @@
     "I Qtr-2025": "0",
     "II Qtr-2025": "0",
     "III Qtr-2025": "",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "0",
+    "Annual 2025": "0"
   },
   {
     "S.NO": "8.d",
@@ -563,8 +563,8 @@
     "I Qtr-2025": "16",
     "II Qtr-2025": "17",
     "III Qtr-2025": "20",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "21",
+    "Annual 2025": "21"
   },
   {
     "S.NO": "8.e",
@@ -572,8 +572,8 @@
     "I Qtr-2025": "1468",
     "II Qtr-2025": "1497",
     "III Qtr-2025": "1453",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "1595",
+    "Annual 2025": "6013"
   },
   {
     "S.NO": "8.f",
@@ -581,8 +581,8 @@
     "I Qtr-2025": "54.4",
     "II Qtr-2025": "55.4",
     "III Qtr-2025": "64.6",
-    "IV Qtr-2025": "",
-    "Annual 2025": ""
+    "IV Qtr-2025": "70.9",
+    "Annual 2025": "67"
   },
   {
     "S.NO": "9",
@@ -626,7 +626,7 @@
     "I Qtr-2025": "-",
     "II Qtr-2025": "-",
     "III Qtr-2025": "-",
-    "IV Qtr-2025": "-",
+    "IV Qtr-2025": "=",
     "Annual 2025": "-"
   }
 ]
