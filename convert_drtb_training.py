@@ -31,7 +31,7 @@ STATE_NAME_MAP = {
     "bihar": "Bihar State",
 }
 
-YEARS = ["2020", "2021", "2022", "2023", "2024"]
+YEARS = ["2020", "2021", "2022", "2023", "2024", "2025"]
 
 # FOLDER where your raw DRTB jsons are
 INPUT_FOLDER = "DRTB Trainings"
