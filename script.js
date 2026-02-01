@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
     selectedYears.sort();
 
     const jsonPath = `DPMR-GRAPH/${folder}/${jsonFile}`;
@@ -967,7 +967,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentArea.innerHTML = "<p>Loading data...</p>";
     let selectedYears = getSelectedYears();
 
-    selectedYears = selectedYears.filter(y => y >= 2014 && y < 2025);
+    selectedYears = selectedYears.filter(y => y >= 2014 && y <= 2025);
     selectedYears.sort();
 
 
@@ -1134,8 +1134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
-    const selectedYears = getSelectedYears().filter(y => y !== 2025);
-    selectedYears.sort();
+    const selectedYears = getSelectedYears().sort();
 
     const jsonPath = `GRAPH/LEP/${jsonFile}`;
     fetch(jsonPath)
@@ -1296,9 +1295,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentArea.innerHTML = "<p>Loading data...</p>";
 
     // const selectedYears = getSelectedYears();
-    const selectedYears = getSelectedYears().filter(y => y !== 2025);
-
-    selectedYears.sort();
+    const selectedYears = getSelectedYears().sort();
 
     const jsonPath = `GRAPH/IRL/${jsonFile}`;
     fetch(jsonPath)
@@ -1497,8 +1494,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
-    const selectedYears = getSelectedYears().filter(y => y !== 2025);
-    selectedYears.sort();
+    const selectedYears = getSelectedYears().sort();
 
     const jsonPath = `OUTPUT/${folder}/${jsonFile}`;
     fetch(jsonPath)
@@ -2002,7 +1998,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
     selectedYears.sort();
 
     // Fetch all category JSONs from subfolders
@@ -2370,7 +2366,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { key: "TOTAL", label: "Total Staffs" }
     ];
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2024);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
     selectedYears.sort();
 
     const fetches = categories.map(c =>
