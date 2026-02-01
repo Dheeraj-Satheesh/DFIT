@@ -42,7 +42,7 @@ STATE_NAME_MAP = {
     "tot": "All States"
 }
 
-YEARS = ["2020", "2021", "2022", "2023", "2024"]
+YEARS = ["2020", "2021", "2022", "2023", "2024", "2025"]
 
 def find_entry(data, key_name):
     key_name = key_name.strip().lower()
