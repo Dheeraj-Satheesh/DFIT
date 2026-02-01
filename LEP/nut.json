@@ -19,7 +19,8 @@
         "2022": 252,
         "2023": 205,
         "2024": 33,
-        "Total": 4300
+        "2025": 63,
+        "Total": 4363
     },
     {
         "Category": "Bihar Project Nutritional supported",
@@ -41,7 +42,8 @@
         "2022": 53,
         "2023": 87,
         "2024": 75,
-        "Total": 1792
+        "2025": 113,
+        "Total": 1905
     },
     {
         "Category": "Andhra pradesh Project Nutritional supported",
@@ -63,7 +65,8 @@
         "2022": 0,
         "2023": 0,
         "2024": 2,
-        "Total": 689
+        "2025": 22,
+        "Total": 711
     },
     {
         "Category": "Total Nutritional supplements supported",
@@ -85,6 +88,7 @@
         "2022": 305,
         "2023": 292,
         "2024": 110,
-        "Total": 6781
+        "2025": 198,
+        "Total": 6979
     }
 ]

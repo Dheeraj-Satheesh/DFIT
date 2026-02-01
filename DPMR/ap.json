@@ -5,6 +5,7 @@
     "2022": "9",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "1",
     "DPMR Contents": "Number of Districts covered"
   },
@@ -14,6 +15,7 @@
     "2022": "6180",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "2",
     "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the beginning of the year"
   },
@@ -23,6 +25,7 @@
     "2022": "36",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "3",
     "DPMR Contents": "Number of Persons affected by leprosy with disabilities deleted from the list "
   },
@@ -32,6 +35,7 @@
     "2022": "52",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "4",
     "DPMR Contents": "Number of Persons affected by leprosy with disabilities added to the list "
   },
@@ -41,6 +45,7 @@
     "2022": "6196",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "5",
     "DPMR Contents": "Number of Persons affected by leprosy with disabilities at the end of the year"
   },
@@ -50,6 +55,7 @@
     "2022": "460",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "6",
     "DPMR Contents": "Number of Persons affected by leprosy with disabilities visited during the year"
   },
@@ -59,6 +65,7 @@
     "2022": "315",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "7",
     "DPMR Contents": "Number of patients practising self care regularly"
   },
@@ -68,6 +75,7 @@
     "2022": "310",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "8",
     "DPMR Contents": "Number of patients required foot wear"
   },
@@ -77,6 +85,7 @@
     "2022": "307",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "9",
     "DPMR Contents": "Number of patients wearing appropriate foot wear regularly"
   },
@@ -86,6 +95,7 @@
     "2022": "447",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "10",
     "DPMR Contents": "Number of patients having Disability Certificate."
   },
@@ -95,6 +105,7 @@
     "2022": "432",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "11",
     "DPMR Contents": "Number of patients receiving Pension."
   },
@@ -104,6 +115,7 @@
     "2022": "41",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "12",
     "DPMR Contents": "Number of patients identified for RCS."
   },
@@ -113,6 +125,7 @@
     "2022": "14",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "13",
     "DPMR Contents": "Number of patients RCS done"
   },
@@ -122,6 +135,7 @@
     "2022": "9",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "14",
     "DPMR Contents": "Number of persons identified for LEP support during the year"
   },
@@ -131,6 +145,7 @@
     "2022": "5",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "15",
     "DPMR Contents": "Number of persons received LEP support during the year"
   },
@@ -140,6 +155,7 @@
     "2022": "80",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "16",
     "DPMR Contents": "Number of new leprosy cases confirmed during during field visit"
   },
@@ -149,6 +165,7 @@
     "2022": "438",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "17",
     "DPMR Contents": "Number of Under treatment patients visited"
   },
@@ -158,6 +175,7 @@
     "2022": "435",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "18",
     "DPMR Contents": "Number of under treatment patients taking regular treatment"
   },
@@ -167,6 +185,7 @@
     "2022": "110",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "19",
     "DPMR Contents": "Number of lepra reaction patients visited"
   },
@@ -176,6 +195,7 @@
     "2022": "106",
     "2023": "-",
     "2024": "-",
+    "2025": "-",
     "S.NO": "20",
     "DPMR Contents": "Number of lepra reaction patients taking regular treatment"
   }

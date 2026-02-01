@@ -623,6 +623,12 @@ canvas {
   font-size: 20px;
 }
 
+.date-time {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
 /* Responsive for Mobile */
 @media screen and (max-width: 600px) {
   .contact-bar {
@@ -640,6 +646,12 @@ canvas {
     justify-content: center;
     gap: 15px;
     font-size: 18px;
+  }
+
+  .date-time {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 

@@ -1,5 +1,25 @@
 // ✅ Logout button logic
 document.addEventListener("DOMContentLoaded", () => {
+  // Update date and time
+  function updateDateTime() {
+    const now = new Date();
+    const options = {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    };
+    const dateTimeString = now.toLocaleDateString('en-US', options);
+    const dateTimeElement = document.getElementById('date-time');
+    if (dateTimeElement) {
+      dateTimeElement.textContent = dateTimeString;
+    }
+  }
+  updateDateTime();
+  setInterval(updateDateTime, 1000); // Update every second
+
   const logoutBtn = document.getElementById("logoutBtn");
   if (logoutBtn) {
     logoutBtn.addEventListener("click", () => {
