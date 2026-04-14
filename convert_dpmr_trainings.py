@@ -36,7 +36,7 @@ STATE_NAME_MAP = {
     "tot": "All States"
 }
 
-YEARS = ["2020", "2021", "2022", "2023", "2024","2025"]
+YEARS = ["2020", "2021", "2022", "2023", "2024","2025", "2026"]
 
 # FOLDER where your raw DPMR jsons are
 INPUT_FOLDER = "DPMR Trainings"

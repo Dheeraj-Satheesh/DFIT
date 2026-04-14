@@ -1,7 +1,7 @@
 import os
 import json
 
-YEARS = list(range(2014, 2026))
+YEARS = list(range(2014, 2027))
 
 # Input folder configurations
 INPUTS = {

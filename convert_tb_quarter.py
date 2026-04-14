@@ -1,7 +1,7 @@
 import os
 import json
 
-YEARS = list(range(2020, 2026))
+YEARS = list(range(2020, 2027))
 QUARTERS = ["Q1", "Q2", "Q3", "Q4"]
 
 INPUTS = {

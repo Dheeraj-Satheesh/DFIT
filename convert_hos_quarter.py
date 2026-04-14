@@ -1,7 +1,7 @@
 import os
 import json
 
-YEARS = list(range(2020, 2026))
+YEARS = list(range(2020, 2027))
 QUARTERS = ["Q1", "Q2", "Q3", "Q4"]
 INPUT_BASE = "HOSPITAL"
 
@@ -76,7 +76,7 @@ def extract_quarter_data(filepath, year):
 
                     # Handle missing/invalid values
                     if val == "" or val is None:
-                        val = None if year == 2025 and i >= 2 else 0
+                        val = None if (year == 2025 or year == 2026) and i >= 2 else 0
                     else:
                         try:
                             val = float(str(val).replace(",", ""))
@@ -118,7 +118,7 @@ def process_quarter_data():
                     if place not in combined_data[cat]:
                         combined_data[cat][place] = {}
                     if str(y) not in combined_data[cat][place]:
-                        combined_data[cat][place][str(y)] = {q: (None if y == 2025 and q in ["Q3", "Q4"] else 0) for q in QUARTERS}
+                        combined_data[cat][place][str(y)] = {q: (None if (y == 2026) and q in ["Q3", "Q4"] else 0) for q in QUARTERS}
                     combined_data[cat][place][str(y)].update(qdata)
 
     for cat, places in combined_data.items():
@@ -127,7 +127,7 @@ def process_quarter_data():
             output_json = {}
             for y in YEARS:
                 ystr = str(y)
-                output_json[ystr] = data.get(ystr, {q: (None if y == 2025 and q in ["Q3", "Q4"] else 0) for q in QUARTERS})
+                output_json[ystr] = data.get(ystr, {q: (None if (y == 2025 or y == 2026) and q in ["Q3", "Q4"] else 0) for q in QUARTERS})
             shortname = OUTPUT_FILE_NAMES.get(place, place)
             with open(os.path.join(out_dir, f"{shortname}.json"), 'w') as f:
                 json.dump(output_json, f, indent=4)

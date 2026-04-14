@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const years = Array.from(document.querySelectorAll('#yearCheckboxes input[type=checkbox]:checked'))
       .map(cb => cb.value)
       .filter(y => /^\d{4}$/.test(y));
-    return years.length > 0 ? years.map(Number) : [2025];
+    return years.length > 0 ? years.map(Number) : [2026];
   }
   document.getElementById("selectAllYears").addEventListener("change", function () {
     const allYearBoxes = document.querySelectorAll("#yearCheckboxes input[type='checkbox'][value]");
@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("content-area");
     contentArea.innerHTML = "<p>Loading data...</p>";
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2026);
     selectedYears.sort();
 
     const jsonPath = `DPMR-GRAPH/${folder}/${jsonFile}`;
@@ -779,7 +779,7 @@ document.addEventListener("DOMContentLoaded", () => {
       showToast("🚫 Access Denied: You are not allowed to view this section.");
       return;
     }
-    const selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
+    const selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2026);
     const container = document.getElementById("content-area");
     container.innerHTML = "<p>Loading...</p>";
 
@@ -967,7 +967,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentArea.innerHTML = "<p>Loading data...</p>";
     let selectedYears = getSelectedYears();
 
-    selectedYears = selectedYears.filter(y => y >= 2014 && y <= 2025);
+    selectedYears = selectedYears.filter(y => y >= 2014 && y <= 2026);
     selectedYears.sort();
 
 
@@ -1998,7 +1998,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2026);
     selectedYears.sort();
 
     // Fetch all category JSONs from subfolders
@@ -2366,7 +2366,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { key: "TOTAL", label: "Total Staffs" }
     ];
 
-    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2025);
+    let selectedYears = getSelectedYears().filter(y => y >= 2020 && y <= 2026);
     selectedYears.sort();
 
     const fetches = categories.map(c =>
