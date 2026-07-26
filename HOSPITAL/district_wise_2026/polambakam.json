@@ -4,9 +4,9 @@
     "Contents": "Total OPD Treated",
     "I Qtr-2026": "269",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "231",
     "IV Qtr-2026": "0",
-    "Annual 2026": "269"
+    "Annual 2026": "500"
   },
   {
     "S.NO": "1.a",
@@ -32,8 +32,8 @@
     "I Qtr-2026": "269",
     "II Qtr-2026": "",
     "III Qtr-2026": "",
-    "IV Qtr-2026": "",
-    "Annual 2026": "269"
+    "IV Qtr-2026": "231",
+    "Annual 2026": "500"
   },
   {
     "S.NO": "2",
@@ -525,7 +525,7 @@
     "S.NO": "8",
     "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2026": "25",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "25",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
     "Annual 2026": "25"
@@ -534,7 +534,7 @@
     "S.NO": "8.a",
     "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2026": "20",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "18",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
     "Annual 2026": "20"
@@ -543,7 +543,7 @@
     "S.NO": "8.b",
     "Contents": "Lepra Reaction In-Patients Managed",
     "I Qtr-2026": "0",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "0",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
@@ -552,7 +552,7 @@
     "S.NO": "8.c",
     "Contents": "RCS In-Patients Managed",
     "I Qtr-2026": "0",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "0",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
@@ -561,7 +561,7 @@
     "S.NO": "8.d",
     "Contents": "Planter Ulcers In-Patients Managed",
     "I Qtr-2026": "20",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "18",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
     "Annual 2026": "20"
@@ -570,19 +570,19 @@
     "S.NO": "8.e",
     "Contents": "Total Bed days for Leprosy Cases",
     "I Qtr-2026": "1552",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "1427",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
-    "Annual 2026": "1552"
+    "Annual 2026": "2979"
   },
   {
     "S.NO": "8.f",
     "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2026": "69.0",
-    "II Qtr-2026": "",
+    "II Qtr-2026": "63.4",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
-    "Annual 2026": "69.0"
+    "Annual 2026": ""
   },
   {
     "S.NO": "9",
