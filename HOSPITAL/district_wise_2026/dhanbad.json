@@ -4,25 +4,25 @@
     "Contents": "Total OPD Treated",
     "I Qtr-2026": "2837",
     "II Qtr-2026": "3013",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "3247",
     "IV Qtr-2026": "0",
-    "Annual 2026": "5850"
+    "Annual 2026": "9097"
   },
   {
     "S.NO": "1.a",
     "Contents": "Skin OPD Treated",
     "I Qtr-2026": "2694",
     "II Qtr-2026": "2873",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "3136",
     "IV Qtr-2026": "",
-    "Annual 2026": "5567"
+    "Annual 2026": "8703"
   },
   {
     "S.NO": "1.b",
     "Contents": "Respiratory OPD Treated",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -31,79 +31,79 @@
     "Contents": "Other OPD Treated",
     "I Qtr-2026": "143",
     "II Qtr-2026": "140",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "111",
     "IV Qtr-2026": "",
-    "Annual 2026": "283"
+    "Annual 2026": "394"
   },
   {
     "S.NO": "2",
     "Contents": "Adult New PB Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "1"
+    "Annual 2026": "2"
   },
   {
     "S.NO": "2.a",
     "Contents": "Adult New MB Cases",
     "I Qtr-2026": "56",
     "II Qtr-2026": "73",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "43",
     "IV Qtr-2026": "",
-    "Annual 2026": "129"
+    "Annual 2026": "172"
   },
   {
     "S.NO": "2.b",
     "Contents": "Total Adult New Cases",
     "I Qtr-2026": "56",
     "II Qtr-2026": "74",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "44",
     "IV Qtr-2026": "",
-    "Annual 2026": "130"
+    "Annual 2026": "174"
   },
   {
     "S.NO": "2.c",
     "Contents": "Child New PB Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "0"
+    "Annual 2026": "1"
   },
   {
     "S.NO": "2.d",
     "Contents": "Child New MB Cases",
     "I Qtr-2026": "2",
     "II Qtr-2026": "5",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "3",
     "IV Qtr-2026": "",
-    "Annual 2026": "7"
+    "Annual 2026": "10"
   },
   {
     "S.NO": "2.e",
     "Contents": "Total Child New Cases",
     "I Qtr-2026": "2",
     "II Qtr-2026": "5",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "",
-    "Annual 2026": "7"
+    "Annual 2026": "11"
   },
   {
     "S.NO": "2.f",
     "Contents": "Total New Leprosy Cases detected",
     "I Qtr-2026": "58",
     "II Qtr-2026": "79",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "48",
     "IV Qtr-2026": "0",
-    "Annual 2026": "137"
+    "Annual 2026": ""
   },
   {
     "S.NO": "2.g",
     "Contents": "Total Relapse Cases",
     "I Qtr-2026": "1",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "2"
   },
@@ -112,34 +112,34 @@
     "Contents": "Female New PB Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "0"
+    "Annual 2026": "1"
   },
   {
     "S.NO": "2.i",
     "Contents": "Female New MB Cases",
     "I Qtr-2026": "21",
     "II Qtr-2026": "22",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "12",
     "IV Qtr-2026": "",
-    "Annual 2026": "43"
+    "Annual 2026": "55"
   },
   {
     "S.NO": "2.j",
     "Contents": "Total Female Cases",
     "I Qtr-2026": "21",
     "II Qtr-2026": "22",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "13",
     "IV Qtr-2026": "",
-    "Annual 2026": "43"
+    "Annual 2026": "56"
   },
   {
     "S.NO": "2.k",
     "Contents": "Adult New PB G I Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -148,25 +148,25 @@
     "Contents": "Adult New MB G I Cases",
     "I Qtr-2026": "9",
     "II Qtr-2026": "7",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "",
-    "Annual 2026": "16"
+    "Annual 2026": "20"
   },
   {
     "S.NO": "2.m",
     "Contents": "Total Adult G I Cases",
     "I Qtr-2026": "9",
     "II Qtr-2026": "7",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "",
-    "Annual 2026": "16"
+    "Annual 2026": "20"
   },
   {
     "S.NO": "2.n",
     "Contents": "Adult New PB G II Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -175,25 +175,25 @@
     "Contents": "Adult New MB G II Cases",
     "I Qtr-2026": "7",
     "II Qtr-2026": "14",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "7",
     "IV Qtr-2026": "",
-    "Annual 2026": "21"
+    "Annual 2026": "28"
   },
   {
     "S.NO": "2.p",
     "Contents": "Total Adult G II Cases",
     "I Qtr-2026": "7",
     "II Qtr-2026": "14",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "7",
     "IV Qtr-2026": "",
-    "Annual 2026": "21"
+    "Annual 2026": "28"
   },
   {
     "S.NO": "2.q",
     "Contents": "Child New PB G I Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -202,7 +202,7 @@
     "Contents": "Child New MB G I Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -211,7 +211,7 @@
     "Contents": "Total Child G I Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -220,7 +220,7 @@
     "Contents": "Child New PB G II Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -229,52 +229,52 @@
     "Contents": "Child New MB G II Cases",
     "I Qtr-2026": "1",
     "II Qtr-2026": "2",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "3"
+    "Annual 2026": "4"
   },
   {
     "S.NO": "2.v",
     "Contents": "Total Child G II Cases",
     "I Qtr-2026": "1",
     "II Qtr-2026": "2",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "3"
+    "Annual 2026": "4"
   },
   {
     "S.NO": "3",
     "Contents": "Type-I Lepra Reaction Male Cases",
     "I Qtr-2026": "7",
     "II Qtr-2026": "15",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "5",
     "IV Qtr-2026": "",
-    "Annual 2026": "22"
+    "Annual 2026": "27"
   },
   {
     "S.NO": "3.a",
     "Contents": "Type-I Lepra Reaction Female Cases",
     "I Qtr-2026": "7",
     "II Qtr-2026": "4",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "11"
+    "Annual 2026": "12"
   },
   {
     "S.NO": "3.b",
     "Contents": "Total Type-I Lepra Reaction Cases",
     "I Qtr-2026": "14",
     "II Qtr-2026": "19",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "6",
     "IV Qtr-2026": "0",
-    "Annual 2026": "33"
+    "Annual 2026": "39"
   },
   {
     "S.NO": "3.c",
     "Contents": "Type-II Lepra Reaction Male Cases",
     "I Qtr-2026": "7",
     "II Qtr-2026": "5",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "12"
   },
@@ -283,7 +283,7 @@
     "Contents": "Type-II Lepra Reaction Female Cases",
     "I Qtr-2026": "3",
     "II Qtr-2026": "2",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "5"
   },
@@ -301,43 +301,43 @@
     "Contents": "Total MCR Footwear Provided",
     "I Qtr-2026": "5",
     "II Qtr-2026": "8",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "2",
     "IV Qtr-2026": "",
-    "Annual 2026": "13"
+    "Annual 2026": "15"
   },
   {
     "S.NO": "5",
     "Contents": "Male Cases RCS Done",
     "I Qtr-2026": "11",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "22",
     "IV Qtr-2026": "",
-    "Annual 2026": "11"
+    "Annual 2026": "33"
   },
   {
     "S.NO": "5.a",
     "Contents": "Female Cases RCS Done",
     "I Qtr-2026": "8",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "9",
     "IV Qtr-2026": "",
-    "Annual 2026": "8"
+    "Annual 2026": "17"
   },
   {
     "S.NO": "5.b",
     "Contents": "Total Major RCS Done ",
     "I Qtr-2026": "19",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "31",
     "IV Qtr-2026": "0",
-    "Annual 2026": "19"
+    "Annual 2026": "50"
   },
   {
     "S.NO": "5.c",
     "Contents": "Eye Male RCS Done",
     "I Qtr-2026": "1",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "1"
   },
@@ -346,7 +346,7 @@
     "Contents": "Eye Female RCS Done",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -364,61 +364,61 @@
     "Contents": "Hand Male RCS Done",
     "I Qtr-2026": "8",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "18",
     "IV Qtr-2026": "",
-    "Annual 2026": "8"
+    "Annual 2026": "26"
   },
   {
     "S.NO": "5.g",
     "Contents": "Hand Female RCS Done",
     "I Qtr-2026": "8",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "8",
     "IV Qtr-2026": "",
-    "Annual 2026": "8"
+    "Annual 2026": "16"
   },
   {
     "S.NO": "5.h",
     "Contents": "Total Hand RCS Done",
     "I Qtr-2026": "16",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "26",
     "IV Qtr-2026": "0",
-    "Annual 2026": "16"
+    "Annual 2026": "42"
   },
   {
     "S.NO": "5.i",
     "Contents": "Foot Male RCS Done",
     "I Qtr-2026": "2",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "",
-    "Annual 2026": "2"
+    "Annual 2026": "6"
   },
   {
     "S.NO": "5.j",
     "Contents": "Foot Female RCS Done",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "0"
+    "Annual 2026": "1"
   },
   {
     "S.NO": "5.k",
     "Contents": "Total Foot RCS Done",
     "I Qtr-2026": "2",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "5",
     "IV Qtr-2026": "0",
-    "Annual 2026": "2"
+    "Annual 2026": "7"
   },
   {
     "S.NO": "6",
     "Contents": "Male Minor Surgeries Done",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -427,25 +427,25 @@
     "Contents": "Female Minor Surgeries Done",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "0"
+    "Annual 2026": "1"
   },
   {
     "S.NO": "6.b",
     "Contents": "Total Minor Surgeries Done",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Annual 2026": "0"
+    "Annual 2026": "1"
   },
   {
     "S.NO": "7",
     "Contents": "LEP-House Support for Male Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -454,7 +454,7 @@
     "Contents": "LEP-House Support for Female Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -472,7 +472,7 @@
     "Contents": "Socio-Economic Support for Male Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -481,7 +481,7 @@
     "Contents": "Socio-Economic Support for Female Cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -499,7 +499,7 @@
     "Contents": "Education Support for Male cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -508,7 +508,7 @@
     "Contents": "Education Support for Female cases",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -526,7 +526,7 @@
     "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2026": "18",
     "II Qtr-2026": "18",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "18",
     "IV Qtr-2026": "",
     "Annual 2026": ""
   },
@@ -535,16 +535,16 @@
     "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2026": "24",
     "II Qtr-2026": "17",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "15",
     "IV Qtr-2026": "",
-    "Annual 2026": "41"
+    "Annual 2026": "56"
   },
   {
     "S.NO": "8.b",
     "Contents": "Lepra Reaction In-Patients Managed",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -553,41 +553,41 @@
     "Contents": "RCS In-Patients Managed",
     "I Qtr-2026": "19",
     "II Qtr-2026": "17",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "31",
     "IV Qtr-2026": "",
-    "Annual 2026": "36"
+    "Annual 2026": "67"
   },
   {
     "S.NO": "8.d",
     "Contents": "Planter Ulcers In-Patients Managed",
     "I Qtr-2026": "5",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "",
-    "Annual 2026": "5"
+    "Annual 2026": "6"
   },
   {
     "S.NO": "8.e",
     "Contents": "Total Bed days for Leprosy Cases",
     "I Qtr-2026": "588",
     "II Qtr-2026": "571",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1184",
     "IV Qtr-2026": "",
-    "Annual 2026": "1159"
+    "Annual 2026": "2343"
   },
   {
     "S.NO": "8.f",
     "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2026": "36.3",
     "II Qtr-2026": "35.2",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "73.1",
     "IV Qtr-2026": "",
-    "Annual 2026": "#DIV/0!"
+    "Annual 2026": ""
   },
   {
     "S.NO": "9",
     "Contents": "Total Beds Available for TB cases",
-    "I Qtr-2026": "",
+    "I Qtr-2026": "0",
     "II Qtr-2026": "",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
@@ -596,7 +596,7 @@
   {
     "S.NO": "9.a",
     "Contents": "Total DS TB In- Patients Managed",
-    "I Qtr-2026": "",
+    "I Qtr-2026": "0",
     "II Qtr-2026": "",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
@@ -605,7 +605,7 @@
   {
     "S.NO": "9.b",
     "Contents": "Total DR TB   In-Patients Managed",
-    "I Qtr-2026": "",
+    "I Qtr-2026": "0",
     "II Qtr-2026": "",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
@@ -614,7 +614,7 @@
   {
     "S.NO": "9.c",
     "Contents": "Total Bed days for TB Cases ",
-    "I Qtr-2026": "",
+    "I Qtr-2026": "0",
     "II Qtr-2026": "",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
@@ -624,9 +624,9 @@
     "S.NO": "9.d",
     "Contents": "Bed Occupancy Rate for TB Cases",
     "I Qtr-2026": "",
-    "II Qtr-2026": "0.0",
-    "III Qtr-2026": "",
+    "II Qtr-2026": "0",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
-    "Annual 2026": "0.0"
+    "Annual 2026": "0"
   }
 ]

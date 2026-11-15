@@ -3,10 +3,10 @@
     "S.NO": "1",
     "Contents": "Total OPD Treated",
     "I Qtr-2026": "269",
-    "II Qtr-2026": "0",
-    "III Qtr-2026": "231",
+    "II Qtr-2026": "231",
+    "III Qtr-2026": "276",
     "IV Qtr-2026": "0",
-    "Annual 2026": "500"
+    "Annual 2026": "776"
   },
   {
     "S.NO": "1.a",
@@ -30,10 +30,10 @@
     "S.NO": "1.c",
     "Contents": "Other OPD Treated",
     "I Qtr-2026": "269",
-    "II Qtr-2026": "",
-    "III Qtr-2026": "",
-    "IV Qtr-2026": "231",
-    "Annual 2026": "500"
+    "II Qtr-2026": "231",
+    "III Qtr-2026": "276",
+    "IV Qtr-2026": "",
+    "Annual 2026": "776"
   },
   {
     "S.NO": "2",
@@ -526,7 +526,7 @@
     "Contents": "Total Beds Available for Leprosy",
     "I Qtr-2026": "25",
     "II Qtr-2026": "25",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "25",
     "IV Qtr-2026": "",
     "Annual 2026": "25"
   },
@@ -535,7 +535,7 @@
     "Contents": "Total Leprosy cases Admitted",
     "I Qtr-2026": "20",
     "II Qtr-2026": "18",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "21",
     "IV Qtr-2026": "",
     "Annual 2026": "20"
   },
@@ -544,7 +544,7 @@
     "Contents": "Lepra Reaction In-Patients Managed",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -553,7 +553,7 @@
     "Contents": "RCS In-Patients Managed",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Annual 2026": "0"
   },
@@ -562,7 +562,7 @@
     "Contents": "Planter Ulcers In-Patients Managed",
     "I Qtr-2026": "20",
     "II Qtr-2026": "18",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "21",
     "IV Qtr-2026": "",
     "Annual 2026": "20"
   },
@@ -571,16 +571,16 @@
     "Contents": "Total Bed days for Leprosy Cases",
     "I Qtr-2026": "1552",
     "II Qtr-2026": "1427",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "1572",
     "IV Qtr-2026": "",
-    "Annual 2026": "2979"
+    "Annual 2026": "4551"
   },
   {
     "S.NO": "8.f",
     "Contents": "Bed Occupancy Rate for Leprosy Cases",
     "I Qtr-2026": "69.0",
     "II Qtr-2026": "63.4",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "69.9",
     "IV Qtr-2026": "",
     "Annual 2026": ""
   },
@@ -627,6 +627,6 @@
     "II Qtr-2026": "",
     "III Qtr-2026": "",
     "IV Qtr-2026": "",
-    "Annual 2026": "0.0"
+    "Annual 2026": ""
   }
 ]
