@@ -384,102 +384,787 @@ def zip_folder(root, output):
             if p.is_file():
                 z.write(p,p.relative_to(root.parent))
 
-st.set_page_config(page_title="DFIT Excel to Production JSON",layout="wide")
-st.title("DFIT Excel → Production JSON Updater")
-st.caption("Build: 2026-11-16 | Invalid JSON placeholder-key cleanup enabled")
-st.write("Select your existing extracted production folder, then upload the four Excel workbooks. JSON files are written directly into that folder. No production ZIP upload or output ZIP is required.")
-st.caption("Existing JSON array/object structure, keys, record order, and values are preserved. The Action column shows 'Matched - no write needed' when the target JSON already matches the Excel-derived result; only files that need changes are written.")
-root_text=st.text_input(
-    "Production project folder (extracted DFIT_New folder)",
-    value=str(Path.cwd() / "DFIT_New"),
-    help="Enter the permanent path to your extracted production folder. You do not need to upload the production ZIP again."
+st.set_page_config(
+    page_title="DFIT Data Studio | Excel → JSON",
+    page_icon="✦",
+    layout="wide",
+    initial_sidebar_state="collapsed",
 )
+
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root { --ink:#17243b; --muted:#718096; --blue:#3563e9; --cyan:#14b8a6; --line:#e7edf5; }
+html, body, [class*="css"] { font-family:'DM Sans',sans-serif; }
+.stApp {
+  background:
+    radial-gradient(ellipse at 8% 0%, rgba(77,126,255,.13), transparent 34%),
+    radial-gradient(ellipse at 94% 8%, rgba(20,184,166,.11), transparent 30%),
+    #f5f7fb;
+}
+.block-container { max-width: 1440px; padding-top: 1.4rem; padding-bottom: 4rem; }
+#MainMenu, footer { visibility:hidden; }
+header[data-testid="stHeader"] { background:transparent; }
+.hero {
+  position:relative; overflow:hidden; border-radius:26px; padding:30px 34px;
+  color:white; background:linear-gradient(115deg,#14264b 0%,#244c9f 56%,#287f91 100%);
+  box-shadow:0 18px 45px rgba(28,57,111,.18); margin-bottom:22px;
+  animation:rise .65s ease both;
+}
+.hero:before,.hero:after { content:""; position:absolute; border-radius:50%; pointer-events:none; }
+.hero:before { width:270px;height:270px;right:7%;top:-180px;border:1px solid rgba(255,255,255,.2);box-shadow:0 0 0 28px rgba(255,255,255,.035),0 0 0 58px rgba(255,255,255,.025); }
+.hero:after { width:170px;height:170px;right:-30px;bottom:-115px;background:rgba(255,255,255,.07); }
+.hero-kicker { font-size:11px; letter-spacing:2.3px; font-weight:800; opacity:.72; text-transform:uppercase; }
+.hero h1 { font-family:Manrope,sans-serif; font-size:clamp(26px,3.2vw,39px); line-height:1.12; margin:10px 0 9px; font-weight:800; color:white; }
+.hero p { margin:0; max-width:760px; color:rgba(255,255,255,.78); font-size:14px; }
+.hero-pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+.hero-pill { border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.1); border-radius:30px; padding:6px 11px; font-size:11px; font-weight:700; }
+.section-heading { font-family:Manrope,sans-serif; color:var(--ink); font-size:20px; font-weight:800; margin:22px 0 4px; }
+.section-sub { color:var(--muted); font-size:13px; margin-bottom:14px; }
+.panel {
+  background:rgba(255,255,255,.88); border:1px solid rgba(224,232,243,.95);
+  border-radius:18px; padding:19px 20px; box-shadow:0 7px 24px rgba(31,54,88,.045);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.panel:hover { transform:translateY(-2px); box-shadow:0 13px 30px rgba(31,54,88,.08); border-color:#cbd8ed; }
+.panel-label { color:#75839a; font-size:11px; font-weight:800; letter-spacing:1.1px; text-transform:uppercase; }
+.panel-title { color:var(--ink); font-size:16px; font-weight:800; margin:7px 0 4px; }
+.panel-copy { color:#75839a; font-size:12px; line-height:1.5; }
+.step-dot { display:inline-flex; width:27px;height:27px;align-items:center;justify-content:center;border-radius:9px;background:#eaf0ff;color:#315bd2;font-size:12px;font-weight:800;margin-right:8px; }
+div[data-testid="stFileUploader"] section { background:#f8faff; border:1px dashed #b9c9e3; border-radius:13px; }
+div[data-testid="stFileUploader"] section:hover { border-color:#5278e8; background:#f2f6ff; }
+div[data-testid="stTextInput"] input, div[data-testid="stNumberInput"] input { border-radius:11px; }
+.stButton > button {
+  border-radius:12px; border:0; min-height:46px; font-weight:800; letter-spacing:.15px;
+  background:linear-gradient(105deg,#315fe5,#267eaa); color:white;
+  box-shadow:0 7px 17px rgba(49,95,229,.2); transition:all .2s ease;
+}
+.stButton > button:hover { transform:translateY(-2px); box-shadow:0 11px 24px rgba(49,95,229,.28); border:0; color:white; }
+.stButton > button:active { transform:translateY(0) scale(.99); }
+div[data-testid="stCheckbox"] label { color:#35445d; font-size:13px; font-weight:600; }
+div[data-testid="stAlert"] { border-radius:13px; }
+div[data-testid="stDataFrame"] { border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+div[data-testid="stExpander"] { background:white; border:1px solid var(--line); border-radius:13px; }
+.metric-card { background:white; border:1px solid var(--line); border-radius:15px; padding:15px 17px; }
+.metric-num { color:#1b2b49; font-family:Manrope,sans-serif; font-size:26px; font-weight:800; }
+.metric-caption { color:#7b879b; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.7px; }
+.status-line { display:flex; gap:9px; align-items:center; color:#5c6d86; font-size:12px; }
+.pulse { width:8px;height:8px;border-radius:50%;background:#14b8a6;box-shadow:0 0 0 0 rgba(20,184,166,.45);animation:pulse 1.8s infinite; }
+.footer-note { text-align:center; color:#9aa5b5; font-size:11px; padding-top:24px; }
+@keyframes rise { from {opacity:0;transform:translateY(12px)} to {opacity:1;transform:translateY(0)} }
+@keyframes pulse { 70% {box-shadow:0 0 0 8px rgba(20,184,166,0)} 100% {box-shadow:0 0 0 0 rgba(20,184,166,0)} }
+@media (prefers-reduced-motion: reduce) { *,*:before,*:after { animation:none!important; transition:none!important; } }
+@media(max-width:700px) { .hero {padding:24px 21px;border-radius:19px;} .block-container {padding-left:1rem;padding-right:1rem;} }
+
+/* High-contrast theme overrides: readable in both Streamlit light and dark themes */
+.stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+  color: #1b2942 !important;
+}
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stMarkdownContainer"] strong,
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label,
+.stText, .stCaption, label {
+  color: #263650 !important;
+}
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+  color: #142542 !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 800 !important;
+}
+.section-heading {
+  color: #142542 !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+}
+.section-sub {
+  color: #586982 !important;
+  font-weight: 500 !important;
+}
+.hero, .hero h1, .hero p, .hero .hero-kicker, .hero .hero-pill {
+  color: #ffffff !important;
+}
+.hero p { color: rgba(255,255,255,.9) !important; }
+.hero .hero-kicker { color: #dce8ff !important; }
+.hero .hero-pill { color: #ffffff !important; }
+.status-line, .status-line b { color: #34445e !important; }
+.metric-num { color: #18345d !important; }
+.metric-caption { color: #52647f !important; }
+.step-dot { color: #234db7 !important; }
+div[data-testid="stFileUploader"] label,
+div[data-testid="stFileUploader"] label p,
+div[data-testid="stFileUploader"] section,
+div[data-testid="stFileUploader"] section *,
+div[data-testid="stFileUploader"] small {
+  color: #263650 !important;
+}
+div[data-testid="stFileUploader"] section {
+  background: #f4f7fd !important;
+  border-color: #a9bbd7 !important;
+}
+div[data-testid="stTextInput"] label,
+div[data-testid="stNumberInput"] label,
+div[data-testid="stCheckbox"] label,
+div[data-testid="stCheckbox"] label p {
+  color: #263650 !important;
+  font-weight: 700 !important;
+}
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input,
+div[data-testid="stSelectbox"] div,
+div[data-testid="stMultiSelect"] div {
+  color: #172943 !important;
+  background: #ffffff !important;
+}
+div[data-testid="stTextInput"] input::placeholder,
+div[data-testid="stNumberInput"] input::placeholder {
+  color: #77869c !important;
+}
+div[data-testid="stDataFrame"] {
+  background: #ffffff !important;
+}
+div[data-testid="stExpander"] {
+  background: #ffffff !important;
+}
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary *,
+div[data-testid="stExpander"] p {
+  color: #263650 !important;
+}
+div[data-testid="stAlert"] p,
+div[data-testid="stAlert"] span {
+  color: #263650 !important;
+}
+.stCaption, [data-testid="stCaptionContainer"] p {
+  color: #63738b !important;
+}
+.stButton > button, .stButton > button * {
+  color: #ffffff !important;
+}
+.stButton > button:focus {
+  outline: 3px solid rgba(49,95,229,.25) !important;
+  outline-offset: 2px !important;
+}
+.footer-note { color: #718096 !important; }
+
+
+/* Final visibility fixes for the hero title and uploaded-file chips */
+.stApp .hero h1,
+.stApp .hero h1 *,
+.stApp [data-testid="stMarkdownContainer"] .hero h1 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 1px 1px rgba(8, 25, 55, .12);
+}
+.stApp .hero .hero-kicker,
+.stApp .hero .hero-kicker *,
+.stApp .hero p,
+.stApp .hero p *,
+.stApp .hero .hero-pill,
+.stApp .hero .hero-pill * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Streamlit uploaded file item: replace default dark chip with a light card */
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"],
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div > div,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div > div > div,
+div[data-testid="stFileUploader"] .uploadedFile,
+div[data-testid="stFileUploader"] div[class*="uploadedFile"] {
+  background: #eaf1ff !important;
+  color: #1d355d !important;
+  border: 1px solid #c6d7f5 !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] *,
+div[data-testid="stFileUploader"] .uploadedFile *,
+div[data-testid="stFileUploader"] div[class*="uploadedFile"] * {
+  color: #1d355d !important;
+  -webkit-text-fill-color: #1d355d !important;
+  opacity: 1 !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] button,
+div[data-testid="stFileUploader"] .uploadedFile button,
+div[data-testid="stFileUploader"] div[class*="uploadedFile"] button {
+  background: #d8e5ff !important;
+  color: #244779 !important;
+  border: 1px solid #b8ccef !important;
+  border-radius: 8px !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] button svg,
+div[data-testid="stFileUploader"] .uploadedFile button svg {
+  fill: #244779 !important;
+  color: #244779 !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] small,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] p {
+  color: #536987 !important;
+  -webkit-text-fill-color: #536987 !important;
+}
+
+/* Keep upload drop zone and its instructions consistently readable */
+div[data-testid="stFileUploader"] section,
+div[data-testid="stFileUploader"] section *,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"],
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] * {
+  color: #263c5b !important;
+  -webkit-text-fill-color: #263c5b !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] {
+  background: #f5f8ff !important;
+  border: 1px dashed #9eb7e3 !important;
+}
+
+
+/* Clean light workspace: consistent typography, surfaces and contrast */
+:root {
+  color-scheme: light !important;
+  --ink: #172b4d;
+  --muted: #526581;
+  --line: #dce5f1;
+  --surface: #ffffff;
+  --surface-soft: #f6f8fc;
+}
+html, body, [class*="css"] {
+  font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif !important;
+}
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"],
+[data-testid="stMainBlockContainer"] {
+  background: #f4f7fb !important;
+  color: #1b2d49 !important;
+}
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label,
+.stCaption,
+[data-testid="stCaptionContainer"] p {
+  color: #40536f !important;
+}
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4,
+.section-heading {
+  color: #172b4d !important;
+  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.35px;
+}
+.section-heading { font-size: 21px !important; margin-top: 27px !important; }
+.section-sub { color: #60718a !important; font-size: 13px !important; line-height: 1.6 !important; }
+
+/* Hero is the only strong colour surface */
+.hero {
+  background: linear-gradient(115deg, #18345f 0%, #285a9d 62%, #287f89 100%) !important;
+  border-radius: 22px !important;
+}
+.hero h1, .hero h1 *,
+.hero p, .hero p *,
+.hero .hero-kicker, .hero .hero-pill {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+}
+.hero h1 { font-size: clamp(28px, 3vw, 38px) !important; line-height: 1.2 !important; }
+.hero p { color: #edf4ff !important; line-height: 1.65 !important; }
+.hero .hero-kicker { color: #d7e5fb !important; }
+
+/* Upload panels and drop zones */
+div[data-testid="stFileUploader"] {
+  color: #243b5b !important;
+}
+div[data-testid="stFileUploader"] label,
+div[data-testid="stFileUploader"] label *,
+div[data-testid="stFileUploader"] section,
+div[data-testid="stFileUploader"] section * {
+  color: #263d5d !important;
+  -webkit-text-fill-color: #263d5d !important;
+  opacity: 1 !important;
+}
+div[data-testid="stFileUploader"] section,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] {
+  background: #f8faff !important;
+  border: 1.5px dashed #a9bddc !important;
+  border-radius: 13px !important;
+}
+div[data-testid="stFileUploader"] section button,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] button {
+  background: #e8efff !important;
+  border: 1px solid #c5d5f1 !important;
+  color: #244c86 !important;
+  border-radius: 9px !important;
+}
+div[data-testid="stFileUploader"] section button *,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] button * {
+  color: #244c86 !important;
+  fill: #244c86 !important;
+}
+
+/* Uploaded file row: target Streamlit versions with nested file-item markup */
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"],
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div > div,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] > div > div > div,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] [data-testid],
+div[data-testid="stFileUploader"] .uploadedFile,
+div[data-testid="stFileUploader"] div[class*="uploadedFile"] {
+  background: #eaf1fb !important;
+  border: 1px solid #d1deef !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] *,
+div[data-testid="stFileUploader"] .uploadedFile *,
+div[data-testid="stFileUploader"] div[class*="uploadedFile"] * {
+  color: #203b60 !important;
+  -webkit-text-fill-color: #203b60 !important;
+  opacity: 1 !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] small,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] p {
+  color: #607694 !important;
+  -webkit-text-fill-color: #607694 !important;
+}
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderFile"] button,
+div[data-testid="stFileUploader"] .uploadedFile button {
+  background: #dbe7f8 !important;
+  color: #31547e !important;
+  border: 1px solid #c3d3e9 !important;
+  border-radius: 8px !important;
+}
+
+/* Mapping table: white/light surface and clear table typography */
+div[data-testid="stDataFrame"],
+div[data-testid="stDataFrame"] > div {
+  background: #ffffff !important;
+  border: 1px solid #dce5f1 !important;
+  border-radius: 13px !important;
+  overflow: hidden !important;
+}
+div[data-testid="stDataFrame"] canvas {
+  color-scheme: light !important;
+}
+div[data-testid="stDataFrame"] [role="grid"] {
+  background: #ffffff !important;
+}
+
+/* Cards and metrics */
+.metric-card,
+div[data-testid="stVerticalBlockBorderWrapper"] > div {
+  background: #ffffff !important;
+  border-color: #dce5f1 !important;
+}
+.metric-num { color: #1b3b68 !important; font-weight: 800 !important; }
+.metric-caption { color: #526783 !important; font-weight: 800 !important; }
+.panel-title { color: #172b4d !important; }
+.panel-copy, .panel-label { color: #5b6d86 !important; }
+
+/* Text fields */
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input {
+  background: #ffffff !important;
+  color: #1d3454 !important;
+  border: 1px solid #cbd8e8 !important;
+  border-radius: 10px !important;
+}
+div[data-testid="stTextInput"] input::placeholder,
+div[data-testid="stNumberInput"] input::placeholder {
+  color: #7a8ba3 !important;
+}
+div[data-testid="stTextInput"] label,
+div[data-testid="stNumberInput"] label,
+div[data-testid="stCheckbox"] label,
+div[data-testid="stCheckbox"] label * {
+  color: #263b59 !important;
+  font-weight: 600 !important;
+}
+
+/* Checkbox: calm blue instead of bright red */
+div[data-testid="stCheckbox"] input {
+  accent-color: #3568c8 !important;
+}
+div[data-testid="stCheckbox"] label > div:first-child {
+  border-color: #9db1cc !important;
+}
+
+/* Buttons */
+.stButton > button {
+  background: linear-gradient(105deg, #315fba, #287b91) !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 11px !important;
+  font-weight: 700 !important;
+  min-height: 44px !important;
+  box-shadow: 0 5px 13px rgba(38, 83, 151, .14) !important;
+}
+.stButton > button *,
+.stButton > button p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+.stButton > button:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+/* Alerts, toast notifications and expanders */
+div[data-testid="stAlert"] {
+  background: #eef5ff !important;
+  border: 1px solid #cbdcf4 !important;
+  border-radius: 12px !important;
+}
+div[data-testid="stAlert"] *,
+div[data-testid="stExpander"] *,
+div[data-testid="stToast"] *,
+div[role="alert"] * {
+  color: #263e60 !important;
+  -webkit-text-fill-color: #263e60 !important;
+  opacity: 1 !important;
+}
+div[data-testid="stToast"],
+div[data-testid="stToast"] > div,
+div[role="alert"] {
+  background: #ffffff !important;
+  border: 1px solid #dce5f1 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(28, 49, 79, .13) !important;
+}
+div[data-testid="stExpander"] {
+  background: #ffffff !important;
+  border: 1px solid #dce5f1 !important;
+  border-radius: 12px !important;
+}
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary * {
+  color: #263b59 !important;
+}
+.footer-note { color: #74839a !important; }
+
+
+/* Compatibility + force a light palette even when the user's Streamlit theme is dark */
+:root,
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stApp"] {
+  color-scheme: light !important;
+  --background-color: #f4f7fb !important;
+  --secondary-background-color: #eaf1fb !important;
+  --text-color: #203653 !important;
+  --primary-color: #3568c8 !important;
+}
+[data-testid="stAppViewContainer"] * {
+  scrollbar-color: #bdcce0 #f3f6fb;
+}
+
+/* Streamlit uploaded file chips across older and newer Streamlit DOM versions */
+div[data-testid="stFileUploader"] [data-testid*="File"],
+div[data-testid="stFileUploader"] [data-testid*="file"],
+div[data-testid="stFileUploader"] [class*="uploaded"],
+div[data-testid="stFileUploader"] [class*="Uploaded"],
+div[data-testid="stFileUploader"] [class*="fileList"] > div,
+div[data-testid="stFileUploader"] [class*="FileList"] > div {
+  background: #e8f0fb !important;
+  background-color: #e8f0fb !important;
+  color: #1c385d !important;
+  border: 1px solid #c8d8ed !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+div[data-testid="stFileUploader"] [data-testid*="File"] *,
+div[data-testid="stFileUploader"] [data-testid*="file"] *,
+div[data-testid="stFileUploader"] [class*="uploaded"] *,
+div[data-testid="stFileUploader"] [class*="Uploaded"] *,
+div[data-testid="stFileUploader"] [class*="fileList"] > div *,
+div[data-testid="stFileUploader"] [class*="FileList"] > div * {
+  color: #1c385d !important;
+  -webkit-text-fill-color: #1c385d !important;
+  opacity: 1 !important;
+}
+div[data-testid="stFileUploader"] [data-testid*="File"] small,
+div[data-testid="stFileUploader"] [data-testid*="file"] small,
+div[data-testid="stFileUploader"] [class*="uploaded"] small {
+  color: #617895 !important;
+  -webkit-text-fill-color: #617895 !important;
+}
+div[data-testid="stFileUploader"] [data-testid*="File"] button,
+div[data-testid="stFileUploader"] [data-testid*="file"] button,
+div[data-testid="stFileUploader"] [class*="uploaded"] button {
+  background: #d7e5f7 !important;
+  color: #244b7d !important;
+  border: 1px solid #bed0e8 !important;
+}
+div[data-testid="stFileUploader"] [data-testid*="File"] button svg,
+div[data-testid="stFileUploader"] [data-testid*="file"] button svg {
+  color: #244b7d !important;
+  fill: #244b7d !important;
+}
+
+/* Fallback for file-item containers identified by their file icon */
+div[data-testid="stFileUploader"] div:has(svg[viewBox]) {
+  color: #203653;
+}
+
+/* Accessible static mapping table; avoids Arrow/Glide dark canvas rendering */
+div[data-testid="stTable"] {
+  background: #ffffff !important;
+  border: 1px solid #dce5f1 !important;
+  border-radius: 13px !important;
+  overflow-x: auto !important;
+  padding: 0 !important;
+}
+div[data-testid="stTable"] table {
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: #ffffff !important;
+  color: #203653 !important;
+  font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 13px !important;
+}
+div[data-testid="stTable"] thead tr th {
+  background: #eaf1fb !important;
+  color: #1d385d !important;
+  font-weight: 800 !important;
+  text-align: left !important;
+  padding: 12px 13px !important;
+  border-bottom: 1px solid #d3dfef !important;
+  white-space: nowrap !important;
+}
+div[data-testid="stTable"] tbody tr td {
+  background: #ffffff !important;
+  color: #263d5b !important;
+  padding: 10px 13px !important;
+  border-bottom: 1px solid #edf1f6 !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  vertical-align: middle !important;
+}
+div[data-testid="stTable"] tbody tr:nth-child(even) td {
+  background: #f8faff !important;
+}
+div[data-testid="stTable"] tbody tr:hover td {
+  background: #eef4fc !important;
+}
+
+/* Toast and notification readability */
+div[data-testid="stToast"],
+div[data-testid="stToast"] > div,
+div[data-testid="stToast"] *,
+div[role="alert"],
+div[role="alert"] * {
+  background-color: #ffffff !important;
+  color: #243b59 !important;
+  -webkit-text-fill-color: #243b59 !important;
+  opacity: 1 !important;
+}
+div[data-testid="stToast"] {
+  border: 1px solid #dce5f1 !important;
+  box-shadow: 0 8px 24px rgba(28,49,79,.14) !important;
+  border-radius: 12px !important;
+}
+
+/* Checkbox uses the same calm blue as the rest of the interface */
+div[data-testid="stCheckbox"] input {
+  accent-color: #3568c8 !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="hero">
+  <div class="hero-kicker">DFIT • Data operations workspace</div>
+  <h1>Excel to Production JSON</h1>
+  <p>A safer, clearer workflow to match workbooks, validate every mapping, preview changes and update your production data without disturbing the existing structure.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">✦ Four data pipelines</span>
+    <span class="hero-pill">✓ Validation before writing</span>
+    <span class="hero-pill">↺ Automatic backups</span>
+    <span class="hero-pill">⌁ Change-aware updates</span>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="status-line"><span class="pulse"></span><b>Workspace ready</b><span>•</span><span>Build 2026.11.16</span><span>•</span><span>Existing JSON structure is preserved</span></div>
+""", unsafe_allow_html=True)
+
+st.markdown('<div class="section-heading">01 · Configure your workspace</div><div class="section-sub">Choose the extracted production folder and the year you want to update.</div>', unsafe_allow_html=True)
+config_col, year_col = st.columns([3, 1])
+with config_col:
+    root_text=st.text_input(
+        "Production project folder",
+        value=str(Path.cwd() / "DFIT_New"),
+        help="Enter the permanent path to your extracted DFIT_New folder. You do not need to upload the production ZIP again."
+    )
+with year_col:
+    year=st.number_input("Target year",min_value=2000,max_value=2100,value=2026,step=1)
 root=Path(root_text).expanduser()
-year=st.number_input("Target year",min_value=2000,max_value=2100,value=2026,step=1)
-st.subheader("Upload the four Excel workbooks")
+if root.is_dir():
+    st.success(f"Production folder found · {root}")
+else:
+    st.warning("Production folder not found yet. Check the path before validating.")
+
+st.markdown('<div class="section-heading">02 · Add your Excel workbooks</div><div class="section-sub">Upload all four source workbooks. Each workbook is matched against its approved production JSON filenames.</div>', unsafe_allow_html=True)
 col1,col2=st.columns(2)
 with col1:
-    leprosy=st.file_uploader("Leprosy Excel",type=["xlsx","xlsm"])
-    annexure=st.file_uploader("TB Annexure M Excel",type=["xlsx","xlsm"])
+    with st.container(border=True):
+        st.markdown('<span class="step-dot">01</span> **Leprosy**', unsafe_allow_html=True)
+        leprosy=st.file_uploader("Leprosy Excel",type=["xlsx","xlsm"],key="upload_leprosy")
+    with st.container(border=True):
+        st.markdown('<span class="step-dot">02</span> **TB Annexure M**', unsafe_allow_html=True)
+        annexure=st.file_uploader("TB Annexure M Excel",type=["xlsx","xlsm"],key="upload_annexure")
 with col2:
-    case_finding=st.file_uploader("TB Case Finding Excel",type=["xlsx","xlsm"])
-    outcomes=st.file_uploader("TB Outcomes Excel",type=["xlsx","xlsm"])
-backup=st.checkbox("Keep backups of existing target JSON files inside BACKUPS",value=True)
-if st.button("MATCH, VALIDATE & PREVIEW",type="primary",use_container_width=True):
-    uploads={"leprosy":leprosy,"annexure":annexure,"case_finding":case_finding,"outcomes":outcomes}
+    with st.container(border=True):
+        st.markdown('<span class="step-dot">03</span> **TB Case Finding**', unsafe_allow_html=True)
+        case_finding=st.file_uploader("TB Case Finding Excel",type=["xlsx","xlsm"],key="upload_case_finding")
+    with st.container(border=True):
+        st.markdown('<span class="step-dot">04</span> **TB Outcomes**', unsafe_allow_html=True)
+        outcomes=st.file_uploader("TB Outcomes Excel",type=["xlsx","xlsm"],key="upload_outcomes")
+
+uploads={"leprosy":leprosy,"annexure":annexure,"case_finding":case_finding,"outcomes":outcomes}
+uploaded_count=sum(v is not None for v in uploads.values())
+m1,m2,m3=st.columns(3)
+for col, number, label in [
+    (m1, f"{uploaded_count}/4", "Workbooks uploaded"),
+    (m2, str(year), "Target year"),
+    (m3, "3-step", "Validate · preview · write"),
+]:
+    with col:
+        st.markdown(f'<div class="metric-card"><div class="metric-num">{number}</div><div class="metric-caption">{label}</div></div>',unsafe_allow_html=True)
+
+backup=st.checkbox("Create timestamped backups of existing JSON files before writing",value=True,help="Backups are saved inside the production folder under BACKUPS.")
+
+st.markdown('<div class="section-heading">03 · Validate and preview</div><div class="section-sub">Nothing is written during validation. Review the mapping table before confirming the update.</div>', unsafe_allow_html=True)
+if st.button("✦  MATCH, VALIDATE & PREVIEW",type="primary",use_container_width=True):
     if not root.is_dir():
         st.error("The production folder path does not exist. Enter the path to your extracted DFIT_New folder.")
     elif any(v is None for v in uploads.values()):
-        st.error("Upload all four Excel workbooks.")
+        missing=[p["label"] for p in PIPELINES if uploads[p["excel_key"]] is None]
+        st.error("Upload all four Excel workbooks before validation.")
+        st.caption("Still missing: " + " · ".join(missing))
     else:
         allplans={}; errors=[]
-        for p in PIPELINES:
-            try:
-                source,dest,plans=process_pipeline(root,p,uploads[p["excel_key"]].getvalue(),int(year))
-                allplans[p["key"]]=(source,dest,plans)
-            except Exception as e:
-                errors.append(f"{p['label']}: {e}")
+        progress=st.progress(0,text="Starting validation…")
+        with st.spinner("Matching worksheets, checking schemas and preparing a safe preview…"):
+            for idx,pipeline in enumerate(PIPELINES):
+                try:
+                    source,dest,plans=process_pipeline(root,pipeline,uploads[pipeline["excel_key"]].getvalue(),int(year))
+                    allplans[pipeline["key"]]=(source,dest,plans)
+                except Exception as e:
+                    errors.append(f'{pipeline["label"]}: {e}')
+                progress.progress((idx+1)/len(PIPELINES),text=f'Validated {pipeline["label"]} · {idx+1} of {len(PIPELINES)}')
+        progress.empty()
         if errors:
             st.error("Validation failed. No files were changed.")
             for e in errors: st.write("• "+e)
+            st.session_state.pop("dfit_plans",None)
         else:
             st.session_state["dfit_root"]=str(root.resolve())
             st.session_state["dfit_plans"]={k:(str(src),str(dst),[{**x,"target":str(x["target"])} for x in plans]) for k,(src,dst,plans) in allplans.items()}
             st.session_state["dfit_backup"]=backup
-            st.success("All worksheets matched existing production JSON filenames and passed structural validation.")
+            st.session_state["dfit_target_year"]=int(year)
+            st.success("All worksheets matched the approved production filenames and passed structural validation.")
+            st.toast("Preview is ready. No production files have been changed.",icon="✅")
 
 if "dfit_plans" in st.session_state:
-    st.subheader("One-to-one worksheet → production filename mapping")
+    st.markdown('<div class="section-heading">04 · Review the update plan</div><div class="section-sub">Check every worksheet-to-file match and its planned action. Unchanged files are skipped automatically.</div>', unsafe_allow_html=True)
     rows=[]
-    for p in PIPELINES:
-        source,dest,plans=st.session_state["dfit_plans"][p["key"]]
-        st.markdown(f"**{p['label']}**: `{Path(dest).relative_to(Path(st.session_state['dfit_root']))}`")
+    for pipeline in PIPELINES:
+        source,dest,plans=st.session_state["dfit_plans"][pipeline["key"]]
+        st.markdown(f'**{pipeline["label"]}**  ·  `{Path(dest).relative_to(Path(st.session_state["dfit_root"]))}`')
         for x in plans:
-            rows.append({"Pipeline":p["label"],"Excel worksheet":x["worksheet"],
+            matched=target_matches_data(Path(x["target"]), x["data"])
+            rows.append({"Pipeline":pipeline["label"],"Excel worksheet":x["worksheet"],
                          "Existing production filename":x["source_name"],
                          "Target JSON":str(Path(x["target"]).relative_to(Path(st.session_state["dfit_root"]))),
-                         "Action":("Matched - no write needed" if target_matches_data(Path(x["target"]), x["data"])
-                                   else "Update existing 2026 file" if x["target_exists"]
-                                   else "Create 2026 copy using existing filename"),
+                         "Action":("✓ Matched · no write needed" if matched
+                                   else "↻ Update existing file" if x["target_exists"]
+                                   else "+ Create year copy"),
                          "JSON records":x["records"],"Unmatched S.NO":", ".join(map(str,x["missing"])) or "-"})
-    st.dataframe(rows,use_container_width=True,hide_index=True)
-    st.info("The existing target-year JSON is used as the baseline when present. Only valid, non-placeholder Excel values update mapped fields. Numeric/text 0, blank cells, a single hyphen (-), and Excel errors such as #DIV/0! preserve the existing JSON value. Percentage/rate fields are detected from their labels, percentage column headings, and Excel percentage number formats, even when each workbook uses a different style. Values are rounded to whole percentages in quarter and annual/total fields. Whitespace-only differences in JSON values are ignored. Files whose resulting JSON is identical are not rewritten, so unchanged files will not be marked modified in VS Code. Existing JSON records, keys, order, filenames, capitalization, and spelling are retained.")
-    if st.checkbox("I confirm the mapping and want to write the updated JSON files into the production folder.",key="dfit_confirm"):
-        if st.button("WRITE UPDATED JSON FILES",type="primary",use_container_width=True):
+    changed_count=sum(not target_matches_data(Path(x["target"]),x["data"]) for _,_,plans in st.session_state["dfit_plans"].values() for x in plans)
+    total_files=len(rows)
+    a,b,c=st.columns(3)
+    for col,num,label in [(a,str(total_files),"Files in preview"),(b,str(changed_count),"Files requiring changes"),(c,str(total_files-changed_count),"Already matched")]:
+        with col:
+            st.markdown(f'<div class="metric-card"><div class="metric-num">{num}</div><div class="metric-caption">{label}</div></div>',unsafe_allow_html=True)
+    st.table(rows)
+    with st.expander("What the updater protects",expanded=False):
+        st.markdown("""
+        - Existing JSON array/object structure, record order, keys, filenames, capitalization and spelling are retained.
+        - Blank cells, numeric/text `0`, a single hyphen (`-`) and Excel errors preserve the existing JSON value.
+        - Percentage/rate fields use the workbook's percentage formatting and displayed precision.
+        - Existing target-year JSON is used as the fallback baseline when present.
+        - Files whose resulting data is identical are not rewritten.
+        - A validation error stops the operation before any production file is changed.
+        """)
+    st.info("The preview is based on the uploaded workbooks and current target JSON files. If you change a workbook or target folder, run validation again before writing.")
+    st.markdown('<div class="section-heading">05 · Confirm and write</div><div class="section-sub">The write step only updates files that differ from the validated preview.</div>', unsafe_allow_html=True)
+    confirmed=st.checkbox("I reviewed the mapping and confirm that the updated JSON files should be written to the production folder.",key="dfit_confirm")
+    if confirmed:
+        if st.button("✓  WRITE UPDATED JSON FILES",type="primary",use_container_width=True):
             root=Path(st.session_state["dfit_root"])
             backup_root=root/"BACKUPS"/("json_update_"+datetime.now().strftime("%Y%m%d_%H%M%S"))
             changed=[]; backed=[]
             try:
-                for p in PIPELINES:
-                    _,_,plans=st.session_state["dfit_plans"][p["key"]]
-                    for x in plans:
-                        target=Path(x["target"])
-                        target.parent.mkdir(parents=True,exist_ok=True)
-
-                        # Do not touch a target file if the resulting JSON data is
-                        # identical to its current content. This avoids false
-                        # modified-file indicators in VS Code for skipped values.
-                        if target.exists():
-                            try:
-                                current_data=json.loads(target.read_text(encoding="utf-8-sig"))
-                            except Exception:
-                                current_data=None
-                            if current_data is not None and normalized_json(current_data) == normalized_json(x["data"]):
-                                continue
-
-                        if target.exists() and st.session_state["dfit_backup"]:
-                            bp=backup_root/target.relative_to(root)
-                            bp.parent.mkdir(parents=True,exist_ok=True)
-                            shutil.copy2(target,bp); backed.append(str(bp.relative_to(root)))
-                        tmp=target.with_suffix(target.suffix+".tmp")
-                        write_json_preserving_style(target, x["data"])
-                        changed.append(str(target.relative_to(root)))
-                st.success(f"Changed {len(changed)} JSON files. Unchanged files were not rewritten. Backups created: {len(backed)}.")
-                st.write(f"Production folder updated: `{root}`")
-                with st.expander("Updated JSON files"):
-                    for f in changed: st.write("✓ "+f)
+                total_to_process=sum(len(plans) for _,_,plans in st.session_state["dfit_plans"].values())
+                write_progress=st.progress(0,text="Preparing production update…")
+                done=0
+                with st.spinner("Writing changed JSON files and creating backups…"):
+                    for pipeline in PIPELINES:
+                        _,_,plans=st.session_state["dfit_plans"][pipeline["key"]]
+                        for x in plans:
+                            target=Path(x["target"])
+                            target.parent.mkdir(parents=True,exist_ok=True)
+                            if target.exists():
+                                try:
+                                    current_data=json.loads(target.read_text(encoding="utf-8-sig"))
+                                except Exception:
+                                    current_data=None
+                                if current_data is not None and normalized_json(current_data) == normalized_json(x["data"]):
+                                    done+=1
+                                    write_progress.progress(done/max(total_to_process,1),text=f"Checked {done} of {total_to_process} files…")
+                                    continue
+                            if target.exists() and st.session_state["dfit_backup"]:
+                                bp=backup_root/target.relative_to(root)
+                                bp.parent.mkdir(parents=True,exist_ok=True)
+                                shutil.copy2(target,bp); backed.append(str(bp.relative_to(root)))
+                            write_json_preserving_style(target, x["data"])
+                            changed.append(str(target.relative_to(root)))
+                            done+=1
+                            write_progress.progress(done/max(total_to_process,1),text=f"Processed {done} of {total_to_process} files…")
+                write_progress.empty()
+                st.success(f"Update complete · {len(changed)} JSON files changed · {len(backed)} backups created.")
+                st.markdown(f'<div class="metric-card"><div class="metric-num">{len(changed)}</div><div class="metric-caption">JSON files successfully updated</div></div>',unsafe_allow_html=True)
+                st.write(f"Production folder: `{root}`")
+                with st.expander("View updated JSON files",expanded=bool(changed)):
+                    if changed:
+                        for f in changed: st.write("✓ "+f)
+                    else:
+                        st.write("Everything already matched. No files needed to be rewritten.")
                 if backed:
-                    with st.expander("Backup files"):
+                    with st.expander("View backup files"):
                         for f in backed: st.write("✓ "+f)
             except Exception as e:
                 st.exception(e)
+    else:
+        st.caption("Writing is locked until you confirm the preview above.")
+
+st.markdown('<div class="footer-note">DFIT Data Studio · Built for careful, traceable data updates · Core matching and JSON conversion logic retained</div>',unsafe_allow_html=True)
