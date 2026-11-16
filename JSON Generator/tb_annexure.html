@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel to JSON Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 35px 20px;
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .upload-card {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .field {
+            margin: 22px 0;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            background: #fafafa;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .convert-btn {
+            width: 100%;
+            padding: 15px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .convert-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .convert-btn:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+
+        #status {
+            display: none;
+            padding: 14px;
+            margin-top: 18px;
+            border-radius: 6px;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+
+        .success {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        #results {
+            display: none;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 18px;
+        }
+
+        .copy-all {
+            padding: 11px 17px;
+            background: #16a34a;
+            color: white;
+            font-weight: 600;
+        }
+
+        .sheet-card {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .sheet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+            gap: 12px;
+        }
+
+        .sheet-header h3 {
+            margin: 0;
+            font-size: 17px;
+            overflow-wrap: anywhere;
+        }
+
+        .copy-btn {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 14px;
+            background: #eff6ff;
+            color: #2563eb;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:hover {
+            background: #dbeafe;
+        }
+
+        .copy-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .json-content {
+            padding: 20px;
+            background: #111827;
+            color: #d1fae5;
+            overflow: auto;
+            max-height: 550px;
+            font-family: Consolas, monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            white-space: pre;
+            margin: 0;
+        }
+
+        .sheet-info {
+            padding: 12px 20px;
+            color: #666;
+            font-size: 13px;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .upload-card {
+                padding: 18px;
+            }
+
+            .sheet-header {
+                flex-wrap: wrap;
+            }
+
+            .json-content {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="upload-card">
+
+            <h2>Excel to JSON Converter</h2>
+
+            <p>Upload your Excel workbook and fixed JSON template.</p>
+
+            <div class="field">
+                <label>1. Upload Excel Workbook</label>
+                <input type="file" id="excelFile" accept=".xlsx,.xls">
+            </div>
+
+            <div class="field">
+                <label>2. Upload Fixed JSON Template</label>
+                <input type="file" id="jsonFile" accept=".json">
+            </div>
+
+            <button class="convert-btn" id="convertBtn" onclick="convertFiles()">
+                Convert Excel to JSON
+            </button>
+
+            <div id="status"></div>
+
+        </div>
+
+        <div id="results">
+
+            <div class="results-header">
+                <h2>Converted JSON Files</h2>
+
+                <button class="copy-all" onclick="copyAll()">
+                    Copy All JSON
+                </button>
+            </div>
+
+            <div id="output"></div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let convertedFiles = [];
+
+        function normalize(value) {
+            return String(value ?? "")
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-z0-9]/g, "");
+        }
+
+        function getQuarterIndex(header) {
+            let value = normalize(header);
+
+            value = value.replace(/20\d{2}$/, "");
+
+            const match = value.match(
+                /^(i{1,3}|iv|[1-4])qtr$/
+            );
+
+            if (!match) return null;
+
+            const map = {
+                i: 1,
+                ii: 2,
+                iii: 3,
+                iv: 4,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            };
+
+            return map[match[1]] ?? null;
+        }
+
+        function identifyTemplateKeys(template) {
+
+            const keys = Object.keys(template[0]);
+
+            const quarterKeys = {};
+
+            keys.forEach(key => {
+
+                const quarter = getQuarterIndex(key);
+
+                if (quarter) {
+                    quarterKeys[quarter] = key;
+                }
+
+            });
+
+            const totalKey = keys.find(key => {
+
+                const normalized = normalize(key);
+
+                return normalized.startsWith("total") ||
+                    normalized.startsWith("annual");
+
+            });
+
+            if (Object.keys(quarterKeys).length !== 4) {
+                throw new Error(
+                    "JSON template must contain all four quarter fields."
+                );
+            }
+
+            if (!totalKey) {
+                throw new Error(
+                    "JSON template must contain Total 2026 or Annual 2026."
+                );
+            }
+
+            return {
+                quarterKeys,
+                totalKey
+            };
+        }
+
+        function findHeaderRow(sheet) {
+
+            if (!sheet["!ref"]) {
+                throw new Error("Excel worksheet is empty.");
+            }
+
+            const range = XLSX.utils.decode_range(sheet["!ref"]);
+
+            for (let r = range.s.r; r <= range.e.r; r++) {
+
+                const columns = {
+                    quarters: {},
+                    total: -1
+                };
+
+                for (let c = range.s.c; c <= range.e.c; c++) {
+
+                    const address = XLSX.utils.encode_cell({
+                        r,
+                        c
+                    });
+
+                    const cell = sheet[address];
+
+                    if (!cell) continue;
+
+                    const value = normalize(cell.v);
+
+                    const quarter = getQuarterIndex(cell.v);
+
+                    if (quarter) {
+                        columns.quarters[quarter] = c;
+                    }
+
+                    if (
+                        value.startsWith("total") ||
+                        value.startsWith("annual")
+                    ) {
+                        columns.total = c;
+                    }
+
+                }
+
+                if (
+                    Object.keys(columns.quarters).length === 4 &&
+                    columns.total !== -1
+                ) {
+
+                    const quarterColumns = Object.values(columns.quarters);
+
+                    const contentColumn = Math.min(...quarterColumns) - 1;
+
+                    return {
+                        headerRow: r,
+                        contentColumn,
+                        columns,
+                        range
+                    };
+
+                }
+
+            }
+
+            throw new Error(
+                "Could not find the Excel header row containing all four quarters and Total."
+            );
+        }
+
+        function getCellValue(sheet, row, column) {
+
+            const address = XLSX.utils.encode_cell({
+                r: row,
+                c: column
+            });
+
+            const cell = sheet[address];
+
+            if (
+                !cell ||
+                cell.v === null ||
+                cell.v === undefined
+            ) {
+                return "";
+            }
+
+            return String(cell.v).trim();
+        }
+
+        function convertSheet(sheet, template, templateKeys) {
+
+            const {
+                headerRow,
+                contentColumn,
+                columns,
+                range
+            } = findHeaderRow(sheet);
+
+            const excelRows = [];
+
+            for (
+                let r = headerRow + 1;
+                r <= range.e.r;
+                r++
+            ) {
+
+                const description = getCellValue(
+                    sheet,
+                    r,
+                    contentColumn
+                );
+
+                if (description !== "") {
+                    excelRows.push(r);
+                }
+
+            }
+
+            if (excelRows.length !== template.length) {
+
+                throw new Error(
+                    `Row count mismatch in "${sheet.name || "worksheet"}". JSON template has ${template.length} rows, but Excel has ${excelRows.length} metric rows.`
+                );
+
+            }
+
+            const output = template.map((templateRow, index) => {
+
+                const excelRow = excelRows[index];
+
+                const newRow = { ...templateRow };
+
+                Object.entries(templateKeys.quarterKeys).forEach(
+                    ([quarter, jsonKey]) => {
+
+                        const excelColumn = columns.quarters[quarter];
+
+                        newRow[jsonKey] = getCellValue(
+                            sheet,
+                            excelRow,
+                            excelColumn
+                        );
+
+                    }
+                );
+
+                newRow[templateKeys.totalKey] = getCellValue(
+                    sheet,
+                    excelRow,
+                    columns.total
+                );
+
+                return newRow;
+
+            });
+
+            return output;
+        }
+
+        function copyIcon() {
+
+            return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="8" width="13" height="13" rx="2"></rect>
+            <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
+        </svg>`;
+
+        }
+
+        async function copyText(text, button) {
+
+            try {
+
+                await navigator.clipboard.writeText(text);
+
+                showCopied(button);
+
+            } catch (error) {
+
+                const textarea = document.createElement("textarea");
+
+                textarea.value = text;
+
+                document.body.appendChild(textarea);
+
+                textarea.select();
+
+                const copied = document.execCommand("copy");
+
+                textarea.remove();
+
+                if (copied) {
+                    showCopied(button);
+                } else {
+                    alert("Unable to copy. Please copy manually.");
+                }
+
+            }
+
+        }
+
+        function showCopied(button) {
+
+            const original = button.innerHTML;
+
+            button.innerHTML = "✓ Copied";
+
+            setTimeout(() => {
+                button.innerHTML = original;
+            }, 1500);
+
+        }
+
+        async function copyAll() {
+
+            const allJson = {};
+
+            convertedFiles.forEach(file => {
+
+                allJson[file.name] = JSON.parse(file.json);
+
+            });
+
+            await copyText(
+                JSON.stringify(allJson, null, 4),
+                document.querySelector(".copy-all")
+            );
+
+        }
+
+        function displayResults() {
+
+            const output = document.getElementById("output");
+
+            output.innerHTML = "";
+
+            convertedFiles.forEach(file => {
+
+                const card = document.createElement("div");
+
+                card.className = "sheet-card";
+
+                const header = document.createElement("div");
+
+                header.className = "sheet-header";
+
+                const title = document.createElement("h3");
+
+                title.textContent = file.name + ".json";
+
+                const button = document.createElement("button");
+
+                button.className = "copy-btn";
+
+                button.innerHTML = copyIcon() + " Copy JSON";
+
+                button.addEventListener("click", () => {
+
+                    copyText(file.json, button);
+
+                });
+
+                header.appendChild(title);
+                header.appendChild(button);
+
+                const pre = document.createElement("pre");
+
+                pre.className = "json-content";
+
+                pre.textContent = file.json;
+
+                const info = document.createElement("div");
+
+                info.className = "sheet-info";
+
+                info.textContent =
+                    `${file.rows} rows converted successfully.`;
+
+                card.appendChild(header);
+                card.appendChild(pre);
+                card.appendChild(info);
+
+                output.appendChild(card);
+
+            });
+
+            document.getElementById("results").style.display = "block";
+
+        }
+
+        async function convertFiles() {
+
+            const excelInput = document.getElementById("excelFile");
+
+            const jsonInput = document.getElementById("jsonFile");
+
+            const button = document.getElementById("convertBtn");
+
+            const status = document.getElementById("status");
+
+            status.style.display = "block";
+
+            document.getElementById("results").style.display = "none";
+
+            if (
+                !excelInput.files.length ||
+                !jsonInput.files.length
+            ) {
+
+                status.className = "error";
+
+                status.textContent =
+                    "Please upload both Excel and JSON files.";
+
+                return;
+
+            }
+
+            button.disabled = true;
+
+            status.className = "";
+
+            status.textContent = "Processing Excel workbook...";
+
+            try {
+
+                const excelBuffer =
+                    await excelInput.files[0].arrayBuffer();
+
+                const jsonText =
+                    await jsonInput.files[0].text();
+
+                const workbook = XLSX.read(excelBuffer, {
+                    type: "array"
+                });
+
+                const template = JSON.parse(jsonText);
+
+                if (
+                    !Array.isArray(template) ||
+                    template.length === 0
+                ) {
+
+                    throw new Error(
+                        "JSON template must be a non-empty array."
+                    );
+
+                }
+
+                const templateKeys =
+                    identifyTemplateKeys(template);
+
+                convertedFiles = [];
+
+                const reports = [];
+
+                workbook.SheetNames.forEach(sheetName => {
+
+                    const sheet = workbook.Sheets[sheetName];
+
+                    sheet.name = sheetName;
+
+                    const output = convertSheet(
+                        sheet,
+                        template,
+                        templateKeys
+                    );
+
+                    const json = JSON.stringify(
+                        output,
+                        null,
+                        4
+                    );
+
+                    convertedFiles.push({
+
+                        name: sheetName,
+
+                        json,
+
+                        rows: output.length
+
+                    });
+
+                    reports.push(
+                        `${sheetName}: ${output.length} rows converted`
+                    );
+
+                });
+
+                displayResults();
+
+                status.className = "success";
+
+                status.textContent =
+                    "Conversion completed successfully!\n\n" +
+                    reports.join("\n");
+
+            } catch (error) {
+
+                status.className = "error";
+
+                status.textContent =
+                    "Error: " + error.message;
+
+            } finally {
+
+                button.disabled = false;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
