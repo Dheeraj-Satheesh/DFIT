@@ -3,27 +3,27 @@
     "Type of cases ": "Cured NSP Patients",
     "I Qtr-2026": "57",
     "II Qtr-2026": "89",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "105",
     "IV Qtr-2026": "0",
-    "Total 2026": "146",
-    "%": "81.6"
+    "Total 2026": "251",
+    "%": "84.2"
   },
   {
     "Type of cases ": "Treatment completed NSP Pts",
     "I Qtr-2026": "3",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "2",
     "IV Qtr-2026": "0",
-    "Total 2026": "4",
-    "%": "2.2"
+    "Total 2026": "6",
+    "%": "2.0"
   },
   {
     "Type of cases ": "Died NSP Patients",
     "I Qtr-2026": "2",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "2",
     "IV Qtr-2026": "0",
-    "Total 2026": "3",
+    "Total 2026": "5",
     "%": "1.7"
   },
   {
@@ -39,36 +39,36 @@
     "Type of cases ": "Lost to Follow-up NSP Pts",
     "I Qtr-2026": "5",
     "II Qtr-2026": "6",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "5",
     "IV Qtr-2026": "0",
-    "Total 2026": "11",
-    "%": "6.1"
+    "Total 2026": "16",
+    "%": "5.4"
   },
   {
     "Type of cases ": "Not Evaluated NSP Pts",
     "I Qtr-2026": "1",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "2",
-    "%": "1.1"
+    "Total 2026": "3",
+    "%": "1.0"
   },
   {
     "Type of cases ": "Treatment Regimen Changed NSP Pts",
     "I Qtr-2026": "7",
     "II Qtr-2026": "6",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "0",
-    "Total 2026": "13",
-    "%": "7.3"
+    "Total 2026": "17",
+    "%": "5.7"
   },
   {
     "Type of cases ": "Total NSP Patients Managed",
     "I Qtr-2026": "75",
     "II Qtr-2026": "104",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "119",
     "IV Qtr-2026": "0",
-    "Total 2026": "179",
+    "Total 2026": "298",
     "%": ""
   },
   {
@@ -84,19 +84,19 @@
     "Type of cases ": "Treatment completed NSN/NEP Patients",
     "I Qtr-2026": "198",
     "II Qtr-2026": "236",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "162",
     "IV Qtr-2026": "0",
-    "Total 2026": "434",
-    "%": "95.6"
+    "Total 2026": "596",
+    "%": "95.8"
   },
   {
     "Type of cases ": "Died NSN/NEP Patients",
     "I Qtr-2026": "2",
     "II Qtr-2026": "5",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "7",
-    "%": "1.5"
+    "Total 2026": "8",
+    "%": "1.3"
   },
   {
     "Type of cases ": "Failure NSN/NEP Patients",
@@ -111,19 +111,19 @@
     "Type of cases ": "Lost to Follow-up NSN/NEP Patients",
     "I Qtr-2026": "6",
     "II Qtr-2026": "7",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "0",
-    "Total 2026": "13",
-    "%": "2.9"
+    "Total 2026": "17",
+    "%": "2.7"
   },
   {
     "Type of cases ": "Not Evaluated NSN/NEP Patients",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "0",
-    "%": "0.0"
+    "Total 2026": "1",
+    "%": "0.2"
   },
   {
     "Type of cases ": "Treatment Regimen Changed NSN/NEP Patients",
@@ -138,19 +138,19 @@
     "Type of cases ": "Total NSN/NEP Patients Managed",
     "I Qtr-2026": "206",
     "II Qtr-2026": "248",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "168",
     "IV Qtr-2026": "0",
-    "Total 2026": "454",
+    "Total 2026": "622",
     "%": ""
   },
   {
     "Type of cases ": "Cured RT+ve Pts",
     "I Qtr-2026": "18",
     "II Qtr-2026": "26",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "19",
     "IV Qtr-2026": "0",
-    "Total 2026": "44",
-    "%": "78.6"
+    "Total 2026": "63",
+    "%": "78.8"
   },
   {
     "Type of cases ": "Treatment completed RT+ve Pts",
@@ -159,34 +159,34 @@
     "III Qtr-2026": "0",
     "IV Qtr-2026": "0",
     "Total 2026": "4",
-    "%": "7.1"
+    "%": "5.0"
   },
   {
     "Type of cases ": "Died RT+ve Patients",
     "I Qtr-2026": "1",
     "II Qtr-2026": "1",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "2",
-    "%": "3.6"
+    "Total 2026": "3",
+    "%": "3.8"
   },
   {
     "Type of cases ": "Failure RT+ve Pts",
     "I Qtr-2026": "1",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "1",
-    "%": "1.8"
+    "Total 2026": "2",
+    "%": "2.5"
   },
   {
     "Type of cases ": "Lost to Follow-up RT+ve Pts",
     "I Qtr-2026": "2",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "2",
     "IV Qtr-2026": "0",
-    "Total 2026": "2",
-    "%": "3.6"
+    "Total 2026": "4",
+    "%": "5.0"
   },
   {
     "Type of cases ": "Not Evaluated RT+ve Pts",
@@ -195,24 +195,24 @@
     "III Qtr-2026": "0",
     "IV Qtr-2026": "0",
     "Total 2026": "2",
-    "%": "3.6"
+    "%": "2.5"
   },
   {
     "Type of cases ": "Treatment Regimen Changed RT+ve Pts",
     "I Qtr-2026": "1",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "1",
     "IV Qtr-2026": "0",
-    "Total 2026": "1",
-    "%": "1.8"
+    "Total 2026": "2",
+    "%": "2.5"
   },
   {
     "Type of cases ": "Total RT+ve Pts Managed",
     "I Qtr-2026": "26",
     "II Qtr-2026": "30",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "24",
     "IV Qtr-2026": "0",
-    "Total 2026": "56",
+    "Total 2026": "80",
     "%": ""
   },
   {
@@ -228,10 +228,10 @@
     "Type of cases ": "Treatment completed RT Neg Pts",
     "I Qtr-2026": "27",
     "II Qtr-2026": "13",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "0",
-    "Total 2026": "40",
-    "%": "93.0"
+    "Total 2026": "44",
+    "%": "93.6"
   },
   {
     "Type of cases ": "Died RT Neg Pts",
@@ -258,7 +258,7 @@
     "III Qtr-2026": "0",
     "IV Qtr-2026": "0",
     "Total 2026": "2",
-    "%": "4.7"
+    "%": "4.3"
   },
   {
     "Type of cases ": "Not Evaluated RT Neg Pts",
@@ -276,15 +276,15 @@
     "III Qtr-2026": "0",
     "IV Qtr-2026": "0",
     "Total 2026": "1",
-    "%": "2.3"
+    "%": "2.1"
   },
   {
     "Type of cases ": "Total RT Neg Pts Managed",
     "I Qtr-2026": "30",
     "II Qtr-2026": "13",
-    "III Qtr-2026": "0",
+    "III Qtr-2026": "4",
     "IV Qtr-2026": "0",
-    "Total 2026": "43",
+    "Total 2026": "47",
     "%": ""
   }
 ]

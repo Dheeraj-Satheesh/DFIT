@@ -3,23 +3,23 @@
     "Annexure M Contents": "Presumptive DS TB examined for Diagnosis",
     "I Qtr-2026": "622",
     "II Qtr-2026": "694",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "652",
     "IV Qtr-2026": "",
-    "Total 2026": "1316"
+    "Total 2026": "1968"
   },
   {
     "Annexure M Contents": "Presumptive DS TB found to be Positive",
     "I Qtr-2026": "137",
     "II Qtr-2026": "157",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "125",
     "IV Qtr-2026": "",
-    "Total 2026": "294"
+    "Total 2026": "419"
   },
   {
     "Annexure M Contents": "Presumptive DS TB for Repeat Sputum Examination",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Total 2026": "0"
   },
@@ -27,7 +27,7 @@
     "Annexure M Contents": "Presumptive DS TB Found Positive for Repeat Examination",
     "I Qtr-2026": "0",
     "II Qtr-2026": "0",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "0",
     "IV Qtr-2026": "",
     "Total 2026": "0"
   },
@@ -35,48 +35,48 @@
     "Annexure M Contents": "Follow up Patients Examination",
     "I Qtr-2026": "285",
     "II Qtr-2026": "290",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "366",
     "IV Qtr-2026": "",
-    "Total 2026": "575"
+    "Total 2026": "941"
   },
   {
     "Annexure M Contents": "Follow up Patients Positive",
     "I Qtr-2026": "12",
     "II Qtr-2026": "11",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "6",
     "IV Qtr-2026": "",
-    "Total 2026": "23"
+    "Total 2026": "29"
   },
   {
     "Annexure M Contents": "Total No.of slides",
     "I Qtr-2026": "307",
     "II Qtr-2026": "324",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "416",
     "IV Qtr-2026": "",
-    "Total 2026": "631"
+    "Total 2026": "1047"
   },
   {
     "Annexure M Contents": "Total No. of Positive Slides",
     "I Qtr-2026": "16",
     "II Qtr-2026": "13",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "18",
     "IV Qtr-2026": "",
-    "Total 2026": "29"
+    "Total 2026": "47"
   },
   {
     "Annexure M Contents": "Total No. of Neg slides",
     "I Qtr-2026": "291",
     "II Qtr-2026": "311",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "398",
     "IV Qtr-2026": "",
-    "Total 2026": "602"
+    "Total 2026": "1000"
   },
   {
     "Annexure M Contents": "New adult OPD",
     "I Qtr-2026": "2184",
     "II Qtr-2026": "2663",
-    "III Qtr-2026": "",
+    "III Qtr-2026": "2664",
     "IV Qtr-2026": "",
-    "Total 2026": "4847"
+    "Total 2026": "7511"
   }
 ]
