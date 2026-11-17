@@ -324,6 +324,160 @@ def target_matches_data(target, data):
     return normalized_json(current) == normalized_json(data)
 
 
+def read_existing_json(target):
+    """Read a target JSON file for reporting; return (data, error)."""
+    if not target.exists():
+        return None, None
+    try:
+        return json.loads(target.read_text(encoding="utf-8-sig")), None
+    except Exception as exc:
+        return None, str(exc)
+
+
+def collect_json_changes(old_value, new_value, path="$"):
+    """Create a field-level JSON diff, including added, removed and updated values."""
+    changes = []
+
+    if isinstance(old_value, dict) and isinstance(new_value, dict):
+        keys = list(old_value.keys()) + [k for k in new_value.keys() if k not in old_value]
+        for key in keys:
+            child_path = f"{path}.{key}"
+            if key not in old_value:
+                changes.append({
+                    "json_path": child_path,
+                    "old_value": None,
+                    "new_value": new_value[key],
+                    "action": "Added",
+                })
+            elif key not in new_value:
+                changes.append({
+                    "json_path": child_path,
+                    "old_value": old_value[key],
+                    "new_value": None,
+                    "action": "Removed",
+                })
+            else:
+                changes.extend(collect_json_changes(old_value[key], new_value[key], child_path))
+        return changes
+
+    if isinstance(old_value, list) and isinstance(new_value, list):
+        max_len = max(len(old_value), len(new_value))
+        for index in range(max_len):
+            child_path = f"{path}[{index}]"
+            if index >= len(old_value):
+                changes.append({
+                    "json_path": child_path,
+                    "old_value": None,
+                    "new_value": new_value[index],
+                    "action": "Added",
+                })
+            elif index >= len(new_value):
+                changes.append({
+                    "json_path": child_path,
+                    "old_value": old_value[index],
+                    "new_value": None,
+                    "action": "Removed",
+                })
+            else:
+                changes.extend(collect_json_changes(old_value[index], new_value[index], child_path))
+        return changes
+
+    if normalized_json(old_value) != normalized_json(new_value):
+        changes.append({
+            "json_path": path,
+            "old_value": old_value,
+            "new_value": new_value,
+            "action": "Updated",
+        })
+    return changes
+
+
+def build_validation_report(root, all_plans, year):
+    """Build a downloadable pre-write report describing every planned JSON change."""
+    files = []
+    totals = {"files": 0, "files_to_create": 0, "files_to_update": 0,
+              "files_unchanged": 0, "fields_added": 0, "fields_updated": 0,
+              "fields_removed": 0}
+
+    for pipeline in PIPELINES:
+        if pipeline["key"] not in all_plans:
+            continue
+        _, _, plans = all_plans[pipeline["key"]]
+        for plan in plans:
+            target = Path(plan["target"])
+            old_data, read_error = read_existing_json(target)
+            target_exists = target.exists()
+            if target_exists and read_error is None:
+                changes = collect_json_changes(old_data, plan["data"])
+            elif not target_exists:
+                empty_baseline = [] if isinstance(plan["data"], list) else {}
+                changes = collect_json_changes(empty_baseline, plan["data"])
+            else:
+                changes = []
+            if target_exists and read_error:
+                file_action = "Update existing file (current JSON could not be parsed)"
+                changes = [{
+                    "json_path": "$",
+                    "old_value": None,
+                    "new_value": plan["data"],
+                    "action": "Replace unreadable JSON",
+                }]
+            elif not target_exists:
+                file_action = "Create new JSON file"
+            elif not changes:
+                file_action = "No change required"
+            else:
+                file_action = "Update existing JSON file"
+
+            for change in changes:
+                action = change["action"].lower()
+                if action == "added":
+                    totals["fields_added"] += 1
+                elif action == "updated":
+                    totals["fields_updated"] += 1
+                elif action == "removed":
+                    totals["fields_removed"] += 1
+
+            totals["files"] += 1
+            if file_action == "Create new JSON file":
+                totals["files_to_create"] += 1
+            elif file_action == "No change required":
+                totals["files_unchanged"] += 1
+            else:
+                totals["files_to_update"] += 1
+
+            try:
+                relative_target = str(target.relative_to(Path(root)))
+            except ValueError:
+                relative_target = str(target)
+
+            files.append({
+                "pipeline": pipeline["label"],
+                "excel_worksheet": plan["worksheet"],
+                "json_file": target.name,
+                "target_path": relative_target.replace("\\", "/"),
+                "file_action": file_action,
+                "target_existed_before_validation": target_exists,
+                "json_records": plan["records"],
+                "unmatched_serial_numbers": plan["missing"],
+                "current_json_read_error": read_error,
+                "change_count": len(changes),
+                "changes": changes,
+            })
+
+    return {
+        "report_title": "DFIT JSON Validation and Change Report",
+        "report_version": 1,
+        "generated_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+        "target_year": int(year),
+        "production_folder": str(root),
+        "validation_status": "PASSED",
+        "write_status": "NOT_WRITTEN - preview only",
+        "summary": totals,
+        "files": files,
+    }
+
+
 def write_json_preserving_style(target, data):
     data = remove_invalid_json_keys(data)
     raw = target.read_text(encoding="utf-8-sig") if target.exists() else ""
@@ -390,6 +544,73 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed",
 )
+
+THEMES = {
+    "Ocean Blue": {
+        "primary": "#3267c8", "secondary": "#168c9b",
+        "hero1": "#17345f", "hero2": "#285c9f", "hero3": "#21828b",
+        "soft": "#edf4ff", "soft2": "#f6f9ff", "border": "#cbdcf2",
+        "ink": "#1c3557", "muted": "#536985", "chip": "#e8f0fb",
+        "button_text": "#ffffff",
+    },
+    "Emerald Green": {
+        "primary": "#16845f", "secondary": "#299b82",
+        "hero1": "#123f39", "hero2": "#176b59", "hero3": "#25977c",
+        "soft": "#eaf7f1", "soft2": "#f5fbf8", "border": "#c7e5d8",
+        "ink": "#194b3d", "muted": "#527568", "chip": "#e5f4ed",
+        "button_text": "#ffffff",
+    },
+    "Royal Purple": {
+        "primary": "#7050bd", "secondary": "#9270d1",
+        "hero1": "#30204f", "hero2": "#59408d", "hero3": "#8062b8",
+        "soft": "#f1edfb", "soft2": "#faf8ff", "border": "#d9cdef",
+        "ink": "#382b5d", "muted": "#6b6086", "chip": "#eee9fa",
+        "button_text": "#ffffff",
+    },
+    "Sunset Coral": {
+        "primary": "#cf5c52", "secondary": "#e28a62",
+        "hero1": "#582f3b", "hero2": "#a94d53", "hero3": "#d47b60",
+        "soft": "#fff0ed", "soft2": "#fff9f7", "border": "#f0d1ca",
+        "ink": "#653b3b", "muted": "#89635d", "chip": "#fcebe7",
+        "button_text": "#ffffff",
+    },
+    "Golden Amber": {
+        "primary": "#a96d12", "secondary": "#c58a27",
+        "hero1": "#4a3519", "hero2": "#87601f", "hero3": "#b18435",
+        "soft": "#fbf3e4", "soft2": "#fffcf5", "border": "#ead9b7",
+        "ink": "#57421f", "muted": "#806c49", "chip": "#f8efdD",
+        "button_text": "#ffffff",
+    },
+    "Graphite Slate": {
+        "primary": "#53677f", "secondary": "#71869d",
+        "hero1": "#263747", "hero2": "#40566b", "hero3": "#61798c",
+        "soft": "#edf1f5", "soft2": "#f8fafc", "border": "#d4dde6",
+        "ink": "#263b50", "muted": "#5c7084", "chip": "#e9eef3",
+        "button_text": "#ffffff",
+    },
+}
+
+if "dfit_theme" not in st.session_state:
+    st.session_state["dfit_theme"] = "Ocean Blue"
+
+theme_col, theme_note = st.columns([1, 3])
+with theme_col:
+    selected_theme = st.selectbox(
+        "🎨 Choose application theme",
+        list(THEMES.keys()),
+        key="dfit_theme",
+        help="Changes the colours of the header, buttons, upload cards, tables, labels and report panels.",
+    )
+with theme_note:
+    palette = THEMES[selected_theme]
+    st.markdown(
+        f'<div style="display:flex;align-items:center;gap:10px;padding-top:29px;">'
+        f'<span style="font-size:12px;color:#52647d;font-weight:700;">ACTIVE PALETTE</span>'
+        f'<span style="width:18px;height:18px;border-radius:50%;background:{palette["primary"]};display:inline-block;border:2px solid white;box-shadow:0 0 0 1px #cbd5e1;"></span>'
+        f'<span style="width:18px;height:18px;border-radius:50%;background:{palette["secondary"]};display:inline-block;border:2px solid white;box-shadow:0 0 0 1px #cbd5e1;"></span>'
+        f'<span style="font-size:12px;color:#52647d;">{selected_theme}</span></div>',
+        unsafe_allow_html=True,
+    )
 
 st.markdown("""
 <style>
@@ -985,8 +1206,185 @@ div[data-testid="stCheckbox"] input {
   accent-color: #3568c8 !important;
 }
 
+
+/* Final consistent light styling for every table, including the JSON diff preview */
+div[data-testid="stTable"],
+div[data-testid="stTable"] > div,
+div[data-testid="stTable"] [data-testid="stTable"],
+div[data-testid="stTable"] table {
+  background: #ffffff !important;
+  color: #203653 !important;
+  color-scheme: light !important;
+}
+div[data-testid="stTable"] {
+  border: 1px solid #d9e3f0 !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  margin: 8px 0 18px !important;
+}
+div[data-testid="stTable"] table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif !important;
+  font-size: 13px !important;
+}
+div[data-testid="stTable"] thead th {
+  background: #e8f0fb !important;
+  color: #19385f !important;
+  -webkit-text-fill-color: #19385f !important;
+  font-weight: 800 !important;
+  padding: 12px 14px !important;
+  border-bottom: 1px solid #d2deee !important;
+  white-space: nowrap !important;
+}
+div[data-testid="stTable"] tbody td {
+  background: #ffffff !important;
+  color: #263d5b !important;
+  -webkit-text-fill-color: #263d5b !important;
+  font-weight: 500 !important;
+  padding: 11px 14px !important;
+  border-bottom: 1px solid #edf1f6 !important;
+  line-height: 1.55 !important;
+}
+div[data-testid="stTable"] tbody tr:nth-child(even) td {
+  background: #f7f9fd !important;
+}
+div[data-testid="stTable"] tbody tr:hover td {
+  background: #edf4ff !important;
+}
+
+/* Make all labels, report text and expander content readable */
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4 {
+  color: #172d4b !important;
+  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 800 !important;
+}
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stCaptionContainer"] p {
+  color: #4b5f7a !important;
+}
+div[data-testid="stExpander"] {
+  background: #ffffff !important;
+  border: 1px solid #dce5f1 !important;
+}
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary *,
+div[data-testid="stExpander"] [data-testid="stMarkdownContainer"] * {
+  color: #263d5b !important;
+}
+
+/* Avoid dark file-chip text inherited from a system theme */
+div[data-testid="stFileUploader"] [data-testid*="File"],
+div[data-testid="stFileUploader"] [data-testid*="file"],
+div[data-testid="stFileUploader"] [class*="uploaded"],
+div[data-testid="stFileUploader"] [class*="Uploaded"] {
+  background-color: #eaf1fb !important;
+  color: #1c385d !important;
+  border-color: #c8d8ed !important;
+}
+div[data-testid="stFileUploader"] [data-testid*="File"] *,
+div[data-testid="stFileUploader"] [data-testid*="file"] *,
+div[data-testid="stFileUploader"] [class*="uploaded"] *,
+div[data-testid="stFileUploader"] [class*="Uploaded"] * {
+  color: #1c385d !important;
+  -webkit-text-fill-color: #1c385d !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown(f"""
+<style>
+:root {{
+  --theme-primary: {palette["primary"]};
+  --theme-secondary: {palette["secondary"]};
+  --theme-hero1: {palette["hero1"]};
+  --theme-hero2: {palette["hero2"]};
+  --theme-hero3: {palette["hero3"]};
+  --theme-soft: {palette["soft"]};
+  --theme-soft2: {palette["soft2"]};
+  --theme-border: {palette["border"]};
+  --theme-ink: {palette["ink"]};
+  --theme-muted: {palette["muted"]};
+  --theme-chip: {palette["chip"]};
+}}
+.hero {{
+  background: linear-gradient(115deg, var(--theme-hero1), var(--theme-hero2) 60%, var(--theme-hero3)) !important;
+}}
+.section-heading,
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4 {{
+  color: var(--theme-ink) !important;
+}}
+.section-sub,
+[data-testid="stCaptionContainer"] p {{
+  color: var(--theme-muted) !important;
+}}
+.stButton > button {{
+  background: linear-gradient(105deg, var(--theme-primary), var(--theme-secondary)) !important;
+  color: {palette["button_text"]} !important;
+}}
+div[data-testid="stFileUploader"] section,
+div[data-testid="stFileUploader"] [data-testid="stFileUploaderDropzone"] {{
+  background: var(--theme-soft2) !important;
+  border-color: var(--theme-primary) !important;
+}}
+div[data-testid="stFileUploader"] [data-testid*="File"],
+div[data-testid="stFileUploader"] [data-testid*="file"],
+div[data-testid="stFileUploader"] [class*="uploaded"],
+div[data-testid="stFileUploader"] [class*="Uploaded"] {{
+  background: var(--theme-chip) !important;
+  border-color: var(--theme-border) !important;
+}}
+div[data-testid="stFileUploader"] [data-testid*="File"] *,
+div[data-testid="stFileUploader"] [data-testid*="file"] *,
+div[data-testid="stFileUploader"] [class*="uploaded"] *,
+div[data-testid="stFileUploader"] [class*="Uploaded"] * {{
+  color: var(--theme-ink) !important;
+  -webkit-text-fill-color: var(--theme-ink) !important;
+}}
+div[data-testid="stTable"] {{
+  border-color: var(--theme-border) !important;
+}}
+div[data-testid="stTable"] thead th {{
+  background: var(--theme-soft) !important;
+  color: var(--theme-ink) !important;
+  -webkit-text-fill-color: var(--theme-ink) !important;
+  border-bottom-color: var(--theme-border) !important;
+}}
+div[data-testid="stTable"] tbody td {{
+  color: var(--theme-ink) !important;
+  -webkit-text-fill-color: var(--theme-ink) !important;
+}}
+div[data-testid="stTable"] tbody tr:nth-child(even) td {{
+  background: var(--theme-soft2) !important;
+}}
+div[data-testid="stTable"] tbody tr:hover td {{
+  background: var(--theme-soft) !important;
+}}
+.metric-num, .panel-title {{
+  color: var(--theme-ink) !important;
+}}
+.metric-card, div[data-testid="stExpander"] {{
+  border-color: var(--theme-border) !important;
+}}
+div[data-testid="stCheckbox"] input {{
+  accent-color: var(--theme-primary) !important;
+}}
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input {{
+  border-color: var(--theme-border) !important;
+}}
+</style>
+""", unsafe_allow_html=True)
+
 
 st.markdown("""
 <div class="hero">
@@ -1011,7 +1409,7 @@ config_col, year_col = st.columns([3, 1])
 with config_col:
     root_text=st.text_input(
         "Production project folder",
-        value=str(Path.cwd() / "DFIT_New"),
+        value=str(Path.cwd()),
         help="Enter the permanent path to your extracted DFIT_New folder. You do not need to upload the production ZIP again."
     )
 with year_col:
@@ -1106,6 +1504,39 @@ if "dfit_plans" in st.session_state:
         with col:
             st.markdown(f'<div class="metric-card"><div class="metric-num">{num}</div><div class="metric-caption">{label}</div></div>',unsafe_allow_html=True)
     st.table(rows)
+
+    st.markdown('<div class="section-heading">JSON change report</div><div class="section-sub">Download a field-by-field report showing the existing JSON value and the Excel-derived value before writing.</div>', unsafe_allow_html=True)
+    validation_report = build_validation_report(
+        Path(st.session_state["dfit_root"]),
+        st.session_state["dfit_plans"],
+        st.session_state.get("dfit_target_year", int(year)),
+    )
+    st.session_state["dfit_validation_report"] = validation_report
+    report_json = json.dumps(validation_report, ensure_ascii=False, indent=2)
+    report_name = f"DFIT_JSON_Validation_Report_{st.session_state.get('dfit_target_year', int(year))}.json"
+    r1, r2, r3 = st.columns(3)
+    with r1:
+        st.metric("Fields added", validation_report["summary"]["fields_added"])
+    with r2:
+        st.metric("Fields updated", validation_report["summary"]["fields_updated"])
+    with r3:
+        st.metric("Fields removed", validation_report["summary"]["fields_removed"])
+    st.download_button(
+        "⬇ Download JSON validation report",
+        data=report_json,
+        file_name=report_name,
+        mime="application/json",
+        use_container_width=True,
+        key="download_dfit_validation_report",
+    )
+    with st.expander("Preview individual JSON changes", expanded=False):
+        for file_report in validation_report["files"]:
+            st.markdown(f'**{file_report["pipeline"]} · `{file_report["json_file"]}`**')
+            st.caption(f'{file_report["file_action"]} · {file_report["change_count"]} field changes')
+            if file_report["changes"]:
+                st.table(file_report["changes"])
+            else:
+                st.write("No JSON value changes.")
     with st.expander("What the updater protects",expanded=False):
         st.markdown("""
         - Existing JSON array/object structure, record order, keys, filenames, capitalization and spelling are retained.
@@ -1151,7 +1582,27 @@ if "dfit_plans" in st.session_state:
                             done+=1
                             write_progress.progress(done/max(total_to_process,1),text=f"Processed {done} of {total_to_process} files…")
                 write_progress.empty()
+                final_report = st.session_state.get("dfit_validation_report") or build_validation_report(
+                    root,
+                    st.session_state["dfit_plans"],
+                    st.session_state.get("dfit_target_year", int(year)),
+                )
+                final_report = json.loads(json.dumps(final_report, ensure_ascii=False))
+                final_report["write_status"] = "COMPLETED"
+                final_report["written_files"] = changed
+                final_report["backup_files"] = backed
+                final_report["summary"]["files_written"] = len(changed)
+                final_report["summary"]["backups_created"] = len(backed)
+                st.session_state["dfit_last_write_report"] = final_report
                 st.success(f"Update complete · {len(changed)} JSON files changed · {len(backed)} backups created.")
+                st.download_button(
+                    "⬇ Download final write report",
+                    data=json.dumps(final_report, ensure_ascii=False, indent=2),
+                    file_name=f"DFIT_JSON_Write_Report_{st.session_state.get('dfit_target_year', int(year))}.json",
+                    mime="application/json",
+                    use_container_width=True,
+                    key="download_dfit_final_report",
+                )
                 st.markdown(f'<div class="metric-card"><div class="metric-num">{len(changed)}</div><div class="metric-caption">JSON files successfully updated</div></div>',unsafe_allow_html=True)
                 st.write(f"Production folder: `{root}`")
                 with st.expander("View updated JSON files",expanded=bool(changed)):
